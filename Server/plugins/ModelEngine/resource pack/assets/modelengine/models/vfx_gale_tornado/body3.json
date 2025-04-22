@@ -1,0 +1,1 @@
+{"textures":{"1":"modelengine:entity/spin_gale"},"elements":[{"from":[-4.5,8.0,-4.5],"to":[20.5,8.0,20.5],"faces":{"up":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#1"},"down":{"uv":[0.0,16.0,16.0,0.0],"tintindex":0,"rotation":0,"texture":"#1"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

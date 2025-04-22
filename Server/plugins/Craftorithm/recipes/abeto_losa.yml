@@ -1,0 +1,7 @@
+type: shaped
+shape:
+- 'aaa'
+source:
+  a: minecraft:spruce_planks
+unlock: false
+result: minecraft:spruce_slab 6

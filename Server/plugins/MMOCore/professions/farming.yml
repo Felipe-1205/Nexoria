@@ -1,0 +1,1393 @@
+name: Farming
+max-level: 101
+experience:
+    base: 15
+    per-level: 15
+exp-curve: levels
+on-mine:
+    planta1:
+        material: vanilla{type=dead_bush}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta2:
+        material: vanilla{type=fern}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta3:
+        material: vanilla{type=short_grass}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta4:
+        material: vanilla{type=orange_tulip}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta5:
+        material: vanilla{type=white_tulip}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta6:
+        material: vanilla{type=red_tulip}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta7:
+        material: vanilla{type=oxeye_daisy}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta8:
+        material: vanilla{type=lily_of_the_valley}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta9:
+        material: vanilla{type=pink_tulip}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta10:
+        material: vanilla{type=poppy}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta11:
+        material: vanilla{type=cornflower}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta12:
+        material: vanilla{type=dandelion}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta13:
+        material: vanilla{type=blue_orchid}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta14:
+        material: vanilla{type=azure_bluet}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MAIZ} .05 1'
+            - 'mmoitem{type=material;id=SALVIA} .05 1'
+            - 'mmoitem{type=material;id=FRIJOLES} .05 1'
+            - 'mmoitem{type=material;id=LINAZA} .05 1'
+            - 'mmoitem{type=material;id=PEPINILLO} .05 1'
+            - 'mmoitem{type=material;id=NABOS} .05 1'
+            - 'mmoitem{type=material;id=MANZANA} .05 1'
+            - 'mmoitem{type=material;id=ZANAHORIA} .05 1'
+            - 'mmoitem{type=material;id=REBANADASANDIA} .05 1'
+            - 'mmoitem{type=material;id=CANAZUCAR} .05 1'
+            - 'mmoitem{type=material;id=PAPA} .05 1'
+            - 'mmoitem{type=material;id=BETABEL} .05 1'
+            - 'mmoitem{type=material;id=ALGA} .05 1'
+            - 'mmoitem{type=material;id=GRANOSCACAO} .05 1'
+            - 'mmoitem{type=material;id=CALABAZA} .05 1'
+            - 'mmoitem{type=material;id=CACTUS} .05 1'
+            - 'mmoitem{type=material;id=NENUFAR} .05 1'
+            - 'mmoitem{type=material;id=TRIGO} .05 1'
+            - 'mmoitem{type=material;id=PEPINODEMAR} .05 1'
+            - 'mmoitem{type=material;id=BAMBU} .05 1'
+        conditions:
+        - 'region{name=agriculturatier1}'
+        triggers:
+        - 'exp{profession=farming;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=AIR}
+    planta15:
+        material: vanilla{type=dark_oak_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta16:
+        material: vanilla{type=acacia_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta17:
+        material: vanilla{type=oak_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta18:
+        material: vanilla{type=spruce_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta19:
+        material: vanilla{type=birch_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta20:
+        material: vanilla{type=azalea_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta21:
+        material: vanilla{type=jungle_leaves}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta22:
+        material: vanilla{type=pink_petals}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta23:
+        material: vanilla{type=torchflower}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta24:
+        material: vanilla{type=allium}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta25:
+        material: vanilla{type=crimson_roots}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta26:
+        material: vanilla{type=glow_lichen}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta27:
+        material: vanilla{type=warped_roots}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta28:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLORESMANDRA} .05 1'
+            - 'mmoitem{type=material;id=FLORESBELLA} .05 1'
+            - 'mmoitem{type=material;id=FLORESRUGUAMAR} .05 1'
+            - 'mmoitem{type=material;id=FLORESAJENJO} .05 1'
+            - 'mmoitem{type=material;id=KENI} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLAS} .05 1'
+            - 'mmoitem{type=material;id=ARANDANO} .05 1'
+            - 'mmoitem{type=material;id=ESPINO} .05 1'
+            - 'mmoitem{type=material;id=MORA} .05 1'
+            - 'mmoitem{type=material;id=UVAS} .05 1'
+            - 'mmoitem{type=material;id=CEREZA} .05 1'
+            - 'mmoitem{type=material;id=FRAMBUESA} .05 1'
+            - 'mmoitem{type=material;id=BAYASDULCES} .05 1'
+            - 'mmoitem{type=material;id=BAYASOWAN} .05 1'
+            - 'mmoitem{type=material;id=RODAJAMELON} .05 1'
+            - 'mmoitem{type=material;id=CIRUELAS} .05 1'
+            - 'mmoitem{type=material;id=NARANJA} .05 1'
+            - 'mmoitem{type=material;id=PERA} .05 1'
+            - 'mmoitem{type=material;id=TOMATE} .05 1'
+            - 'mmoitem{type=material;id=REPOLLO} .05 1'
+        conditions:
+        - 'region{name=agriculturatier2}'
+        triggers:
+        - 'exp{profession=farming;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=AIR}
+    planta29:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta30:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta31:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta32:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta33:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta34:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta35:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta36:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta37:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta38:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta39:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta40:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta41:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}
+    planta42:
+        material: vanilla{type=nether_sprouts}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=RAIZMADRAGORA} .05 1'
+            - 'mmoitem{type=material;id=BAYASBELLADONA} .05 1'
+            - 'mmoitem{type=material;id=HOJASDERUGUAMA} .05 1'
+            - 'mmoitem{type=material;id=HOJASAJENJO} .05 1'
+            - 'mmoitem{type=material;id=MELONLEGENDARIO} .05 1'
+            - 'mmoitem{type=material;id=ROSAWITHER} .05 1'
+            - 'mmoitem{type=material;id=CHORUS} .05 1'
+            - 'mmoitem{type=material;id=BAYASBRILLANTES} .05 1'
+            - 'mmoitem{type=material;id=FRUTACHORUS} .05 1'
+            - 'mmoitem{type=material;id=FLORCHORUS} .05 1'
+            - 'mmoitem{type=material;id=CEBADA} .05 1'
+            - 'mmoitem{type=material;id=TABACO} .05 1'
+            - 'mmoitem{type=material;id=CANAMO} .05 1'
+            - 'mmoitem{type=material;id=HONGOROJO} .05 1'
+            - 'mmoitem{type=material;id=HONGOCAFE} .05 1'
+            - 'mmoitem{type=material;id=PEPINO} .05 1'
+            - 'mmoitem{type=material;id=ARROZCRUDO} .05 1'
+            - 'mmoitem{type=material;id=LEGUMBRESCRUDAS} .05 1'
+            - 'mmoitem{type=material;id=VERRUGANETHER} .05 1'
+            - 'mmoitem{type=material;id=FLORESPORAS} .05 1'
+        conditions:
+        - 'region{name=agriculturatier3}'
+        triggers:
+        - 'exp{profession=farming;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=AIR}

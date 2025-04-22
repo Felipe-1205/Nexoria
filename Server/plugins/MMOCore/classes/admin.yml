@@ -1,0 +1,607 @@
+display:
+    name: 'Admin'
+    lore:
+    - '&2Puto'
+    item: STONE_SWORD:2019
+exp-curve: levels
+max-level: 100
+exp-table: class_exp_table
+skills:
+    QUICK_SHOT:
+        level: 1
+        max-level: 30
+    BACKSTEP:
+        level: 1
+        max-level: 30
+    HUNTERS_FOCUS:
+        level: 1
+        max-level: 30
+    WINDRAZOR:
+        level: 1
+        max-level: 30
+    DEADLY_JAVELIN:
+        level: 1
+        max-level: 30
+    DRAGON_PIERCER:
+        level: 1
+        max-level: 20
+    ARCANE_SHIELD:
+        level: 2
+        max-level: 30
+    ARCANE_SLASH:
+        level: 2
+        max-level: 30
+    BLIZZARD_:
+        level: 2
+        max-level: 30
+    CLOAK_OF_HASTUR:
+        level: 2
+        max-level: 30
+    CHAINS_OF_VOID:
+        level: 2
+        max-level: 20
+    METEOR_STORM:
+        level: 2
+        max-level: 30
+    ARCANE_DEVASTATION:
+        level: 2
+        max-level: 20
+    MAGICAL_TINKERING:
+        level: 3
+        max-level: 30
+    ARCANE_BLAST:
+        level: 3
+        max-level: 30
+    FLAMETHROWER:
+        level: 3
+        max-level: 30
+    ARCANE_TURRET:
+        level: 3
+        max-level: 30
+    ENGINE_GLIDE:
+        level: 3
+        max-level: 20
+    CHRONO_CATACLYSM:
+        level: 3
+        max-level: 30
+    ARCANE_MECHA:
+        level: 3
+        max-level: 20
+    BLADE_SLASH:
+        level: 4
+        max-level: 30
+    DASH:
+        level: 4
+        max-level: 30
+    ASSASSINS_BLADE:
+        level: 4
+        max-level: 30
+    DAGGER_THROW:
+        level: 4
+        max-level: 30
+    SHADOW_WALK:
+        level: 4
+        max-level: 30
+    BLADE_DANCE:
+        level: 4
+        max-level: 20
+    BLOODLUST:
+        level: 5
+        max-level: 30
+    RAGEBLADE:
+        level: 5
+        max-level: 30
+    PRIMAL_AXE:
+        level: 5
+        max-level: 30
+    RELENTLESS_LEAP:
+        level: 5
+        max-level: 30
+    WAR_CRY:
+        level: 5
+        max-level: 20
+    DOUBLE_EDGE:
+        level: 5
+        max-level: 30
+    ETERNAL_FURY:
+        level: 5
+        max-level: 20
+    SOUND_WAVE:
+        level: 6
+        max-level: 30
+    VIBRATIVE_STRIKE:
+        level: 6
+        max-level: 30
+    SHIELD_OF_HARMONY:
+        level: 6
+        max-level: 30
+    ANGELIC_SERENADE:
+        level: 6
+        max-level: 30
+    RHAPSODY:
+        level: 6
+        max-level: 30
+    SYMPHONY_OF_DESTRUCTION:
+        level: 6
+        max-level: 20
+    BEAST_AURA:
+        level: 7
+        max-level: 30
+    HUNT:
+        level: 7
+        max-level: 30
+    QUICK_DASH:
+        level: 7
+        max-level: 30
+    VICIOUS_SYNC:
+        level: 7
+        max-level: 30
+    SUMMON_BEAST:
+        level: 7
+        max-level: 20
+    HUNTERS_TRAP:
+        level: 7
+        max-level: 30
+    AWAKENING_OF_FENRIR:
+        level: 7
+        max-level: 20
+    BLOODBENDING:
+        level: 8
+        max-level: 30
+    BLOODMOON_COMBO:
+        level: 8
+        max-level: 30
+    VAMPIRIC_SURGE:
+        level: 8
+        max-level: 30
+    BLOODBORNE_BLADES:
+        level: 8
+        max-level: 30
+    BLOODBORNE_NEEDLES:
+        level: 8
+        max-level: 20
+    BLOODBORNE_GRIMOIRE_MMOCORE:
+        level: 8
+        max-level: 30
+    BLOODBORNE_SCYTHE:
+        level: 8
+        max-level: 20
+    DAWNBRINGER_ANGEL:
+        level: 9
+        max-level: 30
+    DIVINE_IMMOLATION:
+        level: 9
+        max-level: 30
+    LUMINOUS_WAVE:
+        level: 9
+        max-level: 30
+    BLESSING_OF_THE_WHITE_LANTERN:
+        level: 9
+        max-level: 30
+    DIVINE_CROSS:
+        level: 9
+        max-level: 20
+    TEARS_OF_GOD:
+        level: 9
+        max-level: 30
+    DIVINE_PUNISHMENT:
+        level: 9
+        max-level: 20
+    DRAGON_SLASH:
+        level: 10
+        max-level: 30
+    DRAGON_DASH:
+        level: 10
+        max-level: 30
+    DRAGON_SKIN:
+        level: 10
+        max-level: 30
+    DRAGON_ZONE:
+        level: 10
+        max-level: 30
+    DRAGON_BREATH:
+        level: 10
+        max-level: 30
+    DRAGONBORN:
+        level: 10
+        max-level: 20
+    POISON_THORNS:
+        level: 11
+        max-level: 30
+    VINE_WAVE:
+        level: 11
+        max-level: 30
+    HEALING_WISPS:
+        level: 11
+        max-level: 30
+    BEAR_FORM:
+        level: 11
+        max-level: 30
+    HAWK_FORM:
+        level: 11
+        max-level: 30
+    WOLF_FORM:
+        level: 11
+        max-level: 20
+    AIR_BURST:
+        level: 12
+        max-level: 30
+    EARTH_TOSS:
+        level: 12
+        max-level: 30
+    AQUA_WHIP:
+        level: 12
+        max-level: 30
+    EXTREME_WIND:
+        level: 12
+        max-level: 30
+    UNDERWORLD_BEAST:
+        level: 12
+        max-level: 20
+    TERRA_BARRICADE:
+        level: 12
+        max-level: 30
+    OVERHEAT:
+        level: 12
+        max-level: 20
+    WINDRUNE_BLADE:
+        level: 13
+        max-level: 30
+    GALE_SLASH:
+        level: 13
+        max-level: 30
+    VAULT:
+        level: 13
+        max-level: 30
+    DANCING_BLADE:
+        level: 13
+        max-level: 30
+    CLOUDPIERCER:
+        level: 13
+        max-level: 20
+    TORRENT:
+        level: 13
+        max-level: 30
+    WINDBOUND_FURY:
+        level: 13
+        max-level: 20
+    PISTOL_SHOT:
+        level: 14
+        max-level: 30
+    SHOTGUN_BLAST:
+        level: 14
+        max-level: 30
+    DEADEYE:
+        level: 14
+        max-level: 30
+    SNIPER_BACKUP:
+        level: 14
+        max-level: 30
+    DEATHFIRE:
+        level: 14
+        max-level: 30
+    AIR_STRIKE:
+        level: 14
+        max-level: 20
+    QUEEN_TAROT:
+        level: 15
+        max-level: 30
+    CARD_THROW:
+        level: 15
+        max-level: 30
+    PHANTOM_BLINK:
+        level: 15
+        max-level: 30
+    MIRAGE_SLOT:
+        level: 15
+        max-level: 30
+    MIRROR_SHURIKEN:
+        level: 15
+        max-level: 20
+    MIRROR_NEEDLES:
+        level: 15
+        max-level: 30
+    MIRROR_DIMENSION:
+        level: 15
+        max-level: 20
+    PUMPKIN_BOMBS:
+        level: 16
+        max-level: 30
+    DRIFT:
+        level: 16
+        max-level: 30
+    SUMMON_SCARECROW:
+        level: 16
+        max-level: 30
+    MIDNIGHT_CROWS:
+        level: 16
+        max-level: 30
+    NIGHTMARE:
+        level: 16
+        max-level: 20
+    FIRE_BALL:
+        level: 17
+        max-level: 30
+    BLINK_:
+        level: 17
+        max-level: 30
+    ARCANE_MISSILE:
+        level: 17
+        max-level: 30
+    FROST_NOVA:
+        level: 17
+        max-level: 30
+    METEOR:
+        level: 17
+        max-level: 30
+    INFERNO_CHAINS:
+        level: 17
+        max-level: 20
+    DOUBLE_STRIKE:
+        level: 18
+        max-level: 30
+    AGILE_STRIKE:
+        level: 18
+        max-level: 30
+    EVASION:
+        level: 18
+        max-level: 30
+    UPPERCUT:
+        level: 18
+        max-level: 30
+    DEADLY_SQUASH:
+        level: 18
+        max-level: 30
+    MULTI_STRIKE:
+        level: 18
+        max-level: 20
+    FOCUS_CHI:
+        level: 19
+        max-level: 30
+    SWIFT_STRIKES:
+        level: 19
+        max-level: 30
+    CHI_BLAST:
+        level: 19
+        max-level: 30
+    ZEN_THROW:
+        level: 19
+        max-level: 30
+    BEADS_OF_KARMA:
+        level: 19
+        max-level: 20
+    COUNTERSTRIKE:
+        level: 19
+        max-level: 30
+    DRAGON_FISTS:
+        level: 19
+        max-level: 20
+    ETERNAL_FLAME:
+        level: 20
+        max-level: 30
+    WHEEL_OF_ETERNAL_FLAME:
+        level: 20
+        max-level: 30
+    INCARNATION:
+        level: 20
+        max-level: 30
+    WILL_O_WISPS:
+        level: 20
+        max-level: 30
+    EMPOWER_MINIONS:
+        level: 20
+        max-level: 30
+    SKELETAL_MINION:
+        level: 20
+        max-level: 20
+    BLOOD_SLASH:
+        level: 21
+        max-level: 30
+    LACERATION:
+        level: 21
+        max-level: 30
+    FLOW_STATE:
+        level: 21
+        max-level: 30
+    SMOKE_BOMB:
+        level: 21
+        max-level: 30
+    PIERCING_SHURIKEN:
+        level: 21
+        max-level: 20
+    DEATH_CHARGE:
+        level: 21
+        max-level: 30
+    FORBIDDEN_ART:
+        level: 21
+        max-level: 20
+    HOLY_STRIKE:
+        level: 22
+        max-level: 30
+    UNBREAKABLE_WILL:
+        level: 22
+        max-level: 30
+    RADIANT_AURA:
+        level: 22
+        max-level: 30
+    HEAVENLY_SHIELD:
+        level: 22
+        max-level: 30
+    HAMMER_OF_JUSTICE:
+        level: 22
+        max-level: 30
+    BOUND_SEAL:
+        level: 22
+        max-level: 20
+    LAST_STAND:
+        level: 22
+        max-level: 20
+    EASTER_SLAM:
+        level: 23
+        max-level: 30
+    CARROT_RUSH:
+        level: 23
+        max-level: 30
+    EASTER_EGGS:
+        level: 23
+        max-level: 30
+    EASTER_ONSLAUGHT:
+        level: 23
+        max-level: 30
+    RAIN_OF_EASTER_EGGS:
+        level: 23
+        max-level: 20
+    SOUL_COLLECTOR:
+        level: 24
+        max-level: 30
+    SOUL_SLICE:
+        level: 24
+        max-level: 30
+    DEATH_SPIN:
+        level: 24
+        max-level: 30
+    REAPING_CLAW:
+        level: 24
+        max-level: 30
+    SURGE:
+        level: 24
+        max-level: 20
+    SOUL_SCYTHE:
+        level: 24
+        max-level: 30
+    GOD_OF_DEATH:
+        level: 24
+        max-level: 20
+    DARK_MONARCH:
+        level: 25
+        max-level: 30
+    DARK_MONARCH_FRIGHTEN:
+        level: 25
+        max-level: 30
+    SHADOW_BURST:
+        level: 25
+        max-level: 30
+    SHADOW_TELEPORT:
+        level: 25
+        max-level: 30
+    SHADOW_KNIGHT:
+        level: 25
+        max-level: 30
+    SHADOW_ARCHER:
+        level: 25
+        max-level: 20
+    BLADES_OF_SHADOW:
+        level: 25
+        max-level: 30
+    SHADOW_DRAGON:
+        level: 25
+        max-level: 20
+    LIGHT_BEAM:
+        level: 26
+        max-level: 30
+    HEAL_BEAM:
+        level: 26
+        max-level: 30
+    SELF_RECOVERY:
+        level: 26
+        max-level: 30
+    HEALING_TOTEM:
+        level: 26
+        max-level: 30
+    TOTEM_FORM:
+        level: 26
+        max-level: 30
+    ANCESTRAL_POWER:
+        level: 26
+        max-level: 20
+    SOUL_STRIKE:
+        level: 27
+        max-level: 30
+    GUARDIANS_DEFENSE:
+        level: 27
+        max-level: 30
+    SPIRIT_GUARDIAN:
+        level: 27
+        max-level: 30
+    MAGICAL_BLADES:
+        level: 27
+        max-level: 30
+    SUMMON_HORSE:
+        level: 27
+        max-level: 30
+    SUMMON_PHOENIX:
+        level: 27
+        max-level: 20
+    BRUTAL_STRIKE:
+        level: 28
+        max-level: 30
+    CHARGE:
+        level: 28
+        max-level: 30
+    RAMPAGE:
+        level: 28
+        max-level: 30
+    SHIELD_BARRIER:
+        level: 28
+        max-level: 30
+    CHAIN_HOOK:
+        level: 28
+        max-level: 30
+    JUDGEMENT:
+        level: 28
+        max-level: 20
+    FROSTBITE:
+        level: 29
+        max-level: 30
+    FROST_STRIKE:
+        level: 29
+        max-level: 30
+    GLACIAL_IMPALEMENT:
+        level: 29
+        max-level: 30
+    ARCTIC_CHARGE:
+        level: 29
+        max-level: 30
+    GLACIER_SMASH:
+        level: 29
+        max-level: 20
+    FROZEN_SHIELD:
+        level: 29
+        max-level: 30
+    PERMAFROST_LANCE:
+        level: 29
+        max-level: 20
+mana:
+    char: ■
+    icon: '&0☠'
+    color:
+        full: BLACK
+        half: GRAY
+        empty: WHITE
+    name: 'Energia Maldita'
+
+skill-slots:
+    1:
+        name: "&aSkill Slot I"
+        unlocked-by-default: true
+    2:
+        name: "&aSkill Slot II"
+        unlocked-by-default: true
+    3:
+        name: "&aSkill Slot III"
+        unlocked-by-default: true
+    4:
+        name: "&aSkill Slot IV"
+        unlocked-by-default: true
+    5:
+        name: "&aSkill Slot V"
+        unlocked-by-default: true
+    6:
+        name: "&aSkill Slot VI"
+        unlocked-by-default: true
+    7:
+        name: "&aSkill Slot VII"
+        unlocked-by-default: true
+    8:
+        name: "&aSkill Slot VIII"
+        unlocked-by-default: true

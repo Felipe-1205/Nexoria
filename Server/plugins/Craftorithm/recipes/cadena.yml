@@ -1,0 +1,7 @@
+type: shapeless
+source:
+- minecraft:iron_nugget
+- mmoitems:MATERIAL:HIERROTIER1
+- minecraft:iron_nugget
+unlock: false
+result: minecraft:chain 2

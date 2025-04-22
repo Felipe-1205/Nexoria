@@ -1,0 +1,40 @@
+name: Fisura de Magma
+lore:
+- Genera una marca arcana en tu enemigo que provoca
+- que sea perseguido por un rayo de magma ardiente,
+- al impactar tu enemigo se verá envuelto en 
+- llamas durante &8{ignite} &7segundos causando un daño
+- inicial de &8{damage} &7puntos de daño
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: FLINT_AND_STEEL
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+ignite:
+  base: 3
+  per-level: 0.3
+damage:
+  base: 4
+  per-level: 1.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 6
+  per-level: 0.3
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: 0.5

@@ -1,0 +1,45 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "block/fance_sprucev2",
+		"particle": "block/fance_spruce"
+	},
+	"elements": [
+		{
+			"from": [5.894, 15, 5.894],
+			"to": [10.106, 15.6318, 10.106],
+			"faces": {
+				"north": {"uv": [9, 8.5, 13.21172, 9], "texture": "#1"},
+				"east": {"uv": [8.5, 8.5, 12.5, 9], "texture": "#1"},
+				"south": {"uv": [2.5, 13, 6.712, 13.5], "texture": "#1"},
+				"west": {"uv": [6.5, 8, 10.712, 8.5], "texture": "#1"},
+				"up": {"uv": [11.5, 0, 15.5, 4], "texture": "#particle"},
+				"down": {"uv": [0, 0, 4.212, 4.212], "texture": "#particle"}
+			}
+		},
+		{
+			"from": [6, 0, 6],
+			"to": [10, 15, 10],
+			"faces": {
+				"north": {"uv": [7.5, 0, 11.5, 15], "texture": "#1"},
+				"east": {"uv": [7.5, 0, 11.5, 15], "texture": "#1"},
+				"south": {"uv": [7.5, 0, 11.5, 15], "texture": "#1"},
+				"west": {"uv": [7.5, 0, 11.5, 15], "texture": "#1"},
+				"up": {"uv": [0, 0, 4, 4], "texture": "#missing"},
+				"down": {"uv": [7.5, 11, 11.5, 15], "texture": "#1"}
+			}
+		},
+		{
+			"from": [6, 15, 6],
+			"to": [10, 16, 10],
+			"faces": {
+				"north": {"uv": [11.5, 10.5, 15.5, 11.5], "texture": "#1"},
+				"east": {"uv": [11.5, 10.5, 15.5, 11.5], "texture": "#1"},
+				"south": {"uv": [11.5, 10.5, 15.5, 11.5], "texture": "#1"},
+				"west": {"uv": [11.5, 10.5, 15.5, 11.5], "texture": "#1"},
+				"up": {"uv": [7.5, 8, 11.5, 12], "texture": "#1"},
+				"down": {"uv": [0, 0, 4, 4], "texture": "#missing"}
+			}
+		}
+	]
+}

@@ -1,0 +1,46 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/shaman_texture/ancetral_circle",
+		"particle": "item/shaman_texture/ancetral_circle"
+	},
+	"elements": [
+		{
+			"from": [-10, 6.5, -10],
+			"to": [26, 6.5, 26],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [8.5, 0.5, 13, 0.5], "texture": "#0"},
+				"east": {"uv": [8.5, 0.75, 13, 0.75], "texture": "#0"},
+				"south": {"uv": [8.5, 0, 13, 0], "texture": "#0"},
+				"west": {"uv": [8.5, 0.25, 13, 0.25], "texture": "#0"},
+				"up": {"uv": [4.5, 4.5, 0, 0], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [4.5, 0, 0, 4.5], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"from": [-6, 9.5, -6],
+			"to": [22, 9.5, 22],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4.75, 8, 8.25, 8], "texture": "#0"},
+				"east": {"uv": [4.75, 8.25, 8.25, 8.25], "texture": "#0"},
+				"south": {"uv": [4.75, 7.5, 8.25, 7.5], "texture": "#0"},
+				"west": {"uv": [4.75, 7.75, 8.25, 7.75], "texture": "#0"},
+				"up": {"uv": [8.25, 3.5, 4.75, 0], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [8.25, 0, 4.75, 3.5], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 140, 0],
+			"translation": [-6.25, -1.5, 6.75],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"translation": [0, 57.25, 0]
+		}
+	}
+}

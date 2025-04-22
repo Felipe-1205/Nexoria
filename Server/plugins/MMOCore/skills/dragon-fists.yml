@@ -1,0 +1,53 @@
+name: Dragon Fists
+lore:
+- '&fSummon spiritual fists and perform an ultimate combo.'
+- ''
+- '&fPalm - Fist - Fist - Palm - Uppercut - Down slam - Ground smash'
+- ''
+- '&bPalm: &fKnock back enemies'
+- '&bFist: &fDamage enemies'
+- '&bUppercut: &fSet enemies airborne'
+- '&bDown slam: &fSlam down enemies'
+- '&bGround smash: &fStun enemies and release a chi aura that heals nearby allies'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&a{heal} Heal'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2196'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+heal:
+  base: 10
+  per-level: 1
+  min: 10
+  max: 12
+duration:
+  base: 3
+  per-level: 0.1
+  min: 3
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 14
+  per-level: -0.1
+  min: 13
+  max: 14

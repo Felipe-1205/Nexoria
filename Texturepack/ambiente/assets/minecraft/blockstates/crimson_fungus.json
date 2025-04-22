@@ -1,0 +1,35 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/crimson_fungus", 
+				"weight": 5
+			},
+			{
+				"model": "block/crimson_fungus",
+				"y": 90, "weight": 5
+			},
+			{
+				"model": "block/crimson_fungus",
+				"y": 180, "weight": 5
+			},
+			{
+				"model": "block/crimson_fungus_2",
+				"y": 180, "weight": 5
+			},
+			{
+				"model": "block/crimson_fungus_1",
+				"y": 180, "weight": 5
+			},
+			{
+				"model": "block/crimson_fungus_1",
+				"weight": 10
+			},
+			{
+				"model": "block/crimson_fungus_2",
+				"weight": 10
+			}
+		]
+
+	}
+}

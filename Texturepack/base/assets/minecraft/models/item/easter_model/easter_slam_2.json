@@ -1,0 +1,28 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/easter_texture/easter_slam_2",
+		"particle": "item/easter_texture/easter_slam_2"
+	},
+	"elements": [
+		{
+			"from": [-1.5, 3.5, 8],
+			"to": [17.5, 22.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 13, 8]},
+			"faces": {
+				"north": {"uv": [3.25, 3.25, 12.75, 12.75], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [12.75, 3.25, 3.25, 12.75], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -29.75, 0],
+			"scale": [3, 3, 3]
+		}
+	}
+}

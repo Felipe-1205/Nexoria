@@ -1,0 +1,35 @@
+name: Hammer Of Justice
+lore:
+- '&eSummon a holy hammer and smash the surface,'
+- '&ecreating light eruptions in the direction'
+- "&eyou're looking at."
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2107'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4

@@ -1,0 +1,1 @@
+son todas las deidades creadas por los dioses de la vida y de la muerte, a pesar de contener una energía superior, no se compara con los primeros dos

@@ -1,0 +1,36 @@
+name: Rageblade
+lore:
+- '&4Golpea a un enemigo con tu hacha, tiene un'
+- '&410% de probabilidad de causar sangrado.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2183'
+damage:
+  base: 4
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 0
+  min: 0
+  max: 2
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.5
+  per-level: -0.1
+  min: 0.2
+  max: 0.5
+
+# 3987CQ8L910B3H

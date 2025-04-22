@@ -1,0 +1,4031 @@
+TABERNEROS:
+  base:
+    material: SMOKER
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: mi stations open culina-vitae
+        delay: 0.0
+        op: true
+    permission:
+    - comida
+    displayed-type: '&5Mesa De Trabajo'
+    name: '&bCulina Vitæ'
+    disable-right-click-consume: true
+    unstackable: true
+    lore:
+    - '&7Click Derecho Para Abrir'
+    sounds:
+      on-consume:
+        sound: ENTITY_GENERIC_EAT
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material CARBONTIER1 1.0..|m material CARBONTIER1 1.0..|m material CARBONTIER1
+            1.0..
+          - m material CARBONTIER1 1.0..|m material PIEDRATIER1 1.0..|m material CARBONTIER1
+            1.0..
+          - m material ROBLETIER1 1.0..|m material ABEDULTIER1 1.0..|m material ABETO
+            1.0..
+          hidden: false
+HERREROS:
+  base:
+    material: ANVIL
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: mi stations open incus-aeternum
+        delay: 0.0
+        op: true
+    permission:
+    - armas
+    displayed-type: '&5Mesa De Trabajo'
+    name: '&bIncus Aeternum'
+    disable-right-click-consume: true
+    unstackable: true
+    lore:
+    - '&7Click Derecho Para Abrir'
+    sounds:
+      on-consume:
+        sound: BLOCK_ANVIL_USE
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material HIERROTIER1 1.0..|m material HIERROTIER1 1.0..|m material HIERROTIER1
+            1.0..
+          - m material HIERROTIER1 1.0..|m material PIEDRATIER1 1.0..|m material HIERROTIER1
+            1.0..
+          - m material ROBLETIER1 1.0..|m material ABEDULTIER1 1.0..|m material ABETO
+            1.0..
+JOYEROS:
+  base:
+    material: SMITHING_TABLE
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: mi stations open ars-luminis
+        delay: 0.0
+        op: true
+    permission:
+    - artefactos
+    displayed-type: '&5Mesa De Trabajo'
+    name: '&bArs Luminis'
+    disable-right-click-consume: true
+    unstackable: true
+    lore:
+    - '&7Click Derecho Para Abrir'
+    sounds:
+      on-consume:
+        sound: BLOCK_SMITHING_TABLE_USE
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material COBRETIER1 1.0..|m material COBRETIER1 1.0..|m material COBRETIER1
+            1.0..
+          - m material COBRETIER1 1.0..|m material PIEDRATIER1 1.0..|m material COBRETIER1
+            1.0..
+          - m material ROBLETIER1 1.0..|m material ABEDULTIER1 1.0..|m material ABETO
+            1.0..
+ALQUIMISTAS:
+  base:
+    material: CAULDRON
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: mi stations open destillarium-arcana
+        delay: 0.0
+        op: true
+    permission:
+    - pociones
+    displayed-type: '&5Mesa De Trabajo'
+    name: '&bDestillarium Arcana'
+    disable-right-click-consume: true
+    unstackable: true
+    lore:
+    - '&7Click Derecho Para Abrir'
+    sounds:
+      on-consume:
+        sound: BLOCK_BREWING_STAND_BREW
+        volume: 1.0
+        pitch: 1.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m material FLINTTIER1 1.0..|m material FLINTTIER1 1.0..|m material FLINTTIER1
+            1.0..
+          - m material FLINTTIER1 1.0..|m material PIEDRATIER1 1.0..|m material FLINTTIER1
+            1.0..
+          - m material ROBLETIER1 1.0..|m material ABEDULTIER1 1.0..|m material ABETO
+            1.0..
+KIT_1:
+  base:
+    material: BRUSH
+    name: '&bKit Basico'
+    displayed-type: '&5Kit'
+    permission:
+    - reparar
+    repair-percent:
+      min: 1.0
+      max: 20.0
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    disable-right-click-consume: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    max-stack-size: 64.0
+KIT_2:
+  base:
+    material: BRUSH
+    name: '&bKit Avanzado'
+    displayed-type: '&5Kit'
+    permission:
+    - reparar
+    repair-percent:
+      min: 21.0
+      max: 40.0
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    disable-right-click-consume: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    max-stack-size: 64.0
+KIT_3:
+  base:
+    material: BRUSH
+    name: '&bKit Especialista'
+    displayed-type: '&5Kit'
+    permission:
+    - reparar
+    repair-percent:
+      min: 41.0
+      max: 60.0
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    disable-right-click-consume: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    max-stack-size: 64.0
+KIT_4:
+  base:
+    material: BRUSH
+    name: '&bKit Experto'
+    displayed-type: '&5Kit'
+    permission:
+    - reparar
+    repair-percent:
+      min: 61.0
+      max: 80.0
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    disable-right-click-consume: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    max-stack-size: 64.0
+KIT_5:
+  base:
+    material: BRUSH
+    name: '&bKit Elite'
+    displayed-type: '&5Kit'
+    permission:
+    - reparar
+    repair-percent:
+      min: 81.0
+      max: 100.0
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    disable-right-click-consume: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    disable-interaction: true
+    max-stack-size: 64.0
+BASEMANA1:
+  base:
+    material: POTION
+    name: '&bPoción de Mana Basico'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER2
+    restore-mana: 20.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+BASEMANA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Mana Basico'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER2
+    restore-mana: 20.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+BASEMANA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Mana Basico'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER2
+    restore-mana: 20.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+AVANZADAMANA1:
+  base:
+    material: POTION
+    name: '&bPoción de Mana Avanzado'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER3
+    restore-mana: 40.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+AVANZADAMANA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Mana Avanzado'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER3
+    restore-mana: 40.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+AVANZADAMANA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Mana Avanzado'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: mana
+    disable-crafting: true
+    disable-smelting: true
+    disable-enchanting: true
+    disable-smithing: true
+    tier: TIER3
+    restore-mana: 40.0
+    max-stack-size: 64.0
+    potion-color: 255 255 255
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+
+# MUFFIN
+MUFFIN1:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Semillas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+MUFFIN2:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Morazul'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+MUFFIN3:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Limon'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+MUFFIN4:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Frambuesa'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+MUFFIN5:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Chocholate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+MUFFIN6:
+  base:
+    material: COOKIE
+    name: '&bMuffin de Calabaza'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 10.0
+        amplifier: 3.0
+
+# SANDWICHES
+SANDWICH1:
+  base:
+    material: COOKIE
+    name: '&bSandwich Vegetariano'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+SANDWICH2:
+  base:
+    material: COOKIE
+    name: '&bSandwich de carnes'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+SANDWICH3:
+  base:
+    material: COOKIE
+    name: '&bSandwich Dulce y Salado'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+SANDWICH4:
+  base:
+    material: COOKIE
+    name: '&bSandwich Jamon y Queso'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+SANDWICH5:
+  base:
+    material: COOKIE
+    name: '&bSandwich de Queso'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+SANDWICH6:
+  base:
+    material: COOKIE
+    name: '&bSandwich de Albondigas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 20.0
+        amplifier: 3.0
+
+# PAPAS
+PAPAS1:
+  base:
+    material: COOKIE
+    name: '&bPapas Fritas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 2.0
+      SPEED:
+        duration: 15.0
+        amplifier: 3.0
+PAPAS2:
+  base:
+    material: COOKIE
+    name: '&bBolitas de Papa'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 2.0
+      SPEED:
+        duration: 15.0
+        amplifier: 3.0
+PAPAS3:
+  base:
+    material: COOKIE
+    name: '&bAros de Cebolla'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 2.0
+      SPEED:
+        duration: 15.0
+        amplifier: 3.0
+PAPAS4:
+  base:
+    material: COOKIE
+    name: '&bPapa Rellena'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 2.0
+      SPEED:
+        duration: 15.0
+        amplifier: 3.0
+
+# PIZZA
+PIZZA1:
+  base:
+    material: COOKIE
+    name: '&bPizza con Pina'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HASTE:
+        duration: 5.0
+        amplifier: 4.0
+PIZZA2:
+  base:
+    material: COOKIE
+    name: '&bPizza de Pepperoni'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HASTE:
+        duration: 5.0
+        amplifier: 4.0
+PIZZA3:
+  base:
+    material: COOKIE
+    name: '&bPizza Vegetariana'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HASTE:
+        duration: 5.0
+        amplifier: 4.0
+
+# SODA
+SODA1:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bSoda de Cereza'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 30.0
+        amplifier: 2.0
+SODA2:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bSoda de Cola'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 30.0
+        amplifier: 2.0
+SODA3:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bSoda de Crema'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 30.0
+        amplifier: 2.0
+SODA4:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bSoda de Mora'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 30.0
+        amplifier: 2.0
+SODA5:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bSoda de Naranja'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 30.0
+        amplifier: 2.0
+
+# TE
+TE1:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTe de Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+TE2:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTe de Fresa'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+TE3:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTe de Mango'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+TE4:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTe Verde'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+TE5:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTaza de Te'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+TE6:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bJarra de Te'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+
+# TACO
+TACO1:
+  base:
+    material: COOKIE
+    name: '&bTaco de Pez'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      JUMP_BOOST:
+        duration: 10.0
+        amplifier: 4.0
+TACO2:
+  base:
+    material: COOKIE
+    name: '&bTaco de Pollo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      JUMP_BOOST:
+        duration: 10.0
+        amplifier: 4.0
+TACO3:
+  base:
+    material: COOKIE
+    name: '&bTaco Normal'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      JUMP_BOOST:
+        duration: 10.0
+        amplifier: 4.0
+
+# QUESO
+QUESO1:
+  base:
+    material: COOKIE
+    name: '&bQueso Emmental'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      REGENERATION:
+        duration: 5.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 5.0
+        amplifier: 1.0
+QUESO2:
+  base:
+    material: COOKIE
+    name: '&bQueso Dorset'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      REGENERATION:
+        duration: 5.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 5.0
+        amplifier: 1.0
+# WAFFLE
+WAFFLE1:
+  base:
+    material: COOKIE
+    name: '&bWaffles y Pollo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 15.0
+        amplifier: 2.0
+      HASTE:
+        duration: 15.0
+        amplifier: 1.0
+      HUNGER:
+        duration: 15.0
+        amplifier: 3.0
+WAFFLE2:
+  base:
+    material: COOKIE
+    name: '&bWaffle Casual'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      ABSORPTION:
+        duration: 15.0
+        amplifier: 2.0
+      HASTE:
+        duration: 15.0
+        amplifier: 1.0
+      HUNGER:
+        duration: 15.0
+        amplifier: 3.0
+
+# BATIDO
+BATIDO1:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Banana'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO2:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO3:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Chocoleche'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO4:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Fresa'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO5:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Galletas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO6:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Mantequilla de Mani'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO7:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Menta'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO8:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido Verde Misterioso'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+BATIDO9:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBatido de Vainilla'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 2.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+
+# GOMITAS
+GOMITAS1:
+  base:
+    material: COOKIE
+    name: '&bGomitas Verdes'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      LUCK:
+        duration: 20.0
+        amplifier: 5.0
+      SLOW_FALLING:
+        duration: 20.0
+        amplifier: 2.0
+GOMITAS2:
+  base:
+    material: COOKIE
+    name: '&bGomitas Naranjas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      LUCK:
+        duration: 20.0
+        amplifier: 5.0
+      SLOW_FALLING:
+        duration: 20.0
+        amplifier: 2.0
+GOMITAS3:
+  base:
+    material: COOKIE
+    name: '&bGomitas Azules'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      LUCK:
+        duration: 20.0
+        amplifier: 5.0
+      SLOW_FALLING:
+        duration: 20.0
+        amplifier: 2.0
+
+# HELADOS Y CONOS
+HELADOCONO1:
+  base:
+    material: COOKIE
+    name: '&bCono Azul'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO2:
+  base:
+    material: COOKIE
+    name: '&bCono Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO3:
+  base:
+    material: COOKIE
+    name: '&bCono Multisabor'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO4:
+  base:
+    material: COOKIE
+    name: '&bCono Rojo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO5:
+  base:
+    material: COOKIE
+    name: '&bCono Verde'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO6:
+  base:
+    material: COOKIE
+    name: '&bHelado de Menta'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO7:
+  base:
+    material: COOKIE
+    name: '&bHelado de Zanahoria'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO8:
+  base:
+    material: COOKIE
+    name: '&bHelado de Chocomenta'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO9:
+  base:
+    material: COOKIE
+    name: '&bHelado de Fresa'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO10:
+  base:
+    material: COOKIE
+    name: '&bHelado Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO11:
+  base:
+    material: COOKIE
+    name: '&bHelado de Baya Brillante'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+HELADOCONO12:
+  base:
+    material: COOKIE
+    name: '&bHelado de Bayas'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      FIRE_RESISTANCE:
+        duration: 30.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 30.0
+        amplifier: 2.0
+
+# SUSHI
+SUSHI1:
+  base:
+    material: COOKIE
+    name: '&bUramaki'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      INSTANT_HEALTH:
+        duration: 1.0
+        amplifier: 3.0
+SUSHI2:
+  base:
+    material: COOKIE
+    name: '&bEmaki'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      INSTANT_HEALTH:
+        duration: 1.0
+        amplifier: 3.0
+
+# HAMBURGUESAS
+HAMBURGUESAS1:
+  base:
+    material: COOKIE
+    name: '&bHamburguesa Normal'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 3.0
+      SLOWNESS:
+        duration: 15.0
+        amplifier: 2.0
+      REGENERATION:
+        duration: 15.0
+        amplifier: 5.0
+HAMBURGUESAS2:
+  base:
+    material: COOKIE
+    name: '&bHamburguesa de Queso'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HUNGER:
+        duration: 15.0
+        amplifier: 3.0
+      SLOWNESS:
+        duration: 15.0
+        amplifier: 2.0
+      REGENERATION:
+        duration: 15.0
+        amplifier: 5.0
+
+# DONAS
+DONAS1:
+  base:
+    material: COOKIE
+    name: '&bDona Normal'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      LUCK:
+        duration: 10.0
+        amplifier: 3.0
+      ABSORPTION:
+        duration: 10.0
+        amplifier: 4.0
+DONAS2:
+  base:
+    material: COOKIE
+    name: '&bDona de Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      LUCK:
+        duration: 10.0
+        amplifier: 3.0
+      ABSORPTION:
+        duration: 10.0
+        amplifier: 4.0
+
+# MANZANACARAMELO
+MANZANACARAMELO1:
+  base:
+    material: COOKIE
+    name: '&bManzana con Caramelo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      STRENGTH:
+        duration: 10.0
+        amplifier: 3.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+MANZANACARAMELO2:
+  base:
+    material: COOKIE
+    name: '&bManzana Dorada con Caramelo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      STRENGTH:
+        duration: 10.0
+        amplifier: 3.0
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+
+# MILHOJAS
+MILHOJAS:
+  base:
+    material: COOKIE
+    name: '&bMilhoja'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      SPEED:
+        duration: 20.0
+        amplifier: 2.0
+      HEALTH_BOOST:
+        duration: 20.0
+        amplifier: 2.0
+
+# NUGGETS DE POLLO
+NUGGETSDEPOLLO:
+  base:
+    material: COOKIE
+    name: '&bNuggets de Pollo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HASTE:
+        duration: 10.0
+        amplifier: 4.0
+      NAUSEA:
+        duration: 10.0
+        amplifier: 2.0
+
+# PANCAKES
+PANCAKES:
+  base:
+    material: COOKIE
+    name: '&bPancakes'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      SPEED:
+        duration: 20.0
+        amplifier: 2.0
+      INSTANT_HEALTH:
+        duration: 1.0
+        amplifier: 2.0
+
+# PANDEAJO
+PANDEAJO:
+  base:
+    material: COOKIE
+    name: '&bPan de Ajo'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 5.0
+    restore-saturation: 5.0
+    effects:
+      REGENERATION:
+        duration: 30.0
+        amplifier: 2.0
+      INSTANT_HEALTH:
+        duration: 1.0
+        amplifier: 1.0
+
+# SALCHICHADEMAIZ
+SALCHICHADEMAIZ:
+  base:
+    material: COOKIE
+    name: '&bSalchicha con Maiz'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 7.0
+    restore-saturation: 7.0
+    effects:
+      STRENGTH:
+        duration: 10.0
+        amplifier: 2.0
+      FIRE_RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+
+# PERROCALIENTE
+PERROCALIENTE:
+  base:
+    material: COOKIE
+    name: '&bPerro Caliente'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 3.0
+      FIRE_RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+
+# SPAGHETTI
+SPAGHETTI:
+  base:
+    material: COOKIE
+    name: '&bSpaghetti'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 2.0
+      REGENERATION:
+        duration: 10.0
+        amplifier: 2.0
+
+# PRETZEL
+PRETZEL:
+  base:
+    material: COOKIE
+    name: '&bPretzel'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      HASTE:
+        duration: 15.0
+        amplifier: 3.0
+      GLOWING:
+        duration: 15.0
+        amplifier: 1.0
+
+# PIE DE MANZANA
+PIEDEMANZANA:
+  base:
+    material: COOKIE
+    name: '&bPie de Manzana'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      SPEED:
+        duration: 20.0
+        amplifier: 3.0
+      LUCK:
+        duration: 20.0
+        amplifier: 3.0
+
+# POLLOFRITO
+POLLOFRITO:
+  base:
+    material: COOKIE
+    name: '&bPollo Frito'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      HASTE:
+        duration: 20.0
+        amplifier: 2.0
+      STRENGTH:
+        duration: 20.0
+        amplifier: 2.0
+
+# GRANOSDEMAIZ
+GRANOSDEMAIZ:
+  base:
+    material: COOKIE
+    name: '&bGranos de Maiz'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      DOLPHINS_GRACE:
+        duration: 20.0
+        amplifier: 1.0
+
+# HUEVOFRITO
+HUEVOFRITO:
+  base:
+    material: COOKIE
+    name: '&bHuevo Frito'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      RESISTANCE:
+        duration: 10.0
+        amplifier: 1.0
+      ABSORPTION:
+        duration: 10.0
+        amplifier: 4.0
+
+# TOCINO
+TOCINO:
+  base:
+    material: COOKIE
+    name: '&bTocino'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      STRENGTH:
+        duration: 2.0
+        amplifier: 4.0
+      HUNGER:
+        duration: 15.0
+        amplifier: 4.0
+
+# MIEL FINA
+MIELFINA:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bMiel Fina'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      HEALTH_BOOST:
+        duration: 30.0
+        amplifier: 3.0
+      REGENERATION:
+        duration: 30.0
+        amplifier: 2.0
+
+# VINO
+VINO:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bVino'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      NAUSEA:
+        duration: 60.0
+        amplifier: 1.0
+      INVISIBILITY:
+        duration: 60.0
+        amplifier: 1.0
+
+# RON
+RON:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bRon'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 3.0
+    restore-saturation: 3.0
+    effects:
+      BLINDNESS:
+        duration: 20.0
+        amplifier: 1.0
+      NAUSEA:
+        duration: 20.0
+        amplifier: 1.0
+      STRENGTH:
+        duration: 20.0
+        amplifier: 2.0
+      SPEED:
+        duration: 20.0
+        amplifier: 2.0
+
+# BRANDY
+BRANDY:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bBrandy'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 3.0
+    restore-saturation: 3.0
+    effects:
+      LEVITATION:
+        duration: 5.0
+        amplifier: 3.0
+      POISON:
+        duration: 5.0
+        amplifier: 4.0
+
+# CHOCOLATE
+CHOCOLATE:
+  base:
+    material: COOKIE
+    name: '&bBarra de Chocolate'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      SPEED:
+        duration: 10.0
+        amplifier: 3.0
+      HUNGER:
+        duration: 10.0
+        amplifier: 3.0
+
+# ALGODON DE AZUCAR
+ALGODONDEAZUCAR:
+  base:
+    material: COOKIE
+    name: '&bAlgodon de Azucar'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      SLOW_FALLING:
+        duration: 5.0
+        amplifier: 2.0
+      REGENERATION:
+        duration: 5.0
+        amplifier: 1.0
+
+# CROISSANT
+CROISSANT:
+  base:
+    material: COOKIE
+    name: '&bCroissant'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      ABSORPTION:
+        duration: 15.0
+        amplifier: 2.0
+      SPEED:
+        duration: 15.0
+        amplifier: 2.0
+
+# PALETA
+PALETA:
+  base:
+    material: COOKIE
+    name: '&bPaleta'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      INSTANT_HEALTH:
+        duration: 10.0
+        amplifier: 3.0
+      LUCK:
+        duration: 10.0
+        amplifier: 3.0
+
+# BURRITO
+BURRITO:
+  base:
+    material: COOKIE
+    name: '&bBurrito'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 8.0
+    restore-saturation: 8.0
+    effects:
+      REGENERATION:
+        duration: 5.0
+        amplifier: 2.0
+      FIRE_RESISTANCE:
+        duration: 5.0
+        amplifier: 1.0
+
+# CALZONE
+CALZONE:
+  base:
+    material: COOKIE
+    name: '&bCalzone'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      SLOWNESS:
+        duration: 10.0
+        amplifier: 2.0
+      ABSORPTION:
+        duration: 10.0
+        amplifier: 5.0
+
+# CAFÉ
+CAFE:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bCafe'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 4.0
+    restore-saturation: 4.0
+    effects:
+      SPEED:
+        duration: 20.0
+        amplifier: 4.0
+      BLINDNESS:
+        duration: 20.0
+        amplifier: 1.0
+
+# BROWNIE
+BROWNIE:
+  base:
+    material: COOKIE
+    name: '&bBrownie'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      LUCK:
+        duration: 10.0
+        amplifier: 3.0
+      HASTE:
+        duration: 10.0
+        amplifier: 2.0
+
+# DAMASCO
+DAMASCO:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bDamasco'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER3
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 6.0
+    restore-saturation: 6.0
+    effects:
+      REGENERATION:
+        duration: 20.0
+        amplifier: 3.0
+      WATER_BREATHING:
+        duration: 20.0
+        amplifier: 1.0
+
+# DULCE VERDE
+DULCEVERDE:
+  base:
+    material: COOKIE
+    name: '&bDulce Verde'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER2
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 2.0
+    restore-saturation: 2.0
+    effects:
+      NIGHT_VISION:
+        duration: 30.0
+        amplifier: 1.0
+      GLOWING:
+        duration: 30.0
+        amplifier: 1.0
+
+# JAMON GRANDE
+JAMONGRANDE:
+  base:
+    material: COOKIE
+    name: '&bJamon Grande'
+    displayed-type: '&5Comida'
+    item-cooldown: 20.0
+    cooldown-reference: comida
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 12.0
+    restore-saturation: 12.0
+    effects:
+      ABSORPTION:
+        duration: 5.0
+        amplifier: 2.0
+      SLOWNESS:
+        duration: 5.0
+        amplifier: 2.0
+
+# COMIDAS VANILLA
+SOPAHONGOS:
+  base:
+    material: MUSHROOM_STEW
+    name: '&bSopa de Hongo'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - m material HONGOROJO 1.0..|m material HONGOCAFE 1.0..|m material HONGOROJO
+            1.0..
+          - v AIR 0 1..|m material HONGOROJO 1.0..|v AIR 0 1..
+PAPAHORNEADA:
+  base:
+    material: BAKED_POTATO
+    name: '&bPapa Horneada'
+    displayed-type: '&5Comida'
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+SOPABETABEL:
+  base:
+    material: BEETROOT_SOUP
+    name: '&bSopa de Betabel'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+BISTECASADO:
+  base:
+    material: COOKED_BEEF
+    name: '&bBistec Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+CHULETASADA:
+  base:
+    material: COOKED_PORKCHOP
+    name: '&bChuleta Asada'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+CORDEROASADO:
+  base:
+    material: COOKED_MUTTON
+    name: '&bCordero Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+POLLOASADO:
+  base:
+    material: COOKED_CHICKEN
+    name: '&bPollo Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+CONEJOASADO:
+  base:
+    material: COOKED_RABBIT
+    name: '&bConejo Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+BOTELLAMIEL:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTarro de Miel'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+PASTELCALABAZA:
+  base:
+    material: PUMPKIN_PIE
+    name: '&bPastel de Calabaza'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+BACALAOASADO:
+  base:
+    material: COOKED_COD
+    name: '&bBacalao Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+SALMONASADO:
+  base:
+    material: COOKED_SALMON
+    name: '&bSalmón Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+PAN:
+  base:
+    material: BREAD
+    name: '&bPan'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+GALLETA:
+  base:
+    material: COOKIE
+    name: '&bGalleta'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+SOPACONEJOS:
+  base:
+    material: RABBIT_STEW
+    name: '&bSopa de Conejo'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 1.0
+    restore-saturation: 1.0
+
+# especiales
+
+PERGAMINOXP_1:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bPergamino de XP Principiante'
+    displayed-type: '&5Recompensa'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: xpget 75
+        delay: 0.0
+        op: true
+PERGAMINOXP_2:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bPergamino de XP Mediano'
+    displayed-type: '&5Recompensa'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: xpget 150
+        delay: 0.0
+        op: true
+PERGAMINOXP_3:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bPergamino de XP Experto'
+    displayed-type: '&5Recompensa'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: xpget 300
+        delay: 0.0
+        op: true
+
+PUNTOSATRIBUTOS:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bPergamino de Puntos De Atributo'
+    displayed-type: '&5Recompensa'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: pointget attribute-points 1
+        delay: 0.0
+        op: true
+PUNTOSHABILIDAD:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bPergamino de Puntos De Habilidad'
+    displayed-type: '&5Recompensa'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: pointget skill-points 1
+        delay: 0.0
+        op: true
+KIT_INICIO:
+  base:
+    material: SKULL_BANNER_PATTERN
+    name: '&bKit De Inicio'
+    displayed-type: '&5Kit'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: kitinicio
+        delay: 0.0
+        op: true
+
+
+# MASCOTAS
+ARDILLA:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bArdilla'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ardilla
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+BESTIAYAK:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bBestia Yak'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bestiayak
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CABALLO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCaballo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caballo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+BULBO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bBulbo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CAMALEON:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCamaleón'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.camaleon
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CASTOR:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCastor'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.castor
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CARACOL:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCaracol'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caracol
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CIERVO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCiervo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ciervo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CONEJO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bConejo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.conejo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+CUERVO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bCuervo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.cuervo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+ELEFANTE:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bElefante'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.elefante
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+ERIZO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bErizo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.erizo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+GATO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bGato'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+PATO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bPato'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.pato
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+TORONEGRO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bToro Negro'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.toronegro
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+RINOCERONTE:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bRinoceronte'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.rinoceronte
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+TORTUGA:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bTortuga'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.tortuga
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+YAKMONTANA:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bYak de Montaña'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.yakmontana
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+LOBO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bLobo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+GRIFO:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Mascota'
+    name: '&bGrifo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.grifo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &4&lMascota'
+
+# SKINS MASCOTAS
+# ARDILLAS
+SKINARDILLA1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bArdilla Gris'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ardilla.gris
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINARDILLA2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bArdilla Roja'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ardilla.roja
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS CABALLOS
+SKINCABALLO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCaballo Blanco'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caballo.blanco
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCABALLO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCaballo Marrón'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caballo.marron
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCABALLO3:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCaballo Moteado'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caballo.moteado
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCABALLO4:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCaballo Saltarín'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.caballo.saltain
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS DE BULBO
+SKINBULBO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bBulbo Cáctus'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo.cactus
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINBULBO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bBulbo Hongo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo.hongo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINBULBO3:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bBulbo Seta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo.seta
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINBULBO4:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bBulbo Girasol'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo.girasol
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINBULBO5:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bBulbo de Rosa Negra'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.bulbo.rosanegra
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+
+# SKINS DE CIERVO
+SKINCIERVO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCierva'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ciervo.hembra
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCIERVO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bCiervo Bebé'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.ciervo.bebe
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS DE CONEJO
+SKINCONEJO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bConejo Marrón'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.conejo.marron
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCONEJO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bConejo Gris'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.conejo.gris
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCONEJO3:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bConejo Manchado'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.conejo.manchado
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINCONEJO4:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bConejo Negro'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.conejo.negro
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS DE GATOS
+SKINGATO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Siames'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.siames
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINGATO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Escoses'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.escoses
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINGATO3:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Munchkin'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.munchkin
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINGATO4:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Coon'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.coon
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINGATO5:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Caído'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.caido
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINGATO6:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGato Europeo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.gato.europeo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS DE PATOS
+SKINPATO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bPato hembra'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.pato.hembra
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS TORTUGA
+SKINTORTUGA1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bTortuga Real'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.tortuga.real
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS LOBO
+SKINLOBO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Cafe'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.marron
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO2:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Espectral'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.fantasma
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO3:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Gris'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.gris
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO4:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Gris Azulado'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.azulado
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO5:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Negro'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.negro
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO6:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Caido'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.malvado
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO7:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Marron'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.oscuro
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+SKINLOBO8:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bLobo Rojo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.lobo.rojo
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+# SKINS grifo
+SKINGRIFO1:
+  base:
+    material: GOAT_HORN
+    disable-interaction: true
+    displayed-type: '&5Skin de Mascota'
+    name: '&bGrifo Cuervo'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    commands:
+      cmd0:
+        format: permisoget mcpets.grifo.negro
+        delay: 0.0
+        op: true
+    lore:
+    - '&7Usa este item para'
+    - '&7conseguir una &a&lSkin de Mascota'
+
+# COMIDAS VANILLA TABERNEROS
+SOPAHONGOSTABERNERO:
+  base:
+    material: MUSHROOM_STEW
+    name: '&bSopa de Hongo'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+PAPAHORNEADATABERNERO:
+  base:
+    material: BAKED_POTATO
+    name: '&bPapa Horneada'
+    displayed-type: '&5Comida'
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+SOPABETABELTABERNERO:
+  base:
+    material: BEETROOT_SOUP
+    name: '&bSopa de Betabel'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+BISTECASADOTABERNERO:
+  base:
+    material: COOKED_BEEF
+    name: '&bBistec Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+CHULETASADATABERNERO:
+  base:
+    material: COOKED_PORKCHOP
+    name: '&bChuleta Asada'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+CORDEROASADOTABERNERO:
+  base:
+    material: COOKED_MUTTON
+    name: '&bCordero Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+POLLOASADOTABERNERO:
+  base:
+    material: COOKED_CHICKEN
+    name: '&bPollo Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+CONEJOASADOTABERNERO:
+  base:
+    material: COOKED_RABBIT
+    name: '&bConejo Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+BOTELLAMIELTABERNERO:
+  base:
+    material: HONEY_BOTTLE
+    name: '&bTarro de Miel'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+PASTELCALABAZATABERNERO:
+  base:
+    material: PUMPKIN_PIE
+    name: '&bPastel de Calabaza'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+BACALAOASADOTABERNERO:
+  base:
+    material: COOKED_COD
+    name: '&bBacalao Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+SALMONASADOTABERNERO:
+  base:
+    material: COOKED_SALMON
+    name: '&bSalmón Asado'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+PANTABERNERO:
+  base:
+    material: BREAD
+    name: '&bPan'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+GALLETATABERNERO:
+  base:
+    material: COOKIE
+    name: '&bGalleta'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+SOPACONEJOSTABERNERO:
+  base:
+    material: RABBIT_STEW
+    name: '&bSopa de Conejo'
+    displayed-type: '&5Comida'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    tier: TIER1
+    disable-enchanting: true
+    vanilla-eating: true
+    restore-food: 10.0
+    restore-saturation: 10.0
+UNLOCK:
+  base:
+    material: APPLE
+    commands:
+      cmd0:
+        format: mmocore admin skill unlock <%player%> ARCANE_BLAST
+        delay: 0.0
+        console: true

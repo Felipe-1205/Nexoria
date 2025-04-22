@@ -1,0 +1,34 @@
+name: Shotgun Blast
+lore:
+- '&7Blast your enemies with your shotgun.'
+- '&7You get recoiled by the explosion'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2074'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 3
+  per-level: -0.1
+  min: 2
+  max: 3

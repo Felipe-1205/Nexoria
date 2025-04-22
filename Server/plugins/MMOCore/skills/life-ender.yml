@@ -1,0 +1,45 @@
+name: Hirosaki
+lore:
+- Aprovecha el poder del Fin
+- y convoca un meteorito devastador
+- que ejecuta &8{damage} &7puntos de daño a
+- todos los que se encuentren en el área
+- de &8{radius} &7bloques alrededor de la
+- zona de impacto además de mandarlos a 
+- volar &8{knockback} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: END_CRYSTAL
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 6
+  per-level: 1
+knockback:
+  base: 3
+  per-level: 1
+radius:
+  base: 5
+  per-level: 1

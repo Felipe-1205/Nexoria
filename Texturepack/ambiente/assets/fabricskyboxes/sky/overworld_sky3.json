@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "texture": "minecraft:optifine/sky/world0/clouds03.png",
+  "blend": {
+    "type": "custom",
+    "blender": {
+      "sourceFactor": 1,
+      "destinationFactor": 769,
+      "equation": 32774,
+      "redAlphaEnabled": true,
+      "greenAlphaEnabled": true,
+      "blueAlphaEnabled": true,
+      "alphaEnabled": false
+    }
+  },
+  "properties": {
+    "priority": 3,
+    "fade": {
+      "startFadeIn": 12000,
+      "endFadeIn": 12750,
+      "startFadeOut": 12833,
+      "endFadeOut": 13166
+    },
+    "rotation": {
+      "axis": [
+        0.0,
+        -90.0,
+        0.0
+      ],
+      "rotationSpeedY": -0.8
+    },
+    "transitionInDuration": 20,
+    "transitionOutDuration": 20
+  },
+  "conditions": {
+    "weather": [
+      "clear",
+      "snow"
+    ],
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  }
+}

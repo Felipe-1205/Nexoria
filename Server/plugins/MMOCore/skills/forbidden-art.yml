@@ -1,0 +1,39 @@
+name: Forbidden Art
+lore:
+- '&cEnter shadow mode and dash forwards,'
+- '&crapidly piercing your enemies 5 times.'
+- '&cYou perform a spinnning slash, taking your'
+- '&cenemies to the air and slashing them multiple'
+- '&ctimes. You perform a final strike, bringing'
+- '&cyour enemies to the ground causing'
+- '&caftereffect damages moments later.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2116'
+damage:
+  base: 7
+  per-level: 1
+  min: 7
+  max: 10
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: -0.1
+  min: 6
+  max: 7

@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/nocsy_drakonin_firespell"},"elements":[{"from":[7.688147,-3.6778593,-3.8884296],"to":[7.688147,19.32214,19.11157],"faces":{"east":{"uv":[10.5,6.0,7.625,8.875],"tintindex":0,"rotation":0,"texture":"#0"},"west":{"uv":[7.625,6.0,10.5,8.875],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

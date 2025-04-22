@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:HIERROTIER1
+unlock: false
+result: minecraft:iron_nugget 9

@@ -1,0 +1,37 @@
+FROST_STRIKE:
+    mythicmobs-skill-id: Frost_Strike
+    modifiers:
+    - damage
+
+GLACIAL_IMPALEMENT:
+    mythicmobs-skill-id: Glacial_Impalement
+    modifiers:
+    - damage
+    
+FROSTBITE:
+    mythicmobs-skill-id: Frostbite
+    passive-type: TIMER
+    
+ARCTIC_CHARGE:
+    mythicmobs-skill-id: Arctic_Charge
+    modifiers:
+    - damage
+    
+GLACIER_SMASH:
+    mythicmobs-skill-id: Glacier_Smash
+    modifiers:
+    - damage
+    - duration
+    
+FROZEN_SHIELD:
+    mythicmobs-skill-id: Frozen_Shield
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - duration
+    
+PERMAFROST_LANCE:
+    mythicmobs-skill-id: Permafrost_Lance
+    modifiers:
+    - damage
+    - duration

@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:ROBLEOSCUROTIER2
+unlock: false
+result: minecraft:dark_oak_planks 4

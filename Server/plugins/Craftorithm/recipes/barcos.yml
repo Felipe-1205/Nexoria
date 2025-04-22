@@ -1,0 +1,9 @@
+type: shapeless
+source:
+- minecraft:oak_planks
+- minecraft:oak_planks
+- minecraft:oak_planks
+- minecraft:oak_planks
+- minecraft:oak_planks
+unlock: false
+result: minecraft:oak_boat

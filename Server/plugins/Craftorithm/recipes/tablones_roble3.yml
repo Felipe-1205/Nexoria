@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:ROBLETIER1
+unlock: false
+result: minecraft:oak_planks 4

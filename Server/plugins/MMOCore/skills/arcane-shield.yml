@@ -1,0 +1,28 @@
+name: Arcane Shield
+lore:
+- 'Formas 2 escudos de maná que bloquean'
+- 'cualquier ataque, se regeneran luego de un tiempo.'
+- ''
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2133'
+passive-type: TIMER
+timer:
+  base: 20
+  per-level: 0
+  min: 20
+  max: 20
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

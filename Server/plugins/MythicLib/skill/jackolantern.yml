@@ -1,0 +1,23 @@
+PUMPKIN_BOMBS:
+    mythicmobs-skill-id: Pumpkin_Bombs
+    modifiers:
+    - damage
+
+DRIFT:
+    mythicmobs-skill-id: Drift
+
+SUMMON_SCARECROW:
+    mythicmobs-skill-id: Summon_Scarecrow
+    modifiers:
+    - damage
+    
+MIDNIGHT_CROWS:
+    mythicmobs-skill-id: Midnight_Crows
+    modifiers:
+    - damage
+    
+NIGHTMARE:
+    mythicmobs-skill-id: Nightmare
+    modifiers:
+    - damage
+    - heal

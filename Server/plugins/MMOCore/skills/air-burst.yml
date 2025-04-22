@@ -1,0 +1,30 @@
+name: Air Burst
+lore:
+- '&aWhen sprinting, you charge an air bubble which'
+- '&aexplodes after some time, pushing away nearby enemies.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&c{duration}s Duration'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2172'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

@@ -1,0 +1,46 @@
+# Attribute ID
+fuerza:
+    name: Fuerza
+    max-points: 100
+    buff:
+        physical_damage: 0.5
+        critical_strike_chance: 0.2
+        critical_strike_power: 0.5
+constitucion:
+    name: Constitucion
+    max-points: 100
+    buff:
+        max_health: 1%
+        health_regeneration: 1%
+        armor: 0.05
+sabiduria:
+    name: Sabiduria
+    max-points: 100
+    buff:
+        skill_damage: 0.5
+        skill_critical_strike_chance: 0.2
+        skill_critical_strike_power: 0.5
+carisma:
+    name: Carisma
+    max-points: 100
+    buff:
+        speed_malus_reduction: 0.5
+        luck: 0.5
+        additional_experience: 0.5
+destreza:
+    name: Destreza
+    max-points: 100
+    buff:
+        movement_speed: 0.25%
+        max_stamina: 1%
+        stamina_regeneration: 1%
+inteligencia:
+    name: Inteligencia
+    max-points: 100
+    buff:
+        max_mana: 1%
+        mana_regeneration: 1%
+        cooldown_reduction: 0.5
+
+
+

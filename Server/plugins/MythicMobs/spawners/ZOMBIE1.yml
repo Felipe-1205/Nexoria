@@ -1,0 +1,26 @@
+ZOMBIE1:
+  MobName: ZOMBIEBASICO
+  World: principal
+  X: -976
+  Y: 74
+  Z: -1676
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 2.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '5'
+  MobLevel: '1'
+  MobsPerSpawn: 5
+  Cooldown: 5
+  Warmup: 0
+  ActivationRange: 15.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

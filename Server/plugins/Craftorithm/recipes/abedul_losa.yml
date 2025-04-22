@@ -1,0 +1,7 @@
+type: shaped
+shape:
+- 'aaa'
+source:
+  a: minecraft:birch_planks
+unlock: false
+result: minecraft:birch_slab 6

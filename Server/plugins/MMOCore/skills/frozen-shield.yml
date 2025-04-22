@@ -1,0 +1,41 @@
+name: Frozen Shield
+lore:
+- '&bSummon your frozen shield, disallowing enemies to approach'
+- '&byou and blocking projectiles. After a few seconds you push'
+- '&byour frozen shield forwards, knocking back enemies.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2189'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+duration:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 9
+  per-level: -0.1
+  min: 8
+  max: 9

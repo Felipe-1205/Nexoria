@@ -1,0 +1,62 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/ninja_samurai_texture/flow_state_transparent",
+		"1": "item/ninja_samurai_texture/flow_state",
+		"particle": "item/ninja_samurai_texture/flow_state_transparent"
+	},
+	"elements": [
+		{
+			"from": [0.50331, 8, 4.86396],
+			"to": [19.50331, 8, 23.86396],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"up": {"uv": [11.75, 7.25, 4.5, 0], "texture": "#1"},
+				"down": {"uv": [11.75, 0, 4.5, 7.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-8.2138, 8.025, -1.3871],
+			"to": [10.7862, 8.025, 17.6129],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 4.75, 0], "texture": "#1"},
+				"up": {"uv": [11.75, 7.25, 4.5, 0], "rotation": 90, "texture": "#1"},
+				"down": {"uv": [11.75, 0, 4.5, 7.25], "rotation": 270, "texture": "#1"}
+			}
+		},
+		{
+			"from": [-1.58345, 7.975, -10.41655],
+			"to": [17.41655, 7.975, 8.58345],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 4.75, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 4.75, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 4.75, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 4.75, 0], "texture": "#0"},
+				"up": {"uv": [11.75, 7.25, 4.5, 0], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [11.75, 0, 4.5, 7.25], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 147, 0],
+			"translation": [-3.5, -2.25, -11.25],
+			"scale": [2, 2, 2]
+		},
+		"head": {
+			"rotation": [0, 153, 0],
+			"translation": [2.25, -43.75, 0.5],
+			"scale": [3, 3, 3]
+		}
+	}
+}

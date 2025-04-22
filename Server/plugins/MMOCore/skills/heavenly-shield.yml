@@ -1,0 +1,35 @@
+name: Heavenly Shield
+lore:
+- '&eGive a heavenly shield to yourself'
+- "&eand nearby allies. You don't take any"
+- '&edamage while you have the shield.'
+- ''
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2108'
+duration:
+  base: 4
+  per-level: 0.1
+  min: 4
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 7
+  max: 8

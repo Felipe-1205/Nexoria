@@ -1,0 +1,156 @@
+BALLESTA1:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 250.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 1.2
+    arrow-velocity: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    name: '&bBallesta'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 1.0
+BALLESTA2:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.5
+    attack-speed: 1.2
+    arrow-velocity: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    name: '&bBallesta Mariposa'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 10.0
+BALLESTA3:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 750.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 10.0
+    attack-speed: 1.2
+    arrow-velocity: 2
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    name: '&bBallesta Camuflada'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 20.0
+BALLESTA4:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 11.5
+    attack-speed: 1.2
+    arrow-velocity: 2
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    name: '&bBallesta Encendida'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 30.0
+BALLESTA5:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 1250.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 13.0
+    attack-speed: 1.0
+    arrow-velocity: 2.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    name: '&bBallesta de almas'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 40.0
+BALLESTA6:
+  base:
+    material: CROSSBOW
+    displayed-type: '&5Distancia'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 14.5
+    attack-speed: 1.0
+    arrow-velocity: 2.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    name: '&bBallesta Divina'
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    - guardian
+    required-level: 50.0

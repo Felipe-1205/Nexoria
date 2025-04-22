@@ -1,0 +1,26 @@
+Salamandra2:
+  World: dungeons
+  X: -1
+  Y: 15
+  Z: -98
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: Salamander
+  Radius: 5.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '5'
+  MobLevel: '1'
+  MobsPerSpawn: 5
+  Cooldown: 20
+  Warmup: 0
+  ActivationRange: 10.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

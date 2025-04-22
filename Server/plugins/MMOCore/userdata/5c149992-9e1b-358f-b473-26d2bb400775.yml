@@ -1,0 +1,157 @@
+class-points: 0
+skill-points: 0
+skill-reallocation-points: 1
+attribute-points: 7
+attribute-realloc-points: 0
+level: 30
+experience: 4838.845650503654
+class: MONJE
+waypoints: []
+friends: []
+last-login: 1740694735571
+skill-tree-reallocation-points: 0
+health: 57.688697814941406
+mana: 32.25
+stellium: 20.0
+stamina: 92.25
+unlocked-items: []
+skill-tree-level:
+  mage-arcane-mage_a1: 0
+  mage-arcane-mage_a3: 0
+  mage-arcane-mage_a2: 0
+  general_j1: 0
+  warrior-paladin_d1: 0
+  warrior-paladin_d2: 0
+  warrior-paladin_d3: 0
+  general_e2: 0
+  rogue-marksman_d2: 0
+  general_e3: 0
+  rogue-marksman_d3: 0
+  general_a1: 0
+  rogue-marksman_d1: 0
+  general_e1: 0
+  general_a2: 0
+  mage-arcane-mage_e1: 0
+  general_a3: 0
+  mage-arcane-mage_e3: 0
+  mage-arcane-mage_e2: 0
+  mage-arcane-mage_b2: 0
+  warrior-paladin_a2: 0
+  mage-arcane-mage_b1: 0
+  warrior-paladin_a3: 0
+  mage-arcane-mage_b3: 0
+  warrior-paladin_e1: 0
+  warrior-paladin_e2: 0
+  warrior-paladin_e3: 0
+  warrior-paladin_a1: 0
+  general_d1: 0
+  rogue-marksman_c1: 0
+  general_d2: 0
+  rogue-marksman_c2: 0
+  general_d3: 0
+  rogue-marksman_g3: 0
+  general_h1: 0
+  rogue-marksman_g1: 0
+  rogue-marksman_g2: 0
+  mage-arcane-mage_f2: 0
+  mage-arcane-mage_f1: 0
+  rogue-marksman_c3: 0
+  mage-arcane-mage_f3: 0
+  mage-arcane-mage_c3: 0
+  warrior-paladin_b3: 0
+  mage-arcane-mage_c2: 0
+  warrior-paladin_f1: 0
+  warrior-paladin_f2: 0
+  warrior-paladin_f3: 0
+  warrior-paladin_b1: 0
+  warrior-paladin_b2: 0
+  general_c1: 0
+  rogue-marksman_b1: 0
+  general_c2: 0
+  rogue-marksman_f2: 0
+  general_c3: 0
+  rogue-marksman_f3: 0
+  general_g1: 0
+  rogue-marksman_f1: 0
+  mage-arcane-mage_g1: 0
+  mage-arcane-mage_g3: 0
+  mage-arcane-mage_g2: 0
+  mage-arcane-mage_c1: 0
+  rogue-marksman_b2: 0
+  rogue-marksman_b3: 0
+  mage-arcane-mage_d3: 0
+  warrior-paladin_g1: 0
+  warrior-paladin_g2: 0
+  warrior-paladin_g3: 0
+  warrior-paladin_c1: 0
+  warrior-paladin_c2: 0
+  warrior-paladin_c3: 0
+  general_f3: 0
+  rogue-marksman_e3: 0
+  general_b1: 0
+  rogue-marksman_e1: 0
+  general_b2: 0
+  rogue-marksman_e2: 0
+  general_f1: 0
+  general_f2: 0
+  general_b3: 0
+  rogue-marksman_a3: 0
+  mage-arcane-mage_d2: 0
+  rogue-marksman_a1: 0
+  mage-arcane-mage_d1: 0
+  rogue-marksman_a2: 0
+skill:
+  WEAKEN: 2
+  FIREBOLT: 18
+  SKY_SMASH: 17
+times-claimed:
+  class_MONJE:
+    class_exp_table:
+      first_table_item: 29
+bound-skills:
+  '1': WEAKEN
+  '2': FIREBOLT
+  '3': SKY_SMASH
+  '4': SHOCKWAVE
+attribute:
+  sabiduria: 0
+  carisma: 0
+  inteligencia: 0
+  destreza: 0
+  constitucion: 16
+  fuerza: 40
+profession:
+  woodcutting:
+    exp: 737.6464285714401
+    level: 10
+  farming:
+    exp: 8644.964285715294
+    level: 99
+  fishing:
+    exp: 5.378571428571428
+    level: 0
+  mining:
+    exp: 1769.5309523809515
+    level: 11
+quest: {}
+class-info:
+  HUMAN:
+    level: 1
+    experience: 0.0
+    skill-points: 5
+    attribute-points: 25
+    attribute-realloc-points: 1
+    skill-tree-reallocation-points: 0
+    skill-reallocation-points: 1
+    health: 20.0
+    mana: 20.0
+    stamina: 20.0
+    stellium: 20.0
+    attribute:
+      sabiduria: 0
+      carisma: 0
+      inteligencia: 0
+      destreza: 0
+      constitucion: 0
+      fuerza: 0
+    unlocked-items: []

@@ -1,0 +1,86 @@
+{
+  "samus.guardian_defense": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/guardian_defense"
+    ]
+  },
+  "samus.horse_neigh": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/horse_neigh"
+    ]
+  },
+  "samus.horse_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/horse_summon"
+    ]
+  },
+  "samus.magical_blade_shoot_single": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/magical_blade_shoot_single"
+    ]
+  },
+  "samus.magical_blades_shoot": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/magical_blades_shoot"
+    ]
+  },
+  "samus.magical_blades_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/magical_blades_summon"
+    ]
+  },
+  "samus.phoenix_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/phoenix_fire"
+    ]
+  },
+  "samus.phoenix_screech": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/phoenix_screech"
+    ]
+  },
+  "samus.phoenix_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/phoenix_summon"
+    ]
+  },
+  "samus.soul_strike_1": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/soul_strike_1"
+    ]
+  },
+  "samus.soul_strike_2": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/soul_strike_2"
+    ]
+  },
+  "samus.soul_strike_pierce": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/soul_strike_pierce"
+    ]
+  },
+  "samus.guardian_block": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/guardian_block"
+    ]
+  },
+  "samus.summon_sound": {
+    "category": "master",
+    "sounds": [
+      "samus/summoner/summon_sound"
+    ]
+  }
+}

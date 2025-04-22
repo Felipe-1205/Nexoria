@@ -1,0 +1,151 @@
+# Mining a block in creative will NOT drop any
+# custom drops/will not apply block regen, etc.
+#
+# Any block specified in this config, wherever it
+# is located, MUST be mined using the correct tool
+# otherwise nothing will drop!
+
+# The corresponding tool. It's CASE_SENSITIVE!
+AIR:
+    default: true
+TOOL?HACHA_TIER1:
+    parent: AIR
+    can-mine:
+    - vanilla{type=oak_log}
+    - vanilla{type=SPRUCE_LOG}
+    - vanilla{type=BIRCH_LOG}
+TOOL?HACHA_TIER2:
+    parent: TOOL?HACHA_TIER1
+TOOL?HACHA_TIER3:
+    parent: TOOL?HACHA_TIER2
+    can-mine:
+    - vanilla{type=JUNGLE_LOG}
+    - vanilla{type=ACACIA_LOG}
+    - vanilla{type=DARK_OAK_LOG}
+TOOL?HACHA_TIER4:
+    parent: TOOL?HACHA_TIER3
+TOOL?HACHA_TIER5:
+    parent: TOOL?HACHA_TIER4
+    can-mine:
+    - vanilla{type=MANGROVE_LOG}
+    - vanilla{type=CHERRY_LOG}
+    - vanilla{type=WARPED_STEM}
+    - vanilla{type=CRIMSON_STEM}
+TOOL?HACHA_TIER6:
+    parent: TOOL?HACHA_TIER5
+
+TOOL?DALLES_TIER1:
+    parent: AIR
+    can-mine:
+    - vanilla{type=dead_bush}
+    - vanilla{type=fern}
+    - vanilla{type=short_grass}
+    - vanilla{type=orange_tulip}
+    - vanilla{type=white_tulip}
+    - vanilla{type=red_tulip}
+    - vanilla{type=oxeye_daisy}
+    - vanilla{type=lily_of_the_valley}
+    - vanilla{type=pink_tulip}
+    - vanilla{type=poppy}
+    - vanilla{type=cornflower}
+    - vanilla{type=dandelion}
+    - vanilla{type=blue_orchid}
+    - vanilla{type=azure_bluet}
+TOOL?DALLES_TIER2:
+    parent: TOOL?DALLES_TIER1
+TOOL?DALLES_TIER3:
+    parent: TOOL?DALLES_TIER2
+    can-mine:
+    - vanilla{type=dark_oak_leaves}
+    - vanilla{type=acacia_leaves}
+    - vanilla{type=oak_leaves}
+    - vanilla{type=spruce_leaves}
+    - vanilla{type=birch_leaves}
+    - vanilla{type=azalea_leaves}
+    - vanilla{type=jungle_leaves}
+    - vanilla{type=pink_petals}
+    - vanilla{type=torchflower}
+    - vanilla{type=allium}
+    - vanilla{type=crimson_roots}
+    - vanilla{type=glow_lichen}
+    - vanilla{type=warped_roots}
+    - vanilla{type=nether_sprouts}
+TOOL?DALLES_TIER4:
+    parent: TOOL?DALLES_TIER3
+TOOL?DALLES_TIER5:
+    parent: TOOL?DALLES_TIER4
+    can-mine:
+    - vanilla{type=brain_coral}
+    - vanilla{type=brain_coral_fan}
+    - vanilla{type=bubble_coral}
+    - vanilla{type=bubble_coral_fan}
+    - vanilla{type=tube_coral}
+    - vanilla{type=tube_coral_fan}
+    - vanilla{type=fire_coral}
+    - vanilla{type=fire_coral_fan}
+    - vanilla{type=horn_coral}
+    - vanilla{type=horn_coral_fan}
+    - vanilla{type=seagrass}
+    - vanilla{type=flowering_azalea_leaves}
+    - vanilla{type=cherry_leaves}
+    - vanilla{type=mangrove_leaves}
+TOOL?DALLES_TIER6:
+    parent: TOOL?DALLES_TIER5
+
+TOOL?PICO_TIER1:
+    parent: AIR
+    can-mine:
+    - vanilla{type=stone}
+    - vanilla{type=dripstone_block}
+    - vanilla{type=cobbled_deepslate}
+    - vanilla{type=tuff}
+    - vanilla{type=smooth_basalt}
+    - vanilla{type=calcite}
+    - vanilla{type=basalt}
+    - vanilla{type=deepslate}
+    - vanilla{type=andesite}
+    - vanilla{type=cracked_deepslate_tiles}
+    - vanilla{type=cobblestone}
+    - vanilla{type=mossy_cobblestone}
+    - vanilla{type=packed_mud}
+    - vanilla{type=blackstone}
+    - vanilla{type=netherrack}
+    - vanilla{type=granite}
+    - vanilla{type=diorite}
+    - vanilla{type=suspicious_gravel}
+    - vanilla{type=coal_ore}
+    - vanilla{type=iron_ore}
+    - vanilla{type=copper_ore}
+    - vanilla{type=muddy_mangrove_roots}
+    - vanilla{type=gilded_blackstone}
+    - vanilla{type=crying_obsidian}
+    - vanilla{type=polished_blackstone}
+    - vanilla{type=mud}
+    - vanilla{type=obsidian}
+    - vanilla{type=sculk}
+    - vanilla{type=purple_concrete}
+    - vanilla{type=purple_stained_glass}
+TOOL?PICO_TIER2:
+    parent: TOOL?PICO_TIER1
+TOOL?PICO_TIER3:
+    parent: TOOL?PICO_TIER2
+    can-mine:
+    - vanilla{type=gold_ore}
+    - vanilla{type=nether_gold_ore}
+    - vanilla{type=nether_quartz_ore}
+    - vanilla{type=redstone_ore}
+    - vanilla{type=lapis_ore}
+    - vanilla{type=amethyst_cluster}
+TOOL?PICO_TIER4:
+    parent: TOOL?PICO_TIER3
+TOOL?PICO_TIER5:
+    parent: TOOL?PICO_TIER4
+    can-mine:
+    - vanilla{type=emerald_ore}
+    - vanilla{type=diamond_ore}
+    - vanilla{type=ancient_debris}
+    - vanilla{type=iron_block}
+    - vanilla{type=dark_prismarine}
+    - vanilla{type=netherite_block}
+TOOL?PICO_TIER6:
+    parent: TOOL?PICO_TIER5

@@ -1,0 +1,6 @@
+{
+  "parent": "./staff_frierens_wand_casting",
+  "textures": {
+    "1": "./items/staff_effects/staff_frierens_charging_effect_dynamic"
+  }
+}

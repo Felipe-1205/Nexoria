@@ -1,0 +1,40 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+name: Dragonborn
+lore:
+- '&9You summon your dragon wings and charge forwards,'
+- '&9pulling in all nearby enemies in your path.'
+- '&9You leap upwards taking the enemies with you'
+- '&9and smash them towards the ground,'
+- '&9sending out a dragon wave'
+- ''
+- '&a{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2081'
+damage:
+  base: 12
+  per-level: 1
+  min: 12
+  max: 15
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: -0.1
+  min: 6
+  max: 7
+
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

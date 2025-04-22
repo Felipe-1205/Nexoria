@@ -1,0 +1,241 @@
+class-points: 0
+skill-points: 2
+skill-reallocation-points: 1
+attribute-points: 3
+attribute-realloc-points: 0
+level: 10
+experience: 1098.0
+class: BARDO
+waypoints: []
+friends: []
+last-login: 1740194941083
+skill-tree-reallocation-points: 0
+health: 23.049999237060547
+mana: 28.885
+stellium: 20.0
+stamina: 28.721500000000002
+unlocked-items: []
+skill-tree-level:
+  mage-arcane-mage_a1: 0
+  mage-arcane-mage_a3: 0
+  mage-arcane-mage_a2: 0
+  general_j1: 0
+  warrior-paladin_d1: 0
+  warrior-paladin_d2: 0
+  warrior-paladin_d3: 0
+  general_e2: 0
+  rogue-marksman_d2: 0
+  general_e3: 0
+  rogue-marksman_d3: 0
+  general_a1: 0
+  rogue-marksman_d1: 0
+  general_e1: 0
+  general_a2: 0
+  mage-arcane-mage_e1: 0
+  general_a3: 0
+  mage-arcane-mage_e3: 0
+  mage-arcane-mage_e2: 0
+  mage-arcane-mage_b2: 0
+  warrior-paladin_a2: 0
+  mage-arcane-mage_b1: 0
+  warrior-paladin_a3: 0
+  mage-arcane-mage_b3: 0
+  warrior-paladin_e1: 0
+  warrior-paladin_e2: 0
+  warrior-paladin_e3: 0
+  warrior-paladin_a1: 0
+  general_d1: 0
+  rogue-marksman_c1: 0
+  general_d2: 0
+  rogue-marksman_c2: 0
+  general_d3: 0
+  rogue-marksman_g3: 0
+  general_h1: 0
+  rogue-marksman_g1: 0
+  rogue-marksman_g2: 0
+  mage-arcane-mage_f2: 0
+  mage-arcane-mage_f1: 0
+  rogue-marksman_c3: 0
+  mage-arcane-mage_f3: 0
+  mage-arcane-mage_c3: 0
+  warrior-paladin_b3: 0
+  mage-arcane-mage_c2: 0
+  warrior-paladin_f1: 0
+  warrior-paladin_f2: 0
+  warrior-paladin_f3: 0
+  warrior-paladin_b1: 0
+  warrior-paladin_b2: 0
+  general_c1: 0
+  rogue-marksman_b1: 0
+  general_c2: 0
+  rogue-marksman_f2: 0
+  general_c3: 0
+  rogue-marksman_f3: 0
+  general_g1: 0
+  rogue-marksman_f1: 0
+  mage-arcane-mage_g1: 0
+  mage-arcane-mage_g3: 0
+  mage-arcane-mage_g2: 0
+  mage-arcane-mage_c1: 0
+  rogue-marksman_b2: 0
+  rogue-marksman_b3: 0
+  mage-arcane-mage_d3: 0
+  warrior-paladin_g1: 0
+  warrior-paladin_g2: 0
+  warrior-paladin_g3: 0
+  warrior-paladin_c1: 0
+  warrior-paladin_c2: 0
+  warrior-paladin_c3: 0
+  general_f3: 0
+  rogue-marksman_e3: 0
+  general_b1: 0
+  rogue-marksman_e1: 0
+  general_b2: 0
+  rogue-marksman_e2: 0
+  general_f1: 0
+  general_f2: 0
+  general_b3: 0
+  rogue-marksman_a3: 0
+  mage-arcane-mage_d2: 0
+  rogue-marksman_a1: 0
+  mage-arcane-mage_d1: 0
+  rogue-marksman_a2: 0
+skill:
+  BLINK: 8
+  NEPTUNE_GIFT: 3
+  CORRUPTED_FANGS: 3
+times-claimed:
+  class_BARDO:
+    class_exp_table:
+      first_table_item: 9
+bound-skills:
+  '1': BLINK
+  '2': NEPTUNE_GIFT
+  '3': CORRUPTED_FANGS
+attribute:
+  sabiduria: 7
+  carisma: 8
+  inteligencia: 6
+  destreza: 9
+  constitucion: 0
+  fuerza: 0
+profession:
+  woodcutting:
+    exp: 577.4892857142945
+    level: 4
+  farming:
+    exp: 2014.166666666355
+    level: 40
+  fishing:
+    exp: 5.711904761904762
+    level: 0
+  mining:
+    exp: 314.6547619047533
+    level: 4
+quest: {}
+class-info:
+  HUMAN:
+    level: 1
+    experience: 0.0
+    skill-points: 5
+    attribute-points: 25
+    attribute-realloc-points: 1
+    skill-tree-reallocation-points: 0
+    skill-reallocation-points: 1
+    health: 20.0
+    mana: 20.0
+    stamina: 20.0
+    stellium: 20.0
+    attribute:
+      sabiduria: 0
+      carisma: 0
+      inteligencia: 0
+      destreza: 0
+      constitucion: 0
+      fuerza: 0
+    node-levels:
+      mage-arcane-mage_a1: 0
+      mage-arcane-mage_a3: 0
+      mage-arcane-mage_a2: 0
+      general_j1: 0
+      warrior-paladin_d1: 0
+      warrior-paladin_d2: 0
+      warrior-paladin_d3: 0
+      rogue-marksman_d2: 0
+      general_e2: 0
+      rogue-marksman_d3: 0
+      general_e3: 0
+      rogue-marksman_d1: 0
+      general_a1: 0
+      general_e1: 0
+      mage-arcane-mage_e1: 0
+      general_a2: 0
+      general_a3: 0
+      mage-arcane-mage_e3: 0
+      mage-arcane-mage_e2: 0
+      warrior-paladin_a2: 0
+      mage-arcane-mage_b2: 0
+      warrior-paladin_a3: 0
+      mage-arcane-mage_b1: 0
+      mage-arcane-mage_b3: 0
+      warrior-paladin_e1: 0
+      warrior-paladin_e2: 0
+      warrior-paladin_e3: 0
+      warrior-paladin_a1: 0
+      general_d1: 0
+      rogue-marksman_c1: 0
+      general_d2: 0
+      rogue-marksman_c2: 0
+      general_d3: 0
+      rogue-marksman_g3: 0
+      general_h1: 0
+      rogue-marksman_g1: 0
+      rogue-marksman_g2: 0
+      mage-arcane-mage_f2: 0
+      mage-arcane-mage_f1: 0
+      rogue-marksman_c3: 0
+      mage-arcane-mage_f3: 0
+      warrior-paladin_b3: 0
+      mage-arcane-mage_c3: 0
+      mage-arcane-mage_c2: 0
+      warrior-paladin_f1: 0
+      warrior-paladin_f2: 0
+      warrior-paladin_f3: 0
+      warrior-paladin_b1: 0
+      warrior-paladin_b2: 0
+      rogue-marksman_b1: 0
+      general_c1: 0
+      rogue-marksman_f2: 0
+      general_c2: 0
+      rogue-marksman_f3: 0
+      general_c3: 0
+      rogue-marksman_f1: 0
+      general_g1: 0
+      mage-arcane-mage_g1: 0
+      mage-arcane-mage_g3: 0
+      mage-arcane-mage_g2: 0
+      rogue-marksman_b2: 0
+      mage-arcane-mage_c1: 0
+      rogue-marksman_b3: 0
+      mage-arcane-mage_d3: 0
+      warrior-paladin_g1: 0
+      warrior-paladin_g2: 0
+      warrior-paladin_g3: 0
+      warrior-paladin_c1: 0
+      warrior-paladin_c2: 0
+      warrior-paladin_c3: 0
+      general_f3: 0
+      rogue-marksman_e3: 0
+      general_b1: 0
+      rogue-marksman_e1: 0
+      general_b2: 0
+      rogue-marksman_e2: 0
+      general_f1: 0
+      general_f2: 0
+      general_b3: 0
+      rogue-marksman_a3: 0
+      mage-arcane-mage_d2: 0
+      rogue-marksman_a1: 0
+      mage-arcane-mage_d1: 0
+      rogue-marksman_a2: 0
+    unlocked-items: []

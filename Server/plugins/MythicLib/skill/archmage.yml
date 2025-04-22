@@ -1,0 +1,37 @@
+ARCANE_SLASH:
+    mythicmobs-skill-id: Arcane_Slash
+    modifiers:
+    - damage
+
+BLIZZARD_:
+    mythicmobs-skill-id: Blizzard
+    modifiers:
+    - damage
+    - duration
+    
+ARCANE_SHIELD:
+    mythicmobs-skill-id: Arcane_Shield
+    passive-type: TIMER
+    
+CLOAK_OF_HASTUR:
+    mythicmobs-skill-id: Cloak_Of_Hastur
+    modifiers:
+    - damage
+    - duration
+    
+CHAINS_OF_VOID:
+    mythicmobs-skill-id: Chains_Of_Void
+    modifiers:
+    - damage
+    
+METEOR_STORM:
+    mythicmobs-skill-id: Meteor_Storm
+    passive-type: TIMER
+    modifiers:
+    - damage
+    
+ARCANE_DEVASTATION:
+    mythicmobs-skill-id: Arcane_Devastation
+    modifiers:
+    - damage
+    - duration

@@ -1,0 +1,81 @@
+{
+    "variants": {
+        "distance=1": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=2": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=3": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=4": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=5": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=6": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				],
+        "distance=7": [
+		{ "model": "block/better_leaves_spruce1" },
+		{ "model": "block/better_leaves_spruce1", "y": 90  },
+		{ "model": "block/better_leaves_spruce1", "y": 180 },
+		{ "model": "block/better_leaves_spruce1", "y": 270 },
+		
+		{ "model": "block/better_leaves_spruce2" },
+		{ "model": "block/better_leaves_spruce2", "y": 90  },
+		{ "model": "block/better_leaves_spruce2", "y": 180 },
+		{ "model": "block/better_leaves_spruce2", "y": 270 }
+				]
+    }
+}

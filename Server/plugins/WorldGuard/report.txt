@@ -1,0 +1,5136 @@
+================================
+Server Information
+================================
+
+Bukkit Version: 1.20.6-R0.1-SNAPSHOT
+Implementation: Paper 1.20.6-151-a4f0f5c (MC: 1.20.6)
+Player Count: 2/10
+Server Class Source: file:/home/ubuntu/Server/versions/1.20.6/paper-1.20.6.jar
+Online Mode: 
+	enabled?: false
+	BungeeCord support?: false
+	Velocity support?: false
+Spawning: 
+	Ambient Spawn Limit: 15
+	Animal Spawn Limit: 10
+	Monster Spawn Limit: 70
+	Ticks per Animal Spawn: 400
+	Ticks per Monster Spawn: 1
+Configuration: 
+	Nether Enabled?: false
+	The End Enabled?: true
+	Generate Structures?: true
+	Flight Allowed?: true
+	Connection Throttle: 4000
+	Idle Timeout: 0
+	Shutdown Message: Server closed
+	Default Game Mode: SURVIVAL
+	Main World Type: minecraft:flat
+	View Distance: 8
+Protection: Spawn Radius: 0
+
+================================
+Plugins
+================================
+
+Plugin Count: 49
+Plugin: LuckPerms: 
+	Enabled?: true
+	Full Name: LuckPerms v5.4.131
+	Version: 5.4.131
+	Website: https://luckperms.net
+	Description: A permissions plugin
+	Authors: Luck
+	Load Before: Vault
+	Dependencies: 
+	Soft Dependencies: 
+		LilyPad-Connect
+		ViaVersion
+	Folder: /home/ubuntu/Server/plugins/LuckPerms
+	Entry Point: me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin
+	Class: me.lucko.luckperms.bukkit.loader.BukkitLoaderPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/LuckPerms-Bukkit-5.4.131.jar
+Plugin: Vault: 
+	Enabled?: true
+	Full Name: Vault v1.7.3-b131
+	Version: 1.7.3-b131
+	Website: https://dev.bukkit.org/projects/vault
+	Description: Vault is a Permissions & Economy API to allow plugins to more easily hook into these systems without needing to hook each individual system themselves.
+	Authors: 
+		cereal
+		Sleaker
+		mung3r
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/Vault
+	Entry Point: net.milkbowl.vault.Vault
+	Class: net.milkbowl.vault.Vault
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Vault.jar
+Plugin: WorldEdit: 
+	Enabled?: true
+	Full Name: WorldEdit v7.3.6+6892-3d660b8
+	Version: 7.3.6+6892-3d660b8
+	Website: https://enginehub.org/worldedit
+	Description: null
+	Authors: EngineHub
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: Vault
+	Folder: /home/ubuntu/Server/plugins/WorldEdit
+	Entry Point: com.sk89q.worldedit.bukkit.WorldEditPlugin
+	Class: com.sk89q.worldedit.bukkit.WorldEditPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/worldedit-bukkit-7.3.6.jar
+Plugin: WorldGuard: 
+	Enabled?: true
+	Full Name: WorldGuard v7.0.10+d9424b1
+	Version: 7.0.10+d9424b1
+	Website: null
+	Description: null
+	Authors: 
+	Load Before: 
+	Dependencies: WorldEdit
+	Soft Dependencies: CommandBook
+	Folder: /home/ubuntu/Server/plugins/WorldGuard
+	Entry Point: com.sk89q.worldguard.bukkit.WorldGuardPlugin
+	Class: com.sk89q.worldguard.bukkit.WorldGuardPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/worldguard-bukkit-7.0.10-dist.jar
+Plugin: Multiverse-Core: 
+	Enabled?: true
+	Full Name: Multiverse-Core v4.3.1-b861
+	Version: 4.3.1-b861
+	Website: https://dev.bukkit.org/projects/multiverse-core
+	Description: null
+	Authors: 
+		dumptruckman
+		Rigby
+		fernferret
+		lithium3141
+		main--
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: Vault
+	Folder: /home/ubuntu/Server/plugins/Multiverse-Core
+	Entry Point: com.onarandombox.MultiverseCore.MultiverseCore
+	Class: com.onarandombox.MultiverseCore.MultiverseCore
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Multiverse-Core-4.3.1.jar
+Plugin: PlaceholderAPI: 
+	Enabled?: true
+	Full Name: PlaceholderAPI v2.11.6
+	Version: 2.11.6
+	Website: null
+	Description: An awesome placeholder provider!
+	Authors: HelpChat
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: ViaVersion
+	Folder: /home/ubuntu/Server/plugins/PlaceholderAPI
+	Entry Point: me.clip.placeholderapi.PlaceholderAPIPlugin
+	Class: me.clip.placeholderapi.PlaceholderAPIPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/PlaceholderAPI-2.11.6.jar
+Plugin: ProtocolLib: 
+	Enabled?: true
+	Full Name: ProtocolLib v5.3.0-SNAPSHOT-726
+	Version: 5.3.0-SNAPSHOT-726
+	Website: null
+	Description: Provides read/write access to the Minecraft protocol.
+	Authors: 
+		dmulloy2
+		comphenix
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/ProtocolLib
+	Entry Point: com.comphenix.protocol.ProtocolLib
+	Class: com.comphenix.protocol.ProtocolLib
+	Class Source: file:/home/ubuntu/Server/plugins/ProtocolLib.jar
+Plugin: MythicMobs: 
+	Enabled?: true
+	Full Name: MythicMobs v5.8.0-SNAPSHOT-27456227
+	Version: 5.8.0-SNAPSHOT-27456227
+	Website: null
+	Description: The total solution for all things mob-related.
+	Authors: Lumine
+	Load Before: Quests
+	Dependencies: 
+	Soft Dependencies: 
+		Multiverse-Core
+		Heroes
+		PhatLoots
+		Vault
+		MagicSpells
+		MiniaturePets
+		LibsDisguises
+		WorldGuard
+		Holograms
+		HolographicDisplays
+		PlaceholderAPI
+	Folder: /home/ubuntu/Server/plugins/MythicMobs
+	Entry Point: io.lumine.mythic.bukkit.MythicBukkit
+	Class: io.lumine.mythic.bukkit.MythicBukkit
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MythicMobs-5.8.0-SNAPSHOT%205280%20.jar
+Plugin: Citizens: 
+	Enabled?: true
+	Full Name: Citizens v2.0.37-SNAPSHOT (build 3692)
+	Version: 2.0.37-SNAPSHOT (build 3692)
+	Website: https://www.citizensnpcs.co
+	Description: null
+	Authors: fullwall
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Vault
+		PlaceholderAPI
+		WorldGuard
+		ProtocolLib
+		ViaVersion
+	Folder: /home/ubuntu/Server/plugins/Citizens
+	Entry Point: net.citizensnpcs.Citizens
+	Class: net.citizensnpcs.Citizens
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Citizens-2.0.37-b3692.jar
+Plugin: Essentials: 
+	Enabled?: true
+	Full Name: Essentials v2.21.0-dev+155-803771e
+	Version: 2.21.0-dev+155-803771e
+	Website: https://essentialsx.net/
+	Description: Provides an essential, core set of commands for Bukkit.
+	Authors: 
+		Zenexer
+		ementalo
+		Aelux
+		Brettflan
+		KimKandor
+		snowleo
+		ceulemans
+		Xeology
+		KHobbits
+		md_5
+		Iaccidentally
+		drtshock
+		vemacs
+		SupaHam
+		mdcfe
+		JRoy
+		pop4959
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Vault
+		LuckPerms
+		ViaVersion
+	Folder: /home/ubuntu/Server/plugins/Essentials
+	Entry Point: com.earth2me.essentials.Essentials
+	Class: com.earth2me.essentials.Essentials
+	Class Source: file:/home/ubuntu/Server/plugins/EssentialsX-2.21.0-dev+155-803771e.jar
+Plugin: ModelEngine: 
+	Enabled?: true
+	Full Name: ModelEngine vR4.0.7
+	Version: R4.0.7
+	Website: null
+	Description: null
+	Authors: Ticxo
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		MythicMobs
+		Citizens
+		LibsDisguises
+		ViaVersion
+	Folder: /home/ubuntu/Server/plugins/ModelEngine
+	Entry Point: com.ticxo.modelengine.core.ModelEngine
+	Class: com.ticxo.modelengine.core.ModelEngine
+	Class Source: file:/home/ubuntu/Server/plugins/ModelEngine-4.0.7.jar
+Plugin: MythicLib: 
+	Enabled?: true
+	Full Name: MythicLib v1.7.1-SNAPSHOT
+	Version: 1.7.1-SNAPSHOT
+	Website: www.phoenixdevt.fr
+	Description: Hard dependency for the MMO plugins
+	Authors: Indyuce
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		WorldGuard
+		Residence
+		Factions
+		MythicMobs
+		PlaceholderAPI
+		Fabled
+	Folder: /home/ubuntu/Server/plugins/MythicLib
+	Entry Point: io.lumine.mythic.lib.MythicLib
+	Class: io.lumine.mythic.lib.MythicLib
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MythicLib-dist-1.7.1-20241209.002338-5.jar
+Plugin: Magic: 
+	Enabled?: true
+	Full Name: Magic v10.9.4-1bea7e8
+	Version: 10.9.4-1bea7e8
+	Website: http://mine.elmakers.com
+	Description: A gameplay-oriented plugin for spells and wands
+	Authors: NathanWolf
+	Load Before: 
+		Scavenger
+		Quests
+		Heroes
+		MobArena
+		Skript
+	Dependencies: 
+	Soft Dependencies: 
+		WorldGuard
+		WGCustomFlags
+		Essentials
+		dynmap
+		dtlTraders
+		Factions
+		CommandBook
+		PvPManager
+		Multiverse-Core
+		Citizens
+		Vault
+		GriefPrevention
+		NoCheatPlus
+		LibsDisguises
+		Minigames
+		SkillAPI
+		ProSkillAPI
+		PlaceholderAPI
+		Citadel
+		Lockette
+		LockettePro
+		PreciousStones
+		Residence
+		RedProtect
+		LogBlock
+		LightAPI
+		DeadSouls
+		ajParkour
+		WildStacker
+		SilkSpawners
+		ModelEngine
+		AureliumSkills
+		PerWorldInventory
+		MythicMobs
+		TokenManager
+		TradeSystem
+		zAuctionHouseV3
+	Folder: /home/ubuntu/Server/plugins/Magic
+	Entry Point: com.elmakers.mine.bukkit.magic.MagicPlugin
+	Class: com.elmakers.mine.bukkit.magic.MagicPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Magic-10.9.4.jar
+Plugin: MMOCore: 
+	Enabled?: true
+	Full Name: MMOCore v1.13.1-SNAPSHOT
+	Version: 1.13.1-SNAPSHOT
+	Website: www.phoenixdevt.fr
+	Description: Offer your players a brand-new RPG experience!
+	Authors: Indyuce
+	Load Before: 
+		MMOItems
+		MythicDungeons
+	Dependencies: MythicLib
+	Soft Dependencies: 
+		Vault
+		MythicMobs
+		MMOProfiles
+		PlaceholderAPI
+		Residence
+		Citizens
+		ProtocolLib
+		OBTeam
+	Folder: /home/ubuntu/Server/plugins/MMOCore
+	Entry Point: net.Indyuce.mmocore.MMOCore
+	Class: net.Indyuce.mmocore.MMOCore
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MMOCore-1.13.1-SNAPSHOT.jar
+Plugin: DecentHolograms: 
+	Enabled?: true
+	Full Name: DecentHolograms v2.8.12
+	Version: 2.8.12
+	Website: null
+	Description: A lightweight yet very powerful hologram plugin with many features and configuration options.
+	Authors: d0by
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		PlaceholderAPI
+		HeadDatabase
+	Folder: /home/ubuntu/Server/plugins/DecentHolograms
+	Entry Point: eu.decentsoftware.holograms.plugin.DecentHologramsPlugin
+	Class: eu.decentsoftware.holograms.plugin.DecentHologramsPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/DecentHolograms-2.8.12.jar
+Plugin: Shopkeepers: 
+	Enabled?: true
+	Full Name: Shopkeepers v2.23.3
+	Version: 2.23.3
+	Website: https://dev.bukkit.org/projects/shopkeepers/
+	Description: Custom villager shopkeepers
+	Authors: 
+		nisovin
+		blablubbabc
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Multiverse-Core
+		My_Worlds
+		Transporter
+		Towny
+		WorldGuard
+		Citizens
+		Vault
+		Gringotts
+		ChestShop
+	Folder: /home/ubuntu/Server/plugins/Shopkeepers
+	Entry Point: com.nisovin.shopkeepers.SKShopkeepersPlugin
+	Class: com.nisovin.shopkeepers.SKShopkeepersPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Shopkeepers-2.23.3.jar
+Plugin: Skript: 
+	Enabled?: true
+	Full Name: Skript v2.10.0
+	Version: 2.10.0
+	Website: https://skriptlang.org
+	Description: Customize Minecraft's mechanics with simple scripts written in plain English sentences.
+	Authors: 
+		Njol
+		Mirreski
+		SkriptLang Team
+		Contributors
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		SQLibrary
+		Vault
+		WorldGuard
+		Residence
+		PreciousStones
+		GriefPrevention
+	Folder: /home/ubuntu/Server/plugins/Skript
+	Entry Point: ch.njol.skript.Skript
+	Class: ch.njol.skript.Skript
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Skript-2.10.0.jar
+Plugin: MMOItems: 
+	Enabled?: true
+	Full Name: MMOItems v6.10.1-SNAPSHOT
+	Version: 6.10.1-SNAPSHOT
+	Website: www.phoenixdevt.fr
+	Description: A great item solution for your RPG server!!
+	Authors: Indyuce
+	Load Before: MMOInventory
+	Dependencies: MythicLib
+	Soft Dependencies: 
+		WorldGuard
+		Residence
+		BossShopPro
+		Fabled
+		SkillsPro
+		MMOCore
+		MMOProfiles
+		MythicMobs
+		PlaceholderAPI
+		Vault
+		Denizen
+		AureliumSkills
+		AuraSkills
+		MythicEnchants
+	Folder: /home/ubuntu/Server/plugins/MMOItems
+	Entry Point: net.Indyuce.mmoitems.MMOItems
+	Class: net.Indyuce.mmoitems.MMOItems
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MMOItems-6.10.1-SNAPSHOT.jar
+Plugin: ValorlessUtils: 
+	Enabled?: true
+	Full Name: ValorlessUtils v1.11.1.250
+	Version: 1.11.1.250
+	Website: null
+	Description: null
+	Authors: Valorless
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/ValorlessUtils
+	Entry Point: valorless.valorlessutils.ValorlessUtils
+	Class: valorless.valorlessutils.ValorlessUtils
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/ValorlessUtils-1.11.1.250.jar
+Plugin: GSit: 
+	Enabled?: true
+	Full Name: GSit v1.11.2
+	Version: 1.11.2
+	Website: https://www.spigotmc.org/resources/62325
+	Description: Relax with other players on nice seats!
+	Authors: Gecolay
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		GriefPrevention
+		PlaceholderAPI
+		PlotSquared
+		WorldGuard
+	Folder: /home/ubuntu/Server/plugins/GSit
+	Entry Point: dev.geco.gsit.GSitMain
+	Class: dev.geco.gsit.GSitMain
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/GSit-1.11.2.jar
+Plugin: MCPets: 
+	Enabled?: true
+	Full Name: MCPets v4.1.4
+	Version: 4.1.4
+	Website: null
+	Description: MCModels affiliate plugin. Join the workshop ! https://discord.gg/p7QTm2gUyf
+	Authors: Nocsy
+	Load Before: 
+	Dependencies: 
+		MythicMobs
+		ModelEngine
+	Soft Dependencies: 
+		WorldGuard
+		LuckPerms
+		PlaceholderAPI
+	Folder: /home/ubuntu/Server/plugins/MCPets
+	Entry Point: fr.nocsy.mcpets.MCPets
+	Class: fr.nocsy.mcpets.MCPets
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MCPets%204.1.4-1.20.6.jar
+Plugin: SuperVanish: 
+	Enabled?: true
+	Full Name: SuperVanish v6.2.20
+	Version: 6.2.20
+	Website: https://www.spigotmc.org/resources/supervanish-be-invisible.1331/
+	Description: Advanced /vanish plugin which makes other players think that you're not on the server
+	Authors: MyzelYam
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		ProtocolLib
+		LibsDisguises
+		DisguiseCraft
+		dynmap
+		Essentials
+		TrailGUI
+		PlaceholderAPI
+		CustomParticleEffects
+		NametagEdit
+		MVdWPlaceholderAPI
+		Vault
+	Folder: /home/ubuntu/Server/plugins/SuperVanish
+	Entry Point: de.myzelyam.supervanish.SuperVanish
+	Class: de.myzelyam.supervanish.SuperVanish
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/SuperVanish-6.2.20.jar
+Plugin: BetonQuest: 
+	Enabled?: true
+	Full Name: BetonQuest v2.2.1
+	Version: 2.2.1
+	Website: https://www.betonquest.org
+	Description: All Your Adventure Supplies
+	Authors: 
+		BetonQuest Organisation
+		Wolf2323
+		SaltyAimbOtter
+		seyfahni
+		joblo2213
+		bundabrg
+		Co0sh
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Skript
+		MMOLib
+		MMOCore
+		MMOItems
+		Citizens
+		MythicMobs
+		Vault
+		EffectLib
+		PlayerPoints
+		Heroes
+		Magic
+		Denizen
+		WorldEdit
+		FastAsyncWorldEdit
+		WorldGuard
+		mcMMO
+		Shopkeepers
+		ProSkillAPI
+		Quests
+		PlaceholderAPI
+		HolographicDisplays
+		DecentHolograms
+		ProtocolLib
+		Brewery
+		BreweryX
+		Jobs
+		LuckPerms
+		AuraSkills
+		fake-block
+		RedisChat
+		Train_Carts
+		ViaVersion
+	Folder: /home/ubuntu/Server/plugins/BetonQuest
+	Entry Point: org.betonquest.betonquest.BetonQuest
+	Class: org.betonquest.betonquest.BetonQuest
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/BetonQuest.jar
+Plugin: Chunky: 
+	Enabled?: true
+	Full Name: Chunky v1.4.10
+	Version: 1.4.10
+	Website: https://www.spigotmc.org/resources/chunky.81534/
+	Description: Pre-generates chunks, quickly, efficiently, and safely
+	Authors: pop4959
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		dynmap
+		BlueMap
+		squaremap
+		WorldBorder
+	Folder: /home/ubuntu/Server/plugins/Chunky
+	Entry Point: org.popcraft.chunky.ChunkyBukkit
+	Class: org.popcraft.chunky.ChunkyBukkit
+	Class Source: file:/home/ubuntu/Server/plugins/Chunky-1.4.10.jar
+Plugin: HavenBags: 
+	Enabled?: true
+	Full Name: HavenBags v1.30.1.1729
+	Version: 1.30.1.1729
+	Website: https://www.spigotmc.org/resources/110420/
+	Description: Create shulker-like bags of varying sizes bound to a player, or accessible by anyone.
+	Authors: Valorless
+	Load Before: 
+	Dependencies: ValorlessUtils
+	Soft Dependencies: 
+		ChestSort
+		PlaceholderAPI
+		AngelChest
+		PvPManager
+		Minepacks
+	Folder: /home/ubuntu/Server/plugins/HavenBags
+	Entry Point: valorless.havenbags.Main
+	Class: valorless.havenbags.Main
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/HavenBags-1.30.1.1729.jar
+Plugin: RHideTags: 
+	Enabled?: true
+	Full Name: RHideTags v1.1
+	Version: 1.1
+	Website: null
+	Description: null
+	Authors: 
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/RHideTags
+	Entry Point: ru.rey.rhidetags.Core
+	Class: ru.rey.rhidetags.Core
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/rHideTags.jar
+Plugin: ReviveMe: 
+	Enabled?: true
+	Full Name: ReviveMe v4.0.7
+	Version: 4.0.7
+	Website: null
+	Description: null
+	Authors: 
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		WorldGuard
+		CrackShot
+		Citizens
+		QualityArmory
+		PlaceholderAPI
+		Vault
+		RPGMoney
+		Vulcan
+		MyPet
+		Scoreboard-revision
+		PowerBoard
+		Factions
+		BetterTeams
+		UltraScoreboards
+		Lands
+		PlasmoVoice
+		NekoEventos
+		CombatLogX
+		RealScoreboard
+		PartyGames
+		Essentials
+		CMI
+		SuperVanish
+		DeluxeCombat
+		UltimateClans
+		PvpManager
+		MCPets
+		WeaponMechanics
+		GSit
+		Graves
+		Towny
+	Folder: /home/ubuntu/Server/plugins/ReviveMe
+	Entry Point: net.kokoricraft.reviveme.ReviveMe
+	Class: net.kokoricraft.reviveme.ReviveMe
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/ReviveMe-4.0.7.jar
+Plugin: EntitySize: 
+	Enabled?: true
+	Full Name: EntitySize v1.2
+	Version: 1.2
+	Website: null
+	Description: Change the size of an entity
+	Authors: MaximDe
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/EntitySize
+	Entry Point: com.maximde.entitysize.EntitySize
+	Class: com.maximde.entitysize.EntitySize
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/EntitySize-1.2.jar
+Plugin: NBTAPI: 
+	Enabled?: true
+	Full Name: NBTAPI v2.14.1
+	Version: 2.14.1
+	Website: null
+	Description: null
+	Authors: tr7zw
+	Load Before: ItemNBTAPI
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/NBTAPI
+	Entry Point: de.tr7zw.nbtapi.plugin.NBTAPI
+	Class: de.tr7zw.nbtapi.plugin.NBTAPI
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/item-nbt-api-plugin-2.14.1.jar
+Plugin: ClearLag: 
+	Enabled?: true
+	Full Name: ClearLag v3.2.2
+	Version: 3.2.2
+	Website: null
+	Description: Clear your lagg!
+	Authors: bob7l
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/ClearLag
+	Entry Point: me.minebuilders.clearlag.Clearlag
+	Class: me.minebuilders.clearlag.Clearlag
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Clearlag.jar
+Plugin: TAB: 
+	Enabled?: true
+	Full Name: TAB v5.0.3
+	Version: 5.0.3
+	Website: https://github.com/NEZNAMY/TAB
+	Description: An all-in-one solution that works
+	Authors: NEZNAMY
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		PlaceholderAPI
+		LuckPerms
+		LibsDisguises
+		ViaVersion
+		ViaRewind
+		floodgate
+		Vault
+	Folder: /home/ubuntu/Server/plugins/TAB
+	Entry Point: me.neznamy.tab.platforms.bukkit.BukkitTAB
+	Class: me.neznamy.tab.platforms.bukkit.BukkitTAB
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/TAB%20v5.0.3.jar
+Plugin: SkBee: 
+	Enabled?: true
+	Full Name: SkBee v3.8.1
+	Version: 3.8.1
+	Website: https://github.com/ShaneBeee/SkBee
+	Description: A simple Skript addon to help customize your server to the fullest.
+	Authors: ShaneBee
+	Load Before: SkQuery
+	Dependencies: Skript
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/SkBee
+	Entry Point: com.shanebeestudios.skbee.SkBee
+	Class: com.shanebeestudios.skbee.SkBee
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/SkBee-3.8.1.jar
+Plugin: LoginSecurity: 
+	Enabled?: true
+	Full Name: LoginSecurity v3.3.0
+	Version: 3.3.0
+	Website: null
+	Description: The #1 Auth plugin
+	Authors: lenis0012
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: ProtocolLib
+	Folder: /home/ubuntu/Server/plugins/LoginSecurity
+	Entry Point: com.lenis0012.bukkit.loginsecurity.LoginSecurity
+	Class: com.lenis0012.bukkit.loginsecurity.LoginSecurity
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/LoginSecurity-Spigot-3.3.0.jar
+Plugin: dtlTradersPlus: 
+	Enabled?: true
+	Full Name: dtlTradersPlus v6.4.26
+	Version: 6.4.26
+	Website: www.degitise.com
+	Description: Trade like never before!
+	Authors: 
+		Minevid
+		TheWGBbroz
+		samyratchet
+	Load Before: 
+	Dependencies: 
+		Vault
+		Citizens
+	Soft Dependencies: 
+		Essentials
+		OptEco
+		BeastTokens
+		GemsEconomy
+		PlaceholderAPI
+	Folder: /home/ubuntu/Server/plugins/dtlTradersPlus
+	Entry Point: com.degitise.minevid.dtlTraders.Main
+	Class: com.degitise.minevid.dtlTraders.Main
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/dtlTradersPlus-6.4.26.jar
+Plugin: Sentinel: 
+	Enabled?: true
+	Full Name: Sentinel v2.9.0-SNAPSHOT (build 522)
+	Version: 2.9.0-SNAPSHOT (build 522)
+	Website: null
+	Description: null
+	Authors: mcmonkey
+	Load Before: 
+	Dependencies: Citizens
+	Soft Dependencies: 
+		Vault
+		Sentry
+		CrackShot
+		Factions
+		Towny
+		SimpleClans
+		War
+	Folder: /home/ubuntu/Server/plugins/Sentinel
+	Entry Point: org.mcmonkey.sentinel.SentinelPlugin
+	Class: org.mcmonkey.sentinel.SentinelPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Sentinel-2.9.0-SNAPSHOT-b522.jar
+Plugin: LWC: 
+	Enabled?: true
+	Full Name: LWC v2.4.0
+	Version: 2.4.0
+	Website: https://www.spigotmc.org/resources/lwc-extended.69551/
+	Description: 
+		Inventory protection & management utilizing SQLite or MySQL as its backend Other blocks can also be protected individually, if configured.
+	
+	Authors: 
+		Hidendra
+		pop4959
+		Me_Goes_RAWR
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Vault
+		WorldEdit
+		WorldGuard
+		Towny
+		Factions
+	Folder: /home/ubuntu/Server/plugins/LWC
+	Entry Point: com.griefcraft.lwc.LWCPlugin
+	Class: com.griefcraft.lwc.LWCPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/LWC-2.4.0.jar
+Plugin: Ersatz: 
+	Enabled?: true
+	Full Name: Ersatz v1.0
+	Version: 1.0
+	Website: null
+	Description: null
+	Authors: Pikachu
+	Load Before: 
+	Dependencies: 
+		Skript
+		PlaceholderAPI
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/Ersatz
+	Entry Point: com.pikachu.papiaddon.Main
+	Class: com.pikachu.papiaddon.Main
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Ersatz.jar
+Plugin: Craftorithm: 
+	Enabled?: true
+	Full Name: Craftorithm v1.10.17-20250121
+	Version: 1.10.17-20250121
+	Website: https://github.com/YufiriaMazenta/Craftorithm
+	Description: Craft recipes management system
+	Authors: YufiriaMazenta
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Vault
+		LuckPerms
+		PlayerPoints
+		PlaceholderAPI
+		ItemsAdder
+		Oraxen
+		MythicMobs
+		NeigeItems
+		MMOItems
+		EcoEnchants
+		EcoItems
+		ExecutableItems
+		SCore
+		Nexo
+		AzureFlow
+	Folder: /home/ubuntu/Server/plugins/Craftorithm
+	Entry Point: com.github.yufiriamazenta.craftorithm.Craftorithm
+	Class: com.github.yufiriamazenta.craftorithm.Craftorithm
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/Craftorithm-1.10.17.jar
+Plugin: CustomizablePlayerModels: 
+	Enabled?: true
+	Full Name: CustomizablePlayerModels v0.6.19a
+	Version: 0.6.19a
+	Website: https://github.com/tom5454/CustomPlayerModels
+	Description: Customizable Player Models server-side plugin.
+	Authors: tom5454
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/CustomizablePlayerModels
+	Entry Point: com.tom.cpm.bukkit.CPMBukkitPlugin
+	Class: com.tom.cpm.bukkit.CPMBukkitPlugin
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/CustomPlayerModels-Bukkit-0.6.19a.jar
+Plugin: RealTime: 
+	Enabled?: true
+	Full Name: RealTime v1.6
+	Version: 1.6
+	Website: null
+	Description: A plugin to sync Minecraft time with real time.
+	Authors: 
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/RealTime
+	Entry Point: k.k.k.J
+	Class: k.k.k.J
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/RealTime%201.6.jar
+Plugin: BadventsDisabler-remake: 
+	Enabled?: true
+	Full Name: BadventsDisabler-remake v1.4.1
+	Version: 1.4.1
+	Website: null
+	Description: null
+	Authors: 
+	Load Before: 
+	Dependencies: ProtocolLib
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/BadventsDisabler-remake
+	Entry Point: driven.by.data.badventsdisabler22.BadventsDisabler22
+	Class: driven.by.data.badventsdisabler22.BadventsDisabler22
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/BadventsDisabler-remake-1.4.1.jar
+Plugin: ConditionalEvents: 
+	Enabled?: true
+	Full Name: ConditionalEvents v4.60.1
+	Version: 4.60.1
+	Website: null
+	Description: null
+	Authors: Ajneb97
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		PlaceholderAPI
+		Citizens
+		WorldGuardEvents
+		WorldGuard
+		ProtocolLib
+		DiscordSRV
+	Folder: /home/ubuntu/Server/plugins/ConditionalEvents
+	Entry Point: ce.ajneb97.ConditionalEvents
+	Class: ce.ajneb97.ConditionalEvents
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/ConditionalEvents.jar
+Plugin: MMOInventory: 
+	Enabled?: true
+	Full Name: MMOInventory v1.9
+	Version: 1.9
+	Website: null
+	Description: A simple RPG custom inventory solution
+	Authors: Indyuce
+	Load Before: 
+	Dependencies: MythicLib
+	Soft Dependencies: 
+		MMOItems
+		MMOProfiles
+		MMOCore
+	Folder: /home/ubuntu/Server/plugins/MMOInventory
+	Entry Point: net.Indyuce.inventory.MMOInventory
+	Class: net.Indyuce.inventory.MMOInventory
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MMOInventory-1.9.jar
+Plugin: SkinsRestorer: 
+	Enabled?: true
+	Full Name: SkinsRestorer v15.5.2
+	Version: 15.5.2
+	Website: https://skinsrestorer.net/
+	Description: Ability to restore/change skins on servers!
+	Authors: 
+		knat
+		AlexProgrammerDE
+		Th3Tr0LLeR
+		McLive
+		DoNotSpamPls
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		ProtocolLib
+		ViaVersion
+		ViaBackwards
+		ProtocolSupport
+		MundoSK
+		floodgate
+		PlaceholderAPI
+	Folder: /home/ubuntu/Server/plugins/SkinsRestorer
+	Entry Point: net.skinsrestorer.bukkit.SRBukkitBootstrap
+	Class: net.skinsrestorer.bukkit.SRBukkitBootstrap
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/SkinsRestorer.jar
+Plugin: EssentialsSpawn: 
+	Enabled?: true
+	Full Name: EssentialsSpawn v2.21.0-dev+155-803771e
+	Version: 2.21.0-dev+155-803771e
+	Website: https://essentialsx.net/
+	Description: Provides spawn control commands, utilizing Essentials.
+	Authors: 
+		Zenexer
+		ementalo
+		Aelux
+		Brettflan
+		KimKandor
+		snowleo
+		ceulemans
+		Xeology
+		KHobbits
+		SupaHam
+		mdcfe
+		DoNotSpamPls
+		JRoy
+	Load Before: 
+	Dependencies: Essentials
+	Soft Dependencies: 
+	Folder: /home/ubuntu/Server/plugins/EssentialsSpawn
+	Entry Point: com.earth2me.essentials.spawn.EssentialsSpawn
+	Class: com.earth2me.essentials.spawn.EssentialsSpawn
+	Class Source: file:/home/ubuntu/Server/plugins/EssentialsXSpawn-2.21.0-dev+155-803771e.jar
+Plugin: Multiverse-Portals: 
+	Enabled?: true
+	Full Name: Multiverse-Portals v4.2.3
+	Version: 4.2.3
+	Website: null
+	Description: null
+	Authors: 
+		Rigby
+		fernferret
+	Load Before: 
+	Dependencies: Multiverse-Core
+	Soft Dependencies: WorldEdit
+	Folder: /home/ubuntu/Server/plugins/Multiverse-Portals
+	Entry Point: com.onarandombox.MultiversePortals.MultiversePortals
+	Class: com.onarandombox.MultiversePortals.MultiversePortals
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/multiverse-portals-4.2.3.jar
+Plugin: MythicDungeons: 
+	Enabled?: true
+	Full Name: MythicDungeons v1.4.1-SNAPSHOT
+	Version: 1.4.1-SNAPSHOT
+	Website: null
+	Description: null
+	Authors: 
+		MarcatoSound
+		Aestrus
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		AvNCombat
+		AvNItems
+		MythicMobs
+		MythicQuests
+		PlaceholderAPI
+		Heroes
+		Citizens
+		BetonQuest
+		Vault
+		ProtocolLib
+		ProtocolSupport
+		ViaVersion
+		ViaBackwards
+		ViaRewind
+		Geyser-Spigot
+		MMOCore
+		Parties
+	Folder: /home/ubuntu/Server/plugins/MythicDungeons
+	Entry Point: net.playavalon.mythicdungeons.MythicDungeons
+	Class: net.playavalon.mythicdungeons.MythicDungeons
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/MythicDungeons-1.4.1-SNAPSHOT-CUSTOM.jar
+Plugin: CommandPanels: 
+	Enabled?: true
+	Full Name: CommandPanels v3.21.4.4
+	Version: 3.21.4.4
+	Website: null
+	Description: Fully Custom GUIs. Make your Server Professional.
+	Authors: RockyHawk
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		Essentials
+		PlaceholderAPI
+		Vault
+		HeadDatabase
+		TokenManager
+		VotingPlugin
+		MMOItems
+		ChestSort
+		floodgate
+	Folder: /home/ubuntu/Server/plugins/CommandPanels
+	Entry Point: me.rockyhawk.commandpanels.CommandPanels
+	Class: me.rockyhawk.commandpanels.CommandPanels
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/CommandPanels.jar
+Plugin: ItemEdit: 
+	Enabled?: true
+	Full Name: ItemEdit v3.5.5
+	Version: 3.5.5
+	Website: null
+	Description: null
+	Authors: emanon
+	Load Before: 
+	Dependencies: 
+	Soft Dependencies: 
+		SCore
+		Vault
+		SuperVanish
+		PremiumVanish
+		PlaceholderAPI
+		ShopGUIPlus
+		ItemBridge
+		MythicMobs
+		IridiumSkyblock
+		ASkyBlock
+		uSkyBlock
+		IslandWorld
+		FabledSkyBlock
+		SimpleSkyblock
+		SkyBlock
+		SuperiorSkyblock2
+		SuperiorSkyblock
+		DungeonMMO
+	Folder: /home/ubuntu/Server/plugins/ItemEdit
+	Entry Point: emanondev.itemedit.ItemEdit
+	Class: emanondev.itemedit.ItemEdit
+	Class Source: file:/home/ubuntu/Server/plugins/.paper-remapped/ItemEdit-3.5.5.jar
+
+================================
+Scheduler
+================================
+
+Pending Task Count: 627
+Task: #8: 
+	Owner: ProtocolLib
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #9: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #20: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #21: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #22: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #322: 
+	Owner: WorldGuard
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #323: 
+	Owner: WorldGuard
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947164: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947165: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947120: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947121: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947118: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947119: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947116: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947117: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947115: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947035: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947014: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947012: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947013: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947010: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947011: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947008: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947009: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947020: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947019: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947016: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947017: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946974: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946975: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946972: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946973: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946998: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946999: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947006: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947007: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947004: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947005: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947002: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947003: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947000: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947001: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946978: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946979: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946976: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946977: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946935: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946938: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946936: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946937: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946834: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946835: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946832: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946833: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946831: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946864: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946862: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946863: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946860: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946861: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946858: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946859: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946856: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946857: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946774: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946773: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946783: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946790: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946791: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946788: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946789: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946786: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946787: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946784: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946785: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946794: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946792: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946793: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946748: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946749: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946646: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946647: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946644: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946645: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946642: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946643: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946640: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946641: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946628: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946629: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946626: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946627: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946624: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946625: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946678: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946679: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946676: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946677: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946682: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946683: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946680: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946681: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946570: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946571: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946568: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946569: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946612: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946613: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946610: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946611: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946622: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946623: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946502: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946503: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946500: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946501: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946504: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946505: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946528: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946529: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946462: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946463: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946436: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946437: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946435: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946398: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946399: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946396: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946397: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946394: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946395: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946392: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946393: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946382: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946383: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946381: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946400: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946338: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946339: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946336: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946337: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946250: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946251: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946224: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946225: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946222: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946223: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946220: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946221: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946219: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946118: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946119: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946116: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946117: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946114: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946115: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946122: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946123: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946120: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946121: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946164: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946165: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946162: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946163: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946174: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946175: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946172: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946173: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946170: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946171: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946071: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946074: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946072: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399946073: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945943: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945950: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945948: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945949: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945946: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945947: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945944: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945945: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945982: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945981: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945872: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945870: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945871: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945868: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945869: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945906: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945907: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945904: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945905: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945894: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945895: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945893: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945902: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945903: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945900: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945901: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945898: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945899: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945896: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945897: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945831: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945834: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945832: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945833: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945744: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945742: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945743: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945740: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945741: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945739: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945766: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945765: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #273018: 
+	Owner: Essentials
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4098834: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3489: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3490: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3491: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3495: 
+	Owner: Essentials
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3498: 
+	Owner: MythicLib
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3607: 
+	Owner: MythicLib
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3681: 
+	Owner: MMOCore
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3778: 
+	Owner: MMOCore
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3779: 
+	Owner: MMOCore
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3780: 
+	Owner: MMOCore
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3785: 
+	Owner: Shopkeepers
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3787: 
+	Owner: Shopkeepers
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3788: 
+	Owner: Shopkeepers
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3790: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3794: 
+	Owner: MMOItems
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3795: 
+	Owner: MMOItems
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #3797: 
+	Owner: MCPets
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4014: 
+	Owner: MCPets
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4015: 
+	Owner: MCPets
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4016: 
+	Owner: MCPets
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4018: 
+	Owner: SuperVanish
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4019: 
+	Owner: SuperVanish
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4020: 
+	Owner: SuperVanish
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4021: 
+	Owner: SuperVanish
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4023: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4027: 
+	Owner: HavenBags
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4029: 
+	Owner: ClearLag
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4030: 
+	Owner: ClearLag
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4032: 
+	Owner: SkBee
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4035: 
+	Owner: LoginSecurity
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4036: 
+	Owner: LoginSecurity
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4037: 
+	Owner: dtlTradersPlus
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4038: 
+	Owner: dtlTradersPlus
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4041: 
+	Owner: Sentinel
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4042: 
+	Owner: Sentinel
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4043: 
+	Owner: Sentinel
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4046: 
+	Owner: CustomizablePlayerModels
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4047: 
+	Owner: CustomizablePlayerModels
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4050: 
+	Owner: BadventsDisabler-remake
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4055: 
+	Owner: MMOInventory
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4056: 
+	Owner: MythicDungeons
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4067: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4068: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4070: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4071: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4072: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4074: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4075: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4076: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4077: 
+	Owner: Magic
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4079: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943532: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943533: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943530: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943531: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943529: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943286: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943287: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943284: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943285: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943288: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4565: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4566: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943036: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943034: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943035: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943032: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943033: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945670: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945671: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945668: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945669: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945666: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945667: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945664: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945665: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #6185: 
+	Owner: RealTime
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #6186: 
+	Owner: RealTime
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945702: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945703: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945700: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945701: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945616: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945617: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945614: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945615: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945654: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945655: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945652: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945653: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945650: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945651: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945663: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945656: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945495: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945498: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945496: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945497: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945472: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945530: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945531: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945529: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945408: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945409: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945462: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945463: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945470: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945471: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945468: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945469: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945466: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945467: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945464: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945465: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945442: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945443: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945450: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945451: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945448: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945449: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945350: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945351: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945348: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945349: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945356: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945354: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945355: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945352: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945353: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945407: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945300: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945298: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945325: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945234: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945235: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945232: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945233: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945246: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945247: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945244: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945245: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945242: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945243: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945230: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945231: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945229: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945248: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945249: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945262: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945263: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945260: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945261: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945190: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945191: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945189: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945192: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399945070: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944983: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944986: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944987: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944984: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944985: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944782: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944783: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944780: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944781: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944779: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944606: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944607: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944605: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944608: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944609: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944422: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944423: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944421: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944240: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #129768019: 
+	Owner: MythicLib
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944238: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944239: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944106: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #129767740: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #129767741: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #129767737: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #129767739: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944028: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944029: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944026: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944027: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944024: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399944025: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943790: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943791: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943788: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943789: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943786: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399943787: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947166: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947167: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947168: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947169: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947170: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947171: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947172: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947173: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947174: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947175: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947176: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947177: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947178: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947179: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947180: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947181: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947182: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947183: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947184: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947185: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947186: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947187: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947188: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947189: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947190: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947191: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947192: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947193: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947194: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947195: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947196: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947197: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947198: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947199: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947200: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947201: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947202: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947203: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947204: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947205: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947206: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947207: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947208: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947209: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947210: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947211: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947212: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947213: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947214: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947215: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947216: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947217: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947218: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947219: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947220: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947221: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947222: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947223: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947224: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947225: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947226: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947227: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947228: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947229: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947230: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947231: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947232: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947233: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947234: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947235: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947236: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947237: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947238: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947239: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947240: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947241: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947242: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947243: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947244: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947245: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947246: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947247: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947248: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947249: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947250: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947251: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947252: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947253: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947254: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947255: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947256: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947257: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947258: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947259: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947260: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947261: 
+	Owner: ReviveMe
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947262: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947263: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947264: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947265: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947266: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947267: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947268: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947269: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947270: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947271: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947272: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947273: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947274: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947275: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947276: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947277: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947278: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947279: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947280: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947281: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947282: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947283: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947284: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947285: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947286: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947287: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947288: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947289: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947290: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947291: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947292: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947293: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947294: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947295: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947296: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947297: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947298: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947299: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947300: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947301: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947302: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947303: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947304: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947305: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947306: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947307: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947308: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947309: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947310: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947311: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947312: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947313: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947314: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947315: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947316: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947317: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947318: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947319: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947320: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947321: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947322: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947323: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947324: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947325: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947326: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947327: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947328: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947329: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947330: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947331: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947332: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947333: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947334: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947335: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947336: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947337: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947338: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947339: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947340: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947341: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947342: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947343: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947344: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947345: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947346: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947347: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947348: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #399947349: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: true
+Task: #4034: 
+	Owner: LoginSecurity
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #129767742: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #3781: 
+	Owner: DecentHolograms
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #129767738: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4039: 
+	Owner: dtlTradersPlus
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #10: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #11: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #12: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #13: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #3789: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #14: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #15: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #395227905: 
+	Owner: LoginSecurity
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #16: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #17: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #18: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #19: 
+	Owner: ModelEngine
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4052: 
+	Owner: ConditionalEvents
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4053: 
+	Owner: ConditionalEvents
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #919: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #920: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4059: 
+	Owner: Vault
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #302226716: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4064: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4065: 
+	Owner: Skript
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4080: 
+	Owner: Citizens
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4017: 
+	Owner: SuperVanish
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #4022: 
+	Owner: BetonQuest
+	Runnable: <Unknown>
+	Synchronous?: false
+Task: #129766403: 
+	Owner: MythicMobs
+	Runnable: <Unknown>
+	Synchronous?: false
+
+================================
+Services
+================================
+
+net.milkbowl.vault.economy.Economy: com.earth2me.essentials.economy.vault.VaultEconomyProvider@59424822
+net.playavalon.mythicdungeons.api.MythicDungeonsService: MythicDungeons v1.4.1-SNAPSHOT
+io.lumine.mythic.lib.hologram.HologramFactory: io.lumine.mythic.lib.hologram.factory.BukkitHologramFactory@70aa5783
+org.betonquest.betonquest.api.config.ConfigurationFileFactory: org.betonquest.betonquest.modules.config.DefaultConfigurationFileFactory@2ac3d9c4
+com.tom.cpm.api.CPMPluginRegistry: com.tom.cpm.bukkit.CPMBukkitPlugin$2@50107c19
+net.milkbowl.vault.permission.Permission: me.lucko.luckperms.bukkit.vault.LuckPermsVaultPermission@1bd83d61
+io.lumine.mythic.lib.metrics.bukkit.Metrics: net.Indyuce.mmoitems.comp.MMOItemsMetrics@39ec67d6
+com.nisovin.shopkeepers.libs.bstats.Metrics: com.nisovin.shopkeepers.libs.bstats.Metrics@d5594d6
+net.essentialsx.api.v2.services.BalanceTop: com.earth2me.essentials.BalanceTopImpl@5ef6c1d1
+org.betonquest.betonquest.api.config.ConfigAccessorFactory: org.betonquest.betonquest.modules.config.DefaultConfigAccessorFactory@41fdc5b
+org.popcraft.chunky.Chunky: org.popcraft.chunky.Chunky@5e97d9d9
+org.mcmonkey.sentinel.metrics.BStatsMetricsLite: org.mcmonkey.sentinel.metrics.BStatsMetricsLite@7f4505f9
+com.comphenix.protocol.metrics.Metrics: com.comphenix.protocol.metrics.Metrics@17d5bb89
+net.kokoricraft.reviveme.utils.Metrics: net.kokoricraft.reviveme.utils.Metrics@6dd2402c
+net.luckperms.api.LuckPerms: me.lucko.luckperms.common.api.LuckPermsApiProvider@d6b155e
+net.milkbowl.vault.metrics.bukkit.Metrics: net.milkbowl.vault.metrics.bukkit.Metrics@5a56b3c7
+io.lumine.mythic.metrics.bukkit.Metrics: io.lumine.mythic.metrics.bukkit.Metrics@60e542f7
+net.milkbowl.vault.chat.Chat: me.lucko.luckperms.bukkit.vault.LuckPermsVaultChat@1f49ade7
+org.betonquest.betonquest.api.logger.BetonQuestLoggerFactory: org.betonquest.betonquest.api.logger.CachingBetonQuestLoggerFactory@4add9ab5
+net.essentialsx.api.v2.services.mail.MailService: com.earth2me.essentials.MailServiceImpl@25fac0a2
+io.lumine.mythic.bukkit.utils.holograms.HologramFactory: io.lumine.mythic.bukkit.utils.holograms.BukkitHologramFactory@6fc2cc10
+org.popcraft.chunky.api.ChunkyAPI: org.popcraft.chunky.api.ChunkyAPIImpl@3d36629a
+com.elmakers.mine.bukkit.bstats.Metrics: com.elmakers.mine.bukkit.bstats.Metrics@1b185fbb
+
+================================
+Worlds
+================================
+
+World Count: 6
+World: world: 
+	UUID: da277ce7-6011-4a85-ad18-7f0d1c920927
+	World Type: FLAT
+	Environment: NORMAL
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: NORMAL
+		Max Height: 320
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=world},x=0.0,y=-60.0,z=0.0,pitch=0.0,yaw=0.0}
+		Full Time: 224001455
+		Weather Duration: 132166
+		Thunder Duration: 150565
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=false, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=false, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=false, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=true, doInsomnia=true, keepInventory=true, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+World: world_the_end: 
+	UUID: 0b1c5d1b-187d-4fbe-b706-e24377fdab2f
+	World Type: FLAT
+	Environment: THE_END
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: EASY
+		Max Height: 256
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=world_the_end},x=0.0,y=63.0,z=0.0,pitch=0.0,yaw=0.0}
+		Full Time: 233210336
+		Weather Duration: 0
+		Thunder Duration: 0
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=true, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=true, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=true, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=true, doInsomnia=true, keepInventory=false, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+World: principal: 
+	UUID: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+	World Type: FLAT
+	Environment: NORMAL
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: NORMAL
+		Max Height: 320
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=principal},x=-2.0,y=72.0,z=-4.0,pitch=0.0,yaw=0.0}
+		Full Time: 218457455
+		Weather Duration: 36636
+		Thunder Duration: 62096
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=true, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=true, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=false, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=false, doInsomnia=true, keepInventory=true, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+World: spawn: 
+	UUID: 5e9ebc87-7d95-497a-9572-3b14d23ece80
+	World Type: FLAT
+	Environment: NORMAL
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: NORMAL
+		Max Height: 320
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=spawn},x=-1064.0,y=5.0,z=652.0,pitch=0.0,yaw=0.0}
+		Full Time: 705455
+		Weather Duration: 9695
+		Thunder Duration: 4689
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=true, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=true, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=true, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=true, doInsomnia=true, keepInventory=true, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+World: eutonia: 
+	UUID: c025a4d1-7010-4097-9a89-2468a114fff7
+	World Type: NORMAL
+	Environment: NORMAL
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: NORMAL
+		Max Height: 320
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=eutonia},x=-676.0,y=66.0,z=441.0,pitch=0.0,yaw=0.0}
+		Full Time: 298425455
+		Weather Duration: 97729
+		Thunder Duration: 48389
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=true, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=true, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=false, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=true, doInsomnia=true, keepInventory=true, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+World: pasatiempos: 
+	UUID: 9142f9af-7d58-4c11-8757-3306cb8fb950
+	World Type: NORMAL
+	Environment: THE_END
+	Chunk Generator: <Default>
+	Spawning: 
+		Animals?: true
+		Monsters?: true
+		Ambient Spawn Limit: 5
+		Animal Spawn Limit: 20
+		Monster Spawn Limit: 40
+		Water Creature Spawn Limit: 10
+	Configuration: 
+		Difficulty: EASY
+		Max Height: 256
+		Sea Level: 63
+	State: 
+		Spawn Location: Location{world=CraftWorld{name=pasatiempos},x=0.0,y=64.0,z=0.0,pitch=0.0,yaw=0.0}
+		Full Time: 234753455
+		Weather Duration: 0
+		Thunder Duration: 0
+	Protection: 
+		PVP?: true
+		Game Rules: globalSoundEvents=true, tntExplosionDropDecay=false, enderPearlsVanishOnDeath=true, doFireTick=true, maxCommandChainLength=65536, doVinesSpread=true, disableElytraMovementCheck=false, lavaSourceConversion=false, commandBlockOutput=true, forgiveDeadPlayers=true, playersNetherPortalCreativeDelay=1, doMobSpawning=true, maxEntityCramming=24, universalAnger=false, playersSleepingPercentage=100, snowAccumulationHeight=1, blockExplosionDropDecay=true, doImmediateRespawn=false, naturalRegeneration=true, doMobLoot=true, fallDamage=true, doEntityDrops=true, randomTickSpeed=3, playersNetherPortalDefaultDelay=80, spawnRadius=10, freezeDamage=true, sendCommandFeedback=true, doWardenSpawning=true, fireDamage=true, reducedDebugInfo=false, waterSourceConversion=true, projectilesCanBreakBlocks=true, announceAdvancements=false, drowningDamage=true, spawnChunkRadius=2, disableRaids=false, doWeatherCycle=true, mobExplosionDropDecay=true, doDaylightCycle=false, showDeathMessages=true, doTileDrops=true, doInsomnia=true, keepInventory=true, doLimitedCrafting=false, mobGriefing=true, commandModificationBlockLimit=32768, doTraderSpawning=true, logAdminCommands=true, spectatorsGenerateChunks=true, doPatrolSpawning=true, maxCommandForkCount=65536
+
+================================
+Performance
+================================
+
+World Count: 6
+World: world: 
+	Keep in Memory?: true
+	Entity Count: 39
+	Chunk Count: 841
+	Tile Entity Count: 1338
+	Entity Distribution: 
+		PlayerNPC: 19 [0.022592/chunk]
+		ArmorStandNPC: 19 [0.022592/chunk]
+		CraftPlayer: 1 [0.001189/chunk]
+	Tile Entity Distribution: 
+		CraftDispenser: 3 [0.003567/chunk]
+		CraftChiseledBookshelf: 80 [0.095125/chunk]
+		CraftCampfire: 1 [0.001189/chunk]
+		CraftSkull: 10 [0.011891/chunk]
+		CraftBarrel: 70 [0.083234/chunk]
+		CraftBrewingStand: 22 [0.026159/chunk]
+		CraftJukebox: 6 [0.007134/chunk]
+		CraftHopper: 2 [0.002378/chunk]
+		CraftBeehive: 11 [0.013080/chunk]
+		CraftEnderChest: 23 [0.027348/chunk]
+		CraftSign: 256 [0.304400/chunk]
+		CraftBanner: 440 [0.523187/chunk]
+		CraftEnchantingTable: 9 [0.010702/chunk]
+		CraftBlastFurnace: 2 [0.002378/chunk]
+		CraftFurnaceFurnace: 26 [0.030916/chunk]
+		CraftLectern: 21 [0.024970/chunk]
+		CraftBed: 58 [0.068966/chunk]
+		CraftChest: 298 [0.354340/chunk]
+World: world_the_end: 
+	Keep in Memory?: true
+	Entity Count: 0
+	Chunk Count: 49
+	Tile Entity Count: 0
+	Entity Distribution: No data.
+	Tile Entity Distribution: No data.
+World: principal: 
+	Keep in Memory?: true
+	Entity Count: 285
+	Chunk Count: 1387
+	Tile Entity Count: 3044
+	Entity Distribution: 
+		PlayerNPC: 140 [0.100937/chunk]
+		CraftSheep: 1 [0.000721/chunk]
+		ArmorStandNPC: 143 [0.103100/chunk]
+		CraftPlayer: 1 [0.000721/chunk]
+	Tile Entity Distribution: 
+		CraftDispenser: 7 [0.005047/chunk]
+		CraftChiseledBookshelf: 16 [0.011536/chunk]
+		CraftHangingSign: 6 [0.004326/chunk]
+		CraftSkull: 22 [0.015862/chunk]
+		CraftBarrel: 777 [0.560202/chunk]
+		CraftHopper: 101 [0.072819/chunk]
+		CraftBeehive: 26 [0.018745/chunk]
+		CraftShulkerBox: 2 [0.001442/chunk]
+		CraftBanner: 92 [0.066330/chunk]
+		CraftCreatureSpawner: 3 [0.002163/chunk]
+		CraftBed: 602 [0.434030/chunk]
+		CraftCommandBlock: 2 [0.001442/chunk]
+		CraftChest: 667 [0.480894/chunk]
+		CraftSmoker: 5 [0.003605/chunk]
+		CraftDropper: 4 [0.002884/chunk]
+		CraftDecoratedPot: 54 [0.038933/chunk]
+		CraftCampfire: 150 [0.108147/chunk]
+		CraftBrewingStand: 23 [0.016583/chunk]
+		CraftDaylightDetector: 109 [0.078587/chunk]
+		CraftComparator: 5 [0.003605/chunk]
+		CraftJukebox: 15 [0.010815/chunk]
+		CraftSign: 212 [0.152848/chunk]
+		CraftEnchantingTable: 11 [0.007931/chunk]
+		CraftBlastFurnace: 1 [0.000721/chunk]
+		CraftFurnaceFurnace: 110 [0.079308/chunk]
+		CraftLectern: 20 [0.014420/chunk]
+		CraftBell: 2 [0.001442/chunk]
+World: spawn: 
+	Keep in Memory?: true
+	Entity Count: 0
+	Chunk Count: 49
+	Tile Entity Count: 10
+	Entity Distribution: No data.
+	Tile Entity Distribution: 
+		CraftHopper: 4 [0.081633/chunk]
+		CraftDispenser: 6 [0.122449/chunk]
+World: eutonia: 
+	Keep in Memory?: true
+	Entity Count: 132
+	Chunk Count: 402
+	Tile Entity Count: 1812
+	Entity Distribution: 
+		PlayerNPC: 66 [0.164179/chunk]
+		ArmorStandNPC: 66 [0.164179/chunk]
+	Tile Entity Distribution: 
+		CraftDispenser: 3 [0.007463/chunk]
+		CraftHangingSign: 5 [0.012438/chunk]
+		CraftCampfire: 277 [0.689055/chunk]
+		CraftSkull: 207 [0.514925/chunk]
+		CraftBarrel: 251 [0.624378/chunk]
+		CraftDaylightDetector: 59 [0.146766/chunk]
+		CraftBrewingStand: 11 [0.027363/chunk]
+		CraftComparator: 2 [0.004975/chunk]
+		CraftJukebox: 5 [0.012438/chunk]
+		CraftHopper: 8 [0.019900/chunk]
+		CraftBeehive: 15 [0.037313/chunk]
+		CraftEnderChest: 12 [0.029851/chunk]
+		CraftSign: 351 [0.873134/chunk]
+		CraftBanner: 124 [0.308458/chunk]
+		CraftEnchantingTable: 14 [0.034826/chunk]
+		CraftCreatureSpawner: 6 [0.014925/chunk]
+		CraftBlastFurnace: 2 [0.004975/chunk]
+		CraftBed: 109 [0.271144/chunk]
+		CraftFurnaceFurnace: 44 [0.109453/chunk]
+		CraftLectern: 1 [0.002488/chunk]
+		CraftChest: 300 [0.746269/chunk]
+		CraftSmoker: 1 [0.002488/chunk]
+		CraftBell: 5 [0.012438/chunk]
+World: pasatiempos: 
+	Keep in Memory?: true
+	Entity Count: 0
+	Chunk Count: 49
+	Tile Entity Count: 0
+	Entity Distribution: No data.
+	Tile Entity Distribution: No data.
+
+================================
+DataPacks
+================================
+
+Datapack Count: 6
+Datapack Enabled Count: 3
+DataPack: bundle: 
+	Enabled?: false
+	Name: bundle
+	Compatibility: COMPATIBLE
+DataPack: file/bukkit: 
+	Enabled?: true
+	Name: file/bukkit
+	Compatibility: COMPATIBLE
+DataPack: paper: 
+	Enabled?: true
+	Name: paper
+	Compatibility: COMPATIBLE
+DataPack: trade_rebalance: 
+	Enabled?: false
+	Name: trade_rebalance
+	Compatibility: COMPATIBLE
+DataPack: update_1_21: 
+	Enabled?: false
+	Name: update_1_21
+	Compatibility: COMPATIBLE
+DataPack: vanilla: 
+	Enabled?: true
+	Name: vanilla
+	Compatibility: COMPATIBLE
+
+================================
+System Information
+================================
+
+Java: Ubuntu 21.0.6 (https://ubuntu.com/)
+Operating System: Linux 6.5.0-1020-oracle (aarch64)
+Available Processors: 4
+Free Memory: 2760 MB
+Max Memory: 18432 MB
+Total Memory: 16576 MB
+System Load Average: 1.177734375
+Java Uptime: 2317 minutes
+Startup: 
+	Input Arguments: 
+		-Xms16G
+		-Xmx18G
+		-XX:+UseG1GC
+		-XX:MaxGCPauseMillis=50
+		-XX:+ParallelRefProcEnabled
+		-XX:+UnlockExperimentalVMOptions
+		-XX:+DisableExplicitGC
+		-XX:G1NewSizePercent=30
+		-XX:G1MaxNewSizePercent=40
+		-XX:G1HeapRegionSize=8M
+		-XX:G1ReservePercent=20
+		-XX:G1HeapWastePercent=5
+		-XX:G1MixedGCCountTarget=4
+		-XX:InitiatingHeapOccupancyPercent=15
+		-XX:G1MixedGCLiveThresholdPercent=90
+		-XX:G1RSetUpdatingPauseTimePercent=5
+		-XX:SurvivorRatio=32
+		-XX:MaxTenuringThreshold=1
+		-Dfile.encoding=UTF8
+Virtual Machine: 
+	Name: OpenJDK 64-Bit Server VM
+	Vendor: Ubuntu
+	Version: Ubuntu
+Specification: 
+	Name: Java Virtual Machine Specification
+	Vendor: Oracle Corporation
+	Version: 21
+Class Loader: 
+	Loaded Class Count: 58545
+	Total Loaded Class Count: 59613
+	Unloaded Class Count: 1068
+Garbage Collectors: 
+	G1 Young Generation: 
+		Collection Count: 4291
+		Collection Time: 156081ms
+	G1 Concurrent GC: 
+		Collection Count: 596
+		Collection Time: 5191ms
+	G1 Old Generation: 
+		Collection Count: 0
+		Collection Time: 0ms
+Threads: 
+	#9 Reference Handler: RUNNABLE
+	#10 Finalizer: WAITING
+	#11 Signal Dispatcher: RUNNABLE
+	#17 Notification Thread: RUNNABLE
+	#18 Common-Cleaner: TIMED_WAITING
+	#20 DestroyJavaVM: RUNNABLE
+	#25 Log4j2-AsyncAppenderEventDispatcher-1-Async: WAITING
+	#27 JNA Cleaner: TIMED_WAITING
+	#33 Timer hack thread: TIMED_WAITING
+	#34 Yggdrasil Key Fetcher: TIMED_WAITING
+	#37 Worker-Main-1: WAITING
+	#38 Server thread: RUNNABLE
+	#45 Java2D Disposer: WAITING
+	#47 RegionFile I/O Thread #0: WAITING
+	#48 RegionFile I/O Thread #1: WAITING
+	#49 Tuinity Chunk System Worker #0: WAITING
+	#50 Tuinity Chunk System Worker #1: WAITING
+	#51 Tuinity Chunk System Worker #2: WAITING
+	#52 Tuinity Chunk System Worker #3: WAITING
+	#53 Paper Watchdog Thread: TIMED_WAITING
+	#40 Server console handler: RUNNABLE
+	#54 pool-8-thread-1: TIMED_WAITING
+	#57 Netty Epoll Server IO #0: RUNNABLE
+	#58 luckperms-worker-0: WAITING
+	#59 luckperms-worker-1: TIMED_WAITING
+	#60 luckperms-worker-2: WAITING
+	#61 luckperms-worker-3: WAITING
+	#62 luckperms-worker-4: WAITING
+	#63 luckperms-worker-5: WAITING
+	#64 luckperms-worker-6: WAITING
+	#65 luckperms-worker-7: WAITING
+	#66 luckperms-worker-8: WAITING
+	#67 luckperms-worker-9: WAITING
+	#68 luckperms-scheduler: TIMED_WAITING
+	#69 WorldEdit Session Manager: TIMED_WAITING
+	#72 bStats-Metrics: TIMED_WAITING
+	#76 FileSystemWatchService: RUNNABLE
+	#77 MVStore background writer /home/ubuntu/Server/plugins/LuckPerms/luckperms-h2-v2.mv.db: TIMED_WAITING
+	#83 H2-serialization: WAITING
+	#84 H2-save: WAITING
+	#85 Timer-0: TIMED_WAITING
+	#86 bStats-Metrics: TIMED_WAITING
+	#87 bStats-Metrics: TIMED_WAITING
+	#88 Thread-14: TIMED_WAITING
+	#89 mysql-cj-abandoned-connection-cleanup: TIMED_WAITING
+	#90 Thread-15: TIMED_WAITING
+	#91 bStats-Metrics: TIMED_WAITING
+	#92 Folia Async Scheduler Thread #0: WAITING
+	#93 Folia Async Scheduler Thread Timer: TIMED_WAITING
+	#94 Folia Async Scheduler Thread #1: WAITING
+	#95 Folia Async Scheduler Thread #2: WAITING
+	#99 WorldGuard Region I/O: TIMED_WAITING
+	#102 bStats-Metrics: TIMED_WAITING
+	#103 WorldGuard Region Chunk Table - principal: TIMED_WAITING
+	#106 WorldGuard Region Chunk Table - eutonia: TIMED_WAITING
+	#108 bStats-Metrics: TIMED_WAITING
+	#109 bStats-Metrics: TIMED_WAITING
+	#111 lumine-scheduler-timer: TIMED_WAITING
+	#114 pool-72-thread-1: WAITING
+	#115 pool-73-thread-1: TIMED_WAITING
+	#116 pool-72-thread-2: WAITING
+	#117 bStats-Metrics: TIMED_WAITING
+	#118 bStats-Metrics: TIMED_WAITING
+	#119 bStats-Metrics: TIMED_WAITING
+	#121 ForkJoinPool.commonPool-worker-1: TIMED_WAITING
+	#124 bStats-Metrics: TIMED_WAITING
+	#125 bStats-Metrics: TIMED_WAITING
+	#128 ForkJoinPool.commonPool-worker-2: WAITING
+	#129 ForkJoinPool.commonPool-worker-3: WAITING
+	#130 Thread-23: WAITING
+	#131 bStats-Metrics: TIMED_WAITING
+	#135 bStats-Metrics: TIMED_WAITING
+	#136 bStats-Metrics: TIMED_WAITING
+	#137 bStats-Metrics: TIMED_WAITING
+	#139 bStats-Metrics: TIMED_WAITING
+	#140 TAB Permission Group Refreshing Thread: TIMED_WAITING
+	#141 TAB TabList Entry Checker Thread: TIMED_WAITING
+	#142 TAB Processing Thread: TIMED_WAITING
+	#143 TAB Ping Spoof Thread: WAITING
+	#144 TAB Header/Footer Thread: WAITING
+	#145 TAB Playerlist Objective Thread: WAITING
+	#146 TAB NameTag Thread: WAITING
+	#147 TAB Placeholder Refreshing Thread: WAITING
+	#148 bStats-Metrics: TIMED_WAITING
+	#149 bStats-Metrics: TIMED_WAITING
+	#151 bStats-Metrics: TIMED_WAITING
+	#153 bStats-Metrics: TIMED_WAITING
+	#154 bStats-Metrics: TIMED_WAITING
+	#155 bStats-Metrics: TIMED_WAITING
+	#156 bStats-Metrics: TIMED_WAITING
+	#157 bStats-Metrics: TIMED_WAITING
+	#158 bStats-Metrics: TIMED_WAITING
+	#159 bStats-Metrics: TIMED_WAITING
+	#160 Craft Async Scheduler Management Thread: WAITING
+	#161 Netty Epoll Server IO #1: RUNNABLE
+	#163 Netty Epoll Server IO #2: RUNNABLE
+	#197 Skript variable save thread for database 'CSV': WAITING
+	#120 Skript variable save thread: WAITING
+	#198 bStats-Metrics: TIMED_WAITING
+	#201 Netty Epoll Server IO #3: RUNNABLE
+	#203 bStats-Metrics: TIMED_WAITING
+	#205 DecentHolograms Thread #1: WAITING
+	#206 DecentHolograms Thread #2: WAITING
+	#207 DecentHolograms Thread #3: WAITING
+	#225 Folia Async Scheduler Thread #3: WAITING
+	#228 pool-71-thread-1: WAITING
+	#235 Async Tab Complete Thread - #0: WAITING
+	#236 Async Tab Complete Thread - #1: WAITING
+	#237 bStats-Metrics: TIMED_WAITING
+	#238 Async Tab Complete Thread - #2: WAITING
+	#239 Async Tab Complete Thread - #3: WAITING
+	#281 bStats-Metrics: TIMED_WAITING
+	#283 luckperms-command-executor: WAITING
+	#284 DimensionDataIO - ./world - 0: WAITING
+	#285 DimensionDataIO - ./world_the_end/DIM1 - 0: WAITING
+	#286 DimensionDataIO - ./principal - 0: WAITING
+	#287 DimensionDataIO - ./spawn - 0: WAITING
+	#288 DimensionDataIO - ./eutonia - 0: WAITING
+	#289 DimensionDataIO - ./pasatiempos/DIM1 - 0: WAITING
+	#7308 ForkJoinPool-2-worker-20: WAITING
+	#7336 ForkJoinPool-2-worker-21: TIMED_WAITING
+	#7389 Craft Scheduler Thread - 3840 - MythicMobs: WAITING
+	#7392 lumine-scheduler-188: TIMED_WAITING
+	#7395 Craft Scheduler Thread - 3842: TIMED_WAITING
+	#7410 Craft Scheduler Thread - 3849: TIMED_WAITING
+	#7412 Craft Scheduler Thread - 3851 - MythicMobs: WAITING
+	#7413 Craft Scheduler Thread - 3852: TIMED_WAITING
+	#7418 Craft Scheduler Thread - 3853: TIMED_WAITING
+	#7425 Craft Scheduler Thread - 3854: TIMED_WAITING
+	#7434 Craft Scheduler Thread - 3857: TIMED_WAITING
+	#7446 Craft Scheduler Thread - 3863: TIMED_WAITING
+	#7449 Craft Scheduler Thread - 3864: TIMED_WAITING
+	#7450 WorldGuard Sampler: TIMED_WAITING
+	#7452 Craft Scheduler Thread - 3865: TIMED_WAITING
+	#7453 Craft Scheduler Thread - 3866: TIMED_WAITING
+	#7455 Craft Scheduler Thread - 3868: TIMED_WAITING
+	#7456 Craft Scheduler Thread - 3869: TIMED_WAITING
+	#7457 Craft Scheduler Thread - 3870: TIMED_WAITING
+	#7462 Craft Scheduler Thread - 3871: TIMED_WAITING
+	#7463 Craft Scheduler Thread - 3872: TIMED_WAITING
+	#7465 WorldGuard Region Chunk Table - world: TIMED_WAITING
+
+================================
+WorldGuard Configuration
+================================
+
+Configuration: 
+	hasCommandBookGodMode: false
+	extraStats: true
+	useRegionsCreatureSpawnEvent: true
+	activityHaltToggle: false
+	useGodPermission: false
+	useGodGroup: false
+	useAmphibiousGroup: false
+	usePlayerMove: true
+	usePlayerTeleports: true
+	deopOnJoin: false
+	blockInGameOp: false
+	migrateRegionsToUuid: false
+	keepUnresolvedNames: true
+	particleEffects: true
+	disablePermissionCache: false
+	disableDefaultBypass: false
+	announceBypassStatus: false
+	hostKeysAllowFMLClients: false
+World: world: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/world/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 3
+		__global__: 
+			Type: GLOBAL
+			Priority: 0
+			Parent: <none>
+			Owners: {players={uuids=[], names=[]}, groups={names=[]}}
+			Members: {players={uuids=[], names=[]}, groups={names=[]}}
+			Flags: 
+				StateFlag{name='fire-spread'}: DENY
+				StateFlag{name='other-explosion'}: DENY
+				StateFlag{name='enderdragon-block-damage'}: DENY
+				StateFlag{name='tnt'}: DENY
+				StateFlag{name='ghast-fireball'}: DENY
+				StateFlag{name='creeper-explosion'}: DENY
+			Bounds: (0, 0, 0) -> (0, 0, 0)
+World: world_the_end: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/world_the_end/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 0
+		__global__: <Undefined>
+World: principal: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/principal/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 12
+		__global__: 
+			Type: GLOBAL
+			Priority: 0
+			Parent: <none>
+			Owners: {players={uuids=[ed76a186-1ae1-370a-8a68-51d8ecee3986], names=[]}, groups={names=[]}}
+			Members: {players={uuids=[], names=[]}, groups={names=[]}}
+			Flags: 
+				StateFlag{name='fire-spread'}: DENY
+				StateFlag{name='copper-fade'}: DENY
+				StateFlag{name='enderman-grief'}: DENY
+				StateFlag{name='ice-form'}: DENY
+				StateFlag{name='snow-fall'}: DENY
+				StateFlag{name='ghast-fireball'}: DENY
+				StateFlag{name='lava-fire'}: DENY
+				StateFlag{name='coral-fade'}: DENY
+				StateFlag{name='other-explosion'}: DENY
+				StateFlag{name='enderdragon-block-damage'}: DENY
+				StateFlag{name='ice-melt'}: DENY
+				StateFlag{name='ravager-grief'}: DENY
+				StateFlag{name='wither-damage'}: DENY
+				BuildFlag{name='build'}: ALLOW
+				StateFlag{name='tnt'}: DENY
+				StateFlag{name='frosted-ice-melt'}: DENY
+				StateFlag{name='snowman-trails'}: DENY
+				StateFlag{name='frosted-ice-form'}: DENY
+				StateFlag{name='sleep'}: DENY
+				StateFlag{name='respawn-anchors'}: DENY
+				StateFlag{name='exp-drops'}: DENY
+				StateFlag{name='snow-melt'}: DENY
+				StateFlag{name='creeper-explosion'}: DENY
+			Bounds: (0, 0, 0) -> (0, 0, 0)
+World: spawn: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/spawn/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 1
+		__global__: 
+			Type: GLOBAL
+			Priority: 0
+			Parent: <none>
+			Owners: {players={uuids=[], names=[]}, groups={names=[]}}
+			Members: {players={uuids=[], names=[]}, groups={names=[]}}
+			Flags: 
+				StateFlag{name='use'}: DENY
+				StateFlag{name='snow-fall'}: DENY
+				StateFlag{name='potion-splash'}: DENY
+				StateFlag{name='firework-damage'}: DENY
+				StateFlag{name='enderpearl'}: DENY
+				StateFlag{name='ghast-fireball'}: DENY
+				StateFlag{name='chorus-fruit-teleport'}: DENY
+				StateFlag{name='lava-fire'}: DENY
+				StateFlag{name='other-explosion'}: DENY
+				StateFlag{name='enderdragon-block-damage'}: DENY
+				StateFlag{name='leaf-decay'}: DENY
+				StateFlag{name='block-break'}: DENY
+				StringFlag{name='time-lock'}: 1000
+				StateFlag{name='vehicle-place'}: DENY
+				StateFlag{name='natural-hunger-drain'}: DENY
+				StateFlag{name='wither-damage'}: DENY
+				StateFlag{name='lighter'}: DENY
+				StateFlag{name='use-anvil'}: DENY
+				BuildFlag{name='build'}: DENY
+				StateFlag{name='lightning'}: DENY
+				StateFlag{name='mycelium-spread'}: DENY
+				StateFlag{name='snowman-trails'}: DENY
+				StateFlag{name='water-flow'}: DENY
+				StateFlag{name='sleep'}: DENY
+				StateFlag{name='block-trampling'}: DENY
+				StateFlag{name='respawn-anchors'}: DENY
+				StateFlag{name='vehicle-destroy'}: DENY
+				StateFlag{name='mob-spawning'}: DENY
+				StateFlag{name='snow-melt'}: DENY
+				StateFlag{name='rock-growth'}: DENY
+				StateFlag{name='mushroom-growth'}: DENY
+				StateFlag{name='entity-item-frame-destroy'}: DENY
+				RegistryFlag{name='weather-lock'}: clear
+				StateFlag{name='damage-animals'}: DENY
+				StateFlag{name='creeper-explosion'}: DENY
+				StateFlag{name='item-drop'}: DENY
+				StateFlag{name='fire-spread'}: DENY
+				StateFlag{name='copper-fade'}: DENY
+				StateFlag{name='enderman-grief'}: DENY
+				StateFlag{name='crop-growth'}: DENY
+				StateFlag{name='ice-form'}: DENY
+				StateFlag{name='pvp'}: DENY
+				StateFlag{name='chest-access'}: DENY
+				StateFlag{name='ride'}: DENY
+				StateFlag{name='soil-dry'}: DENY
+				StateFlag{name='coral-fade'}: DENY
+				StateFlag{name='item-frame-rotation'}: DENY
+				StateFlag{name='mob-damage'}: DENY
+				StateFlag{name='block-place'}: DENY
+				StateFlag{name='vine-growth'}: DENY
+				StateFlag{name='use-dripleaf'}: DENY
+				StateFlag{name='ice-melt'}: DENY
+				StateFlag{name='entity-painting-destroy'}: DENY
+				StateFlag{name='ravager-grief'}: DENY
+				StateFlag{name='item-pickup'}: DENY
+				StateFlag{name='tnt'}: DENY
+				StateFlag{name='lava-flow'}: DENY
+				StateFlag{name='interact'}: DENY
+				StateFlag{name='frosted-ice-melt'}: DENY
+				StateFlag{name='natural-health-regen'}: DENY
+				StateFlag{name='pistons'}: DENY
+				StateFlag{name='frosted-ice-form'}: DENY
+				StateFlag{name='fall-damage'}: DENY
+				StateFlag{name='exp-drops'}: DENY
+				StateFlag{name='invincible'}: ALLOW
+				StateFlag{name='sculk-growth'}: DENY
+				StateFlag{name='grass-growth'}: DENY
+			Bounds: (0, 0, 0) -> (0, 0, 0)
+World: eutonia: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/eutonia/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 8
+		__global__: 
+			Type: GLOBAL
+			Priority: 0
+			Parent: <none>
+			Owners: {players={uuids=[], names=[]}, groups={names=[]}}
+			Members: {players={uuids=[], names=[]}, groups={names=[]}}
+			Flags: 
+				StateFlag{name='fire-spread'}: DENY
+				StateFlag{name='copper-fade'}: DENY
+				StateFlag{name='enderman-grief'}: DENY
+				StateFlag{name='ice-form'}: DENY
+				StateFlag{name='snow-fall'}: DENY
+				StateFlag{name='ghast-fireball'}: DENY
+				StateFlag{name='lava-fire'}: DENY
+				StateFlag{name='coral-fade'}: DENY
+				StateFlag{name='other-explosion'}: DENY
+				StateFlag{name='enderdragon-block-damage'}: DENY
+				StateFlag{name='ice-melt'}: DENY
+				StateFlag{name='ravager-grief'}: DENY
+				StateFlag{name='wither-damage'}: DENY
+				StateFlag{name='tnt'}: DENY
+				StateFlag{name='frosted-ice-melt'}: DENY
+				StateFlag{name='snowman-trails'}: DENY
+				StateFlag{name='frosted-ice-form'}: DENY
+				StateFlag{name='sleep'}: DENY
+				StateFlag{name='respawn-anchors'}: DENY
+				StateFlag{name='exp-drops'}: DENY
+				StateFlag{name='snow-melt'}: DENY
+				StateFlag{name='creeper-explosion'}: DENY
+			Bounds: (0, 0, 0) -> (0, 0, 0)
+World: pasatiempos: 
+	Configuration: 
+		blockPotions: []
+		allowAllInteract: {}
+		blockUseAtFeet: {}
+		usePaperEntityOrigin: false
+		blacklistFile: plugins/WorldGuard/worlds/pasatiempos/blacklist.txt
+		boundedLocationFlags: false
+		useRegions: true
+		simulateSponge: false
+		spongeRadius: 2
+		redstoneSponges: false
+		summaryOnStart: true
+		opPermissions: true
+		buildPermissions: false
+		buildPermissionDenyMessage: §eSorry, but you are not permitted to do that here.
+		fireSpreadDisableToggle: false
+		itemDurability: true
+		disableExpDrops: false
+		blockPotionsAlways: false
+		disableConduitEffects: false
+		pumpkinScuba: false
+		noPhysicsGravel: false
+		noPhysicsSand: false
+		ropeLadders: false
+		allowPortalAnywhere: false
+		preventWaterDamage: []
+		blockLighter: false
+		disableFireSpread: false
+		disableFireSpreadBlocks: []
+		preventLavaFire: false
+		allowedLavaSpreadOver: []
+		blockTNTExplosions: false
+		blockTNTBlockDamage: false
+		blockCreeperExplosions: false
+		blockCreeperBlockDamage: false
+		blockWitherExplosions: false
+		blockWitherBlockDamage: false
+		blockWitherSkullExplosions: false
+		blockWitherSkullBlockDamage: false
+		blockEnderDragonBlockDamage: false
+		blockEnderDragonPortalCreation: false
+		blockFireballExplosions: false
+		blockFireballBlockDamage: false
+		blockOtherExplosions: false
+		blockEntityPaintingDestroy: false
+		blockEntityItemFrameDestroy: false
+		blockEntityArmorStandDestroy: false
+		blockEntityVehicleEntry: false
+		blockPluginSpawning: true
+		blockGroundSlimes: false
+		blockZombieDoorDestruction: false
+		disableContactDamage: false
+		disableFallDamage: false
+		disableLavaDamage: false
+		disableFireDamage: false
+		disableLightningDamage: false
+		disableDrowningDamage: false
+		disableSuffocationDamage: false
+		teleportOnSuffocation: false
+		disableVoidDamage: false
+		teleportOnVoid: false
+		safeFallOnVoid: false
+		disableExplosionDamage: false
+		disableMobDamage: false
+		highFreqFlags: false
+		checkLiquidFlow: false
+		regionWand: minecraft:leather
+		blockCreatureSpawn: []
+		allowTamedSpawns: true
+		maxClaimVolume: 30000
+		claimOnlyInsideExistingRegions: false
+		setParentOnClaim: 
+		maxRegionCountPerPlayer: 7
+		antiWolfDumbness: false
+		signChestProtection: false
+		disableSignChestProtectionCheck: true
+		removeInfiniteStacks: false
+		disableCreatureCropTrampling: false
+		disablePlayerCropTrampling: false
+		disableCreatureTurtleEggTrampling: false
+		disablePlayerTurtleEggTrampling: false
+		disableCreatureSnifferEggTrampling: false
+		disablePlayerSnifferEggTrampling: false
+		preventLightningFire: false
+		disallowedLightningBlocks: []
+		disableThunder: false
+		disableWeather: false
+		alwaysRaining: false
+		alwaysThundering: false
+		disablePigZap: false
+		disableVillagerZap: false
+		disableCreeperPower: false
+		disableHealthRegain: false
+		disableMushroomSpread: false
+		disableIceMelting: false
+		disableSnowMelting: false
+		disableSnowFormation: false
+		disableIceFormation: false
+		disableLeafDecay: false
+		disableGrassGrowth: false
+		disableMyceliumSpread: false
+		disableVineGrowth: false
+		disableRockGrowth: false
+		disableSculkGrowth: false
+		disableCropGrowth: false
+		disableEndermanGriefing: false
+		disableSnowmanTrails: false
+		disableSoilDehydration: false
+		disableCoralBlockFade: false
+		disableCopperBlockFade: false
+		allowedSnowFallOver: []
+		regionInvinciblityRemovesMobs: false
+		regionCancelEmptyChatEvents: true
+		regionNetherPortalProtection: true
+		forceDefaultTitleTimes: true
+		fakePlayerBuildOverride: true
+		explosionFlagCancellation: true
+		disableDeathMessages: false
+		strictEntitySpawn: false
+		ignoreHopperMoveEvents: false
+		breakDeniedHoppers: true
+		useMaxPriorityAssociation: false
+		maxRegionCounts: {null=7}
+	Blacklist: <Disabled>
+	Regions: 
+		Region Count: 15
+		__global__: 
+			Type: GLOBAL
+			Priority: 0
+			Parent: <none>
+			Owners: {players={uuids=[], names=[]}, groups={names=[]}}
+			Members: {players={uuids=[], names=[]}, groups={names=[]}}
+			Flags: 
+				StateFlag{name='fire-spread'}: DENY
+				StateFlag{name='copper-fade'}: DENY
+				StateFlag{name='enderman-grief'}: DENY
+				StateFlag{name='crop-growth'}: DENY
+				StateFlag{name='ice-form'}: DENY
+				StateFlag{name='snow-fall'}: DENY
+				StateFlag{name='enderpearl'}: DENY
+				StateFlag{name='ghast-fireball'}: DENY
+				StateFlag{name='soil-dry'}: DENY
+				StateFlag{name='chorus-fruit-teleport'}: DENY
+				StateFlag{name='lava-fire'}: DENY
+				StateFlag{name='coral-fade'}: DENY
+				StateFlag{name='other-explosion'}: DENY
+				StateFlag{name='enderdragon-block-damage'}: DENY
+				StateFlag{name='leaf-decay'}: DENY
+				StateFlag{name='block-break'}: ALLOW
+				StateFlag{name='vine-growth'}: DENY
+				StateFlag{name='ice-melt'}: DENY
+				StateFlag{name='ravager-grief'}: DENY
+				StateFlag{name='wither-damage'}: DENY
+				StateFlag{name='lightning'}: DENY
+				StateFlag{name='tnt'}: DENY
+				StateFlag{name='frosted-ice-melt'}: DENY
+				StateFlag{name='mycelium-spread'}: DENY
+				StateFlag{name='snowman-trails'}: DENY
+				StateFlag{name='frosted-ice-form'}: DENY
+				StateFlag{name='mob-spawning'}: DENY
+				StateFlag{name='exp-drops'}: DENY
+				StateFlag{name='rock-growth'}: DENY
+				StateFlag{name='snow-melt'}: DENY
+				StateFlag{name='mushroom-growth'}: DENY
+				StateFlag{name='sculk-growth'}: DENY
+				StateFlag{name='creeper-explosion'}: DENY
+				StateFlag{name='grass-growth'}: DENY
+			Bounds: (0, 0, 0) -> (0, 0, 0)
+
+================================
+Applicable regions
+================================
+
+Location: world @ (16, -60, 117)
+Regions: None
+

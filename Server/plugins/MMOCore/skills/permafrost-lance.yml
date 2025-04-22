@@ -1,0 +1,45 @@
+name: Permafrost Lance
+lore:
+- '&bSummon your permafrost lance, slash through your'
+- '&benemies 2 times, knocking them back. You knock up'
+- '&byour enemies with your 3rd strike, setting them airborne.'
+- '&bYour last strike completely pins enemies to the surface,'
+- '&bfreezing them for a long time.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2192'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 8
+duration:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 9
+  per-level: -0.1
+  min: 8
+  max: 9
+
+#M1S1dkNB9GUyJ3czhHVaVmQnBTV5VEVNlXTE5kMJRlT4NGRShUWOVXMaB3cLF2R2s2MWB3M

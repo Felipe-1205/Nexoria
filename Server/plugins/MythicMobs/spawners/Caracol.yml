@@ -1,0 +1,26 @@
+Caracol:
+  MobName: Snail
+  World: dungeons
+  X: -18
+  Y: 5
+  Z: -240
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 3.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '3'
+  MobLevel: '1'
+  MobsPerSpawn: 3
+  Cooldown: 20
+  Warmup: 0
+  ActivationRange: 6.0
+  ScalingRange: 25.0
+  LeashRange: 4.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

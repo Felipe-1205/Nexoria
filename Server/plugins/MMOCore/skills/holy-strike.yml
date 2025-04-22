@@ -1,0 +1,35 @@
+name: Holy Strike
+lore:
+- '&ePerform a holy slash attack.'
+- '&eEvery 3rd strike uppercuts your'
+- '&eenemies and sets them airborne.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2109'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 1
+  per-level: -0.1
+  min: 0.5
+  max: 1

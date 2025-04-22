@@ -1,0 +1,40 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+ChameleonPet:
+  Type: CAT
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=chameleon;n=false} @self ~onSpawn
+  - skill{s=chameleon_Pet} @self ~onInteract
+  - skill{s=chameleon_PetSpawn} @self ~onSpawn
+  - skill{s=chameleon_PetCOLOR} @self ~onTimer:20
+  Display: "§bChameleon"
+  Health: 100
+  Damage: 3
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false

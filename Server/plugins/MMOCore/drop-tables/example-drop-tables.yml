@@ -1,0 +1,6 @@
+# You may create as many drop tables as you want. You can also
+# make drop tables refer to other drop tables.
+#
+# DON'T TRY to create recursive drop tables (drop tables
+# which call themselves to multiply items dropped).
+

@@ -1,0 +1,32 @@
+SOUND_WAVE:
+    mythicmobs-skill-id: Sound_Wave
+    modifiers:
+    - damage
+    - duration
+
+VIBRATIVE_STRIKE:
+    mythicmobs-skill-id: Vibrative_Strike
+    modifiers:
+    - damage
+    - duration
+    
+SHIELD_OF_HARMONY:
+    mythicmobs-skill-id: Shield_of_Harmony
+    passive-type: TIMER
+    
+ANGELIC_SERENADE:
+    mythicmobs-skill-id: Angelic_Serenade
+    modifiers:
+    - heal
+    - duration
+    
+RHAPSODY:
+    mythicmobs-skill-id: Rhapsody
+    modifiers:
+    - duration
+    
+SYMPHONY_OF_DESTRUCTION:
+    mythicmobs-skill-id: Symphony_of_Destruction
+    modifiers:
+    - damage
+    - duration

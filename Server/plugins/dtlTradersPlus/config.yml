@@ -1,0 +1,44 @@
+# Download it here: https://black-minecraft.com/resources/1063/
+#
+# Appearance and position of page selectors
+version: 6.0.0
+General:
+  disable-npc-left-click: true
+  disable-npc-right-click: false
+  disable-shops-no-items: false
+  Support:
+    OptEco:
+      enabled: false
+    GemsEconomy:
+      enabled: false
+      currency: Valis
+    BeastToken:
+      enabled: false
+    Vault:
+      enabled: true
+    Placeholderapi: true
+page-selectors:
+  back:
+    slots:
+    - 2
+    position: bottom
+    name: '&aAnterior'
+  next:
+    slots:
+    - 6
+    position: bottom
+    name: '&aSiguiente'
+  exit:
+    slots:
+    - 4
+    position: bottom
+    name: '&cSalir'
+shop-selectors:
+  slot: 8
+  position: bottom
+  buy:
+    name: '&aComprar'
+  sell:
+    name: '&6Vender'
+  trade:
+    name: '&bTradear'

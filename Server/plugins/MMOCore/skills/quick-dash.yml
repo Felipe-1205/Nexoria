@@ -1,0 +1,46 @@
+name: Quick Dash
+lore:
+- '&6(Unmounted)'
+- '&eQuick Dash &f- Rapidly dash forward.'
+- ''
+- '&6(Mounted)'
+- '&4[Panther]'
+- "&cPanther's Dash &f- Your Panther dashes backwards,"
+- '&fcreating space between you and your enemies.'
+- ''
+- '&2[Owl]'
+- "&aOwl's Dash &f- Your Owl travels a long distance."
+- ''
+- '&9[Turtle]'
+- "&bTurtle's Dash &f- Your Turtle jumps upwards and smashes"
+- '&fdown to the surface, setting enemies airborne.'
+- ''
+- '&c{damage} Smash Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2150'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: -0.1
+  min: 1
+  max: 2

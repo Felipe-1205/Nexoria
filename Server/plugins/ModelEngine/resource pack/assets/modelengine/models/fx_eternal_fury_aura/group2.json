@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/fx_eternal_fury_aura"},"elements":[{"from":[8.0,2.5,4.5],"to":[8.0,13.5,11.5],"faces":{"east":{"uv":[3.25,3.0,2.0,5.75],"tintindex":0,"rotation":0,"texture":"#0"},"west":{"uv":[2.0,3.0,3.25,5.75],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

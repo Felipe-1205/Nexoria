@@ -1,0 +1,134 @@
+panels:
+  crear:
+    perm: "default"
+    rows: 6
+    title: '&c» &eCreemos tu personaje!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          lore:
+          - '&4» &cCuidado!'
+          - ''
+          - '&6» &3Si te equivocas, avisa'
+          - '&6» &3O habrá consecuencias!'
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+      '20':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Escriba en el chat el siguiente'
+        - '&7Comando para establecer su nombre'
+        - '&6/nombre <su nombre>'
+        - ''
+        - '&4&lCuidado una vez establecido '
+        - '&4&lno podra cambiarlo'
+        name: '&6&lNombre del Personaje'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - cpc
+      '22':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7De click aqui para abrir un menu'
+        - '&7donde podra elegir su raza'
+        - '&6&lClick Aqui!!'
+        - ''
+        - '&4&lCuidado una vez establecido '
+        - '&4&lno podra cambiarlo'
+        name: '&6&lRaza del Personaje'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - raza
+      '24':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&1&lHacer esto solo despues de haber elgido clase'
+        - '&7Escriba en el chat el siguiente'
+        - '&7Comando para establecer su altura'
+        - '&6/estatura <su altura en metros>'
+        - '&e Ejemplo: 1.5 o 2.1'
+        - ''
+        - '&4&lCuidado una vez establecido '
+        - '&4&lno podra cambiarlo'
+        name: '&6&lAltura del Personaje'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - cpc
+      '30':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7De click aqui para abrir un menu'
+        - '&7donde podra elegir su profesion'
+        - '&6&lClick Aqui!!'
+        - ''
+        - '&4&lCuidado una vez establecido '
+        - '&4&lno podra cambiarlo'
+        name: '&6&lProfesion del Personaje'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - profesion
+      '32':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7De click aqui para abrir un menu'
+        - '&7donde podra elegir su clase'
+        - '&6&lClick Aqui!!'
+        - ''
+        - '&4&lCuidado una vez establecido '
+        - '&4&lno podra cambiarlo'
+        name: '&6&lClase del Personaje'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - class

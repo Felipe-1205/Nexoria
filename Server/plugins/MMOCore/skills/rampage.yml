@@ -1,0 +1,35 @@
+name: Rampage
+lore:
+- '&6Your speed and defense increase on'
+- '&6damaged when your health is below 6'
+- ''
+- '&b{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2056'
+passive-type: DAMAGED
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 30
+  per-level: -0.3
+  min: 27
+  max: 30
+duration:
+  base: 10
+  per-level: 0.5
+  min: 10
+  max: 12

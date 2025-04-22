@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/babarian_slash_2"},"elements":[{"from":[-9.75,8.0,-9.75],"to":[25.75,8.0,25.75],"faces":{"up":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[0.0,16.0,16.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- minecraft:jungle_wood
+unlock: false
+result: minecraft:jungle_planks 4

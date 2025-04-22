@@ -1,0 +1,26 @@
+EscorpionBoss1:
+  MobName: Scorpion_King
+  World: dungeons
+  X: -6
+  Y: 11
+  Z: -329
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 0.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '1'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 300
+  Warmup: 0
+  ActivationRange: 5.0
+  ScalingRange: 25.0
+  LeashRange: 20.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

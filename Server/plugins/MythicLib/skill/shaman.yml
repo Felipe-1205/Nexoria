@@ -1,0 +1,19 @@
+LIGHT_BEAM:
+    mythicmobs-skill-id: Light_Beam
+
+HEAL_BEAM:
+    mythicmobs-skill-id: Heal_Beam
+    
+SELF_RECOVERY:
+    mythicmobs-skill-id: Self_Recovery
+    passive-type: TIMER
+    timer: 20
+    
+HEALING_TOTEM:
+    mythicmobs-skill-id: Healing_Totem
+    
+TOTEM_FORM:
+    mythicmobs-skill-id: Totem_Form
+    
+ANCESTRAL_POWER:
+    mythicmobs-skill-id: Ancestral_Power

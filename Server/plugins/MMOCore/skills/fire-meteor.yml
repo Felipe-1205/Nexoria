@@ -1,0 +1,45 @@
+name: Meteorito
+lore:
+- Desata la furia de
+- Rómulo con este devastador
+- impacto de meteorito
+- causando &8{damage} &7puntos de
+- daño en un radio de &8{radius} &7bloques
+- y adicionalmente mandandolos a
+- volar &8{knockback} &7bloques a la redonda
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: FIRE_CHARGE
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 9
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+knockback:
+  base: 2
+  per-level: 1
+radius:
+  base: 5
+  per-level: 2

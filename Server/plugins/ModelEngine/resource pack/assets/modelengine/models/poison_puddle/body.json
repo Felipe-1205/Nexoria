@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/poison_puddle"},"elements":[{"from":[-9.996799,7.13216,-9.280001],"to":[25.28,7.13216,25.9968],"faces":{"up":{"uv":[6.5,6.5,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[6.5,6.75,0.0,13.25],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,41 @@
+name: Unbreakable Will
+lore:
+- '&eSummon a holy shield in front of you,'
+- '&elunge at the target location and push'
+- '&eaway enemies, stunning them.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Stun Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2112'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+duration:
+  base: 2
+  per-level: 0.1
+  min: 2
+  max: 3
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 3
+  per-level: -0.1
+  min: 2
+  max: 3

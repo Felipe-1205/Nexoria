@@ -1,0 +1,32 @@
+{
+  "samus.card_throw": {
+    "category": "master",
+    "sounds": [
+      "samus/illusionist/card_throw"
+    ]
+  },
+  "samus.mirror_impact": {
+    "category": "master",
+    "sounds": [
+      "samus/illusionist/mirror_impact"
+    ]
+  },
+  "samus.mirror_shuriken": {
+    "category": "master",
+    "sounds": [
+      "samus/illusionist/mirror_shuriken"
+    ]
+  },
+  "samus.shoot_needle": {
+    "category": "master",
+    "sounds": [
+      "samus/illusionist/shoot_needle"
+    ]
+  },
+  "samus.summon_mirror": {
+    "category": "master",
+    "sounds": [
+      "samus/illusionist/summon_mirror"
+    ]
+  }
+}

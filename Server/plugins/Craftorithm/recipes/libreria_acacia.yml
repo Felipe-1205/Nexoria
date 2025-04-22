@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'bbb'
+- 'aaa'
+source:
+  a: minecraft:acacia_planks
+  b: minecraft:acacia_slab
+unlock: false
+result: minecraft:chiseled_bookshelf

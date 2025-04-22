@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'b b'
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:dark_oak_planks
+  b: minecraft:chain
+unlock: false
+result: minecraft:dark_oak_hanging_sign 6

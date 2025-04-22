@@ -1,0 +1,43 @@
+name: Arcane Devastation
+lore:
+- 'Levita en el aire y creas un área de destrucción'
+- 'donde se invocan rayos de energía que stunean a los'
+- 'enemigos, después de un tiempo te arrojas al piso'
+- 'invocando rayos más duraderos en un área más pequeña'
+- 'que dañan y stunean enemigos.'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración de aturdimiento'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2132'
+damage:
+  base: 12
+  per-level: 1
+  min: 5
+  max: 12
+duration:
+  base: 5
+  per-level: 0.1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 0
+  min: 0
+  max: 15
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 30
+  per-level: -0.1
+  min: 10
+  max: 30

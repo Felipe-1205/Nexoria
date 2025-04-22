@@ -1,0 +1,38 @@
+{
+  "samus.axe_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/axe_slash"
+    ]
+  },
+  "samus.axe_spin": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/axe_spin"
+    ]
+  },
+  "samus.eternal_fury": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/eternal_fury"
+    ]
+  },
+  "samus.eternal_fury_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/eternal_fury_aura"
+    ]
+  },
+  "samus.leap_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/leap_smash"
+    ]
+  },
+  "samus.war_cry": {
+    "category": "master",
+    "sounds": [
+      "samus/babarian/war_cry"
+    ]
+  }
+}

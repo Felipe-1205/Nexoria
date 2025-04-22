@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 2,
+  "type": "monocolor",
+  "blend": {
+    "type": "replace",
+    "blender": {
+      "sourceFactor": 0,
+      "destinationFactor": 1,
+      "equation": 32774,
+      "redAlphaEnabled": false,
+      "greenAlphaEnabled": false,
+      "blueAlphaEnabled": false,
+      "alphaEnabled": true
+    }
+  },
+  "properties": {
+    "priority": 2147483647,
+    "fade": {
+      "alwaysOn": true
+    }
+  },
+  "conditions": {
+    "worlds": [
+      "minecraft:overworld"
+    ],
+    "weather": [
+      "clear",
+      "snow"
+    ]
+  },
+  "decorations": {
+    "showSun": true,
+    "showMoon": true,
+    "showStars": true
+  }
+}

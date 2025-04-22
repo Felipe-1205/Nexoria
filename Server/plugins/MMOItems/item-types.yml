@@ -1,0 +1,626 @@
+
+# Default item types. These cannot be removed. They
+# may be used as 'parents' to create new item types
+# which will behave just like another item type. Parents
+# generate their own config file at /language/item_type.yml
+
+# Every item type has its template for unidentified items.
+# If you don't specify one like the default SWORD item type,
+# it will use the default (not translated) english one.
+
+# Used as reference when using /mmoitems commands
+SWORD:
+
+    # The display parameter is used to display the item in both
+    # the item brower and the recipe list when shifting a
+    # workbench. You can use durability for custom textures.
+    # In 1.14, durability is replaced by CustomModelData.
+    display: IRON_SWORD:0
+    
+    # Name displayed in the item lore.
+    name: 'Espada'
+
+    # Should this type be displayed inside the item browser?
+    hide-in-game: false
+    
+    # Template of an unidentified item.
+    unident-item:
+        name: '&f#prefix#Unidentified Sword'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    # What the item type does
+    on-attack: slashing_attack_effect
+
+DAGGER:
+    display: STONE_SWORD
+    name: 'Daga'
+    unident-item:
+        name: '&f#prefix#Unidentified Dagger'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    on-attack: piercing_attack_effect
+
+SPEAR:
+    display: TRIDENT
+    name: 'Tipo Lanza'
+    unident-item:
+        name: '&f#prefix#Unidentified Spear'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    on-attack: piercing_attack_effect
+
+HAMMER:
+    display: IRON_AXE
+    name: 'Martillo'
+    unident-item:
+        name: '&f#prefix#Unidentified Hammer'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    on-attack: blunt_attack_effect
+
+GAUNTLET:
+    display: IRON_SHOVEL
+    name: 'Guantelete'
+    unident-item:
+        name: '&f#prefix#Unidentified Gauntlet'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    on-attack: blunt_attack_effect
+    on-entity-interact: gauntlet_special_attack
+
+WHIP:
+    display: LEAD
+    name: 'Latigo'
+    unident-item:
+        name: '&f#prefix#Unidentified Whip'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    disable-melee-attacks: true
+    on-left-click: whip_attack
+    on-attack: slashing_attack_effect
+
+STAFF:
+    display: DIAMOND_HOE
+    name: 'Bastón'
+    unident-item:
+        name: '&f#prefix#Unidentified Staff'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    disable-melee-attacks: true
+    on-left-click: staff_default
+    attack-cooldown-key: "staff"
+    on-entity-interact: staff_special_attack # Special action when right-clicking entities
+
+BOW:
+    display: BOW
+    name: 'Arco'
+    unident-item:
+        name: '&f#prefix#Unidentified Bow'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    disable-melee-attacks: true
+
+CROSSBOW:
+    display: WOODEN_PICKAXE
+    name: 'Ballesta'
+    unident-item:
+        name: '&f#prefix#Unidentified Crossbow'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    disable-melee-attacks: true
+    on-right-click: crossbow_attack
+
+MUSKET:
+    display: IRON_HORSE_ARMOR
+    name: 'Mosquete'
+    unident-item:
+        name: '&f#prefix#Unidentified Musket'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    disable-melee-attacks: true
+    # Lutes and muskets attack effects are hardcoded as
+    # of MI 6.10 and cannot be modified at the moment.
+
+LUTE:
+    display: NAME_TAG
+    name: 'Laud'
+    unident-item:
+        name: '&f#prefix#Unidentified Lute'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    disable-melee-attacks: true
+    # Lutes and muskets attack effects are hardcoded as
+    # of MI 6.10 and cannot be modified at the moment.
+
+# Applies stats in both hands
+CATALYST:
+    display: PRISMARINE_SHARD
+    name: 'Catalizador'
+    unident-item:
+        name: '&f#prefix#Unidentified Catalyst'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+# Applies stats in offhand only
+OFF_CATALYST:
+    display: PRISMARINE_CRYSTALS
+    name: 'Catalizador (Mano secundaria)'
+    unident-item:
+        name: '&f#prefix#Unidentified Catalyst'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+# Applies stats in mainhand only
+MAIN_CATALYST:
+    display: PRISMARINE_CRYSTALS
+    name: 'Catalizador (Mano principal)'
+    unident-item:
+        name: '&f#prefix#Unidentified Catalyst'
+        lore:
+            - '&7This item is unidentified. I must'
+            - '&7find a way to identify it!'
+            - '{tier}'
+            - '{tier}&8Item Info:'
+            - '{range}&8- &7Lvl Range: &e#range#'
+            - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+ORNAMENT:
+    display: GOLD_NUGGET
+    name: 'Adorno'
+    unident-item:
+        name: '&f#prefix#Unidentified Ornament'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+ACCESSORY:
+    display: DIAMOND
+    name: 'Accesorio'
+    unident-item:
+        name: '&f#prefix#Unidentified Accessory'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+ARMOR:
+    display: IRON_CHESTPLATE
+    name: 'Armadura'
+    unident-item:
+        name: '&f#prefix#Unidentified Armor'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+TOOL:
+    display: IRON_PICKAXE
+    name: 'Herramienta'
+    unident-item:
+        name: '&f#prefix#Unidentified Tool'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+CONSUMABLE:
+    display: APPLE
+    name: 'Consumible'
+    unident-item:
+        name: '&f#prefix#Unidentified Consumable'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+MISCELLANEOUS:
+    display: WATER_BUCKET
+    name: 'Varios'
+    unident-item:
+        name: '&f#prefix#Unidentified Misc Item'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+SKIN:
+    display: LEATHER
+    name: 'Piel'
+    unident-item:
+        name: '&f#prefix#Unidentified Skin Item'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+GEM_STONE:
+    display: EMERALD
+    name: 'Gemas'
+    unident-item:
+        name: '&f#prefix#Unidentified Gem'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+BLOCK:
+    display: STONE:0
+    name: 'Bloque'
+    unident-item:
+        name: '&f#prefix#Unidentified Block'
+        lore:
+            - '&7This item is unidentified. I must'
+            - '&7find a way to identify it!'
+            - '{tier}'
+            - '{tier}&8Item Info:'
+            - '{range}&8- &7Lvl Range: &e#range#'
+            - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+# Default subtypes
+GREATSWORD:
+    display: DIAMOND_SWORD
+    name: 'Gran espada'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Greatsword'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: slashing_attack_effect
+
+LONG_SWORD:
+    display: STONE_SWORD
+    name: 'Espada larga'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Long Sword'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: slashing_attack_effect
+
+KATANA:
+    display: IRON_SWORD
+    name: 'Katana'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Katana'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: slashing_attack_effect
+
+THRUSTING_SWORD:
+    display: GOLDEN_SWORD
+    name: 'Estoque'
+    parent: 'DAGGER'
+    unident-item:
+        name: '&f#prefix#Unidentified Thrusting Dagger'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: piercing_attack_effect
+    
+AXE:
+    display: STONE_AXE
+    name: 'Hacha'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Axe'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: slashing_attack_effect
+    
+GREATAXE:
+    display: DIAMOND_AXE
+    name: 'Gran hacha'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Greataxe'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: slashing_attack_effect
+    
+HALBERD:
+    display: IRON_AXE
+    name: 'Alabarda'
+    parent: 'SWORD'
+    unident-item:
+        name: '&f#prefix#Unidentified Halberd'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: blunt_attack_effect
+    
+LANCE:
+    display: STICK
+    name: 'Lanza'
+    parent: 'SPEAR'
+    unident-item:
+        name: '&f#prefix#Unidentified Lance'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: piercing_attack_effect
+    
+GREATHAMMER:
+    display: DIAMOND_AXE
+    name: 'Gran Martillo'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Unidentified Greathammer'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: blunt_attack_effect
+    
+GREATSTAFF:
+    display: DIAMOND_HOE
+    name: 'Gran Bastón'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Unidentified Greatstaff'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: blunt_attack_effect
+    
+STAVE:
+    display: IRON_HOE
+    name: 'Baston Improvisado'
+    parent: 'HAMMER'
+    unident-item:
+        name: '&f#prefix#Unidentified Stave'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    on-attack: blunt_attack_effect
+    
+TOME:
+    display: BOOK
+    name: 'Tomo'
+    parent: 'CATALYST'
+    unident-item:
+        name: '&f#prefix#Unidentified Tome'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+TALISMAN:
+    display: TOTEM_OF_UNDYING
+    name: 'Talisman'
+    parent: 'CATALYST'
+    unident-item:
+        name: '&f#prefix#Unidentified Talisman'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+ 
+WAND:
+    display: STICK
+    name: 'Varita'
+    parent: 'STAFF'
+    unident-item:
+        name: '&f#prefix#Unidentified Wand'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+
+    disable-melee-attacks: true
+    on-left-click: staff_default
+    attack-cooldown-key: "staff"
+    on-entity-interact: staff_special_attack # Special action when right-clicking entities
+
+GREATBOW:
+    display: BOW
+    name: 'Gran Arco'
+    parent: 'BOW'
+    unident-item:
+        name: '&f#prefix#Unidentified Greatbow'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+    disable-melee-attacks: true
+    
+SHIELD:
+    display: SHIELD
+    name: 'Escudo'
+    parent: CATALYST
+    unident-item:
+        name: '&f#prefix#Unidentified Shield'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'
+    
+MATERIAL:
+    display: PAPER
+    name: 'Material'
+    parent: 'MISCELLANEOUS'
+    unident-item:
+        name: '&f#prefix#Unidentified Material'
+        lore:
+        - '&7This item is unidentified. I must'
+        - '&7find a way to identify it!'
+        - '{tier}'
+        - '{tier}&8Item Info:'
+        - '{range}&8- &7Lvl Range: &e#range#'
+        - '{tier}&8- &7Item Tier: #prefix##tier#'

@@ -1,0 +1,30 @@
+name: Dark Monarch (Cosmetic)
+lore:
+- '&9A shadow spirit orbits around you.'
+- ''
+- '&cThis skill works more like a cosmetic,'
+- '&cnot a functional skill. You can turn this off.'
+- ''
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2130'
+passive-type: TIMER
+timer:
+  base: 30
+  per-level: 0
+  min: 30
+  max: 30
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

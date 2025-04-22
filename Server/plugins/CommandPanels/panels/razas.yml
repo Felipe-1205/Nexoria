@@ -1,0 +1,732 @@
+panels:
+  razas:
+    perm: "default"
+    rows: 6
+    title: '&c» &eSelecciona Tu Raza!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          lore:
+          - '&4» &cSelecciona tu raza!'
+          - ''
+          - '&6» &3Parate encima'
+          - '&6» &3Para Mas Informacion!'
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+      '19':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas aladas que recuerdan a'
+        - '&7a aves rapaces.'
+        - '&7Con una altura entre 1.5 y 1.8'
+        - '&7metros, su cuerpo es ligero'
+        - '&7devido a huesos huecos, lo que'
+        - '&7les permite volar grandes'
+        - '&7distancias sin esfuerzo.'
+        - '&7Cubiertos por plumas de varios'
+        - '&7colores, son rápidos y'
+        - '&7estratégicos en combate.'
+        - '&7Sus picos y alas desarrolladas'
+        - '&7les otorgan una apariencia'
+        - '&7majestuosa y fascinante.'
+        - ''
+        name: '&A&lAarakocra'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas aarakocra
+        - cpc
+      '28':
+        material: LIME_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres humanoides compuestos de'
+        - '&7energía etérea y niebla mágica.'
+        - '&7Sus cuerpos parecen estar en'
+        - '&7constante flujo, con bordes'
+        - '&7borrosos y etéreos.'
+        - '&7La "piel" de los Aetherborn'
+        - '&7brilla con tonos oscuros y'
+        - '&7matices brillantes, reflejando'
+        - '&7su naturaleza mágica e inestable.'
+        - '&7Son difíciles de capturar debido'
+        - '&7a su escurridiza y evasiva'
+        - '&7presencia en el mundo físico.'
+        - ''
+        name: '&A&lAetherborn'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas aetherborn
+        - cpc
+      '0':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres humanoides de alma pura'
+        - '&7con piel blanca como la nieve.'
+        - '&7Algunos poseen garras o incluso'
+        - '&7"alas" y aureolas sobre sus'
+        - '&7cabezas, destacando su esencia.'
+        - '&7Sus ojos tienen colores llamativos'
+        - '&7y su apariencia refleja una'
+        - '&7conexión profunda con lo divino.'
+        - '&7Son conocidos por su devoción a'
+        - '&7los dioses y su fervor espiritual.'
+        - '&7Cuando se emocionan, su cabello'
+        - '&7puede brillar y su temperatura'
+        - '&7cambiar, mostrando su energía.'
+        - ''
+        name: '&F&lBendito'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas bendito
+        - cpc
+      '22':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas grandes y musculosas,'
+        - '&7midiendo entre 2 y 2.4 metros.'
+        - '&7Sus brazos largos les otorgan'
+        - '&7un alcance mayor en combate.'
+        - '&7Con ojos brillantes y pequeños,'
+        - '&7su aspecto fiero recuerda a un'
+        - '&7oso, reflejando su fuerza.'
+        - '&7A pesar de su tamaño, los'
+        - '&7Bugbear son sorprendentemente'
+        - '&7sigilosos, conocidos por'
+        - '&7emboscar a sus presas con'
+        - '&7gran eficacia y astucia.'
+        - ''
+        name: '&5&lBugbear'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas bugbear
+        - cpc
+      '11':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas humanoides de piel'
+        - '&7negra como la noche, oscuras.'
+        - '&7Con múltiples ojos por todo su'
+        - '&7cuerpo, algunos poseen garras'
+        - '&7afiladas y amenazantes.'
+        - '&7Su altura y presencia suelen'
+        - '&7intimidar a las demás razas,'
+        - '&7despertando miedo en sus'
+        - '&7oponentes.'
+        - '&7Desconectados de cualquier dios,'
+        - '&7son conocidos por recubrirse'
+        - '&7de la oscuridad más densa'
+        - '&7cuando se alteran emocionalmente.'
+        - ''
+        name: '&8&lCaído'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas caido
+        - cpc
+      '44':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas humanoides hechas de'
+        - '&7hielo sólido y brillante.'
+        - '&7Con una altura de hasta 2.30'
+        - '&7metros, su piel azul glaciar'
+        - '&7refleja luces frías que'
+        - '&7iluminan su entorno. Son seres'
+        - '&7imponentes, con una apariencia'
+        - '&7que recuerda a un elemental de'
+        - '&7hielo en forma corpórea.'
+        - '&7A pesar de su imagen'
+        - '&7intimidante, muchos actúan'
+        - '&7como guardianes nobles.'
+        - ''
+        name: '&B&lCaminante'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas caminante
+        - cpc
+      '41':
+        material: BROWN_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Una raza imponente con rasgos'
+        - '&7dracónicos y majestuosos.'
+        - '&7Cubiertos de escamas en una'
+        - '&7amplia gama de colores, desde'
+        - '&7metálicos hasta vibrantes tonos'
+        - '&7de rojo, azul o verde.'
+        - '&7Con alturas entre 1.80 y 2.40'
+        - '&7metros, poseen una estructura'
+        - '&7robusta y poderosa.'
+        - '&7Sus cabezas angulosas y ojos'
+        - '&7brillantes reflejan su poder'
+        - '&7ancestral y sabiduría.'
+        - '&7Algunos poseen alas, pero son'
+        - '&7demasiado pesados para volar.'
+        - ''
+        name: '&6&lDracónido'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas draconido
+        - cpc
+      '1':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Raza conocida por su belleza y'
+        - '&7agilidad, con orejas puntiagudas.'
+        - '&7Tienen una audición fina y una'
+        - '&7longevidad extraordinaria, viviendo'
+        - '&7hasta 750 años. Su altura y'
+        - '&7movimientos gráciles son'
+        - '&7legendarios entre las razas.'
+        - '&7Son famosos por su inclinación'
+        - '&7hacia la naturaleza, el arte'
+        - '&7y la magia, cultivando el'
+        - '&7conocimiento ancestral.'
+        - '&7Los elfos tienen una apariencia'
+        - '&7distingida y suelen llevar'
+        - '&7vestimentas elegantes.'
+        - ''
+        name: '&F&lElfo'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas elfo
+        - cpc
+      '38':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Raza pequeña pero increíblemente'
+        - '&7fuerte y resistente.'
+        - '&7Con una altura entre 1.2 y 1.5'
+        - '&7metros, los enanos son'
+        - '&7reconocidos por sus cuerpos'
+        - '&7musculosos y hombros anchos.'
+        - '&7Su barba es un símbolo de honor'
+        - '&7y tradición, manteniendo gran'
+        - '&7orgullo en sus cuidados.'
+        - '&7Son maestros forjadores, creando'
+        - '&7armaduras y herramientas robustas.'
+        - ''
+        name: '&7&lEnano'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas enano
+        - cpc
+      '12':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas de piel pálida y'
+        - '&7colmillos afilados, alimentados'
+        - '&7por sangre y oscuridad.'
+        - '&7Su apariencia cambia dependiendo'
+        - '&7de cuánto tiempo pasen sin'
+        - '&7alimentarse, envejeciendo'
+        - '&7rápidamente si no consumen'
+        - '&7sangre regularmente.'
+        - '&7Temidos por todas las razas, los'
+        - '&7Esbirros son conocidos por su'
+        - '&7crueldad y ferocidad.'
+        - '&7La luz del sol les resulta'
+        - '&7irritante, y participan en'
+        - '&7oscuros rituales de poder.'
+        - ''
+        name: '&8&lEsbirro'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas esbirro
+        - cpc
+      '52':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Pequeñas criaturas similares a'
+        - '&7muñecos de nieve, de tamaño'
+        - '&7diminuto y aspecto brillante y'
+        - '&7etéreo.'
+        - '&7Compuestos de nieve compacta y'
+        - '&7escarcha, se mueven ágilmente'
+        - '&7en el frío, con ojos de azul'
+        - '&7cristalino que reflejan su'
+        - '&7espíritu travieso.'
+        - '&7De naturaleza juguetona, habitan'
+        - '&7los paisajes nevados y helados.'
+        - ''
+        name: '&B&lEscarchado'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas escarchado
+        - cpc
+      '7':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres que emulan el fuego'
+        - '&7estelar, con cuerpos que irradian'
+        - '&7energía y luz brillante.'
+        - '&7Su piel resplandece en tonos'
+        - '&7cálidos de rojo, naranja y'
+        - '&7amarillo, como si fueran llamas'
+        - '&7danzantes. Cabellos y rasgos'
+        - '&7parecen fluir, como materia'
+        - '&7incandescente, cambiando de forma'
+        - '&7y color.'
+        - '&7Fascinados por las estrellas, son'
+        - '&7aventureros llenos de energía'
+        - '&7cósmica y curiosidad.'
+        - ''
+        name: '&4&lFlareon'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas flareon
+        - cpc
+      '31':
+        material: PURPLE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Pequeños y ágiles, los goblins'
+        - '&7miden entre 0.9 y 1.2 metros.'
+        - '&7Su cuerpo delgado les permite'
+        - '&7moverse con rapidez y esconderse'
+        - '&7facilmente. Tienen caras angulosas'
+        - '&7y expresiones maliciosas, con'
+        - '&7ojos grandes que varían entre'
+        - '&7amarillo y rojo brillante.'
+        - '&7A pesar de su apariencia'
+        - '&7inquietante, son criaturas'
+        - '&7amistosas y curiosas.'
+        - ''
+        name: '&5&lGoblin'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas goblin
+        - cpc
+      '53':
+        material: LIGHT_BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Imponentes humanoides de gran'
+        - '&7estatura, entre 2.4 y 3 metros.'
+        - '&7Su piel gris pálido está saconsole= lpicada'
+        - '&7de patrones que imitan rocas,'
+        - '&7dando la impresión de una'
+        - '&7superficie pétrea. Con una'
+        - '&7fuerza colosal, su apariencia'
+        - '&7es robusta y sus ojos varían'
+        - '&7entre tonos grises y azules.'
+        - '&7Conocidos por su resistencia'
+        - '&7y competitividad, son guerreros'
+        - '&7natos en el campo de batalla.'
+        - ''
+        name: '&B&lGoliath'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas goliath
+        - cpc
+      '9':
+        material: WHITE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas pequeñas y gráciles,'
+        - '&7de tamaño diminuto y alas'
+        - '&7iridiscentes. Sus cuerpos'
+        - '&7estilizados están adornados con'
+        - '&7alas similares a las de mariposas'
+        - '&7o libélulas, brillando con'
+        - '&7colores vibrantes y cambiantes.'
+        - '&7Las hadas mudan sus alas cada'
+        - '&7dos meses, y son conocidas por'
+        - '&7su personalidad traviesa y su'
+        - '&7conexión con la magia de la'
+        - '&7naturaleza y los bosques.'
+        - ''
+        name: '&F&lHada'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas hada
+        - cpc
+      '14':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres con apariencia humanoide'
+        - '&7pero con características'
+        - '&7sobrenaturales. Tienen cuernos'
+        - '&7pequeños, venas marcadas y'
+        - '&7patrones extraños en su piel.'
+        - '&7Sus ojos suelen ser de colores'
+        - '&7inhumanos, como el rojo o'
+        - '&7púrpura, y algunos emiten un'
+        - '&7aroma extraño, dulce o'
+        - '&7inquietante.'
+        - '&7Su conexión con lo arcano y'
+        - '&7lo sobrenatural es evidente en'
+        - '&7su apariencia única.'
+        - ''
+        name: '&8&lHexblood'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas hexblood
+        - cpc
+      '39':
+        material: GRAY_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Una raza versátil y ambiciosa.'
+        - '&7Con una altura entre 1.5 y 2'
+        - '&7metros, los humanos varían en'
+        - '&7constituciones físicas, desde'
+        - '&7esbeltos hasta musculosos.'
+        - '&7Su diversidad genética les otorga'
+        - '&7una amplia gama de rasgos'
+        - '&7faciales como el color de piel,'
+        - '&7formas de ojos y estructura ósea.'
+        - '&7Conocidos por su adaptabilidad'
+        - '&7y creatividad en diversas áreas.'
+        - ''
+        name: '&7&lHumano'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas humano
+        - cpc
+      '25':
+        material: YELLOW_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres etéreos con cuerpos'
+        - '&7cristalinos que emiten energía'
+        - '&7electrica. Sus pieles'
+        - '&7semitransparentes brillan con'
+        - '&7tonos azulados y plateados.'
+        - '&7Los Iones canalizan descargas'
+        - '&7electrónicas que responden a'
+        - '&7sus emociones, liberando energía'
+        - '&7a medida que sus sentimientos'
+        - '&7se intensifican.'
+        - '&7Su estructura resplandeciente'
+        - '&7refleja su naturaleza poderosa'
+        - '&7e inestable, creando un aura'
+        - '&7impresionante a su alrededor.'
+        - ''
+        name: '&E&lIónes'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas iones
+        - cpc
+      '8':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Pequeños, ágiles y con una'
+        - '&7apariencia reptiliana. Con una'
+        - '&7estatura entre 60 y 90 cm,'
+        - '&7su piel escamosa varía en'
+        - '&7en colores como el rojo'
+        - '&7brillante, naranja o marrón.'
+        - '&7Sus cabezas puntiagudas y ojos'
+        - '&7curiosos, junto a sus garras'
+        - '&7afiladas, los hacen expertos en'
+        - '&7cavar y escalar, con una'
+        - '&7agilidad sorprendente.'
+        - ''
+        name: '&4&lKobold'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas kobold
+        - cpc
+      '36':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Criaturas marinas con una'
+        - '&7apariencia aterradora,'
+        - '&7caracterizadas por sus tentáculos.'
+        - '&7Miden hasta 2.50 metros y'
+        - '&7poseen 8 tentáculos que se'
+        - '&7regeneran si se cortan.'
+        - '&7Con una mirada intimidante,'
+        - '&7los Kraken son depredadores'
+        - '&7marinos, su dieta basada en'
+        - '&7carne incluye el canibalismo.'
+        - '&7Su adaptación marina les'
+        - '&7permite escalar superficies y'
+        - '&7desplazarse sigilosamente'
+        - '&7bajo el agua.'
+        - ''
+        name: '&1&lKraken'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas kraken
+        - cpc
+      '45':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Humanoides cubiertos por escamas'
+        - '&7gruesas que les otorgan armadura'
+        - '&7natural. Miden entre 1.8 y 2.1'
+        - '&7metros, con cuerpos robustos y'
+        - '&7colas fuertes. Su piel escamosa'
+        - '&7varía entre tonos verdes,'
+        - '&7marrones o grises, reflejando'
+        - '&7su adaptación a diversos entornos.'
+        - '&7Agresivos y territoriales, son'
+        - '&7cazadores implacables con una'
+        - '&7naturaleza depredadora.'
+        - ''
+        name: '&1&lLizardfolk'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas lizardfolk
+        - cpc
+      '42':
+        material: BROWN_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Híbridos entre humanos y'
+        - '&7mamíferos terrestres. Tienen'
+        - '&7hocicos alargados, orejas grandes,'
+        - '&7y capas de pelaje que varían'
+        - '&7desde suave y corto hasta largo'
+        - '&7y espeso. Sus colas y garras'
+        - '&7expresivas revelan emociones y'
+        - '&7son un reflejo de su conexión'
+        - '&7profunda con la naturaleza.'
+        - '&7Adaptables y perceptivos,'
+        - '&7estos seres destacan en la'
+        - '&7supervivencia.'
+        - ''
+        name: '&6&lLycantro'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas lycantro
+        - cpc
+      '46':
+        material: BLUE_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres marinos de belleza'
+        - '&7extraordinaria con colas'
+        - '&7poderosas y largas. Su cabello'
+        - '&7fluido y ondulado recuerda a'
+        - '&7las olas del océano. Sus'
+        - '&7escamas relucen en tonos'
+        - '&7esmeralda, turquesa o plateado,'
+        - '&7cambiando de color según la luz.'
+        - '&7Las sirenas son rápidas'
+        - '&7nadadoras y tienen la capacidad'
+        - '&7de alternar entre su cola y'
+        - '&7piernas según la situación.'
+        - ''
+        name: '&1&lSirena'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas sirena
+        - cpc
+      '15':
+        material: BLACK_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres de piel oscura y'
+        - '&7ojos que brillan en la'
+        - '&7oscuridad. Pueden cambiar entre'
+        - '&7ver cuerpos y espíritus, lo que'
+        - '&7les otorga un don especial para'
+        - '&7detectar lo invisible. Su sangre'
+        - '&7es púrpura, y consideran el'
+        - '&7contacto visual como una'
+        - '&7agresión. Los Stalker pueden'
+        - '&7estar sin comer durante un mes'
+        - '&7sin mostrar signos de hambre.'
+        - ''
+        name: '&8&lStalker'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas stalker
+        - cpc
+      '17':
+        material: RED_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Una raza con una apariencia'
+        - '&7exótica y sobrenatural. Su piel'
+        - '&7varía entre tonos inusuales como'
+        - '&7el rojo, púrpura, azul, o gris.'
+        - '&7Tienen cuernos que crecen en'
+        - '&7sus cabezas, variando en forma y'
+        - '&7tamaño, sin pupilas visibles en'
+        - '&7sus ojos, que brillan en colores'
+        - '&7poco naturales. Sus colas delgadas'
+        - '&7y afiladas, y características'
+        - '&7demoníacas, los convierten en'
+        - '&7una raza inquietante y'
+        - '&7misteriosa.'
+        - ''
+        name: '&4&lTiefling'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas tiefling
+        - cpc
+      '34':
+        material: YELLOW_STAINED_GLASS_PANE
+        stack: 1
+        lore:
+        - ''
+        - '&7Seres metálicos construidos con'
+        - '&7una mezcla de magia y tecnología.'
+        - '&7Su cuerpo está compuesto de metal'
+        - '&7y madera, dándoles una apariencia'
+        - '&7robusta. A pesar de su naturaleza'
+        - '&7inorgánica, poseen personalidad y'
+        - '&7conciencia. Su habilidad para'
+        - '&7repararse los convierte en máquinas'
+        - '&7de guerra implacables. Los warforged son'
+        - '&7protectores inquebrantables,'
+        - '&7dispuestos a sacrificarse por otros.'
+        - ''
+        name: '&E&lWarforged'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack razas warforged
+        - cpc

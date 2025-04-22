@@ -1,0 +1,42 @@
+name: God Of Death
+lore:
+- '&aTransform into God of death for a duration.'
+- '&aCasting Soul Slice will lash out a series of 3 strikes.'
+- '&aThe second strike knocks up enemies and the third'
+- '&astrike releases a wave of dark soul that puts enemies in fear.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2154'
+damage:
+  base: 6
+  per-level: 1
+  min: 6
+  max: 8
+duration:
+  base: 10
+  per-level: 0.2
+  min: 10
+  max: 12
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 17
+  per-level: -0.1
+  min: 16
+  max: 17

@@ -1,0 +1,44 @@
+name: Rain of Easter Eggs
+lore:
+- '&cSummon a chick that flies forwards above you,'
+- '&cdropping random eggs that explode on the surface,'
+- '&cgiving different kind of debuffs to enemies.'
+- '&bBlue Egg: &cSlows down enemies.'
+- '&dPink Egg: &cBurns enemies.'
+- '&eYellow Egg: &cStuns enemies.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2124'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 8
+duration:
+  base: 3
+  per-level: 0.2
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: -0.1
+  min: 5
+  max: 7

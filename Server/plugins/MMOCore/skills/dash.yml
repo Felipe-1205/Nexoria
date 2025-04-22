@@ -1,0 +1,34 @@
+name: Dash
+lore:
+- '&4Dashea a través de tus'
+- '&4enemigos y hazles daño'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2038'
+damage:
+  base: 2
+  per-level: 1
+  min: 2
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: 0
+  min: 0
+  max: 8
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.3
+  min: 2
+  max: 5

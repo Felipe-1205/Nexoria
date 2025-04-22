@@ -1,0 +1,28 @@
+name: Wheel of Eternal Flame
+lore:
+- '&3Summon 2 spinning flames that roam across'
+- '&3the surface, burning nearby targets'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2042'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: 0
+  min: 5
+  max: 5

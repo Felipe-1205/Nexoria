@@ -1,0 +1,48 @@
+#
+# Item Configuration Options
+#
+# More information about Mythic item features can be found here:
+# https://git.mythiccraft.io/mythiccraft/MythicMobs/-/wikis/Items/Items
+#
+Configuration:
+
+  #================================================================================
+  # Item Updater
+  #================================================================================
+  ItemUpdating:
+    Enabled: true
+
+  #================================================================================
+  # Item Defaults - choose what item options default to
+  #================================================================================
+  DefaultItemOptions:
+    Material: STONE
+    PreventEnchanting: false            # Can be true or false
+    PreventCrafting: modeled            # Can be true, false, modeled, or default
+    PreventAnviling: default            # Can be true, false, modeled, or default
+    PreventSmithing: default            # Can be true, false, modeled, or default
+
+  #================================================================================
+  # Item Skills (requires Crucible)
+  #================================================================================
+  ItemSkills:
+    JoinDelay: 20                       # Delay when joining before items are scanned
+
+  #================================================================================
+  # Item Stats (requires Crucible)
+  #================================================================================
+  ItemStats:
+    Rounding: 0                         # Decimal places to round stats to when generated
+    SaveRatios: false                   # Save generated stat ratios for the Item Updater
+
+  #================================================================================
+  # Custom Blocks (requires Crucible)
+  #================================================================================
+  CustomBlocks:
+    SwapIsPickBlock: true               # Can be true or false
+
+  #================================================================================
+  # Custom Furniture (requires Crucible)
+  #================================================================================
+  Furniture:
+    DefaultType: DISPLAY                # Can be DISPLAY, ARMOR_STAND or ITEM_FRAME

@@ -1,0 +1,35 @@
+name: Glacial Impalement
+lore:
+- '&bSummon your frigid lance and take aim. After 3 seconds,'
+- '&byour frigid lance fires forwards with high speed,'
+- '&bpiercing through all enemies.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2190'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.1
+  min: 4
+  max: 5

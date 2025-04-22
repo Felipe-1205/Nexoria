@@ -1,0 +1,29 @@
+name: Smoke Bomb
+lore:
+- '&cToss a smoke bomb that creates an aura of'
+- '&csmoke. The aura grants you jump boost and invisibility'
+- '&cwhile giving blindness and slowness to enemies.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2119'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: -0.1
+  min: 6
+  max: 7

@@ -1,0 +1,40 @@
+name: Magical Tinkering
+lore:
+- '&bAutomatically gain max shield if your current'
+- "&bshield isn't full after cooldown."
+- ''
+- '&6{shield} Shield'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2206'
+passive-type: TIMER
+timer:
+  base: 2
+  per-level: 0
+  min: 2
+  max: 2
+shield:
+  base: 6
+  per-level: 2
+  min: 6
+  max: 12
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+tinkercooldown:
+  base: 10
+  per-level: -0.1
+  min: 9
+  max: 10
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

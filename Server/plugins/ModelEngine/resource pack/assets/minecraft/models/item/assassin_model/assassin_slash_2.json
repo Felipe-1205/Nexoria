@@ -1,0 +1,29 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/assassin_texture/assassin_slash2",
+		"particle": "item/assassin_texture/assassin_slash2"
+	},
+	"elements": [
+		{
+			"from": [-11.5, -11.5, 8],
+			"to": [27.5, 27.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0.032, 0.032, 16, 16], "texture": "#0"},
+				"east": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"south": {"uv": [16, 0.032, 0.032, 16], "texture": "#0"},
+				"west": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"up": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"},
+				"down": {"uv": [3.032, 5.032, 6.5, 9.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"rotation": [90, 180, -156],
+			"translation": [1.5, -19, 57.25],
+			"scale": [3.8, 3.8, 3.8]
+		}
+	}
+}

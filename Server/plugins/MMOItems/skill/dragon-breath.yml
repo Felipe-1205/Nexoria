@@ -1,0 +1,20 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+name: Dragon Breath
+modifier:
+  damage:
+    name: Damage
+    default-value: 0
+  timer:
+    name: Timer
+    default-value: 0
+  mana:
+    name: Mana
+    default-value: 0
+  stamina:
+    name: Stamina
+    default-value: 0
+  cooldown:
+    name: Cooldown
+    default-value: 0
+
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

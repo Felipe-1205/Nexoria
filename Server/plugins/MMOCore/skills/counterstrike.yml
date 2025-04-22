@@ -1,0 +1,41 @@
+name: Counterstrike
+lore:
+- '&fCreate a spiritual shield, absorbing incoming attacks'
+- '&fand adding up stacks every time you get damaged. Releasing'
+- '&fthe shield fires a chi wave with power based on the stacks'
+- '&fof absorbed attacks. Getting hit 10 times will automatically'
+- '&fbreak the shield and release a level 3 chi wave.'
+- ''
+- '&b0~2 stacks: &fFire a level 1 chi wave'
+- '&b3~6 stacks: &fFire a level 2 chi wave'
+- '&b7~10 stacks: &fFire a level 3 chi wave'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2195'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

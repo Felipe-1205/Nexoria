@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/mf_deceptor_death_vfx"},"elements":[{"from":[3.5,-1.0,8.0],"to":[12.5,8.0,8.0],"faces":{"south":{"uv":[12.090909,13.181819,12.909091,14.0],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[12.545455,10.727273,13.363637,11.545455],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

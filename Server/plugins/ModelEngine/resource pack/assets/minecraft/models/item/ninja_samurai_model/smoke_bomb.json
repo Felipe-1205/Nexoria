@@ -1,0 +1,73 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/ninja_samurai_texture/smoke_bomb",
+		"particle": "item/ninja_samurai_texture/smoke_bomb"
+	},
+	"elements": [
+		{
+			"from": [5.5, 12.5, 8],
+			"to": [10.5, 16.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11.25, 8]},
+			"faces": {
+				"north": {"uv": [5.5, 7.5, 6.75, 8.5], "texture": "#0"},
+				"east": {"uv": [0, 7.75, 0, 8.75], "texture": "#0"},
+				"south": {"uv": [6.75, 7.5, 5.5, 8.5], "texture": "#0"},
+				"west": {"uv": [7.75, 0, 7.75, 1], "texture": "#0"},
+				"up": {"uv": [1.5, 7.75, 0.25, 7.75], "texture": "#0"},
+				"down": {"uv": [9, 1.25, 7.75, 1.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [3.5, 3.5, 3.5],
+			"to": [12.5, 12.5, 12.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 11.25, 8]},
+			"faces": {
+				"north": {"uv": [2.75, 0, 5, 2.25], "texture": "#0"},
+				"east": {"uv": [2.75, 0, 5, 2.25], "texture": "#0"},
+				"south": {"uv": [2.75, 0, 5, 2.25], "texture": "#0"},
+				"west": {"uv": [2.75, 0, 5, 2.25], "texture": "#0"},
+				"up": {"uv": [7.5, 4.75, 5.25, 2.5], "texture": "#0"},
+				"down": {"uv": [7.5, 4.75, 5.25, 2.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.5, 7, 3],
+			"to": [13.25, 9, 13],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 5.5, 2.5, 6], "texture": "#0"},
+				"east": {"uv": [0, 6.25, 2.5, 6.75], "texture": "#0"},
+				"south": {"uv": [0, 7, 2.5, 7.5], "texture": "#0"},
+				"west": {"uv": [2.75, 7.5, 5.25, 8], "texture": "#0"},
+				"up": {"uv": [2.5, 2.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [2.5, 2.75, 0, 5.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.75, 7, 3.025],
+			"to": [13.5, 9, 13.025],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.5, 5.5, 0, 6], "texture": "#0"},
+				"east": {"uv": [5.25, 7.5, 2.75, 8], "texture": "#0"},
+				"south": {"uv": [2.5, 7, 0, 7.5], "texture": "#0"},
+				"west": {"uv": [2.5, 6.25, 0, 6.75], "texture": "#0"},
+				"up": {"uv": [0, 2.5, 2.5, 0], "texture": "#0"},
+				"down": {"uv": [0, 2.75, 2.5, 5.25], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [23, 1, 0],
+			"translation": [0, 1, 1],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"head": {
+			"translation": [0, -18.5, 0],
+			"scale": [1.5, 1.5, 1.5]
+		}
+	}
+}

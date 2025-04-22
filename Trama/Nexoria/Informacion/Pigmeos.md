@@ -1,0 +1,1 @@
+primeros seres humanos que solo nacieron partir de los dioses de la vida y de la muerte, sin embargo no fueron creados directamente si no que pasado cierto tiempo apreciaron, evolucionando de otras especies 

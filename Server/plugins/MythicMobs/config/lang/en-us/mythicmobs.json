@@ -1,0 +1,4 @@
+{
+  "command.reload.completed": "Mythic has finished reloading!",
+  "command.reload.started": "Reloading plugin..."
+}

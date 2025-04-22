@@ -1,0 +1,35 @@
+name: Underworld Beast
+lore:
+- '&aSummon an underworld beast that emerges'
+- '&afrom the ground, crunching enemies in the'
+- '&aarea, burning them and knocking them up.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2178'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 9
+  per-level: -0.1
+  min: 8
+  max: 9

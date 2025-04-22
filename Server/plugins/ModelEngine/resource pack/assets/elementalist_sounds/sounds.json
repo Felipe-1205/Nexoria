@@ -1,0 +1,38 @@
+{
+  "samus.beast_emerge": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/beast_emerge"
+    ]
+  },
+  "samus.ground_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/ground_smash"
+    ]
+  },
+  "samus.hawk_screech": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/hawk_screech"
+    ]
+  },
+  "samus.stone_break": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/stone_break"
+    ]
+  },
+  "samus.stone_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/stone_summon"
+    ]
+  },
+  "samus.terra_wall_emerge": {
+    "category": "master",
+    "sounds": [
+      "samus/elementalist/terra_wall_emerge"
+    ]
+  }
+}

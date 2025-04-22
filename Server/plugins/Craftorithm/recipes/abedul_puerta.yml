@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'aa '
+- 'aa '
+- 'aa '
+source:
+  a: minecraft:birch_planks
+unlock: false
+result: minecraft:birch_door 3

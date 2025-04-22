@@ -1,0 +1,26 @@
+KoboldGuerreroDungeon1:
+  MobName: Kobold_Warrior
+  World: dungeons
+  X: 0
+  Y: 21
+  Z: -218
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 3.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '4'
+  MobLevel: '1'
+  MobsPerSpawn: 4
+  Cooldown: 30
+  Warmup: 0
+  ActivationRange: 5.0
+  ScalingRange: 25.0
+  LeashRange: 8.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

@@ -1,0 +1,29 @@
+name: "Assassin's Blade"
+lore:
+- '&4Tus ataques tienen un 15%'
+- '&4de provocar sangrado'
+- ''
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2034'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

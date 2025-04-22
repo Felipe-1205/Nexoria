@@ -1,0 +1,34 @@
+name: Meteor Storm
+lore:
+- 'Invocas multiples meteoros que azotan'
+- 'contra el piso y causan explosiones mortales.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2138'
+damage:
+  base: 10
+  per-level: 1
+  min: 5
+  max: 10
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 0
+  min: 0
+  max: 15
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 40
+  per-level: 0
+  min: 0
+  max: 40

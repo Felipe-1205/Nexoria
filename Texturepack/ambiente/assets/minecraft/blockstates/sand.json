@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/sand",
+		"uvlock": true
+      },
+      {
+        "model": "minecraft:block/sand",
+        "y": 90, "uvlock": true
+      },
+      {
+        "model": "minecraft:block/sand",
+        "y": 180, "uvlock": true
+      },
+      {
+        "model": "minecraft:block/sand",
+        "y": 270, "uvlock": true
+      }
+    ]
+  }
+}

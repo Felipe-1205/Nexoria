@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'b b'
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:jungle_planks
+  b: minecraft:chain
+unlock: false
+result: minecraft:jungle_hanging_sign 6

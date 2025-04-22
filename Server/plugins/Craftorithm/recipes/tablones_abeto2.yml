@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- minecraft:spruce_wood
+unlock: false
+result: minecraft:spruce_planks 4

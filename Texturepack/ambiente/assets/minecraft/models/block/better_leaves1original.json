@@ -1,0 +1,42 @@
+{
+"__comment": "Designed by tomaxed with Cubik",
+"textures": {
+    "particle": "block/oak_leaves",
+    "all": "block/oak_leaves",
+    "extra": "block/oak_better_leaves"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 16, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 16, 16, 0, 0 ], "texture": "#all", "tintindex": 0 ,"cullface": "down" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0 ,"cullface": "up" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0 ,"cullface": "north" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0 ,"cullface": "south" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0 ,"cullface": "west" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0 ,"cullface": "east" }
+    }
+},
+{
+    "from": [ -3, -7, -3 ],
+    "to": [ -2.9375, 25, 29 ],
+    "rotation": { "origin": [ -3, -7, -3 ], "axis": "y", "angle": 45 },
+	"shade": false,
+    "faces": {
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 }
+    }
+},
+{
+    "from": [ 19.5, -7.5, -3 ],
+    "to": [ 19.5625, 24.5, 29 ],
+    "rotation": { "origin": [ 19.5, -7.5, -3 ], "axis": "y", "angle": -45 },
+	"shade": false,
+    "faces": {
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 }
+    }
+}
+]
+}

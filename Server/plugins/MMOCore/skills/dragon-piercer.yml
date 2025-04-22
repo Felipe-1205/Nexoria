@@ -1,0 +1,41 @@
+name: Dragon Piercer
+lore:
+- 'Carga tu arco con el espiritu de los dragones,'
+- 'disparas una flecha perforante que hace daño a'
+- 'los enemigos en el camino.'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración de quemadura'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2060'
+damage:
+  base: 20
+  per-level: 1
+  min: 15
+  max: 20
+duration:
+  base: 8
+  per-level: 0.5
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 20
+  per-level: 0
+  min: 0
+  max: 20
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 30
+  per-level: -0.3
+  min: 7
+  max: 30

@@ -1,0 +1,46 @@
+name: La Perdición de los Pollos
+lore:
+- Desata el caos usando
+- este lanzador de huevos rápido
+- ocasionando &8{damage} &7de daño
+- durante &8{duration} &7segundos
+- por cada huevo impactado
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: EGG
+duration:
+  base: 4
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 1
+  per-level: 1.5
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+inaccuracy:
+  base: 4
+  per-level: -0.5
+force:
+  base: 4
+  per-level: 1

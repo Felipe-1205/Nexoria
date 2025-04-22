@@ -1,0 +1,58 @@
+# Neutraltierra:
+#   Type: NATARMADILLO,NATCAMELLO,NATGATO,NATPOLLO,NATVACA,NATBURRO,NATRANA,NATLORO,NATCERDO,NATCONEJO,NATOVEJA
+#   Worlds: eutonia,principal
+#   Chance: 0.015
+#   Priority: 1
+#   Action: ADD
+#   Reason: NATURAL
+#   PositionType: LAND
+#   UseWorldScaling: false
+#   Conditions:
+#   - outside true
+#   - region{r=barconexoth} false
+#   - region{r=capitalnexoth} false
+#   - region{r=ciudadnexoth1} false
+#   - region{r=ciudadnexoth2} false
+#   - region{r=isladelmarnexoth} false
+#   - region{r=islaflotantenexoth} false
+#   - region{r=aextum} false
+#   - region{r=barcoaeloria} false
+#   - region{r=cali} false
+#   - region{r=cumbresblancas} false
+#   - region{r=dolafarvd} false
+#   - region{r=isladiosesaeloria} false
+#   - region{r=luxhena} false 
+#   - region{r=islalagoalmas} false 
+#   - region{r=templogenshin} false 
+#   - region{r=vallenuevadelsolar} false 
+#   - region{r=valleregnum} false 
+#   - region{r=isladiosesnexoth} false 
+# Neutralagua:
+#   Type: NATAJOLOTE,NATBACALAO,NATCALAMAR_BRILLANTE,NATSALMON,NATCALAMAR,NATTORTUGA
+#   Worlds: eutonia,principal
+#   Chance: 0.015
+#   Priority: 1
+#   Action: ADD 
+#   Reason: NATURAL
+#   PositionType: SEA
+#   UseWorldScaling: false
+#   Conditions:
+#   - outside true
+#   - region{r=barconexoth} false
+#   - region{r=capitalnexoth} false
+#   - region{r=ciudadnexoth1} false
+#   - region{r=ciudadnexoth2} false
+#   - region{r=isladelmarnexoth} false
+#   - region{r=islaflotantenexoth} false
+#   - region{r=aextum} false
+#   - region{r=barcoaeloria} false
+#   - region{r=cali} false
+#   - region{r=cumbresblancas} false
+#   - region{r=dolafarvd} false
+#   - region{r=isladiosesaeloria} false
+#   - region{r=luxhena} false 
+#   - region{r=islalagoalmas} false 
+#   - region{r=templogenshin} false 
+#   - region{r=vallenuevadelsolar} false 
+#   - region{r=valleregnum} false 
+#   - region{r=isladiosesnexoth} false 

@@ -1,0 +1,56 @@
+
+# GUI display name
+name: '&0[&8{tag}&0] &8{name} &0- &8(&7{page}&8/&7{maxpages}&8)'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    member:
+        slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+        function: member
+        empty:  
+            item: GRAY_STAINED_GLASS_PANE
+            name: '&aSin Jugador'
+        member:
+            item: PLAYER_HEAD
+            name: '&a{name}'
+            #leader-name: '&a{name} &c[&aLeader&c]' - Unused right now
+            lore:
+            - '&7Nivel {level} {class}'
+            - '&7En linea hace: {since}'
+    next:
+        slots: [26]
+        function: next
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        name: '&aSiguiente pagina'
+        lore: []
+    previous:
+        slots: [18]
+        function: previous
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        name: '&aPagina anterior'
+        lore: []
+    leave:
+        slots: [49]
+        function: leave
+        item: REDSTONE
+        name: '&cAbandonar guild'
+        lore: []
+    
+    #Request and Disband are only available to the Guild Leader    
+    disband:
+        slots: [51]
+        function: disband
+        item: BARRIER
+        name: '&cDeshacer la guild'
+        lore: []
+    request:
+        slots: [47]
+        function: invite
+        item: WRITABLE_BOOK 
+        name: '&aInvitar Jugador..'
+        lore: []

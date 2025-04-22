@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "": [
+	{"model": "minecraft:block/dandelion"},
+	{"model": "minecraft:block/dandelion_2"}
+		]
+    }
+}

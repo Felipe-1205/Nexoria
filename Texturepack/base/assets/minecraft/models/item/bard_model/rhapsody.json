@@ -1,0 +1,42 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/bard_texture/rhapsody_a",
+		"particle": "item/bard_texture/rhapsody_a"
+	},
+	"elements": [
+		{
+			"from": [-6.5, 8, -6.5],
+			"to": [22.5, 8, 22.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [1.75, 1.75, 14, 14], "texture": "#0"},
+				"down": {"uv": [1.75, 14, 14, 1.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-15, 7, -15],
+			"to": [31, 7, 31],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9.5, 8, 9.5]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [1.75, 1.75, 14, 14], "texture": "#0"},
+				"down": {"uv": [1.75, 14, 14, 1.75], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-7.5, 0, -23.5],
+			"scale": [4, 4, 4]
+		}
+	}
+}

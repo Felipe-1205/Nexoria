@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/stone"
+      },
+      {
+        "model": "minecraft:block/stone"
+      },
+      {
+        "model": "minecraft:block/stone",
+        "y": 180, "uvlock": true
+      },
+      {
+        "model": "minecraft:block/stone",
+        "y": 180, "uvlock": true
+      }
+    ]
+  }
+}

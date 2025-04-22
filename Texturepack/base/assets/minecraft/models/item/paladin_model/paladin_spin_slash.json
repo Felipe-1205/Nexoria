@@ -1,0 +1,36 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"main": "item/paladin_texture/paladin_spin_slash_a"
+	},
+	"elements": [
+		{
+			"from": [-12.5, -12.5, 8],
+			"to": [28.5, 28.5, 8],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#main"},
+				"east": {"uv": [4, 0, 8, 0], "rotation": 270, "texture": "#main"},
+				"south": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#main"},
+				"west": {"uv": [4, 0, 8, 0], "rotation": 270, "texture": "#main"},
+				"up": {"uv": [4, 0, 4, 4], "rotation": 270, "texture": "#main"},
+				"down": {"uv": [4, 0, 4, 4], "rotation": 270, "texture": "#main"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-6.25, -1, -16.25],
+			"scale": [4, 4, 4]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-6.25, -1, 4.25],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"rotation": [0, 90, 0],
+			"translation": [0, -62.75, -2.5],
+			"scale": [4, 4, 4]
+		}
+	}
+}

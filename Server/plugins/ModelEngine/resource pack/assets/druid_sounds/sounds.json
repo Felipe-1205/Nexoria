@@ -1,0 +1,88 @@
+{
+  "samus.bear_roar": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/bear_roar"
+    ]
+  },
+  "samus.form_change": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/form_change"
+    ]
+  },
+  "samus.ground_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/ground_smash"
+    ]
+  },
+  "samus.hawk_screech": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/hawk_screech"
+    ]
+  },
+  "samus.healing_wisp_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/healing_wisp_aura"
+    ]
+  },
+  "samus.healing_wisp_heal": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/healing_wisp_heal"
+    ]
+  },
+  "samus.hurricane": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/hurricane"
+    ]
+  },
+  "samus.hurricane_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/hurricane_aura"
+    ]
+  },
+  "samus.thorns": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/thorns"
+    ]
+  },
+  "samus.vine_entangle": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/vine_entangle"
+    ]
+  },
+  "samus.vine_wave": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/vine_wave1",
+	  "samus/druid/vine_wave2"
+    ]
+  },
+  "samus.wolf_roar1": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/wolf_roar1"
+    ]
+  },
+  "samus.wolf_roar2": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/wolf_roar2"
+    ]
+  },
+  "samus.wolf_scratch": {
+    "category": "master",
+    "sounds": [
+      "samus/druid/wolf_scratch1",
+	  "samus/druid/wolf_scratch2"
+    ]
+  }
+}

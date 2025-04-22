@@ -1,0 +1,14 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/shulker_shell"
+	},
+	"overrides": [
+		{ "predicate": {"custom_model_data":1}, "model": "item/mochilas/1"},
+		{ "predicate": {"custom_model_data":2}, "model": "item/mochilas/2"},
+		{ "predicate": {"custom_model_data":3}, "model": "item/mochilas/3"},
+        { "predicate": {"custom_model_data":4}, "model": "item/mochilas/4"},
+		{ "predicate": {"custom_model_data":5}, "model": "item/mochilas/5"},
+		{ "predicate": {"custom_model_data":6}, "model": "item/mochilas/6"}
+	]
+}

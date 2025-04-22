@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/fx_hawk"},"elements":[{"from":[5.5,8.016666,8.501289],"to":[10.5,8.016666,17.50129],"faces":{"up":{"uv":[1.625,5.25,1.0,4.125],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[1.625,4.125,1.0,5.25],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,538 @@
+panels:
+  menu:
+    perm: "default"
+    rows: 6
+    title: '&c» &eMenu!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+# dados
+      '9':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d4
+        name: '&e&lDado D4'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D4'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '10':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d6
+        name: '&e&lDado D6'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D6'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '18':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d8
+        name: '&e&lDado D8'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D8'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '19':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d10
+        name: '&e&lDado D10'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D10'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '27':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d12
+        name: '&e&lDado D12'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D12'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '28':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d20
+        name: '&e&lDado D20'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D20'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+# atributos
+      '16':
+        material: stick
+        stack: 1
+        commands:
+        - fuerza
+        name: '&4&lFuerza'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &4&lFuerza.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '17':
+        material: stick
+        stack: 1
+        commands:
+        - constitucion
+        name: '&6&lConstitucion'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &6&lConstitucion.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '25':
+        material: stick
+        stack: 1
+        commands:
+        - destreza
+        name: '&2&lDestreza'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &2&lDestreza'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '26':
+        material: stick
+        stack: 1
+        commands:
+        - carisma
+        name: '&d&lCarisma'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &d&lCarisma'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '34':
+        material: stick
+        stack: 1
+        commands:
+        - inteligencia
+        name: '&1&lInteligencia'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &1&lInteligencia'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '35':
+        material: stick
+        stack: 1
+        commands:
+        - sabiduria
+        name: '&5&lSabiduria'
+        lore:  
+        - ''  
+        - '&7Click aquí para lanzar un dado de &5&lSabiduria'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+#centro
+      '4':
+        material: stick
+        stack: 1
+        commands:
+        - stats
+        name: '&a&lStats'
+        lore:  
+        - ''  
+        - '&7Click aquí para ver tus &aEstadísticas.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '12':
+        material: stick
+        stack: 1
+        commands:
+        - skills
+        name: '&a&lSkills'
+        lore:  
+        - ''  
+        - '&7Click aquí para ver tus &aSkills.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '13':
+        material: stick
+        stack: 1
+        commands:
+        - player
+        name: '&a&lPlayer'
+        lore:  
+        - ''  
+        - '&7Click aquí para ver tu información de &aJugador.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '14':
+        material: stick
+        stack: 1
+        commands:
+        - habilidad lista
+        name: '&a&lLista de Habilidades'
+        lore:  
+        - ''  
+        - '&7Click aquí para ver tu &aLista de Habilidades.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '22':
+        material: stick
+        stack: 1
+        commands:
+        - vida mostrar
+        name: '&c&lMostrar Vida'
+        lore:  
+        - ''  
+        - '&7Click aquí para mostrar tu &cVida &7Actual.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '45':
+        material: stick
+        stack: 1
+        commands:
+        - global
+        name: '&a&lGlobal'
+        lore:  
+        - ''  
+        - '&7Click aquí para activar/desactivar el &aChat Global.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '23':
+        material: stick
+        stack: 1
+        commands:
+        - vida reiniciar
+        name: '&c&lReiniciar Vida'
+        lore:  
+        - ''  
+        - '&7Click aquí para reiniciar tu &cVida.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+# chats
+      '47':
+        material: stick
+        stack: 1
+        commands:
+        - s
+        name: '&5&lSusurro'
+        lore:  
+        - ''  
+        - '&7Click aquí para cambiar al canal de &5Susurro.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '48':
+        material: stick
+        stack: 1
+        commands:
+        - b
+        name: '&b&lBajo'
+        lore:  
+        - ''  
+        - '&7Click aquí para cambiar al canal de &bVoz Baja.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '49':
+        material: stick
+        stack: 1
+        commands:
+        - h
+        name: '&9&lHablar'
+        lore:  
+        - ''  
+        - '&7Click aquí para cambiar al canal de &9Hablar.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '50':
+        material: stick
+        stack: 1
+        commands:
+        - g
+        name: '&4&lGritar'
+        lore:  
+        - ''  
+        - '&7Click aquí para cambiar al canal de &4Gritos.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '51':
+        material: stick
+        stack: 1
+        commands:
+        - ooc
+        name: '&d&lOOC'
+        lore:  
+        - ''  
+        - '&7Click aquí para cambiar al canal de &dOOC.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+# otros
+      '5':
+        material: stick
+        stack: 1
+        commands:
+        - rpginv
+        name: '&a&lInventario RPG'
+        lore:  
+        - ''  
+        - '&7Click aquí para &aVer tu'
+        - '&ainventario de accesorios'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '30':
+        material: stick
+        stack: 1
+        commands:
+        - dado 1d2
+        name: '&6&lMoneda D2'
+        lore:  
+        - ''  
+        - '&7Click aquí para arrojar un &6D2'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '32':
+        material: stick
+        stack: 1
+        commands:
+        - pets
+        name: '&6&lMascotas'
+        lore:  
+        - ''  
+        - '&7Click aquí para abrir'
+        - '&7el &aMenu de Mascotas' 
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '21':
+        material: stick
+        stack: 1
+        commands:
+        - actualizar
+        name: '&7&lActualizar'
+        lore:  
+        - ''  
+        - '&7Click aquí para actualizar tu lista' 
+        - '&7de habilidades al subir de nivel.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '3':
+        material: stick
+        stack: 1
+        commands:
+        - atributos
+        - cpc
+        name: '&a&lAtributos'
+        lore:  
+        - ''  
+        - '&7Click aquí para mostrar tu lista' 
+        - '&7de &aAtributos y Modificaores.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+      '53':
+        material: stick
+        stack: 1
+        commands:
+        - realscoreboard toggle
+        name: '&a&lInformacion'
+        lore:  
+        - ''  
+        - '&7Click aquí para activar o desactivar' 
+        - '&7la lista de informacion de puntos.'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY

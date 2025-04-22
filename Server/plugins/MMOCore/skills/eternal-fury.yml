@@ -1,0 +1,41 @@
+name: Eternal Fury
+lore:
+- '&4Liberas tu ira interna, consigues resistencia, velocidad'
+- '&4y regeneración. Tu Rageblade se vuelve más fuerte,'
+- '&4más larga y la probabilidad de sangrado incrementa hasta un 50%'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2181'
+damage:
+  base: 8
+  per-level: 1
+  min: 5
+  max: 8
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 8
+  per-level: 0
+  min: 0
+  max: 8
+duration:
+  base: 12
+  per-level: 0.2
+  min: 10
+  max: 12
+cooldown:
+  base: 40
+  per-level: 0.1
+  min: 16
+  max: 40

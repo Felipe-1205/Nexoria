@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/beast_owl"},"elements":[{"from":[5.5433874,8.025001,8.385705],"to":[10.543387,8.025001,20.385704],"faces":{"up":{"uv":[5.625,8.0,5.0,6.5],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[5.625,6.5,5.0,8.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

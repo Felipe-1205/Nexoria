@@ -1,0 +1,35 @@
+name: Hawk Form
+lore:
+- '&2You morph into a hawk, allowing yourself'
+- '&2to fly. You can adjust the direction of'
+- '&2your flight by looking up/down/left/right'
+- ''
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2083'
+duration:
+  base: 4
+  per-level: 0.1
+  min: 4
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.1
+  min: 9
+  max: 10

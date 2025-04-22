@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:jungle_planks
+unlock: false
+result: minecraft:jungle_trapdoor 2

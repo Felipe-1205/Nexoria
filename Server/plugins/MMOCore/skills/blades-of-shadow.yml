@@ -1,0 +1,40 @@
+name: Blades of Shadow
+lore:
+- '&9Summon 5 shadow blades that strikes the surface,'
+- '&9creating shadow waves that slows enemies.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Slow Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2125'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+duration:
+  base: 3
+  per-level: 0.1
+  min: 3
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4

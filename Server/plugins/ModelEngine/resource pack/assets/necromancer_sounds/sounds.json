@@ -1,0 +1,63 @@
+{
+  "samus.eternal_flame": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/eternal_flame"
+    ]
+  },
+  "samus.eternal_wheel": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/eternal_wheel"
+    ]
+  },
+  "samus.incarnation": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/incarnation"
+    ]
+  },
+  "samus.life_drain": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/life_drain"
+    ]
+  },
+  "samus.skeletal_minion_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/skeletal_minion_attack1",
+	  "samus/necromancer/skeletal_minion_attack2"
+    ]
+  },
+  "samus.skeletal_minion_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/skeletal_minion_idle"
+    ]
+  },
+  "samus.summon_minions": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/summon_minions"
+    ]
+  },
+  "samus.summon_wisps": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/summon_wisps"
+    ]
+  },
+  "samus.wisp_explode": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/wisp_explode"
+    ]
+  },
+  "samus.wisp_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/necromancer/wisp_idle"
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+name: Engine Glide
+lore:
+- '&bEngage your arcane-powered propulsion to glide forward,'
+- '&bleaving a trail of searing flames in your path.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Burn Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2204'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 6
+duration:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 3
+  per-level: -0.1
+  min: 2
+  max: 3

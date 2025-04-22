@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- minecraft:mangrove_log
+unlock: false
+result: minecraft:mangrove_planks 4

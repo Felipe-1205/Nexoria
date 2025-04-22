@@ -1,0 +1,547 @@
+name: Mining
+max-level: 101
+experience:
+    base: 15
+    per-level: 15
+exp-curve: levels
+on-mine:
+    #piedras
+    piedra1:
+        material: vanilla{type=stone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra2:
+        material: vanilla{type=dripstone_block}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra3:
+        material: vanilla{type=cobbled_deepslate}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra4:
+        material: vanilla{type=tuff}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra5:
+        material: vanilla{type=smooth_basalt}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra6:
+        material: vanilla{type=calcite}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra7:
+        material: vanilla{type=basalt}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra8:
+        material: vanilla{type=deepslate}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra9:
+        material: vanilla{type=andesite}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra10:
+        material: vanilla{type=cracked_deepslate_tiles}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra11:
+        material: vanilla{type=cobblestone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra12:
+        material: vanilla{type=mossy_cobblestone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra13:
+        material: vanilla{type=packed_mud}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra14:
+        material: vanilla{type=blackstone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra15:
+        material: vanilla{type=netherrack}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra16:
+        material: vanilla{type=granite}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra17:
+        material: vanilla{type=diorite}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra18:
+        material: vanilla{type=muddy_mangrove_roots}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra19:
+        material: vanilla{type=gilded_blackstone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra20:
+        material: vanilla{type=crying_obsidian}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra21:
+        material: vanilla{type=polished_blackstone}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra22:
+        material: vanilla{type=mud}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra23:
+        material: vanilla{type=obsidian}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra24:
+        material: vanilla{type=sculk}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra25:
+        material: vanilla{type=purple_concrete}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    piedra26:
+        material: vanilla{type=purple_stained_glass}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=PIEDRATIER1} 1 1'
+        triggers:
+        - 'exp{profession=mining;amount=1}' 
+        options:
+            vanilla-drops: false
+        regen:
+            time: 30
+            temp-block: vanilla{type=BEDROCK}
+    #mina 1
+    pedernal:
+        material: vanilla{type=suspicious_gravel}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FLINTTIER1} 1 1'
+        conditions:
+        - 'region{name=minatier1}'
+        triggers:
+        - 'exp{profession=mining;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 100
+            temp-block: vanilla{type=BEDROCK}
+    carbon:
+        material: vanilla{type=coal_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=CARBONTIER1} 1 1'
+        conditions:
+        - 'region{name=minatier1}'
+        triggers:
+        - 'exp{profession=mining;amount=2}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 100
+            temp-block: vanilla{type=BEDROCK}
+    hierro:
+        material: vanilla{type=iron_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=HIERROTIER1} 1 1'
+        conditions:
+        - 'region{name=minatier1}'
+        triggers:
+        - 'exp{profession=mining;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 100
+            temp-block: vanilla{type=BEDROCK}
+    cobre:
+        material: vanilla{type=copper_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=COBRETIER1} 1 1'
+        conditions:
+        - 'region{name=minatier1}'
+        triggers:
+        - 'exp{profession=mining;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 100
+            temp-block: vanilla{type=BEDROCK}
+    # mina 2
+    oro:
+        material: vanilla{type=gold_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=OROTIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=BEDROCK}
+    oro2:
+        material: vanilla{type=nether_gold_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=OROTIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=BEDROCK}
+    quarzo:
+        material: vanilla{type=nether_quartz_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=CUARZOTIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=4}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=BEDROCK}
+    redstone:
+        material: vanilla{type=redstone_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=REDSTONETIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=4}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=BEDROCK}
+    lapis:
+        material: vanilla{type=lapis_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=LAPIZLAZULITIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=4}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=BEDROCK}
+    amatista:
+        material: vanilla{type=amethyst_cluster}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=AMATISTATIER2} 1 1'
+        conditions:
+        - 'region{name=minatier2}'
+        triggers:
+        - 'exp{profession=mining;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 180
+            temp-block: vanilla{type=small_amethyst_bud}
+    # mina 3
+    esmeralda:
+        material: vanilla{type=emerald_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ESMERALDATIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=5}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 360
+            temp-block: vanilla{type=BEDROCK}
+    diamond:
+        material: vanilla{type=diamond_ore}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=DIAMANTETIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=8}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 360
+            temp-block: vanilla{type=BEDROCK}
+    netherita:
+        material: vanilla{type=ancient_debris}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=NETHERITATIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=10}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 360
+            temp-block: vanilla{type=BEDROCK}
+    mixi:
+        material: vanilla{type=iron_block}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=OSMIOTIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=60}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 900
+            temp-block: vanilla{type=BEDROCK}
+    tako:
+        material: vanilla{type=dark_prismarine}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=CHETERITETIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=60}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 900
+            temp-block: vanilla{type=BEDROCK}
+    felipe:
+        material: vanilla{type=netherite_block}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=FELIPERIUMTIER3} 1 1'
+        conditions:
+        - 'region{name=minatier3}'
+        triggers:
+        - 'exp{profession=mining;amount=60}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 900
+            temp-block: vanilla{type=BEDROCK}

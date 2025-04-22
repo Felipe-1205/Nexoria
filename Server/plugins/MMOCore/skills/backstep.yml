@@ -1,0 +1,28 @@
+name: Backstep
+lore:
+- 'Salta hacia atrás para crear'
+- 'espacio entre tú y el objetivo'
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2058'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 5
+  per-level: 0.5
+  min: 5
+  max: 10
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.1
+  min: 2
+  max: 10

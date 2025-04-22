@@ -1,0 +1,12 @@
+type: shapeless
+source:
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+- minecraft:spruce_planks
+unlock: false
+result: minecraft:chest

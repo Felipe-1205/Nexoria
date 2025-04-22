@@ -1,0 +1,36 @@
+name: Ira Estelar
+lore:
+- Desata un ataque devastador
+- haciendo que estrellas mágicas caigan
+- sobre tu objetivo ocasionandole &8{damage}
+- puntos de daño radiante
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: NETHER_STAR
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 4.2
+  per-level: 1.1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: 0.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: 0.2

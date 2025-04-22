@@ -1,0 +1,7 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:GRANOSCACAO
+- mmoitems:MATERIAL:TRIGO
+- mmoitems:MATERIAL:GRANOSCACAO
+unlock: false
+result: mmoitems:CONSUMABLE:GALLETA 1

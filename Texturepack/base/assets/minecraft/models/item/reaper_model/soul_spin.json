@@ -1,0 +1,66 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/reaper_texture/soul_spin_shadow_a",
+		"1": "item/reaper_texture/soul_spin_a",
+		"particle": "item/reaper_texture/soul_spin_shadow_a"
+	},
+	"elements": [
+		{
+			"from": [-13.364, 8.0306, -13.42],
+			"to": [29.476, 8.0306, 29.42],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-9.556, 7.975, -9.5],
+			"to": [25.444, 7.975, 25.5],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"east": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"west": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"up": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "rotation": 270, "texture": "#0"}
+			}
+		},
+		{
+			"from": [-13.364, 7.9694, -13.42],
+			"to": [29.476, 7.9694, 29.42],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 180, -4],
+			"translation": [-5.75, -2, 4.25],
+			"scale": [4, 4, 4]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [80, 180, -15],
+			"translation": [-5.75, -2.25, 7.25],
+			"scale": [3.7, 3.7, 3.7]
+		},
+		"head": {
+			"rotation": [12, 22, 9],
+			"translation": [0, -17.5, -0.25],
+			"scale": [4, 4, 4]
+		}
+	}
+}

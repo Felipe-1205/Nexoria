@@ -1,0 +1,39 @@
+name: Primeros Auxilios
+lore:
+- Proporciona un efecto restaurador y potente
+- de curación a cualquier aliado
+- en las cercanías durante &8{duration} &7segundos
+- curando un total de &8{heal} &7puntos de vida
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: GLOW_BERRIES
+duration:
+  base: 5
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 3
+  per-level: 0.4
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 6
+  per-level: 0.5
+heal:
+  base: 4
+  per-level: 1.1

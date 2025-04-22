@@ -1,0 +1,189 @@
+LANZA1:
+  base:
+    material: WOODEN_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 3.0
+    attack-speed: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 500.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 1.0
+LANZA2:
+  base:
+    material: STONE_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.0
+    attack-speed: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 1000.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 10.0
+LANZA3:
+  base:
+    material: IRON_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 5.0
+    attack-speed: 1.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 1500.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 20.0
+LANZA4:
+  base:
+    material: GOLDEN_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 6.0
+    attack-speed: 1.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 2000.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 30.0
+LANZA5:
+  base:
+    material: DIAMOND_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 2500.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 40.0
+LANZA6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&BLanza'
+    displayed-type: '&5De Asta'
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.0
+    attack-speed: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    entity-interaction-range: 0.5
+    max-durability: 3000.0
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 50.0
+LANZADESTINO:
+  base:
+    material: STONE_SWORD
+    custom-model-data: 2025.0
+    name: '&5&lLa Perforadora'
+    displayed-type: '&5Lanza'
+    max-durability: 4000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-droping: true
+    lore:
+    - '&4Arma Maldita'
+    attack-damage: 5.0
+    attack-speed: 1.4
+    max-health: -5.0
+    two-handed: true
+    entity-interaction-range: 1.0
+    element:
+      necrotico:
+        damage: 2.0
+    enchants:
+      binding_curse: 1.0
+    hide-enchants: true
+    ability:
+      ability1:
+        type: BACKSTAB
+        mode: ATTACK
+        stamina: 4.0
+        extra: 200.0
+        cooldown: 20.0

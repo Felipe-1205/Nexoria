@@ -1,0 +1,42 @@
+name: Summon Phoenix
+lore:
+- '&9Summon a phoenix that glides through the surface,'
+- '&9burning and dealing deadly damage to targets.'
+- '&9The phoenix also leaves a path of fire'
+- '&9that burns targets overtime.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2105'
+damage:
+  base: 10
+  per-level: 1
+  min: 10
+  max: 12
+duration:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 7
+  max: 8

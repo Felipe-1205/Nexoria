@@ -1,0 +1,99 @@
+
+# GUI display name
+name: Class Selection
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+
+    class-guerrero:
+        slots: [11]
+        function: class-guerrero
+        name: '&a&lGuerrero'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-picaro:
+        slots: [20]
+        function: class-picaro
+        name: '&a&lPicaro'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-hechicero:
+        slots: [29]
+        function: class-hechicero
+        name: '&a&lHechicero'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-guardian:
+        slots: [42]
+        function: class-guardian
+        name: '&a&lGuardian'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-bardo:
+        slots: [22]
+        function: class-bardo
+        name: '&a&lBardo'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-monje:
+        slots: [15]
+        function: class-monje
+        name: '&a&lMonje'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-ranger:
+        slots: [24]
+        function: class-ranger
+        name: '&a&lRanger'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-mago:
+        slots: [33]
+        function: class-mago
+        name: '&a&lMago'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'
+
+    class-clerigo:
+        slots: [38]
+        function: class-clerigo
+        name: '&a&lClerigo'
+        hide-flags: true
+        lore:
+            - '{lore}'
+            - ''
+            - '{attribute-lore}'

@@ -1,0 +1,69 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [32, 32],
+	"textures": {
+		"0": "item/illusionist_texture/mystical_card_illusionist",
+		"particle": "item/illusionist_texture/mystical_card_illusionist"
+	},
+	"elements": [
+		{
+			"from": [3, 1, 8],
+			"to": [13, 15, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [6.15224, 7.23463, 8.0125]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 7], "texture": "#0"},
+				"east": {"uv": [0, 7.5, 0, 14.5], "texture": "#0"},
+				"south": {"uv": [5, 0, 0, 7], "texture": "#0"},
+				"west": {"uv": [0.5, 7.5, 0.5, 14.5], "texture": "#0"},
+				"up": {"uv": [6, 7.5, 1, 7.5], "texture": "#0"},
+				"down": {"uv": [11.5, 7.5, 6.5, 7.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-0.84776, 0.23463, 8.025],
+			"to": [9.15224, 14.23463, 8.025],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [6.15224, 7.23463, 8.0125]},
+			"faces": {
+				"north": {"uv": [0, 0, 5, 7], "texture": "#0"},
+				"east": {"uv": [0, 7.5, 0, 14.5], "texture": "#0"},
+				"south": {"uv": [5, 0, 0, 7], "texture": "#0"},
+				"west": {"uv": [0.5, 7.5, 0.5, 14.5], "texture": "#0"},
+				"up": {"uv": [6, 7.5, 1, 7.5], "texture": "#0"},
+				"down": {"uv": [11.5, 7.5, 6.5, 7.5], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [-54, 90, 0],
+			"translation": [0, -0.75, -1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-54, 90, 0],
+			"translation": [0, -0.75, -1.25],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"firstperson_righthand": {
+			"rotation": [-34, 106, 0],
+			"translation": [6, -0.5, -7.5]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-34, 106, 0],
+			"translation": [8.25, -0.5, -7.5]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [0, 180, 0],
+			"translation": [-1.25, 0.5, -1.25],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"fixed": {
+			"translation": [2, 1.25, 0]
+		}
+	}
+}

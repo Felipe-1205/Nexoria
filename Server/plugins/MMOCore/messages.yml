@@ -1,0 +1,239 @@
+# Level & Experience
+level-up:
+  - ''
+  - '&eFelicidades subiste a nivel &6{level}&e!'
+  - '&eUsa &6/p &epara ver tus estadistias!'
+  - ''
+profession-level-up:
+  - '&eAhora eres nivel &6{level}&e en &6{profession}&e!'
+exp-notification: '%&f{profession} &e{progress} &e{ratio}%'
+exp-hologram: '&e+{exp} EXP!'
+class-select: '&eAhora eres un &6{class}&e!'
+already-on-class: '&cYa eres un {class}.'
+death-exp-loss:
+  - ''
+  - '&4Moriste y perdiste {loss} de eperiencia.'
+  - ''
+
+# General
+not-enough-perms: '&cNo tienes permitido hacer eso.'
+
+# Experience boosters
+booster-main:
+  - '&e'
+  - '&eA &6{multiplier}x&e EXP El multiplicador ahora esta activado!'
+  - '&e'
+booster-skill:
+  - '&e'
+  - '&eA &6{multiplier}x&e &6{profession} &eEXP Multiplicador ahora esta activado!'
+  - '&e'
+booster-expired: '&cExpiro!'
+
+# PvP Mode
+pvp-mode:
+  cooldown: '&cPorfavor espera {remaining} segundos para usar este comando otravez.'
+
+  # When you cannot hit another player
+  cannot-hit:
+    high-level-difference: '&cHay mucha diferencia de nivel, ni lo intentes.'
+    low-level-target: '&cEl jugador tiene un nivel muy bajo.'
+    low-level-self: '&cTu nivel es muy bajo para pelear contra otros.'
+    pvp-mode-disabled-target: '&cEste jugador no ah acttivado el PVP.'
+    pvp-mode-disabled-self: '&cYNo has activado el PVP.'
+    invulnerable-self: '&cAun estas fuera de combate por {left} segundos.'
+    invulnerable-target: '&cEl jugador esta fuera de combate por {left} segundos.'
+
+  # When using /pvpmode
+  toggle:
+    on-safe: '&aahora podras pelear con otros jugadores en ares especializadas.'
+    on-invulnerable: '&aPodraspelear con otros jugadores en {time} segundos.'
+    off-safe: '&cYa no puedes pelear con otros jugadores.'
+
+  # Entering/leaving regions
+  leave:
+    pvp-allowed: '&cDejaste la zona PVP pero aun eres vulnerable por {remaining} segundos!'
+    pvp-denied: '&cDejaste la zona pvp.'
+  enter:
+    pvp-mode-on: '&aEntraste a una zona PVP y ganaste invulnerabilidad por {time} segundos!'
+    pvp-mode-off: '&aEntraste a una zona PVP usa /pvpmode para pelear con otros'
+
+# Fishing Profession
+caught-fish: '&cAtrapaste un pez'
+fish-out-water: '&aBien hecho!'
+fish-out-water-crit: '&aPez Especial!'
+
+# Player Input
+player-input:
+  anvil:
+    friend-request: 'Nombre de tu amigo..'
+    party-invite: 'Nombre del jugador..'
+    guild-invite: 'Nombre del jugador..'
+    guild-creation-tag: 'Tag de la guild..'
+    guild-creation-name: 'Nombre de la guild..'
+  chat:
+    friend-request:
+      - '&eEscribe en el chat el nombre del jugador.'
+      - '&eEscribe &c''cancel'' &epara cancelar.'
+    party-invite:
+      - '&eEscribe en el chat el jugador que quieres invitar.'
+      - '&eEscribe &c''cancel'' &epara cancelar.'
+    guild-invite:
+      - '&eWEscribe en el chat el jugador que quieres invitar.'
+      - '&eEscribe &c''cancel'' &epara cancelar.'
+    guild-creation-tag:
+      - '&eEscribe en el chat el TAG de la Guild que quieres crear.'
+      - '&eEscribe &c''cancel'' &epara cancelar.'
+    guild-creation-name:
+      - '&eEscribe en el chat el nombre de la Guild que quieres crear.'
+      - '&eEscribe &c''cancel'' &epara cancelar.'
+    friend-request-cancel: ''
+    party-invite-cancel: ''
+    guild-invite-cancel: ''
+    guild-creation-tag-cancel: ''
+    guild-creation-name-cancel: ''
+
+# Spell Casting
+casting:
+  action-bar:
+    ready: '&6[{index}] &a&l{skill}'
+    on-cooldown: '&6[{index}] &c&l{skill} &6(&c{cooldown}&6)'
+    no-mana: '&6[{index}] &9&l{skill}'
+    no-stamina: '&6[{index}] &9&l{skill}'
+  split: '&7 &7 - &7 '
+  no-longer: '%&cCancelas el casteo de la habilidad.'
+  no-mana: '&cNo tienes suficiente {mana}, necesitas {mana-required} !'
+  no-stamina: '&cNo tienes suficiente Stamina!'
+  on-cooldown: '&cLa habilidad es en un Cooldown de {cooldown}s.'
+
+# Combat Log
+now-in-combat: '%&cEstas en combate!'
+leave-combat: '%&aDejaste el combate.'
+
+# Waypoints
+new-waypoint: '%&eDesbloqueaste el &6{waypoint} &ewaypoint!'
+new-waypoint-book: '%&eDesbloqueaste el &6{waypoint} &ewaypoint!'
+not-enough-stellium: '&cNo tienes suficiente stellium: necesitas {more} mas.'
+waypoint-cooldown: '&cPor favor espera {cooldown} antes de usar el waypoint otravez.'
+not-unlocked-waypoint: '&cNo has desbloqueado el waypoint aun.'
+not-dynamic-waypoint: '&cYSolo puedes teletrasnportarte a un non-dynamic waypoint mientras te paras en otro waypoint.'
+standing-on-waypoint: '&cYa estas sobre este waypoint.'
+warping-canceled: '%&cTeletransporte a este waypoint cancelado.'
+warping-comencing: '%&cNO TE MUEVAS!&e seras teletransportado en {left}sec.'
+cannot-teleport-to: '&cLos dos waypoints no estan conectados.'
+
+# Cash
+deposit: '&eGuardaste &6{worth}g&e.'
+withdrawing: '&eEscribe en el chat la cantidad de &6Oro&e que tu deces &6retirar&e.'
+withdraw-cancel: '&eRetiro cancelado.'
+withdrew: '&eLograste Retirar &6{worth}g&e.'
+wrong-number: '&c{arg} no es un numero valido.'
+not-enough-money: '&cNo tienes suficiente dinero, solo te queda {left} de Oro.'
+stand-near-enderchest: '&cTienes que pararte junto a un banco para hacer eso.'
+
+# Blocks
+cannot-break: '%&cNo tienes la Herramienta correcta para romper eso.'
+
+# Friends
+no-longer-friends: '&cTu y {unfriend} ya no son amigos.'
+not-online-player: '&c{player} no esta conectado.'
+sent-friend-request: '&emandaste una peticion de amistad a &6{player}&e.'
+now-friends: '&eAhora eres amigo de &6{player}&e.'
+friend-request-cooldown: '&cEspera {cooldown}.'
+cant-request-to-yourself: '&cNo puedes mandarte una solicitud a ti mismo.'
+already-friends: '&cYa eres amigo de {player}.'
+friend-request:
+  - '{"text":""}'
+  - '{"text":"&6{player} &eTe envio una solicitud de amistad!"}'
+  - '[{"text":"        "},{"text":"&8[&a&lACEPTAR&8]","clickEvent":{"action":"run_command","value":"/friends accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick para aceptar!"}},{"text":"&r             "},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/friends deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+  - '{"text":""}'
+
+# Parties
+party-chat: '&5[Party] {player}: {message}'
+sent-party-invite: '&eInvitaste a una party a &6{player}&e.'
+already-in-party: '&c{player} ya esta en tu party.'
+party-invite:
+  - '{"text":""}'
+  - '{"text":"&6{player} &eTe ha invitado a su party!"}'
+  - '[{"text":"        "},{"text":"&8[&a&lACEPTAR&8]","clickEvent":{"action":"run_command","value":"/party accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick para aceptar!"}},{"text":"&r             "},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/party deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+  - '{"text":""}'
+party-is-full: '&cLa party esta llena.'
+party-joined: '&eTe uniste a la fiesta de &6{owner}&e.'
+party-joined-other: '&6{player}&e se unio a tu fiesta!'
+transfer-party-ownership: '&eTe convertiste en el lider de la party.'
+kick-from-party: '&eSacaste a &6{player}&e.'
+party-invite-cooldown: '&cEspera {cooldown} antes de invitar a {player}.'
+high-level-difference: '&cNo puedes invitar a {player}ya que hay mucha diferencuia de nivel ({diff}).'
+
+# Guilds
+guild-chat: '&a[{tag}] {player}: {message}'
+sent-guild-invite: '&eEnviaste una invitacion de guild a &6{player}&e.'
+already-in-guild: '&c{player} ya esta en la guild.'
+guild-invite:
+  - '{"text":""}'
+  - '{"text":"&6{player} &ehas invited you to their guild!"}'
+  - '[{"text":"        "},{"text":"&8[&a&lACEPTAR&8]","clickEvent":{"action":"run_command","value":"/guild accept {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick para aceptar!"}},{"text":"&r             "},{"text":"&8[&c&lDENY&8]","clickEvent":{"action":"run_command","value":"/guild deny {uuid}"},"hoverEvent":{"action":"show_text","value":"&eClick to deny."}}]'
+  - '{"text":""}'
+#guild-is-full: '&cTu guild esta llena.' -Unused right now
+guild-joined: '&eTe uniste a la guil de &6{owner}&e.'
+guild-joined-other: '&6{player}&e se unio a tu guild!'
+transfer-guild-ownership: '&eTe volviste el lider de la guild.'
+kick-from-guild: '&eSacaste a &6{player}&e de la guild.'
+guild-invite-cooldown: '&cEspera {cooldown} antes de invitar a {player}.'
+guild-creation:
+  failed: "&cNo se pudo crear la guild: {reason}"
+  reasons:
+    invalid-characters: "&eCaracter invalido!"
+    invalid-length: "&eEl tamaño tiene que ser entre {min} y {max}!"
+    already-exists: "&eEsa TAG ya existe!"
+
+# Quests
+already-on-quest: '&cYa estas en una mision.'
+cancel-quest: '&eCancelaste la mision.'
+quest-level-restriction: '&cNecesitas ser {level} {count}.'
+cant-redo-quest: '&cNo puedes iniciar la mision dos veces.'
+quest-cooldown: '&cEspera {delay}.'
+start-quest: '&eEmpezaste &6{quest}&e.'
+
+# Attributes
+no-attribute-points-spent: '&cNo has gastado ningun punto de atributo.'
+not-attribute-reallocation-point: '&cNo tienes 1 punto de cambio.'
+not-attribute-point: '&cNo tienes punto de atributo.'
+not-attribute-point-shift: '&cNecesitas tener &4{shift_points} &cpuntos de atributo.'
+attribute-points-reallocated: '&eLograste resetear tus atributos. Ahora tienes &6{points} &ePuntos de atributo.'
+attribute-max-points-hit: '&cNo puedes subir este atributo mas.'
+attribute-level-up: '&eLograste subir &6{attribute}&e.' # {level}
+
+# Class selection
+cant-choose-new-class:
+  - '&cNecesitas un punto de clase para hacer eso.'
+no-permission-for-class:
+  - "&cNo tienes permiso de escoger esa clase."
+
+# Skills
+no-class-skill: '&cTu clase no tiene habilidades.'
+not-enough-skill-points: '&cNecesitas un punto de habilidad.'
+not-enough-skill-points-shift: '&cNecesitas {shift_points} puntos de habilidad.'
+upgrade-skill: '&e&6{skill} &ees ahora nivel &6{level}&e!'
+skill-level-not-met: '&cNo puedes usar esta habilidad aun.'
+no-skill-bound: '&cNo tienes ninguna habilidad para este espacio.'
+skill-cannot-be-bound: '&cEsta habilidad siempre esta activa no necesitas un espacio.'
+not-compatible-skill: '&cEsta habilidad no es compatible con este espacio.'
+cant-manually-bind: "&cNo puedes manualmente vinncular/desvincular una habilidad a este espacio."
+skill-max-level-hit: '&cAlcanzaste el nivel maximo para esa habilidad.'
+no-skill-placeholder: 'Ninguna habilidad vinculada'
+not-skill-reallocation-point: '&cNo tienes un punto de habilidad para cambio.'
+no-skill-points-spent: '&cNo has gastado ningun punto de habilidad.'
+skill-points-reallocated: '&eReseteaste tus puntos de habilidad. Ahora tienes &6{points} &epuntos de habilidad.'
+max-points-reached: '&cGastaste el maximo de puntos. necesitas cambiar tuius puntos para eso.'
+cannot-upgrade-skill: '&cNo puedes subir tu habilidad.'
+
+# Skill Trees
+no-skill-tree-points-spent: '&cNo has gastado ningun punto del arbol de habilidad.'
+locked-node: '&cEsta habilidad esta bloqueada!'
+upgrade-skill-node: '&eEl nodo de la habilidad &6{skill-node} &ees nivel &6{level}&e!'
+skill-node-max-level-hit: '&cAlcanzaste el nivel masximo para el nodo de esta habilidad.'
+missing-skill-node-permission: '&cNo tienes permiso para desbloquear este nodo de habilidad.'
+not-enough-skill-tree-points: '&cNecesitas {point} puntos de arbol de habilidad.'
+reallocated-points: '&eLograste resetear el arbol de habilidad {skill-tree}. &eahora tienes &6{points} &epuntos del arbol de habilidad.'
+not-skill-tree-reallocation-point: '&cNo tienes 1 punto de cambio de arbol de habilidad.'
+no-skill-tree: '&cTu clase no tiene arbol de habilidades.'

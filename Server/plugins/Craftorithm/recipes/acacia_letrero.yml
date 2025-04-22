@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+- ' b '
+source:
+  a: minecraft:acacia_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:acacia_sign 3

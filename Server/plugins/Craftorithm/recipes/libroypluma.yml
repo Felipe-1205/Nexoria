@@ -1,0 +1,6 @@
+type: shapeless
+source:
+- minecraft:book
+- mmoitems:MATERIAL:SACOTINTA
+unlock: false
+result: minecraft:writable_book

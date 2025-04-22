@@ -1,0 +1,41 @@
+name: Beads of Karma
+lore:
+- '&fSummon spiritual beads and spread out an aura of karma,'
+- '&fpushing away enemies, healing and removing debuffs from'
+- '&fyourself and nearby allies.'
+- ''
+- '&c{damage} Damage'
+- '&a{heal} Heal'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2193'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+heal:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: -0.1
+  min: 6
+  max: 7

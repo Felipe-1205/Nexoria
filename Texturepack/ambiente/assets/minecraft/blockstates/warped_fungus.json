@@ -1,0 +1,27 @@
+{
+	"variants": {
+		"": [
+			{
+				"model": "block/warped_fungus", 
+				"weight": 5
+			},
+			{
+				"model": "block/warped_fungus",
+				"y": 90, "weight": 5
+			},
+			{
+				"model": "block/warped_fungus",
+				"y": 180, "weight": 5
+			},
+			{
+				"model": "block/warped_fungus_1",
+				"weight": 10
+			},
+			{
+				"model": "block/warped_fungus_2",
+				"weight": 10
+			}
+		]
+
+	}
+}

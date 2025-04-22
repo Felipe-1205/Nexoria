@@ -1,0 +1,38 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+name: Dragon Zone
+lore:
+- '&9Summon 3 dragon spears that form a dragon zone.' 
+- '&9While you are in the dragon zone,'
+- '&9you gain speed and resistance'
+- ''
+- '&a{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2080'
+duration:
+  base: 7
+  per-level: 0.2
+  min: 7
+  max: 9
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 13
+  per-level: -0.1
+  min: 12
+  max: 13
+
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

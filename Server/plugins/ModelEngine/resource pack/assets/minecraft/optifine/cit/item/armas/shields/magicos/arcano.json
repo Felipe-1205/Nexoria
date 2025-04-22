@@ -1,0 +1,60 @@
+{
+	"credit": "Made with Blockbench,Made By NightEpiphany",
+	"texture_size": [128, 128],
+	"textures": {
+		"particle": "./items/arcano",
+		"shield": "./items/arcano"
+	},
+	"elements": [
+		{
+			"from": [-5, 1, 4],
+			"to": [21, 27, 4],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#shield"},
+				"east": {"uv": [0, 0, 0, 3.25], "texture": "#missing"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#shield"},
+				"west": {"uv": [0, 0, 0, 3.25], "texture": "#missing"},
+				"up": {"uv": [0, 0, 3.25, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 3.25, 0], "texture": "#missing"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [66, -90, 0],
+			"translation": [0, -5.75, -2.5],
+			"scale": [1.02, 1.02, 1.02]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [66, 0, 0],
+			"translation": [0, -2.75, 0.25],
+			"scale": [1.12, 1.12, 1.12]
+		},
+		"firstperson_righthand": {
+			"rotation": [0, -67, 0],
+			"translation": [0, -17, -4.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -67, 0],
+			"translation": [0, -17, -4.25],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"ground": {
+			"rotation": [90, 0, 0],
+			"translation": [0, -2.25, -3],
+			"scale": [0.353, 0.353, 0.353]
+		},
+		"gui": {
+			"translation": [0, -3.25, 0],
+			"scale": [0.622, 0.622, 0.622]
+		},
+		"head": {
+			"translation": [0, -6, -4.5]
+		},
+		"fixed": {
+			"translation": [0, -5, 4],
+			"scale": [0.85, 0.85, 0.85]
+		}
+	}
+}

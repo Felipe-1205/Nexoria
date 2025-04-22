@@ -1,0 +1,10 @@
+{
+	"credit": "Designed by Kalam0n",
+	"parent": "./sword_template",
+    	"textures": {
+        	"layer0": "./stone_sword_blade",
+        	"layer1": "./stone_sword_handle",
+        	"layer2": "./stone_sword_hilt",
+        	"particle": "./stone_sword_blade"
+	}
+}

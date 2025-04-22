@@ -1,0 +1,61 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/dragon_warrior_texture/dragon_slash4",
+		"1": "item/dragon_warrior_texture/dragon_slash4_2",
+		"particle": "item/dragon_warrior_texture/dragon_slash4"
+	},
+	"elements": [
+		{
+			"from": [-9.5, -7.5, 7.25],
+			"to": [21.5, 23.5, 7.25],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.032, 2.032, 13, 13], "texture": "#0"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"south": {"uv": [13, 2.032, 2.032, 13], "texture": "#0"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-9.5, -7.5, 6.75],
+			"to": [21.5, 23.5, 6.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.032, 2.032, 13, 13], "texture": "#0"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"south": {"uv": [13, 2.032, 2.032, 13], "texture": "#0"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-11.5, -11.5, 7],
+			"to": [27.5, 27.5, 7],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [8, 8, 7]},
+			"faces": {
+				"north": {"uv": [2.032, 2.032, 13, 13], "texture": "#1"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"south": {"uv": [13, 2.032, 2.032, 13], "texture": "#1"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 7],
+			"translation": [10, -80, 5],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"rotation": [90, 180, -156],
+			"translation": [1.5, -19, 57.25],
+			"scale": [3.8, 3.8, 3.8]
+		}
+	}
+}

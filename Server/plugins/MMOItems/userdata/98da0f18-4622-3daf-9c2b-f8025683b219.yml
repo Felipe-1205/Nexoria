@@ -1,0 +1,8 @@
+crafting-queue:
+  ars-luminis:
+    recipe-aa9672c7-99db-447c-bda8-4099a2ca741f:
+      recipe: CRANEONECROTICOMUYRARO
+      start: 1740283480811
+      completion: 1740283630811
+permissions-from-items:
+- essentials.workbench

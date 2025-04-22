@@ -1,0 +1,35 @@
+name: Mirage Slot
+lore:
+- '&bTeleport forwards. Your mirror clone dashes'
+- '&bthrough your path again, damaging enemies'
+- '&bin contact with your clone.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2161'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4

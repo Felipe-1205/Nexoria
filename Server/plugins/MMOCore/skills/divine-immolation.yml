@@ -1,0 +1,35 @@
+name: Divine Immolation
+lore:
+- '&eArrojas un trazo de luz radiante.'
+- '&eLos enemigos son empujados en'
+- '&edirección del ataque.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2140'
+damage:
+  base: 6
+  per-level: 1
+  min: 3
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 0
+  min: 2
+  max: 2
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.6
+  per-level: 0
+  min: 0.5
+  max: 0.6

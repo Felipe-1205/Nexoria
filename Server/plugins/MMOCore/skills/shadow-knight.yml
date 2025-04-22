@@ -1,0 +1,35 @@
+name: Shadow Knight
+lore:
+- '&9Summon a shadow knight that slashes forwards two'
+- '&9times with his spear, and a spinning slash as his'
+- '&9finishing blow, setting enemies airborne.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2129'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.1
+  min: 4
+  max: 5

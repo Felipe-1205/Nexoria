@@ -1,0 +1,30 @@
+name: Soul Collector
+lore:
+- '&aYou collect a soul every time you use an ability.'
+- '&aEvery 7th soul collection creates a soul aura that enhances'
+- '&athe damage of your next skill and resets the soul gauge.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2156'
+passive-type: TIMER
+timer:
+  base: 20
+  per-level: 0
+  min: 20
+  max: 20
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

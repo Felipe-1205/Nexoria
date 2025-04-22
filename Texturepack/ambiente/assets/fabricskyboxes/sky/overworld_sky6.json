@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "texture": "minecraft:optifine/sky/world0/planets02.png",
+  "blend": {
+    "type": "custom",
+    "blender": {
+      "sourceFactor": 1,
+      "destinationFactor": 769,
+      "equation": 32774,
+      "redAlphaEnabled": true,
+      "greenAlphaEnabled": true,
+      "blueAlphaEnabled": true,
+      "alphaEnabled": false
+    }
+  },
+  "properties": {
+    "priority": 6,
+    "fade": {
+      "startFadeIn": 23750,
+      "endFadeIn": 250,
+      "startFadeOut": 11750,
+      "endFadeOut": 12250
+    },
+    "rotation": {
+      "axis": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "rotationSpeedY": -1.0
+    },
+    "transitionInDuration": 20,
+    "transitionOutDuration": 20
+  },
+  "conditions": {
+    "weather": [
+      "clear",
+      "snow"
+    ],
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  }
+}

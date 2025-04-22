@@ -1,0 +1,26 @@
+BRUTAL_STRIKE:
+    mythicmobs-skill-id: Brutal_Strike
+    modifiers:
+    - damage
+
+CHARGE:
+    mythicmobs-skill-id: Charge
+    
+RAMPAGE:
+    mythicmobs-skill-id: Rampage
+    modifiers:
+    - duration
+    
+SHIELD_BARRIER:
+    mythicmobs-skill-id: Shield_Barrier
+    
+CHAIN_HOOK:
+    mythicmobs-skill-id: Chain_Hook
+    modifiers:
+    - damage
+    
+JUDGEMENT:
+    mythicmobs-skill-id: Judgement
+    modifiers:
+    - damage
+    - duration

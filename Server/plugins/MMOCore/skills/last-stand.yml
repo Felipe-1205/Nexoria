@@ -1,0 +1,50 @@
+name: Last Stand
+lore:
+- '&eDo a wide circle slash around you,'
+- '&epulling in nearby enemies. You summon'
+- '&eyour holy wings, leap back, and slam'
+- '&eyour hammer into the ground, setting'
+- '&eenemies airborne. If the hit enemy is'
+- '&emarked, it leaves behind a healing aura.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Healing Aura Duration'
+- '&a{heal} Heal'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2110'
+damage:
+  base: 10
+  per-level: 1
+  min: 10
+  max: 12
+duration:
+  base: 4
+  per-level: 0.1
+  min: 4
+  max: 5
+heal:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 7
+  max: 8

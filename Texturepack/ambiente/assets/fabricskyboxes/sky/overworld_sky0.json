@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "texture": "minecraft:optifine/sky/world0/starfield01.png",
+  "blend": {
+    "type": "custom",
+    "blender": {
+      "sourceFactor": 1,
+      "destinationFactor": 769,
+      "equation": 32774,
+      "redAlphaEnabled": true,
+      "greenAlphaEnabled": true,
+      "blueAlphaEnabled": true,
+      "alphaEnabled": false
+    }
+  },
+  "properties": {
+    "priority": 0,
+    "fade": {
+      "startFadeIn": 10000,
+      "endFadeIn": 12000,
+      "startFadeOut": 0,
+      "endFadeOut": 2000
+    },
+    "rotation": {
+      "axis": [
+        0.0,
+        180.0,
+        0.0
+      ],
+      "rotationSpeedY": -0.5
+    },
+    "transitionInDuration": 20,
+    "transitionOutDuration": 20
+  },
+  "conditions": {
+    "weather": [
+      "clear",
+      "snow"
+    ],
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  }
+}

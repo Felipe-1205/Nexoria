@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/mf_deceptor"},"elements":[{"from":[-2.666667,8.0,-13.333334],"to":[18.666668,8.0,8.0],"faces":{"up":{"uv":[4.571429,4.571429,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[4.571429,4.571429,0.0,9.142858],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

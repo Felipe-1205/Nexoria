@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/dark_element_pet_attack_1"},"elements":[{"from":[-8.0,-8.0,9.0],"to":[24.0,24.0,9.0],"faces":{"south":{"uv":[16.0,0.0,0.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

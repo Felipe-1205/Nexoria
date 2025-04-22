@@ -1,0 +1,36 @@
+name: Primal Axe
+lore:
+- '&4Arroja un hacha hacia adelante dañando a todos los'
+- '&4enemigos en el camino, el hacha se atora al impactar'
+- '&4con un bloque, recoger el hacha recupera el cooldown'
+- '&4instantaneamente.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2182'
+damage:
+  base: 7
+  per-level: 1
+  min: 4
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 0
+  min: 0
+  max: 2
+stamina:
+  base: 2
+  per-level: 0
+  min: 0
+  max: 2
+cooldown:
+  base: 3
+  per-level: 0
+  min: 0
+  max: 3

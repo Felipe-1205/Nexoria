@@ -1,0 +1,43 @@
+name: Judgement
+lore:
+- '&6Charge forward with a huge shield that damages'
+- '&6and stuns targets. You leap up and summon a huge'
+- '&6judgement sword, smashing the surface and'
+- '&6damaging + stunning nearby targets. The judgement sword'
+- '&6lasts for 8 seconds and keeps on damaging nearby targets'
+- ''
+- '&c{damage} Damage'
+- '&b{duration}s Stun Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2055'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 20
+  per-level: -0.5
+  min: 15
+  max: 20
+damage:
+  base: 8
+  per-level: 1
+  min: 8
+  max: 13
+duration:
+  base: 5
+  per-level: 0.1
+  min: 5
+  max: 6

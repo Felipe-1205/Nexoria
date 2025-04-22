@@ -1,0 +1,38 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+name: Dragon Breath
+lore:
+- '&9Fire 4 dragon slashes that knocks'
+- '&9back enemies. Then fire an X shaped dragon'
+- '&9breath for the final blow'
+- ''
+- '&a{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2076'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 8
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 6
+  per-level: -0.1
+  min: 5
+  max: 6
+
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

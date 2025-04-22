@@ -1,0 +1,68 @@
+name: Vampiric Surge
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&c&lDash Vampírico (Cuchillas): &7Realiza un ataque explosivo, atravesando a todos"
+- "&7los enemigos y drenando su salud."
+- "&c&lEnjambre de murciélagos (Grimorio): &7Murciélagos de sangre de fuego que"
+- "&7drenan la salud de todos los enemigos golpeados."
+- "&c&lBloodburst (Agujas): &7Explota todas las agujas apiladas en los enemigos"
+- "&7cercanos. Cuantas más agujas haya, más daño causarán y más salud consumirán."
+- "&c&lSoul Harvester (Guadaña): &7Lanza tu guadaña de sangre giratoria,"
+- "&7derribando y drenando la salud de los enemigos impactados."
+- "&7Tu guadaña de sangre lanzada se ralentiza y regresa hacia"
+- "&7ti, esta vez atrayendo a los enemigos."
+- "&c🗡 {damage} Daño"
+- "&a🗡 {heal} Drenaje de vida"
+- "&e⌛ {bladescooldown}s Enfriamiento (Cuchillas)"
+- "&e⌛ {grimoirecooldown}s Enfriamiento (Grimorio)"
+- "&e⌛ {needlescooldown}s Enfriamiento (Agujas)"
+- "&e⌛ {scythecooldown}s Enfriamiento (Guadaña)"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2234'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 6
+  per-level: 1
+  min: 4
+  max: 7
+heal:
+  base: 3
+  per-level: 1
+  min: 2
+  max: 4
+mana:
+  base: 8
+  per-level: 0
+  min: 0
+  max: 8
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+bladescooldown:
+  base: 8
+  per-level: -0.1
+  min: 2
+  max: 8
+grimoirecooldown:
+  base: 10
+  per-level: -0.1
+  min: 2
+  max: 10
+needlescooldown:
+  base: 8
+  per-level: -0.1
+  min: 2
+  max: 8
+scythecooldown:
+  base: 30
+  per-level: -0.1
+  min: 3
+  max: 30

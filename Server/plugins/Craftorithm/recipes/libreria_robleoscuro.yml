@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'bbb'
+- 'aaa'
+source:
+  a: minecraft:dark_oak_planks
+  b: minecraft:dark_oak_slab
+unlock: false
+result: minecraft:chiseled_bookshelf

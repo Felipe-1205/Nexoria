@@ -1,0 +1,68 @@
+{
+  "samus.claw_pull": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/claw_pull"
+    ]
+  },
+  "samus.cross_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/cross_slash"
+    ]
+  },
+  "samus.death_spin": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/death_spin"
+    ]
+  },
+  "samus.drain_heal": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/drain_heal"
+    ]
+  },
+  "samus.god_of_death_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/god_of_death_slash"
+    ]
+  },
+  "samus.god_of_death_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/god_of_death_smash"
+    ]
+  },
+  "samus.soul_scythe_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/soul_scythe_slash"
+    ]
+  },
+  "samus.soul_slice_1": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/soul_slice_1"
+    ]
+  },
+  "samus.soul_slice_2": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/soul_slice_2"
+    ]
+  },
+  "samus.summon_claw": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/summon_claw"
+    ]
+  },
+  "samus.summon_scythe": {
+    "category": "master",
+    "sounds": [
+      "samus/reaper/summon_scythe"
+    ]
+  }
+}

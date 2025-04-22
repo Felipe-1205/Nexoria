@@ -1,0 +1,627 @@
+NATARMADILLO:
+  Type: ARMADILLO
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 6
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.25
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=ESCAMARMADILLO} 1 1
+NATAJOLOTE:
+  Type: AXOLOTL
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 14
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.75
+  Drops:
+  - MobsComunes
+NATCAMELLO:
+  Type: CAMEL
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 32
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+NATGATO:
+  Type: CAT
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.40
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=HILO} 0-2 0.25
+  - string 0-2 0.25
+NATPOLLO:
+  Type: CHICKEN
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 4
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=POLLOCRUDO} 0-1 0.25
+  - chicken 0-1 0.25
+  - mmoitems{type=material;id=PLUMA} 0-3 0.25
+  - feather 0-3 0.25
+NATBACALAO:
+  Type: COD
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 3
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 1.0
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=BACALAOCRUDO} 0-1 0.25
+  - cod 0-1 0.25
+NATVACA:
+  Type: COW
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=BISTECRUDO} 1-3 0.25
+  - beef 1-3 0.25
+  - mmoitems{type=material;id=CUERO} 0-2 0.25
+  - leather 0-2 0.25
+NATBURRO:
+  Type: DONKEY
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 20
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=CUERO} 0-2 0.25
+  - leather 0-2 0.25
+NATRANA:
+  Type: FROG
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+NATCALAMAR_BRILLANTE:
+  Type: GLOW_SQUID
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 1.00
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=SACOTINTABRILLANTE} 1-3 1
+NATLORO:
+  Type: PARROT
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 6
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=PLUMA} 1-2 0.25
+  - feather 1-2 0.25
+NATCERDO:
+  Type: PIG
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=CHULETACRUDA} 1-3 0.25
+  - porkchop 1-3 0.25
+NATCONEJO:
+  Type: RABBIT
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 3
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.20
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=PIELCONEJO} 0-1 0.25
+  - rabbit_hide 0-1 0.25
+  - mmoitems{type=material;id=PATACONEJO} 1 0.1
+  - rabbit_foot 0-1 0.1
+  - mmoitems{type=material;id=CONEJOCRUDO} 0-1 0.25
+  - rabbit 0-1 0.25
+NATSALMON:
+  Type: SALMON
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 3
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 1.00
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=SALMONCRUDO} 1 0.25
+  - salmon 1 0.25
+NATOVEJA:
+  Type: SHEEP
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - float
+  - LookAtTarget
+  Damage: 5
+  Health: 8
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=CORDEROCRUDO} 1 0.25
+  - mutton 1 0.25
+  - WOOL 1 1
+NATCALAMAR:
+  Type: SQUID
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 10
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 2.00
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=SACOTINTA} 1-3 0.25
+  - ink_sac 1-3 0.25
+NATTORTUGA:
+  Type: TURTLE
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - movetowardstarget 
+  - randomstroll
+  - LookAtTarget
+  Damage: 5
+  Health: 30
+  AITargetSelectors:
+    - clear
+    - hurtbytarget
+    - specificfaction Mounstros
+    - specificfaction Mascotas
+  Faction: Animales
+  Options:
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.10
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=ALGA} 1-3 1
+
+#CALLABO
+CALLABO:
+  Type: HORSE
+  Health: 30
+  Options:
+    Tameable: true
+    AlwaysShowName: false
+    Despawn: true
+    PreventOtherDrops: true
+    DigOutOfGround: true
+    FollowRange: 32
+    Interactable: false
+    PreventItemPickup: true
+    PreventLeashing: true
+    PreventMobKillDrops: true
+    PreventRandomEquipment: true
+    PreventRenaming: true
+    PreventSunburn: true
+    PreventTransformation: true
+    MovementSpeed: 0.30

@@ -1,0 +1,28 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"0": "item/abyssion_texture/water_rune_1",
+		"particle": "item/abyssion_texture/water_rune_1"
+	},
+	"elements": [
+		{
+			"from": [-12, 1, -12],
+			"to": [28, 1, 28],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 1, 8]},
+			"faces": {
+				"north": {"uv": [1.032, 1.032, 3, 3], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [1.032, 1.032, 3, 3], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [1.032, 1.032, 3, 3], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [1.032, 1.032, 3, 3], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [15.968, 0.032, 0.032, 15.968], "texture": "#0"},
+				"down": {"uv": [15.968, 15.968, 0.032, 0.032], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -15.5, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}

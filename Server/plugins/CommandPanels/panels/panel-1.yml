@@ -1,0 +1,263 @@
+panels:
+  chamba:
+    perm: op
+    rows: 6
+    title: '&c» &eSelecciona Tu Destino!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          lore:
+          - '&4» &cTen Presente Tu Nivel!'
+          - ''
+          - '&6» &3Parate encima'
+          - '&6» &3Para Mas Informacion!'
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+      '10':
+        material: WOODEN_AXE
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Una zona llena de árboles comunes, perfecta'  
+        - '&7para aprender las bases de la tala sin complicaciones.'  
+        - ''  
+        name: '&6&lHacha De Principiante'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Lenador1 %cp-player-name%
+        - cpc
+      '11':
+        material: IRON_AXE
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Tres islas conectadas por cadenas, cada una'  
+        - '&7albergando árboles únicos y desafiantes.'  
+        - ''  
+        name: '&6&lHacha Intermedio'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Lenador2 %cp-player-name%
+        - cpc
+      '12':
+        material: DIAMOND_AXE
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Un imponente árbol rojo domina esta isla, rodeado'  
+        - '&7de pequeños árboles mágicos que la complementan.'  
+        - ''  
+        name: '&6&lHacha Experto'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Lenador3 %cp-player-name%
+        - cpc
+      '14':
+        material: WOODEN_HOE
+        stack: 1
+        name: '&6&lDalles de Principiante'
+        lore:  
+        - ''  
+        - '&7Tres islas que parecen haber sido abandonadas'  
+        - '&7hace siglos, llenas de flora silvestre para explorar.'  
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Botanica1 %cp-player-name%
+        - cpc
+      '15':
+        material: IRON_HOE
+        stack: 1
+        name: '&6&lDalles Intermedio'
+        lore:  
+        - ''  
+        - '&7Una gran isla con un enorme cráter en el centro,'  
+        - '&7donde se esconden valiosos recursos naturales.'  
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Botanica2 %cp-player-name%
+        - cpc
+      '16':
+        material: DIAMOND_HOE
+        stack: 1
+        name: '&6&lDalles Experto'
+        lore:  
+        - ''  
+        - '&7Una isla sumergida en agua por todos lados, donde'  
+        - '&7se encuentran recursos acuáticos únicos y valiosos.'  
+        - '' 
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Botanica3 %cp-player-name%
+        - cpc
+      '37':
+        material: WOODEN_PICKAXE
+        stack: 1
+        name: '&6&lPico de Principiante'
+        lore:  
+        - ''  
+        - '&7Una isla pequeña rodeada de penumbras donde los'  
+        - '&7principiantes pueden extraer minerales basicos.'  
+        - '' 
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Minero1 %cp-player-name%
+        - cpc
+      '38':
+        material: IRON_PICKAXE
+        stack: 1
+        name: '&6&lPico Intermedio'
+        lore:  
+        - ''  
+        - '&7Una isla intermedia con vetas de metales más'  
+        - '&7valiosos. Los mineros perfeccionan aquí sus habilidades.'  
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Minero2 %cp-player-name%
+        - cpc
+      '39':
+        material: DIAMOND_PICKAXE
+        stack: 1
+        name: '&6&lPico Experto'
+        lore:  
+        - ''  
+        - '&7La joya de la minería, llena de yacimientos de'  
+        - '&7minerales raros y preciosos. Solo los expertos triunfan aquí.'  
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Minero3 %cp-player-name%
+        - cpc
+      '41':
+        material: FISHING_ROD
+        stack: 1
+        name: '&6&lYeti'
+        lore:  
+        - ''  
+        - '&7Un tranquilo oasis flotante rodeado de aguas'  
+        - '&7cristalinas. Ideal para pescar criaturas comunes.' 
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Pesca1 %cp-player-name%
+        - cpc
+      '42':
+        material: FISHING_ROD
+        stack: 1
+        name: '&6&lFantasmal'
+        lore:  
+        - ''  
+        - '&7Una isla con lagos profundos donde habitan peces'  
+        - '&7más raros. Los pescadores deben ser cautos y hábiles.'  
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Pesca2 %cp-player-name%
+        - cpc
+      '43':
+        material: FISHING_ROD
+        stack: 1
+        name: '&6&lInfernal'
+        lore:  
+        - ''  
+        - '&7Una gran isla donde en el interior de una oscura'  
+        - '&7cueva yace un pequeño lago. Un reto para los más'  
+        - '&7experimentados pescadores.'  
+        - ''   
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Pesca3 %cp-player-name%
+        - cpc

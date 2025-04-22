@@ -1,0 +1,41 @@
+name: Marca de Muerte
+lore:
+- Detén a tu enemigo en el acto con esta habilidad, márcalo
+- infligiendo &8{damage} &7puntos de dañoy déjalo inmovilizado 
+- durante &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: REDSTONE
+duration:
+  base: 5
+  per-level: 0.5
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 0.1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 10
+  per-level: 1.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: 0.5 
+amplifier:
+  base: 2
+  per-level: 1

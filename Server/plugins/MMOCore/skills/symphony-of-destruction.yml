@@ -1,0 +1,41 @@
+name: Symphony of Destruction
+lore:
+- '&bSummon a circle of melodies, slowing all targets inside'
+- '&bthe area. The clef in the middle of the circle creates a'
+- '&bdestructive explosion after some time, levitating targets inside'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Levitation Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2098'
+damage:
+  base: 10
+  per-level: 1
+  min: 10
+  max: 12
+duration:
+  base: 3
+  per-level: 0.1
+  min: 3
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 7
+  max: 8

@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+- ' b '
+source:
+  a: minecraft:oak_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:oak_sign 3

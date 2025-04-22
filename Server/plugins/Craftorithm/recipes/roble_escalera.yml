@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'a  '
+- 'aa '
+- 'aaa'
+source:
+  a: minecraft:oak_planks
+unlock: false
+result: minecraft:oak_stairs 4

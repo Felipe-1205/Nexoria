@@ -1,0 +1,88 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "head_wither_skeleton.png",
+	"textureSize": [64, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "zombie_new_skull_head_rot2",
+					"invertAxis": "xy",
+					"translate": [-0.3125, 3.51454, -2.96861],
+					"boxes": [
+						{"coordinates": [-3.7375, -3.5025, -1.35, 8, 8, 8], "textureOffset": [0, 0]},
+						{"coordinates": [-0.7375, -1.5025, -1.35, 2, 1, 1], "textureOffset": [32, 11]},
+						{"coordinates": [1.2625, -3.5025, -1.35, 3, 2, 1], "textureOffset": [32, 0]},
+						{"coordinates": [-3.7875, 2.5075, -1.45, 1, 1, 1], "textureOffset": [0, 6]}
+					],
+					"submodels": [
+						{
+							"id": "notch3",
+							"invertAxis": "xy",
+							"translate": [0.3125, -4.21493, -1.4015],
+							"boxes": [
+								{"coordinates": [-4.05, 3.71243, 2.0515, 1, 2, 1], "textureOffset": [24, 16]},
+								{"coordinates": [-4.05, 3.71243, 3.0515, 1, 1, 1], "textureOffset": [20, 19]},
+								{"coordinates": [-4.05, 4.71243, 1.0515, 1, 2, 1], "textureOffset": [20, 16]}
+							]
+						},
+						{
+							"id": "notch4",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0.3125, -4.21493, -1.4015],
+							"boxes": [
+								{"coordinates": [2.95, 3.71243, 2.0515, 1, 2, 1], "textureOffset": [24, 16]},
+								{"coordinates": [2.95, 3.71243, 3.0515, 1, 1, 1], "textureOffset": [20, 19]},
+								{"coordinates": [2.95, 4.71243, 1.0515, 1, 2, 1], "textureOffset": [20, 16]}
+							]
+						},
+						{
+							"id": "body_sub_2",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0.3125, 19.28507, -1.4015],
+							"boxes": [
+								{"coordinates": [-4.05, -22.78757, 0.0515, 3, 2, 1], "textureOffset": [32, 0]}
+							]
+						},
+						{
+							"id": "zombie_head_overlay2",
+							"invertAxis": "xy",
+							"translate": [0.3125, 26.78507, -1.4015]
+						},
+						{
+							"id": "eye_socket_left2",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [0.3125, -4.71493, -1.4015],
+							"boxes": [
+								{"coordinates": [-3.05, 4.21243, 0.0515, 2, 3, 1], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "eye_socket_right2",
+							"invertAxis": "xy",
+							"translate": [0.3125, -4.71493, -1.4015],
+							"boxes": [
+								{"coordinates": [0.95, 4.21243, 0.0515, 2, 3, 1], "textureOffset": [0, 0]}
+							]
+						},
+						{
+							"id": "skull_mask2",
+							"invertAxis": "xy",
+							"translate": [0.3125, -4.71493, -1.4015],
+							"boxes": [
+								{"coordinates": [-4.05, 1.21243, 0.0915, 8, 8, 1], "textureOffset": [0, 20], "sizeAdd": 0.05}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

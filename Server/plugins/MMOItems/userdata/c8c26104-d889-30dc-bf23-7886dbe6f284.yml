@@ -1,0 +1,16 @@
+crafting-queue:
+  culina-vitae:
+    recipe-84b21a84-2701-48f2-8fea-3e61437e1c4f:
+      recipe: GOMITASAZULES
+      start: 1739687170588
+      completion: 1739687173588
+    recipe-1cb850f3-8e22-4563-8dca-2b65bf2413c5:
+      recipe: GOMITASAZULES
+      start: 1739687171850
+      completion: 1739687176588
+    recipe-e08b2a33-829f-43d1-bd81-6c3730ae0b07:
+      recipe: GRANOSDEMAIZ
+      start: 1739687500889
+      completion: 1739687179588
+permissions-from-items:
+- essentials.workbench

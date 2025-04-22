@@ -1,0 +1,47 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/ninja_samurai_texture/laceration_dash_1",
+		"particle": "item/ninja_samurai_texture/laceration_dash_1"
+	},
+	"elements": [
+		{
+			"from": [8, 3.5, -13.5],
+			"to": [8, 14.5, 29.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "rotation": 270, "texture": "#0"},
+				"east": {"uv": [2.375, 6.875, 12.25, 9.5], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#0"},
+				"west": {"uv": [12.25, 6.875, 2.375, 9.5], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#0"}
+			}
+		},
+		{
+			"from": [2.25, 9, -13.5],
+			"to": [13.25, 9, 29.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7.75, 9, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [2.375, 6.875, 12.25, 9.5], "rotation": 270, "texture": "#0"},
+				"down": {"uv": [12.25, 6.875, 2.375, 9.5], "rotation": 270, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-5.75, -71, 0],
+			"scale": [4, 4, 3.33008]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 45],
+			"translation": [-4, -71, 0],
+			"scale": [4, 4, 3.33008]
+		}
+	}
+}

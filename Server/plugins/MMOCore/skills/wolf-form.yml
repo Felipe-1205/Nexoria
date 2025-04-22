@@ -1,0 +1,45 @@
+name: Wolf Form
+lore:
+- '&2You morph into a wolf and slash your targets'
+- '&22 times, followed by a final slash that does'
+- "&2more damage. Your slashes drain the target's health,"
+- '&2allowing yourself to heal a certain amount'
+- ''
+- '&c{damage} Damage'
+- '&a{heal} Heal'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2087'
+heal:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 8
+damage:
+  base: 6
+  per-level: 1
+  min: 6
+  max: 9
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 6
+  max: 8
+
+
+# 2229W32NSUU5ATQ0KDWMJZ

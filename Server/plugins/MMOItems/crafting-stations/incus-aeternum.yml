@@ -1,0 +1,2863 @@
+name: 'Incus Aeternum (#page#/#max#)'
+max-queue-size: 64
+sound: BLOCK_ANVIL_USE
+layout: awn
+items:
+    fill:
+        material: STICK
+        name: '&4&kPedestal Runico Base'
+    no-recipe:
+        material: STICK
+        name: '&4&kPedestal Runico Activo'
+    no-queue-item:
+        material: STICK
+        name: '&4&kPedestal Runico Activo'
+recipes:
+    CUEROLIGERA1:
+        output:
+            type: armor
+            id: CASCOCUEROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROLIGERA2:
+        output:
+            type: armor
+            id: PECHOCUEROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROLIGERA3:
+        output:
+            type: armor
+            id: PANTALONCUEROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROLIGERA4:
+        output:
+            type: armor
+            id: BOTASCUEROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROMEDIANA1:
+        output:
+            type: armor
+            id: CASCOCUEROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROMEDIANA2:
+        output:
+            type: armor
+            id: PECHOCUEROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONCUEROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROMEDIANA4:
+        output:
+            type: armor
+            id: BOTASCUEROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROPESADA1:
+        output:
+            type: armor
+            id: CASCOCUEROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROPESADA2:
+        output:
+            type: armor
+            id: PECHOCUEROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROPESADA3:
+        output:
+            type: armor
+            id: PANTALONCUEROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    CUEROPESADA4:
+        output:
+            type: armor
+            id: BOTASCUEROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=10}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    MALLALIGERA1:
+        output:
+            type: armor
+            id: CASCOMALLALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOCUEROLIGERA,amount=1}'
+    MALLALIGERA2:
+        output:
+            type: armor
+            id: PECHOMALLALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOCUEROLIGERA,amount=1}'
+    MALLALIGERA3:
+        output:
+            type: armor
+            id: PANTALONMALLALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONCUEROLIGERA,amount=1}'
+    MALLALIGERA4:
+        output:
+            type: armor
+            id: BOTASMALLALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASCUEROLIGERA,amount=1}'
+    MALLAMEDIANA1:
+        output:
+            type: armor
+            id: CASCOMALLAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOCUEROMEDIANA,amount=1}'
+    MALLAMEDIANA2:
+        output:
+            type: armor
+            id: PECHOMALLAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOCUEROMEDIANA,amount=1}'
+    MALLAMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONMALLAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONCUEROMEDIANA,amount=1}'
+    MALLAMEDIANA4:
+        output:
+            type: armor
+            id: BOTASMALLAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASCUEROMEDIANA,amount=1}'
+    MALLAPESADA1:
+        output:
+            type: armor
+            id: CASCOMALLAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOCUEROPESADA,amount=1}'
+    MALLAPESADA2:
+        output:
+            type: armor
+            id: PECHOMALLAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOCUEROPESADA,amount=1}'
+    MALLAPESADA3:
+        output:
+            type: armor
+            id: PANTALONMALLAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONCUEROPESADA,amount=1}'
+    MALLAPESADA4:
+        output:
+            type: armor
+            id: BOTASMALLAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=20}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASCUEROPESADA,amount=1}'
+    HIERROLIGERA1:
+        output:
+            type: armor
+            id: CASCOHIERROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOMALLALIGERA,amount=1}'
+    HIERROLIGERA2:
+        output:
+            type: armor
+            id: PECHOHIERROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOMALLALIGERA,amount=1}'
+    HIERROLIGERA3:
+        output:
+            type: armor
+            id: PANTALONHIERROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONMALLALIGERA,amount=1}'
+    HIERROLIGERA4:
+        output:
+            type: armor
+            id: BOTASHIERROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASMALLALIGERA,amount=1}'
+    HIERROMEDIANA1:
+        output:
+            type: armor
+            id: CASCOHIERROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOMALLAMEDIANA,amount=1}'
+    HIERROMEDIANA2:
+        output:
+            type: armor
+            id: PECHOHIERROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOMALLAMEDIANA,amount=1}'
+    HIERROMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONHIERROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONMALLAMEDIANA,amount=1}'
+    HIERROMEDIANA4:
+        output:
+            type: armor
+            id: BOTASHIERROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASMALLAMEDIANA,amount=1}'
+    HIERROPESADA1:
+        output:
+            type: armor
+            id: CASCOHIERROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOMALLAPESADA,amount=1}'
+    HIERROPESADA2:
+        output:
+            type: armor
+            id: PECHOHIERROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOMALLAPESADA,amount=1}'
+    HIERROPESADA3:
+        output:
+            type: armor
+            id: PANTALONHIERROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONMALLAPESADA,amount=1}'
+    HIERROPESADA4:
+        output:
+            type: armor
+            id: BOTASHIERROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=20}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASMALLAPESADA,amount=1}'
+    OROLIGERA1:
+        output:
+            type: armor
+            id: CASCOOROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=CASCOHIERROLIGERA,amount=1}'
+    OROLIGERA2:
+        output:
+            type: armor
+            id: PECHOOROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PECHOHIERROLIGERA,amount=1}'
+    OROLIGERA3:
+        output:
+            type: armor
+            id: PANTALONOROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONHIERROLIGERA,amount=1}'
+    OROLIGERA4:
+        output:
+            type: armor
+            id: BOTASOROLIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASHIERROLIGERA,amount=1}'
+    OROMEDIANA1:
+        output:
+            type: armor
+            id: CASCOOROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=CASCOHIERROMEDIANA,amount=1}'
+    OROMEDIANA2:
+        output:
+            type: armor
+            id: PECHOOROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PECHOHIERROMEDIANA,amount=1}'
+    OROMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONOROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONHIERROMEDIANA,amount=1}'
+    OROMEDIANA4:
+        output:
+            type: armor
+            id: BOTASOROMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASHIERROMEDIANA,amount=1}'
+    OROPESADA1:
+        output:
+            type: armor
+            id: CASCOOROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=CASCOHIERROPESADA,amount=1}'
+    OROPESADA2:
+        output:
+            type: armor
+            id: PECHOOROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PECHOHIERROPESADA,amount=1}'
+    OROPESADA3:
+        output:
+            type: armor
+            id: PANTALONOROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONHIERROPESADA,amount=1}'
+    OROPESADA4:
+        output:
+            type: armor
+            id: BOTASOROPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=40}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASHIERROPESADA,amount=1}'
+    DIAMANTELIGERA1:
+        output:
+            type: armor
+            id: CASCODIAMANTELIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOOROLIGERA,amount=1}'
+    DIAMANTELIGERA2:
+        output:
+            type: armor
+            id: PECHODIAMANTELIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOOROLIGERA,amount=1}'
+    DIAMANTELIGERA3:
+        output:
+            type: armor
+            id: PANTALONDIAMANTELIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONOROLIGERA,amount=1}'
+    DIAMANTELIGERA4:
+        output:
+            type: armor
+            id: BOTASDIAMANTELIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASOROLIGERA,amount=1}'
+    DIAMANTEMEDIANA1:
+        output:
+            type: armor
+            id: CASCODIAMANTEMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOOROMEDIANA,amount=1}'
+    DIAMANTEMEDIANA2:
+        output:
+            type: armor
+            id: PECHODIAMANTEMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOOROMEDIANA,amount=1}'
+    DIAMANTEMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONDIAMANTEMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONOROMEDIANA,amount=1}'
+    DIAMANTEMEDIANA4:
+        output:
+            type: armor
+            id: BOTASDIAMANTEMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASOROMEDIANA,amount=1}'
+    DIAMANTEPESADA1:
+        output:
+            type: armor
+            id: CASCODIAMANTEESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=CASCOOROPESADA,amount=1}'
+    DIAMANTEPESADA2:
+        output:
+            type: armor
+            id: PECHODIAMANTEPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PECHOOROPESADA,amount=1}'
+    DIAMANTEPESADA3:
+        output:
+            type: armor
+            id: PANTALONDIAMANTEPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=PANTALONOROPESADA,amount=1}'
+    DIAMANTEPESADA4:
+        output:
+            type: armor
+            id: BOTASDIAMANTEPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=20}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=20}'
+        - 'mmoitem{type=armor,id=BOTASOROPESADA,amount=1}'
+    NETHERITELIGERA1:
+        output:
+            type: armor
+            id: CASCONETHERITALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=CASCODIAMANTELIGERA,amount=1}'
+    NETHERITELIGERA2:
+        output:
+            type: armor
+            id: PECHONETHERITALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PECHODIAMANTELIGERA,amount=1}'
+    NETHERITELIGERA3:
+        output:
+            type: armor
+            id: PANTALONNETHERITALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONDIAMANTELIGERA,amount=1}'
+    NETHERITELIGERA4:
+        output:
+            type: armor
+            id: BOTASNETHERITALIGERA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASDIAMANTELIGERA,amount=1}'
+    NETHERITEMEDIANA1:
+        output:
+            type: armor
+            id: CASCONETHERITAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=CASCODIAMANTEMEDIANA,amount=1}'
+    NETHERITEMEDIANA2:
+        output:
+            type: armor
+            id: PECHONETHERITAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PECHODIAMANTEMEDIANA,amount=1}'
+    NETHERITEMEDIANA3:
+        output:
+            type: armor
+            id: PANTALONNETHERITAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONDIAMANTEMEDIANA,amount=1}'
+    NETHERITEMEDIANA4:
+        output:
+            type: armor
+            id: BOTASNETHERITAMEDIANA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASDIAMANTEMEDIANA,amount=1}'
+    NETHERITEPESADA1:
+        output:
+            type: armor
+            id: CASCONETHERITAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=CASCODIAMANTEESADA,amount=1}'
+    NETHERITEPESADA2:
+        output:
+            type: armor
+            id: PECHONETHERITAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PECHODIAMANTEPESADA,amount=1}'
+    NETHERITEPESADA3:
+        output:
+            type: armor
+            id: PANTALONNETHERITAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=PANTALONDIAMANTEPESADA,amount=1}'
+    NETHERITEPESADA4:
+        output:
+            type: armor
+            id: BOTASNETHERITAPESADA
+            amount: 1
+        crafting-time: 15
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=armor,id=BOTASDIAMANTEPESADA,amount=1}'
+#ESCUDOS
+    ESCUDOCRFT1:
+        output:
+            type: shield
+            id: ESCUDO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    ESCUDOCRFT2:
+        output:
+            type: shield
+            id: ESCUDO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=shield,id=ESCUDO1,amount=1}'
+    ESCUDOCRFT3:
+        output:
+            type: shield
+            id: ESCUDO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=shield,id=ESCUDO2,amount=1}'
+    ESCUDOCRFT4:
+        output:
+            type: shield
+            id: ESCUDO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=shield,id=ESCUDO3,amount=1}'
+    ESCUDOCRFT5:
+        output:
+            type: shield
+            id: ESCUDO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=shield,id=ESCUDO4,amount=1}'
+    ESCUDOCRFT6:
+        output:
+            type: shield
+            id: ESCUDO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=shield,id=ESCUDO5,amount=1}'
+    ESCUDOMGCCRFT1:
+        output:
+            type: shield
+            id: ESCUDOMAGIC1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+    ESCUDOMGCCRFT2:
+        output:
+            type: shield
+            id: ESCUDOMAGIC2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=40}'
+        - 'mmoitem{type=shield,id=ESCUDOMAGIC1,amount=1}'
+    ESCUDOMGCCRFT3:
+        output:
+            type: shield
+            id: ESCUDOMAGIC3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=10}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=shield,id=ESCUDOMAGIC2,amount=1}'
+    ESCUDOMGCCRFT4:
+        output:
+            type: shield
+            id: ESCUDOMAGIC4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=shield,id=ESCUDOMAGIC3,amount=1}'
+    ESCUDOMGCCRFT5:
+        output:
+            type: shield
+            id: ESCUDOMAGIC5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=20}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=shield,id=ESCUDOMAGIC4,amount=1}'
+    ESCUDOMGCCRFT6:
+        output:
+            type: shield
+            id: ESCUDOMAGIC6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=80}'
+        - 'mmoitem{type=shield,id=ESCUDOMAGIC5,amount=1}'
+#MANDOBLE
+    MANDOBLECRFT1:
+        output:
+            type: greatsword
+            id: MANDOBLE1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    MANDOBLECRFT2:
+        output:
+            type: greatsword
+            id: MANDOBLE2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=greatsword,id=MANDOBLE1,amount=1}'
+    MANDOBLECRFT3:
+        output:
+            type: greatsword
+            id: MANDOBLE3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=greatsword,id=MANDOBLE2,amount=1}'
+    MANDOBLECRFT4:
+        output:
+            type: greatsword
+            id: MANDOBLE4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=greatsword,id=MANDOBLE3,amount=1}'
+    MANDOBLECRFT5:
+        output:
+            type: greatsword
+            id: MANDOBLE5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=greatsword,id=MANDOBLE4,amount=1}'
+    MANDOBLECRFT6:
+        output:
+            type: greatsword
+            id: MANDOBLE6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=greatsword,id=MANDOBLE5,amount=1}'
+#HACHADEBATALLA
+    HACHABATALLA1:
+        output:
+            type: greataxe
+            id: HACHAGRANDE1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    HACHABATALLA2:
+        output:
+            type: greataxe
+            id: HACHAGRANDE2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=greataxe,id=HACHAGRANDE1,amount=1}'
+    HACHABATALLA3:
+        output:
+            type: greataxe
+            id: HACHAGRANDE3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=greataxe,id=HACHAGRANDE2,amount=1}'
+    HACHABATALLA4:
+        output:
+            type: greataxe
+            id: HACHAGRANDE4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=greataxe,id=HACHAGRANDE3,amount=1}'
+    HACHABATALLA5:
+        output:
+            type: greataxe
+            id: HACHAGRANDE5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=greataxe,id=HACHAGRANDE4,amount=1}'
+    HACHABATALLA6:
+        output:
+            type: greataxe
+            id: HACHAGRANDE6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=greataxe,id=HACHAGRANDE5,amount=1}'
+#ESPADAVIKINGO
+    ESPADAVIKINGO1:
+        output:
+            type: sword
+            id: VIKINGO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    ESPADAVIKINGO2:
+        output:
+            type: sword
+            id: VIKINGO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=sword,id=VIKINGO1,amount=1}'
+    ESPADAVIKINGO3:
+        output:
+            type: sword
+            id: VIKINGO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=sword,id=VIKINGO2,amount=1}'
+    ESPADAVIKINGO4:
+        output:
+            type: sword
+            id: VIKINGO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=sword,id=VIKINGO3,amount=1}'
+    ESPADAVIKINGO5:
+        output:
+            type: sword
+            id: VIKINGO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=sword,id=VIKINGO4,amount=1}'
+    ESPADAVIKINGO6:
+        output:
+            type: sword
+            id: VIKINGO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=sword,id=VIKINGO5,amount=1}'
+#MAZOS
+    MAZO1:
+        output:
+            type: hammer
+            id: MAZO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    MAZO2:
+        output:
+            type: hammer
+            id: MAZO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=hammer,id=MAZO1,amount=1}'
+    MAZO3:
+        output:
+            type: hammer
+            id: MAZO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=hammer,id=MAZO2,amount=1}'
+    MAZO4:
+        output:
+            type: hammer
+            id: MAZO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=hammer,id=MAZO3,amount=1}'
+    MAZO5:
+        output:
+            type: hammer
+            id: MAZO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=hammer,id=MAZO4,amount=1}'
+    MAZO6:
+        output:
+            type: hammer
+            id: MAZO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=hammer,id=MAZO5,amount=1}'
+#DAGAS
+    DAGA1:
+        output:
+            type: dagger
+            id: DAGA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    DAGA2:
+        output:
+            type: dagger
+            id: DAGA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=dagger,id=DAGA1,amount=1}'
+    DAGA3:
+        output:
+            type: dagger
+            id: DAGA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=dagger,id=DAGA2,amount=1}'
+    DAGA4:
+        output:
+            type: dagger
+            id: DAGA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=dagger,id=DAGA3,amount=1}'
+    DAGA5:
+        output:
+            type: dagger
+            id: DAGA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=dagger,id=DAGA4,amount=1}'
+    DAGA6:
+        output:
+            type: dagger
+            id: DAGA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=dagger,id=DAGA5,amount=1}'
+#KATANA
+    KATANA1:
+        output:
+            type: katana
+            id: KATANA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    KATANA2:
+        output:
+            type: katana
+            id: KATANA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=katana,id=KATANA1,amount=1}'
+    KATANA3:
+        output:
+            type: katana
+            id: KATANA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=katana,id=KATANA2,amount=1}'
+    KATANA4:
+        output:
+            type: katana
+            id: KATANA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=katana,id=KATANA3,amount=1}'
+    KATANA5:
+        output:
+            type: katana
+            id: KATANA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=katana,id=KATANA4,amount=1}'
+    KATANA6:
+        output:
+            type: katana
+            id: KATANA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=katana,id=KATANA5,amount=1}'
+#ALABARDAS
+    ALABARDA1:
+        output:
+            type: halberd
+            id: ALABARDA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    ALABARDA2:
+        output:
+            type: halberd
+            id: ALABARDA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=halberd,id=ALABARDA1,amount=1}'
+    ALABARDA3:
+        output:
+            type: halberd
+            id: ALABARDA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=halberd,id=ALABARDA2,amount=1}'
+    ALABARDA4:
+        output:
+            type: halberd
+            id: ALABARDA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=halberd,id=ALABARDA3,amount=1}'
+    ALABARDA5:
+        output:
+            type: halberd
+            id: ALABARDA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=halberd,id=ALABARDA4,amount=1}'
+    ALABARDA6:
+        output:
+            type: halberd
+            id: ALABARDA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=halberd,id=ALABARDA5,amount=1}'
+#LANZA
+    LANZA1:
+        output:
+            type: spear
+            id: LANZA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    LANZA2:
+        output:
+            type: spear
+            id: LANZA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=spear,id=LANZA1,amount=1}'
+    LANZA3:
+        output:
+            type: spear
+            id: LANZA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=spear,id=LANZA2,amount=1}'
+    LANZA4:
+        output:
+            type: spear
+            id: LANZA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=spear,id=LANZA3,amount=1}'
+    LANZA5:
+        output:
+            type: spear
+            id: LANZA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=spear,id=LANZA4,amount=1}'
+    LANZA6:
+        output:
+            type: spear
+            id: LANZA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=spear,id=LANZA5,amount=1}'
+#ARCOS
+    ARCO1:
+        output:
+            type: bow
+            id: ARCO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    ARCO2:
+        output:
+            type: bow
+            id: ARCO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=bow,id=ARCO1,amount=1}'
+    ARCO3:
+        output:
+            type: bow
+            id: ARCO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=bow,id=ARCO2,amount=1}'
+    ARCO4:
+        output:
+            type: bow
+            id: ARCO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=bow,id=ARCO3,amount=1}'
+    ARCO5:
+        output:
+            type: bow
+            id: ARCO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=bow,id=ARCO4,amount=1}'
+    ARCO6:
+        output:
+            type: bow
+            id: ARCO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=bow,id=ARCO5,amount=1}'
+#BALLESTAS
+    BALLESTAS1:
+        output:
+            type: crossbow
+            id: BALLESTA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=20}'
+    BALLESTAS2:
+        output:
+            type: crossbow
+            id: BALLESTA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=40}'
+        - 'mmoitem{type=crossbow,id=BALLESTA1,amount=1}'
+    BALLESTAS3:
+        output:
+            type: crossbow
+            id: BALLESTA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=40}'
+        - 'mmoitem{type=crossbow,id=BALLESTA2,amount=1}'
+    BALLESTAS4:
+        output:
+            type: crossbow
+            id: BALLESTA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=80}'
+        - 'mmoitem{type=crossbow,id=BALLESTA3,amount=1}'
+    BALLESTAS5:
+        output:
+            type: crossbow
+            id: BALLESTA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=crossbow,id=BALLESTA4,amount=1}'
+    BALLESTAS6:
+        output:
+            type: crossbow
+            id: BALLESTA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=OSMIOTIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=80}'
+        - 'mmoitem{type=crossbow,id=BALLESTA5,amount=1}'
+#BARDOS
+    BARDO1:
+        output:
+            type: lute
+            id: BARDO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+    BARDO2:
+        output:
+            type: lute
+            id: BARDO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=40}'
+        - 'mmoitem{type=lute,id=BARDO1,amount=1}'
+    BARDO3_1:
+        output:
+            type: lute
+            id: BARDO3_1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=lute,id=BARDO2,amount=1}'
+    BARDO4:
+        output:
+            type: lute
+            id: BARDO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=80}'
+        - 'mmoitem{type=lute,id=BARDO3_1,amount=1}'
+    BARDO5:
+        output:
+            type: lute
+            id: BARDO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=lute,id=BARDO4,amount=1}'
+    BARDO6:
+        output:
+            type: lute
+            id: BARDO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=80}'
+        - 'mmoitem{type=lute,id=BARDO5,amount=1}'
+#MAGOS
+    MAGO1:
+        output:
+            type: wand
+            id: MAGO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+    MAGO2:
+        output:
+            type: wand
+            id: MAGO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=40}'
+        - 'mmoitem{type=wand,id=MAGO1,amount=1}'
+    MAGO3:
+        output:
+            type: wand
+            id: MAGO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=wand,id=MAGO2,amount=1}'
+    MAGO4:
+        output:
+            type: wand
+            id: MAGO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=80}'
+        - 'mmoitem{type=wand,id=MAGO3,amount=1}'
+    MAGO5:
+        output:
+            type: wand
+            id: MAGO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=wand,id=MAGO4,amount=1}'
+    MAGO6:
+        output:
+            type: wand
+            id: MAGO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=80}'
+        - 'mmoitem{type=wand,id=MAGO5,amount=1}'
+#CLERIGOS
+    CLERIGO1:
+        output:
+            type: staff
+            id: BASTON1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+    CLERIGO2:
+        output:
+            type: staff
+            id: BASTON2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=40}'
+        - 'mmoitem{type=staff,id=BASTON1,amount=1}'
+    CLERIGO3:
+        output:
+            type: staff
+            id: BASTON3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=staff,id=BASTON2,amount=1}'
+    CLERIGO4:
+        output:
+            type: staff
+            id: BASTON4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=80}'
+        - 'mmoitem{type=staff,id=BASTON3,amount=1}'
+    CLERIGO5:
+        output:
+            type: staff
+            id: BASTON5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=staff,id=BASTON4,amount=1}'
+    CLERIGO6:
+        output:
+            type: staff
+            id: BASTON6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=80}'
+        - 'mmoitem{type=staff,id=BASTON5,amount=1}'
+#HECHICERO
+    HECHICERO1:
+        output:
+            type: staff
+            id: HECHICERO1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+    HECHICERO2:
+        output:
+            type: staff
+            id: HECHICERO2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=40}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=40}'
+        - 'mmoitem{type=staff,id=HECHICERO1,amount=1}'
+    HECHICERO3:
+        output:
+            type: staff
+            id: HECHICERO3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=40}'
+        - 'mmoitem{type=staff,id=HECHICERO2,amount=1}'
+    HECHICERO4:
+        output:
+            type: staff
+            id: HECHICERO4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=20}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=80}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=40}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=80}'
+        - 'mmoitem{type=staff,id=HECHICERO3,amount=1}'
+    HECHICERO5:
+        output:
+            type: staff
+            id: HECHICERO5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=20}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=20}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=staff,id=HECHICERO4,amount=1}'
+    HECHICERO6:
+        output:
+            type: staff
+            id: HECHICERO6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'mana{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=20}'
+        - 'mmoitem{type=material,id=CHETERITETIER3,amount=80}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=80}'
+        - 'mmoitem{type=staff,id=HECHICERO5,amount=1}'
+#HACHA
+    HACHA1:
+        output:
+            type: tool
+            id: HACHA_TIER1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    HACHA2:
+        output:
+            type: tool
+            id: HACHA_TIER2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=tool,id=HACHA_TIER1,amount=1}'
+    HACHA3:
+        output:
+            type: tool
+            id: HACHA_TIER3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=30}'
+        - 'mmoitem{type=material,id=ABETO,amount=30}'
+        - 'mmoitem{type=tool,id=HACHA_TIER2,amount=1}'
+    HACHA4:
+        output:
+            type: tool
+            id: HACHA_TIER4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=tool,id=HACHA_TIER3,amount=1}'
+    HACHA5:
+        output:
+            type: tool
+            id: HACHA_TIER5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=tool,id=HACHA_TIER4,amount=1}'
+    HACHA6:
+        output:
+            type: tool
+            id: HACHA_TIER6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=tool,id=HACHA_TIER5,amount=1}'
+#HOCES
+    HOZ1:
+        output:
+            type: tool
+            id: DALLES_TIER1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    HOZ2:
+        output:
+            type: tool
+            id: DALLES_TIER2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=tool,id=DALLES_TIER1,amount=1}'
+    HOZ3:
+        output:
+            type: tool
+            id: DALLES_TIER3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=30}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=30}'
+        - 'mmoitem{type=tool,id=DALLES_TIER2,amount=1}'
+    HOZ4:
+        output:
+            type: tool
+            id: DALLES_TIER4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=tool,id=DALLES_TIER3,amount=1}'
+    HOZ5:
+        output:
+            type: tool
+            id: DALLES_TIER5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=30}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=30}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=30}'
+        - 'mmoitem{type=tool,id=DALLES_TIER4,amount=1}'
+    HOZ6:
+        output:
+            type: tool
+            id: DALLES_TIER6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=tool,id=DALLES_TIER5,amount=1}'
+#PICOS
+    PICO1:
+        output:
+            type: tool
+            id: PICO_TIER1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    PICO2:
+        output:
+            type: tool
+            id: PICO_TIER2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=tool,id=PICO_TIER1,amount=1}'
+    PICO3:
+        output:
+            type: tool
+            id: PICO_TIER3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=20}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=20}'
+        - 'mmoitem{type=tool,id=PICO_TIER2,amount=1}'
+    PICO4:
+        output:
+            type: tool
+            id: PICO_TIER4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=tool,id=PICO_TIER3,amount=1}'
+    PICO5:
+        output:
+            type: tool
+            id: PICO_TIER5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=20}'
+        - 'mmoitem{type=tool,id=PICO_TIER4,amount=1}'
+    PICO6:
+        output:
+            type: tool
+            id: PICO_TIER6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=tool,id=PICO_TIER5,amount=1}'
+#PESCA
+    PESCA1:
+        output:
+            type: tool
+            id: PESCA1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=10}'
+        - 'mmoitem{type=material,id=ABETO,amount=10}'
+    PESCA2:
+        output:
+            type: tool
+            id: PESCA2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=20}'
+        - 'mmoitem{type=material,id=ABETO,amount=20}'
+        - 'mmoitem{type=tool,id=PESCA1,amount=1}'
+    PESCA3:
+        output:
+            type: tool
+            id: PESCA3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=30}'
+        - 'mmoitem{type=material,id=ABETO,amount=30}'
+        - 'mmoitem{type=tool,id=PESCA2,amount=1}'
+    PESCA4:
+        output:
+            type: tool
+            id: PESCA4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=40}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=tool,id=PESCA3,amount=1}'
+    PESCA5:
+        output:
+            type: tool
+            id: PESCA5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=20}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=20}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=20}'
+        - 'mmoitem{type=tool,id=PESCA4,amount=1}'
+    PESCA6:
+        output:
+            type: tool
+            id: PESCA6
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=40}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=40}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=40}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=40}'
+        - 'mmoitem{type=tool,id=PESCA5,amount=1}'
+#EXTRA
+    BARDO3_2:
+        output:
+            type: lute
+            id: BARDO3_2
+            amount: 1
+        crafting-time: 5
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=1}'
+#KITSREPARACION
+    KIT1:
+        output:
+            type: consumable
+            id: KIT_1
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=32}'
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=32}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=32}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=32}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=32}'
+        - 'mmoitem{type=material,id=ABETO,amount=32}'
+    KIT2:
+        output:
+            type: consumable
+            id: KIT_2
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=PIEDRATIER1,amount=32}'
+        - 'mmoitem{type=material,id=FLINTTIER1,amount=32}'
+        - 'mmoitem{type=material,id=CARBONTIER1,amount=32}'
+        - 'mmoitem{type=material,id=COBRETIER1,amount=64}'
+        - 'mmoitem{type=material,id=HIERROTIER1,amount=64}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=32}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=32}'
+        - 'mmoitem{type=material,id=ABETO,amount=32}'
+    KIT3:
+        output:
+            type: consumable
+            id: KIT_3
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=64}'
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=64}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=64}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=64}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=64}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=64}'
+    KIT4:
+        output:
+            type: consumable
+            id: KIT_4
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=OROTIER2,amount=64}'
+        - 'mmoitem{type=material,id=CUARZOTIER2,amount=64}'
+        - 'mmoitem{type=material,id=REDSTONETIER2,amount=64}'
+        - 'mmoitem{type=material,id=LAPIZLAZULITIER2,amount=128}'
+        - 'mmoitem{type=material,id=AMATISTATIER2,amount=128}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+    KIT5:
+        output:
+            type: consumable
+            id: KIT_5
+            amount: 1
+        crafting-time: 10
+        conditions:
+        - 'stamina{amount=10}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESMERALDATIER3,amount=64}'
+        - 'mmoitem{type=material,id=DIAMANTETIER3,amount=64}'
+        - 'mmoitem{type=material,id=NETHERITATIER3,amount=64}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=64}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=64}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=64}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=64}'

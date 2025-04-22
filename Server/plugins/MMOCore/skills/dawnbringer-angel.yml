@@ -1,0 +1,39 @@
+name: Dawnbringer Angel
+lore:
+- '&eInvocas un angel guardián que vuela a tu lado.'
+- "&eCuando usas Divine immolation, la luz del angel"
+- '&eincrementa y se hace más brillante. cuando la luz'
+- '&ellega a un nivel de 5 tu angel libera un aura de'
+- '&ecuración que cura a ti y tus aliados mientras'
+- '&eque a tus enemigos los empuja.'
+- ''
+- '&a{heal} Cura'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2139'
+passive-type: TIMER
+timer:
+  base: 30
+  per-level: 0
+  min: 30
+  max: 30
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+heal:
+  base: 8
+  per-level: 1
+  min: 2
+  max: 8
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

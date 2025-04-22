@@ -1,0 +1,1529 @@
+name: 'Culina Vitae (#page#/#max#)'
+max-queue-size: 64
+sound: ENTITY_GENERIC_EAT
+layout: awn
+items:
+    fill:
+        material: STICK
+        name: '&k&4pedestal runico base'
+    no-recipe:
+        material: STICK
+        name: '&k&4pedestal runico activo'
+    no-queue-item:
+        material: STICK
+        name: '&k&4pedestal runico activo'
+recipes:
+#COMIDAS VANILLA
+    SOPAHONGOSTABERNERO:
+        output:
+            type: consumable
+            id: SOPAHONGOSTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=HONGOCAFE,amount=2}'
+    PAPAHORNEADATABERNERO:
+        output:
+            type: consumable
+            id: PAPAHORNEADATABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=PAPA,amount=1}'
+    SOPABETABELTABERNERO:
+        output:
+            type: consumable
+            id: SOPABETABELTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BETABEL,amount=2}'
+    BISTECASADOTABERNERO:
+        output:
+            type: consumable
+            id: BISTECASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BISTECRUDO,amount=1}'
+    CHULETASADATABERNERO:
+        output:
+            type: consumable
+            id: CHULETASADATABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=1}'
+    CORDEROASADOTABERNERO:
+        output:
+            type: consumable
+            id: CORDEROASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CORDEROCRUDO,amount=1}'
+    POLLOASADOTABERNERO:
+        output:
+            type: consumable
+            id: POLLOASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=1}'
+    CONEJOASADOTABERNERO:
+        output:
+            type: consumable
+            id: CONEJOASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CONEJOCRUDO,amount=1}'
+    PASTELCALABAZATABERNERO:
+        output:
+            type: consumable
+            id: PASTELCALABAZATABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CALABAZA,amount=1}'
+    BACALAOASADOTABERNERO:
+        output:
+            type: consumable
+            id: BACALAOASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BACALAOCRUDO,amount=1}'
+    SALMONASADOTABERNERO:
+        output:
+            type: consumable
+            id: SALMONASADOTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=SALMONCRUDO,amount=1}'
+    PANTABERNERO:
+        output:
+            type: consumable
+            id: PANTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+    SOPACONEJOSTABERNERO:
+        output:
+            type: consumable
+            id: SOPACONEJOSTABERNERO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CONEJOCRUDO,amount=3}'
+
+#SANDWICHES
+    SANDWICHVEGETARIANO:
+        output:
+            type: consumable
+            id: SANDWICH1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=3}'
+        - 'mmoitem{type=material,id=PAPA,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=NABOS,amount=3}'
+        - 'mmoitem{type=material,id=ANGUIELECT,amount=1}'
+        - 'mmoitem{type=material,id=SYNODONTIS,amount=1}'
+    SANDWICHDECARNE:
+        output:
+            type: consumable
+            id: SANDWICH2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=3}'
+        - 'mmoitem{type=material,id=BISTECRUDO,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=PEZLOBO,amount=1}'
+        - 'mmoitem{type=material,id=SYNODONTIS,amount=1}'
+    SANDWICHDULCEYSALADO:
+        output:
+            type: consumable
+            id: SANDWICH3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=ATUN,amount=1}'
+        - 'mmoitem{type=material,id=SYNODONTIS,amount=1}'
+    SANDWICHDEJAMONYQUESO:
+        output:
+            type: consumable
+            id: SANDWICH4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CONEJOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=CORDEROCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=PEZLINT,amount=1}'
+        - 'mmoitem{type=material,id=SYNODONTIS,amount=1}'
+    SANDWICHDEQUESO:
+        output:
+            type: consumable
+            id: SANDWICH5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CACTUS,amount=6}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=BAGRE,amount=1}'
+        - 'mmoitem{type=material,id=TAMBAQUI,amount=1}'
+    SANDWICHDEALBONDIGAS:
+        output:
+            type: consumable
+            id: SANDWICH6
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CONEJOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=CORDEROCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=BISTECRUDO,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=PINKSALMON,amount=1}'
+        - 'mmoitem{type=material,id=TAMBAQUI,amount=1}'
+#TES
+    TEDECHOCOLATE:
+        output:
+            type: consumable
+            id: TE1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=ARAPAIMA,amount=1}'
+        - 'mmoitem{type=material,id=TAMBAQUI,amount=1}'
+    TEDEFRESA:
+        output:
+            type: consumable
+            id: TE2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=BAGREACORA,amount=1}'
+        - 'mmoitem{type=material,id=TAMBAQUI,amount=1}'
+    TEDEMANGA:
+        output:
+            type: consumable
+            id: TE3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CALABAZA,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=BAYAD,amount=1}'
+        - 'mmoitem{type=material,id=PERCA,amount=1}'
+    TEVERDE:
+        output:
+            type: consumable
+            id: TE4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ALGAVERDE,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZNEGRO,amount=1}'
+        - 'mmoitem{type=material,id=PERCA,amount=1}'
+    TAZADETE:
+        output:
+            type: consumable
+            id: TE5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BAMBU,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=LOBIBOCAPEQUE,amount=1}'
+        - 'mmoitem{type=material,id=PERCA,amount=1}'
+    JARRADETE:
+        output:
+            type: consumable
+            id: TE6
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINILLO,amount=6}'
+        - 'mmoitem{type=material,id=CACTUS,amount=3}'
+        - 'mmoitem{type=material,id=LUCIOALMIZ,amount=1}'
+        - 'mmoitem{type=material,id=PERCA,amount=1}'
+#GOMITAS
+    GOMITASVERDES:
+        output:
+            type: consumable
+            id: GOMITAS1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=ALGA,amount=3}'
+        - 'mmoitem{type=material,id=PEZSOL,amount=1}'
+        - 'mmoitem{type=material,id=LUCIOALMIZ,amount=1}'
+    GOMITASNARANJA:
+        output:
+            type: consumable
+            id: GOMITAS2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=3}'
+        - 'mmoitem{type=material,id=CACHODECUARZO,amount=1}'
+        - 'mmoitem{type=material,id=LUCIOALMIZ,amount=1}'
+    GOMITASAZULES:
+        output:
+            type: consumable
+            id: GOMITAS3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=REBANADASANDIA,amount=3}'
+        - 'mmoitem{type=material,id=PERCANEVADA,amount=1}'
+        - 'mmoitem{type=material,id=LUCIOALMIZ,amount=1}'
+#HAMBURGUESAS
+    HAMBURGUESANORMAL:
+        output:
+            type: consumable
+            id: HAMBURGUESAS1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=SALVIA,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=TILABOUL,amount=1}'
+        - 'mmoitem{type=material,id=LUCIOALMIZ,amount=1}'
+    HAMBURGUESADEQUESO:
+        output:
+            type: consumable
+            id: HAMBURGUESAS2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=SALVIA,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=TILABOUL,amount=1}'
+        - 'mmoitem{type=material,id=PEZAGUJA,amount=1}'
+#NUGGETS
+    NUGGETSDEPOLLO:
+        output:
+            type: consumable
+            id: NUGGETSDEPOLLO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=BETABEL,amount=3}'
+        - 'mmoitem{type=material,id=FRIJOLES,amount=3}'
+        - 'mmoitem{type=material,id=ABADEJO,amount=1}'
+        - 'mmoitem{type=material,id=PEZAGUJA,amount=1}'
+#PRETZEL
+    PRETZEL:
+        output:
+            type: consumable
+            id: PRETZEL
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=6}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=CAPITAN,amount=1}'
+        - 'mmoitem{type=material,id=PEZAGUJA,amount=1}'
+#GRANOS DE MAÍZ
+    GRANOSDEMAIZ:
+        output:
+            type: consumable
+            id: GRANOSDEMAIZ
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=MAIZ,amount=6}'
+        - 'mmoitem{type=material,id=BAMBU,amount=3}'
+        - 'mmoitem{type=material,id=CARPA,amount=1}'
+        - 'mmoitem{type=material,id=PEZAGUJA,amount=1}'
+#TOCINO
+    TOCINO:
+        output:
+            type: consumable
+            id: TOCINO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=6}'
+        - 'mmoitem{type=material,id=MANZANA,amount=3}'
+        - 'mmoitem{type=material,id=NENUFAR,amount=3}'
+        - 'mmoitem{type=material,id=CARPIN,amount=1}'
+        - 'mmoitem{type=material,id=JURELPANTANO,amount=1}'
+#BRANDY
+    BRANDY:
+        output:
+            type: consumable
+            id: BRANDY
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=REBANADASANDIA,amount=3}'
+        - 'mmoitem{type=material,id=MANZANA,amount=3}'
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=TRUCHAGAY,amount=1}'
+        - 'mmoitem{type=material,id=JURELPANTANO,amount=1}'
+#CAFE
+    CAFE:
+        output:
+            type: consumable
+            id: CAFE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=ARENQUE,amount=1}'
+        - 'mmoitem{type=material,id=JURELPANTANO,amount=1}'
+#JAMON GRANDE
+    JAMONGRANDE:
+        output:
+            type: consumable
+            id: JAMONGRANDE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CORDEROCRUDO,amount=12}'
+        - 'mmoitem{type=material,id=FLETAN,amount=1}'
+        - 'mmoitem{type=material,id=JURELPANTANO,amount=1}'
+##TIER2
+#PAPAS
+    PAPASFRITAS:
+        output:
+            type: consumable
+            id: PAPAS1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=PAPA,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=PEZANGNARAN,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    BOLITASDEPAPA:
+        output:
+            type: consumable
+            id: PAPAS2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=PAPA,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=ANGUIABISAL,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    AROSDECEBOLLA:
+        output:
+            type: consumable
+            id: PAPAS3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=ANEMODEMAR,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    PAPARELLENA:
+        output:
+            type: consumable
+            id: PAPAS4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=PAPA,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSAZUL,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+#PIZZA
+    PIZZACONPINA:
+        output:
+            type: consumable
+            id: PIZZA1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=TOMATE,amount=3}'
+        - 'mmoitem{type=material,id=PEZCRISTAL,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    PIZZADEPEPPERONI:
+        output:
+            type: consumable
+            id: PIZZA2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=BISTECRUDO,amount=3}'
+        - 'mmoitem{type=material,id=ESPINO,amount=3}'
+        - 'mmoitem{type=material,id=TOMATE,amount=3}'
+        - 'mmoitem{type=material,id=SIRULO,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    PIZZAVEGETARIANA:
+        output:
+            type: consumable
+            id: PIZZA3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=KENI,amount=3}'
+        - 'mmoitem{type=material,id=TOMATE,amount=3}'
+        - 'mmoitem{type=material,id=PEZLUNAOCEANO,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+#SODAS
+    SODADECEREZA:
+        output:
+            type: consumable
+            id: SODA1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=2}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=2}'
+        - 'mmoitem{type=material,id=CEREZA,amount=4}'
+        - 'mmoitem{type=material,id=PEZDELSOL,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    SODADECOLA:
+        output:
+            type: consumable
+            id: SODA2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=2}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLAS,amount=4}'
+        - 'mmoitem{type=material,id=CALAMAR,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    SODADECREMA:
+        output:
+            type: consumable
+            id: SODA3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=2}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=2}'
+        - 'mmoitem{type=material,id=BAYASDULCES,amount=4}'
+        - 'mmoitem{type=material,id=MANTARAYAGRIS,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    SODADEMORA:
+        output:
+            type: consumable
+            id: SODA4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=2}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=2}'
+        - 'mmoitem{type=material,id=MORA,amount=4}'
+        - 'mmoitem{type=material,id=PEZGEMIX,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    SODADENARANJA:
+        output:
+            type: consumable
+            id: SODA5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=2}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=2}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=2}'
+        - 'mmoitem{type=material,id=NARANJA,amount=4}'
+        - 'mmoitem{type=material,id=PEZHOT,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+#TACOS
+    TACODEPEZ:
+        output:
+            type: consumable
+            id: TACO1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BACALAOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=LAMPREADESANGRE,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    TACODEPOLLO:
+        output:
+            type: consumable
+            id: TACO2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=6}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=PIRANIAVIENTREROJO,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+    TACODENORMAL:
+        output:
+            type: consumable
+            id: TACO3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CORDEROCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=PEZHUESOS,amount=1}'
+        - 'mmoitem{type=material,id=TRUCHACUEVA,amount=1}'
+#WAFFLES
+    WAFFLEYPOLLO:
+        output:
+            type: consumable
+            id: WAFFLE1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=3}'
+        - 'mmoitem{type=material,id=PEZVENECO,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+    WAFFLECASUAL:
+        output:
+            type: consumable
+            id: WAFFLE2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=3}'
+        - 'mmoitem{type=material,id=PEZAMOR,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#DONAS
+    DONANORMAL:
+        output:
+            type: consumable
+            id: DONAS1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=3}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=PEZMARIPOSA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+    DONADECHOCOLATE:
+        output:
+            type: consumable
+            id: DONAS2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=3}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=PEZEBRA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#MILHOJA
+    MILHOJA:
+        output:
+            type: consumable
+            id: MILHOJAS
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=KENI,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBELLAS,amount=3}'
+        - 'mmoitem{type=material,id=CIRUELAS,amount=3}'
+        - 'mmoitem{type=material,id=PEZANGELICAL,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#PIEDEMANZANA
+    PIEDEMANZANA:
+        output:
+            type: consumable
+            id: PIEDEMANZANA
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=MANZANA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=3}'
+        - 'mmoitem{type=material,id=PEZABISAL,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#POLLOFRITO
+    POLLOFRITO:
+        output:
+            type: consumable
+            id: POLLOFRITO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=POLLOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=TOMATE,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=PEZBETTA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#ALCOHOL
+    VINO:
+        output:
+            type: consumable
+            id: VINO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=UVAS,amount=12}'
+        - 'mmoitem{type=material,id=CACHAMAROJA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+    RON:
+        output:
+            type: consumable
+            id: RON
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=6}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=BACALAOCRUDO,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#DULCES
+    BARRADECHOCOLATE:
+        output:
+            type: consumable
+            id: CHOCOLATE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FRAMBUESA,amount=3}'
+        - 'mmoitem{type=material,id=CORALFUEGO,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+    ALGODONAZUCAR:
+        output:
+            type: consumable
+            id: ALGODONDEAZUCAR
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=ARANDANO,amount=3}'
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=3}'
+        - 'mmoitem{type=material,id=PEZESPUMOSO,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#CROISSANT
+    CROISSANT:
+        output:
+            type: consumable
+            id: CROISSANT
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=3}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=MEROROJO,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#CALZONE
+    CALZONE:
+        output:
+            type: consumable
+            id: CALZONE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=3}'
+        - 'mmoitem{type=material,id=CONEJOCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=3}'
+        - 'mmoitem{type=material,id=SARDINAPERLA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#BROWNIE
+    BROWNIE:
+        output:
+            type: consumable
+            id: BROWNIE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=3}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=FUNGIGRE,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#DULCEVERDE
+    DULCEVERDE:
+        output:
+            type: consumable
+            id: DULCEVERDE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=RODAJAMELON,amount=3}'
+        - 'mmoitem{type=material,id=PERA,amount=3}'
+        - 'mmoitem{type=material,id=PIRANA,amount=1}'
+        - 'mmoitem{type=material,id=CELACANTO,amount=1}'
+#MUFFIN
+    MUFFINDESEMILLAS:
+        output:
+            type: consumable
+            id: MUFFIN1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=ESPINO,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZLABRIDO,amount=1}'
+        - 'mmoitem{type=material,id=PEZLUNAR,amount=1}'
+    MUFFINDEMORAZUL:
+        output:
+            type: consumable
+            id: MUFFIN2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=ARANDANO,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZLABRIDO,amount=1}'
+        - 'mmoitem{type=material,id=PEZLUNAR,amount=1}'
+    MUFFINDELIMON:
+        output:
+            type: consumable
+            id: MUFFIN3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZRARO,amount=1}'
+        - 'mmoitem{type=material,id=PEZLUNAR,amount=1}'
+    MUFFINDEFRAMBUESA:
+        output:
+            type: consumable
+            id: MUFFIN4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=FRAMBUESA,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZRARO,amount=1}'
+        - 'mmoitem{type=material,id=PEZLUNAR,amount=1}'
+    MUFFINDECHOCOLATE:
+        output:
+            type: consumable
+            id: MUFFIN5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZTROPICAL,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSASDESENSI,amount=1}'
+    MUFFINDECALABAZA:
+        output:
+            type: consumable
+            id: MUFFIN6
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CALABAZA,amount=3}'
+        - 'mmoitem{type=material,id=LINAZA,amount=3}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=2}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=2}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=2}'
+        - 'mmoitem{type=material,id=PEZTROPICAL,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSASDESENSI,amount=1}'
+#QUESO
+    QUESOEMMENTAL:
+        output:
+            type: consumable
+            id: QUESO1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=3}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=3}'
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=CAMARONMANTIS,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSASDESENSI,amount=1}'
+    QUESODORSET:
+        output:
+            type: consumable
+            id: QUESO2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=3}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=3}'
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=CAMARONMANTIS,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSASDESENSI,amount=1}'
+#BATIDOS
+    BATIDODEBANANA:
+        output:
+            type: consumable
+            id: BATIDO1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=FLORESPORAS,amount=3}'
+        - 'mmoitem{type=material,id=PEZPROFUNDIDADES,amount=1}'
+        - 'mmoitem{type=material,id=PEZFRIO,amount=1}'
+    BATIDODECHOCOLATE:
+        output:
+            type: consumable
+            id: BATIDO2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZPROFUNDIDADES,amount=1}'
+        - 'mmoitem{type=material,id=PEZFRIO,amount=1}'
+    BATIDODECHOCOLECHE:
+        output:
+            type: consumable
+            id: BATIDO3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZDELINFIERNO,amount=1}'
+        - 'mmoitem{type=material,id=PEZFRIO,amount=1}'
+    BATIDODEFRESA:
+        output:
+            type: consumable
+            id: BATIDO4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEREZA,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZDELINFIERNO,amount=1}'
+        - 'mmoitem{type=material,id=PEZFRIO,amount=1}'
+    BATIDODEGALLETAS:
+        output:
+            type: consumable
+            id: BATIDO5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=HONGOCAFE,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZBOMBA,amount=1}'
+        - 'mmoitem{type=material,id=ESPIGAZUL,amount=1}'
+    BATIDODEMANTEQUILLAMANI:
+        output:
+            type: consumable
+            id: BATIDO6
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=HONGOROJO,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZBOMBA,amount=1}'
+        - 'mmoitem{type=material,id=ESPIGAZUL,amount=1}'
+    BATIDODEMENTA:
+        output:
+            type: consumable
+            id: BATIDO7
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=KENI,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=MAGIKARP,amount=1}'
+        - 'mmoitem{type=material,id=ESPIGAZUL,amount=1}'
+    BATIDOVERDEMISTERIOSO:
+        output:
+            type: consumable
+            id: BATIDO8
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEBADA,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=MAGIKARP,amount=1}'
+        - 'mmoitem{type=material,id=ESPIGAZUL,amount=1}'
+    BATIDODEVAINILLA:
+        output:
+            type: consumable
+            id: BATIDO9
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAMO,amount=3}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSAMAGMA,amount=1}'
+        - 'mmoitem{type=material,id=LUBINARENOSA,amount=1}'
+#DAMASCO
+    DAMASCO:
+        output:
+            type: consumable
+            id: DAMASCO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=3}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=3}'
+        - 'mmoitem{type=material,id=MANTARRAYAZULADA,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+
+#CONOS
+    CONOAZUL:
+        output:
+            type: consumable
+            id: HELADOCONO1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ARANDANO,amount=3}'
+        - 'mmoitem{type=material,id=CHORUS,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSAMAGMA,amount=1}'
+        - 'mmoitem{type=material,id=LUBINARENOSA,amount=1}'
+    CONOCHOCOLATE:
+        output:
+            type: consumable
+            id: HELADOCONO2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=CHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PARGOESPECULAR,amount=1}'
+        - 'mmoitem{type=material,id=LUBINARENOSA,amount=1}'
+    CONOMULTISABOR:
+        output:
+            type: consumable
+            id: HELADOCONO3
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ARANDANO,amount=3}'
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=3}'
+        - 'mmoitem{type=material,id=CHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PARGOESPECULAR,amount=1}'
+        - 'mmoitem{type=material,id=LUBINARENOSA,amount=1}'
+    CONOROJO:
+        output:
+            type: consumable
+            id: HELADOCONO4
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEREZA,amount=3}'
+        - 'mmoitem{type=material,id=CHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZDORADO,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSAMELENA,amount=1}'
+    CONOVERDE:
+        output:
+            type: consumable
+            id: HELADOCONO5
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEBADA,amount=3}'
+        - 'mmoitem{type=material,id=CHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZDORADO,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSAMELENA,amount=1}'
+#HELADOS
+    HELADOMENTA:
+        output:
+            type: consumable
+            id: HELADOCONO6
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEBADA,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZCALIDO,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSAMELENA,amount=1}'
+    HELADOZANAHORIA:
+        output:
+            type: consumable
+            id: HELADOCONO7
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZCALIDO,amount=1}'
+        - 'mmoitem{type=material,id=MEDUSAMELENA,amount=1}'
+    HELADOCHOCOMENTA:
+        output:
+            type: consumable
+            id: HELADOCONO8
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZESPONJA,amount=1}'
+        - 'mmoitem{type=material,id=PEZDELVACIO,amount=1}'
+    HELADOFRESA:
+        output:
+            type: consumable
+            id: HELADOCONO9
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=ESPINO,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=PEZESPONJA,amount=1}'
+        - 'mmoitem{type=material,id=PEZDELVACIO,amount=1}'
+    HELADOCHOCOLATE:
+        output:
+            type: consumable
+            id: HELADOCONO10
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=BABOSADEMAR,amount=1}'
+        - 'mmoitem{type=material,id=PEZDELVACIO,amount=1}'
+    HELADOBAYASBRILLANTES:
+        output:
+            type: consumable
+            id: HELADOCONO11
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=BABOSADEMAR,amount=1}'
+        - 'mmoitem{type=material,id=PEZDELVACIO,amount=1}'
+    HELADOFRAMBUESA:
+        output:
+            type: consumable
+            id: HELADOCONO12
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=FRAMBUESA,amount=3}'
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=3}'
+        - 'mmoitem{type=material,id=MORENABRILLANTE,amount=1}'
+        - 'mmoitem{type=material,id=PEZORO,amount=1}'
+#SUSHI
+    URAMAKI:
+        output:
+            type: consumable
+            id: SUSHI1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=SALMONCRUDO,amount=6}'
+        - 'mmoitem{type=material,id=ARROZCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=MORENABRILLANTE,amount=1}'
+        - 'mmoitem{type=material,id=PEZORO,amount=1}'
+    EMAKI:
+        output:
+            type: consumable
+            id: SUSHI2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BACALAOCRUDO,amount=6}'
+        - 'mmoitem{type=material,id=ARROZCRUDO,amount=3}'
+        - 'mmoitem{type=material,id=PEZAMARILLO,amount=1}'
+        - 'mmoitem{type=material,id=PEZORO,amount=1}'
+#MANZANADULCE
+    MANZANACONCARAMELO:
+        output:
+            type: consumable
+            id: MANZANACARAMELO1
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=MANZANA,amount=3}'
+        - 'mmoitem{type=material,id=TABACO,amount=6}'
+        - 'mmoitem{type=material,id=PEZAMARILLO,amount=1}'
+        - 'mmoitem{type=material,id=PEZORO,amount=1}'
+    MANZANADORADACONCARAMELO:
+        output:
+            type: consumable
+            id: MANZANACARAMELO2
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=MANZANA,amount=3}'
+        - 'mmoitem{type=material,id=TABACO,amount=6}'
+        - 'mmoitem{type=material,id=PEZOBSIDIANA,amount=1}'
+        - 'mmoitem{type=material,id=KOILLAMATIVA,amount=1}'
+#PANCAKES
+    PANCAKES:
+        output:
+            type: consumable
+            id: PANCAKES
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEBADA,amount=3}'
+        - 'mmoitem{type=material,id=LEGUMBRESCRUDAS,amount=3}'
+        - 'mmoitem{type=material,id=PEZOBSIDIANA,amount=1}'
+        - 'mmoitem{type=material,id=KOILLAMATIVA,amount=1}'
+#PAN DE AJO
+    PANDEAJO:
+        output:
+            type: consumable
+            id: PANDEAJO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CEBADA,amount=3}'
+        - 'mmoitem{type=material,id=LEGUMBRESCRUDAS,amount=3}'
+        - 'mmoitem{type=material,id=PEZFANTASMA,amount=1}'
+        - 'mmoitem{type=material,id=KOILLAMATIVA,amount=1}'
+#SALCHICHA DE MAIZ
+    SALCHICHACONMAIZ:
+        output:
+            type: consumable
+            id: SALCHICHADEMAIZ
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=3}'
+        - 'mmoitem{type=material,id=MAIZ,amount=3}'
+        - 'mmoitem{type=material,id=CANAMO,amount=3}'
+        - 'mmoitem{type=material,id=PEZFANTASMA,amount=1}'
+        - 'mmoitem{type=material,id=KOILLAMATIVA,amount=1}'
+#PERRO CALIENTE
+    PERROCALIENTE:
+        output:
+            type: consumable
+            id: PERROCALIENTE
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BISTECRUDO,amount=3}'
+        - 'mmoitem{type=material,id=TRIGO,amount=3}'
+        - 'mmoitem{type=material,id=CANAMO,amount=3}'
+        - 'mmoitem{type=material,id=ANGUILAMORENA,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+#SPAGHETTI
+    SPAGHETTI:
+        output:
+            type: consumable
+            id: SPAGHETTI
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHULETACRUDA,amount=3}'
+        - 'mmoitem{type=material,id=LEGUMBRESCRUDAS,amount=3}'
+        - 'mmoitem{type=material,id=CANAMO,amount=3}'
+        - 'mmoitem{type=material,id=ANGUILAMORENA,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+#HUEVOFRITO
+    HUEVOFRITO:
+        output:
+            type: consumable
+            id: HUEVOFRITO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=3}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSADELUNA,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+#MIEL FINA
+    MIELFINA:
+        output:
+            type: consumable
+            id: MIELFINA
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=3}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSADELUNA,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+#PALETA
+    PALETA:
+        output:
+            type: consumable
+            id: PALETA
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=3}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=3}'
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSAVERDE,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'
+#BURRITO
+    BURRITO:
+        output:
+            type: consumable
+            id: BURRITO
+            amount: 1
+        crafting-time: 3
+        conditions:
+        - 'stamina{amount=1}'
+        ingredients:
+        - 'mmoitem{type=material,id=TOMATE,amount=3}'
+        - 'mmoitem{type=material,id=REPOLLO,amount=3}'
+        - 'mmoitem{type=material,id=MEDUSAVERDE,amount=1}'
+        - 'mmoitem{type=material,id=ERIZODEMAR,amount=1}'

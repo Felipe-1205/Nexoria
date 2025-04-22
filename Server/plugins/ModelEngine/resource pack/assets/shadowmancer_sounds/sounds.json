@@ -1,0 +1,75 @@
+{
+  "samus.shadow_archer_shoot": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_archer_shoot"
+    ]
+  },
+  "samus.shadow_blade_fall": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_blade_fall"
+    ]
+  },
+  "samus.shadow_blade_impact": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_blade_impact"
+    ]
+  },
+  "samus.shadow_burst": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_burst"
+    ]
+  },
+  "samus.shadow_disappear": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_disappear"
+    ]
+  },
+  "samus.shadow_dragon_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_dragon_fire"
+    ]
+  },
+  "samus.shadow_dragon_growl": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_dragon_growl"
+    ]
+  },
+  "samus.shadow_knight_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_knight_slash"
+    ]
+  },
+  "samus.shadow_knight_slash_sharp": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_knight_slash_sharp"
+    ]
+  },
+  "samus.shadow_knight_spin": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_knight_spin"
+    ]
+  },
+  "samus.shadow_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_summon_1",
+	  "samus/shadowmancer/shadow_summon_2"
+    ]
+  },
+  "samus.shadow_teleport": {
+    "category": "master",
+    "sounds": [
+      "samus/shadowmancer/shadow_teleport"
+    ]
+  }
+}

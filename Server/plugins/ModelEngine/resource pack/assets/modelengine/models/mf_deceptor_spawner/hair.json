@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/mf_deceptor_spawner"},"elements":[{"from":[3.5,-1.0,8.0],"to":[12.5,8.0,8.0],"faces":{"south":{"uv":[8.111112,11.555555,9.111112,12.555555],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[7.111111,11.555555,8.111112,12.555555],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

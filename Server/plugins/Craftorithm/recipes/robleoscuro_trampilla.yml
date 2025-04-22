@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:dark_oak_planks
+unlock: false
+result: minecraft:dark_oak_trapdoor 2

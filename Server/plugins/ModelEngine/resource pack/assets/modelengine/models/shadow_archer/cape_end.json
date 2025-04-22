@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/shadow_archer"},"elements":[{"from":[0.0,-4.7250004,7.9750004],"to":[16.0,8.275,7.9750004],"faces":{"south":{"uv":[0.0,0.875,1.0,1.6875],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[1.0,0.875,0.0,1.6875],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,35 @@
+name: Blessing Of The White Lantern
+lore:
+- '&eInvoca una linterna sagrada encima tuyo. Los'
+- '&eenemigos dentro del radio reciben debilidad,'
+- '&emientras que los aliados reciben resistencia'
+- '&ey resistencia al fuego.'
+- ''
+- '&c{duration}s Duración'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2142'
+duration:
+  base: 24
+  per-level: 0.1
+  min: 7
+  max: 24
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 0
+  min: 0
+  max: 15
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 180
+  per-level: -0.1
+  min: 10
+  max: 180

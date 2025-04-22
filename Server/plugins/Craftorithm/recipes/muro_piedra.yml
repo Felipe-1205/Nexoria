@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:cobblestone
+unlock: false
+result: minecraft:cobblestone_wall 6

@@ -1,0 +1,6 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:HONGOROJO
+- mmoitems:MATERIAL:HONGOCAFE
+unlock: false
+result: mmoitems:CONSUMABLE:SOPAHONGOS 1

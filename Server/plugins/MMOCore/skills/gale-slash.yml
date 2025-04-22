@@ -1,0 +1,38 @@
+name: Gale Slash
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&c&lGale Slash: &7Perform a down slash-upper slash-forward thrust, last"
+- "&7strike pulling enemies in."
+- "&c&lZephyr Strike: &7If slow falling, dash forward piercing through"
+- "&7enemies instead and lose 1 level of slow falling."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2217'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.2
+  per-level: -0.01
+  min: 0.1
+  max: 0.2

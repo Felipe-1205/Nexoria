@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/nocsy_fairy_drakonin"},"elements":[{"from":[8.013566,3.473349,5.0887184],"to":[8.013566,19.473349,31.088718],"faces":{"east":{"uv":[5.875,6.125,7.5,7.125],"tintindex":0,"rotation":0,"texture":"#0"},"west":{"uv":[5.875,7.1875,7.5,8.1875],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,1453 @@
+ALASPRUEBA:
+  base:
+    material: ELYTRA
+    ability:
+      ability1:
+        type: LIGHT_DASH
+        mode: SHIFT_RIGHT_CLICK
+        length: 3.0
+        cooldown: 5.0
+        stamina: 8.0
+    name: '&bAlas'
+    displayed-type: '&9Item de Raza'
+    unbreakable: true
+    permission:
+    - vuelo
+ALASBENDITOS:
+  base:
+    material: ELYTRA
+    name: '&bAlas de Bendito'
+    displayed-type: '&9Item de Raza'
+    unbreakable: true
+# LIGERA CUERO
+CASCOCUEROLIGERA:
+  base:
+    material: LEATHER_HELMET
+    name: '&bArmadura de Cuero Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 1.0
+PECHOCUEROLIGERA:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&bArmadura de Cuero Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 1.0
+PANTALONCUEROLIGERA:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&bArmadura de Cuero Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 1.0
+BOTASCUEROLIGERA:
+  base:
+    material: LEATHER_BOOTS
+    name: '&bArmadura de Cuero Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 1.0
+# LIGERA MALLA
+CASCOMALLALIGERA:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&bArmadura de Malla Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 10.0
+PECHOMALLALIGERA:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&bArmadura de Malla Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 10.0
+PANTALONMALLALIGERA:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&bArmadura de Malla Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 10.0
+BOTASMALLALIGERA:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&bArmadura de Malla Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 1.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 10.0
+# HIERRO LIGERA
+CASCOHIERROLIGERA:
+  base:
+    material: IRON_HELMET
+    name: '&bArmadura de Hierro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 2.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 20.0
+PECHOHIERROLIGERA:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&bArmadura de Hierro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 2.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 20.0
+PANTALONHIERROLIGERA:
+  base:
+    material: IRON_LEGGINGS
+    name: '&bArmadura de Hierro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 2.0
+    dodge-rating: 2.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 20.0
+BOTASHIERROLIGERA:
+  base:
+    material: IRON_BOOTS
+    name: '&bArmadura de Hierro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 500.0
+    armor: 2.0
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 20.0
+# ORO LIGERA
+CASCOOROLIGERA:
+  base:
+    material: GOLDEN_HELMET
+    name: '&bArmadura de Oro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 30.0
+PECHOOROLIGERA:
+  base:
+    material: GOLDEN_CHESTPLATE
+    name: '&bArmadura de Oro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 30.0
+PANTALONOROLIGERA:
+  base:
+    material: GOLDEN_LEGGINGS
+    name: '&bArmadura de Oro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 30.0
+BOTASOROLIGERA:
+  base:
+    material: GOLDEN_BOOTS
+    name: '&bArmadura de Oro Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 1.5
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 30.0
+# DIAMANTE LIGERA
+CASCODIAMANTELIGERA:
+  base:
+    material: DIAMOND_HELMET
+    name: '&bArmadura de Diamante Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 2
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 40.0
+PECHODIAMANTELIGERA:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&bArmadura de Diamante Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 2
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 40.0
+PANTALONDIAMANTELIGERA:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&bArmadura de Diamante Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 2
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 40.0
+BOTASDIAMANTELIGERA:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&bArmadura de Diamante Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 600.0
+    armor: 2.5
+    dodge-rating: 2
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 40.0
+# NETHERITA LIGERA
+CASCONETHERITALIGERA:
+  base:
+    material: NETHERITE_HELMET
+    name: '&bArmadura de Netherita Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 750.0
+    armor: 2.5
+    dodge-rating: 3
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 50.0
+PECHONETHERITALIGERA:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&bArmadura de Netherita Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 750.0
+    armor: 2.5
+    dodge-rating: 3
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 50.0
+PANTALONNETHERITALIGERA:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&bArmadura de Netherita Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 750.0
+    armor: 2.5
+    dodge-rating: 3
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 50.0
+BOTASNETHERITALIGERA:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&bArmadura de Netherita Ligera'
+    displayed-type: '&5Armadura Ligera'
+    max-durability: 750.0
+    armor: 2.5
+    dodge-rating: 3
+    lore:
+    - '&5Reduce un D4 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 50.0
+# MEDIANA CUERO
+CASCOCUEROMEDIANA:
+  base:
+    material: LEATHER_HELMET
+    name: '&bArmadura de Cuero Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 1.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 1.0
+PECHOCUEROMEDIANA:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&bArmadura de Cuero Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 1.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 1.0
+PANTALONCUEROMEDIANA:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&bArmadura de Cuero Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 1.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 1.0
+BOTASCUEROMEDIANA:
+  base:
+    material: LEATHER_BOOTS
+    name: '&bArmadura de Cuero Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 1.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 1.0
+
+# MEDIANA MALLA
+CASCOMALLAMEDIANA:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&bArmadura de Malla Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 10.0
+PECHOMALLAMEDIANA:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&bArmadura de Malla Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 10.0
+PANTALONMALLAMEDIANA:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&bArmadura de Malla Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 10.0
+BOTASMALLAMEDIANA:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&bArmadura de Malla Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 10.0
+
+# HIERRO MEDIANA
+CASCOHIERROMEDIANA:
+  base:
+    material: IRON_HELMET
+    name: '&bArmadura de Hierro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 20.0
+PECHOHIERROMEDIANA:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&bArmadura de Hierro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 20.0
+PANTALONHIERROMEDIANA:
+  base:
+    material: IRON_LEGGINGS
+    name: '&bArmadura de Hierro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 20.0
+BOTASHIERROMEDIANA:
+  base:
+    material: IRON_BOOTS
+    name: '&bArmadura de Hierro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 600.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 20.0
+
+# ORO MEDIANA
+CASCOOROMEDIANA:
+  base:
+    material: GOLDEN_HELMET
+    name: '&bArmadura de Oro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 30.0
+PECHOOROMEDIANA:
+  base:
+    material: GOLDEN_CHESTPLATE
+    name: '&bArmadura de Oro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 30.0
+PANTALONOROMEDIANA:
+  base:
+    material: GOLDEN_LEGGINGS
+    name: '&bArmadura de Oro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 30.0
+BOTASOROMEDIANA:
+  base:
+    material: GOLDEN_BOOTS
+    name: '&bArmadura de Oro Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 30.0
+
+# DIAMANTE MEDIANA
+CASCODIAMANTEMEDIANA:
+  base:
+    material: DIAMOND_HELMET
+    name: '&bArmadura de Diamante Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 40.0
+PECHODIAMANTEMEDIANA:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&bArmadura de Diamante Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 40.0
+PANTALONDIAMANTEMEDIANA:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&bArmadura de Diamante Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 40.0
+BOTASDIAMANTEMEDIANA:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&bArmadura de Diamante Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 700.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 40.0
+
+# NETHERITA MEDIANA
+CASCONETHERITAMEDIANA:
+  base:
+    material: NETHERITE_HELMET
+    name: '&bArmadura de Netherita Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 850.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    armor-toughness: 1.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 50.0
+PECHONETHERITAMEDIANA:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&bArmadura de Netherita Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 850.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    armor-toughness: 1.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 50.0
+PANTALONNETHERITAMEDIANA:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&bArmadura de Netherita Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 850.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    armor-toughness: 1.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 50.0
+BOTASNETHERITAMEDIANA:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&bArmadura de Netherita Mediana'
+    displayed-type: '&5Armadura Mediana'
+    max-durability: 850.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D6 de daño.'
+    armor-toughness: 1.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    - ranger
+    required-level: 50.0
+# PESADA CUERO
+CASCOCUEROPESADA:
+  base:
+    material: LEATHER_HELMET
+    name: '&bArmadura de Cuero Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+PECHOCUEROPESADA:
+  base:
+    material: LEATHER_CHESTPLATE
+    name: '&bArmadura de Cuero Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+PANTALONCUEROPESADA:
+  base:
+    material: LEATHER_LEGGINGS
+    name: '&bArmadura de Cuero Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+BOTASCUEROPESADA:
+  base:
+    material: LEATHER_BOOTS
+    name: '&bArmadura de Cuero Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 2.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+
+# PESADA MALLA
+CASCOMALLAPESADA:
+  base:
+    material: CHAINMAIL_HELMET
+    name: '&bArmadura de Malla Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+PECHOMALLAPESADA:
+  base:
+    material: CHAINMAIL_CHESTPLATE
+    name: '&bArmadura de Malla Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+PANTALONMALLAPESADA:
+  base:
+    material: CHAINMAIL_LEGGINGS
+    name: '&bArmadura de Malla Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+BOTASMALLAPESADA:
+  base:
+    material: CHAINMAIL_BOOTS
+    name: '&bArmadura de Malla Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+
+# HIERRO PESADA
+CASCOHIERROPESADA:
+  base:
+    material: IRON_HELMET
+    name: '&bArmadura de Hierro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+PECHOHIERROPESADA:
+  base:
+    material: IRON_CHESTPLATE
+    name: '&bArmadura de Hierro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+PANTALONHIERROPESADA:
+  base:
+    material: IRON_LEGGINGS
+    name: '&bArmadura de Hierro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+BOTASHIERROPESADA:
+  base:
+    material: IRON_BOOTS
+    name: '&bArmadura de Hierro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 800.0
+    armor: 3.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+
+# ORO PESADA
+CASCOOROPESADA:
+  base:
+    material: GOLDEN_HELMET
+    name: '&bArmadura de Oro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+PECHOOROPESADA:
+  base:
+    material: GOLDEN_CHESTPLATE
+    name: '&bArmadura de Oro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+PANTALONOROPESADA:
+  base:
+    material: GOLDEN_LEGGINGS
+    name: '&bArmadura de Oro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+BOTASOROPESADA:
+  base:
+    material: GOLDEN_BOOTS
+    name: '&bArmadura de Oro Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+
+# DIAMANTE PESADA
+CASCODIAMANTEESADA:
+  base:
+    material: DIAMOND_HELMET
+    name: '&bArmadura de Diamante Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+PECHODIAMANTEPESADA:
+  base:
+    material: DIAMOND_CHESTPLATE
+    name: '&bArmadura de Diamante Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+PANTALONDIAMANTEPESADA:
+  base:
+    material: DIAMOND_LEGGINGS
+    name: '&bArmadura de Diamante Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+BOTASDIAMANTEPESADA:
+  base:
+    material: DIAMOND_BOOTS
+    name: '&bArmadura de Diamante Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 900.0
+    armor: 4.5
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+
+# NETHERITA PESADA
+CASCONETHERITAPESADA:
+  base:
+    material: NETHERITE_HELMET
+    name: '&bArmadura de Netherita Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 1050.0
+    armor: 5.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0
+PECHONETHERITAPESADA:
+  base:
+    material: NETHERITE_CHESTPLATE
+    name: '&bArmadura de Netherita Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 1050.0
+    armor: 5.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0
+PANTALONNETHERITAPESADA:
+  base:
+    material: NETHERITE_LEGGINGS
+    name: '&bArmadura de Netherita Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 1050.0
+    armor: 5.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0
+BOTASNETHERITAPESADA:
+  base:
+    material: NETHERITE_BOOTS
+    name: '&bArmadura de Netherita Pesada'
+    displayed-type: '&5Armadura Pesada'
+    max-durability: 1050.0
+    armor: 5.0
+    lore:
+    - '&5Reduce un D8 de daño.'
+    armor-toughness: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0

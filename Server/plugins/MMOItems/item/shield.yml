@@ -1,0 +1,224 @@
+ESCUDO1:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Madera'
+    displayed-type: '&5Escudo'
+    max-durability: 500.0
+    parry-rating: 2.0
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-level: 1.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDO2:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Piedra'
+    displayed-type: '&5Escudo'
+    max-durability: 1000.0
+    parry-rating: 4.0
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-level: 10.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDO3:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Hierro'
+    displayed-type: '&5Escudo'
+    max-durability: 1500.0
+    parry-rating: 6.0
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-level: 20.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDO4:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Oro'
+    displayed-type: '&5Escudo'
+    max-durability: 2000.0
+    parry-rating: 8.0
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-level: 30.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDO5:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Diamante'
+    displayed-type: '&5Escudo'
+    max-durability: 2500.0
+    parry-rating: 10.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-level: 40.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDO6:
+  base:
+    material: SHIELD
+    name: '&bEscudo de Netherite'
+    displayed-type: '&5Escudo'
+    max-durability: 3000.0
+    parry-rating: 12.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-level: 50.0
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    lore:
+    - '&5Reduce 2 de daño.'
+
+#ESCUDOS MÁGICOS
+ESCUDOMAGIC1:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Basico'
+    displayed-type: '&5Escudo'
+    max-durability: 500.0
+    parry-rating: 2.0
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-level: 1.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDOMAGIC2:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Intermedio'
+    displayed-type: '&5Escudo'
+    max-durability: 1000.0
+    parry-rating: 4.0
+    tier: TIER1
+    gem-sockets:
+    - Armadura
+    required-level: 10.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDOMAGIC3:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Avanzado'
+    displayed-type: '&5Escudo'
+    max-durability: 1500.0
+    parry-rating: 6.0
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-level: 20.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDOMAGIC4:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Supremo'
+    displayed-type: '&5Escudo'
+    max-durability: 2000.0
+    parry-rating: 8.0
+    tier: TIER2
+    gem-sockets:
+    - Armadura
+    - Armadura
+    required-level: 30.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDOMAGIC5:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Legendario'
+    displayed-type: '&5Escudo'
+    max-durability: 2500.0
+    parry-rating: 10.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-level: 40.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'
+ESCUDOMAGIC6:
+  base:
+    material: SHIELD
+    name: '&bHechizo Defensivo Arcano'
+    displayed-type: '&5Escudo'
+    max-durability: 3000.0
+    parry-rating: 12.0
+    tier: TIER3
+    gem-sockets:
+    - Armadura
+    - Armadura
+    - Armadura
+    required-level: 50.0
+    required-class:
+    - bardo
+    - mago
+    - hechicero
+    - clerigo
+    lore:
+    - '&5Reduce 2 de daño.'

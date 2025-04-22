@@ -1,0 +1,230 @@
+BARDO1:
+  base:
+    material: SHEARS
+    name: '&bGuitarra Clasica'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 3.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_GUITAR
+        volume: 2.0
+        pitch: 1.0
+    two-handed: true
+    lute-attack-sound: BLOCK_NOTE_BLOCK_GUITAR
+    note-weight: 3.0
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    gem-sockets:
+    - Arma
+    required-class:
+    - bardo
+    required-level: 1.0
+    lore:
+    - '&5Un d6 de daño de trueno.'
+    max-durability: 1000.0
+BARDO2:
+  base:
+    material: SHEARS
+    name: '&bLaud'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 4.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_BANJO
+        volume: 2.0
+        pitch: 1.0
+    two-handed: true
+    lute-attack-sound: BLOCK_NOTE_BLOCK_BANJO
+    note-weight: -3.0
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    gem-sockets:
+    - Arma
+    required-class:
+    - bardo
+    lore:
+    - '&5Un d6 de daño de trueno'
+    required-level: 10.0
+    max-durability: 1500.0
+BARDO3_1:
+  base:
+    material: CROSSBOW
+    name: '&bViolin'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 5.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_CHIME
+        volume: 2.0
+        pitch: 1.5
+    two-handed: false
+    lute-attack-sound: BLOCK_NOTE_BLOCK_CHIME
+    note-weight: 3.0
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - bardo
+    lore:
+    - '&5Un d6 de daño de trueno'
+    required-level: 20.0
+    max-durability: 2000.0
+BARDO3_2:
+  base:
+    material: STICK
+    name: '&bPalo de Violin'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    required-class:
+    - bardo
+    required-level: 20.0
+BARDO4:
+  base:
+    material: SHEARS
+    name: '&bBandurria'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 6.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_BASS
+        volume: 2.0
+        pitch: 1.5
+    two-handed: true
+    lute-attack-sound: BLOCK_NOTE_BLOCK_BASS
+    note-weight: 3.0
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - bardo
+    lore:
+    - '&5Un d6 de daño de trueno'
+    required-level: 30.0
+    max-durability: 2500.0
+BARDO5:
+  base:
+    material: SHEARS
+    name: '&bGuitarra Magica'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 7.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_GUITAR
+        volume: 2.0
+        pitch: 5.0
+    two-handed: true
+    lute-attack-sound: BLOCK_NOTE_BLOCK_GUITAR
+    note-weight: 5.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - bardo
+    lore:
+    - '&5Un d6 de daño de trueno'
+    required-level: 40.0
+    max-durability: 3000.0
+BARDO6:
+  base:
+    material: SHEARS
+    name: '&bLira'
+    displayed-type: '&5Canalizador de Bardos'
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-speed: 1.8
+    attack-damage: 8.0
+    unbreakable: true
+    sounds:
+      on-right-click:
+        sound: BLOCK_NOTE_BLOCK_HARP
+        volume: 2.0
+        pitch: 5.0
+    two-handed: true
+    lute-attack-sound: BLOCK_NOTE_BLOCK_HARP
+    note-weight: 5.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - bardo
+    lore:
+    - '&5Un d6 de daño de trueno'
+    required-level: 50.0
+    max-durability: 3500.0
+PRUEBAGEMAS:
+  base:
+    material: NAME_TAG
+    gem-sockets:
+    - Arma
+    - Armadura

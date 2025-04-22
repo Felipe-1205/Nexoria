@@ -1,0 +1,36 @@
+name: Terra Barricade
+lore:
+- '&aSummon an earth golem that emerges from'
+- '&athe ground, smashing the surface to raise up'
+- '&aa terra wall. The earth golem pushes the wall,'
+- '&aknocking back all enemies in contact.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2177'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 9
+  per-level: -0.1
+  min: 8
+  max: 9

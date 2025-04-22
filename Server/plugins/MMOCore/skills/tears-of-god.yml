@@ -1,0 +1,44 @@
+name: Tears Of God
+lore:
+- '&eBlood is pulled from your body, reducing your HP,'
+- '&eevaporating into the sky. A tear of holy water drops'
+- '&efrom the heavens itself, purified from god through'
+- '&ethe sacrifice of the cleric. Dropping onto the chosen'
+- '&eally gives them an immediate heal and regeneration for'
+- '&esome time. (Not castable if your health is too low)'
+- ''
+- '&a{heal} Heal'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2144'
+heal:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+duration:
+  base: 4
+  per-level: 0.2
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 7
+  max: 8

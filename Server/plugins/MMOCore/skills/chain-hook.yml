@@ -1,0 +1,33 @@
+name: Chain Hook
+lore:
+- '&6Throw a chain hook that pulls the target towards you'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2053'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.3
+  min: 3
+  max: 5
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 6

@@ -1,0 +1,54 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/shadowmancer_texture/shadow_teleport_2",
+		"particle": "item/shadowmancer_texture/shadow_teleport_2"
+	},
+	"elements": [
+		{
+			"from": [-2, 14, -1],
+			"to": [18, 14, 19],
+			"rotation": {"angle": 0, "axis": "z", "origin": [8, 14, 9]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [2.5, 2.75, 13.75, 14], "texture": "#0"},
+				"down": {"uv": [2.5, 14, 13.75, 2.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-2, 4, -1],
+			"to": [18, 4, 19],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 4, 9]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"east": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"west": {"uv": [16, 0, 0, 0], "texture": "#0"},
+				"up": {"uv": [13.75, 2.75, 2.5, 14], "texture": "#0"},
+				"down": {"uv": [13.75, 14, 2.5, 2.75], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-5, 9.46194, -5.80866],
+			"to": [21, 9.46194, 20.19134],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 9.46194, 8.19134]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [13.75, 14, 2.5, 2.75], "texture": "#0"},
+				"down": {"uv": [13.75, 2.75, 2.5, 14], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0.75, -22.25, -2.75],
+			"scale": [2.5, 2.5, 2.5]
+		}
+	}
+}

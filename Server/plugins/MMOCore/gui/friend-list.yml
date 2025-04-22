@@ -1,0 +1,42 @@
+
+# GUI display name
+name: Friends
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    friend:
+        slots: [10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34]
+        function: friend
+        
+        # No friend
+        item: GRAY_STAINED_GLASS_PANE
+        name: '&cSin Amigo'
+        lore: {}
+        
+        # Online friend
+        online:
+            item: PLAYER_HEAD
+            name: '&a[En linea] &f{name}'
+            lore:
+            - '&7Nivel {level} {class}'
+            - '&7Conectado hace: {online_since}'
+            - ''
+            - '&cClick derecho para eliminar.'
+            
+        # Offline friend
+        offline:
+            item: PLAYER_HEAD
+            name: '&c[Desconectado] &f{name}'
+            lore:
+            - '&7Ultima vez hace: {last_seen} ago'
+            - ''
+            - '&cClick derecho para eliminar.'
+    request:
+        slots: [49]
+        function: request
+        item: WRITABLE_BOOK
+        name: '&aNueva Peticion De amigo'
+        lore: {}

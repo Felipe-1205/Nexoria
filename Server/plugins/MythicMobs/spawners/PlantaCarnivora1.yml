@@ -1,0 +1,26 @@
+PlantaCarnivora1:
+  MobName: Plant_Monster
+  World: dungeons
+  X: -2
+  Y: 31
+  Z: -31
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 0.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '1'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 30
+  Warmup: 0
+  ActivationRange: 10.0
+  ScalingRange: 25.0
+  LeashRange: 32.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

@@ -1,0 +1,43 @@
+name: Torrent
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Hold shift to twirl your glaive above your head, pulling in enemies."
+- "&7Release shift to execute a huge slash with significant knockback."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {skillcooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2220'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 8
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+skillcooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+#klaE9mN3hzbxUFSQNWQxo1RFZ0Y3FkeORTU61kMJRlT4llbNVHUkl0YHN3a3kDT0w0ZxF2M

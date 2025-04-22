@@ -1,0 +1,197 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+chameleon_PetSpawn:
+  Skills:
+  - delay 1
+  - tint{m=chameleon;c=81B622} @self
+  - effect:particles{particle=poof;amount=50;hS=.45;vS=.25} @self
+  
+ChameleonPet_Despawn:
+  Skills:
+  - effect:particles{particle=poof;amount=50;hS=.45;vS=.25} @self
+  - model{mid=chameleon;r=true} @self
+  
+   
+chameleon_Pet:
+  Cooldown: 10
+  Skills:
+  - setspeed{speed=0;type=walking} @self
+  - state{s=fidget} @self
+  - summon{t=ChameleonPet} @forward{f=2}
+  - delay 65
+  - tint{m=chameleon;pid=tongue;c=999999} @self
+  - ChangePart{model=chameleon;part=head;newmodel=chameleon_parts;newpart=head} @self
+  - ChangePart{model=chameleon;part=tongue;newmodel=chameleon_parts;newpart=tongue} @self
+  - remove @children{target=armorstands}
+  - delay 5
+  - ChangePart{model=chameleon;part=head;newmodel=chameleon;newpart=head} @self
+  - ChangePart{model=chameleon;part=tongue;newmodel=chameleon;newpart=tongue} @self
+  - delay 10
+  - setspeed{speed=1;type=walking} @self
+  
+chameleon_PetCOLOR:
+  Cooldown: 2
+  Skills:
+  - skill{s=chameleonRED} @self
+  - skill{s=chameleonYELLOW} @self
+  - skill{s=chameleonBLUE} @self
+  - skill{s=chameleonLIGHTBLUE} @self
+  - skill{s=chameleonBLACK} @self
+  - skill{s=chameleonORANGE} @self
+  - skill{s=chameleonMAGENTA} @self
+  - skill{s=chameleonCYAN} @self
+  - skill{s=chameleonPURPLE} @self
+  - skill{s=chameleonGREEN} @self
+  - skill{s=chameleonLIME} @self
+  - skill{s=chameleonWHITE} @self
+  - skill{s=chameleonPINK} @self
+  - skill{s=chameleonLIGHTGRAY} @self
+  - skill{s=chameleonBROWN} @self
+  - skill{s=chameleonGRASS} @self
+  
+chameleonRED:
+  Conditions:
+  - stance{s=red} false
+  - onblock{m=REDSTONE_BLOCK,CRIMSON_HYPHAE,CRIMSON_STEM,NETHER_WART_BLOCK,RED_CONCRETE,RED_STAINED_GLASS,RED_WOOL,CRIMSON_NYLIUM,CRIMSON_SLAB,RED_BED,RED_CONCRETE_POWDER,RED_NETHER_BRICK_SLAB,RED_NETHER_BRICKS,STRIPPED_CRIMSON_HYPHAE,RED_CARPET,RED_GLAZED_TERRACOTTA,RED_SHULKER_BOX,RED_TERRACOTTA} true
+  Skills:
+  - setstance{stance=red} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=FF0000} @self
+  
+chameleonYELLOW:
+  Conditions:
+  - stance{s=yellow} false
+  - onblock{m=GOLD_BLOCK,YELLOW_BED,YELLOW_WOOL,YELLOW_STAINED_GLASS,YELLOW_CONCRETE_POWDER,RAW_GOLD_BLOCK,SPONGE,YELLOW_CARPET,YELLOW_GLAZED_TERRACOTTA,HAY_BLOCK,YELLOW_CONCRETE,YELLOW_SHULKER_BOX,YELLOW_TERRACOTTA} true
+  Skills:
+  - setstance{stance=yellow} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=FFFF00} @self
+  
+chameleonBLUE:
+  Conditions:
+  - stance{s=blue} false
+  - onblock{m=BLUE_WOOL,LAPIS_BLOCK,BLUE_CONCRETE,BLUE_GLAZED_TERRACOTTA,BLUE_STAINED_GLASS,BLUE_BED,BLUE_CONCRETE_POWDER,BLUE_ICE,BLUE_CARPET,BLUE_SHULKER_BOX} true
+  Skills:
+  - setstance{stance=blue} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=0000FF} @self
+  
+chameleonLIGHTBLUE:
+  Conditions:
+  - stance{s=lightblue} false
+  - onblock{m=ICE,PACKED_ICE,WATER,DIAMOND_BLOCK,LIGHT_BLUE_CONCRETE,LIGHT_BLUE_SHULKER_BOX,LIGHT_BLUE_BED,LIGHT_BLUE_CONCRETE_POWDER,LIGHT_BLUE_STAINED_GLASS,LIGHT_BLUE_WOOL,LIGHT_BLUE_CARPET,LIGHT_BLUE_GLAZED_TERRACOTTA} true
+  Skills:
+  - setstance{stance=lightblue} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=6fa8dc} @self
+  
+chameleonBLACK:
+  Conditions:
+  - stance{s=black} false
+  - onblock{m=BLACK_BED,BLACK_CONCRETE_POWDER,BLACK_SHULKER_BOX,BLACK_TERRACOTTA,BLACKSTONE_SLAB,COAL_BLOCK,POLISHED_BLACKSTONE_BRICK_SLAB,POLISHED_BLACKSTONE_BRICKS,POLISHED_BLACKSTONE_STAIRS,BLACK_CARPET,BLACK_STAINED_GLASS,BLACK_WOOL,BLACKSTONE_STAIRS,CHISELED_DEEPSLATE,CRACKED_DEEPSLATE_TILES,OBSIDIAN,POLISHED_BLACKSTONE_BRICK_STAIRS,POLISHED_BLACKSTONE_PRESSURE_PLATE,BLACK_CONCRETE,BLACKSTONE,CHISELED_POLISHED_BLACKSTONE,CRACKED_POLISHED_BLACKSTONE_BRICKS,POLISHED_BLACKSTONE,POLISHED_BLACKSTONE_SLAB} true
+  Skills:
+  - setstance{stance=black} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=191919 } @self
+  
+chameleonORANGE:
+  Conditions:
+  - stance{s=orange} false
+  - onblock{m=PUMPKIN,ACACIA_LOG,ACACIA_PLANKS,CUT_RED_SANDSTONE_SLAB,ORANGE_CONCRETE,ORANGE_SHULKER_BOX,ORANGE_TERRACOTTA,RED_SANDSTONE_SLAB,SMOOTH_RED_SANDSTONE,STRIPPED_ACACIA_LOG,ACACIA_SLAB,CHISELED_RED_SANDSTONE,ORANGE_BED,ORANGE_CONCRETE_POWDER,ORANGE_STAINED_GLASS,ORANGE_WOOL,RED_SANDSTONE_STAIRS,SMOOTH_RED_SANDSTONE_SLAB,STRIPPED_ACACIA_WOOD,ACACIA_STAIRS,CUT_RED_SANDSTONE,ORANGE_CARPET,RED_SANDSTONE,SMOOTH_RED_SANDSTONE_STAIRS} true
+  Skills:
+  - setstance{stance=orange} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=ff9c00} @self
+  
+chameleonMAGENTA:
+  Conditions:
+  - stance{s=magenta} false
+  - onblock{m=MAGENTA_BED,MAGENTA_CONCRETE_POWDER,MAGENTA_STAINED_GLASS,MAGENTA_WOOL,MAGENTA_CARPET,MAGENTA_GLAZED_TERRACOTTA,MAGENTA_CONCRETE,MAGENTA_SHULKER_BOX} true
+  Skills:
+  - setstance{stance=magenta} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=FF00FF} @self
+  
+chameleonCYAN:
+  Conditions:
+  - stance{s=cyan} false
+  - onblock{m=CYAN_BED,CYAN_CONCRETE_POWDER,CYAN_STAINED_GLASS,CYAN_WOOL,DARK_PRISMARINE_STAIRS,OXIDIZED_CUT_COPPER_SLAB,PRISMARINE_BRICK_SLAB,PRISMARINE_STAIRS,STRIPPED_WARPED_STEM,WARPED_SLAB,WARPED_WART_BLOCK,CYAN_CARPET,CYAN_GLAZED_TERRACOTTA,DARK_PRISMARINE,OXIDIZED_COPPER,OXIDIZED_CUT_COPPER_STAIRS,PRISMARINE_BRICK_STAIRS,WARPED_PLANKS,WARPED_STAIRS,CYAN_CONCRETE,CYAN_SHULKER_BOX,DARK_PRISMARINE_SLAB,OXIDIZED_CUT_COPPER,PRISMARINE,PRISMARINE,STRIPPED_WARPED_HYPHAE,WARPED_PRESSURE_PLATE,WARPED_STEM} true
+  Skills:
+  - setstance{stance=cyan} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=00FFFF} @self
+  
+chameleonPURPLE:
+  Conditions:
+  - stance{s=purple} false
+  - onblock{m=AMETHYST_BLOCK,PURPLE_BED,PURPLE_CONCRETE_POWDER,PURPLE_STAINED_GLASS,PURPLE_WOOL,PURPUR_SLAB,BUDDING_AMETHYST,PURPLE_CARPET,PURPLE_GLAZED_TERRACOTTA,PURPUR_BLOCK,PURPUR_STAIRS,CRYING_OBSIDIAN,PURPLE_CONCRETE,PURPLE_SHULKER_BOX,PURPUR_PILLAR} true
+  Skills:
+  - setstance{stance=purple} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=800080} @self
+  
+chameleonGREEN:
+  Conditions:
+  - stance{s=green} false
+  - onblock{m=GREEN_CONCRETE,GREEN_SHULKER_BOX,GREEN_TERRACOTTA,MOSS_CARPET,GREEN_BED,GREEN_CONCRETE_POWDER,GREEN_STAINED_GLASS,GREEN_WOOL,GREEN_CARPET,GREEN_GLAZED_TERRACOTTA,MOSS_BLOCK} true
+  Skills:
+  - setstance{stance=green} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=008000} @self
+  
+chameleonLIME:
+  Conditions:
+  - stance{s=lime} false
+  - onblock{m=MELON,LIME_BED,LIME_CONCRETE_POWDER,LIME_STAINED_GLASS,LIME_WOOL,LIME_CARPET,LIME_GLAZED_TERRACOTTA,SLIME_BLOCK,LIME_CONCRETE,LIME_SHULKER_BOX} true
+  Skills:
+  - setstance{stance=lime} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=00FF00} @self
+  
+chameleonWHITE:
+  Conditions:
+  - stance{s=white} false
+  - onblock{m=SAND,QUARTZ_BLOCK,CHISELED_QUARTZ_BLOCK,DIORITE_STAIRS,POLISHED_DIORITE,QUARTZ_BRICKS,SMOOTH_QUARTZ_SLAB,WHITE_BED,WHITE_CONCRETE_POWDER,WHITE_SHULKER_BOX,WHITE_TERRACOTTA,BONE_BLOCK,DIORITE,POLISHED_DIORITE_SLAB,QUARTZ_PILLAR,SMOOTH_QUARTZ_STAIRS,WHITE_CARPET,WHITE_STAINED_GLASS,WHITE_WOOL,CALCITE,DIORITE_SLAB,POLISHED_DIORITE_STAIRS,SMOOTH_QUARTZ,SNOW_BLOCK,WHITE_CONCRETE} true
+  Skills:
+  - setstance{stance=white} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=FFFFFF} @self
+  
+chameleonPINK:
+  Conditions:
+  - stance{s=pink} false
+  - onblock{m=PINK_BED,PINK_CONCRETE_POWDER,PINK_STAINED_GLASS,PINK_WOOL,PINK_CARPET,PINK_GLAZED_TERRACOTTA,PINK_CONCRETE,PINK_SHULKER_BOX,PINK_TERRACOTTA} true
+  Skills:
+  - setstance{stance=pink} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=FFC0CB} @self
+  
+chameleonLIGHTGRAY:
+  Conditions:
+  - stance{s=lightgray} false
+  - onblock{m=IRON_BLOCK,LIGHT_GRAY_BED,LIGHT_GRAY_CONCRETE_POWDER,LIGHT_GRAY_STAINED_GLASS,LIGHT_GRAY_WOOL,CLAY,LIGHT_GRAY_CARPET,LIGHT_GRAY_GLAZED_TERRACOTTA,LODESTONE,HEAVY_WEIGHTED_PRESSURE_PLATE,LIGHT_GRAY_CONCRETE,LIGHT_GRAY_SHULKER_BOX,STONE,COBBLESTONE,SMOOTH_STONE,ANDESITE,COBBLESTONE_SLAB,CRACKED_STONE_BRICKS,INFESTED_COBBLESTONE,INFESTED_STONE,POLISHED_ANDESITE_SLAB,SMOOTH_STONE_SLAB,STONE_BRICK_STAIRS,ANDESITE_SLAB,CHISELED_STONE_BRICKS,COBBLESTONE_STAIRS,GRAVEL,INFESTED_CRACKED_STONE_BRICKS,INFESTED_STONE_BRICKS,MOSSY_STONE_BRICKS,POLISHED_ANDESITE_STAIRS,STONE_PRESSURE_PLATE,ANDESITE_STAIRS,INFESTED_CHISELED_STONE_BRICKS,INFESTED_MOSSY_STONE_BRICKS,MOSSY_COBBLESTONE,MOSSY_STONE_BRICK_STAIRS,POLISHED_ANDESITE,STONE_BRICK_SLAB,STONE_BRICKS} true
+  Skills:
+  - setstance{stance=lightgray} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=999999} @self
+  
+chameleonBROWN:
+  Conditions:
+  - stance{s=brown} false
+  - onblock{m=ANCIENT_DEBRIS,BROWN_CONCRETE,BROWN_STAINED_GLASS,BROWN_WOOL,PODZOL,BROWN_BED,BROWN_CONCRETE_POWDER,BROWN_MUSHROOM_BLOCK,COARSE_DIRT,ROOTED_DIRT,BROWN_CARPET,BROWN_SHULKER_BOX,BROWN_TERRACOTTA,DIRT} true
+  Skills:
+  - setstance{stance=brown} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=7F5500} @self
+  
+chameleonGRASS:
+  Conditions:
+  - stance{s=grass} false
+  - onblock{m=GRASS_BLOCK}
+  Skills:
+  - setstance{stance=grass} @self
+  - effect:particles{particle=poof;amount=10;hS=.25;vS=.25;y=.25} @self
+  - tint{m=chameleon;c=81B622} @self

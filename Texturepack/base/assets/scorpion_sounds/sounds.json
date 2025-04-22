@@ -1,0 +1,65 @@
+{
+  "samus.scorpion_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_attack1",
+	  "samus/scorpion/scorpion_attack2"
+    ]
+  },
+  "samus.emerge_from_ground": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/emerge_from_ground"
+    ]
+  },
+  "samus.jump_into_ground": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/jump_into_ground"
+    ]
+  },
+  "samus.scorpion_eat": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_eat1",
+	  "samus/scorpion/scorpion_eat2"
+    ]
+  },
+  "samus.scorpion_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_idle1",
+	  "samus/scorpion/scorpion_idle2"
+    ]
+  },
+  "samus.scorpion_poison": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_poison"
+    ]
+  },
+  "samus.scorpion_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_punch"
+    ]
+  },
+  "samus.scorpion_sting": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_sting"
+    ]
+  },
+  "samus.scorpion_throw": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/scorpion_throw"
+    ]
+  },
+  "samus.spit_venom": {
+    "category": "master",
+    "sounds": [
+      "samus/scorpion/spit_venom"
+    ]
+  }
+}

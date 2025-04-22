@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/vfx_gale_spear"},"elements":[{"from":[8.0125,3.75,-7.5],"to":[8.0125,12.25,23.5],"faces":{"east":{"uv":[7.75,2.5,0.0,4.875],"tintindex":0,"rotation":0,"texture":"#0"},"west":{"uv":[0.0,2.5,7.75,4.875],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,214 @@
+panels:
+  viajesaeloria:
+    perm: op
+    rows: 6
+    title: '&c» &eSelecciona Tu Destino!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          lore:
+          - '&6» &3Parate encima'
+          - '&6» &3Para Mas Informacion!'
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+      '11':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lAextun'
+        lore:  
+        - ''  
+        - '&7Una ciudad oculta en el corazón de un bosque colosal,'
+        - '&7donde los árboles se alzan como gigantes silenciosos.'
+        - '&7En medio de esta inmensidad, un claro sin árboles'
+        - '&7sirve de refugio para la ciudad, protegida por la propia naturaleza.'
+        - '&7Sus habitantes han aprendido a respetar el bosque,'
+        - '&7aprovechando sus recursos sin alterarlo.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Aextun %cp-player-name%
+        - cpc
+      '19':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lLa Flor Del cerezo'
+        lore:  
+          - ''
+          - '&7Un majestuoso barco que surca el vacío en busca de recursos.'
+          - '&7Es el hogar del marinero más experimentado, capaz de navegar'
+          - '&7las corrientes del abismo con una destreza inigualable.'
+          - '&7Aquí se preparan las incursiones más peligrosas y valiosas.'
+          - '' 
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp BarcoAeloria %cp-player-name%
+        - cpc
+      '29':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lValle Regnum'
+        lore:  
+          - ''
+          - '&7Una ciudad asentada en una meseta fértil, donde la naturaleza'
+          - '&7y la civilización se entrelazan en perfecta armonía.'
+          - '&7Los habitantes viven con profundo respeto por la tierra.'
+          - ''
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Valle %cp-player-name%
+        - cpc
+      '37':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lVillanueva Del Solar'
+        lore:  
+        - ''  
+        - '&7Una ciudad dorada que resplandece bajo el sol del desierto.'
+        - '&7Construida con piedra y arena, resiste el paso del tiempo'
+        - '&7y el azote de las tormentas. Su comercio es próspero,'
+        - '&7y sus caravanas conectan tierras lejanas.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Villanueva %cp-player-name%
+        - cpc
+      '15':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lCumbres Blancas'
+        lore:  
+        - ''  
+        - '&7Una ciudad construida en lo alto de una meseta helada.'
+        - '&7Las temperaturas son extremas, pero sus habitantes han'
+        - '&7aprendido a domar la nieve y el hielo.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Cumbres %cp-player-name%
+        - cpc
+      '25':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lCali'
+        lore:  
+        - ''  
+        - '&7Un asentamiento en tierras áridas, donde el viento seco'
+        - '&7arrastra la arena entre las casas de piedra.'
+        - '&7Sus habitantes han perfeccionado el arte de la supervivencia,'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Cali %cp-player-name%
+        - cpc
+      '33':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lDolafarvd'
+        lore:  
+        - ''  
+        - '&7Aunque es llamada ciudad, Dolafarvd está formada solo por'
+        - '&7dos imponentes casas que dominan el paisaje.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Dolafarvd %cp-player-name%
+        - cpc
+      '43':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lIsla Voladora'
+        lore:  
+        - ''  
+        - '&7Un trozo de tierra flotante que desafía las leyes del mundo.'
+        - '&7Se dice que es la única ruta al legendario Lago de las Almas,'
+        - '&7un lugar místico donde los vivos y los muertos se encuentran.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp AlmasAeloria %cp-player-name%
+        - cpc
+      '31':
+        material: END_CRYSTAL
+        stack: 1
+        name: '&6&lLuxhenia'
+        lore:  
+        - ''  
+        - '&7La gran capital, centro de poder y cultura del reino.'
+        - '&7Aquí residen los nobles y el rey, en un lugar lleno de'
+        - '&7calles bulliciosas y mercados vibrantes. Es el corazón'
+        - '&7del reino, donde se forjan alianzas y se decide el futuro.'
+        - ''  
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= warp Luxhenia %cp-player-name%
+        - cpc

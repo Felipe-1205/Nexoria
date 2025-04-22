@@ -1,0 +1,74 @@
+SkeletonKingDrops:
+  Conditions:
+  - playerwithin{d=40}
+  Drops:
+  - SkeletonKingItemDrops 1
+  - experience 100
+  - heroesexp 200
+SkeletonKingItemDrops:
+  MinItems: 1
+  MaxItems: 2
+  Drops:
+  - KingsCrown 1 0.01
+  - SkeletonKingSword 0.1
+  - GOLD_NUGGET 32-64 1
+  - DIAMOND 1-12 0.8
+
+#GEMAS
+GemasBosses:
+  Drops:
+  - mmoitems{type=gem_stone;id=MANA} 1 0.1
+  - mmoitems{type=gem_stone;id=VIDA} 1 0.1 
+
+#Minibosses
+Minibosses:
+  MaxItems: 1
+  Drops:
+  - mmoitems{type=gem_stone;id=FISICO_D} 1 0.1
+  - mmoitems{type=gem_stone;id=MAGICO_D} 1 0.1 
+  - mmoitems{type=gem_stone;id=PROYECTIL_D} 1 0.1 
+  - mmoitems{type=gem_stone;id=FISICO_A} 1 0.1
+  - mmoitems{type=gem_stone;id=MAGICO_A} 1 0.1 
+  - mmoitems{type=gem_stone;id=PROYECTIL_A} 1 0.1 
+  
+#Comunes
+MobsComunes:
+  MaxItems: 1
+  Drops:
+  - mmoitems{type=gem_stone;id=NECROTICO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=RADIANTE_A} 1 0.02
+  - mmoitems{type=gem_stone;id=ELECTRICO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=VIENTO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=SONICO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=FUEGO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=AGUA_A} 1 0.02
+  - mmoitems{type=gem_stone;id=HIELO_A} 1 0.02
+  - mmoitems{type=gem_stone;id=NECROTICO_D} 1 0.02
+  - mmoitems{type=gem_stone;id=RADIANTE_D} 1 0.02
+  - mmoitems{type=gem_stone;id=ELECTRICO_D} 1 0.02
+  - mmoitems{type=gem_stone;id=VIENTO_D} 1 0.02
+  - mmoitems{type=gem_stone;id=SONICO_D} 1 0.02
+  - mmoitems{type=gem_stone;id=FUEGO_D} 1 0.02
+  - mmoitems{type=gem_stone;id=AGUA_D} 1 0.02
+  - mmoitems{type=gem_stone;id=HIELO_D} 1 0.02
+
+#Mimicos
+Mimicos:
+  MaxItems: 2
+  Drops:
+  - mmoitems{type=gem_stone;id=NECROTICO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=RADIANTE_A} 1 0.05
+  - mmoitems{type=gem_stone;id=ELECTRICO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=VIENTO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=SONICO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=FUEGO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=AGUA_A} 1 0.05
+  - mmoitems{type=gem_stone;id=HIELO_A} 1 0.05
+  - mmoitems{type=gem_stone;id=NECROTICO_D} 1 0.05
+  - mmoitems{type=gem_stone;id=RADIANTE_D} 1 0.05
+  - mmoitems{type=gem_stone;id=ELECTRICO_D} 1 0.05
+  - mmoitems{type=gem_stone;id=VIENTO_D} 1 0.05
+  - mmoitems{type=gem_stone;id=SONICO_D} 1 0.05
+  - mmoitems{type=gem_stone;id=FUEGO_D} 1 0.05
+  - mmoitems{type=gem_stone;id=AGUA_D} 1 0.05
+  - mmoitems{type=gem_stone;id=HIELO_D} 1 0.05

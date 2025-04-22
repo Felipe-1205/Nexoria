@@ -1,0 +1,29 @@
+BLADE_SLASH:
+    mythicmobs-skill-id: Blade_Slash
+    modifiers:
+    - damage
+
+DASH:
+    mythicmobs-skill-id: Assassin_Dash
+    modifiers:
+    - damage
+    
+ASSASSINS_BLADE:
+    mythicmobs-skill-id: Assassins_Blade
+    passive-type: TIMER
+    timer: 10
+    
+SHADOW_WALK:
+    mythicmobs-skill-id: Shadow_Walk
+    modifiers:
+    - duration
+    
+DAGGER_THROW:
+    mythicmobs-skill-id: Dagger_Throw
+    modifiers:
+    - damage
+    
+BLADE_DANCE:
+    mythicmobs-skill-id: Blade_Dance
+    modifiers:
+    - damage

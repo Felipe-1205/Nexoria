@@ -1,0 +1,24 @@
+LLAVESALIDA:
+  base:
+    material: TRIPWIRE_HOOK
+    name: '&5Llave de Salida'
+    displayed-type: '&6Llave'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-droping: true
+TALISMANTARANTULA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Tarantula'
+    displayed-type: '&5Drop de Boss'
+    disable-interaction: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    max-stack-size: 1.0

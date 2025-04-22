@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'aa '
+- 'aa '
+- 'aa '
+source:
+  a: minecraft:dark_oak_planks
+unlock: false
+result: minecraft:dark_oak_door 3

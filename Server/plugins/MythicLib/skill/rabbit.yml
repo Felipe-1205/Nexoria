@@ -1,0 +1,28 @@
+EASTER_SLAM:
+    mythicmobs-skill-id: Easter_Slam
+    modifiers:
+    - damage
+
+CARROT_RUSH:
+    mythicmobs-skill-id: Carrot_Rush
+    modifiers:
+    - damage
+    
+EASTER_EGGS:
+    mythicmobs-skill-id: Easter_Eggs
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - duration
+    - heal
+    
+EASTER_ONSLAUGHT:
+    mythicmobs-skill-id: Easter_Onslaught
+    modifiers:
+    - damage
+    
+RAIN_OF_EASTER_EGGS:
+    mythicmobs-skill-id: Rain_of_Easter_Eggs
+    modifiers:
+    - damage
+    - duration

@@ -1,0 +1,36 @@
+name: Shadow Walk
+lore:
+- '&4Consigue velocidad e invisibilidad por 5 segundos'
+- '&4y haz una gran cantidad  de daño de sangrado en'
+- '&4tu siguiente ataque básico, la invisibilidad'
+- '&4se va al atacar'
+- ''
+- '&b{duration} Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2039'
+duration:
+  base: 10
+  per-level: 0.5
+  min: 8
+  max: 10
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 0
+  min: 0
+  max: 15
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 30
+  per-level: -0.3
+  min: 10
+  max: 30

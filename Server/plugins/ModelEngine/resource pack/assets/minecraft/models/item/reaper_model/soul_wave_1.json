@@ -1,0 +1,29 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/reaper_texture/soul_wave_1",
+		"particle": "item/reaper_texture/soul_wave_1"
+	},
+	"elements": [
+		{
+			"from": [8, -12, -12],
+			"to": [8, 28, 28],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"east": {"uv": [16, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 0, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 180, 0],
+			"translation": [-6, 0.75, 19.75],
+			"scale": [3, 3, 3]
+		}
+	}
+}

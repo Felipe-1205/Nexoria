@@ -1,0 +1,51 @@
+name: Divine Punishment
+lore:
+- '&eObtienes brillo e invulnerabilidad. Todos los aliados'
+- '&ecerca ganan curación y fuerza. Todos los enemigos'
+- '&ecerca son afectados con una luz cegadora dándoles'
+- '&edebilidad y lentitud. Reciben una gran cantidad de'
+- '&edaño y quedan aturdidos. Mientras haces esto no'
+- '&epuedes castear otros hechizos.'
+- '&eEres la encarnación de tu Dios.'
+- ''
+- '&a{heal} Cura'
+- '&c{damage} Daño'
+- '&c{duration}s Duración'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2145'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 8
+duration:
+  base: 10
+  per-level: 0.2
+  min: 8
+  max: 10
+heal:
+  base: 8
+  per-level: 1
+  min: 5
+  max: 8
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 30
+  per-level: 0
+  min: 30
+  max: 30
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 180
+  per-level: -0.1
+  min: 180
+  max: 180

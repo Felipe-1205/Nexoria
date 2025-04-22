@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/nocsy_thread_ball"},"elements":[{"from":[7.0,5.5,7.8],"to":[7.0,10.5,12.8],"faces":{"east":{"uv":[11.5,9.0,9.0,11.5],"tintindex":0,"rotation":0,"texture":"#0"},"west":{"uv":[9.0,9.0,11.5,11.5],"tintindex":0,"rotation":0,"texture":"#0"}},"rotation":{"origin":[7.0,8.0,10.3],"angle":-22.5,"axis":"y"}}],"display":{"gui":{"rotation":[30,225,0]}}}

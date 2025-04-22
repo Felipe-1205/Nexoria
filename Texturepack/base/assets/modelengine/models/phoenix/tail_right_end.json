@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/phoenix"},"elements":[{"from":[6.0,8.0,-2.5],"to":[14.0,8.0,28.499998],"faces":{"up":{"uv":[3.75,5.6875,4.25,3.75],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[3.75,3.75,4.25,5.6875],"tintindex":0,"rotation":0,"texture":"#0"}},"rotation":{"origin":[10.0,8.0,13.0],"angle":22.5,"axis":"y"}}],"display":{"gui":{"rotation":[30,225,0]}}}

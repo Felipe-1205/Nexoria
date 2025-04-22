@@ -1,0 +1,41 @@
+condition:
+  profession:
+    positive: '&a✔ Requiere #level# en #profession#'
+    negative: '&c✖ Requiere #level# en #profession#'
+  mana:
+    positive: '&a✔ Requiere #mana# Maná'
+    negative: '&c✖ Requiere #mana# Maná'
+  money:
+    positive: '&a✔ Requiere $#money#'
+    negative: '&c✖ Requiere $#money#'
+  level:
+    positive: '&a✔ Requiere Nivel #level#'
+    negative: '&c✖ Requiere Nivel #level#'
+  stellium:
+    positive: '&a✔ Requiere #stellium# Stellium'
+    negative: '&c✖ Requiere #stellium# Stellium'
+  stamina:
+    positive: '&a✔ Requiere #stamina# Resistencia'
+    negative: '&c✖ Requiere #stamina# Resistencia'
+  permission:
+    positive: '&a✔ #display#'
+    negative: '&c✖ #display#'
+  placeholder:
+    positive: '&a✔ #display#'
+    negative: '&c✖ #display#'
+  attribute:
+    positive: '&a✔ Requiere #points# #attribute#'
+    negative: '&c✖ Requiere #points# #attribute#'
+  class:
+    positive: '&a✔ Clase Requerida: #class#'
+    negative: '&c✖ Clase Requerida: #class#'
+  food:
+    positive: '&a✔ Requiere #food# Comida'
+    negative: '&c✖ Requiere #food# Comida'
+ingredient:
+  mmoitem:
+    positive: '&8✔ &7#amount# #level##item#'
+    negative: '&c✖ &7#amount# #level##item#'
+  vanilla:
+    positive: '&8✔ &7#amount# #item#'
+    negative: '&c✖ &7#amount# #item#'

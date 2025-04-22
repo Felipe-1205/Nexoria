@@ -1,0 +1,38 @@
+name: Fireball Depredadora
+lore:
+- Lanza una bola de fuego teledirigida
+- hacia tu objetivo que inflige &8{damage} &7puntos de
+- daño, intentar escapar es en vano, te perseguirá
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: FIREWORK_STAR
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+ignite:
+  base: 3
+  per-level: 0.5
+damage:
+  base: 4
+  per-level: 0.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 10
+  per-level: 1.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 15
+  per-level: -0.5

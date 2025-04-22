@@ -1,0 +1,188 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "herobrine.png",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"animations": [
+				{
+					"head.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"animations": [
+				{
+					"headwear.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "herobrine_full",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "body_herobrine",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"boxes": [
+								{"coordinates": [-4, -12.7, -2, 8, 12, 4], "textureOffset": [16, 16]}
+							]
+						},
+						{
+							"id": "left_arm_herobrine",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [-5, -2, 0],
+							"submodels": [
+								{
+									"id": "left_arm_herobrine_rot",
+									"invertAxis": "xy",
+									"mirrorTexture": "u",
+									"translate": [0, 0, 0],
+									"rotate": [0, 0, -2.5],
+									"boxes": [
+										{"coordinates": [-2.96933, -10.70246, -1.96055, 4, 12, 4], "textureOffset": [40, 16]}
+									]
+								}
+							]
+						},
+						{
+							"id": "right_arm_herobrine",
+							"invertAxis": "xy",
+							"translate": [5, -2, 0],
+							"rotate": [0, 0, -2.5],
+							"submodels": [
+								{
+									"id": "right_arm_herobrine_rot",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"rotate": [0, 0, 2.5],
+									"boxes": [
+										{"coordinates": [-1.00029, -10.7036, -2.03945, 4, 12, 4], "textureOffset": [40, 16]}
+									]
+								}
+							]
+						},
+						{
+							"id": "right_leg_herobrine",
+							"invertAxis": "xy",
+							"translate": [1.9, -12, -1.25],
+							"boxes": [
+								{"coordinates": [-1.9, -12, -0.75, 4, 12, 4], "textureOffset": [0, 16]}
+							]
+						},
+						{
+							"id": "left_leg_herobrine",
+							"invertAxis": "xy",
+							"mirrorTexture": "u",
+							"translate": [-1.9, -12, -1.25],
+							"boxes": [
+								{"coordinates": [-2.1, -12, -0.75, 4, 12, 4], "textureOffset": [0, 16]}
+							]
+						},
+						{
+							"id": "head_herobrine",
+							"invertAxis": "xy",
+							"translate": [0, -1, 0],
+							"boxes": [
+								{"coordinates": [-4, 0.05, -4, 8, 8, 8], "textureOffset": [0, 0]}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.punch": "clamp(if(swing_progress > 0, var.punch + 70 * frame_time, var.punch - 70 * frame_time), 0,100)",
+					"var.punchinward": "clamp(if(swing_progress > 0.3, var.punchinward + 50 * frame_time, var.punchinward - 50 * frame_time), 0, 50)"
+				},
+				{
+					"body.ty": "300",
+					"herobrine_full.ty": "-346",
+					"herobrine_full.sx": "torad(110)",
+					"herobrine_full.sy": "torad(110)",
+					"herobrine_full.sz": "torad(110)"
+				},
+				{
+					"left_leg_herobrine.rx": "sin(limb_swing * 0.2) *limb_speed * 1.2",
+					"right_leg_herobrine.rx": "-sin(limb_swing * 0.2)*limb_speed * 1.2"
+				},
+				{
+					"left_arm_herobrine.rx": "-sin(limb_swing * 0.2)*limb_speed * 1.2 + sin(time*0.1)*0.05",
+					"left_arm_herobrine.rz": "clamp(-sin(time*0.05)*0.05, -120, 0)"
+				},
+				{
+					"right_arm_herobrine.rx": "sin(limb_swing * 0.2)*limb_speed * 1.2 + sin(time*0.1)*0.05 + -torad(var.punch)*1.5",
+					"right_arm_herobrine.rz": "-clamp(-sin(time*0.05)*0.05, -120, 0) + -torad(var.punchinward)*1.5",
+					"right_arm_herobrine.ry": "-torad(var.punchinward)*1.5"
+				},
+				{
+					"head_herobrine.rx": "head_pitch* 0.01",
+					"head_herobrine.ry": "head_yaw* 0.01"
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [5, -22, 0],
+			"animations": [
+				{
+					"left_arm.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"animations": [
+				{
+					"right_arm.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [1.9, -12, 0],
+			"animations": [
+				{
+					"left_leg.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"animations": [
+				{
+					"right_arm.ty": "300"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'bbb'
+- 'aaa'
+source:
+  a: minecraft:oak_planks
+  b: minecraft:book
+unlock: false
+result: minecraft:bookshelf 2

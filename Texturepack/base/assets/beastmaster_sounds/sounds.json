@@ -1,0 +1,93 @@
+{
+  "samus.beast_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/beast_summon"
+    ]
+  },
+  "samus.claw_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/claw_slash_1",
+	  "samus/beastmaster/claw_slash_2"
+    ]
+  },
+  "samus.fenrir_howl": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/fenrir_howl"
+    ]
+  },
+  "samus.fenrir_skill_1": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/fenrir_skill_1"
+    ]
+  },
+  "samus.fenrir_skill_2": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/fenrir_skill_2"
+    ]
+  },
+  "samus.hunt_arrow": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/hunt_arrow"
+    ]
+  },
+  "samus.owl_skill": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/owl_skill"
+    ]
+  },
+  "samus.owl_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/owl_slash"
+    ]
+  },
+  "samus.panther_skill": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/panther_skill"
+    ]
+  },
+  "samus.trap_chain": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/trap_chain"
+    ]
+  },
+  "samus.turtle_skill": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/turtle_skill"
+    ]
+  },
+  "samus.turtle_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/turtle_smash"
+    ]
+  },
+  "samus.water_sync": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/water_sync"
+    ]
+  },
+  "samus.wind_sync": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/wind_sync"
+    ]
+  },
+  "samus.turtle_strike": {
+    "category": "master",
+    "sounds": [
+      "samus/beastmaster/turtle_strike"
+    ]
+  }
+}

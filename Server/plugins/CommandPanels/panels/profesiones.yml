@@ -1,0 +1,117 @@
+panels:
+  profesiones:
+    perm: "default"
+    rows: 6
+    title: '&c» &eSelecciona Tu Profesion!'
+    custom-item:
+      example1:
+          material: DIAMOND_HOE
+          customdata: 15
+          lore:
+          - '&4» &cSelecciona tu Profesion!'
+          - ''
+          - '&6» &3Parate encima'
+          - '&6» &3Para Mas Informacion!'
+          item-flags:
+          - HIDE_ATTRIBUTES
+          name: '&0'
+          stack: 1
+    empty: example1
+    panelType:
+    - unmovable
+    item:
+      '11':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Los herreros son maestros en la'  
+        - '&7fabricación de todo tipo de'  
+        - '&7equipamiento.'  
+        - '&7Desde poderosas espadas hasta'  
+        - '&7resistentes armaduras, pueden'  
+        - '&7forjar herramientas que cambian'  
+        - '&7el curso de cualquier enfrentamiento.'  
+        - ''
+        name: '&6&lHerrero'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ENCHANTS
+        - HIDE_DESTROYS
+        - HIDE_PLACED_ON
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack profesiones herrero
+        - console= mi give CONSUMABLE HERREROS %cp-player-name% 1
+        - cpc
+      '38':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Capaces de crear alimentos únicos'  
+        - '&7que no solo satisfacen el hambre,'  
+        - '&7sino que también ofrecen beneficios'  
+        - '&7especiales a quienes los consumen.'  
+        - '&7Los taberneros son esenciales para'  
+        - '&7quienes buscan más que una simple'  
+        - '&7comida.'  
+        - ''
+        name: '&6&lTabernero'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack profesiones tabernero
+        - console= mi give CONSUMABLE TABERNEROS %cp-player-name% 1
+        - cpc
+      '42':
+        material: stick
+        stack: 1
+        lore:  
+        - ''  
+        - '&7Expertos en la integración de gemas'  
+        - '&7únicas y la creación de accesorios'  
+        - '&7especiales.'  
+        - '&7Los joyeros pueden infundir poder en'  
+        - '&7anillos, collares y otros objetos que'  
+        - '&7otorgan habilidades y mejoras a'  
+        - '&7quienes los portan.'  
+        - ''
+        name: '&6&lJoyero'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack profesiones joyero
+        - console= mi give CONSUMABLE JOYEROS %cp-player-name% 1
+        - cpc
+      '15':
+        material: stick
+        stack: 1
+        lore:
+        - ''
+        - '&7Especialistas en la creación de'
+        - '&7pociones y brebajes.'
+        - '&7Ya sea para sanar, mejorar'
+        - '&7habilidades o causar efectos'
+        - '&7mágicos, los alquimistas son'
+        - '&7clave para aquellos que buscan'
+        - '&7potenciarse antes de una batalla.'
+        - ''
+        name: '&6&lAlquimista'
+        item-flags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        item-enchantments:
+        - DURABILITY
+        commands:
+        - console= lp user %cp-player-name% parent settrack profesiones alquimista
+        - console= mi give CONSUMABLE ALQUIMISTAS %cp-player-name% 1
+        - cpc

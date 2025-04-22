@@ -1,0 +1,41 @@
+name: Cloak of Hastur
+lore:
+- '&5Summon a cloaked shadow creature slowly creeping'
+- '&5up from the ground, spreading an aura that gives'
+- '&5fear and blindness effect to nearby enemies.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Fear/Blindness Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2137'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+duration:
+  base: 2
+  per-level: 0.1
+  min: 2
+  max: 3
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.1
+  min: 4
+  max: 5

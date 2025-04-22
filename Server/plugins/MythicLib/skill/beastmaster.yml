@@ -1,0 +1,36 @@
+HUNT:
+    mythicmobs-skill-id: Hunt
+    modifiers:
+    - damage
+
+QUICK_DASH:
+    mythicmobs-skill-id: Quick_Dash
+    modifiers:
+    - damage
+    
+BEAST_AURA:
+    mythicmobs-skill-id: Beast_Aura
+    passive-type: TIMER
+    modifiers:
+    - damage
+    
+VICIOUS_SYNC:
+    mythicmobs-skill-id: Vicious_Sync
+    modifiers:
+    - damage
+    
+SUMMON_BEAST:
+    mythicmobs-skill-id: Summon_Beast
+    
+HUNTERS_TRAP:
+    mythicmobs-skill-id: Hunters_Trap
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - duration
+    
+AWAKENING_OF_FENRIR:
+    mythicmobs-skill-id: Awakening_Of_Fenrir
+    modifiers:
+    - damage
+    - duration

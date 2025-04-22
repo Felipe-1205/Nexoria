@@ -1,0 +1,35 @@
+name: Double Edge
+lore:
+- '&4Libera un doble corte dañando y causando sangrado'
+- '&4a tus enemigos, ocasiona la misma cantidad'
+- '&4de daño y sangrado a ti mismo.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2180'
+damage:
+  base: 20
+  per-level: 1
+  min: 6
+  max: 20
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 5
+  per-level: 0
+  min: 0
+  max: 5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 30
+  per-level: -0.1
+  min: 3
+  max: 30

@@ -1,0 +1,33 @@
+name: Terremoto
+lore:
+- Desata este proyectil que mueve el suelo,
+- que ondula la tierra, dañando
+- y desorientando a tus enemigos en
+- su camino
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: NETHERITE_AXE
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 6
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 6
+  per-level: 0.2

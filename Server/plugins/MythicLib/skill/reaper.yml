@@ -1,0 +1,36 @@
+SOUL_SLICE:
+    mythicmobs-skill-id: Soul_Slice
+    modifiers:
+    - damage
+
+DEATH_SPIN:
+    mythicmobs-skill-id: Death_Spin
+    modifiers:
+    - damage
+    
+SOUL_COLLECTOR:
+    mythicmobs-skill-id: Soul_Collector
+    passive-type: TIMER
+    
+REAPING_CLAW:
+    mythicmobs-skill-id: Reaping_Claw
+    modifiers:
+    - damage
+    
+SURGE:
+    mythicmobs-skill-id: Surge
+    modifiers:
+    - damage
+    
+SOUL_SCYTHE:
+    mythicmobs-skill-id: Soul_Scythe
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - heal
+    
+GOD_OF_DEATH:
+    mythicmobs-skill-id: God_Of_Death
+    modifiers:
+    - damage
+    - duration

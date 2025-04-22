@@ -1,0 +1,32 @@
+name: Summon Beast
+lore:
+- '&fSummon your Beast. you can freely rotate'
+- '&fbetween the summons. Cast again to summon a different'
+- '&fbeast, but your last summon goes away.'
+- ''
+- '&6Summon order:'
+- '&fPanther - Owl - Turtle - None'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2151'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 0
+  min: 0
+  max: 2

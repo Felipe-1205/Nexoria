@@ -1,0 +1,1690 @@
+name: 'Ars Luminis (#page#/#max#)'
+max-queue-size: 64
+sound: BLOCK_SMITHING_TABLE_USE
+layout: awn
+items:
+    fill:
+        material: STICK
+        name: '&4&kpedestal runico base'
+    no-recipe:
+        material: STICK
+        name: '&4&kpedestal runico activo'
+    no-queue-item:
+        material: STICK
+        name: '&4&kpedestal runico activo'
+recipes:
+#---
+    ANILLOCETUS:
+        output:
+            type: accessory
+            id: CETUS2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MANZANA,amount=24}'
+        - 'mmoitem{type=accessory,id=CETUS1,amount=1}'
+    ANILLOCAIDOS:
+        output:
+            type: accessory
+            id: CAIDOS2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MANZANA,amount=24}'
+        - 'mmoitem{type=accessory,id=CAIDOS1,amount=1}'
+    ANILLOMURCIELAGO:
+        output:
+            type: accessory
+            id: MURCIELAGO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MANZANA,amount=24}'
+        - 'mmoitem{type=accessory,id=MURCIELAGO1,amount=1}'
+#---
+    ANILLOJO:
+        output:
+            type: accessory
+            id: OJO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=24}'
+        - 'mmoitem{type=accessory,id=OJO1,amount=1}'
+    ANILLOPLUMAS:
+        output:
+            type: accessory
+            id: PLUMAS2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=24}'
+        - 'mmoitem{type=accessory,id=PLUMAS1,amount=1}'
+    ANILLOPULSOPOCOMUN:
+        output:
+            type: accessory
+            id: ANILLOPULSO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=ZANAHORIA,amount=24}'
+#---
+    ANILLOPULSORARO:
+        output:
+            type: accessory
+            id: ANILLOPULSO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MAIZ,amount=24}'
+        - 'mmoitem{type=accessory,id=ANILLOPULSO1,amount=1}'
+    ANILLOSANGRE:
+        output:
+            type: accessory
+            id: SANGRE2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MAIZ,amount=24}'
+        - 'mmoitem{type=accessory,id=SANGRE1,amount=1}'
+    ANILLOTITANIO:
+        output:
+            type: accessory
+            id: TITANIO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=MAIZ,amount=24}'
+        - 'mmoitem{type=accessory,id=TITANIO1,amount=1}'
+#---
+    ANILLOVAMPIRO:
+        output:
+            type: accessory
+            id: VAMPIRO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=REBANADASANDIA,amount=24}'
+        - 'mmoitem{type=accessory,id=VAMPIRO1,amount=1}'
+    ANILLOVELOCIDAD:
+        output:
+            type: accessory
+            id: VELOCIDAD2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=REBANADASANDIA,amount=24}'
+        - 'mmoitem{type=accessory,id=VELOCIDAD1,amount=1}'
+    ANILLOZOMBIE:
+        output:
+            type: accessory
+            id: ZOMBIE2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=REBANADASANDIA,amount=24}'
+        - 'mmoitem{type=accessory,id=ZOMBIE1,amount=1}'
+#---
+    ANILLODEMNISCIENTE:
+        output:
+            type: accessory
+            id: OMNISCIENTE2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=24}'
+        - 'mmoitem{type=accessory,id=OMNISCIENTE1,amount=1}'
+    ANILLODULCE:
+        output:
+            type: accessory
+            id: DULCES2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=24}'
+        - 'mmoitem{type=accessory,id=DULCES1,amount=1}'
+    ANILLOGLACIAL:
+        output:
+            type: accessory
+            id: GLACIAL2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=CANAZUCAR,amount=24}'
+        - 'mmoitem{type=accessory,id=GLACIAL1,amount=1}'
+#---
+    ANILLOMARCHITO:
+        output:
+            type: accessory
+            id: MARCHITO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=PAPA,amount=24}'
+    ANILLOMNISCIENTE:
+        output:
+            type: accessory
+            id: OMNISCIENTE3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=PAPA,amount=24}'
+        - 'mmoitem{type=accessory,id=OMNISCIENTE2,amount=1}'
+    ANILLOPROTECTOR:
+        output:
+            type: accessory
+            id: PROTECTORES2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=PAPA,amount=24}'
+        - 'mmoitem{type=accessory,id=PROTECTORES1,amount=1}'
+#-----
+    ARTEFACTOCETUS:
+        output:
+            type: accessory
+            id: CETUS3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABETO,amount=64}'
+        - 'mmoitem{type=material,id=BETABEL,amount=24}'
+        - 'mmoitem{type=accessory,id=CETUS2,amount=1}'
+    ARTEFACTOMARCHITO:
+        output:
+            type: accessory
+            id: MARCHITO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=BETABEL,amount=24}'
+        - 'mmoitem{type=accessory,id=MARCHITO1,amount=1}'
+    BRASONBESTIASCOMUN:
+        output:
+            type: accessory
+            id: BRASONBESTIAS1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=BETABEL,amount=24}'
+#---
+    BRASONBESTIASPOCOMUN:
+        output:
+            type: accessory
+            id: BRASONBESTIAS2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=SALVIA,amount=24}'
+        - 'mmoitem{type=accessory,id=BRASONBESTIAS1,amount=1}'
+    CERDOAGRIETADO:
+        output:
+            type: accessory
+            id: CERDO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=SALVIA,amount=24}'
+        - 'mmoitem{type=accessory,id=CERDO1,amount=1}'
+    CERDOROTO:
+        output:
+            type: accessory
+            id: CERDO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=SALVIA,amount=24}'
+#---
+    COLGANTECAIDOS:
+        output:
+            type: accessory
+            id: CAIDOS1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=FRIJOLES,amount=24}'
+    CRANEONECROTICOBASE:
+        output:
+            type: accessory
+            id: CRANEONECRO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=FRIJOLES,amount=24}'
+    CRANEONECROTICOPOCOMUN:
+        output:
+            type: accessory
+            id: CRANEONECRO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=FRIJOLES,amount=24}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO1,amount=1}'
+#---
+    DIENTEBRONCE:
+        output:
+            type: accessory
+            id: DIENTE1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=ALGA,amount=24}'
+    DIENTEPLATA:
+        output:
+            type: accessory
+            id: DIENTE2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=ALGA,amount=24}'
+        - 'mmoitem{type=accessory,id=DIENTE1,amount=1}'
+    ELIMINADOR4000:
+        output:
+            type: accessory
+            id: ELIMINADOR1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=ALGA,amount=24}'
+#---
+    ELIMINADOR5000:
+        output:
+            type: accessory
+            id: ELIMINADOR2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=24}'
+        - 'mmoitem{type=accessory,id=ELIMINADOR1,amount=1}'
+    INSIGNIAHOGUERA1:
+        output:
+            type: accessory
+            id: INSIGNIAHOGUERA1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=24}'
+    INSIGNIAHOGUERA2:
+        output:
+            type: accessory
+            id: INSIGNIAHOGUERA2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=GRANOSCACAO,amount=24}'
+        - 'mmoitem{type=accessory,id=INSIGNIAHOGUERA1,amount=1}'
+#---
+    LIBROAVANZADO:
+        output:
+            type: accessory
+            id: LIBRO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=LINAZA,amount=24}'
+        - 'mmoitem{type=accessory,id=LIBRO1,amount=1}'
+    LIBROAVANCES:
+        output:
+            type: accessory
+            id: LIBRO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=LINAZA,amount=24}'
+    LIBROBRILLOCERULEO:
+        output:
+            type: accessory
+            id: TOMO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=LINAZA,amount=24}'
+#---
+    LIBROFULGORAUREO:
+        output:
+            type: accessory
+            id: TOMO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=CALABAZA,amount=24}'
+        - 'mmoitem{type=accessory,id=TOMO2,amount=1}'
+    LIBRORESPLANDORAMATISTA:
+        output:
+            type: accessory
+            id: TOMO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ABEDULTIER1,amount=64}'
+        - 'mmoitem{type=material,id=CALABAZA,amount=24}'
+        - 'mmoitem{type=accessory,id=TOMO1,amount=1}'
+    NUCLEOMAGMA:
+        output:
+            type: accessory
+            id: NUCLEOS2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=CALABAZA,amount=24}'
+        - 'mmoitem{type=accessory,id=NUCLEOS1,amount=1}'
+#---
+    NUCLEOINFERNAL:
+        output:
+            type: accessory
+            id: NUCLEOS1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=BAMBU,amount=24}'
+    TALISMANCETUS:
+        output:
+            type: accessory
+            id: CETUS1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=BAMBU,amount=24}'
+    TALISMANOJO:
+        output:
+            type: accessory
+            id: OJO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=BAMBU,amount=24}'
+#---
+    TALISMANPLUMAS:
+        output:
+            type: accessory
+            id: PLUMAS1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=CACTUS,amount=24}'
+    TALISMANREGALOBLANCO:
+        output:
+            type: accessory
+            id: REGALO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=CACTUS,amount=24}'
+    TALISMANREGALOVERDE:
+        output:
+            type: accessory
+            id: REGALO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=CACTUS,amount=24}'
+        - 'mmoitem{type=accessory,id=REGALO1,amount=1}'
+#---
+    TALISMANSANGRE:
+        output:
+            type: accessory
+            id: SANGRE1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NENUFAR,amount=24}'
+    TALISMANTITANIO:
+        output:
+            type: accessory
+            id: TITANIO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NENUFAR,amount=24}'
+    TALISMANVAMPIRO:
+        output:
+            type: accessory
+            id: VAMPIRO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NENUFAR,amount=24}'
+#---
+    TALISMANVELOCIDAD:
+        output:
+            type: accessory
+            id: VELOCIDAD1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=TRIGO,amount=24}'
+    TALISMANPUEBLOAZUL:
+        output:
+            type: accessory
+            id: PUEBLO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=TRIGO,amount=24}'
+        - 'mmoitem{type=accessory,id=PUEBLO1,amount=1}'
+    TALISMANPUEBLOMORADO:
+        output:
+            type: accessory
+            id: PUEBLO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=TRIGO,amount=24}'
+        - 'mmoitem{type=accessory,id=PUEBLO2,amount=1}'
+#---
+    TALISMANDULCE:
+        output:
+            type: accessory
+            id: DULCES1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=PEPINILLO,amount=24}'
+    TALISMANGLACIAL:
+        output:
+            type: accessory
+            id: GLACIAL1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=PEPINILLO,amount=24}'
+    TALISMANMURCIELAGO:
+        output:
+            type: accessory
+            id: MURCIELAGO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=PEPINILLO,amount=24}'
+#---
+    TALISMANOMNISCIENTE:
+        output:
+            type: accessory
+            id: OMNISCIENTE1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NABOS,amount=24}'
+    TALISMANPROTECTOR:
+        output:
+            type: accessory
+            id: PROTECTORES1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NABOS,amount=24}'
+    TALISMANZOMBIE:
+        output:
+            type: accessory
+            id: ZOMBIE1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=PEPINODEMAR,amount=12}'
+        - 'mmoitem{type=material,id=ROBLETIER1,amount=64}'
+        - 'mmoitem{type=material,id=NABOS,amount=24}'
+#-------
+    ARTEFACTODEFRUTO:
+        output:
+            type: accessory
+            id: FRUTO
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=48}'
+    ARTEFACTODELOSCAIDOS:
+        output:
+            type: accessory
+            id: CAIDOS3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=48}'
+        - 'mmoitem{type=accessory,id=CAIDOS2,amount=1}'
+    ARTEFACTODEMURCIELAGO:
+        output:
+            type: accessory
+            id: MURCIELAGO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESMANDRA,amount=48}'
+        - 'mmoitem{type=accessory,id=MURCIELAGO2,amount=1}'
+#---
+    ARTEFACTODEPLUMAS:
+        output:
+            type: accessory
+            id: PLUMAS3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=48}'
+        - 'mmoitem{type=accessory,id=PLUMAS2,amount=1}'
+    ARTEFACTODESANGRE:
+        output:
+            type: accessory
+            id: SANGRE3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=48}'
+        - 'mmoitem{type=accessory,id=SANGRE2,amount=1}'
+    ARTEFACTODETITANIO:
+        output:
+            type: accessory
+            id: TITANIO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESBELLA,amount=48}'
+        - 'mmoitem{type=accessory,id=TITANIO2,amount=1}'
+#---
+    ARTEFACTODEVAMPIRO:
+        output:
+            type: accessory
+            id: VAMPIRO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=48}'
+        - 'mmoitem{type=accessory,id=VAMPIRO2,amount=1}'
+    ARTEFACTODEVELOCIDAD:
+        output:
+            type: accessory
+            id: VELOCIDAD3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=48}'
+        - 'mmoitem{type=accessory,id=VELOCIDAD2,amount=1}'
+    ARTEFACTODEOJO:
+        output:
+            type: accessory
+            id: OJO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESRUGUAMAR,amount=48}'
+        - 'mmoitem{type=accessory,id=OJO2,amount=1}'
+#---
+    ARTEFACTODEPUEBLODORADO:
+        output:
+            type: accessory
+            id: PUEBLO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=48}'
+        - 'mmoitem{type=accessory,id=PUEBLO3,amount=1}'
+    ARTEFACTODULCE:
+        output:
+            type: accessory
+            id: DULCES3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=48}'
+        - 'mmoitem{type=accessory,id=DULCES2,amount=1}'
+    ARTEFACTOESTOICO:
+        output:
+            type: accessory
+            id: ESTOICO2
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FLORESAJENJO,amount=48}'
+        - 'mmoitem{type=accessory,id=ESTOICO1,amount=1}'
+#---
+    ARTEFACTOGLACIAL:
+        output:
+            type: accessory
+            id: GLACIAL3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=KENI,amount=48}'
+        - 'mmoitem{type=accessory,id=GLACIAL2,amount=1}'
+    AMULETOVISIONOCTURNA:
+        output:
+            type: accessory
+            id: VISIONNOCTURNA
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=KENI,amount=48}'
+    ANILLOPULSOEPICO:
+        output:
+            type: accessory
+            id: ANILLOPULSO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=JUNGLATIER2,amount=128}'
+        - 'mmoitem{type=material,id=KENI,amount=48}'
+        - 'mmoitem{type=accessory,id=ANILLOPULSO2,amount=1}'
+#---
+    ANILLOPULSOLEGENDARIO:
+        output:
+            type: accessory
+            id: ANILLOPULSO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASBELLAS,amount=48}'
+        - 'mmoitem{type=accessory,id=ANILLOPULSO3,amount=1}'
+    ANILLODEHOJAS:
+        output:
+            type: accessory
+            id: HOJAS
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASBELLAS,amount=48}'
+#---
+    ARTEFACTOPROTECTOR:
+        output:
+            type: accessory
+            id: PROTECTORES3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ARANDANO,amount=48}'
+    ARTEFACTOZOMBIE:
+        output:
+            type: accessory
+            id: ZOMBIE3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ARANDANO,amount=48}'
+        - 'mmoitem{type=accessory,id=ZOMBIE2,amount=1}'
+#---
+    BRASONBESTIASRARO:
+        output:
+            type: accessory
+            id: BRASONBESTIAS3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ESPINO,amount=48}'
+        - 'mmoitem{type=accessory,id=BRASONBESTIAS2,amount=1}'
+    CERDITODEAHORROS:
+        output:
+            type: accessory
+            id: CERDO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=ESPINO,amount=48}'
+        - 'mmoitem{type=accessory,id=CERDO2,amount=1}'
+#---
+    BRASONBESTIASMUYRARO:
+        output:
+            type: accessory
+            id: BRASONBESTIAS4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=MORA,amount=48}'
+        - 'mmoitem{type=accessory,id=BRASONBESTIAS3,amount=1}'
+    CRANEONECROTICOMUYRARO:
+        output:
+            type: accessory
+            id: CRANEONECRO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=MORA,amount=48}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO3,amount=1}'
+#---
+    ELMINADOR6000:
+        output:
+            type: accessory
+            id: ELIMINADOR3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=UVAS,amount=48}'
+        - 'mmoitem{type=accessory,id=ELIMINADOR2,amount=1}'
+    ELMINADOR7000:
+        output:
+            type: accessory
+            id: ELIMINADOR4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=UVAS,amount=48}'
+        - 'mmoitem{type=accessory,id=ELIMINADOR3,amount=1}'
+#---
+    DIENTEDIAMANTE:
+        output:
+            type: accessory
+            id: DIENTE4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=CEREZA,amount=48}'
+        - 'mmoitem{type=accessory,id=DIENTE3,amount=1}'
+    DIENTEDEORO:
+        output:
+            type: accessory
+            id: DIENTE3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=CEREZA,amount=48}'
+        - 'mmoitem{type=accessory,id=DIENTE2,amount=1}'
+#---
+    CRANEONECROTICORARO:
+        output:
+            type: accessory
+            id: CRANEONECRO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FRAMBUESA,amount=48}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO2,amount=1}'
+    INSIGNIAHOGUERA3:
+        output:
+            type: accessory
+            id: INSIGNIAHOGUERA3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ACACIATIER2,amount=128}'
+        - 'mmoitem{type=material,id=FRAMBUESA,amount=48}'
+        - 'mmoitem{type=accessory,id=INSIGNIAHOGUERA2,amount=1}'
+#---
+    INSIGNIAHOGUERA4:
+        output:
+            type: accessory
+            id: INSIGNIAHOGUERA4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASDULCES,amount=48}'
+        - 'mmoitem{type=accessory,id=INSIGNIAHOGUERA3,amount=1}'
+    LIBRODEGRANAVANCE:
+        output:
+            type: accessory
+            id: LIBRO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASDULCES,amount=48}'
+        - 'mmoitem{type=accessory,id=LIBRO2,amount=1}'
+#---
+    NUCLEOPESADO:
+        output:
+            type: accessory
+            id: NUCLEOS3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=48}'
+        - 'mmoitem{type=accessory,id=NUCLEOS2,amount=1}'
+    PARALAVAS:
+        output:
+            type: accessory
+            id: PARALAVA
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=BAYASOWAN,amount=48}'
+#---
+    RELIQUIATITANIO:
+        output:
+            type: accessory
+            id: TITANIO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=RODAJAMELON,amount=48}'
+        - 'mmoitem{type=accessory,id=TITANIO3,amount=1}'
+    RELIQUIAOJO:
+        output:
+            type: accessory
+            id: OJO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=RODAJAMELON,amount=48}'
+        - 'mmoitem{type=accessory,id=OJO3,amount=1}'
+#---
+    RELIQUIADULCE:
+        output:
+            type: accessory
+            id: DULCES4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=CIRUELAS,amount=48}'
+        - 'mmoitem{type=accessory,id=DULCES3,amount=1}'
+    RELIQUIAMARCHITA:
+        output:
+            type: accessory
+            id: MARCHITO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=CIRUELAS,amount=48}'
+        - 'mmoitem{type=accessory,id=MARCHITO2,amount=1}'
+#---
+    LIBRODELSABIO:
+        output:
+            type: accessory
+            id: LIBRO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=NARANJA,amount=48}'
+        - 'mmoitem{type=accessory,id=LIBRO3,amount=1}'
+    TALISMANRAICES:
+        output:
+            type: accessory
+            id: RAICES
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=NARANJA,amount=48}'
+#---
+    TALISMANREGALOAZUL:
+        output:
+            type: accessory
+            id: REGALO3
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=PERA,amount=48}'
+        - 'mmoitem{type=accessory,id=REGALO2,amount=1}'
+    TALISMANREGALOMORADO:
+        output:
+            type: accessory
+            id: REGALO4
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=PERA,amount=48}'
+        - 'mmoitem{type=accessory,id=REGALO3,amount=1}'
+#---
+    TALISMANESTOICO:
+        output:
+            type: accessory
+            id: ESTOICO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=TOMATE,amount=48}'
+    TALISMANPUEBLOVERDE:
+        output:
+            type: accessory
+            id: PUEBLO1
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=REPOLLO,amount=24}'
+        - 'mmoitem{type=material,id=ROBLEOSCUROTIER2,amount=128}'
+        - 'mmoitem{type=material,id=TOMATE,amount=48}'
+#-------
+    LIBRODELOSANTIGUOS:
+        output:
+            type: accessory
+            id: LIBRO5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHORUS,amount=48}'
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=48}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=256}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=24}'
+        - 'mmoitem{type=accessory,id=LIBRO4,amount=1}'
+    TALISMANDEREGALODORADO:
+        output:
+            type: accessory
+            id: REGALO5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=CHORUS,amount=48}'
+        - 'mmoitem{type=material,id=BAYASBRILLANTES,amount=48}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=256}'
+        - 'mmoitem{type=material,id=RAIZMADRAGORA,amount=24}'
+        - 'mmoitem{type=accessory,id=REGALO4,amount=1}'
+    ANILLODEPULSOMITICO:
+        output:
+            type: accessory
+            id: ANILLOPULSO5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=48}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=48}'
+        - 'mmoitem{type=material,id=MANGLETIER3,amount=256}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=24}'
+        - 'mmoitem{type=accessory,id=ANILLOPULSO4,amount=1}'
+#---
+    TALISMANCHAMBEADOR:
+        output:
+            type: accessory
+            id: EXPGRANJA
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=FRUTACHORUS,amount=48}'
+        - 'mmoitem{type=material,id=FLORCHORUS,amount=48}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=BAYASBELLADONA,amount=24}'
+    TALISMANLENIADOR:
+        output:
+            type: accessory
+            id: EXPLENADOR
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=TABACO,amount=48}'
+        - 'mmoitem{type=material,id=CEBADA,amount=48}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=24}'
+    TALISMANMINERO:
+        output:
+            type: accessory
+            id: EXPMINERO
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=TABACO,amount=48}'
+        - 'mmoitem{type=material,id=CEBADA,amount=48}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=HOJASDERUGUAMA,amount=24}'
+#---
+    TALISMANPESCA:
+        output:
+            type: accessory
+            id: EXPPESCA
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAMO,amount=48}'
+        - 'mmoitem{type=material,id=HONGOROJO,amount=48}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=24}'
+    ARTEFACTOXP:
+        output:
+            type: accessory
+            id: EXPGENERAL
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=CANAMO,amount=48}'
+        - 'mmoitem{type=material,id=HONGOROJO,amount=48}'
+        - 'mmoitem{type=material,id=CEREZOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=24}'
+#---
+    INSIGNIAHOGUERA5:
+        output:
+            type: accessory
+            id: INSIGNIAHOGUERA5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=HONGOCAFE,amount=48}'
+        - 'mmoitem{type=material,id=PEPINO,amount=48}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=HOJASAJENJO,amount=24}'
+        - 'mmoitem{type=accessory,id=INSIGNIAHOGUERA4,amount=1}'
+    LIBROANCESTRAL:
+        output:
+            type: accessory
+            id: LIBRO6
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=HONGOCAFE,amount=48}'
+        - 'mmoitem{type=material,id=PEPINO,amount=48}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=24}'
+        - 'mmoitem{type=accessory,id=LIBRO5,amount=1}'
+#---
+    BRASONBESTIASLEGENDARIO:
+        output:
+            type: accessory
+            id: BRASONBESTIAS5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=ARROZCRUDO,amount=48}'
+        - 'mmoitem{type=material,id=LEGUMBRESCRUDAS,amount=48}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=24}'
+        - 'mmoitem{type=accessory,id=BRASONBESTIAS4,amount=1}'
+    SELLOFAMILIAR:
+        output:
+            type: accessory
+            id: SELLOFAMILIAR
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=ARROZCRUDO,amount=48}'
+        - 'mmoitem{type=material,id=LEGUMBRESCRUDAS,amount=48}'
+        - 'mmoitem{type=material,id=DISTORSIONADOTIER3,amount=256}'
+        - 'mmoitem{type=material,id=MELONLEGENDARIO,amount=24}'
+#---
+    CRANEONECROESPECIAL:
+        output:
+            type: accessory
+            id: CRANEONECRO5
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=VERRUGANETHER,amount=48}'
+        - 'mmoitem{type=material,id=FLORESPORAS,amount=48}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=256}'
+        - 'mmoitem{type=material,id=ROSAWITHER,amount=24}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO4,amount=1}'
+    CRANEONECROLEGENDARIO:
+        output:
+            type: accessory
+            id: CRANEONECRO6
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=VERRUGANETHER,amount=48}'
+        - 'mmoitem{type=material,id=FLORESPORAS,amount=48}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=256}'
+        - 'mmoitem{type=material,id=ROSAWITHER,amount=24}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO5,amount=1}'
+    CRANEONECROMUYESPECIAL:
+        output:
+            type: accessory
+            id: CRANEONECRO7
+            amount: 1
+        crafting-time: 150
+        conditions:
+        - 'mana{amount=20}'
+        ingredients:
+        - 'mmoitem{type=material,id=VERRUGANETHER,amount=48}'
+        - 'mmoitem{type=material,id=FLORESPORAS,amount=48}'
+        - 'mmoitem{type=material,id=CARMESITIER3,amount=256}'
+        - 'mmoitem{type=material,id=ROSAWITHER,amount=24}'
+        - 'mmoitem{type=accessory,id=CRANEONECRO6,amount=1}'
+#MONEDAS
+    MONEDA_NECROTICO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=NECROTICO_A,amount=1}'
+    MONEDA_RADIANTE_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=RADIANTE_A,amount=1}'
+    MONEDA_ELECTRICO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=ELECTRICO_A,amount=1}'
+    MONEDA_VIENTO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=VIENTO_A,amount=1}'
+    MONEDA_SONICO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=SONICO_A,amount=1}'
+    MONEDA_FUEGO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=FUEGO_A,amount=1}'
+    MONEDA_AGUA_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=AGUA_A,amount=1}'
+    MONEDA_HIELO_A:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=HIELO_A,amount=1}'
+    MONEDA_NECROTICO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=HIELO_A,amount=1}'
+    MONEDA_RADIANTE_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=RADIANTE_D,amount=1}'
+    MONEDA_ELECTRICO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=ELECTRICO_D,amount=1}'
+    MONEDA_VIENTO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=VIENTO_D,amount=1}'
+    MONEDA_SONICO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=SONICO_D,amount=1}'
+    MONEDA_FUEGO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=FUEGO_D,amount=1}'
+    MONEDA_AGUA_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=AGUA_D,amount=1}'
+    MONEDA_HIELO_D:
+        output:
+            type: material
+            id: MONEDA_1
+            amount: 1
+        crafting-time: 1
+        conditions:
+        - 'mana{amount=1}'
+        ingredients:
+        - 'mmoitem{type= gem_stone,id=HIELO_D,amount=1}'

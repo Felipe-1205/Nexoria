@@ -1,0 +1,46 @@
+name: Radiant Aura
+lore:
+- '&eEvery skill use stacks a holy ring around you.'
+- '&eEvery 4th stack creates a radiant aura that'
+- '&eheals and gives resistance to yourself'
+- '&eand nearby allies.'
+- ''
+- '&a{heal} Heal'
+- '&c{duration}s Resistance Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2111'
+passive-type: TIMER
+heal:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+duration:
+  base: 4
+  per-level: 0.1
+  min: 4
+  max: 5
+timer:
+  base: 9
+  per-level: 0
+  min: 9
+  max: 9
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+
+
+# 897CC4G7STPLPYIP59ZW1E0U

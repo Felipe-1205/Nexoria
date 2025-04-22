@@ -1,0 +1,7 @@
+type: shaped
+shape:
+- 'aaa'
+source:
+  a: minecraft:oak_planks
+unlock: false
+result: minecraft:oak_slab 6

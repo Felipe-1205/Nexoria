@@ -1,0 +1,50 @@
+name: Awakening Of Fenrir
+lore:
+- '&fSummon and mount your ultimate beast, Fenrir.'
+- '&fYour Hunt skill switches to Fury Claws, and your'
+- '&fQuick Dash/Wild Dash skill switches to Deadly Sprint.'
+- '&fYou cannot dismount or use other skills and beasts while Fenrir is summoned.'
+- ''
+- '&c[Hunt Ability]'
+- '&eFury Claws &f- Order Fenrir to send a wave of slash'
+- '&fusing his claw.'
+- ''
+- '&c[Quick Dash Ability]'
+- '&eDeadly Sprint &f- Order Fenrir to ferociously run forwards,'
+- '&fparalyzing enemies that are hit.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2146'
+damage:
+  base: 6
+  per-level: 1
+  min: 6
+  max: 9
+duration:
+  base: 9
+  per-level: 0.2
+  min: 9
+  max: 12
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 15
+  per-level: -0.1
+  min: 14
+  max: 15

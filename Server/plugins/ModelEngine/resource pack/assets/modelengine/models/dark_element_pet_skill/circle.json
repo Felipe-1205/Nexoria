@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/dark_element_pet_skill"},"elements":[{"from":[-12.0,4.125,-12.0],"to":[28.0,4.125,28.0],"faces":{"up":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[0.0,16.0,16.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

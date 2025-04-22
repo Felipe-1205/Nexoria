@@ -1,0 +1,22 @@
+
+TIER1:
+    name: '&b&lTIER 1'
+    item-glow:
+        hint: true
+        color: 'AQUA'
+TIER2:
+    name: '&3&lTIER 2'
+    item-glow:
+        hint: true
+        color: 'DARK_AQUA'
+TIER3:
+    name: '&9&lTIER 3'
+    item-glow:
+        hint: true
+        color: 'BLUE'
+UNICO:
+    name: '&1&lUNICO'
+    item-glow:
+        hint: true
+        color: 'DARK_BLUE'
+

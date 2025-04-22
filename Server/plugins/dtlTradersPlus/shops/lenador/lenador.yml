@@ -1,0 +1,3307 @@
+lenador:
+  title: lenador
+  command: none
+  permission: none
+  default-shop: trade
+  buy-shop-enabled: false
+  sell-shop-enabled: false
+  trade-shop-enabled: true
+  logging-enabled: true
+  close-after-purchase: false
+  confirmation-window-enabled: false
+  pages:
+    page-0:
+      size: 54
+      page-name: Page 49099
+      page-permission: ''
+      trade-items:
+        item-0:
+          id: 1147
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-1:
+          id: 1148
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-2:
+          id: 1149
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-3:
+          id: 1150
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-4:
+          id: 1151
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-5:
+          id: 1152
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-6:
+          id: 1153
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-7:
+          id: 1154
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-8:
+          id: 1155
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-9:
+          id: 1156
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-10:
+          id: 92
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: OAK_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Roble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQnDK8lh512GSKD3rI1bIGmHUkupYziagWhGOiqIGOfJ2e/QvxiJpZVh5eX9x/P8/wCAARjzjOmKJdlnKeEs2WZZIJCVGBrnq2prHkQdfXW7jWe+lVfrbkPrZmnL+91E7luZ02jGBXhDG8R3A6avpYq31BAnCgqGEkQ3JyfWQyByBYJ9QIzBNfD2eWhMJrMVatfKx0+1aHQu6ZGMBpeaLpck1RJuCic8d0vDJObhOQ07t2vJicKBMFaKpH34qsDlt1jhyPsR8eWrWSn2w8cFQd8lqP8+tx3rXv8Fwcft8e/qT0GXP7AwDcvYTBAYwEAAA==
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: OAK_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Roble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQnDK8lh512GSKD3rI1bIGmHUkupYziagWhGOiqIGOfJ2e/QvxiJpZVh5eX9x/P8/wCAARjzjOmKJdlnKeEs2WZZIJCVGBrnq2prHkQdfXW7jWe+lVfrbkPrZmnL+91E7luZ02jGBXhDG8R3A6avpYq31BAnCgqGEkQ3JyfWQyByBYJ9QIzBNfD2eWhMJrMVatfKx0+1aHQu6ZGMBpeaLpck1RJuCic8d0vDJObhOQ07t2vJicKBMFaKpH34qsDlt1jhyPsR8eWrWSn2w8cFQd8lqP8+tx3rXv8Fwcft8e/qT0GXP7AwDcvYTBAYwEAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-11:
+          id: 1157
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-12:
+          id: 1158
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-13:
+          id: 93
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: BIRCH_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Abedul","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGX4RB3BB0IF5LDjt5GSKD3uIabKBpRxIPpYziugpCsdB1whj7PDnvK2RfzMRidXh5ef/xPM9vCIDglvOEKcplHqQx4WyeR4mg4GfY6DejC6MfRVlsm02N792qq0Y/eEbP4vfPsvJttzK6UowKb4qXCMa9pqu5ShcUECeKCkYiBNfnZxbAiDzR4CVyClMEV/3dBqIwnsxUU38UtbcuPbIq19sKwU3/Q+N5SGIl4SKz1ne/OEwuIpLSoPO/nPxwIBiGUom0Uw/3WLavLfaxGy1d8izbutlhP9vjsyD56bhpG/v4Pw8+LA9/czsQGHzjwBeln8TNZgEAAA==
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: BIRCH_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Abedul","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGX4RB3BB0IF5LDjt5GSKD3uIabKBpRxIPpYziugpCsdB1whj7PDnvK2RfzMRidXh5ef/xPM9vCIDglvOEKcplHqQx4WyeR4mg4GfY6DejC6MfRVlsm02N792qq0Y/eEbP4vfPsvJttzK6UowKb4qXCMa9pqu5ShcUECeKCkYiBNfnZxbAiDzR4CVyClMEV/3dBqIwnsxUU38UtbcuPbIq19sKwU3/Q+N5SGIl4SKz1ne/OEwuIpLSoPO/nPxwIBiGUom0Uw/3WLavLfaxGy1d8izbutlhP9vjsyD56bhpG/v4Pw8+LA9/czsQGHzjwBeln8TNZgEAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-14:
+          id: 1159
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-15:
+          id: 1160
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-16:
+          id: 94
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SPRUCE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Abeto","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2VQXUvDMBS9CIM4EJwgvpY87MmXITLoW7aGLdC0I8lLKaO42oEwDHRRkLHfk2f/QvxjJpR1Dl8O9+Nw7jl3CIDgnvOcKcpllRQZ4WxepbmgEJfY2a2ztbPPoqk/2r3Gj2HUobNPkbPT7O2z2cW+2ji7U4yKaILXCO56zYCVKlYUECeKCkZSBLeXa5bAgMyoyhHc9BtvhcJoPFWtfq919NpEZNMYjWDUU2g2X5JMSbgq/c2Hcw4mVykpaNIdvh6fAiAYLqUSRSe+OGBpXgyOcWh9rHwhjW6/cFwe8IWP6ud7b1pP/GcHH9fHv67DC2AQcAK/EU84KV4BAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SPRUCE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Abeto","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2VQXUvDMBS9CIM4EJwgvpY87MmXITLoW7aGLdC0I8lLKaO42oEwDHRRkLHfk2f/QvxjJpR1Dl8O9+Nw7jl3CIDgnvOcKcpllRQZ4WxepbmgEJfY2a2ztbPPoqk/2r3Gj2HUobNPkbPT7O2z2cW+2ji7U4yKaILXCO56zYCVKlYUECeKCkZSBLeXa5bAgMyoyhHc9BtvhcJoPFWtfq919NpEZNMYjWDUU2g2X5JMSbgq/c2Hcw4mVykpaNIdvh6fAiAYLqUSRSe+OGBpXgyOcWh9rHwhjW6/cFwe8IWP6ud7b1pP/GcHH9fHv67DC2AQcAK/EU84KV4BAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-17:
+          id: 1161
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-18:
+          id: 1162
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-19:
+          id: 95
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: ACACIA_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Acacia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh508bcigt9AGG2jakeRSyiglVhgMC10VZOzz5OxXiF/MxGJ17PLy/uN5nt8EAMEd5zlTlMsqLjLCWVSluaAQltiaF2u0NY+i0W/dvsUPfjVUa5aBNats+97sQtctrdkpRkWwwBsEs1HT10oVawqIE0UFIymCm9Mzi+GaRCRixCssEEzHuwtEYTZfqa591W3w3ARE13pbI7gdf2gWJSRTEi5KZ33/h8PkOiUFjQf/q/kvB4JJIpUoBvXkgGVf9zjEfnR0+ZPs2+4Dh+UBnwSpvj73fecez/Pg4+b4P7cHgcsfHPgGoSqpeGYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: ACACIA_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Acacia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh508bcigt9AGG2jakeRSyiglVhgMC10VZOzz5OxXiF/MxGJ17PLy/uN5nt8EAMEd5zlTlMsqLjLCWVSluaAQltiaF2u0NY+i0W/dvsUPfjVUa5aBNats+97sQtctrdkpRkWwwBsEs1HT10oVawqIE0UFIymCm9Mzi+GaRCRixCssEEzHuwtEYTZfqa591W3w3ARE13pbI7gdf2gWJSRTEi5KZ33/h8PkOiUFjQf/q/kvB4JJIpUoBvXkgGVf9zjEfnR0+ZPs2+4Dh+UBnwSpvj73fecez/Pg4+b4P7cHgcsfHPgGoSqpeGYBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-20:
+          id: 1163
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-21:
+          id: 1164
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-22:
+          id: 96
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DARK_OAK_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Roble Oscuro","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/3WPQUvDMBTHH4IQB8IURI8hh508bcigt9oGF2ibkcRDKaNorSAUA20VZOzz5OxXyL6YicXqDl4e7yV/3vv9JgAILtKUM0VTWcZ5FqYsKhMuKAQFsebZmsqaG1FXb22nybV/Gqo1C2zNMnt5r5vAdQtrGsWowHOyQXA+7vS1VPmaAkpDRQULEwTTw28Ww1Tw24RyGd0L7tfMEZyOIUdF4Wq2VK1+rTR+qrHQj02NeeewNIKzMUmzaBVmSsJR4Sguf82YXCdhTuMB5WT2o4RgspJK5MONbEtk/9CTgPjRifI72ev2gwTFlhzglPvPrm9d8D8qstvs/jp4KTj+VoMvdlyNVncBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: DARK_OAK_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Roble Oscuro","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/3WPQUvDMBTHH4IQB8IURI8hh508bcigt9oGF2ibkcRDKaNorSAUA20VZOzz5OxXyL6YicXqDl4e7yV/3vv9JgAILtKUM0VTWcZ5FqYsKhMuKAQFsebZmsqaG1FXb22nybV/Gqo1C2zNMnt5r5vAdQtrGsWowHOyQXA+7vS1VPmaAkpDRQULEwTTw28Ww1Tw24RyGd0L7tfMEZyOIUdF4Wq2VK1+rTR+qrHQj02NeeewNIKzMUmzaBVmSsJR4Sguf82YXCdhTuMB5WT2o4RgspJK5MONbEtk/9CTgPjRifI72ev2gwTFlhzglPvPrm9d8D8qstvs/jp4KTj+VoMvdlyNVncBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-23:
+          id: 1165
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-24:
+          id: 1166
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-25:
+          id: 97
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: JUNGLE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Jungla","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh5122pBBb2ENa0aTjiQeShll1CpCWaHrBBn7PDn7FeIXM7VYHV5e3n88z/MbACC44zxmmnKVBYkgnC2yKJYU/BRb82xNbs2DLPJDva/wpF111ZqZZ81cvL4Vpe+6mTWlZlR6U7xBMOo125rpZE0BcaKpZCRCcHN+ZgFcrx7FMiKtwhTBsL+7QBRG47muq11eeU+FtzrsXsotgtv+h4pFSIRWcJE66/tfHKbWEUlo0PlfjX84EAxCpWXSqYdHrJptg33cjo4uXqqmqt+xnx7xWZDs82Pf1O7xfx582pz+5m5B4PIbB74AFTKfPGYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: JUNGLE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Jungla","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh5122pBBb2ENa0aTjiQeShll1CpCWaHrBBn7PDn7FeIXM7VYHV5e3n88z/MbACC44zxmmnKVBYkgnC2yKJYU/BRb82xNbs2DLPJDva/wpF111ZqZZ81cvL4Vpe+6mTWlZlR6U7xBMOo125rpZE0BcaKpZCRCcHN+ZgFcrx7FMiKtwhTBsL+7QBRG47muq11eeU+FtzrsXsotgtv+h4pFSIRWcJE66/tfHKbWEUlo0PlfjX84EAxCpWXSqYdHrJptg33cjo4uXqqmqt+xnx7xWZDs82Pf1O7xfx582pz+5m5B4PIbB74AFTKfPGYBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-26:
+          id: 1167
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-27:
+          id: 1168
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-28:
+          id: 98
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: MANGROVE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Mangle","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgQdiNeSw07eigx7C2tYA006klxKGWXUKkJZoauCjH2enP0K8YstsVgdXl7efzzP85sAILjlPGOaclXGuSCcLco0kxSiAlvzbE1lzYOsq7du1+J7vxqqNWFgzVy8vtdN5LpHaxrNqAxCvEYwHTV9LXW+ooA40VQykiK4Pj2zGC45EcuUeoUQwdV4d4EoTGdz3bXbqg2e6oBvti9NjeBm/KFikRChFZwVzvruF4epVUpyGg/+F7MfDgSTRGmZD+rJHqt+0+MI+9HRZUvVt90Hjoo9PglSfn3u+s49/s+DD+vD39weBM6/ceAIepIErWYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: MANGROVE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Mangle","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgQdiNeSw07eigx7C2tYA006klxKGWXUKkJZoauCjH2enP0K8YstsVgdXl7efzzP85sAILjlPGOaclXGuSCcLco0kxSiAlvzbE1lzYOsq7du1+J7vxqqNWFgzVy8vtdN5LpHaxrNqAxCvEYwHTV9LXW+ooA40VQykiK4Pj2zGC45EcuUeoUQwdV4d4EoTGdz3bXbqg2e6oBvti9NjeBm/KFikRChFZwVzvruF4epVUpyGg/+F7MfDgSTRGmZD+rJHqt+0+MI+9HRZUvVt90Hjoo9PglSfn3u+s49/s+DD+vD39weBM6/ceAIepIErWYBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+            trade-item-1:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-29:
+          id: 99
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: CRIMSON_STEM
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tallo Carmesí","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/12PT0vDMBjGXwQhDoU5EK8lh528FRn2FtroAk07klxKGaWMCoNKoa2CjH2enDz4FbIvZmJZ57y8vH8envf5TQAQ3HGeMkW5LKIsIZyFRZwKCkGOjX41emP0o6g2723X4Ae3GqrRvmf0Itl+VHVguyeja8Wo8Hy8RjAbPV0tVLaigDhRVDASI5ien1kE1yERnErmLHwEN6PAJqIwnS9UWdeNF5btW9UdvhDcjgqahEuSKAkXuf18f6JhchWTjEbD+6v5EQPBZCmVyAbv5x2WfdnjALvRwqUvsm/aTxzkO3wWozh8d31rhf/T4P16/zezg4DLXxT4AVi+IbZjAQAA
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: CRIMSON_STEM
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tallo Carmesí","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/12PT0vDMBjGXwQhDoU5EK8lh528FRn2FtroAk07klxKGaWMCoNKoa2CjH2enDz4FbIvZmJZ57y8vH8envf5TQAQ3HGeMkW5LKIsIZyFRZwKCkGOjX41emP0o6g2723X4Ae3GqrRvmf0Itl+VHVguyeja8Wo8Hy8RjAbPV0tVLaigDhRVDASI5ien1kE1yERnErmLHwEN6PAJqIwnS9UWdeNF5btW9UdvhDcjgqahEuSKAkXuf18f6JhchWTjEbD+6v5EQPBZCmVyAbv5x2WfdnjALvRwqUvsm/aTxzkO3wWozh8d31rhf/T4P16/zezg4DLXxT4AVi+IbZjAQAA
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+            trade-item-1:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-30:
+          id: 1169
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-31:
+          id: 1170
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-32:
+          id: 1171
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-33:
+          id: 100
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: WARPED_STEM
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tallo Distorsionado","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/22PQUvDMBTHH4IQB8IcDK8lh528FRn2Fpbggm0yklxKGaXMCYVioa2CjH2enP0K8YuZWqwbeHm8l/x57/ebACCYJ4nkhiU6p6kgCV/lsVQMogw7++Lsztl7td+9NW2N7/qnoTobBs4uRfm+ryLfPThbGc5UEOItgtm4s6+5STcMUEIMU5zECKbn35zCjHJtpNJcCkJlvyhEcD3GPBeD+WJpiqqqA1q2Xd20Zf1aPNcIbsYYE6s1EUbDReYhbv/EuN7EJGV0ILla/BohmKy1Uelw4OmAdVd0OML96D3lo/aHPnCUHfAZS/712XaND/6LhI/b4yl9rwOXP1LwDVqGg9lzAQAA
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: WARPED_STEM
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tallo Distorsionado","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/22PQUvDMBTHH4IQB8IcDK8lh528FRn2Fpbggm0yklxKGaXMCYVioa2CjH2enP0K8YuZWqwbeHm8l/x57/ebACCYJ4nkhiU6p6kgCV/lsVQMogw7++Lsztl7td+9NW2N7/qnoTobBs4uRfm+ryLfPThbGc5UEOItgtm4s6+5STcMUEIMU5zECKbn35zCjHJtpNJcCkJlvyhEcD3GPBeD+WJpiqqqA1q2Xd20Zf1aPNcIbsYYE6s1EUbDReYhbv/EuN7EJGV0ILla/BohmKy1Uelw4OmAdVd0OML96D3lo/aHPnCUHfAZS/712XaND/6LhI/b4yl9rwOXP1LwDVqGg9lzAQAA
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+            trade-item-1:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-34:
+          id: 101
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: CHERRY_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Cerezo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPzUrDQBSFL4IwVgpaELdhFl25C1LMLiQXM5CfMjObGEqQOIJQDEyjoKXPM2tfYfpiTgzGFjeX+8c555sAELjKsoJJzEQdl3mYsahOC44QVNSaZ2saa265at70pqU3/Wqo1vieNYv85V2tA9fdWbOWDLnn0xWB2ajZ11qWSwSShRI5C1MCF8dnFsN5hBwfil7BJzAd7y4Qwmy+kLp9bVrvSXmR0uqzJXA5/mAeJWEuBZxUzvr6D4eJZRqWGA/+Z/NfDgKTREheDurJlorusaMB7UdHV9yLrtUfNKi29ChIvf/adNo9/s9Dd6vdYe4eBE5/cOAbY8YpiWYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: CHERRY_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Cerezo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPzUrDQBSFL4IwVgpaELdhFl25C1LMLiQXM5CfMjObGEqQOIJQDEyjoKXPM2tfYfpiTgzGFjeX+8c555sAELjKsoJJzEQdl3mYsahOC44QVNSaZ2saa265at70pqU3/Wqo1vieNYv85V2tA9fdWbOWDLnn0xWB2ajZ11qWSwSShRI5C1MCF8dnFsN5hBwfil7BJzAd7y4Qwmy+kLp9bVrvSXmR0uqzJXA5/mAeJWEuBZxUzvr6D4eJZRqWGA/+Z/NfDgKTREheDurJlorusaMB7UdHV9yLrtUfNKi29ChIvf/adNo9/s9Dd6vdYe4eBE5/cOAbY8YpiWYBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+            trade-item-1:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-35:
+          id: 1172
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-36:
+          id: 1173
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-37:
+          id: 1174
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-38:
+          id: 1175
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-39:
+          id: 1176
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-40:
+          id: 1177
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-41:
+          id: 1178
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-42:
+          id: 1179
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-43:
+          id: 1180
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-44:
+          id: 1181
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-45:
+          id: 1182
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-46:
+          id: 1183
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-48:
+          id: 1184
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-50:
+          id: 1185
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-52:
+          id: 1186
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+    page-1:
+      size: 54
+      page-name: Page 6160
+      page-permission: ''
+      trade-items:
+        item-0:
+          id: 1107
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-1:
+          id: 1108
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-2:
+          id: 1109
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-3:
+          id: 1110
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-4:
+          id: 1111
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-5:
+          id: 1112
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-6:
+          id: 1113
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-7:
+          id: 1114
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-8:
+          id: 1115
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-9:
+          id: 1116
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-10:
+          id: 89
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: OAK_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Roble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQnDK8lh512GSKD3rI1bIGmHUkupYziagWhGOiqIGOfJ2e/QvxiJpZVh5eX9x/P8/wCAARjzjOmKJdlnKeEs2WZZIJCVGBrnq2prHkQdfXW7jWe+lVfrbkPrZmnL+91E7luZ02jGBXhDG8R3A6avpYq31BAnCgqGEkQ3JyfWQyByBYJ9QIzBNfD2eWhMJrMVatfKx0+1aHQu6ZGMBpeaLpck1RJuCic8d0vDJObhOQ07t2vJicKBMFaKpH34qsDlt1jhyPsR8eWrWSn2w8cFQd8lqP8+tx3rXv8Fwcft8e/qT0GXP7AwDcvYTBAYwEAAA==
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 12
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: OAK_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Roble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQnDK8lh512GSKD3rI1bIGmHUkupYziagWhGOiqIGOfJ2e/QvxiJpZVh5eX9x/P8/wCAARjzjOmKJdlnKeEs2WZZIJCVGBrnq2prHkQdfXW7jWe+lVfrbkPrZmnL+91E7luZ02jGBXhDG8R3A6avpYq31BAnCgqGEkQ3JyfWQyByBYJ9QIzBNfD2eWhMJrMVatfKx0+1aHQu6ZGMBpeaLpck1RJuCic8d0vDJObhOQ07t2vJicKBMFaKpH34qsDlt1jhyPsR8eWrWSn2w8cFQd8lqP8+tx3rXv8Fwcft8e/qT0GXP7AwDcvYTBAYwEAAA==
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-11:
+          id: 1117
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-12:
+          id: 1118
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-13:
+          id: 90
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: BIRCH_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Abedul","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGX4RB3BB0IF5LDjt5GSKD3uIabKBpRxIPpYziugpCsdB1whj7PDnvK2RfzMRidXh5ef/xPM9vCIDglvOEKcplHqQx4WyeR4mg4GfY6DejC6MfRVlsm02N792qq0Y/eEbP4vfPsvJttzK6UowKb4qXCMa9pqu5ShcUECeKCkYiBNfnZxbAiDzR4CVyClMEV/3dBqIwnsxUU38UtbcuPbIq19sKwU3/Q+N5SGIl4SKz1ne/OEwuIpLSoPO/nPxwIBiGUom0Uw/3WLavLfaxGy1d8izbutlhP9vjsyD56bhpG/v4Pw8+LA9/czsQGHzjwBeln8TNZgEAAA==
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 12
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: BIRCH_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Abedul","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGX4RB3BB0IF5LDjt5GSKD3uIabKBpRxIPpYziugpCsdB1whj7PDnvK2RfzMRidXh5ef/xPM9vCIDglvOEKcplHqQx4WyeR4mg4GfY6DejC6MfRVlsm02N792qq0Y/eEbP4vfPsvJttzK6UowKb4qXCMa9pqu5ShcUECeKCkYiBNfnZxbAiDzR4CVyClMEV/3dBqIwnsxUU38UtbcuPbIq19sKwU3/Q+N5SGIl4SKz1ne/OEwuIpLSoPO/nPxwIBiGUom0Uw/3WLavLfaxGy1d8izbutlhP9vjsyD56bhpG/v4Pw8+LA9/czsQGHzjwBeln8TNZgEAAA==
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-14:
+          id: 1119
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-15:
+          id: 1120
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-16:
+          id: 91
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SPRUCE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Abeto","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2VQXUvDMBS9CIM4EJwgvpY87MmXITLoW7aGLdC0I8lLKaO42oEwDHRRkLHfk2f/QvxjJpR1Dl8O9+Nw7jl3CIDgnvOcKcpllRQZ4WxepbmgEJfY2a2ztbPPoqk/2r3Gj2HUobNPkbPT7O2z2cW+2ji7U4yKaILXCO56zYCVKlYUECeKCkZSBLeXa5bAgMyoyhHc9BtvhcJoPFWtfq919NpEZNMYjWDUU2g2X5JMSbgq/c2Hcw4mVykpaNIdvh6fAiAYLqUSRSe+OGBpXgyOcWh9rHwhjW6/cFwe8IWP6ud7b1pP/GcHH9fHv67DC2AQcAK/EU84KV4BAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &b&lTIER 1'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 12
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SPRUCE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Abeto","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2VQXUvDMBS9CIM4EJwgvpY87MmXITLoW7aGLdC0I8lLKaO42oEwDHRRkLHfk2f/QvxjJpR1Dl8O9+Nw7jl3CIDgnvOcKcpllRQZ4WxepbmgEJfY2a2ztbPPoqk/2r3Gj2HUobNPkbPT7O2z2cW+2ji7U4yKaILXCO56zYCVKlYUECeKCkZSBLeXa5bAgMyoyhHc9BtvhcJoPFWtfq919NpEZNMYjWDUU2g2X5JMSbgq/c2Hcw4mVykpaNIdvh6fAiAYLqUSRSe+OGBpXgyOcWh9rHwhjW6/cFwe8IWP6ud7b1pP/GcHH9fHv67DC2AQcAK/EU84KV4BAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-17:
+          id: 1121
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-18:
+          id: 1122
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-19:
+          id: 102
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: ACACIA_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Acacia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh508bcigt9AGG2jakeRSyiglVhgMC10VZOzz5OxXiF/MxGJ17PLy/uN5nt8EAMEd5zlTlMsqLjLCWVSluaAQltiaF2u0NY+i0W/dvsUPfjVUa5aBNats+97sQtctrdkpRkWwwBsEs1HT10oVawqIE0UFIymCm9Mzi+GaRCRixCssEEzHuwtEYTZfqa591W3w3ARE13pbI7gdf2gWJSRTEi5KZ33/h8PkOiUFjQf/q/kvB4JJIpUoBvXkgGVf9zjEfnR0+ZPs2+4Dh+UBnwSpvj73fecez/Pg4+b4P7cHgcsfHPgGoSqpeGYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 25
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: ACACIA_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Acacia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh508bcigt9AGG2jakeRSyiglVhgMC10VZOzz5OxXiF/MxGJ17PLy/uN5nt8EAMEd5zlTlMsqLjLCWVSluaAQltiaF2u0NY+i0W/dvsUPfjVUa5aBNats+97sQtctrdkpRkWwwBsEs1HT10oVawqIE0UFIymCm9Mzi+GaRCRixCssEEzHuwtEYTZfqa591W3w3ARE13pbI7gdf2gWJSRTEi5KZ33/h8PkOiUFjQf/q/kvB4JJIpUoBvXkgGVf9zjEfnR0+ZPs2+4Dh+UBnwSpvj73fecez/Pg4+b4P7cHgcsfHPgGoSqpeGYBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-20:
+          id: 1123
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-21:
+          id: 1124
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-22:
+          id: 103
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DARK_OAK_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Roble Oscuro","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/3WPQUvDMBTHH4IQB8IURI8hh508bcigt9oGF2ibkcRDKaNorSAUA20VZOzz5OxXyL6YicXqDl4e7yV/3vv9JgAILtKUM0VTWcZ5FqYsKhMuKAQFsebZmsqaG1FXb22nybV/Gqo1C2zNMnt5r5vAdQtrGsWowHOyQXA+7vS1VPmaAkpDRQULEwTTw28Ww1Tw24RyGd0L7tfMEZyOIUdF4Wq2VK1+rTR+qrHQj02NeeewNIKzMUmzaBVmSsJR4Sguf82YXCdhTuMB5WT2o4RgspJK5MONbEtk/9CTgPjRifI72ev2gwTFlhzglPvPrm9d8D8qstvs/jp4KTj+VoMvdlyNVncBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 25
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: DARK_OAK_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Roble Oscuro","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/3WPQUvDMBTHH4IQB8IURI8hh508bcigt9oGF2ibkcRDKaNorSAUA20VZOzz5OxXyL6YicXqDl4e7yV/3vv9JgAILtKUM0VTWcZ5FqYsKhMuKAQFsebZmsqaG1FXb22nybV/Gqo1C2zNMnt5r5vAdQtrGsWowHOyQXA+7vS1VPmaAkpDRQULEwTTw28Ww1Tw24RyGd0L7tfMEZyOIUdF4Wq2VK1+rTR+qrHQj02NeeewNIKzMUmzaBVmSsJR4Sguf82YXCdhTuMB5WT2o4RgspJK5MONbEtk/9CTgPjRifI72ev2gwTFlhzglPvPrm9d8D8qstvs/jp4KTj+VoMvdlyNVncBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-23:
+          id: 1125
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-24:
+          id: 1126
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-25:
+          id: 104
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: JUNGLE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Jungla","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 2","italic":false,"color":"dark_aqua","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh5122pBBb2ENa0aTjiQeShll1CpCWaHrBBn7PDn7FeIXM7VYHV5e3n88z/MbACC44zxmmnKVBYkgnC2yKJYU/BRb82xNbs2DLPJDva/wpF111ZqZZ81cvL4Vpe+6mTWlZlR6U7xBMOo125rpZE0BcaKpZCRCcHN+ZgFcrx7FMiKtwhTBsL+7QBRG47muq11eeU+FtzrsXsotgtv+h4pFSIRWcJE66/tfHKbWEUlo0PlfjX84EAxCpWXSqYdHrJptg33cjo4uXqqmqt+xnx7xWZDs82Pf1O7xfx582pz+5m5B4PIbB74AFTKfPGYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &3&lTIER 2'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 25
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: JUNGLE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Jungla","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgY6EK8lh5122pBBb2ENa0aTjiQeShll1CpCWaHrBBn7PDn7FeIXM7VYHV5e3n88z/MbACC44zxmmnKVBYkgnC2yKJYU/BRb82xNbs2DLPJDva/wpF111ZqZZ81cvL4Vpe+6mTWlZlR6U7xBMOo125rpZE0BcaKpZCRCcHN+ZgFcrx7FMiKtwhTBsL+7QBRG47muq11eeU+FtzrsXsotgtv+h4pFSIRWcJE66/tfHKbWEUlo0PlfjX84EAxCpWXSqYdHrJptg33cjo4uXqqmqt+xnx7xWZDs82Pf1O7xfx582pz+5m5B4PIbB74AFTKfPGYBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-26:
+          id: 1127
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-27:
+          id: 1128
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-28:
+          id: 105
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: MANGROVE_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Mangle","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgQdiNeSw07eigx7C2tYA006klxKGWXUKkJZoauCjH2enP0K8YstsVgdXl7efzzP85sAILjlPGOaclXGuSCcLco0kxSiAlvzbE1lzYOsq7du1+J7vxqqNWFgzVy8vtdN5LpHaxrNqAxCvEYwHTV9LXW+ooA40VQykiK4Pj2zGC45EcuUeoUQwdV4d4EoTGdz3bXbqg2e6oBvti9NjeBm/KFikRChFZwVzvruF4epVUpyGg/+F7MfDgSTRGmZD+rJHqt+0+MI+9HRZUvVt90Hjoo9PglSfn3u+s49/s+DD+vD39weBM6/ceAIepIErWYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 75
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: MANGROVE_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Mangle","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhTgQdiNeSw07eigx7C2tYA006klxKGWXUKkJZoauCjH2enP0K8YstsVgdXl7efzzP85sAILjlPGOaclXGuSCcLco0kxSiAlvzbE1lzYOsq7du1+J7vxqqNWFgzVy8vtdN5LpHaxrNqAxCvEYwHTV9LXW+ooA40VQykiK4Pj2zGC45EcuUeoUQwdV4d4EoTGdz3bXbqg2e6oBvti9NjeBm/KFikRChFZwVzvruF4epVUpyGg/+F7MfDgSTRGmZD+rJHqt+0+MI+9HRZUvVt90Hjoo9PglSfn3u+s49/s+DD+vD39weBM6/ceAIepIErWYBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-29:
+          id: 106
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: CRIMSON_STEM
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tallo Carmesí","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/12PT0vDMBjGXwQhDoU5EK8lh528FRn2FtroAk07klxKGaWMCoNKoa2CjH2enDz4FbIvZmJZ57y8vH8envf5TQAQ3HGeMkW5LKIsIZyFRZwKCkGOjX41emP0o6g2723X4Ae3GqrRvmf0Itl+VHVguyeja8Wo8Hy8RjAbPV0tVLaigDhRVDASI5ien1kE1yERnErmLHwEN6PAJqIwnS9UWdeNF5btW9UdvhDcjgqahEuSKAkXuf18f6JhchWTjEbD+6v5EQPBZCmVyAbv5x2WfdnjALvRwqUvsm/aTxzkO3wWozh8d31rhf/T4P16/zezg4DLXxT4AVi+IbZjAQAA
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 75
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: CRIMSON_STEM
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tallo Carmesí","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/12PT0vDMBjGXwQhDoU5EK8lh528FRn2FtroAk07klxKGaWMCoNKoa2CjH2enDz4FbIvZmJZ57y8vH8envf5TQAQ3HGeMkW5LKIsIZyFRZwKCkGOjX41emP0o6g2723X4Ae3GqrRvmf0Itl+VHVguyeja8Wo8Hy8RjAbPV0tVLaigDhRVDASI5ien1kE1yERnErmLHwEN6PAJqIwnS9UWdeNF5btW9UdvhDcjgqahEuSKAkXuf18f6JhchWTjEbD+6v5EQPBZCmVyAbv5x2WfdnjALvRwqUvsm/aTxzkO3wWozh8d31rhf/T4P16/zezg4DLXxT4AVi+IbZjAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-30:
+          id: 1129
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-31:
+          id: 1130
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-32:
+          id: 1131
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-33:
+          id: 107
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: WARPED_STEM
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tallo Distorsionado","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/22PQUvDMBTHH4IQB8IcDK8lh528FRn2Fpbggm0yklxKGaXMCYVioa2CjH2enP0K8YuZWqwbeHm8l/x57/ebACCYJ4nkhiU6p6kgCV/lsVQMogw7++Lsztl7td+9NW2N7/qnoTobBs4uRfm+ryLfPThbGc5UEOItgtm4s6+5STcMUEIMU5zECKbn35zCjHJtpNJcCkJlvyhEcD3GPBeD+WJpiqqqA1q2Xd20Zf1aPNcIbsYYE6s1EUbDReYhbv/EuN7EJGV0ILla/BohmKy1Uelw4OmAdVd0OML96D3lo/aHPnCUHfAZS/712XaND/6LhI/b4yl9rwOXP1LwDVqGg9lzAQAA
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 75
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: WARPED_STEM
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tallo Distorsionado","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/22PQUvDMBTHH4IQB8IcDK8lh528FRn2Fpbggm0yklxKGaXMCYVioa2CjH2enP0K8YuZWqwbeHm8l/x57/ebACCYJ4nkhiU6p6kgCV/lsVQMogw7++Lsztl7td+9NW2N7/qnoTobBs4uRfm+ryLfPThbGc5UEOItgtm4s6+5STcMUEIMU5zECKbn35zCjHJtpNJcCkJlvyhEcD3GPBeD+WJpiqqqA1q2Xd20Zf1aPNcIbsYYE6s1EUbDReYhbv/EuN7EJGV0ILla/BohmKy1Uelw4OmAdVd0OML96D3lo/aHPnCUHfAZS/712XaND/6LhI/b4yl9rwOXP1LwDVqGg9lzAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-34:
+          id: 108
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: CHERRY_LOG
+            amount: 64
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Tronco de Cerezo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+              - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+              - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                ","italic":false,"color":"gray"},{"text":"TIER 3","italic":false,"color":"blue","bold":true}]}'
+              attribute-modifiers:
+                minecraft:generic.attack_speed:
+                - ==: org.bukkit.attribute.AttributeModifier
+                  amount: 0.0
+                  name: mmoitems:decoy
+                  uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                  operation: 0
+              ItemFlags:
+              - HIDE_ATTRIBUTES
+              custom: H4sIAAAAAAAA/2WPzUrDQBSFL4IwVgpaELdhFl25C1LMLiQXM5CfMjObGEqQOIJQDEyjoKXPM2tfYfpiTgzGFjeX+8c555sAELjKsoJJzEQdl3mYsahOC44QVNSaZ2saa265at70pqU3/Wqo1vieNYv85V2tA9fdWbOWDLnn0xWB2ajZ11qWSwSShRI5C1MCF8dnFsN5hBwfil7BJzAd7y4Qwmy+kLp9bVrvSXmR0uqzJXA5/mAeJWEuBZxUzvr6D4eJZRqWGA/+Z/NfDgKTREheDurJlorusaMB7UdHV9yLrtUfNKi29ChIvf/adNo9/s9Dd6vdYe4eBE5/cOAbY8YpiWYBAAA=
+          display-lore:
+          - '&5Recurso'
+          - '&f'
+          - '&3 &7Nivel: &9&lTIER 3'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 75
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Samsin","italic":false,"color":"aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkxYOXHoQ1GZrF3U3YXcQYylKDggctJPEgpb8n5/6F+MdMtE0t9bIwvJm333t9AAInUkbcojQuSBST3Hci0giDlNbVS11ldXWtn7OPvJjRCYHDbrt9HQ+AyEhhwNwVgYNObIwQyPDJTN+K13cPLjafcMNuBTpUfsiU5Wrs7cGgkzXec8Mj1ToD9AgcddLqwkAvbUBO/zrGgiUYOJvECPvDNS+BfmisTn5pbubUlNOSjmg70ksajU05yz/pKJ3TLXD3tSzKvFlc89PFZOHB+U4GjTHjuo3gwdmOaiS3YSsSON5u7YeTSGZRcyb+v0Wx6mYTVLIHZyzz75zhj9jUk8E3O7foxcIBAAA=
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: CHERRY_LOG
+                amount: 64
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Tronco de Cerezo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+                  - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+                    ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+                    3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"blue","bold":true}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  custom: H4sIAAAAAAAA/2WPzUrDQBSFL4IwVgpaELdhFl25C1LMLiQXM5CfMjObGEqQOIJQDEyjoKXPM2tfYfpiTgzGFjeX+8c555sAELjKsoJJzEQdl3mYsahOC44QVNSaZ2saa265at70pqU3/Wqo1vieNYv85V2tA9fdWbOWDLnn0xWB2ajZ11qWSwSShRI5C1MCF8dnFsN5hBwfil7BJzAd7y4Qwmy+kLp9bVrvSXmR0uqzJXA5/mAeJWEuBZxUzvr6D4eJZRqWGA/+Z/NfDgKTREheDurJlorusaMB7UdHV9yLrtUfNKi29ChIvf/adNo9/s9Dd6vdYe4eBE5/cOAbY8YpiWYBAAA=
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-35:
+          id: 1132
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-36:
+          id: 1133
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-37:
+          id: 1134
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-38:
+          id: 1135
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-39:
+          id: 1136
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-40:
+          id: 1137
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-41:
+          id: 1138
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-42:
+          id: 1139
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-43:
+          id: 1140
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-44:
+          id: 1141
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-45:
+          id: 1142
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-46:
+          id: 1143
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-48:
+          id: 1144
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-50:
+          id: 1145
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-52:
+          id: 1146
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []

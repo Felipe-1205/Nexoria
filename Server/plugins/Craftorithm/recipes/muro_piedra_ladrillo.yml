@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:stone_bricks
+unlock: false
+result: minecraft:stone_brick_wall 6

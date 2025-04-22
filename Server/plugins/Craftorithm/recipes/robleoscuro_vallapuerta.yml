@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'bab'
+- 'bab'
+source:
+  a: minecraft:dark_oak_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:dark_oak_fence_gate

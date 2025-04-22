@@ -1,0 +1,34 @@
+GALE_SLASH:
+    mythicmobs-skill-id: Gale_Slash
+    modifiers:
+    - damage
+
+VAULT:
+    mythicmobs-skill-id: Vault
+    
+DANCING_BLADE:
+    mythicmobs-skill-id: Dancing_Blade
+    modifiers:
+    - damage
+    - skillcooldown
+    
+CLOUDPIERCER:
+    mythicmobs-skill-id: Cloudpiercer
+    modifiers:
+    - damage
+    
+TORRENT:
+    mythicmobs-skill-id: Torrent
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - skillcooldown
+    
+WINDRUNE_BLADE:
+    mythicmobs-skill-id: Windrune_Blade
+    passive-type: TIMER
+    
+WINDBOUND_FURY:
+    mythicmobs-skill-id: Windbound_Fury
+    modifiers:
+    - damage

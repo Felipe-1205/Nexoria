@@ -1,0 +1,140 @@
+{
+  "samus.chain_bind": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/chain_bind"
+    ]
+  },
+  "samus.ground_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/ground_smash"
+    ]
+  },
+  "samus.ground_smash_dash": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/ground_smash_dash"
+    ]
+  },
+  "samus.hammer_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/hammer_smash"
+    ]
+  },
+  "samus.hammer_smash_crack": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/hammer_smash_crack"
+    ]
+  },
+  "samus.heavenly_shield": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/heavenly_shield"
+    ]
+  },
+  "samus.holy_strike": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/holy_strike"
+    ]
+  },
+  "samus.holy_strike_2": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/holy_strike_2"
+    ]
+  },
+  "samus.holy_strike_3": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/holy_strike_3"
+    ]
+  },
+  "samus.holy_wing_spread": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/holy_wing_spread"
+    ]
+  },
+  "samus.last_stand_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/last_stand_smash"
+    ]
+  },
+  "samus.leap_back": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/leap_back"
+    ]
+  },
+  "samus.light_eruption": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/light_eruption"
+    ]
+  },
+  "samus.weapon_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/weapon_summon"
+    ]
+  },
+  "samus.spin_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/spin_attack"
+    ]
+  },
+  "samus.spin_attack_wheel": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/spin_attack_wheel"
+    ]
+  },
+  "samus.spear_throw": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/spear_throw"
+    ]
+  },
+  "samus.spear_hit": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/spear_hit"
+    ]
+  },
+  "samus.shield_form": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/shield_form"
+    ]
+  },
+  "samus.shield_creation": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/shield_creation"
+    ]
+  },
+  "samus.shield_bash": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/shield_bash"
+    ]
+  },
+  "samus.ring_stack": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/ring_stack"
+    ]
+  },
+  "samus.radiant_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/paladin/radiant_aura"
+    ]
+  }
+}

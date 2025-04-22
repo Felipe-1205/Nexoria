@@ -1,0 +1,6 @@
+{
+    "parent": "./handheld_katana",
+    "textures": {
+        "layer0": "./netherite_sword_1"
+    }
+}

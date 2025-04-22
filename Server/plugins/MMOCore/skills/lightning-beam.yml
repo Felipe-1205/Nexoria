@@ -1,0 +1,40 @@
+name: Escalera de Eldoria
+lore:
+- Invoca un poderoso
+- y electrificante rayo de
+- relámpagos desde los cielos
+- ocasionando &8{damage} &7puntos de daño radiante
+- en un área de &8{radius} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: HEART_OF_THE_SEA
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 3
+  per-level: 0.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 10
+  per-level: 2.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: 1
+radius:
+  base: 3
+  per-level: 1

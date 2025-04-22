@@ -1,0 +1,7 @@
+Algunos alquimistas cuentan de una planta legendaria, la "Holy Moly", una planta capaz de sanar cualquier enfermedad, maldición, efecto o lo que fuera que se estaba sufriendo, una planta sumamente rara de pétalos dorados con bordes blancos, sin embargo con un contraste peculiar en sus raíces ya que estas eran sumamente negras.
+
+Algunos consideraron esta planta como algo sumamente especial no solo por sus propiedades sanadoras, también por su capacidad para proteger contra hechizos a quienes la consumían, al consumir esta planta se contaba que se perdía toda cualidad mágica de manera temporal al igual que la capacidad de poder ser afectado por cualquier tipo de magia.
+
+Y aunque sus beneficios son muchos esta planta también viene con un riesgo, debe ser manipulada y arrancada del piso con sumo cuidado, de lo contrario la muerte es casi segura, hay cuentos sobre personas que tomaron estas plantas con las manos desnudas y sin cuidado y acabaron muriendo al momento de arrancar la planta del suelo. Incluso muchas madres usan esto para que sus hijos se laven las manos diciéndoles "Lavate las manos, capaz ya tocaste la Holy Moly y te vas a morir si no te lavas".
+
+==(esta planta esta oculta es la raíz del nuevo mundo cuando la diosa de la vida creo el mundo lo hizo a partir de esta flor extraerla provocaría un caos capaz de destruir casi todo el mundo nuevo, sin embargo los alquimistas que la usaron para crear a los [[Cazadores Carmesi]] fue solo un petalo)==

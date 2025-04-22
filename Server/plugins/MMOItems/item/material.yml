@@ -1,0 +1,2044 @@
+MONEDA_1:
+  base:
+    material: GHAST_TEAR
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    max-stack-size: 99.0
+    name: '&bSamsin'
+    crafting:
+      shapeless: {}
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_2 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 50
+          output:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_1 50.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+MONEDA_2:
+  base:
+    material: GHAST_TEAR
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    max-stack-size: 99.0
+    name: '&3Kosfyr'
+    crafting:
+      shapeless: {}
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_3 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 50
+          output:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_2 50.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+        '2':
+          input:
+          - v AIR 0 1..|m material MONEDA_1 25.0..|m material MONEDA_1 25.0..
+          - v AIR 0 1..|m material MONEDA_1 25.0..|m material MONEDA_1 25.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 1
+MONEDA_3:
+  base:
+    material: GHAST_TEAR
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    max-stack-size: 99.0
+    name: '&9Aidaen'
+    crafting:
+      shapeless: {}
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_4 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 50
+          output:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m material MONEDA_3 50.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+        '2':
+          input:
+          - v AIR 0 1..|m material MONEDA_2 25.0..|m material MONEDA_2 25.0..
+          - v AIR 0 1..|m material MONEDA_2 25.0..|m material MONEDA_2 25.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 1
+MONEDA_4:
+  base:
+    material: GHAST_TEAR
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    max-stack-size: 99.0
+    name: '&1Ninielle'
+    crafting:
+      shapeless: {}
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m material MONEDA_3 25.0..|m material MONEDA_3 25.0..
+          - v AIR 0 1..|m material MONEDA_3 25.0..|m material MONEDA_3 25.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          amount: 1
+ROBLETIER1:
+  base:
+    material: OAK_LOG
+    name: '&7Tronco de Roble'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+ABEDULTIER1:
+  base:
+    material: BIRCH_LOG
+    name: '&7Tronco de Abedul'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+ABETO:
+  base:
+    material: SPRUCE_LOG
+    name: '&7Tronco de Abeto'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+JUNGLATIER2:
+  base:
+    material: JUNGLE_LOG
+    name: '&7Tronco de Jungla'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+ACACIATIER2:
+  base:
+    material: ACACIA_LOG
+    name: '&7Tronco de Acacia'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+ROBLEOSCUROTIER2:
+  base:
+    material: DARK_OAK_LOG
+    name: '&7Tronco de Roble Oscuro'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+MANGLETIER3:
+  base:
+    material: MANGROVE_LOG
+    name: '&7Tronco de Mangle'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+CARMESITIER3:
+  base:
+    material: CRIMSON_STEM
+    name: '&7Tallo Carmesí'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+DISTORSIONADOTIER3:
+  base:
+    material: WARPED_STEM
+    name: '&7Tallo Distorsionado'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+CEREZOTIER3:
+  base:
+    material: CHERRY_LOG
+    name: '&7Tronco de Cerezo'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+PIEDRATIER1:
+  base:
+    material: COBBLESTONE
+    name: '&7Roca'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+FLINTTIER1:
+  base:
+    material: FLINT
+    name: '&7Pedernal'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+CARBONTIER1:
+  base:
+    material: COAL
+    name: '&7Carbón'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+COBRETIER1:
+  base:
+    material: COPPER_INGOT
+    name: '&7Lingote de cobre'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+HIERROTIER1:
+  base:
+    material: IRON_INGOT
+    name: '&7Lingote de Hierro'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER1
+OROTIER2:
+  base:
+    material: GOLD_INGOT
+    name: '&7Lingote de Oro'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+CUARZOTIER2:
+  base:
+    material: QUARTZ
+    name: '&7Cuarzo'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+REDSTONETIER2:
+  base:
+    material: REDSTONE
+    name: '&7Polvo de Redstone'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+AMATISTATIER2:
+  base:
+    material: AMETHYST_SHARD
+    name: '&7Fragmento de Amatista'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+LAPIZLAZULITIER2:
+  base:
+    material: LAPIS_LAZULI
+    name: '&7Lapislázuli'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER2
+ESMERALDATIER3:
+  base:
+    material: EMERALD
+    name: '&7Esmeralda'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+DIAMANTETIER3:
+  base:
+    material: DIAMOND
+    name: '&7Diamante'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+NETHERITATIER3:
+  base:
+    material: NETHERITE_INGOT
+    name: '&7Lingote de Netherita'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+OSMIOTIER3:
+  base:
+    material: NETHERITE_INGOT
+    name: '&7Lingote de Osmio'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+CHETERITETIER3:
+  base:
+    material: PRISMARINE_SHARD
+    name: '&7Lingote de Cheterite'
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    tier: TIER3
+FELIPERIUMTIER3:
+  base:
+    material: ECHO_SHARD
+    name: '&7Lingote de Luminita'
+    displayed-type: '&5Recurso'
+    disable-interaction: true
+    tier: TIER3
+    revision-id: 2
+ANGUIELECT:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Anguila Electrica'
+    tier: TIER1
+PEZLOBO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Lobo'
+    tier: TIER1
+ATUN:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Atun'
+    tier: TIER1
+PEZLINT:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Linterna'
+    tier: TIER1
+BAGRE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bagre'
+    tier: TIER1
+PINKSALMON:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pink Salmon'
+    tier: TIER1
+ARAPAIMA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Arapaima'
+    tier: TIER1
+BAGREACORA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bagre Acorazado'
+    tier: TIER1
+BAYAD:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bayad'
+    tier: TIER1
+PEZNEGRO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Negro'
+    tier: TIER1
+LOBIBOCAPEQUE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lobina de Boca Pequenia'
+    tier: TIER1
+LUCIOALMIZ:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lucio Almizclado'
+    tier: TIER1
+PEZSOL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Sol'
+    tier: TIER1
+CACHODECUARZO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cacho de Cuarzo'
+    tier: TIER1
+PERCANEVADA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Perca Nevada'
+    tier: TIER1
+TILABOUL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Tilapia Boulti'
+    tier: TIER1
+REO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Reo'
+    tier: TIER1
+TRUCHAMARRON:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Trucha Marron'
+    tier: TIER1
+ABADEJO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Abadejo'
+    tier: TIER1
+CAPITAN:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Capitan'
+    tier: TIER1
+CARPA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carpa'
+    tier: TIER1
+CARPIN:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carpin'
+    tier: TIER1
+TRUCHAGAY:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Trucha Arcoiris'
+    tier: TIER1
+ARENQUE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Arenque'
+    tier: TIER1
+FLETAN:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Fletan'
+    tier: TIER1
+SYNODONTIS:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Synodontis'
+    tier: TIER1
+TAMBAQUI:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Tambaqui'
+    tier: TIER1
+PERCA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Perca'
+    tier: TIER1
+LUCIO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lucio'
+    tier: TIER1
+PEZAGUJA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Aguja'
+    tier: TIER1
+JURELPANTANO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Jurel de Pantano'
+    tier: TIER1
+ALGAVERDE:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Alga Verde'
+    tier: TIER1
+PEZANGNARAN:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Angel Naranja'
+    tier: TIER2
+ANGUIABISAL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Anguila Abisal'
+    tier: TIER2
+ANEMODEMAR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Anemona de Mar'
+    tier: TIER2
+MEDUSAZUL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusa Azul'
+    tier: TIER2
+PEZCRISTAL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Cristal'
+    tier: TIER2
+SIRULO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Sirulo'
+    tier: TIER2
+PEZLUNAOCEANO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Luna del Oceano'
+    tier: TIER2
+PEZDELSOL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez del Sol'
+    tier: TIER2
+MANTARAYAGRIS:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Mantarraya Gris'
+    tier: TIER2
+PEZGEMIX:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Gemix'
+    tier: TIER2
+PEZHOT:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Caliente'
+    tier: TIER2
+LAMPREADESANGRE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lamprea de Sangre'
+    tier: TIER2
+PIRANIAVIENTREROJO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pirania de Vientre Rojo'
+    tier: TIER2
+PEZHUESOS:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez de Huesos'
+    tier: TIER2
+PEZVENECO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Esqueletico'
+    tier: TIER2
+PEZAMOR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Amoroso'
+    tier: TIER2
+PEZMARIPOSA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Mariposa'
+    tier: TIER2
+PEZEBRA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Zebra'
+    tier: TIER2
+PEZANGELICAL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Angelical'
+    tier: TIER2
+PEZABISAL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Abisal'
+    tier: TIER2
+PEZBETTA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Betta'
+    tier: TIER2
+CACHAMAROJA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cachama Roja'
+    tier: TIER2
+BACALAOTARTARO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bacalao del Tartaros'
+    tier: TIER2
+CORALFUEGO:
+  base:
+    material: STICK
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Coral de Fuego'
+    tier: TIER2
+PEZESPUMOSO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Espumoso'
+    tier: TIER2
+MEROROJO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Mero Rojo'
+    tier: TIER2
+SARDINAPERLA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Sardina Perla'
+    tier: TIER2
+FUNGIGRE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Fungigre'
+    tier: TIER2
+PIRANA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pirana'
+    tier: TIER2
+TRUCHACUEVA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Trucha de Cueva'
+    tier: TIER2
+CELACANTO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Celacanto'
+    tier: TIER2
+PEZLABRIDO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Labrido'
+    tier: TIER3
+PEZRARO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Raro'
+    tier: TIER3
+PEZTROPICAL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Tropical'
+    tier: TIER3
+CAMARONMANTIS:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Camaron Mantis'
+    tier: TIER3
+PEZPROFUNDIDADES:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez de las Profundidades'
+    tier: TIER3
+PEZDELINFIERNO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez del Infierno'
+    tier: TIER3
+PEZBOMBA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Bomba'
+    tier: TIER3
+MAGIKARP:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Magikarp'
+    tier: TIER3
+MEDUSAMAGMA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusa Magmatica'
+    tier: TIER3
+PARGOESPECULAR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pargo Especular'
+    tier: TIER3
+PEZDORADO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Dorado'
+    tier: TIER3
+PEZCALIDO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Calido'
+    tier: TIER3
+PEZESPONJA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Esponja'
+    tier: TIER3
+BABOSADEMAR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Babosa de Mar'
+    tier: TIER3
+MORENABRILLANTE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Morena Brillante'
+    tier: TIER3
+PEZAMARILLO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Amarillo'
+    tier: TIER3
+PEZOBSIDIANA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez de Obsidiana'
+    tier: TIER3
+PEZFANTASMA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Fantasma'
+    tier: TIER3
+ANGUILAMORENA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Anguila Morena'
+    tier: TIER3
+MEDUSADELUNA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusa de la Luna'
+    tier: TIER3
+MEDUSAVERDE:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusa Verde'
+    tier: TIER3
+MANTARRAYAZULADA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Mantaraya Azulada'
+    tier: TIER3
+PEZLUNAR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Lunar'
+    tier: TIER3
+MEDUSASDESENSI:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusas Desensibilizantes'
+    tier: TIER3
+PEZFRIO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez Frio'
+    tier: TIER3
+ESPIGAZUL:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Espiga Azul'
+    tier: TIER3
+LUBINARENOSA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lubina Arenosa'
+    tier: TIER3
+MEDUSAMELENA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Medusa Melena'
+    tier: TIER3
+PEZDELVACIO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez del Vacio'
+    tier: TIER3
+PEZORO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pez de Oro'
+    tier: TIER3
+KOILLAMATIVA:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Koi de Aleta Llamativa'
+    tier: TIER3
+ERIZODEMAR:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Erizo de Mar'
+    tier: TIER3
+MAIZ:
+  base:
+    material: POTATO
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Maiz'
+    tier: TIER1
+SALVIA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Salvia'
+    tier: TIER1
+FRIJOLES:
+  base:
+    material: CARROT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Frijoles'
+    tier: TIER1
+LINAZA:
+  base:
+    material: WHEAT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Linaza'
+    tier: TIER1
+PEPINILLO:
+  base:
+    material: CARROT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pepinillo'
+    tier: TIER1
+NABOS:
+  base:
+    material: BEETROOT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Nabos'
+    tier: TIER1
+MANZANA:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Manzana'
+    tier: TIER1
+ZANAHORIA:
+  base:
+    material: CARROT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Zanahoria'
+    tier: TIER1
+REBANADASANDIA:
+  base:
+    material: MELON_SLICE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Rebanada de Sandía'
+    tier: TIER1
+CANAZUCAR:
+  base:
+    material: SUGAR_CANE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Caña de Azúcar'
+    tier: TIER1
+PAPA:
+  base:
+    material: POTATO
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Papa'
+    tier: TIER1
+BETABEL:
+  base:
+    material: BEETROOT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Betabel'
+    tier: TIER1
+ALGA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Alga'
+    tier: TIER1
+GRANOSCACAO:
+  base:
+    material: COCOA_BEANS
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Granos de Cacao'
+    tier: TIER1
+CALABAZA:
+  base:
+    material: PUMPKIN
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Calabaza'
+    tier: TIER1
+CACTUS:
+  base:
+    material: CACTUS
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cactus'
+    tier: TIER1
+NENUFAR:
+  base:
+    material: LILY_PAD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Nenúfar'
+    tier: TIER1
+TRIGO:
+  base:
+    material: WHEAT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Trigo'
+    tier: TIER1
+PEPINODEMAR:
+  base:
+    material: SEA_PICKLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pepino de Mar'
+    tier: TIER1
+BAMBU:
+  base:
+    material: BAMBOO
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bambú'
+    tier: TIER1
+FLORESMANDRA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flores de Mandragora'
+    tier: TIER2
+FLORESBELLA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flores de Belladona'
+    tier: TIER2
+FLORESRUGUAMAR:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flores de Rugula Amarilla'
+    tier: TIER2
+FLORESAJENJO:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flores de Ajenjo'
+    tier: TIER2
+KENI:
+  base:
+    material: MELON_SLICE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Keni'
+    tier: TIER2
+BAYASBELLAS:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bayas Bellas'
+    tier: TIER2
+ARANDANO:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Arandano'
+    tier: TIER2
+ESPINO:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Espino'
+    tier: TIER2
+MORA:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Mora'
+    tier: TIER2
+UVAS:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Uvas'
+    tier: TIER2
+CEREZA:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cereza'
+    tier: TIER2
+FRAMBUESA:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Frambuesa'
+    tier: TIER2
+BAYASDULCES:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bayas Dulces'
+    tier: TIER2
+BAYASOWAN:
+  base:
+    material: SWEET_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Baya de Owan'
+    tier: TIER2
+RODAJAMELON:
+  base:
+    material: MELON_SLICE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Rodaja de Melon'
+    tier: TIER2
+CIRUELAS:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Ciruelas'
+    tier: TIER2
+NARANJA:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Naranja'
+    tier: TIER2
+PERA:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pera'
+    tier: TIER2
+TOMATE:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Tomate'
+    tier: TIER2
+REPOLLO:
+  base:
+    material: BEETROOT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Repollo'
+    tier: TIER2
+RAIZMADRAGORA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Raiz de Mandragora'
+    tier: TIER3
+BAYASBELLADONA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bayas de Belladona'
+    tier: TIER3
+HOJASDERUGUAMA:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hojas de Rugula Amarilla'
+    tier: TIER3
+HOJASAJENJO:
+  base:
+    material: KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hojas de Ajenjo'
+    tier: TIER3
+MELONLEGENDARIO:
+  base:
+    material: APPLE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Melon Legendario'
+    tier: TIER3
+ROSAWITHER:
+  base:
+    material: WITHER_ROSE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Rosa del Wither'
+    tier: TIER3
+CHORUS:
+  base:
+    material: CHORUS_PLANT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Chorus'
+    tier: TIER3
+BAYASBRILLANTES:
+  base:
+    material: GLOW_BERRIES
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bayas Brillantes'
+    tier: TIER3
+FRUTACHORUS:
+  base:
+    material: CHORUS_FRUIT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Fruta de Chorus'
+    tier: TIER3
+FLORCHORUS:
+  base:
+    material: CHORUS_FLOWER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flor de Chorus'
+    tier: TIER3
+CEBADA:
+  base:
+    material: WHEAT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cebada'
+    tier: TIER3
+TABACO:
+  base:
+    material: WHEAT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Tabaco'
+    tier: TIER3
+CANAMO:
+  base:
+    material: WHEAT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Canamo'
+    tier: TIER3
+HONGOROJO:
+  base:
+    material: RED_MUSHROOM
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hongo Rojo'
+    tier: TIER3
+HONGOCAFE:
+  base:
+    material: BROWN_MUSHROOM
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hongo Café'
+    tier: TIER3
+PEPINO:
+  base:
+    material: DRIED_KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pepino'
+    tier: TIER3
+ARROZCRUDO:
+  base:
+    material: POTATO
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Arroz Crudo'
+    tier: TIER3
+LEGUMBRESCRUDAS:
+  base:
+    material: CARROT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Legumbres Crudas'
+    tier: TIER3
+VERRUGANETHER:
+  base:
+    material: NETHER_WART
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Verruga del Nether'
+    tier: TIER3
+FLORESPORAS:
+  base:
+    material: SPORE_BLOSSOM
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Flor de Esporas'
+    tier: TIER3
+
+# VARIOS
+OJOARANIA:
+  base:
+    material: SPIDER_EYE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Ojo de Araña'
+    tier: TIER1
+OJOARANIAFERMENTAO:
+  base:
+    material: FERMENTED_SPIDER_EYE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Ojo de Araña Fermentado'
+    tier: TIER1
+LADRILLO:
+  base:
+    material: BRICK
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Ladrillo'
+    tier: TIER1
+LADRILLONETHER:
+  base:
+    material: NETHER_BRICK
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Ladrillo del Nether'
+    tier: TIER1
+HILO:
+  base:
+    material: STRING
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hilo'
+    tier: TIER1
+PIELCONEJO:
+  base:
+    material: RABBIT_HIDE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Piel de Conejo'
+    tier: TIER1
+CUERO:
+  base:
+    material: LEATHER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cuero'
+    tier: TIER1
+ESCAMATORTUGA:
+  base:
+    material: TURTLE_SCUTE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Escama de Tortuga'
+    tier: TIER1
+ESCAMARMADILLO:
+  base:
+    material: ARMADILLO_SCUTE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Escama de Armadillo'
+    tier: TIER1
+HUESO:
+  base:
+    material: BONE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hueso'
+    tier: TIER1
+SACOTINTA:
+  base:
+    material: INK_SAC
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Saco de Tinta'
+    tier: TIER1
+SACOTINTABRILLANTE:
+  base:
+    material: GLOW_INK_SAC
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Saco de Tinta Brillante'
+    tier: TIER1
+CRISTALESPRISMARINA:
+  base:
+    material: PRISMARINE_CRYSTALS
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cristales de Prismarina'
+    tier: TIER1
+FRAGMENTOPRISMARINA:
+  base:
+    material: PRISMARINE_SHARD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Fragmento de Prismarina'
+    tier: TIER1
+BOLASLIME:
+  base:
+    material: SLIME_BALL
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bola de Slime'
+    tier: TIER2
+POLVOLUMINOSO:
+  base:
+    material: GLOWSTONE_DUST
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Polvo de Piedra Luminosa'
+    tier: TIER1
+POLVORA:
+  base:
+    material: GUNPOWDER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pólvora'
+    tier: TIER2
+PAPEL:
+  base:
+    material: PAPER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Papel'
+    tier: TIER1
+PLUMA:
+  base:
+    material: FEATHER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pluma'
+    tier: TIER1
+PANALABEJAS:
+  base:
+    material: HONEYCOMB
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Panal de Abejas'
+    tier: TIER1
+VARABLAZE:
+  base:
+    material: BLAZE_ROD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Vara de Blaze'
+    tier: TIER2
+BOLARCILLA:
+  base:
+    material: CLAY_BALL
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bola de Arcilla'
+    tier: TIER1
+AZUCAR:
+  base:
+    material: SUGAR
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Azúcar'
+    tier: TIER1
+POLVOBLAZE:
+  base:
+    material: BLAZE_POWDER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Polvo de Blaze'
+    tier: TIER2
+LAGRIMAGHAST:
+  base:
+    material: GHAST_TEAR
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Lágrima de Ghast'
+    tier: TIER2
+ALIENTODRAGON:
+  base:
+    material: DRAGON_BREATH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Aliento de Dragón'
+    tier: TIER3
+PATACONEJO:
+  base:
+    material: RABBIT_FOOT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pata de Conejo'
+    tier: TIER1
+PALO:
+  base:
+    material: STICK
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Palo'
+    tier: TIER1
+    crafting:
+      shapeless: {}
+CAPARAZONNAUTILO:
+  base:
+    material: NAUTILUS_SHELL
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Caparazón de Nautilo'
+    tier: TIER1
+MEMBRANAPHANTOM:
+  base:
+    material: PHANTOM_MEMBRANE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Membrana de Phantom'
+    tier: TIER2
+CREMAMAGMA:
+  base:
+    material: MAGMA_CREAM
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Crema de Magma'
+    tier: TIER3
+BOLANIEVE:
+  base:
+    material: SNOWBALL
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bola de Nieve'
+    tier: TIER1
+HUEVO:
+  base:
+    material: EGG
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Huevo'
+    tier: TIER1
+POLVORAFUEGOARTIFICIAL:
+  base:
+    material: FIREWORK_STAR
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pólvora de Fuegos Artificiales'
+    tier: TIER2
+CARNEPODRIDA:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carne Podrida'
+    tier: TIER1
+ALGASSECAS:
+  base:
+    material: DRIED_KELP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Algas Secas'
+    tier: TIER1
+PATADECERDO:
+  base:
+    material: HEART_OF_THE_SEA
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pata de Cerdo'
+    tier: TIER1
+PELUCHEJAKE:
+  base:
+    material: HEART_OF_THE_SEA
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Peluche de Jake'
+    tier: TIER1
+CARNEDEENDER:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carne de Ender'
+    tier: TIER3
+CARNEDECREEPER:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carne de Creeper'
+    tier: TIER3
+CARNEDEARACNIDO:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carne de Aracnido'
+    tier: TIER3
+CARNEDEHUMANO:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Carne de Humano'
+    tier: TIER3
+PIELCREEPER:
+  base:
+    material: LEATHER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Piel Verde'
+    tier: TIER1
+PIELCERDO:
+  base:
+    material: LEATHER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Piel de Cerdo'
+    tier: TIER1
+TOCINOPODRIDO:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Tocino Putrefacto'
+    tier: TIER1
+DEDOCORTADO:
+  base:
+    material: ROTTEN_FLESH
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Dedo Cortado'
+    tier: TIER1
+CALAMAR:
+  base:
+    material: COOKED_COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Calamar'
+    tier: TIER1
+VIALSANGRE:
+  base:
+    material: REDSTONE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Vial de Sangre'
+    tier: TIER1
+VIALBRILLANTE:
+  base:
+    material: GLOWSTONE_DUST
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Vial Brillante'
+    tier: TIER2
+POPO:
+  base:
+    material: POISONOUS_POTATO
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Popo'
+    tier: TIER1
+PLUMALLAMEANTE:
+  base:
+    material: FEATHER
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pluma Llameante'
+    tier: TIER2
+CENIZAS:
+  base:
+    material: GRAY_DYE
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cenizas'
+    tier: TIER1
+HUESONEGRO:
+  base:
+    material: COAL
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Hueso Negro'
+    tier: TIER1
+DIAMANTEMALDITO:
+  base:
+    material: DIAMOND
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Diamante Maldito'
+    tier: TIER3
+SALMONCRUDO:
+  base:
+    material: SALMON
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Salmón Crudo'
+    tier: TIER1
+BACALAOCRUDO:
+  base:
+    material: COD
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bacalao Crudo'
+    tier: TIER1
+CONEJOCRUDO:
+  base:
+    material: RABBIT
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Conejo Crudo'
+    tier: TIER1
+POLLOCRUDO:
+  base:
+    material: CHICKEN
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Pollo Crudo'
+    tier: TIER1
+CORDEROCRUDO:
+  base:
+    material: MUTTON
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Cordero Crudo'
+    tier: TIER1
+CHULETACRUDA:
+  base:
+    material: PORKCHOP
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Chuleta Cruda'
+    tier: TIER1
+BISTECRUDO:
+  base:
+    material: BEEF
+    displayed-type: '&5Recurso'
+    revision-id: 2
+    disable-interaction: true
+    name: '&7Bistec Crudo'
+    tier: TIER1

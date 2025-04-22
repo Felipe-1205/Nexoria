@@ -1,0 +1,40 @@
+name: Deadly Javelin
+lore:
+- 'Arroja una javalina empujando y '
+- 'aturdiendo a tu objetivo por un tiempo'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración de aturdimiento'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2059'
+damage:
+  base: 10
+  per-level: 1
+  min: 4
+  max: 10
+duration:
+  base: 2
+  per-level: 0.3
+  min: 2
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 10
+  per-level: 0
+  min: 0
+  max: 10
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.3
+  min: 2.5
+  max: 10

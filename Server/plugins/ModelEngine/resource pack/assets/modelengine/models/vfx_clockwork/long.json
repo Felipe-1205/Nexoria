@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/clockwork_texture"},"elements":[{"from":[5.392416,8.0,3.9358158],"to":[10.612415,8.0,27.135817],"faces":{"up":{"uv":[6.75,11.625,6.1875,9.125],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[6.75,9.125,6.1875,11.625],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

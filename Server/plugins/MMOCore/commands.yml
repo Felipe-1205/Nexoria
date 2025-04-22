@@ -1,0 +1,68 @@
+player:
+  main: player
+  aliases:
+  - p
+  - profile
+  description: Displays player stats
+attributes:
+  main: attributes
+  aliases:
+  - att
+  - stats
+  description: Display and manage attributes
+class:
+  main: class
+  aliases:
+  - c
+  description: Select a new class
+waypoints:
+  main: waypoints
+  aliases:
+  - wp
+  description: Display discovered waypoints
+quests:
+  main: quests
+  aliases:
+  - q
+  - journal
+  description: Display available quests
+skills:
+  main: skills
+  aliases:
+  - s
+  description: Spend skill points to unlock new skills
+friends:
+  main: friends
+  aliases:
+  - f
+  description: Show online/offline friends
+party:
+  main: party
+  aliases: []
+  description: Invite players in a party to split exp
+guild:
+  main: guild
+  aliases: []
+  description: Show players in current guild
+withdraw:
+  main: withdraw
+  aliases:
+  - w
+  description: Withdraw money into coins and notes
+skill-trees:
+  main: skilltrees
+  aliases:
+  - st
+  - trees
+  - tree
+  description: Open up the skill tree menu
+deposit:
+  main: deposit
+  aliases:
+  - d
+  description: Open the currency deposit menu
+pvp-mode:
+  main: pvpmode
+  aliases:
+  - pvp
+  description: Toggle on/off PVP mode.

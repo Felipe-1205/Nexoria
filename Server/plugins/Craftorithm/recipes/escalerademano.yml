@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'a a'
+- 'aaa'
+- 'a a'
+source:
+  a: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:ladder 3

@@ -1,0 +1,158 @@
+# Weapon Stats
+attack-damage: '&3 &7➸ Daño de Ataque: &f{value}'
+attack-speed: '&3 &7➸ Velocidad de Ataque: &f{value}'
+critical-strike-chance: '&3 &7■ Probabilidad de Crítico: &f<plus>{value}%'
+critical-strike-power: '&3 &7■ Daño Crítico: &f<plus>{value}%'
+skill-critical-strike-chance: '&3 &7■ Probabilidad de Crítico de Habilidad: &f<plus>{value}%'
+skill-critical-strike-power: '&3 &7■ Daño  Habilidad: &f<plus>{value}%'
+range: '&3 &7■ Alcance: &f{value}'
+mana-cost: '&3 &7■ Usa &9{value} Mana'
+stamina-cost: '&3 &7■ Usa &9{value} Aguante'
+arrow-velocity: '&3 &7■ Velocidad de Flecha: &f{value}'
+blunt-power: '&3 &7■ Poder Contundente: &f{value}'
+blunt-rating: '&3 &7■ Poder Contundente: &f{value}%'
+two-handed: '&3 &7■ A Dos Manos'
+handworn: '&3 &7■ Usado en la Mano'
+knockback: '&3 &7■ Retroceso: &f{value}'
+recoil: '&3 &7■ Retroceso: &f{value}%'
+note-weight: '&3 &7■ Peso de Nota: &f{value}'
+lifesteal: '&3 &7■ Robo de Vida: &c+{value}%'
+spell-vampirism: '&3 &7■ Vampirismo de Hechizos: &c+{value}%'
+
+# Extra Damage
+pve-damage: '&3 &7■ Daño PvE: &f<plus>{value}%'
+pvp-damage: '&3 &7■ Daño PvP: &f<plus>{value}%'
+magic-damage: '&3 &7■ Daño Mágico: &f<plus>{value}%'
+weapon-damage: '&3 &7■ Daño de Arma: &f<plus>{value}%'
+undead-damage: '&3 &7■ Daño a No Muertos: &f<plus>{value}%'
+skill-damage: '&3 &7■ Daño de Habilidad: &f<plus>{value}%'
+physical-damage: '&3 &7■ Daño Físico: &f<plus>{value}%'
+projectile-damage: '&3 &7■ Daño de Proyectiles: &f<plus>{value}%'
+faction-damage-undead: '&3 &7■ Daño a No Muertos de Facción: &f<plus>{value}%'
+
+# Abilities (changed in MI 6.9.5)
+ability:
+  general-format: "&8| &7{trigger} &8|&e|&8| &7&l{ability}"
+  modifier-if-any: "\n" # Añadido a general-format si la habilidad tiene al menos un modificador
+  modifier-foreach: "&7{modifier}&8: &f{value}"
+  modifier-splitter: " &8&l|&7 "
+  modifiers-per-line: 3
+  ability-splitter:
+    enabled: true
+    format: ''
+
+# Armor Stats
+block-power: '&3 &7■ Poder de Bloqueo: &f<plus>{value}%'
+block-rating: '&3 &7■ Probabilidad de Bloqueo: &f<plus>{value}%'
+block-cooldown-reduction: '&3 &7■ Reducción de Tiempo de Enfriamiento de Bloqueo: &f<plus>{value}%'
+dodge-rating: '&3 &7■ Probabilidad de Esquiva: &f<plus>{value}%'
+dodge-cooldown-reduction: '&3 &7■ Reducción de Tiempo de Enfriamiento de Esquiva: &f<plus>{value}%'
+parry-rating: '&3 &7■ Probabilidad de Parada: &f<plus>{value}%'
+parry-cooldown-reduction: '&3 &7■ Reducción de Tiempo de Enfriamiento de Parada: &f<plus>{value}%'
+armor: '&3 &7✠ Armadura: &f<plus>{value}'
+armor-toughness: '&3 &7✠ Dureza de la Armadura: &f<plus>{value}'
+knockback-resistance: '&3 &7✠ Resistencia al Retroceso: &f<plus>{value}%'
+max-health: '&3 &7❤ Salud: &c<plus>{value}'
+movement-speed: '&3 &7■ Velocidad de Movimiento: &f<plus>{value}'
+
+# Damage Reduction
+defense: '&3 &7■ Defensa: &f<plus>{value}'
+damage-reduction: '&3 &7■ Reducción de Daño: &f<plus>{value}%'
+fall-damage-reduction: '&3 &7■ Reducción de Daño por Caída: &f<plus>{value}%'
+fire-damage-reduction: '&3 &7■ Reducción de Daño por Fuego: &f<plus>{value}%'
+magic-damage-reduction: '&3 &7■ Reducción de Daño Mágico: &f<plus>{value}%'
+projectile-damage-reduction: '&3 &7■ Reducción de Daño por Proyectiles: &f<plus>{value}%'
+physical-damage-reduction: '&3 &7■ Reducción de Daño Físico: &f<plus>{value}%'
+pve-damage-reduction: '&3 &7■ Reducción de Daño PvE: &f<plus>{value}%'
+pvp-damage-reduction: '&3 &7■ Reducción de Daño PvP: &f<plus>{value}%'
+
+# RPG stats
+health-regeneration: '&3 &7■ Regeneración de Salud: &f<plus>{value}'
+max-mana: '&3 &7■ Mana Máximo: &f<plus>{value}'
+mana-regeneration: '&3 &7■ Regeneración de Mana: &f<plus>{value}'
+max-stamina: '&3 &7■ Aguante Máximo: &f<plus>{value}'
+stamina-regeneration: '&3 &7■ Regeneración de Aguante: &f<plus>{value}'
+cooldown-reduction: '&3 &7■ Reducción de Tiempo de Enfriamiento de Habilidad: &f<plus>{value}%'
+additional-experience: '&3 &7■ Experiencia Adicional: &f<plus>{value}%'
+additional-experience-alchemy: '&7■ Experiencia Adicional en Alquimia: &f<plus>{value}%'
+additional-experience-enchanting: '&7■ Experiencia Adicional en Encantamientos: &f<plus>{value}%'
+additional-experience-farming: '&7■ Experiencia Adicional en Agricultura: &f<plus>{value}%'
+additional-experience-fishing: '&7■ Experiencia Adicional en Pesca: &f<plus>{value}%'
+additional-experience-mining: '&7■ Experiencia Adicional en Minería: &f<plus>{value}%'
+additional-experience-smelting: '&7■ Experiencia Adicional en Fundición: &f<plus>{value}%'
+additional-experience-smithing: '&7■ Experiencia Adicional en Forja: &f<plus>{value}%'
+additional-experience-woodcutting: '&7■ Experiencia Adicional en Tala de Árboles: &f<plus>{value}%'
+
+# Extra Options
+perm-effects: '&3 &7■ Efecto Permanente &f{effect}'
+commands: '&3 &7■ Comando: &f{format} &3 &7(&f{cooldown}&3 &7s)'
+item-cooldown: '&3 &7■ Enfriamiento: &f{value}&3 &7s'
+arrow-potion-effects: '&3 &7■ Efecto de Flecha: &f{effect}'
+
+# Consumables
+restore-health: '&3 &7■ Restaura &f{value} &7Salud'
+restore-food: '&3 &7■ Restaura &f{value} &7Comida'
+restore-saturation: '&3 &7■ Restaura &f{value} &7Saturación'
+restore-mana: '&3 &7■ Restaura &f{value} &7Mana'
+restore-stamina: '&3 &7■ Restaura &f{value} &7Aguante'
+effects: '&3 &7■ Otorga &f{effect} &7por &f{duration} &7s'
+repair: '&3 &7■ Reparar: &f{value}'
+repair-percent: '&3 &7■ Reparar: &f{value}%'
+can-identify: '&3 &7■ Puede identificar objetos.'
+can-deconstruct: '&3 &7■ Puede deconstruir objetos de nivel.'
+can-deskin: '&3 &7■ Puede despojar objetos con pieles.'
+success-rate: '&3 &7■ Tasa de Éxito: &a&l{value}%'
+max-consume: '&3 &7■ &f{value} &7Usos Restantes'
+
+# Gem Stones
+gem-stone-lore: '&8&l[&2&l*&8&l] &aArrastra a un objeto &7para aplicar!'
+gem-sockets:
+  empty: '&a◆ Ranura de Gema Vacía {name}'
+  filled: '&a◆ {name}'
+
+# Soulbound
+soulbinding-chance: '&3 &7■ Tiene un &a{value}% &7de probabilidad de unir tu objeto.'
+soulbound-break-chance: '&3 &7■ Tiene un &a{value}% &7de probabilidad de romper uniones de alma.'
+soulbound-level: '&3 &7■ Nivel &e{value} &7de Unión de Alma'
+
+# Tools
+autosmelt: '&3 &7■ &fAuto Fundición'
+bouncing-crack: '&3 &7■ &fGrieta Rebotante'
+pickaxe-power: '&3 &7■ &fPoder de Pico: &a{value}'
+durability: '&7Durabilidad: {current} / {max}'
+
+# General
+item-type: '&c{type}'
+tier: '&3 &7Nivel: {value}'
+required-class: '&3 &7Objeto de {value}'
+required-level: '&eRequiere Nivel {value}'
+
+# MMOCore Attributes
+required-dexterity: '&eRequiere &c{value} &eDexteridad'
+required-strength: '&eRequiere &c{value} &eFuerza'
+required-intelligence: '&eRequiere &c{value} &eInteligencia'
+
+additional-dexterity: '&3 &7■ Dexteridad Extra: &f<plus>{value}'
+additional-strength: '&3 &7■ Fuerza Extra: &f<plus>{value}'
+additional-intelligence: '&3 &7■ Inteligencia Extra: &f<plus>{value}'
+
+# Professions
+profession-alchemy: '&eNivel de Alquimia: &c{value}'
+profession-enchanting: '&eNivel de Encantamiento: &c{value}'
+profession-farming: '&eNivel de Agricultura: &c{value}'
+profession-fishing: '&eNivel de Pesca: &c{value}'
+profession-mining: '&eNivel de Minería: &c{value}'
+profession-smelting: '&eNivel de Fundición: &c{value}'
+profession-smithing: '&eNivel de Forja: &c{value}'
+profession-woodcutting: '&eNivel de Tala de Árboles: &c{value}'
+
+# Elemental Stat Formats
+element:
+  damage: '{color}{icon}&7 {value} Daño {element}'
+  damage-percent: '{color}{icon}&7 +{value}% Daño {element}'
+  defense: '{color}{icon}&7 {value} Defensa {element}'
+  defense-percent: '{color}{icon}&7 +{value}% Defensa {element}'
+  weakness: '{color}{icon}&7 {value}% Debilidad {element}'
+
+# Custom stats
+custom-myluck: '&3 &7■ Suerte: &f<plus>{value}'

@@ -1,0 +1,46 @@
+name: Onda de Thamur
+lore:
+- Inscribe rápidamente un círculo maldito de
+- magia, que momentáneamente inflige
+- lentitud &8{amplifier} &7a los objetivos dentro 
+- del área de &8{radius} &7bloques del círculo
+- durante &8{duration} &7segundos 
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: SNOWBALL
+duration:
+  base: 3
+  per-level: 2
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 3
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+amplifier:
+  base: 2
+  per-level: 1
+radius:
+  base: 3
+  per-level: 2

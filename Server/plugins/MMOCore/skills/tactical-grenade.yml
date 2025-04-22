@@ -1,0 +1,39 @@
+name: Granada Táctica
+lore:
+- Lanza una granada teledirigida
+- hacia tu objetivo, impulsándolo &8{knock-up}
+- bloques por el aire al impactar e
+- inflingiendo &8{damage} &7puntos de daño,
+- su área de efecto es de &8{radius} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: TNT
+timer:
+  base: 0
+  per-level: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 4
+  per-level: 0.5
+delay:
+  base: 3
+  per-level: -0.2
+mana:
+  base: 10
+  per-level: -0.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 20
+  per-level: -1.5
+radius:
+  base: 3
+  per-level: 0.5
+knock-up:
+  base: 3
+  per-level: 0.5

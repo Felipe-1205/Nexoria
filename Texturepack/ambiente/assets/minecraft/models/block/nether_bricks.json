@@ -1,0 +1,35 @@
+{
+    "__createdwith": "opl's Model Creator",
+   	"parent": "block/cube",
+    "textures": {
+        "side": "block/nether_bricks",
+        "top": "block/nether_brick_top",
+        "particle": "block/nether_bricks"
+    },
+    "elements": [
+        {
+            "from": [0,0,0],
+            "to": [16,16,16],
+            "faces": {
+                "up": {
+                    "texture": "#top"
+                },
+                "down": {
+                    "texture": "#top"
+                },
+                "west": {
+                    "texture": "#side"
+                },
+                "east": {
+                    "texture": "#side"
+                },
+                "north": {
+                    "texture": "#side"
+                },
+                "south": {
+                    "texture": "#side"
+                }
+            }
+        }
+    ]
+}

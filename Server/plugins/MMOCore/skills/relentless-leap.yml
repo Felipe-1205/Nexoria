@@ -1,0 +1,35 @@
+name: Relentless Leap
+lore:
+- '&4Salta hacia adelante y golpea contra el '
+- '&4piso con tu hacha creando un área de'
+- '&4cono que atrae a los enemigos.'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2184'
+damage:
+  base: 7
+  per-level: 1
+  min: 5
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 6
+  per-level: 0
+  min: 0
+  max: 6
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.1
+  min: 3
+  max: 8

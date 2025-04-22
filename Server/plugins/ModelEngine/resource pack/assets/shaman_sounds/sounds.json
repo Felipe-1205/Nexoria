@@ -1,0 +1,74 @@
+{
+  "samus.ancestral_beam": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/ancestral_beam"
+    ]
+  },
+  "samus.ancestral_beam_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/ancestral_beam_summon"
+    ]
+  },
+  "samus.fire_form": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/fire_form"
+    ]
+  },
+  "samus.fire_shoot": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/fire_shoot"
+    ]
+  },
+  "samus.heal_beam": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/heal_beam"
+    ]
+  },
+  "samus.healing_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/healing_aura"
+    ]
+  },
+  "samus.healing_form": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/healing_form"
+    ]
+  },
+  "samus.healing_totem_summon": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/healing_totem_summon"
+    ]
+  },
+  "samus.light_beam": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/light_beam"
+    ]
+  },
+  "samus.solar_beam": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/solar_beam"
+    ]
+  },
+  "samus.wind_blow": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/wind_blow"
+    ]
+  },
+  "samus.wind_form": {
+    "category": "master",
+    "sounds": [
+      "samus/shaman/wind_form"
+    ]
+  }
+}

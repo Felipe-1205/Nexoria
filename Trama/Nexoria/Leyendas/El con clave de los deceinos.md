@@ -1,0 +1,13 @@
+Hace incontables generaciones, cuando el mundo apenas encontraba su forma, surgió la necesidad de una decisión que definiría su destino. Las tensiones entre naciones jóvenes y sus ideales emergentes amenazaban con destruir cualquier esperanza de unidad. En respuesta, los líderes más influyentes de cada región acordaron reunirse en el Cónclave de los Decenios, un evento sin precedentes donde se decidiría el curso del futuro.
+
+La asamblea reunía a decenas de delegados, divididos en dos facciones principales. Por un lado estaban Los Renovadores, defensores de un cambio constante y la evolución sin límites. Por otro, Los Custodios, quienes buscaban preservar las tradiciones y estructuras que consideraban esenciales para la estabilidad. Ambos bandos creían tener la verdad absoluta y no estaban dispuestos a ceder terreno fácilmente.
+
+Durante años, el Cónclave se convirtió en un espacio de debates intensos, donde las palabras eran las únicas armas permitidas. Discursos apasionados y argumentos afilados como dagas llenaban la sala, dejando en los presentes marcas más profundas que cualquier guerra física. A medida que avanzaban las discusiones, algunos delegados abandonaron el proceso, incapaces de soportar la presión o derrotados por la elocuencia de sus adversarios.
+
+Con el paso del tiempo, el número de participantes disminuyó drásticamente. Sólo un grupo pequeño permaneció, formado por los más resilientes, los más convencidos de sus ideales y aquellos dispuestos a luchar hasta el final por lo que creían. Las voces en la sala se habían reducido, pero su intensidad se había multiplicado.
+
+Finalmente, llegó el momento de tomar una resolución. En un acto cargado de solemnidad, el grupo que prevaleció redactó el Pacto Primario, un documento que establecería los principios rectores del futuro del mundo. Nadie sabe con certeza cuántos fueron ni a qué facción representaban los vencedores, pero su decisión selló el destino de todos.
+
+Aquellos que habían perdido, conocidos desde entonces como Los Observadores, aceptaron su derrota y renunciaron a influir en el mundo. Se retiraron a un exilio silencioso, condenados a ser meros testigos del curso de los eventos que no pudieron moldear. Aunque sus ideales nunca murieron, sus voces quedaron apagadas para siempre.
+
+El Pacto Primario guió a las generaciones venideras, construyendo un mundo según los ideales de los vencedores. Sin embargo, los ecos del Cónclave persisten en los debates modernos, con algunos preguntándose si las advertencias de Los Observadores habrían prevenido ciertos errores del presente. El Cónclave de los Decenios sigue siendo una lección eterna sobre el poder de las ideas y el peso de decidir el futuro de todos.

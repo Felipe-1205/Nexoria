@@ -1,0 +1,40 @@
+{
+  "samus.abyssion_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_slash_1",
+	  "samus/abyssion/abyssion_slash_2",
+	  "samus/abyssion/abyssion_slash_3"
+    ]
+  },
+  "samus.abyssion_splash": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_splash"
+    ]
+  },
+  "samus.abyssion_splash_big": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_splash_big"
+    ]
+  },
+  "samus.abyssion_water_ambient": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_water_ambient"
+    ]
+  },
+  "samus.abyssion_water_dash": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_water_dash"
+    ]
+  },
+  "samus.abyssion_wave": {
+    "category": "master",
+    "sounds": [
+      "samus/abyssion/abyssion_wave"
+    ]
+  }
+}

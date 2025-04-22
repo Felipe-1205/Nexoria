@@ -1,0 +1,6 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:FLINTTIER1
+- mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:arrow 4

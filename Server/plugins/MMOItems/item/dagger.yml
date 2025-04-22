@@ -1,0 +1,182 @@
+DAGA1:
+  base:
+    material: WOODEN_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 2.5
+    attack-speed: 2.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 1.0
+DAGA2:
+  base:
+    material: STONE_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 3.0
+    attack-speed: 2.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 10.0
+DAGA3:
+  base:
+    material: IRON_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 4.0
+    attack-speed: 2.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 20.0
+DAGA4:
+  base:
+    material: GOLDEN_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 5.0
+    attack-speed: 2.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 30.0
+DAGA5:
+  base:
+    material: DIAMOND_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 6.0
+    attack-speed: 2.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 40.0
+DAGA6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&BDaga'
+    displayed-type: '&5Sutil'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 7.0
+    attack-speed: 2.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    entity-interaction-range: -0.5
+    lore:
+    - '&5Un d4 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 50.0
+
+# Xsl1C2LbFTwG4RJpaur+7zw5x0yJwCg11YVUjVmYSycvll8L49BfpqP1QHS5g51knOJGV/G4aNv2k9pEZMnX3C9zHNN3K9LpMw97IzyoUEI=

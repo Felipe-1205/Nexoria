@@ -1,0 +1,42 @@
+name: Con este tesoro helado...
+lore:
+- Invoca a un muñeco de nieve contratado
+- durante &8{duration} &7segundos para que te 
+- ayude en tu ataque, cada impacto de este ocasiona &8{damage}
+- puntos de daño a quien entre en un radio de &8{radius} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: CARROT
+duration:
+  base: 6
+  per-level: 0.5
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 5
+  per-level: 0.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: -0.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -0.5
+radius:
+  base: 4
+  per-level: 1

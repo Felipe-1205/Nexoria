@@ -1,0 +1,99 @@
+{
+  "samus.aim": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/aim"
+    ]
+  },
+  "samus.air_strike_bomb_drop": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/air_strike_bomb_drop"
+    ]
+  },
+  "samus.air_strike_burn": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/air_strike_burn"
+    ]
+  },
+  "samus.air_strike_explosion": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/air_strike_explosion1",
+	  "samus/gunner/air_strike_explosion2",
+	  "samus/gunner/air_strike_explosion3"
+    ]
+  },
+  "samus.air_strike_jet_flyby": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/air_strike_jet_flyby"
+    ]
+  },
+  "samus.bullet_drop": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/bullet_drop_1",
+	  "samus/gunner/bullet_drop_2"
+    ]
+  },
+  "samus.focus_shot_charge": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/focus_shot_charge"
+    ]
+  },
+  "samus.focus_shot_decharge": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/focus_shot_decharge"
+    ]
+  },
+  "samus.focus_shot_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/focus_shot_fire"
+    ]
+  },
+  "samus.pistol_shot_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/pistol_shot_fire1",
+	  "samus/gunner/pistol_shot_fire2"
+    ]
+  },
+  "samus.reload": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/reload"
+    ]
+  },
+  "samus.shotgun_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/shotgun_fire1",
+	  "samus/gunner/shotgun_fire2"
+    ]
+  },
+  "samus.sniper_fire": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/sniper_fire1",
+	  "samus/gunner/sniper_fire2"
+    ]
+  },
+  "samus.spin": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/spin_1",
+	  "samus/gunner/spin_2"
+    ]
+  },
+  "samus.spin_pistol": {
+    "category": "master",
+    "sounds": [
+      "samus/gunner/spin_pistol"
+    ]
+  }
+}

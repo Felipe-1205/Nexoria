@@ -1,0 +1,40 @@
+name: Colmillos de la Abuela
+lore:
+- Invoca &8{fangs} &7colmillos del vacío
+- con tu magia y úsalos para
+- infligir &8{damage} &7de daño a tu objetivo
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: POINTED_DRIPSTONE
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 1
+fangs:
+  base: 3
+  per-level: 2
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+
+#Uja3Y2YFJGdKRDeQd3NZxGWZh0Y3FkeNRTT650MFRUT4dmaZt2ZodFU040TIpVZ1YWVDVjM

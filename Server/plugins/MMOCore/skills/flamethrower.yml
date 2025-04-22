@@ -1,0 +1,50 @@
+name: Flamethrower
+lore:
+- '&9[Flamethrower]'
+- '&bEmit a short-range stream of arcanic flames that'
+- '&bburns enemies. You can continuously cast this'
+- '&bskill by holding it.'
+- ''
+- '&9[Arcane Bullets] &f(Arcane Mecha Mode)'
+- '&bFire rapid-fire arcane bullets upon your enemies'
+- '&bwith deadly precision. You can continuously cast'
+- '&bthis skill by holding it.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Burn Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2205'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 6
+duration:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+
+
+# 18367T

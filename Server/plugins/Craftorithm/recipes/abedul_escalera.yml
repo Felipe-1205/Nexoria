@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'a  '
+- 'aa '
+- aaa
+source:
+  a: minecraft:birch_planks
+unlock: false
+result: minecraft:birch_stairs 4

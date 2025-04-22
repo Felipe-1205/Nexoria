@@ -1,0 +1,29 @@
+DOUBLE_STRIKE:
+    mythicmobs-skill-id: Double_Strike
+    modifiers:
+    - damage
+
+AGILE_STRIKE:
+    mythicmobs-skill-id: Agile_Strike
+    modifiers:
+    - damage
+    
+EVASION:
+    mythicmobs-skill-id: Evasion
+    passive-type: DAMAGED
+    
+UPPERCUT:
+    mythicmobs-skill-id: Uppercut
+    modifiers:
+    - damage
+    
+DEADLY_SQUASH:
+    mythicmobs-skill-id: Deadly_Squash
+    modifiers:
+    - damage
+    - duration
+    
+MULTI_STRIKE:
+    mythicmobs-skill-id: Multi_Strike
+    modifiers:
+    - damage

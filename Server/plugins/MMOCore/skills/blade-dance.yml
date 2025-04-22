@@ -1,0 +1,34 @@
+name: Blade Dance
+lore:
+- '&4Teletransportate entre objetivos'
+- '&4cortandolos, esto aplica sangrado'
+- ''
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2035'
+damage:
+  base: 12
+  per-level: 1
+  min: 6
+  max: 12
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: 0
+  min: 0
+  max: 8
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 20
+  per-level: -0.5
+  min: 12
+  max: 20

@@ -1,0 +1,80 @@
+{
+  "samus.blood_cut": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/blood_cut"
+    ]
+  },
+  "samus.blood_pierce": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/blood_pierce"
+    ]
+  },
+  "samus.blood_slash_1": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/blood_slash_1"
+    ]
+  },
+  "samus.blood_slash_2": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/blood_slash_2"
+    ]
+  },
+  "samus.death_charge_spin_1": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/death_charge_spin_1"
+    ]
+  },
+  "samus.death_charge_spin_2": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/death_charge_spin_2"
+    ]
+  },
+  "samus.death_symbol": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/death_symbol"
+    ]
+  },
+  "samus.flow_state_stack": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/flow_state_stack"
+    ]
+  },
+  "samus.laceration": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/laceration"
+    ]
+  },
+  "samus.piercing_shuriken_throw": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/piercing_shuriken_throw"
+    ]
+  },
+  "samus.shuriken_hit": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/shuriken_hit"
+    ]
+  },
+  "samus.smoke_bomb_throw": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/smoke_bomb_throw"
+    ]
+  },
+  "samus.smoke_bomb_explode": {
+    "category": "master",
+    "sounds": [
+      "samus/ninja_samurai/smoke_bomb_explode"
+    ]
+  }
+}

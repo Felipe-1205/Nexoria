@@ -1,0 +1,27 @@
+Orzath3:
+  World: dungeons
+  X: 274
+  Y: -54
+  Z: -291
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: Zombie_Brute
+  Radius: 10.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '10'
+  MobLevel: '1'
+  MobsPerSpawn: 10
+  Cooldown: 10
+  Warmup: 0
+  ActivationRange: 50.0
+  ScalingRange: 25.0
+  LeashRange: 15.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []
+  ActiveMobs: 2

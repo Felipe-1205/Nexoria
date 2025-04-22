@@ -1,0 +1,39 @@
+name: Arcane Blast
+lore:
+- '&9[Arcane Blast]'
+- '&bUnleash a charged orb of arcane energy that explodes'
+- '&bon impact, damaging nearby enemies.'
+- ''
+- '&9[Arcane Repulsor] &f(Arcane Mecha Mode)'
+- '&bCharge your blaster to unleash a devastating repulsor beam,'
+- '&bculminating in an explosive blast at its endpoint.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2200'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: -0.1
+  min: 1.5
+  max: 2

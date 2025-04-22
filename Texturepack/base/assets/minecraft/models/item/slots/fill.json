@@ -1,0 +1,9 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "item/slots/fill"
+	}, 
+	"display":{
+		"gui": {"rotation": [ 0, 0, 0 ], "translation": [ 0, 0.5, 0 ], "scale": [ 0.89, 0.93, 0.93 ]}
+	}
+}

@@ -1,0 +1,39 @@
+{
+  "samus.blade_critical": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/blade_critical"
+    ]
+  },
+  "samus.blade_dance_teleport": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/blade_dance_teleport"
+    ]
+  },
+  "samus.blade_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/blade_slash_1",
+	  "samus/assassin/blade_slash_2"
+    ]
+  },
+  "samus.blade_spin": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/blade_spin"
+    ]
+  },
+  "samus.dash": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/dash"
+    ]
+  },
+  "samus.shadow_walk": {
+    "category": "master",
+    "sounds": [
+      "samus/assassin/shadow_walk"
+    ]
+  }
+}

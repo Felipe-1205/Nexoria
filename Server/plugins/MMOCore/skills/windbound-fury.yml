@@ -1,0 +1,38 @@
+name: Windbound Fury
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&7Become invincible and levitate upwards with nearby enemies."
+- "&7Slowly pull them towards you, then slash down enemies with a"
+- "&7spinning strike, stunning them."
+- "&c🗡 {damage} Damage"
+- "&e⌛ {cooldown}s Cooldown"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2222'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 9
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 9
+  per-level: -0.1
+  min: 8
+  max: 9
+# 8759OH4NNBISCYMYPQZHLBN

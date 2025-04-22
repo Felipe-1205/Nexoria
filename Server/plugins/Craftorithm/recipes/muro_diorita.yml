@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:diorite
+unlock: false
+result: minecraft:diorite_wall 6

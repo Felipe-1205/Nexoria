@@ -1,0 +1,160 @@
+class-points: 0
+skill-points: 5
+skill-reallocation-points: 1
+attribute-points: 25
+attribute-realloc-points: 1
+level: 1
+experience: 90.0
+class: CLERIGO
+waypoints: []
+friends: []
+last-login: 1739823346795
+skill-tree-reallocation-points: 0
+health: 30.0
+mana: 30.0
+stellium: 20.0
+stamina: 20.0
+unlocked-items: []
+skill-tree-level:
+  mage-arcane-mage_a1: 0
+  mage-arcane-mage_a3: 0
+  mage-arcane-mage_a2: 0
+  general_j1: 0
+  warrior-paladin_d1: 0
+  warrior-paladin_d2: 0
+  warrior-paladin_d3: 0
+  general_e2: 0
+  rogue-marksman_d2: 0
+  general_e3: 0
+  rogue-marksman_d3: 0
+  general_a1: 0
+  rogue-marksman_d1: 0
+  general_e1: 0
+  general_a2: 0
+  mage-arcane-mage_e1: 0
+  general_a3: 0
+  mage-arcane-mage_e3: 0
+  mage-arcane-mage_e2: 0
+  mage-arcane-mage_b2: 0
+  warrior-paladin_a2: 0
+  mage-arcane-mage_b1: 0
+  warrior-paladin_a3: 0
+  mage-arcane-mage_b3: 0
+  warrior-paladin_e1: 0
+  warrior-paladin_e2: 0
+  warrior-paladin_e3: 0
+  warrior-paladin_a1: 0
+  general_d1: 0
+  rogue-marksman_c1: 0
+  general_d2: 0
+  rogue-marksman_c2: 0
+  general_d3: 0
+  rogue-marksman_g3: 0
+  general_h1: 0
+  rogue-marksman_g1: 0
+  rogue-marksman_g2: 0
+  mage-arcane-mage_f2: 0
+  mage-arcane-mage_f1: 0
+  rogue-marksman_c3: 0
+  mage-arcane-mage_f3: 0
+  mage-arcane-mage_c3: 0
+  warrior-paladin_b3: 0
+  mage-arcane-mage_c2: 0
+  warrior-paladin_f1: 0
+  warrior-paladin_f2: 0
+  warrior-paladin_f3: 0
+  warrior-paladin_b1: 0
+  warrior-paladin_b2: 0
+  general_c1: 0
+  rogue-marksman_b1: 0
+  general_c2: 0
+  rogue-marksman_f2: 0
+  general_c3: 0
+  rogue-marksman_f3: 0
+  general_g1: 0
+  rogue-marksman_f1: 0
+  mage-arcane-mage_g1: 0
+  mage-arcane-mage_g3: 0
+  mage-arcane-mage_g2: 0
+  mage-arcane-mage_c1: 0
+  rogue-marksman_b2: 0
+  rogue-marksman_b3: 0
+  mage-arcane-mage_d3: 0
+  warrior-paladin_g1: 0
+  warrior-paladin_g2: 0
+  warrior-paladin_g3: 0
+  warrior-paladin_c1: 0
+  warrior-paladin_c2: 0
+  warrior-paladin_c3: 0
+  general_f3: 0
+  rogue-marksman_e3: 0
+  general_b1: 0
+  rogue-marksman_e1: 0
+  general_b2: 0
+  rogue-marksman_e2: 0
+  general_f1: 0
+  general_f2: 0
+  general_b3: 0
+  rogue-marksman_a3: 0
+  mage-arcane-mage_d2: 0
+  rogue-marksman_a1: 0
+  mage-arcane-mage_d1: 0
+  rogue-marksman_a2: 0
+bound-skills:
+  '1': MINOR_HEALINGS
+attribute:
+  sabiduria: 0
+  carisma: 0
+  inteligencia: 0
+  destreza: 0
+  constitucion: 0
+  fuerza: 0
+profession:
+  woodcutting:
+    exp: 813.0
+    level: 3
+  mining:
+    exp: 599.0
+    level: 3
+quest: {}
+class-info:
+  HUMAN:
+    level: 1
+    experience: 0.0
+    skill-points: 5
+    attribute-points: 0
+    attribute-realloc-points: 1
+    skill-tree-reallocation-points: 0
+    skill-reallocation-points: 1
+    health: 21.0
+    mana: 20.2
+    stamina: 20.2
+    stellium: 2.9899999999999802
+    attribute:
+      sabiduria: 1
+      carisma: 1
+      destreza: 1
+      inteligencia: 1
+      constitucion: 5
+      fuerza: 16
+    unlocked-items: []
+  GUERRERO:
+    level: 1
+    experience: 0.0
+    skill-points: 5
+    attribute-points: 25
+    attribute-realloc-points: 1
+    skill-tree-reallocation-points: 0
+    skill-reallocation-points: 1
+    health: 25.0
+    mana: 15.0
+    stamina: 25.0
+    stellium: 20.0
+    attribute:
+      sabiduria: 0
+      carisma: 0
+      destreza: 0
+      inteligencia: 0
+      constitucion: 0
+      fuerza: 0
+    unlocked-items: []

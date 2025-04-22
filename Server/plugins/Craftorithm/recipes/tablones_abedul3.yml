@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:ABEDULTIER1
+unlock: false
+result: minecraft:birch_planks 4

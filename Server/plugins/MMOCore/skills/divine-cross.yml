@@ -1,0 +1,42 @@
+name: Divine Cross
+lore:
+- '&eInvocas una cruz sagrada en el piso haciendo daño'
+- '&ea todos los enemigos en el área y empujándolos.'
+- '&eTodos los aliados reciben velocidad de'
+- '&emovimiento y curación.'
+- ''
+- '&a{heal} Cura'
+- '&c{damage} Daño'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2143'
+damage:
+  base: 5
+  per-level: 1
+  min: 4
+  max: 5
+heal:
+  base: 4
+  per-level: 1
+  min: 3
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 18
+  per-level: 0
+  min: 0
+  max: 18
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 60
+  per-level: -0.1
+  min: 11
+  max: 60

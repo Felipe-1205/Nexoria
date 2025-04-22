@@ -1,0 +1,33 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/cleric_texture/divine_impact_4",
+		"particle": "item/cleric_texture/divine_impact_4"
+	},
+	"elements": [
+		{
+			"from": [-2.5, -2.5, 8],
+			"to": [18.5, 18.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.25, 2.25, 13.75, 13.75], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [13.75, 2.25, 2.25, 13.75], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-6, -1.75, 5],
+			"scale": [2, 2, 2]
+		},
+		"head": {
+			"translation": [0, -17.25, -5.25],
+			"scale": [3.2, 3.2, 3.2]
+		}
+	}
+}

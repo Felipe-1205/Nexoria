@@ -1,0 +1,41 @@
+name: Windrazor
+lore:
+- 'Tu arco flota por un tiempo permitiendote disparar'
+- 'diversas flechas con Quick Shot, empuja a los'
+- 'enemigos. Disparas 5 flechas en lugar de una.'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2063'
+damage:
+  base: 8
+  per-level: 1
+  min: 4
+  max: 8
+duration:
+  base: 8
+  per-level: 1
+  min: 5
+  max: 8
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 20
+  per-level: -0.3
+  min: 9
+  max: 20

@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+- ' b '
+source:
+  a: minecraft:spruce_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:spruce_sign 3

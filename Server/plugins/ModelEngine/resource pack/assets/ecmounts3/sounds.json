@@ -1,0 +1,87 @@
+{
+ "custom.ecmounts3.catsability": {
+  "sounds": [
+   "custom/ecmounts3/catsability"
+  ]
+ },
+ "custom.ecmounts3.catsdeath": {
+  "sounds": [
+   "custom/ecmounts3/catsdeath"
+  ]
+ },
+ "custom.ecmounts3.catspet": {
+  "sounds": [
+   "custom/ecmounts3/catspet"
+  ]
+ },
+ "custom.ecmounts3.goatability": {
+  "sounds": [
+   "custom/ecmounts3/goatability"
+  ]
+ },
+ "custom.ecmounts3.goatdeath": {
+  "sounds": [
+   "custom/ecmounts3/goatdeath"
+  ]
+ },
+ "custom.ecmounts3.goatpet": {
+  "sounds": [
+   "custom/ecmounts3/goatpet"
+  ]
+ },
+ "custom.ecmounts3.dogsability": {
+  "sounds": [
+   "custom/ecmounts3/dogsability"
+  ]
+ },
+ "custom.ecmounts3.dogsdeath": {
+  "sounds": [
+   "custom/ecmounts3/dogsdeath"
+  ]
+ },
+ "custom.ecmounts3.dogspet": {
+  "sounds": [
+   "custom/ecmounts3/dogspet"
+  ]
+ },
+ "custom.ecmounts3.moabirdability": {
+  "sounds": [
+   "custom/ecmounts3/moabirdability"
+  ]
+ },
+ "custom.ecmounts3.moabirddeath": {
+  "sounds": [
+   "custom/ecmounts3/moabirddeath"
+  ]
+ },
+ "custom.ecmounts3.moabirdpet": {
+  "sounds": [
+   "custom/ecmounts3/moabirdpet"
+  ]
+ },
+ "custom.ecmounts3.teddyability": {
+  "sounds": [
+   "custom/ecmounts3/teddyability"
+  ]
+ },
+ "custom.ecmounts3.teddydeath": {
+  "sounds": [
+   "custom/ecmounts3/teddydeath"
+  ]
+ },
+ "custom.ecmounts3.teddypet": {
+  "sounds": [
+   "custom/ecmounts3/teddypet"
+  ]
+ },
+ "custom.ecmounts3.sprint": {
+  "sounds": [
+   "custom/ecmounts3/sprint"
+  ]
+ },
+ "custom.ecmounts3.walk": {
+  "sounds": [
+   "custom/ecmounts3/walk"
+  ]
+ }
+}

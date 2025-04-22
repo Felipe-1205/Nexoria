@@ -1,0 +1,46 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/bard_texture/symphony_explosion_3",
+		"particle": "item/bard_texture/symphony_explosion_3"
+	},
+	"elements": [
+		{
+			"from": [-14.5, -14.5, 8],
+			"to": [30.5, 30.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [2.25, 3.75, 14.5, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [14.5, 3.75, 2.25, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		},
+		{
+			"from": [8, -14.5, -14.5],
+			"to": [8, 30.5, 30.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"east": {"uv": [2.25, 3.75, 14.5, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"west": {"uv": [14.5, 3.75, 2.25, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "rotation": 90, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "rotation": 270, "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-6.25, -2.25, 47.5],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"translation": [0, 7, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}

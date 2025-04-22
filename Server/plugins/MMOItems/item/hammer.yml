@@ -1,0 +1,150 @@
+MAZO1:
+  base:
+    material: WOODEN_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 1.0
+MAZO2:
+  base:
+    material: STONE_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 5.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 10.0
+MAZO3:
+  base:
+    material: IRON_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 6.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 20.0
+MAZO4:
+  base:
+    material: GOLDEN_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 30.0
+MAZO5:
+  base:
+    material: DIAMOND_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 40.0
+MAZO6:
+  base:
+    material: NETHERITE_PICKAXE
+    name: '&bMazo'
+    displayed-type: '&5Ligera'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 9.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d4 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 50.0

@@ -1,0 +1,8 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:CONEJOCRUDO
+- mmoitems:MATERIAL:CORDEROCRUDO
+- mmoitems:MATERIAL:CONEJOCRUDO
+- mmoitems:MATERIAL:CONEJOCRUDO
+unlock: false
+result: mmoitems:CONSUMABLE:SOPACONEJOS 1

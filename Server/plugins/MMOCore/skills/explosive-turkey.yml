@@ -1,0 +1,47 @@
+name: Pavo, Cinta y TNT
+lore:
+- Lanza un pavo explosivo
+- apuntando al suelo
+- cerca de tu objetivo
+- al detonar hará &8{damage} &7de daño
+- en un área de &8{radius} &7y empujando a
+- los enemigos &8{knockback} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: COOKED_CHICKEN
+duration:
+  base: 4
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 7
+  per-level: 1.1
+  min: 0
+  max: 0
+stamina:
+  base: 2
+  per-level: 1
+cooldown:
+  base: 2
+  per-level: 1
+knockback:
+  base: 3
+  per-level: 1
+radius:
+  base: 2
+  per-level: 1

@@ -1,0 +1,9 @@
+type: cooking
+result: mmoitems:CONSUMABLE:PASTELCALABAZA 1
+multiple: true
+unlock: false
+source:
+- item: mmoitems:MATERIAL:CALABAZA
+  block: furnace
+  time: 200
+  exp: 0.0

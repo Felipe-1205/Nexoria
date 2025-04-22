@@ -1,0 +1,431 @@
+HACHA_TIER1:
+  base:
+    material: WOODEN_AXE
+    max-durability: 1000.0
+    will-break: true
+    name: '&bHacha de Principiante'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 5.0
+    tier: TIER1
+    profession-woodcutting: 1.0
+HACHA_TIER2:
+  base:
+    material: STONE_AXE
+    max-durability: 1500.0
+    will-break: true
+    name: '&bHacha de Novato'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 1.0
+    tier: TIER1
+    profession-woodcutting: 10.0
+HACHA_TIER3:
+  base:
+    material: IRON_AXE
+    name: '&3Hacha Intermedio'
+    max-durability: 2000.0
+    will-break: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 1.0
+    tier: TIER2
+    profession-woodcutting: 20.0
+HACHA_TIER4:
+  base:
+    material: GOLDEN_AXE
+    name: '&3Hacha Avanzado'
+    will-break: true
+    max-durability: 2500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 11.0
+    tier: TIER2
+    profession-woodcutting: 30.0
+HACHA_TIER5:
+  base:
+    material: DIAMOND_AXE
+    name: '&9Hacha Experto'
+    max-durability: 3000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 13.0
+    tier: TIER3
+    profession-woodcutting: 40.0
+HACHA_TIER6:
+  base:
+    material: NETHERITE_AXE
+    name: '&9Hacha Maestro'
+    max-durability: 3500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 15.0
+    tier: TIER3
+    profession-woodcutting: 50.0
+DALLES_TIER1:
+  base:
+    material: WOODEN_HOE
+    max-durability: 1000.0
+    will-break: true
+    name: '&bDalles de Principiante'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 5.0
+    profession-farming: 1.0
+    tier: TIER1
+DALLES_TIER2:
+  base:
+    material: STONE_HOE
+    max-durability: 1500.0
+    will-break: true
+    name: '&bDalles de Novato'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 7.0
+    tier: TIER1
+    profession-farming: 10.0
+DALLES_TIER3:
+  base:
+    material: IRON_HOE
+    name: '&3Dalles Intermedio'
+    max-durability: 2000.0
+    will-break: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 9.0
+    tier: TIER2
+    profession-farming: 20.0
+DALLES_TIER4:
+  base:
+    material: GOLDEN_HOE
+    name: '&3Dalles Avanzado'
+    will-break: true
+    max-durability: 2500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 11.0
+    tier: TIER2
+    profession-farming: 30.0
+DALLES_TIER5:
+  base:
+    material: DIAMOND_HOE
+    name: '&9Dalles Experto'
+    max-durability: 3000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 13.0
+    tier: TIER3
+    profession-farming: 40.0
+DALLES_TIER6:
+  base:
+    material: NETHERITE_HOE
+    name: '&9Dalles Maestro'
+    max-durability: 3500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 15.0
+    tier: TIER3
+    profession-farming: 50.0
+PICO_TIER1:
+  base:
+    material: WOODEN_PICKAXE
+    max-durability: 1000.0
+    will-break: true
+    name: '&bPico de Principiante'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 5.0
+    profession-mining: 1.0
+    tier: TIER1
+PICO_TIER2:
+  base:
+    material: STONE_PICKAXE
+    max-durability: 1500.0
+    will-break: true
+    name: '&bPico de Novato'
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 7.0
+    tier: TIER1
+    profession-mining: 10.0
+PICO_TIER3:
+  base:
+    material: IRON_PICKAXE
+    name: '&3Pico Intermedio'
+    max-durability: 2000.0
+    will-break: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 9.0
+    tier: TIER2
+    profession-mining: 20.0
+PICO_TIER4:
+  base:
+    material: GOLDEN_PICKAXE
+    name: '&3Pico Avanzado'
+    will-break: true
+    max-durability: 2500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 11.0
+    tier: TIER2
+    profession-mining: 30.0
+PICO_TIER5:
+  base:
+    material: DIAMOND_PICKAXE
+    name: '&9Pico Experto'
+    max-durability: 3000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 13.0
+    tier: TIER3
+    profession-mining: 40.0
+PICO_TIER6:
+  base:
+    material: NETHERITE_PICKAXE
+    name: '&9Pico Maestro'
+    max-durability: 3500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    block-break-speed: 15.0
+    tier: TIER3
+    profession-mining: 50.0
+PESCA1:
+  base:
+    material: FISHING_ROD
+    name: '&bYeti'
+    max-durability: 1000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER1
+    profession-fishing: 1.0
+PESCA2:
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 1.0
+    name: '&bDesfibradora'
+    max-durability: 1500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER1
+    profession-fishing: 10.0
+PESCA3:
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 2.0
+    name: '&bFantasmal'
+    max-durability: 2000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER2
+    profession-fishing: 20.0
+PESCA4:
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 3.0
+    name: '&bMaritima'
+    max-durability: 2500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER2
+    profession-fishing: 30.0
+PESCA5:
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 4.0
+    name: '&bInfernal'
+    max-durability: 3000.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER3
+    profession-fishing: 40.0
+PESCA6:
+  base:
+    material: FISHING_ROD
+    enchants:
+      lure: 5.0
+    name: '&bFuego del Infierno'
+    max-durability: 3500.0
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    tier: TIER3
+    profession-fishing: 50.0
+MECHERO:
+  base:
+    material: FLINT_AND_STEEL
+    name: '&bMechero'
+    max-durability: 500.0
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL FLINTTIER1 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+TIJERAS:
+  base:
+    material: SHEARS
+    name: '&bTijeras'
+    max-durability: 500.0
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+CUBETA:
+  base:
+    material: BUCKET
+    name: '&bCubeta'
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..|m MATERIAL HIERROTIER1 1.0..
+          - v AIR 0 1..|m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+    tier: TIER1
+BROCHA:
+  base:
+    material: BRUSH
+    name: '&bBrocha'
+    max-durability: 100.0
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL PLUMA 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL PALO 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL COBRETIER1 1.0..|v AIR 0 1..
+CORREA:
+  base:
+    material: LEAD
+    name: '&bCorrea'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL CUERO 1.0..|m MATERIAL CUERO 1.0..
+          - v AIR 0 1..|m MATERIAL CUERO 1.0..|m MATERIAL CUERO 1.0..
+          - m MATERIAL CUERO 1.0..|v AIR 0 1..|v AIR 0 1..
+BRUJULA:
+  base:
+    material: COMPASS
+    name: '&bBrújula'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..
+          - m MATERIAL HIERROTIER1 1.0..|m MATERIAL COBRETIER1 1.0..|m MATERIAL HIERROTIER1
+            1.0..
+          - v AIR 0 1..|m MATERIAL HIERROTIER1 1.0..|v AIR 0 1..
+RELOJ:
+  base:
+    material: CLOCK
+    name: '&bReloj'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL COBRETIER1 1.0..|m MATERIAL COBRETIER1 1.0..|m MATERIAL COBRETIER1
+            1.0..
+          - m MATERIAL COBRETIER1 1.0..|m MATERIAL FLINTTIER1 1.0..|m MATERIAL COBRETIER1
+            1.0..
+          - m MATERIAL COBRETIER1 1.0..|m MATERIAL COBRETIER1 1.0..|m MATERIAL COBRETIER1
+            1.0..
+CATALEJO:
+  base:
+    material: SPYGLASS
+    name: '&bCatalejo'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|m MATERIAL AMATISTATIER2 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL COBRETIER1 1.0..|v AIR 0 1..
+          - v AIR 0 1..|m MATERIAL COBRETIER1 1.0..|v AIR 0 1..
+LIBROYPLUMA:
+  base:
+    material: WRITABLE_BOOK
+    name: '&bLibro y Pluma'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL SACOTINTA 1.0..|m MATERIAL CUERO 10.0..|v AIR 0 1..
+          - m MATERIAL PAPEL 10.0..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+SOPORTEARMADURAS:
+  base:
+    material: ARMOR_STAND
+    name: '&bSoporte para Armaduras'
+    tier: TIER1
+    crafting:
+      shaped:
+        '1':
+          input:
+          - m MATERIAL PALO 1.0..|m MATERIAL PALO 1.0..|m MATERIAL PALO 1.0..
+          - v AIR 0 1..|m MATERIAL PALO 1.0..|v AIR 0 1..
+          - m MATERIAL PALO 1.0..|m MATERIAL HIERROTIER1 1.0..|m MATERIAL PALO 1.0..

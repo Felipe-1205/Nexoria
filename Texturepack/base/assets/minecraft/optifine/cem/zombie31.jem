@@ -1,0 +1,1328 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "skeleton_cape_scythe.png",
+	"textureSize": [240, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"animations": [
+				{
+					"head.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "headwear",
+			"id": "headwear",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"animations": [
+				{
+					"headwear.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -24, 0],
+			"submodels": [
+				{
+					"id": "body2",
+					"invertAxis": "xy",
+					"translate": [0, 24, 0],
+					"submodels": [
+						{
+							"id": "zombie_all",
+							"invertAxis": "xy",
+							"translate": [0, -24, 0],
+							"submodels": [
+								{
+									"id": "zombie_new_full",
+									"invertAxis": "xy",
+									"translate": [0, 24, 0],
+									"submodels": [
+										{
+											"id": "zombie_new_right_leg",
+											"invertAxis": "xy",
+											"mirrorTexture": "u",
+											"translate": [1.9, -12.25, 0],
+											"rotate": [0, 0, 5],
+											"submodels": [
+												{
+													"id": "zombie_new_right_leg_anim",
+													"invertAxis": "xy",
+													"translate": [0, -12, 0],
+													"submodels": [
+														{
+															"id": "zombie_new_right_leg2",
+															"invertAxis": "xy",
+															"translate": [0, 10.25, 0],
+															"submodels": [
+																{
+																	"id": "right_leg_skel",
+																	"invertAxis": "xy",
+																	"translate": [0, 0, 0],
+																	"submodels": [
+																		{
+																			"id": "right_leg_top",
+																			"invertAxis": "xy",
+																			"translate": [-1.9, -10, 0],
+																			"boxes": [
+																				{"coordinates": [1, 0, -1, 2, 5, 2], "textureOffset": [32, 3]},
+																				{"coordinates": [1, 0, -1, 2, 5, 2], "textureOffset": [40, 3], "sizeAdd": 0.1},
+																				{"coordinates": [1, 5, -1, 2, 2, 2], "textureOffset": [32, 4], "sizeAdd": 0.2}
+																			],
+																			"submodels": [
+																				{
+																					"id": "right_bend",
+																					"invertAxis": "xy",
+																					"translate": [2, 6.5, 0],
+																					"rotate": [180, 0, 177.5],
+																					"boxes": [
+																						{"coordinates": [-1, 0.5, -1, 2, 5, 2], "textureOffset": [32, 3], "sizeAdd": -0.1}
+																					],
+																					"submodels": [
+																						{
+																							"id": "body_sub_9",
+																							"invertAxis": "xy",
+																							"mirrorTexture": "u",
+																							"translate": [0, 0, 0],
+																							"boxes": [
+																								{"coordinates": [-1, 3.75, -1, 2, 2, 2], "textureOffset": [32, 4], "sizeAdd": 0.12}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					"id": "right_leg_top_socket",
+																					"invertAxis": "xy",
+																					"translate": [2, 10.6, 0],
+																					"rotate": [0, 0, -7.5]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "zombie_new_left_leg",
+											"invertAxis": "xy",
+											"mirrorTexture": "u",
+											"translate": [-1.9, -12.25, 0],
+											"submodels": [
+												{
+													"id": "zombie_new_left_leg_rot",
+													"invertAxis": "xy",
+													"mirrorTexture": "u",
+													"translate": [0, 0, 0]
+												},
+												{
+													"id": "left_leg_skel",
+													"invertAxis": "xy",
+													"translate": [0, -1.75, 0],
+													"submodels": [
+														{
+															"id": "right_leg_top2",
+															"invertAxis": "xy",
+															"translate": [1.9, -10, 0],
+															"submodels": [
+																{
+																	"id": "right_bend2",
+																	"invertAxis": "xy",
+																	"mirrorTexture": "u",
+																	"translate": [-2.12705, 6.82267, 0],
+																	"rotate": [0, 0, 2.5],
+																	"boxes": [
+																		{"coordinates": [-0.89095, -0.00238, -1, 2, 5, 2], "textureOffset": [32, 3], "sizeAdd": -0.1},
+																		{"coordinates": [-0.87295, 3.42733, -1, 2, 2, 2], "textureOffset": [32, 4], "sizeAdd": 0.12}
+																	]
+																},
+																{
+																	"id": "right_leg_top_socket2",
+																	"invertAxis": "xy",
+																	"translate": [2, 10.6, 0],
+																	"rotate": [0, 0, -7.5]
+																},
+																{
+																	"id": "left_leg_bottom",
+																	"invertAxis": "xy",
+																	"mirrorTexture": "u",
+																	"translate": [-2, 2.5, 0],
+																	"rotate": [0, 90, 0],
+																	"boxes": [
+																		{"coordinates": [-1, -2.5, -1, 2, 5, 2], "textureOffset": [32, 3]},
+																		{"coordinates": [-1, -2.5, -1, 2, 5, 2], "textureOffset": [40, 3], "sizeAdd": 0.1}
+																	]
+																},
+																{
+																	"id": "left_leg_socket",
+																	"invertAxis": "xy",
+																	"mirrorTexture": "u",
+																	"translate": [-2, 6, 0],
+																	"rotate": [0, -180, 0],
+																	"boxes": [
+																		{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [32, 4], "sizeAdd": 0.2}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "zombie_new_body_var",
+											"invertAxis": "xy",
+											"translate": [0, -12, 0],
+											"submodels": [
+												{
+													"id": "zombie_punch_right",
+													"invertAxis": "xy",
+													"translate": [0, 0, 0],
+													"submodels": [
+														{
+															"id": "zombie_new_body",
+															"invertAxis": "xy",
+															"translate": [0, 0, 0],
+															"submodels": [
+																{
+																	"id": "zombie_new_body_rot",
+																	"invertAxis": "xy",
+																	"translate": [0, 0.25, 0],
+																	"rotate": [0, 0, 5],
+																	"submodels": [
+																		{
+																			"id": "body_noarms",
+																			"invertAxis": "xy",
+																			"translate": [0, -0.25, 0],
+																			"submodels": [
+																				{
+																					"id": "spine",
+																					"invertAxis": "xy",
+																					"translate": [0, -12, -0.1],
+																					"submodels": [
+																						{
+																							"id": "spine_top",
+																							"invertAxis": "xy",
+																							"translate": [0, 18.5, 1],
+																							"submodels": [
+																								{
+																									"id": "spine_top_rot",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 1],
+																									"rotate": [2.5, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-1, 0, -1.8, 2, 5, 2], "textureOffset": [48, 16]},
+																										{"coordinates": [-1, 4, -1.8, 2, 1, 2], "textureOffset": [68, 30], "sizeAdd": 0.1},
+																										{"coordinates": [-1, 2, -1.8, 2, 1, 2], "textureOffset": [62, 31], "sizeAdd": 0.1}
+																									],
+																									"submodels": [
+																										{
+																											"id": "rib_top",
+																											"invertAxis": "xy",
+																											"translate": [0, 2.5, 0],
+																											"rotate": [2.5, 0, 0],
+																											"submodels": [
+																												{
+																													"id": "rib_top_right",
+																													"invertAxis": "xy",
+																													"translate": [0.25, 0, -0.1],
+																													"submodels": [
+																														{
+																															"id": "rib_top_right_rot",
+																															"invertAxis": "xy",
+																															"translate": [0.5, 1, -0.25],
+																															"boxes": [
+																																{"coordinates": [0.03425, -1.25586, -3.65, 3, 1, 4], "textureOffset": [56, 23]}
+																															]
+																														}
+																													]
+																												},
+																												{
+																													"id": "rib_top_left",
+																													"invertAxis": "xy",
+																													"translate": [0.25, 0, -0.1],
+																													"submodels": [
+																														{
+																															"id": "rib_top_left_rot",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [0.5, 1, -0.25],
+																															"boxes": [
+																																{"coordinates": [-4.53425, -1.25586, -3.65, 3, 1, 4], "textureOffset": [56, 23]}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "rib_chest",
+																											"invertAxis": "xy",
+																											"translate": [0, 4.5, -3.5],
+																											"rotate": [2.5, 0, 0],
+																											"boxes": [
+																												{"coordinates": [-1.04358, -5.44191, -0.51647, 2, 6, 1], "textureOffset": [48, 28]}
+																											],
+																											"submodels": [
+																												{
+																													"id": "body_sub_33",
+																													"invertAxis": "xy",
+																													"mirrorTexture": "u",
+																													"translate": [0, 0, 0],
+																													"boxes": [
+																														{"coordinates": [-1, -5.39381, -0.51647, 2, 5, 1], "textureOffset": [1, 17], "sizeAdd": 0.05}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "collar_bones",
+																											"invertAxis": "xy",
+																											"translate": [0, 9, -1],
+																											"submodels": [
+																												{
+																													"id": "collar_left",
+																													"invertAxis": "xy",
+																													"mirrorTexture": "u",
+																													"translate": [-0.75, -4, 0.75],
+																													"boxes": [
+																														{"coordinates": [-3.04358, -0.9981, -3.65, 3, 1, 4], "textureOffset": [56, 23]}
+																													]
+																												},
+																												{
+																													"id": "collar_right",
+																													"invertAxis": "xy",
+																													"translate": [0.75, -4, 0.75],
+																													"boxes": [
+																														{"coordinates": [-0.04358, -0.9981, -3.65, 3, 1, 4], "textureOffset": [56, 23]}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "shoulder_blade_left",
+																											"invertAxis": "xy",
+																											"translate": [0, -18.5, -2],
+																											"submodels": [
+																												{
+																													"id": "shoulder_blade_left_rot",
+																													"invertAxis": "xy",
+																													"translate": [-3, 21.75, 1.7],
+																													"rotate": [0, 5, 0],
+																													"boxes": [
+																														{"coordinates": [-1.5, -2, -1, 3, 4, 2], "textureOffset": [38, 30]}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "shoulder_blade_right",
+																											"invertAxis": "xy",
+																											"translate": [0, -18.5, -2],
+																											"submodels": [
+																												{
+																													"id": "shoulder_blade_right_rot",
+																													"invertAxis": "xy",
+																													"mirrorTexture": "u",
+																													"translate": [3, 21.75, 1.7],
+																													"rotate": [0, -5, 0],
+																													"boxes": [
+																														{"coordinates": [-1.5, -2, -1, 3, 4, 2], "textureOffset": [38, 30]}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								},
+																								{
+																									"id": "neck_bone",
+																									"invertAxis": "xy",
+																									"translate": [0, 5, 0.6],
+																									"submodels": [
+																										{
+																											"id": "neck_bone_rot",
+																											"invertAxis": "xy",
+																											"translate": [-0.23532, -0.20321, -0.18209],
+																											"rotate": [-12.5, 0, 0],
+																											"boxes": [
+																												{"coordinates": [-0.78211, -0.00951, -1, 2, 5, 2], "textureOffset": [48, 16]},
+																												{"coordinates": [-0.76468, 1.95321, -0.96791, 2, 1, 2], "textureOffset": [68, 30], "sizeAdd": 0.1},
+																												{"coordinates": [-0.76468, 3.95321, -0.96791, 2, 1, 2], "textureOffset": [68, 30], "sizeAdd": 0.1}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"id": "spine_bottom",
+																							"invertAxis": "xy",
+																							"translate": [0, 18, 1],
+																							"boxes": [
+																								{"coordinates": [-1, -4.5, -0.8, 2, 5, 2], "textureOffset": [48, 21]},
+																								{"coordinates": [-1, -4.5, -0.8, 2, 1, 2], "textureOffset": [54, 28], "sizeAdd": 0.1},
+																								{"coordinates": [-1, -2.5, -0.8, 2, 1, 2], "textureOffset": [62, 28], "sizeAdd": 0.1},
+																								{"coordinates": [-1, -0.5, -0.8, 2, 1, 2], "textureOffset": [54, 31], "sizeAdd": 0.1}
+																							],
+																							"submodels": [
+																								{
+																									"id": "rib_bottom",
+																									"invertAxis": "xy",
+																									"translate": [0, 6, -0.05],
+																									"submodels": [
+																										{
+																											"id": "rib_bottom_right",
+																											"invertAxis": "xy",
+																											"translate": [0, 0, -0.1],
+																											"submodels": [
+																												{
+																													"id": "rib_bottom_right_rot",
+																													"invertAxis": "xy",
+																													"translate": [2.25237, -4.14165, -0.8],
+																													"rotate": [0, 0, -5],
+																													"submodels": [
+																														{
+																															"id": "rib_bottom_right_anim",
+																															"invertAxis": "xy",
+																															"translate": [-2.25237, -0.85835, 0.8],
+																															"boxes": [
+																																{"coordinates": [0.75237, -0.38165, -2.8, 3, 1, 4], "textureOffset": [56, 23], "sizeAdd": -0.01},
+																																{"coordinates": [1.75237, 0.59835, -2.8, 1, 2, 4], "textureOffset": [70, 23], "sizeAdd": -0.01}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "rib_bottom_left",
+																											"invertAxis": "xy",
+																											"translate": [0, 0, -0.1],
+																											"submodels": [
+																												{
+																													"id": "rib_bottom_left_rot",
+																													"invertAxis": "xy",
+																													"translate": [-2.25237, -4.14165, -0.8],
+																													"rotate": [0, 0, 5],
+																													"submodels": [
+																														{
+																															"id": "rib_bottom_left_anim",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [1, -1, 0],
+																															"boxes": [
+																																{"coordinates": [-2.5, -0.24, -2, 3, 1, 4], "textureOffset": [56, 23], "sizeAdd": -0.01},
+																																{"coordinates": [-1.5, 0.74, -2, 1, 2, 4], "textureOffset": [70, 23], "sizeAdd": -0.01}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								},
+																								{
+																									"id": "rib_bottom2",
+																									"invertAxis": "xy",
+																									"translate": [0, 4, -0.05],
+																									"submodels": [
+																										{
+																											"id": "rib_bottom_left2",
+																											"invertAxis": "xy",
+																											"translate": [-0.75, -4, 0.75],
+																											"rotate": [0, 0, 5]
+																										},
+																										{
+																											"id": "rib_bottom_right2",
+																											"invertAxis": "xy",
+																											"translate": [0.75, -4, 0.75],
+																											"rotate": [0, 0, -5]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				},
+																				{
+																					"id": "hips",
+																					"invertAxis": "xy",
+																					"translate": [-0.17431, -0.24239, 0.5],
+																					"boxes": [
+																						{"coordinates": [-3.82569, -0.00761, -1.5, 8, 4, 3], "textureOffset": [26, 37], "sizeAdd": 0.1}
+																					]
+																				},
+																				{
+																					"id": "zombie_body_overlay",
+																					"invertAxis": "xy",
+																					"translate": [0, -12, 0],
+																					"boxes": [
+																						{"coordinates": [-4, 11.6, -2.4, 8, 12, 4], "textureOffset": [88, 16], "sizeAdd": 0.15}
+																					],
+																					"submodels": [
+																						{
+																							"id": "zombie_cape",
+																							"invertAxis": "xy",
+																							"translate": [0, 23.5, 2],
+																							"submodels": [
+																								{
+																									"id": "zombie_cape_rot2",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"rotate": [-2.5, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-4, -18, -1, 8, 18, 2], "textureOffset": [89, 34], "sizeAdd": 0.5}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "neckbone",
+																			"invertAxis": "xy",
+																			"translate": [0, -1.75, 0],
+																			"submodels": [
+																				{
+																					"id": "neckbone_rot",
+																					"invertAxis": "xy",
+																					"translate": [0, 0.75, 0],
+																					"rotate": [0, 0, -90],
+																					"boxes": [
+																						{"coordinates": [-14, -1, -1, 2, 2, 2], "textureOffset": [12, 16], "sizeAdd": 0.01}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "zombie_head",
+																			"invertAxis": "xy",
+																			"translate": [0, 11.25, 0],
+																			"submodels": [
+																				{
+																					"id": "zombie_head_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "zombie_head_death",
+																							"invertAxis": "xy",
+																							"translate": [0, 0, 0],
+																							"submodels": [
+																								{
+																									"id": "zombie_new_skull_pivot",
+																									"invertAxis": "xy",
+																									"translate": [0, 8, 0],
+																									"submodels": [
+																										{
+																											"id": "zombie_new_skull",
+																											"invertAxis": "xy",
+																											"translate": [0, -8, 0],
+																											"submodels": [
+																												{
+																													"id": "zombie_new_skull_head",
+																													"invertAxis": "xy",
+																													"translate": [0, -1, 0],
+																													"submodels": [
+																														{
+																															"id": "zombie_new_skull_head_rot",
+																															"invertAxis": "xy",
+																															"translate": [0, 1, 0],
+																															"rotate": [-4.89006, 2.27051, -2.70571],
+																															"boxes": [
+																																{"coordinates": [-4, 0, -4, 8, 8, 8], "textureOffset": [0, 0]},
+																																{"coordinates": [-1, 2, -4, 2, 1, 1], "textureOffset": [32, 11]},
+																																{"coordinates": [1, 0, -4, 3, 2, 1], "textureOffset": [32, 0]},
+																																{"coordinates": [-4.05, 6.01, -4.1, 1, 1, 1], "textureOffset": [0, 6]},
+																																{"coordinates": [0.05, -1.05, -4.05, 1, 1, 1], "textureOffset": [15, 46]}
+																															],
+																															"submodels": [
+																																{
+																																	"id": "notch",
+																																	"invertAxis": "xy",
+																																	"translate": [0, -23.5, 0],
+																																	"boxes": [
+																																		{"coordinates": [-4, 26.5, -2, 1, 2, 1], "textureOffset": [28, 32]},
+																																		{"coordinates": [-4, 26.5, -1, 1, 1, 1], "textureOffset": [32, 32]},
+																																		{"coordinates": [-4, 27.5, -3, 1, 2, 1], "textureOffset": [24, 32]}
+																																	]
+																																},
+																																{
+																																	"id": "notch2",
+																																	"invertAxis": "xy",
+																																	"mirrorTexture": "u",
+																																	"translate": [0, -23.5, 0],
+																																	"boxes": [
+																																		{"coordinates": [3, 26.5, -2, 1, 2, 1], "textureOffset": [28, 32]},
+																																		{"coordinates": [3, 26.5, -1, 1, 1, 1], "textureOffset": [32, 32]},
+																																		{"coordinates": [3, 27.5, -3, 1, 2, 1], "textureOffset": [24, 32]}
+																																	]
+																																},
+																																{
+																																	"id": "body_sub_30",
+																																	"invertAxis": "xy",
+																																	"mirrorTexture": "u",
+																																	"translate": [0, 0, 0],
+																																	"boxes": [
+																																		{"coordinates": [-4, 0, -4, 3, 2, 1], "textureOffset": [32, 0]}
+																																	]
+																																},
+																																{
+																																	"id": "zombie_head_overlay",
+																																	"invertAxis": "xy",
+																																	"translate": [0, 7.5, 0],
+																																	"boxes": [
+																																		{"coordinates": [-4, -7.5, -4, 8, 8, 8], "textureOffset": [56, 0], "sizeAdd": 0.25}
+																																	]
+																																},
+																																{
+																																	"id": "eye_socket_left",
+																																	"invertAxis": "xy",
+																																	"mirrorTexture": "u",
+																																	"translate": [0, -24, 0],
+																																	"boxes": [
+																																		{"coordinates": [-3, 27, -4, 2, 3, 1], "textureOffset": [0, 33]}
+																																	],
+																																	"submodels": [
+																																		{
+																																			"id": "eye_left",
+																																			"invertAxis": "xy",
+																																			"translate": [0, 0, 0],
+																																			"submodels": [
+																																				{
+																																					"id": "eye_left_sub",
+																																					"invertAxis": "xy",
+																																					"translate": [-2, 28, -3.5],
+																																					"submodels": [
+																																						{
+																																							"id": "eye_left_anim",
+																																							"invertAxis": "xy",
+																																							"mirrorTexture": "u",
+																																							"translate": [0, 0, 0],
+																																							"boxes": [
+																																								{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 40], "sizeAdd": -0.5}
+																																							]
+																																						}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																},
+																																{
+																																	"id": "eye_socket_right",
+																																	"invertAxis": "xy",
+																																	"translate": [0, -24, 0],
+																																	"boxes": [
+																																		{"coordinates": [1, 27, -4, 2, 3, 1], "textureOffset": [0, 33]}
+																																	],
+																																	"submodels": [
+																																		{
+																																			"id": "eye_right",
+																																			"invertAxis": "xy",
+																																			"translate": [0, 0, 0],
+																																			"submodels": [
+																																				{
+																																					"id": "eye_right_sub",
+																																					"invertAxis": "xy",
+																																					"translate": [2, 28, -3.5],
+																																					"submodels": [
+																																						{
+																																							"id": "eye_right_anim",
+																																							"invertAxis": "xy",
+																																							"translate": [0, 0, 0],
+																																							"boxes": [
+																																								{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 40], "sizeAdd": -0.5}
+																																							]
+																																						}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																},
+																																{
+																																	"id": "skull_mask",
+																																	"invertAxis": "xy",
+																																	"translate": [0, -24, 0],
+																																	"boxes": [
+																																		{"coordinates": [-4, 24, -3.96, 8, 8, 1], "textureOffset": [6, 32], "sizeAdd": 0.05}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "zombie_left_arm_bone",
+																			"invertAxis": "xy",
+																			"translate": [-5, 10, 0],
+																			"boxes": [
+																				{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [12, 16]}
+																			]
+																		},
+																		{
+																			"id": "zombie_right_arm_bone",
+																			"invertAxis": "xy",
+																			"translate": [5, 10, 0],
+																			"submodels": [
+																				{
+																					"id": "zombie_right_arm_bone_rot",
+																					"invertAxis": "xy",
+																					"mirrorTexture": "u",
+																					"translate": [0, 0, 0],
+																					"rotate": [-180, 0, 0],
+																					"boxes": [
+																						{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [12, 16]}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "bow_arms",
+																			"invertAxis": "xy",
+																			"translate": [0, 0.25, 0],
+																			"submodels": [
+																				{
+																					"id": "bow_arms_pitch",
+																					"invertAxis": "xy",
+																					"translate": [0, 9, 0],
+																					"submodels": [
+																						{
+																							"id": "bow_arms_pitch_sub",
+																							"invertAxis": "xy",
+																							"translate": [0, -9, 0],
+																							"submodels": [
+																								{
+																									"id": "zombie_new_arm_left_full",
+																									"invertAxis": "xy",
+																									"translate": [-4, 11, 0.75],
+																									"submodels": [
+																										{
+																											"id": "zombie_new_arm_left_full_main",
+																											"invertAxis": "xy",
+																											"translate": [0, 0, 0],
+																											"rotate": [49.00703, -10.54529, 10.72858],
+																											"submodels": [
+																												{
+																													"id": "zombie_new_arm_left_dismember",
+																													"invertAxis": "xy",
+																													"translate": [0, 0, 0],
+																													"submodels": [
+																														{
+																															"id": "zombie_new_arm_left",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [0, -1, 0],
+																															"submodels": [
+																																{
+																																	"id": "zombie_new_arm_left_punch",
+																																	"invertAxis": "xy",
+																																	"mirrorTexture": "u",
+																																	"translate": [0, 0, 0],
+																																	"submodels": [
+																																		{
+																																			"id": "armfull_left",
+																																			"invertAxis": "xy",
+																																			"mirrorTexture": "u",
+																																			"translate": [-1, -8.5, 0],
+																																			"boxes": [
+																																				{"coordinates": [-1, 4.5, -1, 2, 5, 2], "textureOffset": [32, 3]},
+																																				{"coordinates": [-1, -2.5, -1, 2, 5, 2], "textureOffset": [40, 3], "sizeAdd": 0.1},
+																																				{"coordinates": [-1, 2.5, -1, 2, 2, 2], "textureOffset": [32, 3], "sizeAdd": 0.2}
+																																			],
+																																			"submodels": [
+																																				{
+																																					"id": "arm_bottom",
+																																					"invertAxis": "xy",
+																																					"translate": [0, 0, 0],
+																																					"rotate": [0, 0, -180],
+																																					"boxes": [
+																																						{"coordinates": [-1, -2.5, -1, 2, 5, 2], "textureOffset": [32, 3]}
+																																					]
+																																				},
+																																				{
+																																					"id": "bone",
+																																					"invertAxis": "xy",
+																																					"mirrorTexture": "u",
+																																					"translate": [0, 8.5, 0],
+																																					"rotate": [-90, 0, -90],
+																																					"boxes": [
+																																						{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [32, 3], "sizeAdd": 0.2}
+																																					],
+																																					"submodels": [
+																																						{
+																																							"id": "bone_overlay",
+																																							"invertAxis": "xy",
+																																							"mirrorTexture": "u",
+																																							"translate": [5, -23, -0.75],
+																																							"boxes": [
+																																								{"coordinates": [-6, 22, -0.25, 2, 2, 2], "textureOffset": [80, 0], "sizeAdd": 0.25}
+																																							]
+																																						}
+																																					]
+																																				},
+																																				{
+																																					"id": "bow_arrow",
+																																					"invertAxis": "xy",
+																																					"translate": [8.35768, -5.40012, 10.9084],
+																																					"submodels": [
+																																						{
+																																							"id": "bow_arrow_rot",
+																																							"invertAxis": "xy",
+																																							"translate": [-9.00479, 3.93958, -10.59145],
+																																							"rotate": [-104.21078, -41.55456, -123.81412]
+																																						}
+																																					]
+																																				},
+																																				{
+																																					"id": "shoulder_overlay_left",
+																																					"invertAxis": "xy",
+																																					"mirrorTexture": "u",
+																																					"translate": [-0.4, 9.3, -0.25],
+																																					"boxes": [
+																																						{"coordinates": [-1, -6.5, -2, 3, 7, 4], "textureOffset": [72, 16], "sizeAdd": 0.1}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								},
+																								{
+																									"id": "zombie_new_arm_right_full",
+																									"invertAxis": "xy",
+																									"translate": [4, 10, 0],
+																									"submodels": [
+																										{
+																											"id": "zombie_new_arm_right_full_main",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [-6, 0, 4.25],
+																											"rotate": [30.78447, 40.93581, -11.57216],
+																											"submodels": [
+																												{
+																													"id": "zombie_new_arm_right_dismember",
+																													"invertAxis": "xy",
+																													"translate": [0, 0, 0],
+																													"submodels": [
+																														{
+																															"id": "zombie_new_arm_right",
+																															"invertAxis": "xy",
+																															"translate": [0, 0, 0],
+																															"submodels": [
+																																{
+																																	"id": "zombie_new_arm_right_punch",
+																																	"invertAxis": "xy",
+																																	"translate": [0, 0, 0],
+																																	"submodels": [
+																																		{
+																																			"id": "armfull_right",
+																																			"invertAxis": "xy",
+																																			"translate": [-1, -8.5, 0.75],
+																																			"submodels": [
+																																				{
+																																					"id": "right_arm_top",
+																																					"invertAxis": "xy",
+																																					"translate": [10, 7, 0],
+																																					"rotate": [0, -180, 0],
+																																					"boxes": [
+																																						{"coordinates": [-1, -2.5, -1, 2, 5, 2], "textureOffset": [32, 3]},
+																																						{"coordinates": [-1, -9.5, -1, 2, 5, 2], "textureOffset": [40, 3], "sizeAdd": 0.1}
+																																					],
+																																					"submodels": [
+																																						{
+																																							"id": "shoulder_overlay_right",
+																																							"invertAxis": "xy",
+																																							"translate": [-7, -21.5, -5],
+																																							"submodels": [
+																																								{
+																																									"id": "shoulder_overlay_right_rot",
+																																									"invertAxis": "xy",
+																																									"translate": [5.15, 20.8, 1],
+																																									"rotate": [0, -180, 0],
+																																									"boxes": [
+																																										{"coordinates": [-3.5, -3.5, -6, 3, 7, 4], "textureOffset": [72, 16], "sizeAdd": 0.1}
+																																									]
+																																								}
+																																							]
+																																						}
+																																					]
+																																				},
+																																				{
+																																					"id": "arm_bottom2",
+																																					"invertAxis": "xy",
+																																					"mirrorTexture": "u",
+																																					"translate": [10, 0, 10],
+																																					"rotate": [0, 90, -180],
+																																					"boxes": [
+																																						{"coordinates": [9, -2.5, -1, 2, 5, 2], "textureOffset": [32, 3]}
+																																					]
+																																				},
+																																				{
+																																					"id": "right_arm_socket",
+																																					"invertAxis": "xy",
+																																					"translate": [10, 3.5, 0],
+																																					"rotate": [0, -180, 0],
+																																					"boxes": [
+																																						{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [32, 3], "sizeAdd": 0.2}
+																																					]
+																																				},
+																																				{
+																																					"id": "left_arm_socket",
+																																					"invertAxis": "xy",
+																																					"mirrorTexture": "u",
+																																					"translate": [10, 8.5, 0],
+																																					"rotate": [0, 180, 0],
+																																					"boxes": [
+																																						{"coordinates": [-1, -1, -1, 2, 2, 2], "textureOffset": [32, 3], "sizeAdd": 0.2}
+																																					]
+																																				},
+																																				{
+																																					"id": "scythe",
+																																					"invertAxis": "xy",
+																																					"translate": [9.97018, -0.80327, -1.5],
+																																					"submodels": [
+																																						{
+																																							"id": "scythe_disarm",
+																																							"invertAxis": "xy",
+																																							"translate": [0, 0, 0],
+																																							"submodels": [
+																																								{
+																																									"id": "scythe_disarm_spin",
+																																									"invertAxis": "xy",
+																																									"translate": [-0.08945, 11.04757, -12],
+																																									"submodels": [
+																																										{
+																																											"id": "scythe_rot",
+																																											"invertAxis": "xy",
+																																											"translate": [0, -11, 14],
+																																											"rotate": [-45, 0, 180],
+																																											"boxes": [
+																																												{"coordinates": [-0.42812, -3.44013, 0.32764, 1, 3, 3], "textureOffset": [164, 31]},
+																																												{"coordinates": [-0.42812, 1.55987, -3.67236, 1, 2, 2], "textureOffset": [169, 44]},
+																																												{"coordinates": [-0.42812, -0.44013, -1.67236, 1, 2, 2], "textureOffset": [169, 44]},
+																																												{"coordinates": [-0.42812, 3.55987, -5.67236, 1, 2, 2], "textureOffset": [169, 44]},
+																																												{"coordinates": [-0.42812, 5.55987, -7.67236, 1, 2, 2], "textureOffset": [169, 44]},
+																																												{"coordinates": [-0.42812, 7.55987, -9.67236, 1, 2, 2], "textureOffset": [175, 44]},
+																																												{"coordinates": [-0.42812, 1.55987, -1.67236, 1, 1, 1], "textureOffset": [164, 37]},
+																																												{"coordinates": [-0.42812, -0.44013, 0.32764, 1, 1, 1], "textureOffset": [164, 37]},
+																																												{"coordinates": [-0.42812, 3.55987, -3.67236, 1, 1, 1], "textureOffset": [164, 37]},
+																																												{"coordinates": [-0.42812, 7.55987, -7.67236, 1, 1, 1], "textureOffset": [164, 37]},
+																																												{"coordinates": [-0.42812, 9.55987, -8.67236, 1, 2, 2], "textureOffset": [163, 39]},
+																																												{"coordinates": [-0.42812, 5.55987, -5.67236, 1, 1, 1], "textureOffset": [164, 37]},
+																																												{"coordinates": [-0.42812, -1.44013, -0.67236, 1, 1, 1], "textureOffset": [168, 37]},
+																																												{"coordinates": [-0.42812, 0.55987, -2.67236, 1, 1, 1], "textureOffset": [168, 37]},
+																																												{"coordinates": [-0.42812, 2.55987, -4.67236, 1, 1, 1], "textureOffset": [166, 48]},
+																																												{"coordinates": [-0.42812, 6.55987, -8.67236, 1, 1, 1], "textureOffset": [166, 48]},
+																																												{"coordinates": [-0.42812, 4.55987, -6.67236, 1, 1, 1], "textureOffset": [166, 48]},
+																																												{"coordinates": [-0.42812, 10.55987, -6.67236, 1, 1, 1], "textureOffset": [166, 48]},
+																																												{"coordinates": [-0.42812, 11.55987, -8.67236, 1, 1, 1], "textureOffset": [165, 46]},
+																																												{"coordinates": [-0.42812, 7.55987, -10.67236, 1, 1, 1], "textureOffset": [161, 54]},
+																																												{"coordinates": [-0.42812, 5.55987, -11.67236, 1, 1, 1], "textureOffset": [161, 48]},
+																																												{"coordinates": [-0.42812, 6.55987, -10.67236, 1, 1, 1], "textureOffset": [161, 48]},
+																																												{"coordinates": [-0.42812, 8.55987, -12.67236, 1, 1, 1], "textureOffset": [161, 48]},
+																																												{"coordinates": [-0.42812, 6.55987, -11.67236, 1, 1, 1], "textureOffset": [161, 48]},
+																																												{"coordinates": [-0.42812, 7.55987, -11.67236, 1, 1, 1], "textureOffset": [161, 48]},
+																																												{"coordinates": [-0.42812, 10.55987, -5.67236, 1, 1, 1], "textureOffset": [156, 47]},
+																																												{"coordinates": [-0.42812, 8.55987, -11.67236, 1, 1, 1], "textureOffset": [165, 50]},
+																																												{"coordinates": [-0.42812, 12.55987, -7.67236, 1, 1, 4], "textureOffset": [153, 41]},
+																																												{"coordinates": [-0.42812, 11.55987, -7.67236, 1, 1, 4], "textureOffset": [144, 44]},
+																																												{"coordinates": [-0.42812, 9.55987, -11.67236, 1, 2, 3], "textureOffset": [150, 46]},
+																																												{"coordinates": [-0.42812, 9.55987, -3.67236, 1, 3, 1], "textureOffset": [153, 51]},
+																																												{"coordinates": [-0.42812, 8.55987, -2.67236, 1, 3, 1], "textureOffset": [149, 51]},
+																																												{"coordinates": [-0.42812, 10.55987, -4.67236, 1, 1, 1], "textureOffset": [165, 46]},
+																																												{"coordinates": [-0.42812, 8.55987, -10.67236, 1, 1, 1], "textureOffset": [165, 54]}
+																																											]
+																																										}
+																																									]
+																																								}
+																																							]
+																																						}
+																																					]
+																																				}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								},
+								{
+									"id": "bones",
+									"invertAxis": "xy",
+									"translate": [0, 19, 0],
+									"submodels": [
+										{
+											"id": "bones1",
+											"invertAxis": "xy",
+											"translate": [0, -1, 0],
+											"submodels": [
+												{
+													"id": "bones1_drop",
+													"invertAxis": "xy",
+													"translate": [0, 0, 0],
+													"submodels": [
+														{
+															"id": "bones1_rot",
+															"invertAxis": "xy",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-7, -7, -1, 15, 15, 2], "textureOffset": [116, 8]}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "bones2",
+											"invertAxis": "xy",
+											"translate": [0, -1, 0],
+											"submodels": [
+												{
+													"id": "bones2_drop",
+													"invertAxis": "xy",
+													"translate": [-0.5, 0.5, 0],
+													"submodels": [
+														{
+															"id": "bones2_rot",
+															"invertAxis": "xy",
+															"mirrorTexture": "u",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-7.5, -7.5, -1, 15, 15, 2], "textureOffset": [116, 8]}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.distance": "sqrt(pow(pos_x  -player_pos_x, 2) + pow(pos_y - player_pos_y, 2) + pow(pos_z - player_pos_z, 2))",
+					"var.limit": 5
+				},
+				{
+					"var.counter": "clamp(if(limb_speed > 0.1, var.counter + 50 * frame_time, var.counter - 100 * frame_time), 0, 15)",
+					"var.counter2": "clamp(if(limb_speed > 0.1, var.counter2 + 50 * frame_time, var.counter2 - 100 * frame_time), 0, 25)",
+					"var.counter3": "clamp(if(limb_speed > 0.1, var.counter3 + 50 * frame_time, var.counter3 - 100 * frame_time), 0, 60)",
+					"var.counter4": "clamp(if(limb_speed > 0.1, var.counter4 + 50 * frame_time, var.counter4 - 100 * frame_time), 0, 80)",
+					"var.body_punch_right": "clamp(if(swing_progress > 0, var.body_punch_right + 100 * frame_time, var.body_punch_right - 50 * frame_time), 0, 800)",
+					"var.haymaker": "clamp(if(swing_progress > 0, var.haymaker + 200 * frame_time, var.haymaker - 100 * frame_time), 0, 300)",
+					"var.body_bend_attack": "clamp(if(swing_progress > 0.3, var.body_bend_attack + 100 * frame_time, var.body_bend_attack - 50 * frame_time), 0, 200)",
+					"var.body_bend": "clamp(if(var.distance < var.limit, var.body_bend + 50 * frame_time, var.body_bend - 50 * frame_time), 0, 20)",
+					"var.body_bend_walk": "clamp(if(var.distance < var.limit, var.body_bend + 50 * frame_time, var.body_bend - 10 * frame_time), 0, 100)",
+					"var.death": "clamp(if(death_time > 0, var.death + 100 * frame_time, var.death - 100 * frame_time), 0, 50)",
+					"var.vanish_delay_death": "min(if(death_time >0, var.vanish_delay_death + 50 * frame_time, 0), 70)",
+					"var.vanish_death": "clamp(if(var.vanish_delay_death >= 70, var.vanish_death + 200 * frame_time, var.vanish_death - 100 * frame_time), 0, 57.5)",
+					"var.death_physics": "clamp(min(if(health <= 10, var.death_physics + 50 * frame_time, 0), 1000), 0, 800)"
+				},
+				{
+					"var.dismember_left": "clamp(if(health < lerp(random(id + 3), -5, 5) && health < lerp(random(id + 6), -8, 4), 0, if(health < lerp(random(id), -4, 7), var.dismember_left + 2000 * frame_time, var.dismember_left - 2000 * frame_time)), 0, 2000)",
+					"var.vanish_delay_left": "min(if(health < lerp(random(id + 3), -5, 5) && health < lerp(random(id + 6), -8, 4), 0, if(health < lerp(random(id), -4, 7) , var.vanish_delay_left + 50 * frame_time, 0)), 20)",
+					"var.vanish_left": "clamp(if(var.vanish_delay_left >= 20, var.vanish_left + 200 * frame_time, var.vanish_left - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.dismember_right": "clamp(if(health < lerp(random(id + 3), -5, 5), var.dismember_right + 2000 * frame_time, var.dismember_right - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_right": "min(if(health < lerp(random(id + 3), -5, 5) , var.vanish_delay_right + 50 * frame_time, 0), 20)",
+					"var.vanish_right": "clamp(if(var.vanish_delay_right >= 20, var.vanish_right+ 200 * frame_time, var.vanish_right - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.dismember_head": "clamp(if(health < lerp(random(id + 6), -10, 5), var.dismember_head + 2000 * frame_time, var.dismember_head - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_head": "min(if(health < lerp(random(id + 6), -10, 5) , var.vanish_delay_head + 50 * frame_time, 0), 20)",
+					"var.vanish_head": "clamp(if(var.vanish_delay_head >= 20, var.vanish_head+ 200 * frame_time, var.vanish_head - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.dismember_ribbr": "clamp(if(health < lerp(random(id + 20), -3, 10), var.dismember_ribbr + 2000 * frame_time, var.dismember_ribbr - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_ribbr": "min(if(health < lerp(random(id + 20), -3, 10) , var.vanish_delay_ribbr + 50 * frame_time, 0), 20)",
+					"var.vanish_ribbr": "clamp(if(var.vanish_delay_ribbr >= 20, var.vanish_ribbr+ 200 * frame_time, var.vanish_ribbr - 100 * frame_time), 0, 57.5)",
+					"var.dismember_ribbl": "clamp(if(health < lerp(random(id + 21), -3, 10), var.dismember_ribbl + 2000 * frame_time, var.dismember_ribbl - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_ribbl": "min(if(health < lerp(random(id + 21), -3, 10) , var.vanish_delay_ribbl + 50 * frame_time, 0), 20)",
+					"var.vanish_ribbl": "clamp(if(var.vanish_delay_ribbl >= 20, var.vanish_ribbl+ 200 * frame_time, var.vanish_ribbl - 100 * frame_time), 0, 57.5)",
+					"var.dismember_ribtr": "clamp(if(health < lerp(random(id + 22), -3, 10), var.dismember_ribtr + 2000 * frame_time, var.dismember_ribtr - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_ribtr": "min(if(health < lerp(random(id + 22), -3, 10) , var.vanish_delay_ribtr + 50 * frame_time, 0), 20)",
+					"var.vanish_ribtr": "clamp(if(var.vanish_delay_ribtr >= 20, var.vanish_ribtr+ 200 * frame_time, var.vanish_ribtr - 100 * frame_time), 0, 57.5)",
+					"var.dismember_ribtl": "clamp(if(health < lerp(random(id + 23), -3, 10), var.dismember_ribtl + 2000 * frame_time, var.dismember_ribtl - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_ribtl": "min(if(health < lerp(random(id + 23), -3, 10) , var.vanish_delay_ribtl + 50 * frame_time, 0), 20)",
+					"var.vanish_ribtl": "clamp(if(var.vanish_delay_ribtl >= 20, var.vanish_ribtl+ 200 * frame_time, var.vanish_ribtl - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"rib_bottom_right.ty": "torad(var.dismember_ribbr)",
+					"rib_bottom_right.tx": "torad(var.dismember_ribbr)",
+					"rib_bottom_right.tz": "-torad(var.dismember_ribbr)",
+					"rib_bottom_right.rx": "torad(var.dismember_ribbr)*0.1",
+					"rib_bottom_right.rz": "torad(var.dismember_ribbr)*0.1",
+					"rib_bottom_right.sx": "torad(57.5)+ -torad(var.vanish_ribbr)",
+					"rib_bottom_right.sy": "torad(57.5)+ -torad(var.vanish_ribbr)",
+					"rib_bottom_right.sz": "torad(57.5)+ -torad(var.vanish_ribbr)",
+					"rib_bottom_left.ty": "-torad(var.dismember_ribbl)",
+					"rib_bottom_left.tx": "-torad(var.dismember_ribbl)",
+					"rib_bottom_left.tz": "torad(var.dismember_ribbl)",
+					"rib_bottom_left.rz": "torad(var.dismember_ribbl)*0.1",
+					"rib_bottom_left.sx": "torad(57.5)+ -torad(var.vanish_ribbl)",
+					"rib_bottom_left.sy": "torad(57.5)+ -torad(var.vanish_ribbl)",
+					"rib_bottom_left.sz": "torad(57.5)+ -torad(var.vanish_ribbl)",
+					"rib_top_right.ty": "-torad(var.dismember_ribtr)",
+					"rib_top_right.tx": "torad(var.dismember_ribtr)",
+					"rib_top_right.tz": "-torad(var.dismember_ribtr)",
+					"rib_top_right.rz": "torad(var.dismember_ribtr)*0.1",
+					"rib_top_right.sx": "torad(57.5)+ -torad(var.vanish_ribtr)",
+					"rib_top_right.sy": "torad(57.5)+ -torad(var.vanish_ribtr)",
+					"rib_top_right.sz": "torad(57.5)+ -torad(var.vanish_ribtr)",
+					"rib_top_left.ty": "torad(var.dismember_ribtr)",
+					"rib_top_left.tx": "torad(var.dismember_ribtr)",
+					"rib_top_left.tz": "torad(var.dismember_ribtr)",
+					"rib_top_left.rz": "torad(var.dismember_ribtr)*0.1",
+					"rib_top_left.sx": "torad(57.5)+ -torad(var.vanish_ribtr)",
+					"rib_top_left.sy": "torad(57.5)+ -torad(var.vanish_ribtr)",
+					"rib_top_left.sz": "torad(57.5)+ -torad(var.vanish_ribtr)"
+				},
+				{
+					"rib_chest.rx": "if(health < lerp(random(id + 20), -3, 10) && health < lerp(random(id + 21), -3, 10) && health < lerp(random(id + 22), -3, 10) && health < lerp(random(id + 23), -3, 10), sin(limb_swing)*limb_speed , 0)",
+					"rib_bottom_left_anim.rz": "if(health < lerp(random(id + 22), -3, 10), sin(limb_swing * 2)*limb_speed , 0)",
+					"rib_bottom_right_anim.rz": "if(health < lerp(random(id + 22), -3, 10), -sin(limb_swing * 2)*limb_speed, 0)"
+				},
+				{
+					"body.ty": "324",
+					"zombie_all.ty": "-300 +  if(limb_speed > 0.2, sin(limb_swing*1.75)*limb_speed*5, 0)"
+				},
+				{
+					"zombie_all.rz": "if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90), 0)",
+					"zombie_all.rx": "if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90), 0)",
+					"zombie_all.ry": "if(death_time > 0, head_yaw* 0.05 , 0)",
+					"zombie_all.sx": "torad(61) + -torad(var.vanish_death)",
+					"zombie_all.sy": "torad(61) + -torad(var.vanish_death)",
+					"zombie_all.sz": "torad(61) + -torad(var.vanish_death)",
+					"zombie_new_full.rx": "-torad(var.death)*0.1"
+				},
+				{
+					"zombie_new_skull_head.rx": " head_pitch* 0.01 + -sin(time*0.05)*0.05 + sin(time*0.05)*0.006 + if(is_child, -sin(limb_swing*0.2)*limb_speed*0.4 , -sin(limb_swing*0.8)*limb_speed*0.7) + torad(-var.counter2)",
+					"zombie_new_skull_head.rz": "-sin(time*0.05)*0.05+sin(time*0.05)*0.06 + if(is_child, zombie_new_skull_head.rz *0.01, 0)",
+					"zombie_new_skull_head.ry": "-sin(limb_swing) * limb_speed +torad(var.scythe_prepare) * 0.2 + -torad(var.punch_right) * 0.7 + head_yaw* 0.005 + -sin(time*0.05)*0.07+sin(time*0.05)*0.1 + if(is_child, zombie_new_skull_head.ry *0.01, 0)",
+					"zombie_new_skull_head.ty": "if(limb_speed > 0.4, sin(limb_swing * 1.2)*limb_speed * 3, 0)",
+					"neck_bone.rx": "head_pitch* 0.001",
+					"neck_bone.ry": "head_yaw* 0.005",
+					"zombie_head_dismember.ty": "if(death_time > 0, sin(time*0.1) * 15, 0) + torad(var.dismember_head)",
+					"zombie_head_dismember.tx": "if(death_time > 0, sin(time*0.1) * 5, 0) + torad(var.dismember_head)",
+					"zombie_head_dismember.tz": "if(death_time > 0, sin(time*0.1) * 5, 0) +torad(var.dismember_head)",
+					"zombie_head_dismember.rz": "if(death_time > 0, sin(time*0.1) * 5, 0) +torad(var.dismember_head)*0.1",
+					"zombie_head_dismember.sx": "torad(57.5)+ -torad(var.vanish_head)",
+					"zombie_head_dismember.sy": "torad(57.5)+ -torad(var.vanish_head)",
+					"zombie_head_dismember.sz": "torad(57.5)+ -torad(var.vanish_head)"
+				},
+				{
+					"zombie_head_death.rx": "-torad(var.death)*1.5",
+					"zombie_head_death.ry": "-torad(var.death)*1.5",
+					"zombie_new_skull_pivot.rz": "head_yaw* 0.002"
+				},
+				{
+					"var.body_bend_agro": "clamp(if(is_aggressive, var.body_bend_agro + 50 * frame_time, var.body_bend_agro - 50 * frame_time), 0, 10)"
+				},
+				{
+					"zombie_new_body.ry": "sin(limb_swing) * limb_speed + head_yaw* 0.005 + sin(time*0.05)*0.05+-sin(time*0.06)*0.06 + if(death_time >0, torad(var.death_physics), 0)",
+					"zombie_new_body.rx": "-torad(var.scythe_prepare) * 0.2 + if(is_child, sin(limb_swing*0.7)*limb_speed*0.8 * 0.15 ,sin(limb_swing*0.7)*limb_speed*0.8) + head_pitch* 0.01 + sin(time*0.05)*0.03+-sin(time*0.06)*0.04 + if(var.distance < var.limit, torad(var.body_bend), torad(var.body_bend_walk)) + torad(var.body_bend_attack) + torad(var.body_bendattack_return) + if(death_time >0, -torad(var.death_physics)*0.2, 0)",
+					"zombie_new_body.rz": " -sin(age *0.05) * 0.02 +sin(age *0.06) * 0.03",
+					"zombie_new_body_var.rx": "torad(var.counter)",
+					"zombie_cape.rx": "sin(time*0.01)*0.05+ - sin(time*0.01)*0.02 + clamp(-sin(limb_swing*0.2)*0.5, 0 , 50) + torad(var.counter) ",
+					"zombie_cape.rz": "sin(time*0.05)*0.05+ - sin(time*0.03)*0.06"
+				},
+				{
+					"eye_left_anim.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"eye_left_anim.ty": "-sin(time*2.15)*0.1+head_pitch* 0.01",
+					"eye_right.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"eye_right.ty": "-sin(time*2.15)*0.1+-head_pitch* 0.01"
+				},
+				{
+					"zombie_new_right_leg.rx": "if(death_time > 0, sin(time*0.1) * 5, 0) + if(is_child, -sin(limb_swing*0.2)*limb_speed, -sin(limb_swing)*limb_speed) + if(death_time >0, torad(var.death_physics) * 0.8, 0) + if(is_riding, torad(-90), 0)",
+					"zombie_new_right_leg_anim.ty": "torad(690) + if(death_time > 0, -sin(time) , 0)",
+					"zombie_new_right_leg.rz": "torad(5)+if(death_time >0, torad(var.death_physics) * 0.6, 0)",
+					"zombie_new_left_leg.rx": "if(is_child, sin(limb_swing*0.2)*limb_speed, sin(limb_swing)*limb_speed) + if(death_time >0, torad(-var.death_physics), 0) + if(is_riding, torad(-90), 0)"
+				},
+				{
+					"var.angry": "clamp(if(is_aggressive && limb_speed < 0.5 && is_alive, var.angry + 200 * frame_time, var.angry - 200 * frame_time), 0, 80)",
+					"var.angry_left": "clamp(if(is_aggressive && limb_speed < 0.5 && is_alive, var.angry_left + 150 * frame_time, var.angry_left - 200 * frame_time), 0, 80)",
+					"var.angry_lefty": "clamp(if(is_aggressive && limb_speed < 0.5 && is_alive, var.angry_lefty + 70 * frame_time, var.angry_lefty - 200 * frame_time), 0, 45)"
+				},
+				{
+					"body_noarms.ry": "torad(var.scythe_prepare) * 0.5 + -torad(var.punch_right) "
+				},
+				{
+					"spine_bottom.ty": "torad(-1025) + -sin(limb_swing * 3) * limb_speed",
+					"spine_top.ty": "torad(-1060) + sin(limb_swing * 3) * limb_speed",
+					"zombie_new_arm_left_full.ty": "torad(-675) + -sin(limb_swing * 3) * limb_speed",
+					"zombie_new_arm_right_full.ty": "torad(-600) + -sin(limb_swing * 4) * limb_speed",
+					"hips.ty": "sin(limb_swing * 2) * limb_speed",
+					"hips.rz": "-sin(limb_swing) * limb_speed * 0.1",
+					"zombie_new_body_var.ry": "sin(limb_swing) * limb_speed * 0.2",
+					"zombie_head.ty": "torad(-670) + sin(limb_swing * 3) * limb_speed * 2"
+				},
+				{
+					"var.scythe_prepare": "clamp(if(var.distance < var.limit && swing_progress == 0, var.scythe_prepare + 100 * frame_time, var.scythe_prepare - 500* frame_time), 0, 100)",
+					"var.punch_right": "clamp(if(swing_progress > 0, var.punch_right + 500 * frame_time, var.punch_right - 500* frame_time), 0, 1000)"
+				},
+				{
+					"var.walksway": " clamp(if(var.scythe_prepare > 0, var.walksway - 0.5 * frame_time, var.walksway + 0.5 * frame_time),0 ,1)"
+				},
+				{
+					"bow_arms_pitch.rx": "-torad(var.scythe_prepare) * 0.2",
+					"bow_arms.ry": "sin(limb_swing) * limb_speed +torad(var.scythe_prepare) + -torad(var.body_punch_right) + -torad(var.punch_right) * 0.5 + if(var.scythe_prepare > 0, sin(age * 0.2) * 0.3, sin(age * 0.3) * var.walksway * 0.5) ",
+					"bow_arms.rx": "head_pitch* 0.0075 + sin(age *0.05)*0.03+-sin(age *0.06)*0.04 + if(var.scythe_prepare > 0, sin(age * 0.01) * 0.01, 0)",
+					"bow_arms.rz": " if(death_time > 0, (time*2) * 0.1 + -(time*1.5) * 0.05 , 0) + -clamp(-sin(time*0.15)*0.02, -120, 0) +  if(var.scythe_prepare > 0, sin(age * 0.05) * 0.05, sin(age * 0.5) * var.walksway * 0.1)"
+				},
+				{
+					"var.disarm": "clamp(if(!is_alive, var.disarm + 2000 * frame_time, var.disarm - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_disarm": "min(if(!is_alive, var.vanish_delay_disarm + 50 * frame_time, 0), 20)",
+					"var.vanish_disarm": "clamp(if(var.vanish_delay_disarm >= 20, var.vanish_disarm + 200 * frame_time, var.vanish_disarm - 100 * frame_time), 0, 50)"
+				},
+				{
+					"scythe_disarm.rx": "torad(var.punch_right)*0.4",
+					"scythe_disarm.sx": "torad(50)+ -torad(var.vanish_disarm)",
+					"scythe_disarm.sy": "torad(50)+ -torad(var.vanish_disarm)",
+					"scythe_disarm.sz": "torad(50)+ -torad(var.vanish_disarm)",
+					"scythe_disarm.ty": " sin(-torad(var.disarm)) * 0.5",
+					"scythe_disarm.tx": "if(health < lerp(random(id + 2), 0, 4,), -torad(var.disarm), torad(var.disarm))",
+					"scythe_disarm.tz": "if(health < lerp(random(id + 2), 0, 4,), torad(var.disarm), -torad(var.disarm)) ",
+					"scythe_disarm.rz": " -torad(var.disarm)*0.1",
+					"scythe_disarm_spin.rx": "-torad(var.disarm)*0.05"
+				},
+				{
+					"var.bones1": "clamp(if(var.bones1_delay <= 10 && is_hurt && is_alive, var.bones1 + 500 * frame_time, var.bones1 - 100 * frame_time), 0, 30)",
+					"var.bones1_drop": "clamp(if(is_hurt, var.bones1_drop + 1000 * frame_time, var.bones1_drop - 5000 * frame_time), 0, 5000)",
+					"var.bones1_delay": "min(if(is_hurt , var.bones1_delay + 40 * frame_time, var.bones1_delay - 20 * frame_time), 100)",
+					"bones.ry": "-rot_y"
+				},
+				{
+					"bones1.tx": "sin(time*0.15)* 20",
+					"bones1_drop.ty": "torad(var.bones1_drop)",
+					"bones1_drop.tx": "torad(var.bones1_drop)",
+					"bones1.ry": "torad(-90 + atan2(player_pos_z - pos_z, player_pos_x - pos_x) * 180 / pi)",
+					"bones1.rx": "-sin(time)* 0.5",
+					"bones1_rot.rz": "(time * 0.2)",
+					"bones1.sx": "torad(var.bones1)",
+					"bones1.sy": "torad(var.bones1)",
+					"bones1.sz": "torad(var.bones1)"
+				},
+				{
+					"var.bones2": "clamp(if(var.bones1_delay >= 5 && is_hurt && is_alive, var.bones2 + 500 * frame_time, var.bones2 - 100 * frame_time), 0, 30)",
+					"var.bones2_drop": "clamp(if(var.bones1_delay >= 5 && is_hurt, var.bones2_drop + 500 * frame_time, var.bones2_drop - 5000 * frame_time), 0, 5000)",
+					"var.bones2_delay": "min(if(is_hurt , var.bones2_delay + 40 * frame_time, var.bones2_delay - 20 * frame_time), 100)"
+				},
+				{
+					"bones2.tx": "-sin(time*0.15)* 20",
+					"bones2_drop.ty": "-torad(var.bones1_drop) * 2",
+					"bones2.ry": "torad(-90 + atan2(player_pos_z - pos_z, player_pos_x - pos_x) * 180 / pi)",
+					"bones2.rx": "sin(time)* 0.5",
+					"bones2_rot.rz": "-(time * 0.2)",
+					"bones2.sx": "torad(var.bones2)",
+					"bones2.sy": "torad(var.bones2)",
+					"bones2.sz": "torad(var.bones2)"
+				}
+			]
+		},
+		{
+			"part": "left_arm",
+			"id": "left_arm",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [5, -22, 0],
+			"animations": [
+				{
+					"left_arm.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "right_arm",
+			"id": "right_arm",
+			"invertAxis": "xy",
+			"translate": [-5, -22, 0],
+			"animations": [
+				{
+					"right_arm.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "left_leg",
+			"id": "left_leg",
+			"invertAxis": "xy",
+			"mirrorTexture": "u",
+			"translate": [1.9, -12, 0],
+			"animations": [
+				{
+					"left_leg.ty": "300"
+				}
+			]
+		},
+		{
+			"part": "right_leg",
+			"id": "right_leg",
+			"invertAxis": "xy",
+			"translate": [-1.9, -12, 0],
+			"animations": [
+				{
+					"right_leg.ty": "300"
+				}
+			]
+		}
+	]
+}

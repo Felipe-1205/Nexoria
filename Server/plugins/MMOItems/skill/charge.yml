@@ -1,0 +1,16 @@
+name: Charge
+modifier:
+  timer:
+    name: Timer
+    default-value: 0
+  mana:
+    name: Mana
+    default-value: 0
+  stamina:
+    name: Stamina
+    default-value: 0
+  cooldown:
+    name: Cooldown
+    default-value: 0
+
+# Qssk3fvrqU7l6uKA/bnkH3xBYuOOACw85kaAkw/vVkSze8Q9xMGtg/lXGJwSa7N/Xke7yvTBSr4//9XCdT9OH1EqaiM7dS2o+H66yFT9nTc=

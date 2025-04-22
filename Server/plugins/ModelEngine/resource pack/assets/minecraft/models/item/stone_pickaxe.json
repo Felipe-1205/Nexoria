@@ -1,0 +1,15 @@
+{
+    "parent": "item/handheld_grimdark",
+    "textures": {
+        "layer0": "item/stone_pickaxe"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "damaged": 1,
+                "damage": 0.85
+            },
+            "model": "item/stone_pickaxe_1"
+        }
+    ]
+}

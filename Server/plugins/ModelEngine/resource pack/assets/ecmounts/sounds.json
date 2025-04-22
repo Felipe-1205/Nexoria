@@ -1,0 +1,12 @@
+{
+ "custom.ecmounts.revoke": {
+  "sounds": [
+   "custom/ecmounts/revoke"
+  ]
+ },
+ "custom.ecmounts.summon": {
+  "sounds": [
+   "custom/ecmounts/summon"
+  ]
+ }
+}

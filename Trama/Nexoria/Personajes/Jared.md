@@ -1,0 +1,35 @@
+# Raza
+- Humano
+# Clase
+- Guerrero
+# Trabajo
+- Tabernero
+# Dados
+ - **Fuerza:** 40
+ - **Destreza:** 10
+ - **Constitución:** 30
+ - **Carisma:** 10
+ - **Sabiduría:** 30
+ - **Inteligencia:** 20
+# Pre-Llegada
+- La historia de Jared se remonta a cuando era un bebé recién nacido. La situación en su hogar era complicada; sus padres, agobiados y sin más opciones, decidieron dejarlo en la entrada del hogar de otra familia para que lo cuidaran. Acompañando al bebé, dejaron una nota con su nombre completo y una pequeña manta que lo envolvía.
+- La familia que recibió al bebé quedó perpleja al encontrarlo en su puerta. Aunque no estaban preparados para criar a un niño que no era suyo, se conmovieron por su fragilidad y decidieron cuidarlo temporalmente hasta encontrar una solución. Mientras tanto, buscaron información sobre sus padres biológicos, pero las pistas eran escasas.
+- Pasaron los meses y, a medida que el bebé crecía, la familia se encariñaba más y más con él. Sin embargo, sabían que no podían ser sus padres adoptivos permanentes. Con un nudo en la garganta, tomaron la difícil decisión de dejar al niño en la puerta de un restaurante de renombre en la ciudad.
+- El dueño del restaurante, un hombre de gran corazón llamado señor Anderson, se sorprendió al encontrar al niño en la puerta de su establecimiento. Aunque en un principio se mostró indeciso, su instinto paterno se apoderó de él y decidió hacerse cargo del pequeño. Le dio el nombre de Jared, en honor a la nota que sus padres biológicos habían dejado.
+- Desde ese día, Jared creció rodeado del ajetreo y el bullicio de la cocina del restaurante. El señor Anderson se convirtió en su figura paterna y le enseñó no solo el arte de la cocina, sino también importantes lecciones sobre el respeto y la responsabilidad. Con el tiempo, Jared desarrolló una pasión por la cocina y un talento innato para combinar sabores y texturas, sorprendiendo a todos con su creatividad culinaria.
+- Sin embargo, a medida que Jared crecía, también se manifestaba su personalidad irreverente y desafiante. A pesar de los esfuerzos del señor Anderson por corregirlo, parecía imposible cambiar su carácter. Aunque sus travesuras a veces causaban problemas, el restaurante se mantenía a flote gracias a la exquisita comida que Jared preparaba.
+- Un día, mientras Jared trabajaba como mesero en el restaurante, un cliente importante llegó para evaluar el lugar. Sin embargo, debido a las faltas de respeto de Jared, el restaurante recibió duras críticas que amenazaban con llevarlo a la decadencia. El señor Anderson, desesperado por salvar su negocio y ayudar a Jared a entender la importancia del respeto, le pidió que reflexionara sobre sus acciones y cómo afectaban a los demás.
+- Fue en ese momento que Jared comenzó a comprender el valor del respeto y la responsabilidad que tenía como cocinero. Decidió que era hora de cambiar y canalizar su energía rebelde en algo más productivo. Al pertenecer al Reino de Igan, un lugar conocido por su dominio en el combate, decidió enfocar sus estudios en el arte del combate con katanas.
+- Jared se especializó en el manejo de las katanas, inspirado por su destreza en la cocina. Practicaba arduamente para perfeccionar su técnica, desafiándose a sí mismo a usar tres katanas a la vez: una en cada mano y otra en la boca. Aunque su estilo de combate no era el más convencional ni el más eficiente, su determinación y estilo único lo distinguían en el campo de batalla.
+- Además de sus habilidades en la cocina y en el combate, Jared descubrió que poseía un sentido del olfato y del tacto excepcionales. Esto le permitía crear nuevas recetas con sabores y texturas sorprendentes, así como rastrear animales con facilidad cuando salía a cazar. Estas habilidades, combinadas con su pasión por la cocina y la espada, lo convirtieron en un personaje inigualable en el Reino de Igan. 
+- A pesar de que parecía que todo en su vida se había controlado y estabilizado tras la aparición de Aruma y la resolución de los problemas en el continente, la situación cambió drásticamente. El continente se encontraba en un estado continuo de guerra, lo que llevó a que los clientes en el restaurante fueran cada vez menos frecuentes. Esta disminución en los ingresos causó que el negocio sufriera un duro golpe, y Jared se vio obligado a separarse del señor Anderson en busca de una forma de ganarse la vida trabajando en distintos lugares. 
+- En su búsqueda de nuevas oportunidades, Jared decidió aventurarse hacia un nuevos empleos, hasta que ocurrió el cambio de continente, Fue durante este cambio que se cruzó en el camino del rey Gil Daven, quien acababa de ascender al trono. Impresionado por las habilidades culinarias de Jared y cautivado por su historia, el rey decidió contratarlo como el cocinero real del castillo.
+- Jared se sintió honrado y agradecido por esta oportunidad. Su talento en la cocina se expandió aún más bajo la tutela del rey, A medida que trabajaba estrechamente con el rey Gil Daven, Jared desarrolló una buena amistad con él. Compartían momentos de camaradería, disfrutando de comidas y conversaciones sobre sus experiencias en la vida y en el campo de batalla. El rey valoraba la lealtad y la honestidad de Jared, mientras que este último encontraba en el rey un líder comprensivo y generoso.
+- Jared había encontrado un nuevo hogar en el castillo real y una posición destacada como cocinero real. Su historia había dado un giro inesperado, y aunque el camino hasta ese momento había sido lleno de desafíos, Jared había demostrado su capacidad de adaptación y superación. Ahora, junto al rey Gil Daven, se preparaba para enfrentar nuevas aventuras y desafíos en el servicio del reino.
+- Tras la desaparición del rey Gil Daven Y un montón de aventuras mas, y una "relacion" complicada este decidió seguir su vida, sin embargo un día un ataque de ira provoco el asesinato de alguien por lo que fue sentenciado a muerte por ser alguien importante.
+# Post-Llegada
+- al despertar apareció algo desorientado, pero viendo ante el una nueva oportunidad, decidió dedicarse mas a seguir cocinando ya que creía que ahí tenia una gran forma de sobrevivir, además de traerle tranquilidad a su corazón, si embargo seguía entrenando, ya que la buena forma era la base para una buena vida, intentando seguirla por el buen camino
+# Personalidad 
+- Jared es un individuo complejo, marcado por un pasado difícil que lo hizo resiliente y adaptable, pero también rebelde e impulsivo. Su creatividad y pasión por la cocina y el combate lo distinguen, mostrando una notable destreza y disciplina cuando encuentra una meta que lo motiva. Aunque irreverente y temperamental, es profundamente leal y agradecido con quienes lo apoyan, como el señor Anderson y el rey Gil Daven, con quienes desarrolla vínculos significativos. A pesar de sus arrebatos, que lo llevan a cometer errores graves, Jared es reflexivo y busca constantemente la redención, luchando por equilibrar sus defectos con su deseo de mejorar y dejar una huella positiva en el mundo.
+# Skin
+- ![[jared.png]]

@@ -1,0 +1,29 @@
+name: Bloodlust
+lore:
+- '&4Tienes un 5% de probabilidad de curarte al dañar enemigos.'
+- ''
+- '&e{cooldown}s Enfriamiento'
+- '&c{duration}s Duración'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2179'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

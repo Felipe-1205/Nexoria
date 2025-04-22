@@ -1,0 +1,11 @@
+Se cuenta que en las profundidades de la tierra yace Chaurli, una enorme tortuga cuyo caparazón es totalmente impenetrable aunque esto no supone un problema debido a que la tortuga vive en paz y sin buscar de comer a nadie, esta se alimenta de las hierbas que encuentra por las cuevas y por la tierra donde se abre paso, muchos asocian los temblores y terremotos a que Chaurli está sacudiendo la tierra en busca de comer, quienes cuentan estas leyendas dicen que Chaurli devora únicamente plantas o tierra y esto le es suficiente para sobrevivir.
+
+Aquellos que relatan y escriben sobre Chaurli dicen que su dieta aunque es vegetariana es un hambre capaz de repercutir en la vida de todas las personas debido a que devora grandes piedras, grandes cantidades de tierra y demás provocando temblores, terremotos, dicen que cada que desastre natural que ocurre es debido a Chaurli tomando su desayuno, almuerzo o cena cada ciertos años.
+
+Las leyendas cuentan de un tesoro en posesión de Chaurli, algunas versiones de la historia dicen que este se encuentra en el estómago de Chaurli debido a la insana cantidad de minerales que devora, otros dicen que estos se encuentran en su caparazón y permanecen unidos a este, sin embargo a lo largo de la historia nadie se ha atrevido a buscar a la tortuga ya sea por miedo o respeto hacia esta.
+
+Al igual que a Cetus se le atribuye el caos, a Simurg el equilibrio a Chaurli se le ha atribuido la paz debido a su naturaleza en la cual nunca se le ha relatado interactuando con alguien, su falta de "presencia" e interferencia directa con los seres vivos ha llevado a la creencia de que Chaurli es una criatura la cual no busca afectar a los demás e igualmente busca no ser afectada por nadie.
+
+Y finalmente los cuentos relatan que hay grupos religiosos o de comunidad que se dedican a predicar la palabra del pacifismo, el no afectar la vida de los demás mientras ellos no afecten la tuya, estos suelen seguir una vida natural, sin afectarse demasiado con los pueblos o reinos, suelen ser apartados y relajados y su característica principal es que llevan alguna insignia de una tortuga con un árbol.
+
+==(protector de la tierra cualquier ofensa a esta será castigado por Chaurli o algo por estilo, hace parte de [[Vestías protectoras]])==

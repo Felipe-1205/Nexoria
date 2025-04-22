@@ -1,0 +1,39 @@
+name: Flamas de Simurg
+lore:
+- Usando tu Ki conjuras una pequeña bola de
+- fuego que puedes arrojar hacia tus enemigos,
+- esta hace &8{damage} &7puntos de daño a su objetivo
+- encendiendolo por &8{ignite} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: CAMPFIRE
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 3
+  per-level: 1
+ignite:
+  base: 2
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: 1

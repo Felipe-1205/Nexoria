@@ -1,0 +1,36 @@
+name: Destello Radiante
+lore:
+- Cargas tu arma con rayos.
+- Tu siguiente ataque inflige &f{extra}% &7de daño adicional
+- y se propaga a enemigos en un radio de &f{radius} &7bloques
+- causando &f{ratio}% &7del daño inicial.
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: BONE_MEAL
+mana:
+  base: 4.0
+  per-level: 1.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+extra:
+  base: 30.0
+  per-level: 8.0
+cooldown:
+  base: 10.0
+  per-level: -0.2
+  max: 10.0
+  min: 5.0
+radius:
+  base: 4.0
+  per-level: 1.0
+ratio:
+  base: 30.0
+  per-level: 10.0
+  max: 100.0
+  min: 30.0

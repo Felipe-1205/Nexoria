@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/cone_rupture"},"elements":[{"from":[1.5,8.0,-0.5],"to":[14.5,8.0,16.500002],"faces":{"up":{"uv":[1.625,4.5,0.0,6.625],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[1.625,6.625,0.0,4.5],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

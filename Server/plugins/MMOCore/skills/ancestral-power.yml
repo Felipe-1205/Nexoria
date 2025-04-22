@@ -1,0 +1,29 @@
+name: Ancestral Power
+lore:
+- '&aYou gain +10 shield and summon a magic circle'
+- '&athat roams across the surface and shoots wide'
+- '&abeams of light that damage targets'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2046'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 7
+  per-level: 0
+  min: 7
+  max: 7

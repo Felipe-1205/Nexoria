@@ -1,0 +1,45 @@
+name: Corrosión
+lore:
+- Lanza un hechizo que rápidamente 
+- esparce una infección corrosiva 
+- a través del cuerpo del objetivo
+- otorgándole veneno &8{amplifier} &7a todo 
+- aquel que se encuentre en
+- el área de &8{radius} &7bloques
+- durante &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: LIME_DYE
+duration:
+  base: 4
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+amplifier:
+  base: 2
+  per-level: 2
+radius:
+  base: 4
+  per-level: 3

@@ -1,0 +1,28 @@
+name: Skeletal Minion
+lore:
+- '&3Summon a Skeletal Minion that fights for you'
+- '&3for 15 seconds'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2044'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 15
+  per-level: 0
+  min: 15
+  max: 15

@@ -1,0 +1,31 @@
+name: Hunters Focus
+lore:
+- 'Pasiva de 3 golpes - El tercer golpe de tu'
+- 'flecha ralentiza a tu objetivo por un corto'
+- 'tiempo, adicionalmente consigues un'
+- 'buffo de velocidad'
+- ''
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2061'
+passive-type: TIMER
+timer:
+  base: 20
+  per-level: 0
+  min: 20
+  max: 20
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

@@ -1,0 +1,8 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:BETABEL
+- mmoitems:MATERIAL:BETABEL
+- mmoitems:MATERIAL:BETABEL
+- mmoitems:MATERIAL:BETABEL
+unlock: false
+result: mmoitems:CONSUMABLE:SOPABETABEL 1

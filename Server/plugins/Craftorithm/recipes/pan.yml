@@ -1,0 +1,7 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:TRIGO
+- mmoitems:MATERIAL:TRIGO
+- mmoitems:MATERIAL:TRIGO
+unlock: false
+result: mmoitems:CONSUMABLE:PAN 1

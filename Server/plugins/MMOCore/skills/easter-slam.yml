@@ -1,0 +1,33 @@
+name: Easter Slam
+lore:
+- '&cYou slam your enemy with your easter basket.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2123'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 1
+  per-level: 0
+  min: 1
+  max: 1

@@ -1,0 +1,38 @@
+name: Marca de Poder
+lore:
+- Atacar a un enemigo aplica una marca mágica mortal
+- que se extiende por el suelo. Esta marca acumula &6{ratio}%
+- del daño infligido al objetivo inicial durante &6{duration} &7segundos.
+- ''
+- Después de esta duración, la marca estalla, causando
+- el daño acumulado a los enemigos cercanos y
+- aturdiéndolos durante &6{stun}+ &7segundos.
+- ''
+- Cuanto más daño, más duradero es el aturdimiento.
+- ''
+- '&e{cooldown}s de Reutilización'
+material: WITHER_SKELETON_SKULL
+duration:
+  base: 10.0
+  per-level: 1.1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+mana:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+cooldown:
+  base: 30.0
+  per-level: 1.0
+stun:
+  base: 2.4
+  per-level: 1.03
+ratio:
+  base: 10.0
+  per-level: 5.0

@@ -1,0 +1,35 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/beastmaster_texture/x_turtle_2",
+		"particle": "item/beastmaster_texture/x_turtle_2"
+	},
+	"elements": [
+		{
+			"from": [-2.5, 8, -2.5],
+			"to": [18.5, 8, 18.5],
+			"rotation": {"angle": -45, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [5.5, 0, 10.75, 0], "texture": "#0"},
+				"east": {"uv": [5.5, 0.25, 10.75, 0.25], "texture": "#0"},
+				"south": {"uv": [5.5, 0.5, 10.75, 0.5], "texture": "#0"},
+				"west": {"uv": [5.5, 0.75, 10.75, 0.75], "texture": "#0"},
+				"up": {"uv": [5.25, 5.25, 0, 0], "texture": "#0"},
+				"down": {"uv": [5.25, 0, 0, 5.25], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-6, -2, -11.5],
+			"scale": [2.3, 2.3, 2.3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-6, -2.25, -11.5],
+			"scale": [2, 2, 2]
+		}
+	}
+}

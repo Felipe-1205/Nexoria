@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:JUNGLATIER2
+unlock: false
+result: minecraft:jungle_planks 4

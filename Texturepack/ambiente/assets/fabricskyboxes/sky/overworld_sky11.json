@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "type": "single-sprite-square-textured",
+  "texture": "minecraft:optifine/sky/world0/shootingstar01.png",
+  "blend": {
+    "type": "custom",
+    "blender": {
+      "sourceFactor": 770,
+      "destinationFactor": 1,
+      "equation": 32774,
+      "redAlphaEnabled": false,
+      "greenAlphaEnabled": false,
+      "blueAlphaEnabled": false,
+      "alphaEnabled": true
+    }
+  },
+  "properties": {
+    "priority": 11,
+    "fade": {
+      "startFadeIn": 18000,
+      "endFadeIn": 18017,
+      "startFadeOut": 18050,
+      "endFadeOut": 18067
+    },
+    "rotation": {
+      "axis": [
+        -90.0,
+        0.0,
+        0.0
+      ],
+      "rotationSpeedY": -100.0
+    },
+    "transitionInDuration": 20,
+    "transitionOutDuration": 20
+  },
+  "conditions": {
+    "weather": [
+      "clear",
+      "snow"
+    ],
+    "worlds": [
+      "minecraft:overworld"
+    ]
+  }
+}

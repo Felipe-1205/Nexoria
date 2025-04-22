@@ -1,0 +1,12 @@
+type: shapeless
+source:
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+- minecraft:dark_oak_planks
+unlock: false
+result: minecraft:chest

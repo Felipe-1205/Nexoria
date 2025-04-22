@@ -1,0 +1,79 @@
+Fuego:
+  name: Fuego
+  icon: BLAZE_POWDER
+  lore-icon: '🔥'
+  color: '&c'
+  regular-attack:
+    mythiclib-skill-id: fuego_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: fuego_critical_strike
+
+Hielo:
+  name: Hielo
+  icon: SNOWBALL
+  lore-icon: '❄'
+  color: '&b'
+  regular-attack:
+    mythiclib-skill-id: hielo_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: hielo_critical_strike
+
+Electrico:
+  name: Electrico
+  icon: Nether_star
+  lore-icon: '⚡'
+  color: '&6'
+  regular-attack:
+    mythiclib-skill-id: electrico_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: electrico_critical_strike
+
+Viento:
+  name: Viento
+  icon: FEATHER
+  lore-icon: '🌫'
+  color: '&7'
+  regular-attack:
+    mythiclib-skill-id: viento_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: viento_critical_strike
+
+Sonico:
+  name: Sonico
+  icon: sculk_sensor
+  lore-icon: '🎵'
+  color: '&5'
+  regular-attack:
+    mythiclib-skill-id: sonico_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: sonico_critical_strike
+
+Agua:
+  name: Agua
+  icon: LILY_PAD
+  lore-icon: '💧'
+  color: '&9'
+  regular-attack:
+    mythiclib-skill-id: agua_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: agua_critical_strike
+
+Necrotico:
+  name: Necrotico
+  icon: COAL
+  lore-icon: '☽'
+  color: '&8'
+  regular-attack:
+    mythiclib-skill-id: necrotico_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: necrotico_critical_strike
+
+Radiante:
+  name: Radiante
+  icon: quartz
+  lore-icon: '★'
+  color: '&f'
+  regular-attack:
+    mythiclib-skill-id: radiante_elemental_attack
+  crit-strike:
+    mythiclib-skill-id: radiante_critical_strike

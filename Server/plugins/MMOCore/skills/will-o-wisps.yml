@@ -1,0 +1,29 @@
+name: Will-O-Wisps
+lore:
+- '&3Summon 3 will-o-wisps that fight for you'
+- '&3The will-o-wisps explode after 10 seconds,'
+- '&3damaging nearby targets'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2045'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10

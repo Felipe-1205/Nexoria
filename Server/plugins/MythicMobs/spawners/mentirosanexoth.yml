@@ -1,0 +1,27 @@
+mentirosanexoth:
+  World: eutonia
+  X: -612
+  Y: 37
+  Z: -253
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: mf_deceptor
+  Radius: 0.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '1'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 60
+  Warmup: 0
+  ActivationRange: 10.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []
+  CooldownTimer: 1

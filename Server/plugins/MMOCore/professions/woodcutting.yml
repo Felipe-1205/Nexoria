@@ -1,0 +1,148 @@
+name: Woodcutting
+max-level: 101
+experience:
+    base: 15
+    per-level: 15
+exp-curve: levels
+on-mine:
+    oak:
+        material: vanilla{type=oak_log}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ROBLETIER1} 1 1'
+        conditions:
+        - 'region{name=talartier1}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=BEDROCK}
+    spruce:
+        material: vanilla{type=SPRUCE_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ABETO} 1 1'
+        conditions:
+        - 'region{name=talartier1}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=BEDROCK}
+    birch:
+        material: vanilla{type=BIRCH_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ABEDULTIER1} 1 1'
+        conditions:
+        - 'region{name=talartier1}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=3}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 60
+            temp-block: vanilla{type=BEDROCK}
+    jungle:
+        material: vanilla{type=JUNGLE_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=JUNGLATIER2} 1 1'
+        conditions:
+        - 'region{name=talartier2}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=6}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=BEDROCK}
+    acacia:
+        material: vanilla{type=ACACIA_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ACACIATIER2} 1 1'
+        conditions:
+        - 'region{name=talartier2}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=6}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=BEDROCK}
+    daroak:
+        material: vanilla{type=DARK_OAK_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=ROBLEOSCUROTIER2} 1 1'
+        conditions:
+        - 'region{name=talartier2}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=6}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 120
+            temp-block: vanilla{type=BEDROCK}
+    mangrove:
+        material: vanilla{type=MANGROVE_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=MANGLETIER3} 1 1'
+        conditions:
+        - 'region{name=talartier3}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=9}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 240
+            temp-block: vanilla{type=BEDROCK}
+    cherry:
+        material: vanilla{type=CHERRY_LOG}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=CEREZOTIER3} 1 1'
+        conditions:
+        - 'region{name=talartier3}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=9}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 240
+            temp-block: vanilla{type=BEDROCK}
+    warped:
+        material: vanilla{type=WARPED_STEM}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=DISTORSIONADOTIER3} 1 1'
+        conditions:
+        - 'region{name=talartier3}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=12}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 240
+            temp-block: vanilla{type=BEDROCK}
+    crimsom:
+        material: vanilla{type=CRIMSON_STEM}
+        drop-table:
+            items:
+            - 'mmoitem{type=material;id=CARMESITIER3} 1 1'
+        conditions:
+        - 'region{name=talartier3}'
+        triggers:
+        - 'exp{profession=woodcutting;amount=12}'
+        options:
+            vanilla-drops: false
+        regen:
+            time: 240
+            temp-block: vanilla{type=BEDROCK}
+    

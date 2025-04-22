@@ -1,0 +1,116 @@
+{
+  "samus.angel": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/angel"
+    ]
+  },
+  "samus.bird_chirp": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/bird_chirp"
+    ]
+  },
+  "samus.bird_chirp_chain": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/bird_chirp_chain"
+    ]
+  },
+  "samus.blind": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/blind"
+    ]
+  },
+  "samus.clef": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/clef"
+    ]
+  },
+  "samus.harp_angel": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_angel"
+    ]
+  },
+  "samus.harp_memento_mori": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_memento_mori"
+    ]
+  },
+  "samus.harp_sound_wave": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_sound_wave"
+    ]
+  },
+  "samus.harp_speed": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_speed"
+    ]
+  },
+  "samus.harp_symphony": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_symphony"
+    ]
+  },
+  "samus.harp_symphony_explosion": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_symphony_explosion"
+    ]
+  },
+  "samus.harp_vibration": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/harp_vibration"
+    ]
+  },
+  "samus.healing_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/healing_aura"
+    ]
+  },
+  "samus.slow_down": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/slow_down"
+    ]
+  },
+  "samus.speed_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/speed_aura"
+    ]
+  },
+  "samus.symphony_laser": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/symphony_laser"
+    ]
+  },
+  "samus.vibration": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/vibration"
+    ]
+  },
+  "samus.vibration2": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/vibration2"
+    ]
+  },
+  "samus.symphony_explosion": {
+    "category": "master",
+    "sounds": [
+      "samus/bard/symphony_explosion"
+    ]
+  }
+}

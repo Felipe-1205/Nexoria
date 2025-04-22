@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:andesite
+unlock: false
+result: minecraft:andesite_wall 6

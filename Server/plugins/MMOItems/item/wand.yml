@@ -1,0 +1,211 @@
+MAGO1:
+  base:
+    material: BOOK
+    name: '&bEl Codice del Aprendiz'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 3.5
+    attack-speed: 1.8
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 3.0
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 1.0
+    max-durability: 1000.0
+MAGO2:
+  base:
+    material: BOOK
+    name: '&bManuscrito de los Vientos Arcanos'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.5
+    attack-speed: 1.8
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 4.0
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 10.0
+    max-durability: 1500.0
+MAGO3:
+  base:
+    material: BOOK
+    name: '&bEl Tomo de las Sombras'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 5.5
+    attack-speed: 1.8
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 5.0
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 20.0
+    max-durability: 2000.0
+MAGO4:
+  base:
+    material: BOW
+    name: '&bGrimorio de la Llama Eterna'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 6.5
+    attack-speed: 1.8
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 6.0
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 30.0
+    max-durability: 2500.0
+MAGO5:
+  base:
+    material: BOOK
+    name: '&bEscrituras del Concilio Lunar'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.5
+    attack-speed: 1.8
+    
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 7.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 40.0
+    max-durability: 3000.0
+MAGO6:
+  base:
+    material: BOOK
+    name: '&bEl Tomo de la Caos Primordial'
+    displayed-type: '&5Canalizador de Mago'
+    max-stack-size: 1.0
+    enchants:
+      unbreaking: 1.0
+    hide-enchants: true
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.5
+    attack-speed: 1.8
+    max-mana: 5.0
+    sounds:
+      on-left-click:
+        sound: BLOCK_AMETHYST_CLUSTER_BREAK
+        volume: 2.0
+        pitch: 1.0
+    range: 8.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - mago
+    lore:
+    - '&5Un d6 de daño de fuego o hielo.'
+    required-level: 50.0
+    max-durability: 3500.0
+VARITAPRUEBAGEMAS:
+  base:
+    material: STICK
+    gem-sockets:
+    - Arma
+    - Armadura

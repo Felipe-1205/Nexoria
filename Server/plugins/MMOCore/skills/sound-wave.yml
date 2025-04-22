@@ -1,0 +1,39 @@
+name: Sound Wave
+lore:
+- '&bFire a sound wave that slows your target'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Slow Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2097'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+duration:
+  base: 2
+  per-level: 0.2
+  min: 2
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: -0.1
+  min: 1
+  max: 2

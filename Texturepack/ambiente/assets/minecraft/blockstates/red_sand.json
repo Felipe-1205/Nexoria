@@ -1,0 +1,22 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "minecraft:block/red_sand",
+		"uvlock": true
+      },
+      {
+        "model": "minecraft:block/red_sand",
+        "y": 90, "uvlock": true
+      },
+      {
+        "model": "minecraft:block/red_sand",
+        "y": 180, "uvlock": true
+      },
+      {
+        "model": "minecraft:block/red_sand",
+        "y": 270, "uvlock": true
+      }
+    ]
+  }
+}

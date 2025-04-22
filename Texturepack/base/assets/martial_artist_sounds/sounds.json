@@ -1,0 +1,98 @@
+{
+  "samus.agile_strike_dash": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/agile_strike_dash"
+    ]
+  },
+  "samus.big_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/big_punch"
+    ]
+  },
+  "samus.big_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/big_swing"
+    ]
+  },
+  "samus.deadly_squash_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/deadly_squash_punch"
+    ]
+  },
+  "samus.deadly_squash_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/deadly_squash_smash"
+    ]
+  },
+  "samus.deadly_squash_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/deadly_squash_swing"
+    ]
+  },
+  "samus.diving_strike_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/diving_strike_smash"
+    ]
+  },
+  "samus.diving_strike_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/diving_strike_swing"
+    ]
+  },
+  "samus.evasion": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/evasion"
+    ]
+  },
+  "samus.multi_strike_final_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/multi_strike_final_punch"
+    ]
+  },
+  "samus.multi_strike_small": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/multi_strike_small"
+    ]
+  },
+  "samus.multi_strike_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/multi_strike_swing"
+    ]
+  },
+  "samus.small_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/small_punch"
+    ]
+  },
+  "samus.uppercut_punch": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/uppercut_punch"
+    ]
+  },
+  "samus.uppercut_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/uppercut_swing"
+    ]
+  },
+  "samus.small_swing": {
+    "category": "master",
+    "sounds": [
+      "samus/martial_artist/small_swing"
+    ]
+  }
+}

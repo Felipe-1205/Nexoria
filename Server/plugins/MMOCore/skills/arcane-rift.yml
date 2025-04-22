@@ -1,0 +1,44 @@
+name: Grieta Arcana
+lore:
+- Invoca una ruptura mágica que 
+- inflige &8{damage} puntos de daño
+- y otorga lentitud &8{amplifier} &7por &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: CRYING_OBSIDIAN
+duration:
+  base: 2
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 0.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 4
+  per-level: 1.1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 6
+  per-level: -0.5
+amplifier:
+  base: 2
+  per-level: 1
+speed:
+  base: 2
+  per-level: 1

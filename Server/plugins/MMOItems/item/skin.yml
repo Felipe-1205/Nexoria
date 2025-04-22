@@ -1,0 +1,13 @@
+PRUEBASKIN:
+  base:
+    material: ELYTRA
+    name: capa negra
+    compatible-types: []
+    compatible-ids:
+    - ALASPRUEBA
+PRUEBA_SKIN_ESPADA:
+  base:
+    material: STONE_SWORD
+    custom-nbt: []
+    custom-model-data: 2037.0
+    compatible-types: []

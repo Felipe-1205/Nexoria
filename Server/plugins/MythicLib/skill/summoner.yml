@@ -1,0 +1,27 @@
+SOUL_STRIKE:
+    mythicmobs-skill-id: Soul_Strike
+    modifiers:
+    - damage
+
+GUARDIANS_DEFENSE:
+    mythicmobs-skill-id: Guardians_Defense
+    
+SPIRIT_GUARDIAN:
+    mythicmobs-skill-id: Spirit_Guardian
+    passive-type: TIMER
+    
+MAGICAL_BLADES:
+    mythicmobs-skill-id: Magical_Blades
+    modifiers:
+    - damage
+    
+SUMMON_HORSE:
+    mythicmobs-skill-id: Summon_Horse
+    modifiers:
+    - damage
+    
+SUMMON_PHOENIX:
+    mythicmobs-skill-id: Summon_Phoenix
+    modifiers:
+    - damage
+    - duration

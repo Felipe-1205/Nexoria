@@ -1,0 +1,33 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/dragon_warrior_texture/dragon_dash_impact2",
+		"particle": "item/dragon_warrior_texture/dragon_dash_impact2"
+	},
+	"elements": [
+		{
+			"from": [-12, 8, -12],
+			"to": [28, 8, 28],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, -1, -2],
+			"translation": [-6.25, -1.25, -10.25],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"translation": [0, -15.5, 0],
+			"scale": [2.2, 2.2, 2.2]
+		}
+	}
+}

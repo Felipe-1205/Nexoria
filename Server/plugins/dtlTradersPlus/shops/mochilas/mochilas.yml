@@ -1,0 +1,1131 @@
+mochilas:
+  title: Mochilas
+  command: none
+  permission: none
+  default-shop: trade
+  buy-shop-enabled: false
+  sell-shop-enabled: false
+  trade-shop-enabled: true
+  logging-enabled: true
+  close-after-purchase: false
+  confirmation-window-enabled: false
+  pages:
+    page-0:
+      size: 54
+      page-name: Page 30521
+      page-permission: ''
+      trade-items:
+        item-0:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-1:
+          id: 1637
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-2:
+          id: 1638
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-3:
+          id: 1639
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-4:
+          id: 1640
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-5:
+          id: 1641
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-6:
+          id: 1642
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-7:
+          id: 1643
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-8:
+          id: 1644
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-9:
+          id: 1645
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-10:
+          id: 1660
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 9","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 1
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAycDAB3Tvw/RQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 9'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 9","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 1
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAycDAB3Tvw/RQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QwUrDQBCGJ+1lLQgqFVFve+jJk+KlB2FNhmZpdhN2FzGGskiw10ASD6X0eXL2FeKLmbQ2bWkvC7P//DPf/AMAAtdChNyg0NaLJRPctUGoEIYJrat5XaV19ay+0u+8yOiMwEXX3b6We0BEKNFj9pHAeSc2gxDI6GmaFfNF3odhpyh845qHsrUC9By43+3nmr0GaFG6PpOGy4lD4LKT/7819JIG5GbfFgUsRs+aOEI4G215CQx8bVS8oXlZUl1+lnRM25I+0HCiyyxf0HGypAfg9venKPOmcctPV7OVA3dHoAojxlXL6cDtkaoFN/7miKvD1NacRDCDirPgtBeDdQD9vUMFe7faMHdqNf/AJr0U/gCIUN5vwgEAAA==
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-11:
+          id: 1646
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-12:
+          id: 1647
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-13:
+          id: 1662
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 18","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 2
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAxCDADthcqWRQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 18'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 18","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 2
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAxCDADthcqWRQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 5
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-14:
+          id: 1648
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-15:
+          id: 1649
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-16:
+          id: 1664
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 27","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 3
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAzSDACkPghHRQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 27'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 27","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 3
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAzSDACkPghHRQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 10
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-17:
+          id: 1650
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-18:
+          id: 1651
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-19:
+          id: 1652
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-20:
+          id: 1653
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-21:
+          id: 1654
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-22:
+          id: 1655
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-23:
+          id: 1656
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-24:
+          id: 1657
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-25:
+          id: 1658
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-26:
+          id: 1659
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-27:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-28:
+          id: 1665
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 36","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 4
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAwqDACYFNYfRQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 36'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 36","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 4
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAwqDACYFNYfRQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 25
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-29:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-30:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-31:
+          id: 1668
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 45","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 5
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAy6DADRrxTORQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 45'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 45","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 5
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAy6DADRrxTORQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                amount: 50
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Kosfyr","italic":false,"color":"dark_aqua"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QQUvDQBCFJ/WyFgSViqi3PfTkSfHSg7AmQ7M0uwm7ixhDWSTYayCJh1L6e3L2L8Q/Zlbb1FIvC8Obefu9NwQgcCFEzA0KbYNUMsF9G8UKYZTRtlm0Td42D+o9/yirgs4JnPbb7rU8ACJiiQGzdwROerEzQiDj+1lRLZalBze7T7hmTxFalH7IpOFy6h3BqJcVPnPNY+mcAQYEznppc6FhkHUgl38dk4ilGFiTJgjH4y0vgWGojUp/aR5XVNdvNZ1QN9JbGk91XZRLOslWdA/cfn1Wddktbvnper724Pogg8KEceUieHB1oGrBTehEAuf7rf1wEsEMKs6i/28x2nSzCyrYi9WG+TOr+St29eTwDY31bQbCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-32:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-33:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-34:
+          id: 1669
+          type: trade
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: SHULKER_SHELL
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+              lore:
+              - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              - '{"text":"","extra":[{"text":"Tamaño: 54","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+              custom-model-data: 6
+              custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAxmDABLZCJnRQAAAA==
+          display-lore:
+          - '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+          - '&7Tamaño: 54'
+          show-description: true
+          description: []
+          trade-price: 0.0
+          show-obtainable-items: true
+          obtainable-items:
+            obtainable-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: SHULKER_SHELL
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Bolsa sin vincular","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+                  - '{"text":"","extra":[{"text":"Tamaño: 54","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+                  custom-model-data: 6
+                  custom: H4sIAAAAAAAA/+NiYOBg4EhKTNctLc1MYWDJK83JYWTgBgkkJ+Y5ZealMHIwcIK4+eV5qUUQBcwQHcWZVakMDAxmDABLZCJnRQAAAA==
+          show-needed-items: true
+          needed-items:
+            trade-item-0:
+              item:
+                ==: org.bukkit.inventory.ItemStack
+                v: 3839
+                type: GHAST_TEAR
+                meta:
+                  ==: ItemMeta
+                  meta-type: UNSPECIFIC
+                  display-name: '{"text":"","extra":[{"text":"Aidaen","italic":false,"color":"blue"}]}'
+                  lore:
+                  - '{"text":"","extra":[{"text":"Recurso","italic":false,"color":"dark_purple"}]}'
+                  attribute-modifiers:
+                    minecraft:generic.attack_speed:
+                    - ==: org.bukkit.attribute.AttributeModifier
+                      amount: 0.0
+                      name: mmoitems:decoy
+                      uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                      operation: 0
+                  ItemFlags:
+                  - HIDE_ATTRIBUTES
+                  max-stack-size: 99
+                  custom: H4sIAAAAAAAA/22QwUrDQBCGJ/WyFgSViqi3PfTkTTzYg7AmQ7OY3YTdRYwhLCVW8GIhjQcpfZ6c+wrxxUxsk1rqZWD4Zme+/fsABM6ECLlBoa0XSya4a4NQIQwSWpVvVZlV5a2aZp/5fEZTAsfddFMt94CIUKLH7A2Bow7WixDI8I69v06mHwROOoLS9Zk0GnpJ6sDV9jjX7CHAlnM5dg5g0GGFT1zzUDYXAXoEzv++jAIWo2dNHCEcDltfAn1fGxWvbe4XVBeTgo5o09JrGo51Mcu/6ChZ0B1x+72aF3k92PrTZbp04GLPVQtu/MbUgcs9qDBiXDWUwOluar+eRDCDirPg/80YbDLYflSwZ6sNcx+t5i9Yx5DBD3Z5+8HCAQAA
+          show-trade-limit: false
+          trade-limit: -1
+          show-limit-time: false
+          limit-reset-seconds: -1
+          show-broadcast-message: false
+          broadcast-message: ''
+          drop-item-on-full-inventory: false
+          sell-all-when-not-enough-items: true
+          custom-display-text-enabled: false
+          custom-display-text: []
+          permission: ''
+          logging-enabled: true
+          close-after-purchase: false
+        item-35:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-36:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-37:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-38:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-39:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-40:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-41:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-42:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-43:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-44:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-45:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-46:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-48:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-50:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []
+        item-52:
+          id: 1636
+          type: static
+          item:
+            ==: org.bukkit.inventory.ItemStack
+            v: 3839
+            type: DIAMOND_HOE
+            meta:
+              ==: ItemMeta
+              meta-type: UNSPECIFIC
+              display-name: '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_gray","bold":false}]}'
+              custom-model-data: 16
+          display-name: §8
+          show-description: true
+          description: []

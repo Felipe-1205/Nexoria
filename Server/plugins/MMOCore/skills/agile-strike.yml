@@ -1,0 +1,36 @@
+name: Agile Strike
+lore:
+- '&6Dash forward and bash your targets,'
+- '&6pushing them away'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2088'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: -0.1
+  min: 1
+  max: 2
+
+#cle15EM4c1MxUGZW10b4VmdVZFV1smeOlXRU1UNjRlTwklRWFUQphFeaNnTw50NqZGTKpVO

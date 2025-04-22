@@ -1,0 +1,62 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"1": "item/paladin_texture/holy_wings_3",
+		"main": "item/paladin_texture/paladin_spin_slash_a"
+	},
+	"elements": [
+		{
+			"from": [-13.1445, -2.0375, 10.88121],
+			"to": [13.2555, 24.3625, 10.88121],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [8, 11.125, 13.82291]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#1"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [2.7445, -2.0375, 10.88121],
+			"to": [29.1445, 24.3625, 10.88121],
+			"rotation": {"angle": -22.5, "axis": "y", "origin": [8, 11.125, 13.82291]},
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#1"},
+				"up": {"uv": [16, 0, 0, 0], "texture": "#1"},
+				"down": {"uv": [16, 0, 0, 0], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8, -12.5, -12.5],
+			"to": [8, 28.5, 28.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [4, 0, 8, 0], "rotation": 270, "texture": "#main"},
+				"east": {"uv": [0, 16, 16, 0], "rotation": 90, "texture": "#main"},
+				"south": {"uv": [4, 0, 8, 0], "rotation": 270, "texture": "#main"},
+				"west": {"uv": [0, 0, 16, 16], "rotation": 90, "texture": "#main"},
+				"up": {"uv": [4, 0, 4, 4], "texture": "#main"},
+				"down": {"uv": [4, 0, 4, 4], "rotation": 180, "texture": "#main"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [-6.25, -1, -16.25],
+			"scale": [4, 4, 4]
+		},
+		"thirdperson_lefthand": {
+			"translation": [-6.25, -1, 4.25],
+			"scale": [4, 4, 4]
+		},
+		"head": {
+			"translation": [0, -53.5, -2.5],
+			"scale": [4, 4, 4]
+		}
+	}
+}

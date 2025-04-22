@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'aba'
+- 'aba'
+source:
+  a: minecraft:spruce_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:spruce_fence 3

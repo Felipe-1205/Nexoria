@@ -1,0 +1,20 @@
+crafting-queue:
+  culina-vitae:
+    recipe-3fd0d0c8-433e-46e0-a66f-3b067ad8d49c:
+      recipe: BRANDY
+      start: 1741031003285
+      completion: 1741031006285
+    recipe-0ff19c97-c176-4398-8189-17d846ed8e75:
+      recipe: BRANDY
+      start: 1741031004757
+      completion: 1741031009285
+    recipe-4087ffc9-8e13-468f-8d20-eda2d9a34930:
+      recipe: JAMONGRANDE
+      start: 1741031859773
+      completion: 1741031012285
+    recipe-9b225418-ae79-4da5-8994-b556eafda6e9:
+      recipe: JAMONGRANDE
+      start: 1741031860225
+      completion: 1741031015285
+permissions-from-items:
+- essentials.workbench

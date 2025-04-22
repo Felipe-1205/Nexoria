@@ -1,0 +1,37 @@
+ARCANE_BLAST:
+    mythicmobs-skill-id: Arcane_Blast
+    modifiers:
+    - damage
+
+FLAMETHROWER:
+    mythicmobs-skill-id: Flamethrower
+    modifiers:
+    - damage
+    - duration
+    
+ARCANE_TURRET:
+    mythicmobs-skill-id: Arcane_Turret
+    modifiers:
+    - damage
+    
+ENGINE_GLIDE:
+    mythicmobs-skill-id: Engine_Glide
+    modifiers:
+    - damage
+    - duration
+    
+CHRONO_CATACLYSM:
+    mythicmobs-skill-id: Chrono_Cataclysm
+    passive-type: TIMER
+    
+MAGICAL_TINKERING:
+    mythicmobs-skill-id: Magical_Tinkering
+    passive-type: TIMER
+    modifiers:
+    - shield
+    - tinkercooldown
+    
+ARCANE_MECHA:
+    mythicmobs-skill-id: Arcane_Mecha
+    modifiers:
+    - duration

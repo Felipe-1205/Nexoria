@@ -1,0 +1,61 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/martial_artist_texture/strike_slash_shadow_5",
+		"1": "item/martial_artist_texture/strike_slash_5",
+		"particle": "item/martial_artist_texture/strike_slash_shadow_5"
+	},
+	"elements": [
+		{
+			"from": [-9.5, -7.5, 8.1],
+			"to": [21.5, 23.5, 8.1],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.532, 1.282, 14.75, 14.5], "texture": "#1"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"south": {"uv": [14.75, 1.282, 1.532, 14.5], "texture": "#1"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-9.5, -7.5, 8.175],
+			"to": [21.5, 23.5, 8.175],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [1.532, 1.282, 14.75, 14.5], "texture": "#1"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"south": {"uv": [14.75, 1.282, 1.532, 14.5], "texture": "#1"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-9.04038, -7.53536, 8.15],
+			"to": [21.95962, 23.46464, 8.15],
+			"rotation": {"angle": -45, "axis": "z", "origin": [6.45962, 7.96464, 8.15]},
+			"faces": {
+				"north": {"uv": [1.532, 1.282, 14.75, 14.5], "texture": "#0"},
+				"east": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"south": {"uv": [14.75, 1.282, 1.532, 14.5], "texture": "#0"},
+				"west": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"up": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"},
+				"down": {"uv": [7.032, 7.782, 9, 10.25], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [0, 0, 7],
+			"translation": [1, -58.75, 5],
+			"scale": [3.3, 3.3, 3.3]
+		},
+		"head": {
+			"rotation": [90, 180, -156],
+			"translation": [1.5, -19, 57.25],
+			"scale": [3.8, 3.8, 3.8]
+		}
+	}
+}

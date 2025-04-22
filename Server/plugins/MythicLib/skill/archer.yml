@@ -1,0 +1,28 @@
+QUICK_SHOT:
+    mythicmobs-skill-id: Quick_Shot
+    modifiers:
+    - damage
+
+BACKSTEP:
+    mythicmobs-skill-id: Backstep
+    
+HUNTERS_FOCUS:
+    mythicmobs-skill-id: Hunters_Focus
+    
+WINDRAZOR:
+    mythicmobs-skill-id: Windrazor
+    modifiers:
+    - damage
+    - duration
+    
+DEADLY_JAVELIN:
+    mythicmobs-skill-id: Deadly_Javelin
+    modifiers:
+    - damage
+    - duration
+    
+DRAGON_PIERCER:
+    mythicmobs-skill-id: Dragon_Piercer
+    modifiers:
+    - damage
+    - duration

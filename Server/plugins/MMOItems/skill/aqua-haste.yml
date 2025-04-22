@@ -1,0 +1,16 @@
+name: Aqua Haste
+modifier:
+  mana:
+    name: Mana
+    default-value: 0
+  stamina:
+    name: Stamina
+    default-value: 0
+  cooldown:
+    name: Cooldown
+    default-value: 0
+  timer:
+    name: Timer
+    default-value: 0.0
+
+# YksSs#yHFMkAdJqERPG4/r21+MuHIy7HhkrtIfg5Wcna1szGh6E4HLFxFawLxLj4pZ/CW8

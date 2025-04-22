@@ -1,0 +1,301 @@
+# DO NOT TOUCH
+config-version: 5
+
+# This will verbose debug messages to the console when
+# toggled on. This option applies for every MMO- plugin.
+debug: false
+
+# This option is used by MMOInventory and MMOCore to synchronize
+# player data between proxy-connected servers. When a player changes
+# server, the plugin tries to fetch new data X times every 1s, up
+# to a maximum of 5 times by default.
+#
+# Use a higher value if your SQL connection is weak to avoid
+# player data loss.
+max-sync-tries: 5
+
+# Edit general plugin number formatting here.
+# Restart your server when changing this so that MMOItems and MMOCore update as well
+number-format:
+  decimal-separator: .
+
+# Defines how defense behaves. The formula should return the
+# final amount of damage dealt, given the following inputs:
+# - damage dealt #damage#
+# - current player defense #defense#
+#
+# The default formula is inspired from Path of Exile, you can
+# learn more about it on their wiki: https://pathofexile.fandom.com/wiki/Armour
+#
+# natural   <-> non-elemental damage
+# elemental <-> fire/water/.. damage
+defense-application:
+  natural: '#damage# - #defense#'
+  elemental: '#damage# * (1 - (#defense# / (5 * #damage# + #defense#)))'
+
+# By default, MythicLib calculates the player's elemental damage
+# stats and automatically apply it as on-hit damage, before applying
+# custom on-hit scripts for regular attacks/crits.
+#
+# When enabled, MythicLib will NOT apply elemental damage, which leaves
+# it as a responsibility of the user. As a result, on-hit scripts for
+# regular attacks will be applied first.
+skip_elemental_damage_application: false
+
+# Allows to scale health up/down to a specific
+# amount so extra health does not fill up the screen.
+# Requires a SERVER reload when changed.
+# Delay should be used if your Users experience issues revolving around seeing too many hearts still. This can occur with plugins such as MySQL Inventory Bridge
+# The delay is in ticks. 20 ticks = 1 second
+health-scale:
+  enabled: false
+  scale: 20
+  delay: 0
+
+critical-strikes:
+  weapon:
+    coefficient: 2 # Default = 2 meaning crits deal 200% of the initial damage
+    cooldown: 3
+  skill:
+    coefficient: 1.5 # Default = 1.5 meaning crits deal 150% of the initial damage
+    cooldown: 3
+
+# When enabled, SHIFT_<RIGHT_CLICK/DROP_ITEM/...> trigger types are disabled
+# and the corresponding base triggers will trigger even when crouching.
+#
+# When using this option, the SHIFT_<...> triggers still exist but will NOT
+# trigger any skill, so just ignore them.
+ignore_shift_triggers: false
+
+# When enabled, abilities provided by the item in the offhand will
+# not be triggered. Set to false by default.
+ignore_offhand_click_triggers: false
+
+# What happens when the player is waiting for his skill to cast
+# Does not apply if skill delay (it is a skill parameter) is set to 0
+casting-delay:
+  slowness: 60 # A % based speed reduction when casting
+  cancel-on-move: false # If the casting should cancel if the player moves
+
+  cast-script: # MythicLib script called when the countdown begins
+    enabled: true
+    script:
+      mechanics:
+        play_sound:
+          type: sound
+          sound: BLOCK_END_PORTAL_FRAME_FILL
+          volume: 1
+          pitch: 2
+
+  cancel-script: # MythicLib script called if the countdown is cancelled
+    enabled: true
+    # Other format:
+    # script: <public_script_name>
+    script:
+      mechanics:
+        play_sound:
+          type: sound
+          sound: ENTITY_VILLAGER_NO
+          volume: 1
+          pitch: 2
+
+  bossbar: # Displayed during casting delay
+    enabled: true
+    format: 'CASTING'
+
+# Default and max. values of armor/mitigation stats. These
+# stats all have a cooldown which can be reduced using the
+# '*** Cooldown Reduction' item stat.
+mitigation:
+
+  # Edit mitigation messages here. Leave to blank for no message.
+  message:
+
+    # Whether or not they should display on action bar instead of chat
+    action-bar: true
+
+    parry: '&cYou just parried #damage# damage.'
+    block: '&cYou just blocked #damage# damage.' # Use #power# to display block power.
+    dodge: '&cYou just dodged #damage# damage.'
+
+  block:
+    cooldown: 5.0
+
+  dodge:
+    knockback: 1.0
+    cooldown: 5
+
+  parry:
+    knockback: 1.0
+    cooldown: 8.0
+
+# Change the amount of damage dealt on specific damage sources. This
+# tool comes handy when needing to balance your vanilla damage sources.
+# You can use any math formula for any damage source possible.
+# Available damage sources: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDamageEvent.DamageCause.html
+# Requires a SERVER reload when changed.
+#
+# Using {event_damage} will return the initial event damage.
+vanilla-damage-modifiers:
+  enabled: false
+  source:
+    VOID: '%mythiclib_stat_max_health% * .05' # Deals 5% of player's max health
+    FIRE: '{event_damage} * 2' # Multiplies by 2 fire damage
+    WITHER: '%mythiclib_stat_max_health% * .05'
+    LAVA: '%mythiclib_stat_max_health% * .2'
+    DROWNING: '%mythiclib_stat_max_health% * .1'
+
+# Displays in-game damage or heal indicators.
+# Requires a SERVER reload when changed.
+# Supported Plugins:
+# - HolographicDisplays
+# - DecentHolograms
+# - CMI
+# - Holograms
+# - TrHologram
+game-indicators:
+
+  # When an entity is being damaged
+  # Use format: 'ᜌ{icon} &f{value}ᜌ' along with the resource pack
+  # provided in the wiki in order to remove the gray background
+  damage:
+    enabled: true
+    decimal-format: '0.#'
+    format: '{icon} &f{value}'
+    custom-font:
+      enabled: false
+      normal:
+        '0': 'ᜀ'
+        '1': 'ᜁ'
+        '2': 'ᜂ'
+        '3': 'ᜃ'
+        '4': 'ᜄ'
+        '5': 'ᜅ'
+        '6': 'ᜆ'
+        '7': 'ᜇ'
+        '8': 'ᜈ'
+        '9': 'ᜉ'
+        'dot': 'ᜊ'
+        'inter': 'ᜍ'
+      crit:
+        '0': 'ᜐ'
+        '1': 'ᜑ'
+        '2': 'ᜒ'
+        '3': 'ᜓ'
+        '4': '᜔'
+        '5': '᜕'
+        '6': '᜖'
+        '7': '᜗'
+        '8': '᜘'
+        '9': '᜙'
+        'dot': 'ᜋ'
+        'inter': 'ᜍ'
+    icon:
+      weapon:
+        normal: '&c🗡'
+        crit: '&c&l🗡'
+      skill:
+        normal: '&6★'
+        crit: '&6&l★'
+    split-holograms: true
+    radial-velocity: 1
+    gravity: 1
+    initial-upward-velocity: 1
+    entity-height-percent: 0.75
+    y-offset: 0.1
+
+  # When an entity regens some health
+  regen:
+    enabled: false
+    decimal-format: '0.#'
+    format: '&a+#'
+    radial-velocity: 1
+    gravity: 1
+    initial-upward-velocity: 1
+    entity-height-percent: 0.75
+    y-offset: 0.1
+    custom-font:
+      enabled: false
+      '0': 'ᜀ'
+      '1': 'ᜁ'
+      '2': 'ᜂ'
+      '3': 'ᜃ'
+      '4': 'ᜄ'
+      '5': 'ᜅ'
+      '6': 'ᜆ'
+      '7': 'ᜇ'
+      '8': 'ᜈ'
+      '9': 'ᜉ'
+      'dot': 'ᜊ'
+      'inter': 'ᜍ'
+
+# Due to a change made in 1.1.6 related to the movement speed
+# attribute, players see their movement speed reset to .1 when logging in
+#
+# Set to false when having issues with another plugin interfering
+# with the player's movement speed
+fix-movement-speed: true
+
+# Limits the amount of damage particles that can be sent to a player
+# every tick. By default it's set to 10 particles/tick. These particles
+# can be quite annoying and can even crash the client if there are too many.
+damage-particles-cap:
+  max-per-tick: 10
+  enabled: false
+
+# By enabling this option, the plugin will attempt to fix
+# too large packets sent to the client. This can happen
+# when the recipes are too large and the client cannot
+# handle them.
+# If you change this option value, you must restart your server.
+fix-too-large-packets: false
+
+# Whether or not a player performing an offensive/support action
+# can interact with another player. This accounts for skills,
+# MI staff attacks and a few other things.
+#
+# More info available on the wiki
+# https://gitlab.com/phoenix-dvpmt/mmocore/-/wikis/Combat
+interaction_rules:
+
+  # When enabled, apply PvP interaction rules for skills, melee and projectile hits.
+  # This option is toggled off by default to reduce confusion for new users.
+  enabled: true
+
+  # When disabled, support-based skills (buffs or heals)
+  # may only be applied onto players.
+  support_skills_on_mobs: true
+
+  # When PvP is turned off
+  pvp_off:
+
+    offense:
+      self: false # Self-friendly fire when PvP is off
+
+    # Ability to heal self/other players when PvP is off
+    support:
+      party_member: true
+      party_other: true
+      guild_ally: true
+      guild_neutral: true
+      guild_enemy: true
+      self: true # Ability to self-cast buffs
+
+  ## When PvP is turned on
+  pvp_on:
+
+    # Ability to heal self/other players when PvP is on
+    support:
+      party_member: true
+      party_other: false
+      guild_ally: true
+      guild_neutral: true
+      guild_enemy: false
+      self: true
+
+    # Friendly fire for guilds/parties
+    offense:
+      party_member: false
+      guild_ally: false
+      guild_neutral: true
+      self: false  # Self-friendly fire when PvP is on

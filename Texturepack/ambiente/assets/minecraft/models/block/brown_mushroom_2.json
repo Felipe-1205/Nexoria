@@ -1,0 +1,61 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/cross",
+	"textures": {
+		"1": "block/brown_mushroom_extra",
+		"particle": "block/brown_mushroom_extra"
+	},
+	"elements": [
+		{
+			"from": [5.8, 8, 0],
+			"to": [13.8, 10, 8],
+			"rotation": {"angle": -22.5, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [-3.2, 7, 7],
+			"to": [4.8, 9, 15],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"east": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"south": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"west": {"uv": [0, 0, 8, 2], "texture": "#1"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#1"},
+				"down": {"uv": [0, 0, 8, 8], "texture": "#1"}
+			}
+		},
+		{
+			"from": [11, 0, 3],
+			"to": [13, 5, 5],
+			"faces": {
+				"north": {"uv": [8, 0, 10, 5], "texture": "#1"},
+				"east": {"uv": [8, 0, 10, 5], "texture": "#1"},
+				"south": {"uv": [8, 0, 10, 5], "texture": "#1"},
+				"west": {"uv": [8, 0, 10, 5], "texture": "#1"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#missing"},
+				"down": {"uv": [8, 1.5, 10, 3.5], "texture": "#1"}
+			}
+		},
+		{
+			"from": [0, 0, 10],
+			"to": [2, 7, 12],
+			"rotation": {"angle": 22.5, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [8, 0, 10, 7], "texture": "#1"},
+				"east": {"uv": [8, 0, 10, 7], "texture": "#1"},
+				"south": {"uv": [8, 0, 10, 7], "texture": "#1"},
+				"west": {"uv": [8, 0, 10, 7], "texture": "#1"},
+				"up": {"uv": [0, 0, 2, 2], "texture": "#missing"},
+				"down": {"uv": [8, 1.5, 10, 3.5], "texture": "#1"}
+			}
+		}
+	]
+}

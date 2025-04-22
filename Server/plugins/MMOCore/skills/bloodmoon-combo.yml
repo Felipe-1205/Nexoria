@@ -1,0 +1,62 @@
+name: Bloodmoon Combo
+lore:
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+- ""
+- "&c&lCorte Carmesí (Cuchillas): &7Ejecuta un combo de 3 pasos. Lanza un"
+- "&7ataque rápido con corte en X. Corre hacia adelante y hacia atrás, empuja y corta lateralmente."
+- "&c&lEspinas de Sangre (Grimorio): &7Ejecuta un combo de 3 pasos."
+- "&7Invoca una serie de púas de sangre (repetir): invoca un"
+- "&7meteorito orbe de sangre que cae hacia donde miras, creando"
+- "&7una ruptura de púas de sangre que daña a los enemigos en su interior."
+- "&c&lPlumas Escarlatas (Agujas): &7Dispara agujas de sangre que se acumulan sobre el enemigo (máximo 5)."
+- "&c&lEspiral de la Muerte (Guadaña): &7Ejecuta un combo de 4 pasos. Avanza con un corte giratorio y"
+- "&7derriba a los enemigos. Repite. Avanza con un corte giratorio y derriba a los enemigos."
+- "&7 Baja con un corte giratorio y derriba a los enemigos."
+- "&c🗡 {damage} Daño"
+- "&e⌛ {bladescooldown}s Enfriamiento (Blades)"
+- "&e⌛ {grimoirecooldown}s Enfriamiento (Grimoire)"
+- "&e⌛ {needlescooldown}s Enfriamiento (Needles)"
+- "&e⌛ {scythecooldown}s Enfriamiento (Scythe)"
+- ""
+- "&7&m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+material: 'COAL:2233'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 6
+  per-level: 1
+  min: 4
+  max: 7
+mana:
+  base: 4
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+bladescooldown:
+  base: 0.5
+  per-level: -0.02
+  min: 0.4
+  max: 0.5
+grimoirecooldown:
+  base: 0.5
+  per-level: -0.02
+  min: 0.4
+  max: 0.5
+needlescooldown:
+  base: 0.5
+  per-level: -0.02
+  min: 0.4
+  max: 0.5
+scythecooldown:
+  base: 0.75
+  per-level: -0.03
+  min: 0.6
+  max: 0.75

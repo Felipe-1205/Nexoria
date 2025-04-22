@@ -1,0 +1,110 @@
+{
+  "samus.kobold_archer_bow": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/kobold_archer_bow"
+    ]
+  },
+  "samus.kobold_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/kobold_attack"
+    ]
+  },
+  "samus.kobold_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/kobold_idle"
+    ]
+  },
+  "samus.kobold_warrior_sword": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/kobold_warrior_sword"
+    ]
+  },
+  "samus.mimic_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/mimic_attack"
+    ]
+  },
+  "samus.mimic_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/mimic_idle"
+    ]
+  },
+  "samus.plant_monster_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/plant_monster_attack"
+    ]
+  },
+  "samus.plant_monster_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/plant_monster_idle"
+    ]
+  },
+  "samus.salamander_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/salamander_attack"
+    ]
+  },
+  "samus.salamander_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/salamander_idle"
+    ]
+  },
+  "samus.snail_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/snail_attack"
+    ]
+  },
+  "samus.snail_hit": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/snail_hit"
+    ]
+  },
+  "samus.stone_minion_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/stone_minion_idle"
+    ]
+  },
+  "samus.stone_minion_roll": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/stone_minion_roll"
+    ]
+  },
+  "samus.wraith_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/wraith_attack"
+    ]
+  },
+  "samus.wraith_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/wraith_idle"
+    ]
+  },
+  "samus.stone_golem_attack": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/stone_golem_attack"
+    ]
+  },
+  "samus.stone_golem_idle": {
+    "category": "master",
+    "sounds": [
+      "samus/rms_dark_forest/stone_golem_idle"
+    ]
+  }
+}

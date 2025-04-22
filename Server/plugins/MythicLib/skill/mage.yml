@@ -1,0 +1,32 @@
+FIRE_BALL:
+    mythicmobs-skill-id: Fireball
+    modifiers:
+    - damage
+    - duration
+
+BLINK_:
+    mythicmobs-skill-id: Blink
+    
+ARCANE_MISSILE:
+    mythicmobs-skill-id: Arcane_Missile
+    passive-type: TIMER
+    timer: 10
+    modifiers:
+    - damage
+    
+FROST_NOVA:
+    mythicmobs-skill-id: Frost_Nova
+    modifiers:
+    - damage
+    
+METEOR:
+    mythicmobs-skill-id: Meteor
+    modifiers:
+    - damage
+    - duration
+    
+INFERNO_CHAINS:
+    mythicmobs-skill-id: Inferno_Chains
+    modifiers:
+    - damage
+    - duration

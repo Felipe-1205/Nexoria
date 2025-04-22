@@ -1,0 +1,49 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/stem_fruit",
+	"textures": {
+		"1": "block/crops/pumpkin_stem_4",
+		"2": "block/crops/pumpkin_details",
+		"particle": "block/crops/pumpkin_details"
+	},
+	"elements": [
+		{
+			"from": [-16, -1, 8],
+			"to": [16, 31, 8],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#1"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#1"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#missing"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [9.5, 8.5, 2.35],
+			"to": [16.5, 8.5, 8.85],
+			"rotation": {"angle": 22.5, "axis": "z", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 10, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 10, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 7, 6.5], "texture": "#2"},
+				"down": {"uv": [0, 6.5, 7, 0], "texture": "#2"}
+			}
+		},
+		{
+			"from": [6.5, 16, 3],
+			"to": [13, 16, 10],
+			"rotation": {"angle": -45, "axis": "y", "origin": [0, 0, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 10, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 10, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 7, 6.5], "rotation": 90, "texture": "#2"},
+				"down": {"uv": [0, 6.5, 7, 0], "rotation": 270, "texture": "#2"}
+			}
+		}
+	]
+}

@@ -1,0 +1,35 @@
+name: War Cry
+lore:
+- '&4Sueltas un grito de guerra, incrementa tu fuerza y'
+- '&4resistencia y atraes a los enemigos hacia ti para'
+- '&4que te ataquen.'
+- ''
+- '&c{duration}s Duración'
+- '&e{cooldown}s Enfriamiento'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2185'
+duration:
+  base: 9
+  per-level: 0.2
+  min: 7
+  max: 9
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 15
+  per-level: 0
+  min: 0
+  max: 15
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 60
+  per-level: -0.1
+  min: 13
+  max: 60

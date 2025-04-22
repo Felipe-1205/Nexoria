@@ -1,0 +1,38 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/ninja_samurai_texture/shadow_spin",
+		"particle": "item/ninja_samurai_texture/shadow_spin"
+	},
+	"elements": [
+		{
+			"from": [-14.5, 8, -14.5],
+			"to": [30.5, 8, 30.5],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"west": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"down": {"uv": [0, 16, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-5.75, -1.5, -16.75],
+			"scale": [3, 3, 3]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-5.75, -1.5, 3.5],
+			"scale": [2.6, 2.6, 2.6]
+		},
+		"head": {
+			"translation": [0, -46.75, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}

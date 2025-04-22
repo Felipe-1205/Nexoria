@@ -1,0 +1,7 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:CANAZUCAR
+- mmoitems:MATERIAL:CANAZUCAR
+- mmoitems:MATERIAL:CANAZUCAR
+unlock: false
+result: mmoitems:MATERIAL:PAPEL 3

@@ -1,0 +1,51 @@
+name: Beast Aura
+lore:
+- '&fObtain similar traits and buffs depending on which beast you currently'
+- '&fhave summoned. By right-clicking your beast, you mount them instead.'
+- '&fYou can use your Hunt skill to order your beasts to fight for you with'
+- '&ftheir own battle style unless you are mounting your beast.'
+- ''
+- '&fSummonable Beasts:'
+- ''
+- '&4[Panther]'
+- "&cPanther's Aura &f- Your Panther strikes enemies with its claws."
+- '&f(Buff: Strength + Speed + Resistance)'
+- ''
+- '&2[Owl]'
+- "&aOwl's Aura &f- Your Owl strikes enemies with its wings."
+- '&f(Buff: Night Vision + Slow falling + Jump)'
+- ''
+- '&9[Turtle]'
+- "&bTurtle's Aura &f- Your Turtle strikes enemies with its shell."
+- '&f(Buff: Conduit Power + Dolphins Grace + Water Breathing)'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2147'
+passive-type: TIMER
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

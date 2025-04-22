@@ -1,0 +1,42 @@
+name: ¡Yo tanqueo!
+lore:
+- Lanza un encantamiento de protección sobre un aliado objetivo,
+- reduciendo el daño recibido en &a{reduction}%&7.
+- '&a{redirect}% &7de este daño es redirigido hacia ti.'
+- El encantamiento se cancela al llegar a &c{low}%&7 de salud.
+- Dura &a{duration} &7segundos.
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: TOTEM_OF_UNDYING
+redirect:
+  base: 30.0
+  per-level: -2.0
+  max: 30.0
+  min: 20.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+duration:
+  base: 7.0
+  per-level: 1.0
+mana:
+  base: 15.0
+  per-level: 1.5
+low:
+  base: 10.0
+  per-level: 1.0
+stamina:
+  base: 2.0
+  per-level: 1.0
+  max: 0.0
+  min: 0.0
+cooldown:
+  base: 18.0
+  per-level: -0.3
+  max: 18.0
+  min: 14.0
+reduction:
+  base: 30.0
+  per-level: 3.0
+  max: 70.0
+  min: 30.0

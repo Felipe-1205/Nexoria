@@ -1,0 +1,9 @@
+type: cooking
+result: mmoitems:CONSUMABLE:CONEJOASADO 1
+multiple: true
+unlock: false
+source:
+- item: mmoitems:MATERIAL:CONEJOCRUDO
+  block: furnace
+  time: 100
+  exp: 0.0

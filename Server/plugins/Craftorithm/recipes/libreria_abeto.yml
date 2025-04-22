@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'bbb'
+- 'aaa'
+source:
+  a: minecraft:spruce_planks
+  b: minecraft:spruce_slab
+unlock: false
+result: minecraft:chiseled_bookshelf

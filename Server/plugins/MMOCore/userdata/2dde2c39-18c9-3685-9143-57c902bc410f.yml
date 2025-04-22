@@ -1,0 +1,148 @@
+class-points: 0
+skill-points: 6
+skill-reallocation-points: 1
+attribute-points: 1
+attribute-realloc-points: 1
+level: 3
+experience: 62.0
+class: MAGO
+waypoints: []
+friends: []
+last-login: 1740003931982
+skill-tree-reallocation-points: 0
+health: 15.478676795959473
+mana: 27.285
+stellium: 20.0
+stamina: 21.215999999999998
+unlocked-items: []
+skill-tree-level:
+  mage-arcane-mage_a1: 0
+  mage-arcane-mage_a3: 0
+  mage-arcane-mage_a2: 0
+  general_j1: 0
+  warrior-paladin_d1: 0
+  warrior-paladin_d2: 0
+  warrior-paladin_d3: 0
+  general_e2: 0
+  rogue-marksman_d2: 0
+  general_e3: 0
+  rogue-marksman_d3: 0
+  general_a1: 0
+  rogue-marksman_d1: 0
+  general_e1: 0
+  general_a2: 0
+  mage-arcane-mage_e1: 0
+  general_a3: 0
+  mage-arcane-mage_e3: 0
+  mage-arcane-mage_e2: 0
+  mage-arcane-mage_b2: 0
+  warrior-paladin_a2: 0
+  mage-arcane-mage_b1: 0
+  warrior-paladin_a3: 0
+  mage-arcane-mage_b3: 0
+  warrior-paladin_e1: 0
+  warrior-paladin_e2: 0
+  warrior-paladin_e3: 0
+  warrior-paladin_a1: 0
+  general_d1: 0
+  rogue-marksman_c1: 0
+  general_d2: 0
+  rogue-marksman_c2: 0
+  general_d3: 0
+  rogue-marksman_g3: 0
+  general_h1: 0
+  rogue-marksman_g1: 0
+  rogue-marksman_g2: 0
+  mage-arcane-mage_f2: 0
+  mage-arcane-mage_f1: 0
+  rogue-marksman_c3: 0
+  mage-arcane-mage_f3: 0
+  mage-arcane-mage_c3: 0
+  warrior-paladin_b3: 0
+  mage-arcane-mage_c2: 0
+  warrior-paladin_f1: 0
+  warrior-paladin_f2: 0
+  warrior-paladin_f3: 0
+  warrior-paladin_b1: 0
+  warrior-paladin_b2: 0
+  general_c1: 0
+  rogue-marksman_b1: 0
+  general_c2: 0
+  rogue-marksman_f2: 0
+  general_c3: 0
+  rogue-marksman_f3: 0
+  general_g1: 0
+  rogue-marksman_f1: 0
+  mage-arcane-mage_g1: 0
+  mage-arcane-mage_g3: 0
+  mage-arcane-mage_g2: 0
+  mage-arcane-mage_c1: 0
+  rogue-marksman_b2: 0
+  rogue-marksman_b3: 0
+  mage-arcane-mage_d3: 0
+  warrior-paladin_g1: 0
+  warrior-paladin_g2: 0
+  warrior-paladin_g3: 0
+  warrior-paladin_c1: 0
+  warrior-paladin_c2: 0
+  warrior-paladin_c3: 0
+  general_f3: 0
+  rogue-marksman_e3: 0
+  general_b1: 0
+  rogue-marksman_e1: 0
+  general_b2: 0
+  rogue-marksman_e2: 0
+  general_f1: 0
+  general_f2: 0
+  general_b3: 0
+  rogue-marksman_a3: 0
+  mage-arcane-mage_d2: 0
+  rogue-marksman_a1: 0
+  mage-arcane-mage_d1: 0
+  rogue-marksman_a2: 0
+times-claimed:
+  class_MAGO:
+    class_exp_table:
+      first_table_item: 2
+attribute:
+  sabiduria: 4
+  carisma: 4
+  inteligencia: 7
+  destreza: 4
+  constitucion: 4
+  fuerza: 3
+profession:
+  woodcutting:
+    exp: 196.0
+    level: 4
+  farming:
+    exp: 440.666666666668
+    level: 2
+  fishing:
+    exp: 3.0
+    level: 0
+  mining:
+    exp: 395.50000000000324
+    level: 2
+quest: {}
+class-info:
+  HUMAN:
+    level: 1
+    experience: 0.0
+    skill-points: 5
+    attribute-points: 23
+    attribute-realloc-points: 1
+    skill-tree-reallocation-points: 0
+    skill-reallocation-points: 1
+    health: 20.200000762939453
+    mana: 20.0
+    stamina: 20.0
+    stellium: 18.020000000000017
+    attribute:
+      sabiduria: 0
+      carisma: 0
+      inteligencia: 0
+      destreza: 0
+      constitucion: 1
+      fuerza: 1
+    unlocked-items: []

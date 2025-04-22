@@ -1,0 +1,35 @@
+RAGEBLADE:
+    mythicmobs-skill-id: Rageblade
+    modifiers:
+    - damage
+
+PRIMAL_AXE:
+    mythicmobs-skill-id: Primal_Axe
+    modifiers:
+    - damage
+    
+BLOODLUST:
+    mythicmobs-skill-id: Bloodlust
+    passive-type: TIMER
+    
+RELENTLESS_LEAP:
+    mythicmobs-skill-id: Relentless_Leap
+    modifiers:
+    - damage
+    
+WAR_CRY:
+    mythicmobs-skill-id: War_Cry
+    modifiers:
+    - duration
+    
+DOUBLE_EDGE:
+    mythicmobs-skill-id: Double_Edge
+    passive-type: TIMER
+    modifiers:
+    - damage
+    
+ETERNAL_FURY:
+    mythicmobs-skill-id: Eternal_Fury
+    modifiers:
+    - damage
+    - duration

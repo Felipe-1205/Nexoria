@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:acacia_planks
+unlock: false
+result: minecraft:acacia_trapdoor 2

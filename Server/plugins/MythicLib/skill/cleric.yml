@@ -1,0 +1,40 @@
+DIVINE_IMMOLATION:
+    mythicmobs-skill-id: Divine_Immolation
+    modifiers:
+    - damage
+
+LUMINOUS_WAVE:
+    mythicmobs-skill-id: Luminous_Wave
+    modifiers:
+    - damage
+    
+DAWNBRINGER_ANGEL:
+    mythicmobs-skill-id: Dawnbringer_Angel
+    passive-type: TIMER
+    modifiers:
+    - heal
+    
+BLESSING_OF_THE_WHITE_LANTERN:
+    mythicmobs-skill-id: Blessing_Of_The_White_Lantern
+    modifiers:
+    - duration
+    
+DIVINE_CROSS:
+    mythicmobs-skill-id: Divine_Cross
+    modifiers:
+    - damage
+    - heal
+    
+TEARS_OF_GOD:
+    mythicmobs-skill-id: Tears_Of_God
+    passive-type: TIMER
+    modifiers:
+    - duration
+    - heal
+    
+DIVINE_PUNISHMENT:
+    mythicmobs-skill-id: Divine_Punishment
+    modifiers:
+    - damage
+    - duration
+    - heal

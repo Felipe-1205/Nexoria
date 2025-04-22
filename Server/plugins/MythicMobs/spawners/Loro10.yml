@@ -1,0 +1,27 @@
+Loro10:
+  World: principal
+  X: 1781
+  Y: 81
+  Z: 1378
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: NATLORO
+  SpawnerGroup: ''
+  Radius: 25.0
+  RadiusY: 1.0
+  UseTimer: true
+  MaxMobs: '6'
+  MobLevel: '1'
+  MobsPerSpawn: 6
+  Cooldown: 0
+  Warmup: 0
+  ActivationRange: 32.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

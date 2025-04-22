@@ -1,0 +1,841 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "spider3_blue.png",
+	"textureSize": [300, 32],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -9, 3]
+		},
+		{
+			"part": "neck",
+			"id": "neck",
+			"invertAxis": "xy",
+			"translate": [0, -9, 0]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -9, -9],
+			"submodels": [
+				{
+					"id": "spider_all",
+					"invertAxis": "xy",
+					"translate": [0, 0, -2],
+					"rotate": [5, 0, 0],
+					"submodels": [
+						{
+							"id": "spider_dangle",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "spider_bodyfull",
+									"invertAxis": "xy",
+									"translate": [0, 6, 0],
+									"submodels": [
+										{
+											"id": "spider_crawlcorrect",
+											"invertAxis": "xy",
+											"translate": [0, 3.96195, 1.12844],
+											"submodels": [
+												{
+													"id": "spider_bodyfull_rot",
+													"invertAxis": "xy",
+													"translate": [0, -1.96195, -1.12844],
+													"rotate": [-5, 0, 0],
+													"submodels": [
+														{
+															"id": "spider_legs",
+															"invertAxis": "xy",
+															"translate": [0, 0, 9],
+															"submodels": [
+																{
+																	"id": "spider_legs_left",
+																	"invertAxis": "xy",
+																	"translate": [0, 0, 0],
+																	"submodels": [
+																		{
+																			"id": "spider_leg_left4",
+																			"invertAxis": "xy",
+																			"translate": [-2.92388, 0.38268, -10],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_left4_sub",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_left4_rot",
+																							"invertAxis": "xy",
+																							"mirrorTexture": "u",
+																							"translate": [2.67878, 6.46716, 2],
+																							"rotate": [-90, -45, 90],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_left4_dismember",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-16.98259, -4.06386, 2.40714, 12, 2, 2], "textureOffset": [24, 4]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_left3",
+																			"invertAxis": "xy",
+																			"translate": [0.13759, 3.77372, -7],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_left3_sub",
+																					"invertAxis": "xy",
+																					"translate": [-4, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_left3_rot2",
+																							"invertAxis": "xy",
+																							"mirrorTexture": "u",
+																							"translate": [2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_left3_dismember",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-17, 1, 0, 13, 2, 2], "textureOffset": [18, 0]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_left2",
+																			"invertAxis": "xy",
+																			"translate": [0.13759, 3.77372, -3],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_left2_sub",
+																					"invertAxis": "xy",
+																					"translate": [-4, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_left2_rot",
+																							"invertAxis": "xy",
+																							"mirrorTexture": "u",
+																							"translate": [2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_left2_dismember",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [0, 0, 0],
+																									"submodels": [
+																										{
+																											"id": "spider_leg_left2_crawlcorrect",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [-16, 1.5, -1],
+																											"boxes": [
+																												{"coordinates": [-0.75, -1, -1, 13, 2, 2], "textureOffset": [18, 0]}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_left1",
+																			"invertAxis": "xy",
+																			"translate": [-4, 3, -1],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_left1_sub",
+																					"invertAxis": "xy",
+																					"translate": [0.13759, 0.77372, 0],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_left1_rot1",
+																							"invertAxis": "xy",
+																							"mirrorTexture": "u",
+																							"translate": [2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_left1_dismember",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [0, 0, 0],
+																									"submodels": [
+																										{
+																											"id": "spider_leg_left1_crawlcorrect",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [-15, 0, 0],
+																											"boxes": [
+																												{"coordinates": [-1, -1, -1, 13, 2, 2], "textureOffset": [18, 0]}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																},
+																{
+																	"id": "spider_legs_right",
+																	"invertAxis": "xy",
+																	"translate": [0, 0, 0],
+																	"submodels": [
+																		{
+																			"id": "spider_leg_right3",
+																			"invertAxis": "xy",
+																			"translate": [-0.13759, 3.77372, -7],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_right3_sub",
+																					"invertAxis": "xy",
+																					"translate": [4, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_right3_rot2",
+																							"invertAxis": "xy",
+																							"translate": [-2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_right3_dismember",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [4, 1, 0, 13, 2, 2], "textureOffset": [18, 0]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_right4",
+																			"invertAxis": "xy",
+																			"translate": [2.92388, 0.38268, -10],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_right4_sub",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_right4_rot",
+																							"invertAxis": "xy",
+																							"translate": [-2.67878, 6.46716, 2],
+																							"rotate": [-90, 45, -90],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_right4_dismember",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [4.98259, -4.06386, 2.40714, 12, 2, 2], "textureOffset": [24, 4]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_right2",
+																			"invertAxis": "xy",
+																			"translate": [-0.13759, 3.77372, -3],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_right2_sub",
+																					"invertAxis": "xy",
+																					"translate": [4, 0, -2],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_right2_rot",
+																							"invertAxis": "xy",
+																							"translate": [-2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_right2_dismember",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"submodels": [
+																										{
+																											"id": "spider_leg_right2_crawlcorrect",
+																											"invertAxis": "xy",
+																											"translate": [16, 1.5, -1],
+																											"boxes": [
+																												{"coordinates": [-12.25, -1, -1, 13, 2, 2], "textureOffset": [18, 0]}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "spider_leg_right1",
+																			"invertAxis": "xy",
+																			"translate": [4, 3, -1],
+																			"submodels": [
+																				{
+																					"id": "spider_leg_right1_sub",
+																					"invertAxis": "xy",
+																					"translate": [-0.13759, 0.77372, 0],
+																					"submodels": [
+																						{
+																							"id": "spider_leg_right1_rot1",
+																							"invertAxis": "xy",
+																							"translate": [-2.69343, -0.5412, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_leg_right1_crawlcorrect",
+																									"invertAxis": "xy",
+																									"translate": [15.5, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-12.5, -1, -1, 13, 2, 2], "textureOffset": [18, 0]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														},
+														{
+															"id": "spider_nolegs",
+															"invertAxis": "xy",
+															"translate": [0, -3, 0],
+															"submodels": [
+																{
+																	"id": "spider_lean",
+																	"invertAxis": "xy",
+																	"translate": [0, 8, 0],
+																	"submodels": [
+																		{
+																			"id": "spider_lean_y",
+																			"invertAxis": "xy",
+																			"translate": [0, 0, 0],
+																			"submodels": [
+																				{
+																					"id": "spider_nolegs_headsway",
+																					"invertAxis": "xy",
+																					"translate": [0, 4, 0],
+																					"submodels": [
+																						{
+																							"id": "spider_head",
+																							"invertAxis": "xy",
+																							"translate": [0, -2, -1],
+																							"submodels": [
+																								{
+																									"id": "spider_head_climb",
+																									"invertAxis": "xy",
+																									"translate": [0, -5.5, -1.5],
+																									"boxes": [
+																										{"coordinates": [-4, -2.5, -0.5, 8, 4, 4], "textureOffset": [14, 24]},
+																										{"coordinates": [-2.5, -1.5, -2.5, 5, 4, 2], "textureOffset": [62, 19]}
+																									],
+																									"submodels": [
+																										{
+																											"id": "spider_eye_left",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [-2.85, 1.1, -2.1],
+																											"submodels": [
+																												{
+																													"id": "spider_eye_left_sub",
+																													"invertAxis": "xy",
+																													"mirrorTexture": "u",
+																													"translate": [0, 0, 0],
+																													"boxes": [
+																														{"coordinates": [-0.5, -1.5, -0.5, 1, 3, 1], "textureOffset": [50, 20]}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "spider_eye_right",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [2.85, 1.1, -2.1],
+																											"submodels": [
+																												{
+																													"id": "spider_eye_right_sub",
+																													"invertAxis": "xy",
+																													"translate": [0, 0, 0],
+																													"boxes": [
+																														{"coordinates": [-0.5, -1.5, -0.5, 1, 3, 1], "textureOffset": [50, 20]}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "spider_mouth",
+																											"invertAxis": "xy",
+																											"translate": [0, -1.35, -3.75],
+																											"submodels": [
+																												{
+																													"id": "spider_mandibles",
+																													"invertAxis": "xy",
+																													"translate": [0, -0.57179, 1.25],
+																													"submodels": [
+																														{
+																															"id": "spider_mandibles_right",
+																															"invertAxis": "xy",
+																															"translate": [0.50095, 1, -1],
+																															"rotate": [0, 0, 5],
+																															"boxes": [
+																																{"coordinates": [0.08335, -2.40904, -1, 2, 3, 2], "textureOffset": [92, 17]}
+																															]
+																														},
+																														{
+																															"id": "spider_mandibles_left",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [-0.50095, 1, -1],
+																															"rotate": [0, 0, -10],
+																															"boxes": [
+																																{"coordinates": [-2.08335, -2.40904, -1, 2, 3, 2], "textureOffset": [92, 17]}
+																															]
+																														},
+																														{
+																															"id": "body_sub_11",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [0, 0, 0]
+																														}
+																													]
+																												},
+																												{
+																													"id": "spider_sideburn_right",
+																													"invertAxis": "xy",
+																													"translate": [2, 0.17077, 0.40558],
+																													"boxes": [
+																														{"coordinates": [0.5, -1.32077, -0.15558, 1, 3, 2], "textureOffset": [77, 4]}
+																													],
+																													"submodels": [
+																														{
+																															"id": "spider_mandible_right_sub",
+																															"invertAxis": "xy",
+																															"translate": [1.00095, -0.22821, -1],
+																															"rotate": [-22.5, 0, 0],
+																															"submodels": [
+																																{
+																																	"id": "fang_right",
+																																	"invertAxis": "xy",
+																																	"translate": [-0.29189, -0.18451, 0.50495],
+																																	"rotate": [45, 0, 0]
+																																}
+																															]
+																														}
+																													]
+																												},
+																												{
+																													"id": "spider_sideburn_left",
+																													"invertAxis": "xy",
+																													"translate": [-1.75, 0.17077, 0.40558],
+																													"submodels": [
+																														{
+																															"id": "body_sub_12",
+																															"invertAxis": "xy",
+																															"mirrorTexture": "u",
+																															"translate": [0, 0, 0],
+																															"boxes": [
+																																{"coordinates": [-1.75095, -1.34256, -0.15558, 1, 3, 2], "textureOffset": [77, 4]},
+																																{"coordinates": [1.24905, -1.34256, -0.15558, 1, 1, 1], "textureOffset": [78, 5]}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "eye_socket_right",
+																											"invertAxis": "xy",
+																											"translate": [0, -9.5, 4.5],
+																											"boxes": [
+																												{"coordinates": [0.5, 9, -7.15, 1, 1, 1], "textureOffset": [40, 20]}
+																											]
+																										},
+																										{
+																											"id": "eye_socket_left",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [0, -9.5, 4.5],
+																											"boxes": [
+																												{"coordinates": [-1.5, 9, -7.15, 1, 1, 1], "textureOffset": [40, 20]}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"id": "spider_body",
+																							"invertAxis": "xy",
+																							"translate": [2, -7, 2],
+																							"submodels": [
+																								{
+																									"id": "spider_body_sub",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"submodels": [
+																										{
+																											"id": "spider_body_rot",
+																											"invertAxis": "xy",
+																											"translate": [-2.08909, 2.12109, 3.30597],
+																											"rotate": [-22.5, 0, 0],
+																											"boxes": [
+																												{"coordinates": [-5, -5.70711, -6.5, 10, 10, 10], "textureOffset": [91, 12]}
+																											],
+																											"submodels": [
+																												{
+																													"id": "spinerette",
+																													"invertAxis": "xy",
+																													"translate": [0, -0.70711, 4],
+																													"boxes": [
+																														{"coordinates": [-2, -2, -0.5, 4, 4, 1], "textureOffset": [91, 12]}
+																													]
+																												}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						},
+																						{
+																							"id": "spider_neck",
+																							"invertAxis": "xy",
+																							"translate": [0, -17, 2]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										},
+										{
+											"id": "spider_buttweb_full",
+											"invertAxis": "xy",
+											"translate": [-0.08909, 9.91398, 8.80597],
+											"submodels": [
+												{
+													"id": "spider_buttweb",
+													"invertAxis": "xy",
+													"translate": [0, 0, -0.5],
+													"rotate": [-90, 0, 0],
+													"boxes": [
+														{"coordinates": [-0.5, -1, 0, 1, 1, 2], "textureOffset": [106, 7]}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.distance": "sqrt(pow(pos_x  -player_pos_x, 2) + pow(pos_y - player_pos_y, 2) + pow(pos_z - player_pos_z, 2))",
+					"var.limit": 5
+				},
+				{
+					"var.death_physics": "clamp(min(if(health <= 15, var.death_physics + 50 * frame_time, 0), 1000), 0, 800)",
+					"var.death": "clamp(if(death_time > 0, var.death + 1000 * frame_time, var.death),0 , 400)",
+					"var.ridden": "clamp(if(is_ridden, var.ridden + 100 * frame_time, var.ridden - 100 * frame_time),0 , 20)"
+				},
+				{
+					"var.rise": "clamp(if(var.distance < var.limit && is_aggressive, var.rise + 30 * frame_time, var.rise - 30 * frame_time) , 0 , 20)",
+					"var.hurt": "clamp(if(is_hurt && is_alive, var.hurt + 5000 * frame_time, var.hurt - 200 * frame_time) , 0 , 200)"
+				},
+				{
+					"var.walkeffects": "clamp(if(limb_speed > 0.1 && is_alive, var.walkeffects + 0.5 * frame_time, var.walkeffects - 1000 * frame_time), 0, 2)"
+				},
+				{
+					"spider_all.rz": "if(death_time >0, lerp(random(id + 3), -1, 1) * torad(var.death_physics), 0)  + if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90) * 2, 0)"
+				},
+				{
+					"spider_all.ty": "torad(var.death) + -clamp((sin(limb_swing * 0.8) * limb_speed * var.spider_lean_rx / var.spider_lean_rx) * 3, 0, 100) + if(death_time >0, lerp(random(id + 2), -1, 1) *torad(var.death_physics), 0) + torad(-5) + sin(limb_swing * 3) * limb_speed * 0.4",
+					"spider_all.sy": "torad(57.5) + sin(age * 2) * var.hurt / 200 * 0.05",
+					"spider_all.rx": " if(death_time >0, lerp(random(id + 1), -1, 1) * torad(var.death_physics), 0)",
+					"spider_all.rz": "(sin(limb_swing * 0.9) * limb_speed * var.spider_lean_rx / var.spider_lean_rx) * 0.1",
+					"spider_all.ry": "(-sin(limb_swing * 1.3) * limb_speed * var.spider_lean_rx / var.spider_lean_rx) * 0.1",
+					"spider_head.rz": "head_yaw * 0.0025 + if(death_time >0, lerp(random(id + 23), -1, 1) * torad(var.death_physics) * 0.3, 0)",
+					"spider_head.ry": "head_yaw * 0.0025 + if(death_time >0, lerp(random(id + 23), -1, 1) * torad(var.death_physics) * 0.3, 0)",
+					"spider_body_sub.ty": "-sin(age * 0.2) * 0.15 -sin(limb_swing * 2) * limb_speed + torad(var.rise)",
+					"spider_nolegs_headsway.rz": "sin(limb_swing * 2) * limb_speed * 0.1 ",
+					"spider_nolegs.rx": "-sin(age * 0.15) * 0.02 + sin(age * 0.1) * 0.01 + torad(var.hurt) * 0.1 + sin(age * 0.5) * (var.hurt / 200) * 0.2",
+					"spider_nolegs.ry": "sin(age * 0.15) * 0.02 + -sin(age * 0.1) * 0.01 + sin(age) * (var.hurt / 200) * 0.4"
+				},
+				{
+					"spider_mandibles.rx": "clamp(sin(age) * var.aggro / 2 ,-100 ,0)"
+				},
+				{
+					"var.jump": "clamp(if(!is_on_ground, var.jump + 300 * frame_time, var.jump - 300 * frame_time),0,20)",
+					"var.aggro": "clamp(if(is_aggressive, var.aggro + 1 * frame_time, var.aggro - 1 * frame_time),0,1)"
+				},
+				{
+					"spider_body.rz": "-sin(limb_swing * 1.25) * limb_speed * 0.1",
+					"spider_body.rx": "torad(var.jump) + torad(var.rise)",
+					"spider_body_sub.rx": "-torad(var.ridden)",
+					"spider_body_sub.ty": "torad(var.ridden) * 3"
+				},
+				{
+					"spider_leg_left4_sub.rx": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1)  + if(death_time >0, lerp(random(id + 4), -1, 1) * torad(var.death_physics), 0) + clamp(-sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_left4_sub.rz": "(-torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) + if(death_time >0, lerp(random(id + 5), -0.9, 0.9) *torad(var.death_physics) * 0.5, 0)",
+					"spider_leg_left4_sub.ry": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 5), -1, 1) *torad(var.death_physics) * 0.5, 0)",
+					"spider_leg_left4_sub.ty": "clamp(sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)"
+				},
+				{
+					"spider_leg_left3_sub.ry": "if(death_time >0, lerp(random(id + 6), -1, 1) * torad(var.death_physics), 0) + clamp(-sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_left3_sub.ty": "clamp(-sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_left3_sub.rz": "(torad(var.climb) * 0.1 + sin(age * 0.2) * var.climb/90 * 0.1) + if(death_time >0, lerp(random(id + 7), -1, 1) * torad(var.death_physics), 0) + 70",
+					"spider_leg_left3_sub.rx": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) + if(death_time >0, lerp(random(id + 7), -0.9, 0.9) * torad(var.death_physics), 0) + 40"
+				},
+				{
+					"spider_leg_left2_sub.ry": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +50 + if(death_time >0, lerp(random(id + 8), -1, 1) * torad(var.death_physics), 0) + +-clamp(-sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_left2_sub.rx": "(torad(var.climb) * 0.1 + sin(age * 0.2) * var.climb/90 * 0.1) +50 + if(death_time >0, lerp(random(id + 8), -0.9, 0.9) * torad(var.death_physics), 0) + +-clamp(-sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_left2_sub.ty": "clamp(sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_left2_sub.rz": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +45 + if(death_time >0, lerp(random(id + 9), -1, 1) * torad(var.death_physics), 0)"
+				},
+				{
+					"spider_leg_left1_sub.ry": "(torad(var.climb) * 0.3 + sin(age * 0.2) * var.climb/90 * 0.1) +50 + if(death_time >0, lerp(random(id + 10), -1, 1) * torad(var.death_physics), 0) + clamp(-sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_left1_sub.ty": "clamp(-sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_left1_sub.rz": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +45 + if(death_time >0, lerp(random(id + 11), -1, 1) * torad(var.death_physics), 0)",
+					"spider_leg_left1_sub.rx": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +45 + if(death_time >0, lerp(random(id + 11), -0.9, 0.9) * torad(var.death_physics), 0)"
+				},
+				{
+					"spider_leg_right1_sub.ry": "(-torad(var.climb) * 0.3 + -sin(age * 0.3) * var.climb/90 * 0.1) +-50 + if(death_time >0, lerp(random(id + 12), -1, 1) * torad(var.death_physics), 0) + -clamp(sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_right1_sub.ty": "clamp(sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_right1_sub.rz": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +-45 + if(death_time >0, lerp(random(id + 13), -1, 1) * torad(var.death_physics), 0)",
+					"spider_leg_right1_sub.rx": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 14), -1, 1) * torad(var.death_physics), 0)"
+				},
+				{
+					"spider_leg_right2_sub.ry": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +-50 + if(death_time >0, lerp(random(id + 15), -1, 1) * torad(var.death_physics), 0) + clamp(sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_right2_sub.ty": "clamp(-sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_right2_sub.rz": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +-45 + if(death_time >0, lerp(random(id + 16), -1, 1) * torad(var.death_physics), 0)",
+					"spider_leg_right2_sub.rx": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 17), -1, 1) * torad(var.death_physics), 0)"
+				},
+				{
+					"spider_leg_right3_sub.ry": "if(death_time >0, lerp(random(id + 18), -1, 1) * torad(var.death_physics), 0) +-clamp(sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_right3_sub.ty": "clamp(sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_right3_sub.rz": "(-torad(var.climb) * 0.1 + sin(age * 0.2) * var.climb/90 * 0.1) +-70 + if(death_time >0, lerp(random(id + 19), -1, 1) * torad(var.death_physics), 0)",
+					"spider_leg_right3_sub.rx": "(torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +40 + if(death_time >0, lerp(random(id + 19), -1, 1) * torad(var.death_physics), 0)"
+				},
+				{
+					"spider_leg_right4_sub.rx": "(torad(var.climb) * 0.2 + sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 20), -1, 1) * torad(var.death_physics), 0) + clamp(sin(limb_swing*1.25) *limb_speed * 1, 0, 50)",
+					"spider_leg_right4_sub.ty": "clamp(-sin(torad(-90)+limb_swing*1.25) *limb_speed * 6, -6, 0)",
+					"spider_leg_right4_sub.ry": "(-torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 21), -1, 1) * torad(var.death_physics), 0) ",
+					"spider_leg_right4_sub.rz": "(torad(var.climb) * 0.2 + -sin(age * 0.2) * var.climb/90 * 0.1) +if(death_time >0, lerp(random(id + 22), -1, 1) * torad(var.death_physics), 0)"
+				},
+				{
+					"var.spider_lean_rx": "torad(var.spider_crawlcorrect) + 0 + ((var.dismember_left3 / 2000) * 10) +  ((var.dismember_left2 / 2000) * 10) +  ((var.dismember_left4 / 2000) * 10) + ((var.dismember_right4 / 2000) * 10) + ((var.dismember_right3 / 2000) * 10)",
+					"var.spider_lean_ry": "0 + ((var.dismember_left3 / 2000) * 10) + ((var.dismember_left2 / 2000) * 10) + ((var.dismember_left4 / 2000) * 10) - ((var.dismember_right4 / 2000) * 10) - ((var.dismember_right3 / 2000) * 10)",
+					"var.spider_crawlcorrect": "clamp(if(health < lerp(random(id + 1), -15, 19) && health < lerp(random(id + 5), -15, 19) && health < lerp(random(id + 2), -20, 16) && health < lerp(random(id + 6), -20, 16), var.spider_crawlcorrect + 100 * frame_time, var.spider_crawlcorrect - 100 * frame_time), 0 , 40) "
+				},
+				{
+					"spider_lean_y.tx": "torad(var.spider_lean_ry) * 5",
+					"spider_lean.rx": "-torad(var.spider_crawlcorrect) + torad(var.spider_lean_rx) + (sin(limb_swing * 0.6) * limb_speed * var.spider_lean_rx / var.spider_lean_rx) * 0.5 ",
+					"spider_lean.ry": "-torad(var.spider_lean_ry)",
+					"spider_lean.rz": "torad(var.spider_lean_ry) + (sin(age * 0.6) * var.spider_lean_ry / var.spider_lean_ry) * 0.1 ",
+					"spider_lean_y.ty": "torad(var.spider_crawlcorrect) * 6",
+					"spider_leg_left1_crawlcorrect.ry": "-torad(var.spider_crawlcorrect) * 0.2",
+					"spider_leg_left2_crawlcorrect.rz": "-torad(var.spider_crawlcorrect) * 0.2",
+					"spider_leg_right1_crawlcorrect.ry": "torad(var.spider_crawlcorrect) * 0.2",
+					"spider_leg_right2_crawlcorrect.rz": "torad(var.spider_crawlcorrect) * 0.2"
+				},
+				{
+					"var.dismember_left4": "clamp(if(health < lerp(random(id + 1), -18, 16)   , var.dismember_left4 + 2000 * frame_time, var.dismember_left4- 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_left4": "min(if(health < lerp(random(id + 1), -18, 16) , var.vanish_delay_left4 + 50 * frame_time, 0), 20)",
+					"var.vanish_left4": "clamp(if(var.vanish_delay_left4 >= 20, var.vanish_left4 + 200 * frame_time, var.vanish_left4 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_left4_dismember.ty": "torad(var.dismember_left4)",
+					"spider_leg_left4_dismember.tx": "-torad(var.dismember_left4)",
+					"spider_leg_left4_dismember.tz": "torad(var.dismember_left4)",
+					"spider_leg_left4_dismember.rz": " -torad(var.dismember_left4)*0.1",
+					"spider_leg_left4_dismember.sx": "torad(57.5)+ -torad(var.vanish_left4)",
+					"spider_leg_left4_dismember.sy": "torad(57.5)+ -torad(var.vanish_left4)",
+					"spider_leg_left4_dismember.sz": "torad(57.5)+ -torad(var.vanish_left4)"
+				},
+				{
+					"var.dismember_left3": "clamp(if(health < lerp(random(id + 2), -20, 16), var.dismember_left3 + 2000 * frame_time, var.dismember_left3 - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_left3": "min(if(health < lerp(random(id + 2), -20, 16) , var.vanish_delay_left3 + 50 * frame_time, 0), 20)",
+					"var.vanish_left3": "clamp(if(var.vanish_delay_left3 >= 20, var.vanish_left3 + 200 * frame_time, var.vanish_left3 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_left3_dismember.ty": "torad(var.dismember_left3)",
+					"spider_leg_left3_dismember.tx": "-torad(var.dismember_left3)",
+					"spider_leg_left3_dismember.tz": "torad(var.dismember_left3)",
+					"spider_leg_left3_dismember.rz": " -torad(var.dismember_left3)*0.1",
+					"spider_leg_left3_dismember.sx": "torad(57.5)+ -torad(var.vanish_left3)",
+					"spider_leg_left3_dismember.sy": "torad(57.5)+ -torad(var.vanish_left3)",
+					"spider_leg_left3_dismember.sz": "torad(57.5)+ -torad(var.vanish_left3)"
+				},
+				{
+					"var.dismember_left2": "clamp(if(health < lerp(random(id + 3), -15, 13), var.dismember_left2 + 2000 * frame_time, var.dismember_left2 - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_left2": "min(if(health < lerp(random(id + 3), -15, 13) , var.vanish_delay_left2 + 50 * frame_time, 0), 20)",
+					"var.vanish_left2": "clamp(if(var.vanish_delay_left2 >= 20, var.vanish_left2 + 200 * frame_time, var.vanish_left2 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_left2_dismember.ty": "torad(var.dismember_left2)",
+					"spider_leg_left2_dismember.tx": "-torad(var.dismember_left2)",
+					"spider_leg_left2_dismember.tz": "torad(var.dismember_left2)",
+					"spider_leg_left2_dismember.rz": " -torad(var.dismember_left2)*0.1",
+					"spider_leg_left2_dismember.sx": "torad(57.5)+ -torad(var.vanish_left2)",
+					"spider_leg_left2_dismember.sy": "torad(57.5)+ -torad(var.vanish_left2)",
+					"spider_leg_left2_dismember.sz": "torad(57.5)+ -torad(var.vanish_left2)"
+				},
+				{
+					"var.dismember_right4": "clamp(if(health < lerp(random(id + 5), -18, 16) , var.dismember_right4 + 2000 * frame_time, var.dismember_right4 - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_right4": "min(if(health < lerp(random(id + 5), -18, 16)  , var.vanish_delay_right4 + 50 * frame_time, 0), 20)",
+					"var.vanish_right4": "clamp(if(var.vanish_delay_right4 >= 20, var.vanish_right4 + 200 * frame_time, var.vanish_right4 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_right4_dismember.ty": "torad(var.dismember_right4)",
+					"spider_leg_right4_dismember.tx": "-torad(var.dismember_right4)",
+					"spider_leg_right4_dismember.tz": "torad(var.dismember_right4)",
+					"spider_leg_right4_dismember.rz": " -torad(var.dismember_right4)*0.1",
+					"spider_leg_right4_dismember.sx": "torad(57.5)+ -torad(var.vanish_right4)",
+					"spider_leg_right4_dismember.sy": "torad(57.5)+ -torad(var.vanish_right4)",
+					"spider_leg_right4_dismember.sz": "torad(57.5)+ -torad(var.vanish_right4)"
+				},
+				{
+					"var.dismember_right3": "clamp(if(health < lerp(random(id + 6), -20, 16), var.dismember_right3 + 2000 * frame_time, var.dismember_right3 - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_right3": "min(if(health < lerp(random(id + 6), -20, 16) , var.vanish_delay_right3 + 50 * frame_time, 0), 20)",
+					"var.vanish_right3": "clamp(if(var.vanish_delay_right3 >= 20, var.vanish_right3 + 200 * frame_time, var.vanish_right3 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_right3_dismember.ty": "torad(var.dismember_right3)",
+					"spider_leg_right3_dismember.tx": "-torad(var.dismember_right3)",
+					"spider_leg_right3_dismember.tz": "torad(var.dismember_right3)",
+					"spider_leg_right3_dismember.rz": " -torad(var.dismember_right3)*0.1",
+					"spider_leg_right3_dismember.sx": "torad(57.5)+ -torad(var.vanish_right3)",
+					"spider_leg_right3_dismember.sy": "torad(57.5)+ -torad(var.vanish_right3)",
+					"spider_leg_right3_dismember.sz": "torad(57.5)+ -torad(var.vanish_right3)"
+				},
+				{
+					"var.dismember_right2": "clamp(if(health < lerp(random(id + 7), -15, 13), var.dismember_right2 + 2000 * frame_time, var.dismember_right2 - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_right2": "min(if(health < lerp(random(id + 7), -15, 13) , var.vanish_delay_right2 + 50 * frame_time, 0), 20)",
+					"var.vanish_right2": "clamp(if(var.vanish_delay_right2 >= 20, var.vanish_right2 + 200 * frame_time, var.vanish_right2 - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"spider_leg_right2_dismember.ty": "torad(var.dismember_right2)",
+					"spider_leg_right2_dismember.tx": "-torad(var.dismember_right2)",
+					"spider_leg_right2_dismember.tz": "torad(var.dismember_right2)",
+					"spider_leg_right2_dismember.rz": " -torad(var.dismember_right2)*0.1",
+					"spider_leg_right2_dismember.sx": "torad(57.5)+ -torad(var.vanish_right2)",
+					"spider_leg_right2_dismember.sy": "torad(57.5)+ -torad(var.vanish_right2)",
+					"spider_leg_right2_dismember.sz": "torad(57.5)+ -torad(var.vanish_right2)"
+				},
+				{
+					"var.climb": "clamp(if(!is_on_ground && is_aggressive && limb_speed < 0.3 && is_alive && !is_in_water, var.climb + 100 * frame_time, var.climb - 100 * frame_time), 0, 90)",
+					"var.web": "clamp(if(!is_on_ground && is_aggressive && limb_speed < 0.3 && is_alive && !is_in_water, var.web + 10000 * frame_time, var.climb - 10000 * frame_time), 0, 10000)",
+					"spider_bodyfull_rot.rx": "torad(var.climb) * 0.2",
+					"spider_bodyfull_rot.tz": "torad(var.climb) * 3",
+					"spider_head_climb.rx": "-torad(var.climb) * 0.1",
+					"spider_buttweb.sz": "torad(var.web)",
+					"spider_buttweb_full.ry": "(age * 100000) * var.web",
+					"spider_dangle.ty": "sin(age * 0.5) * var.climb / 90 * 2",
+					"spinerette.sx": "torad(57.5) + sin(age) * var.climb / 90 * 0.1",
+					"spinerette.sy": "torad(57.5) + -sin(age) * var.climb / 90 * 0.1",
+					"spinerette.sz": "torad(57.5) + sin(age * 0.5) * var.climb / 90 * 0.5"
+				},
+				{
+					"spider_all.sx": "torad(lerp(random(id + 1), 50, 64))",
+					"spider_all.sy": "torad(lerp(random(id + 1), 50, 64))",
+					"spider_all.sz": "torad(lerp(random(id + 1), 50, 64))"
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-4, -9, -4]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [4, -9, -4]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-4, -9, -1]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [4, -9, -1]
+		},
+		{
+			"part": "leg5",
+			"id": "leg5",
+			"invertAxis": "xy",
+			"translate": [-4, -9, 2]
+		},
+		{
+			"part": "leg6",
+			"id": "leg6",
+			"invertAxis": "xy",
+			"translate": [4, -9, 2]
+		},
+		{
+			"part": "leg7",
+			"id": "leg7",
+			"invertAxis": "xy",
+			"translate": [-4, -9, 5]
+		},
+		{
+			"part": "leg8",
+			"id": "leg8",
+			"invertAxis": "xy",
+			"translate": [4, -9, 5]
+		}
+	]
+}

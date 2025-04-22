@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'aa '
+- 'aa '
+- 'aa '
+source:
+  a: minecraft:jungle_planks
+unlock: false
+result: minecraft:jungle_door 3

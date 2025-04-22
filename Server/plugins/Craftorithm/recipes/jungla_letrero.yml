@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+- ' b '
+source:
+  a: minecraft:jungle_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:jungle_sign 3

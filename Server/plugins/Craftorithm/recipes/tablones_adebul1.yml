@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- minecraft:birch_log
+unlock: false
+result: minecraft:birch_planks 4

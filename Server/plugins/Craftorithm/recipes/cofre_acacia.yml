@@ -1,0 +1,12 @@
+type: shapeless
+source:
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+- minecraft:acacia_planks
+unlock: false
+result: minecraft:chest

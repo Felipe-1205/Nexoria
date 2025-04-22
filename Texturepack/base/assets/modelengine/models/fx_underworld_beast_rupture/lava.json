@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/fx_ground_rupture"},"elements":[{"from":[-14.5,8.0,-14.5],"to":[30.5,8.0,30.5],"faces":{"up":{"uv":[2.8125,2.8125,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[2.8125,0.0,0.0,2.8125],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

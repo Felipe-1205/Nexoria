@@ -1,0 +1,29 @@
+name: Light Beam
+lore:
+- '&aShoot a beam of light that damages targets'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2049'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 0
+  min: 2
+  max: 2
+
+# hlmRdUnaax6DYaXUprTDQPibc2TNCFZHvw2rG5tnrCO6mUKggt72+B/ecTPaIYGDYwaw8Jol6RxZ6IVGeV/pNqfJpyWYhvg9KGVMKaQm1EE=

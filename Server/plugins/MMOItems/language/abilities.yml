@@ -1,0 +1,23 @@
+cast-mode:
+  cast: Lanzar
+  shoot-bow: Disparar Arco
+  shoot-trident: Lanzar Tridente
+  sneak: Agacharse
+  shift-left-click: Shift + Clic Izquierdo
+  arrow-tick: Tictac de Flecha
+  timer: Temporizador
+  death: Muerte
+  trident-land: Aterrizaje de Tridente
+  arrow-land: Aterrizaje de Flecha
+  trident-tick: Tictac de Tridente
+  kill-entity: Matar Entidad
+  right-click: Clic Derecho
+  attack: Atacar
+  arrow-hit: Impacto de Flecha
+  login: Iniciar Sesión
+  api: Api
+  damaged: Dañado
+  left-click: Clic Izquierdo
+  trident-hit: Impacto de Tridente
+  damaged-by-entity: Dañado por Entidad
+  shift-right-click: Shift + Clic Derecho

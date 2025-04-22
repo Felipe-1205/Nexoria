@@ -1,0 +1,40 @@
+name: Blizzard
+lore:
+- 'Invoca trozos de hielo que ralentizan'
+- 'a los enemigos en un área.'
+- ''
+- '&c{damage} Daño'
+- '&c{duration}s Duración de lentitud'
+- '&e{cooldown}s Enfriamiento'
+- '&9Cuesta {mana} {mana_name}'
+material: 'COAL:2135'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+duration:
+  base: 6
+  per-level: 0.1
+  min: 3
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 6
+  per-level: 0
+  min: 0
+  max: 6
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.1
+  min: 4
+  max: 10

@@ -1,0 +1,41 @@
+name: Vibrative Strike
+lore:
+- '&bCreate a massive vibration that stuns targets'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Stun Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2099'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+duration:
+  base: 2
+  per-level: 0.2
+  min: 2
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4
+
+#kVet9mN382dqNGcplFeiFzRRNjYwkEVPFTTU1UMNRUT5lUVjl3UxhGcUFnTOdleFFXdxgEN

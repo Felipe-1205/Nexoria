@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'b b'
+- 'aaa'
+- aaa
+source:
+  a: minecraft:birch_planks
+  b: minecraft:chain
+unlock: false
+result: minecraft:birch_hanging_sign 6

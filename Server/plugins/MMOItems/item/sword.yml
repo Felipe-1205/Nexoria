@@ -1,0 +1,162 @@
+VIKINGO1:
+  base:
+    material: WOODEN_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 4.0
+    attack-speed: 1.7
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    critical-strike-chance: 2.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 1.0
+VIKINGO2:
+  base:
+    material: STONE_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 5.0
+    attack-speed: 1.7
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    critical-strike-chance: 4.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 10.0
+VIKINGO3:
+  base:
+    material: IRON_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 6.0
+    attack-speed: 1.7
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    critical-strike-chance: 6.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 20.0
+VIKINGO4:
+  base:
+    material: GOLDEN_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 7.0
+    attack-speed: 1.7
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    critical-strike-chance: 8.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 30.0
+VIKINGO5:
+  base:
+    material: DIAMOND_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 8.0
+    attack-speed: 1.7
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    critical-strike-chance: 10.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 40.0
+VIKINGO6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&bEspada de Vikingo'
+    displayed-type: '&5Ligera'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-repairing: true
+    disable-enchanting: true
+    disable-smithing: true
+    attack-damage: 9.0
+    attack-speed: 1.7
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    critical-strike-chance: 12.0
+    critical-strike-power: 10.0
+    lore:
+    - '&5Un 1d8 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    - picaro
+    - monje
+    required-level: 50.0

@@ -1,0 +1,19 @@
+ETERNAL_FLAME:
+    mythicmobs-skill-id: Eternal_Flame_P
+
+WHEEL_OF_ETERNAL_FLAME:
+    mythicmobs-skill-id: Wheel_of_Eternal_Flame_P
+    
+INCARNATION:
+    mythicmobs-skill-id: Incarnation_P
+    passive-type: TIMER
+    timer: 10
+    
+EMPOWER_MINIONS:
+    mythicmobs-skill-id: Empower_Minions
+    
+WILL_O_WISPS:
+    mythicmobs-skill-id: Will_O_Wisps_P
+    
+SKELETAL_MINION:
+    mythicmobs-skill-id: Skeletal_Minion_P

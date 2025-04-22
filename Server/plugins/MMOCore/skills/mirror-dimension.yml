@@ -1,0 +1,38 @@
+name: Mirror Dimension
+lore:
+- '&bSummon a mirror portal beneath you while'
+- '&bstunning nearby enemies inside your mirror'
+- '&bportal. After some time, you teleport your'
+- '&bmirror portal to the direction you are looking at.'
+- '&bStunned enemies inside the mirror portal are'
+- '&bteleported as well.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2162'
+damage:
+  base: 6
+  per-level: 1
+  min: 6
+  max: 8
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.2
+  min: 8
+  max: 10

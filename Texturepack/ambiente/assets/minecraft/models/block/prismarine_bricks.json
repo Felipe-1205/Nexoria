@@ -1,0 +1,36 @@
+{
+    "__createdwith": "opl's Model Creator",
+	"parent": "block/cube",
+    "ambientocclusion": false,
+    "textures": {
+        "side": "block/prismarine_bricks",
+        "top": "block/prismarine_bricks_top",
+        "particle": "block/prismarine_bricks"
+    },
+    "elements": [
+        {
+            "from": [0,0,0],
+            "to": [16,16,16],
+            "faces": {
+                "up": {
+                    "texture": "#top"
+                },
+                "down": {
+                    "texture": "#top"
+                },
+                "west": {
+                    "texture": "#side"
+                },
+                "east": {
+                    "texture": "#side"
+                },
+                "north": {
+                    "texture": "#side"
+                },
+                "south": {
+                    "texture": "#side"
+                }
+            }
+        }
+    ]
+}

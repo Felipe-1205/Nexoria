@@ -1,0 +1,42 @@
+name: Exorcismo
+lore:
+- Crea un círculo mágico que 
+- inflige &8{damage} &7puntos de daño al objetivo
+- y adicionalmente le otorga wither &8{amplifier}
+- por &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: GREEN_GLAZED_TERRACOTTA
+duration:
+  base: 4
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+damage:
+  base: 2
+  per-level: 1
+delay:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+amplifier:
+  base: 2
+  per-level: 1

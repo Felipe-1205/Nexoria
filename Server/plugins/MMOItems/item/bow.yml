@@ -1,0 +1,144 @@
+ARCO1:
+  base:
+    material: BOW
+    name: '&bArco'
+    displayed-type: '&5Distancia'
+    max-durability: 250.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 2.5
+    attack-speed: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 1.0
+ARCO2:
+  base:
+    material: BOW
+    name: '&bArco de Piedra'
+    displayed-type: '&5Distancia'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 3.0
+    attack-speed: 1.5
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 10.0
+ARCO3:
+  base:
+    material: BOW
+    name: '&bArco de Hierro'
+    displayed-type: '&5Distancia'
+    max-durability: 750.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 3.5
+    attack-speed: 1.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 20.0
+ARCO4:
+  base:
+    material: BOW
+    name: '&bArco de Oro'
+    displayed-type: '&5Distancia'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.0
+    attack-speed: 1.5
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 30.0
+ARCO5:
+  base:
+    material: BOW
+    name: '&bArco de Diamante'
+    displayed-type: '&5Distancia'
+    max-durability: 1250.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.5
+    attack-speed: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 40.0
+ARCO6:
+  base:
+    material: BOW
+    name: '&bArco de Netherite'
+    displayed-type: '&5Distancia'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 5.0
+    attack-speed: 1.5
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d8 de daño.'
+    required-class:
+    - guerrero
+    - picaro
+    - ranger
+    required-level: 50.0

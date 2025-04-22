@@ -1,0 +1,32 @@
+BLOOD_SLASH:
+    mythicmobs-skill-id: Blood_Slash
+    modifiers:
+    - damage
+
+LACERATION:
+    mythicmobs-skill-id: Laceration
+    modifiers:
+    - damage
+    
+FLOW_STATE:
+    mythicmobs-skill-id: Flow_State
+    passive-type: TIMER
+    
+SMOKE_BOMB:
+    mythicmobs-skill-id: Smoke_Bomb
+    
+PIERCING_SHURIKEN:
+    mythicmobs-skill-id: Piercing_Shuriken
+    modifiers:
+    - damage
+    
+DEATH_CHARGE:
+    mythicmobs-skill-id: Death_Charge
+    passive-type: TIMER
+    modifiers:
+    - damage
+    
+FORBIDDEN_ART:
+    mythicmobs-skill-id: Forbidden_Art
+    modifiers:
+    - damage

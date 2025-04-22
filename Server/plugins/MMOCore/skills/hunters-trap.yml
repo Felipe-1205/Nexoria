@@ -1,0 +1,55 @@
+name: Hunters Trap
+lore:
+- '&fSummon a trap on the ground.'
+- '&fDepending on your beast, it changes.'
+- ''
+- '&4[Panther]'
+- "&cPanther's Trap &f- Create a small red X on the ground."
+- '&fEnemies that walk into it are instantly chained into'
+- '&fthe ground for a small amount of time.'
+- ''
+- '&2[Owl]'
+- "&aOwl's Trap &f- Create a small green X on the ground."
+- '&fEnemies that walk onto it are then bombarded with a'
+- '&fvolley of arrows launching from the sky.'
+- ''
+- '&9[Turtle]'
+- "&bTurtle's Trap &f- Create a small blue X on the ground."
+- '&fAllies that walk into it are instantly'
+- '&fgiven regeneration + resistance'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Buff Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2149'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+duration:
+  base: 7
+  per-level: 0.1
+  min: 7
+  max: 9
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4

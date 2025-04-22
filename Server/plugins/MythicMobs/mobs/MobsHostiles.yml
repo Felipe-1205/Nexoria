@@ -1,0 +1,99 @@
+ZOMBIEBASICO:
+  Type: ZOMBIE
+  Health: 20
+  Damage: 3
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: false
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=CARNEPODRIDA} 1-2 1
+
+ESQUELETOBASICO:
+  Type: SKELETON
+  Health: 20
+  Damage: 4
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: false
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  Equipment:
+  - bow HAND
+  AIGoalSelectors:
+  - clear
+  - bowattack
+  - randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=HUESO} 0-2 1
+  - arrow 0-2 1
+
+WITHERESQUELETOBASICO:
+  Type: WITHER_SKELETON
+  Health: 20
+  Damage: 8
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: false
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops:
+  - MobsComunes
+  - mmoitems{type=material;id=HUESO} 0-2 1
+  - mmoitems{type=material;id=CARBONTIER1} 0-2 0.3

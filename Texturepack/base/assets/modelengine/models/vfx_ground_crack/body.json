@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/vfx_ground_crack5"},"elements":[{"from":[-11.62219,8.0,-11.62219],"to":[27.62219,8.0,27.62219],"faces":{"up":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[0.0,16.0,16.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

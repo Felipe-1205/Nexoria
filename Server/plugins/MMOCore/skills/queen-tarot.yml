@@ -1,0 +1,35 @@
+name: Queen Tarot
+lore:
+- '&bCards orbit around you, stunning enemies that attack'
+- '&byou when the cards are active.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&c{duration}s Duration'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2166'
+passive-type: TIMER
+timer:
+  base: 30
+  per-level: 0
+  min: 30
+  max: 30
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+duration:
+  base: 2
+  per-level: 0.2
+  min: 2
+  max: 4

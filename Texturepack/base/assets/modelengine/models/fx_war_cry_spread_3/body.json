@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/fx_war_cry_spread_3"},"elements":[{"from":[-8.0,8.0,-8.0],"to":[24.0,8.0,24.0],"faces":{"up":{"uv":[4.0,4.0,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[4.0,0.0,0.0,4.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

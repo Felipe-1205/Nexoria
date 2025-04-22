@@ -1,0 +1,12 @@
+type: shapeless
+source:
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+- minecraft:jungle_planks
+unlock: false
+result: minecraft:chest

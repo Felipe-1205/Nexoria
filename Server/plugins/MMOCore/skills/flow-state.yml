@@ -1,0 +1,30 @@
+name: Flow State
+lore:
+- '&cEvery use of "Blood Slash" grants stacking'
+- '&cbonus movement speed, stacking up to Speed III' 
+- '&cmaximum. Taking damage resets this counter.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2115'
+passive-type: TIMER
+timer:
+  base: 9
+  per-level: 0
+  min: 9
+  max: 9
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

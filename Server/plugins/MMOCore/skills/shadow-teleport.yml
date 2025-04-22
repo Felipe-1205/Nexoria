@@ -1,0 +1,29 @@
+name: Shadow Teleport
+lore:
+- '&9Leave your shadow and teleport a long distance forward.'
+- '&9Recasting this skill within a few seconds will teleport'
+- '&9you back to your shadow.'
+- ''
+- '&e4s Cooldown'  #change cooldown in mythicmobs skill file
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2131'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

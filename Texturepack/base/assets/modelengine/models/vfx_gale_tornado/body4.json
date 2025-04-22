@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/tornado_gale"},"elements":[{"from":[-12.5,8.0,-12.5],"to":[28.5,8.0,28.5],"faces":{"up":{"uv":[0.0,0.0,16.0,16.0],"tintindex":0,"rotation":0,"texture":"#0"},"down":{"uv":[0.0,16.0,16.0,0.0],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

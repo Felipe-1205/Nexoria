@@ -1,0 +1,33 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/bard_texture/clef_9",
+		"particle": "item/bard_texture/clef_9"
+	},
+	"elements": [
+		{
+			"from": [-8.5, -8.5, 8],
+			"to": [24.5, 24.5, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [16, 0, 0, 16], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 180, 0],
+			"translation": [-6.25, -2.25, 27.5],
+			"scale": [3, 3, 3]
+		},
+		"head": {
+			"translation": [0, 7, 0],
+			"scale": [4, 4, 4]
+		}
+	}
+}

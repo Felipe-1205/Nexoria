@@ -1,0 +1,41 @@
+name: Shadow Archer
+lore:
+- '&9Summon a shadow archer that shoots 3 shadow'
+- '&9arrows, creating shadow waves when they hit the'
+- '&9ground, slowing enemies.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Slow Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2126'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+duration:
+  base: 3
+  per-level: 0.1
+  min: 3
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 5
+  per-level: -0.1
+  min: 4
+  max: 5

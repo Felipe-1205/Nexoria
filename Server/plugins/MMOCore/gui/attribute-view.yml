@@ -1,0 +1,125 @@
+
+# GUI display name
+name: Player Attributes
+
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    reallocate:
+        slots: [53]
+        function: reallocation
+        item: netherite_scrap
+        name: '&aPuntos De cambio'
+        lore:
+            - ''
+            - 'Tienes un total de &6{total}&7 puntos de atributo.'
+            - '&7Click derecho para cambiarlos.'
+            - ''
+            - '&eCuesta 1 punto de cambio.'
+            - '&e◆ Puntos de cambio para usar: &6{points}'
+    str:
+        slots: [11]
+        function: attribute_fuerza
+        name: '&4{name}'
+        item: stick
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_physical_damage}% Daño Fisico Extra (&a+{total_physical_damage}%&7)'
+            - '&7  +{buff_critical_strike_chance} Probabilidad Critica (&a+{total_critical_strike_chance}&7)'
+            - '&7  +{buff_critical_strike_power} Daño Critica (&a+{total_critical_strike_power}&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'
+    const:
+        slots: [13]
+        function: attribute_constitucion
+        name: '&6{name}'
+        item: stick
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_max_health}% Vida (&a+{total_max_health}%&7)'
+            - '&7  +{buff_health_regeneration}% Regeneracion de vida (&a+{total_health_regeneration}%&7)'
+            - '&7  +{buff_armor} Armadura (&a+{total_armor}&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'
+    sab:
+        slots: [15]
+        function: attribute_sabiduria
+        name: '&5{name}'
+        item: stick
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_skill_damage}% Daño extra de habilidad (&a+{total_skill_damage}%&7)'
+            - '&7  +{buff_skill_critical_strike_chance} Probabilidad de critico de habilidad (&a+{total_skill_critical_strike_chance}&7)'
+            - '&7  +{buff_skill_critical_strike_power} Daño critico de habilidad (&a+{total_skill_critical_strike_power}&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'
+    car:
+        slots: [29]
+        function: attribute_carisma
+        name: '&d{name}'
+        item: stick
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_speed_malus_reduction} Reduccion de debuff de velocidad (&a+{total_speed_malus_reduction}&7)'
+            - '&7  +{buff_luck} Suerte (&a+{total_luck}&7)'
+            - '&7  +{buff_additional_experience} Experiencia extra (&a+{total_additional_experience}&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'
+    dex:
+        slots: [31]
+        function: attribute_destreza
+        name: '&2{name}'
+        item: stick
+        hide-flags: true
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_movement_speed}% Velocidad de movimiento (&a+{total_movement_speed}%&7)'
+            - '&7  +{buff_max_stamina}% Estamina (&a+{total_max_stamina}%&7)'
+            - '&7  +{buff_stamina_regeneration}% Regeneracion de Estamina (&a+{total_stamina_regeneration}%&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'
+    int:
+        slots: [33]
+        function: attribute_inteligencia
+        name: '&1{name}'
+        item: stick
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Puntos asignados: &6{spent}&7/&6{max}'
+            - '&7{name} actual: &6&l{current}'
+            - ''
+            - '&8Cuando levelea:'
+            - '&7  +{buff_max_mana}% Mana (&a+{total_max_mana}%&7)'
+            - '&7  +{buff_mana_regeneration}% Regeneracion de mana (&a+{total_mana_regeneration}%&7)'
+            - '&7  +{buff_cooldown_reduction} Reduccion de cooldowns (&a+{total_cooldown_reduction}&7)'
+            - ''
+            - '&eClick para levelear por 1 punto de atributo.'
+            - '&e◆ Puntos de atributo actuales: {attribute_points}'

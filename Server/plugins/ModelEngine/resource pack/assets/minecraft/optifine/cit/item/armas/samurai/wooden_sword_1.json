@@ -1,0 +1,6 @@
+{
+    "parent": "./handheld_katana",
+    "textures": {
+        "layer0": "./wooden_sword_1"
+    }
+}

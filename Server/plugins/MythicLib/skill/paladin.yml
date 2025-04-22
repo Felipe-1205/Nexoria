@@ -1,0 +1,41 @@
+HOLY_STRIKE:
+    mythicmobs-skill-id: Holy_Strike
+    modifiers:
+    - damage
+
+UNBREAKABLE_WILL:
+    mythicmobs-skill-id: Unbreakable_Will
+    modifiers:
+    - duration
+    - damage
+    
+RADIANT_AURA:
+    mythicmobs-skill-id: Radiant_Aura
+    passive-type: TIMER
+    modifiers:
+    - heal
+    - duration
+    
+HEAVENLY_SHIELD:
+    mythicmobs-skill-id: Heavenly_Shield
+    passive-type: TIMER
+    modifiers:
+    - duration
+    
+HAMMER_OF_JUSTICE:
+    mythicmobs-skill-id: Hammer_Of_Justice
+    modifiers:
+    - damage
+    
+BOUND_SEAL:
+    mythicmobs-skill-id: Bound_Seal
+    modifiers:
+    - damage
+    
+LAST_STAND:
+    mythicmobs-skill-id: Last_Stand
+    modifiers:
+    - damage
+    - duration
+    - heal
+#Ejd3lWa1JjN0AFTLNEbVRDRFdkT5NGRPpXRU1UMNRUT592RWVGV1NmeTBlR3J0T1IjakhFN

@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'aba'
+- 'aba'
+source:
+  a: minecraft:birch_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:birch_fence 3

@@ -1,0 +1,36 @@
+CARD_THROW:
+    mythicmobs-skill-id: Card_Throw
+    modifiers:
+    - damage
+
+PHANTOM_BLINK:
+    mythicmobs-skill-id: Phantom_Blink
+    modifiers:
+    - damage
+    
+QUEEN_TAROT:
+    mythicmobs-skill-id: Queen_Tarot
+    passive-type: TIMER
+    modifiers:
+    - duration
+    
+MIRAGE_SLOT:
+    mythicmobs-skill-id: Mirage_Slot
+    modifiers:
+    - damage
+    
+MIRROR_SHURIKEN:
+    mythicmobs-skill-id: Mirror_Shuriken
+    modifiers:
+    - damage
+    
+MIRROR_NEEDLES:
+    mythicmobs-skill-id: Mirror_Needles
+    passive-type: TIMER
+    modifiers:
+    - damage
+    
+MIRROR_DIMENSION:
+    mythicmobs-skill-id: Mirror_Dimension
+    modifiers:
+    - damage

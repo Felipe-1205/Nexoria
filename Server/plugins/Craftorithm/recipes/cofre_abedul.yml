@@ -1,0 +1,12 @@
+type: shapeless
+source:
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+- minecraft:birch_planks
+unlock: false
+result: minecraft:chest

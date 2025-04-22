@@ -1,0 +1,9 @@
+type: cooking
+result: mmoitems:CONSUMABLE:SALMONASADO 1
+multiple: true
+unlock: false
+source:
+- item: mmoitems:MATERIAL:SALMONCRUDO
+  block: furnace
+  time: 100
+  exp: 0.0

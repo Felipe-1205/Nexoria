@@ -1,0 +1,41 @@
+name: El Último regalo de Santa
+lore:
+- Lanza un regalo festivo y explosivo
+- hacia tu objetivo ocasionando &8{damage} &7puntos de daño
+- a todo lo que se encuentre alrededor de &8{radius} &7bloques
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: BELL
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 4
+  per-level: 0.5
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 3
+  per-level: 1.1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: 1.4
+force:
+  base: 2
+  per-level: 1.2
+radius:
+  base: 3
+  per-level: 1

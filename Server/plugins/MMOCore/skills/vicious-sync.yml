@@ -1,0 +1,55 @@
+name: Vicious Sync
+lore:
+- '&fCommand your summoned beasts to temporarily transform'
+- '&finto powerful elemental forms, each representing a'
+- '&fdifferent element such as lightning, wind, or water.'
+- '&fEach elemental form bestows unique offensive and defensive abilities.'
+- '&fYour Hunt skill becomes stronger and enhanced during this time.'
+- ''
+- '&4Panther]'
+- '&cLightning form &f- Your Panther moves faster and'
+- '&fattacks faster, each attack striking twice.'
+- ''
+- "&cEnhanced Panther's Hunt &f- You fire 3 arrows rapidly."
+- ''
+- '&2[Owl]'
+- '&aWind form &f- Your Owl moves faster and attacks faster,'
+- '&feach attack creating a form of wind pulse that pushes enemies back.'
+- ''
+- "&aEnhanced Owl's Hunt &f- You fire 3 spreading arrows at once."
+- ''
+- '&9[Turtle]'
+- '&bWater form &f- Your Turtle moves faster and attacks faster,'
+- '&feach attack slowing enemies.'
+- ''
+- "&bEnhanced Turtle's Hunt &f- You fire a volley of 3 arrows diagonally."
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2152'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 10
+  per-level: -0.1
+  min: 8
+  max: 10

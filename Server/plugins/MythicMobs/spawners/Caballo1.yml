@@ -1,0 +1,26 @@
+Caballo1:
+  MobName: CALLABO
+  World: principal
+  X: 269
+  Y: 67
+  Z: -460
+  Yaw: 0.0
+  Pitch: 0.0
+  Radius: 3.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '-1'
+  MobLevel: '1'
+  MobsPerSpawn: 5
+  Cooldown: 0
+  Warmup: 0
+  ActivationRange: 50.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  Breakable: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

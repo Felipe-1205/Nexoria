@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'aaa'
+- 'bbb'
+- 'aaa'
+source:
+  a: minecraft:jungle_planks
+  b: minecraft:jungle_slab
+unlock: false
+result: minecraft:chiseled_bookshelf

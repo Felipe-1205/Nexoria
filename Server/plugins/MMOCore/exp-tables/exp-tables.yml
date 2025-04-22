@@ -1,0 +1,7 @@
+class_exp_table:
+  first_table_item:
+    period: 1
+    first-trigger: 1
+    triggers:
+      - 'mmoitem{type=consumable;id=PUNTOSATRIBUTOS;amount=1}'
+      - 'mmoitem{type=consumable;id=PUNTOSHABILIDAD;amount=1}'

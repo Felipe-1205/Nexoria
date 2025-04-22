@@ -1,0 +1,176 @@
+
+# Fire
+fuego_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: FLAME
+            amount: 8
+            speed: .05
+
+fuego_critical_strike:
+    mechanics:
+        play_sound:
+            type: sound
+            sound: ENTITY_BLAZE_HURT
+        fireparticles:
+            type: particle
+            particle: FLAME
+            amount: 8
+            speed: .05
+
+# Ice
+hielo_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: BLOCK_CRACK
+            amount: 16
+            speed: .07
+            block: ICE
+
+hielo_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: BLOCK_CRACK
+            amount: 16
+            speed: .07
+            block: ICE
+        play_sound:
+            type: sound
+            sound: BLOCK_GLASS_BREAK
+            pitch: 0
+
+
+# Wind
+viento_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: EXPLOSION_NORMAL
+            amount: 8
+            speed: .06
+
+viento_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: EXPLOSION_NORMAL
+            amount: 8
+            speed: .06
+        play_sound:
+            type: sound
+            sound: ENTITY_ENDER_DRAGON_GROWL
+            pitch: 2
+
+# sonico
+sonico_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: BLOCK_CRACK
+            amount: 24
+            speed: .05
+            block: DIRT
+
+sonico_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: BLOCK_CRACK
+            amount: 64
+            target:
+                type: target
+                position: FEET
+            x: 1
+            z: 1
+            speed: .05
+            block: DIRT
+        play_sound:
+            type: sound
+            sound: BLOCK_GRASS_BREAK
+            pitch: 0
+
+# Thunder
+electrico_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: FIREWORKS_SPARK
+            amount: 8
+            speed: .05
+
+
+electrico_critical_strike:
+    mechanics:
+        play_sound:
+            type: sound
+            sound: ENTITY_FIREWORK_ROCKET_LARGE_BLAST
+            pitch: 0
+        spawnparticle:
+            type: particle
+            particle: FIREWORKS_SPARK
+            target:
+                type: circle
+                radius: 1
+                amount: 32
+
+# Water
+agua_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: BLOCK_CRACK
+            amount: 32
+            speed: .07
+            block: WATER
+
+agua_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: WATER_DROP
+            amount: 8
+            speed: .05
+        play_sound:
+            type: sound
+            sound: BLOCK_WATER_AMBIENT
+# radiante
+radiante_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: END_ROD
+            amount: 8
+            speed: .05
+
+radiante_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: END_ROD
+            amount: 8
+            speed: .05
+        play_sound:
+            type: sound
+            sound: BLOCK_AMETHYST_BLOCK_HIT
+#necrotico
+necrotico_elemental_attack:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: SCULK_SOUL
+            amount: 8
+            speed: .05
+
+necrotico_critical_strike:
+    mechanics:
+        display_particles:
+            type: particle
+            particle: SCULK_SOUL
+            amount: 8
+            speed: .05
+        play_sound:
+            type: sound
+            sound: ENTITY_ENDER_DRAGON_HURT

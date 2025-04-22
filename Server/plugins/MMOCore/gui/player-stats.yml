@@ -1,0 +1,232 @@
+
+# GUI display name
+name: Your Character
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    mining-profession:
+        slots: [13]
+        function: profession_mining
+        item: stick
+        name: '&aMineria'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Nivel Actual: &e{level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - ''
+        - '&7&oLa minería desbloquea minerales raros y materias primas.'
+        - '&7&oEsto es vital para tu ascenso en poder y fuerza,'
+        - '&7&omina frecuentemente para obtener drops únicos y raras.'
+    woodcutting-profession:
+        slots: [21]
+        function: profession_woodcutting
+        item: stick
+        name: '&aTala'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Nivel Actual: &e{level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - ''
+        - '&7&oAunque puede parecer una tarea aburrida, talar árboles'
+        - '&7&oes vital para obtener materiales usados en la artesanía y el comercio,'
+        - '&7&ote ayudará a obtener ventaja en las artes arcanas.'
+    farming-profession:
+        slots: [23]
+        function: profession_farming
+        item: stick
+        name: '&aBotanica'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Nivel Actual: &e{level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - ''
+        - '&7&oCon la habilidad de recolectar plantas y recursos'
+        - '&7&onaturales de los bosques, la botánica te permitirá'
+        - '&7&oobtener materiales clave para pociones o alimentos.'
+    fishing-profession:
+        slots: [31]
+        function: profession_fishing
+        item: stick
+        name: '&aPesca'
+        hide-flags: true
+        lore:
+        - ''
+        - '&7Nivel Actual: &e{level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - ''
+        - '&7&oLa pesca puede darte drops únicos que'
+        - '&7&ono puedes encontrar en ningún otro lugar. Cuanto más'
+        - '&7&opesques, más fácil será encontrarlos.'
+        
+    boost-display:
+        slots: [47,48,49,50,51]
+        function: boost
+        item: BARRIER
+        no-boost:
+            item: GRAY_STAINED_GLASS_PANE
+            name: '&aNo Booster'
+            lore: {}
+        
+        # Profession experience boosters
+        profession:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7Profession: &6{profession}'
+            - '&7'
+            - '&eStarted by {author}'
+        
+        # Main class experience boosters
+        main-level:
+            item: EXPERIENCE_BOTTLE
+            name: '&aEXP Boost'
+            lore:
+            - '&7Amount: &6+{value}%'
+            - '&7Time left: &6{left}'
+            - '&7'
+            - '&eStarted by {author}'
+    boost-next:
+        slots: [52]
+        function: boost-next
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTliZjMyOTJlMTI2YTEwNWI1NGViYTcxM2FhMWIxNTJkNTQxYTFkODkzODgyOWM1NjM2NGQxNzhlZDIyYmYifX19
+        name: '&aNext'
+        lore: {}
+    boost-prev:
+        slots: [46]
+        function: boost-previous
+        item: PLAYER_HEAD
+        texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYmQ2OWUwNmU1ZGFkZmQ4NGU1ZjNkMWMyMTA2M2YyNTUzYjJmYTk0NWVlMWQ0ZDcxNTJmZGM1NDI1YmMxMmE5In19fQ==
+        name: '&aPrevious'
+        lore: {}
+    party:
+        slots: [53]
+        function: party
+        item: CAKE
+        name: '&aParty Morale'
+        lore:
+        - '&7&oPlaying with your friends'
+        - '&7&ogreatly encourages you!'
+        - ''
+        - '&7Party Bonuses ({count}):'
+        - '&8+{buff_additional_experience} Experience Earned!'
+        - '&8+{buff_health_regeneration} Health Regeneration'
+    stats:
+        slots: [22]
+        function: profile
+        item: PLAYER_HEAD
+        name: '&e{player}'
+        lore:
+        - ''
+        - '&7Nivel: &e{level}'
+        - '&7Progresion: &e{exp} / {next_level}'
+        - '&8[&e{progress}&8] &e{percent}%'
+        - '&7Puntos de habilidad: &6{skill_points}'
+        - ''
+        - '&7Clase: &c{class}'
+        - '&7Puntos de clase: &c{class_points}'
+    str:
+        slots: [10]
+        function: stats
+        name: '&4Fuerza'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Fuerza Actual: &4&l{attribute_fuerza}'
+        - ''
+        - '✦ Daño de ataque: &c{attack_damage} &7(&c{attack_damage_base} &7+ &c{attack_damage_extra}&7)'
+        - '✦ Probabilidad critica: &c{critical_strike_chance}% &7(&c{critical_strike_chance_base}% &7+ &c{critical_strike_chance_extra}%&7)'
+        - '✦ Daño critico: &c{critical_strike_power}% &7(&c{critical_strike_power_base}% &7+ &c{critical_strike_power_extra}%&7)'
+        - '✦ Daño fisico extra: &c{physical_damage}% &7(&c{physical_damage_base}% &7+ &c{physical_damage_extra}%&7)'
+        - '✦ Daño de proyectil extra: &c{projectile_damage}% &7(&c{projectile_damage_base}% &7+ &c{projectile_damage_extra}%&7)'
+        - '✦ Daño de arma extra: &c{weapon_damage}% &7(&c{weapon_damage_base}% &7+ &c{weapon_damage_extra}%&7)'
+        - '✦ Daño extra a no muertos: &c{undead_damage}% &7(&c{undead_damage_base}% &7+ &c{undead_damage_extra}%&7)'
+        - '✦ Daño extra PVP: &c{pvp_damage}% &7(&c{pvp_damage_base}% &7+ &c{pvp_damage_extra}%&7)'
+        - '✦ Daño extra PVE: &c{pve_damage}% &7(&c{pve_damage_base}% &7+ &c{pve_damage_extra}%&7)'
+        - ''
+    const:
+        slots: [19]
+        function: stats
+        name: '&6Constitucion'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Constitucion Actual: &6&l{attribute_constitucion}'
+        - ''
+        - '❤ Abdsorcion: &e{max_absorption} &7(&e{max_absorption_base} &7+ &e{max_absorption_extra}&7)'
+        - '❤ Vida: &e{max_health} &7(&e{max_health_base} &7+ &e{max_health_extra}&7)'
+        - '❤ Regenracion de vida: &e{health_regeneration} &7(&e{health_regeneration_base} &7+ &e{health_regeneration_extra}&7)'
+        - '⛨ Resistencia al empuje: &e{knockback_resistance} &7(&e{knockback_resistance_base} &7+ &e{knockback_resistance_extra}&7)'
+        - '⛨ Armadura: &e{armor} &7(&e{armor_base} &7+ &e{armor_extra}&7)'
+        - '⛨ Dureza de armadura: &e{armor_toughness} &7(&e{armor_toughness_base} &7+ &e{armor_toughness_extra}&7)'
+        - ''
+    sab:
+        slots: [16]
+        function: stats
+        name: '&5Sabiduria'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Sabiduria Actual: &5&l{attribute_sabiduria}'
+        - ''
+        - '❊ Daño de extra habilidad: &d{skill_damage}% &7(&d{skill_damage_base}% &7+ &d{skill_damage_extra}%&7)'
+        - '❊ Probabilidad critica de habilidad: &d{skill_critical_strike_chance}% &7(&d{skill_critical_strike_chance_base}% &7+ &d{skill_critical_strike_chance_extra}%&7)'
+        - '❊ Daño Critico de habilidad: &d{skill_critical_strike_power}% &7(&d{skill_critical_strike_power_base}% &7+ &d{skill_critical_strike_power_extra}%&7)'
+        - ''
+    car:
+        slots: [25]
+        function: stats
+        name: '&dCarisma'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Carisma Actual: &d&l{attribute_carisma}'
+        - ''
+        - '❖ Reduccion de debuff de velocidad: &5{speed_malus_reduction}% &7(&5{speed_malus_reduction_base}% &7+ &5{speed_malus_reduction_extra}%&7)'
+        - '❖ Suerte: &5{luck}% &7(&5{luck_base}% &7+ &5{luck_extra}%&7)'
+        - '❖ Experiencia extra: &5{additional_experience}% &7(&5{additional_experience_base}% &7+ &5{additional_experience_extra}%&7)'
+        - '❖ Fuerza de Pesca: &5{FISHING_STRENGTH}%'
+        - '❖ Tasa de Críticos en Pesca: &5{CRITICAL_FISHING_CHANCE}%'
+        - '❖ Tasa de Fallo Crítico en Pesca: &5{CRITICAL_FISHING_FAILURE_CHANCE}%'
+        - ''
+    dex:
+        slots: [28]
+        function: stats
+        name: '&2Destreza'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Destreza Actual: &2&l{attribute_destreza}'
+        - ''
+        - '✤ Velocidad de movimiento: &a{movement_speed} &7(&a{movement_speed_base} &7+ &a{movement_speed_extra}&7)'
+        - '✤ Velocidad de atque: &a{attack_speed} &7(&a{attack_speed_base} &7+ &a{attack_speed_extra}&7)'
+        - '✤ Stamina: &a{max_stamina} &7(&a{max_stamina_base} &7+ &a{max_stamina_extra}&7)'
+        - '✤ Regeneracion de stamina: &a{stamina_regeneration} &7(&a{stamina_regeneration_base} &7+ &a{stamina_regeneration_extra}&7)'
+        - ''
+    int:
+        slots: [34]
+        function: stats
+        name: '&1Inteligencia'
+        item: stick
+        hide-flags: true
+        lore:
+        - ''
+        - 'Inteligencia Actual: &1&l{attribute_inteligencia}'
+        - ''
+        - '❊ %mmocore_mana_name%: &9{max_mana} &7(&9{max_mana_base} &7+ &9{max_mana_extra}&7)'
+        - '❊ Regeneracion de %mmocore_mana_name%: &9{mana_regeneration} &7(&9{mana_regeneration_base} &7+ &9{mana_regeneration_extra}&7)'
+        - '❊ Reduccion de cooldown: &9{cooldown_reduction} &7(&9{cooldown_reduction_base} &7+ &9{cooldown_reduction_extra}&7)'
+        - ''

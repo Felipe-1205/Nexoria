@@ -1,0 +1,1462 @@
+PRUEBA1:
+  base:
+    material: DIAMOND
+    name: caca
+    lore:
+    - asfhsdg
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    enchants:
+      fire_aspect: 1.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 10.0
+    attack-speed: 10.0
+    critical-strike-chance: 10.0
+    critical-strike-power: 10.0
+    skill-critical-strike-chance: 10.0
+    skill-critical-strike-power: 10.0
+    block-power: 10.0
+    block-rating: 10.0
+    block-cooldown-reduction: 10.0
+    dodge-rating: 10.0
+    dodge-cooldown-reduction: 10.0
+    parry-rating: 10.0
+    parry-cooldown-reduction: 10.0
+    cooldown-reduction: 10.0
+    pve-damage: 10.0
+    pvp-damage: 10.0
+    weapon-damage: 10.0
+    skill-damage: 10.0
+    projectile-damage: 10.0
+    magic-damage: 10.0
+    physical-damage: 10.0
+    defense: 10.0
+    damage-reduction: 10.0
+    fall-damage-reduction: 10.0
+    projectile-damage-reduction: 10.0
+    physical-damage-reduction: 10.0
+    fire-damage-reduction: 10.0
+    magic-damage-reduction: 10.0
+    pve-damage-reduction: 10.0
+    pvp-damage-reduction: 10.0
+    undead-damage: 10.0
+    lifesteal: 10.0
+    spell-vampirism: 10.0
+    unbreakable: true
+    armor: 10.0
+    armor-toughness: 10.0
+    max-health: 10.0
+    max-mana: 10.0
+    knockback-resistance: 10.0
+    movement-speed: 10.0
+    max-absorption: 10.0
+    block-break-speed: 10.0
+    block-interaction-range: 10.0
+    entity-interaction-range: 10.0
+    fall-damage-multiplier: 10.0
+    gravity: 10.0
+    jump-strength: 10.0
+    safe-fall-distance: 10.0
+    scale: 10.0
+    step-height: 10.0
+    health-regeneration: 10.0
+    max-health-regeneration: 10.0
+    mana-regeneration: 10.0
+    max-mana-regeneration: 10.0
+    stamina-regeneration: 10.0
+    max-stamina-regeneration: 10.0
+    max-stamina: 10.0
+    max-stellium: 10.0
+    additional-experience: 10.0
+    additional-experience-woodcutting: 10.0
+    additional-experience-farming: 10.0
+    additional-experience-fishing: 10.0
+    additional-experience-mining: 10.0
+
+# ANILLO DE PULSO
+ANILLOPULSO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Pulso Poco Comun'
+    displayed-type: '&5Accesorio'
+    critical-strike-chance: 2.0
+    tier: TIER1
+ANILLOPULSO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Pulso Raro'
+    displayed-type: '&5Accesorio'
+    critical-strike-chance: 4.0
+    tier: TIER1
+ANILLOPULSO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Pulso Epico'
+    displayed-type: '&5Accesorio'
+    critical-strike-chance: 6.0
+    tier: TIER2
+ANILLOPULSO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Pulso Legendario'
+    displayed-type: '&5Accesorio'
+    critical-strike-chance: 8.0
+    tier: TIER2
+ANILLOPULSO5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Pulso Mitico'
+    displayed-type: '&5Accesorio'
+    critical-strike-chance: 10.0
+    tier: TIER3
+
+# COMPACTADORES
+
+COMPACTADOR1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCompactador 4000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-break-speed: 1.2
+    lore:
+    - '&7Otorga 1.2 de velocidad de minado.'
+COMPACTADOR2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCompactador 5000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-break-speed: 2.4
+    lore:
+    - '&7Otorga 2.4 de velocidad de minado.'
+COMPACTADOR3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCompactador 6000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-break-speed: 3.6
+    lore:
+    - '&7Otorga 3.6 de velocidad de minado.'
+COMPACTADOR4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCompactador 7000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-break-speed: 4.8
+    lore:
+    - '&7Otorga 4.8 de velocidad de minado.'
+
+# BRASON DE BESTIAS
+BRASONBESTIAS1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Bestias Comun'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pve-damage: 2.5
+BRASONBESTIAS2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Bestias Poco Comun'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pve-damage: 5
+BRASONBESTIAS3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Bestias Raro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pve-damage: 7.5
+BRASONBESTIAS4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Bestias Muy Raro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pve-damage: 10.0
+BRASONBESTIAS5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Bestias Legendario'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    pve-damage: 12.5
+
+# INSIGNIAS DE HOGUERA
+INSIGNIAHOGUERA1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bInsignia de Hoguera 1'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-health: 2
+INSIGNIAHOGUERA2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bInsignia de Hoguera 2'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-health: 4
+INSIGNIAHOGUERA3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bInsignia de Hoguera 3'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    max-health: 6
+INSIGNIAHOGUERA4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bInsignia de Hoguera 4'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    max-health: 8
+INSIGNIAHOGUERA5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bInsignia de Hoguera 5'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    max-health: 10
+
+# DIENTES
+DIENTE1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bDiente de Bronce'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    lifesteal: 1.2
+DIENTE2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bDiente de Plata'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    lifesteal: 2.4
+DIENTE3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bDiente de Oro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    lifesteal: 3.6
+DIENTE4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bDiente de Diamante'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    lifesteal: 4.8
+
+# LIBROS
+LIBRO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro de Avances'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 1.5
+LIBRO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro Avanzado'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 3.0
+LIBRO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro del Gran Avance'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    magic-damage: 4.5
+LIBRO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro del Sabio'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    magic-damage: 6.0
+LIBRO5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro de los Antiguos'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    magic-damage: 7.5
+LIBRO6:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro Ancestral'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    magic-damage: 9.0
+
+# ELIMINADORES
+ELIMINADOR1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bEliminador 4000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    physical-damage: 1.5
+    critical-strike-power: 1.5
+ELIMINADOR2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bEliminador 5000'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    physical-damage: 3.0
+    critical-strike-power: 3.0
+ELIMINADOR3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bEliminador 6000'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    physical-damage: 4.5
+    critical-strike-power: 4.5
+ELIMINADOR4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bEliminador 7000'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    physical-damage: 6.0
+    critical-strike-power: 6.0
+
+# TITANIO
+TITANIO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Titanio'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    defense: 0.75
+    physical-damage-reduction: 0.75
+TITANIO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Titanio'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    defense: 1.5
+    physical-damage-reduction: 1.5
+TITANIO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Titanio'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    defense: 2.25
+    physical-damage-reduction: 2.25
+TITANIO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bReliquia de Titanio'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    defense: 3.0
+    physical-damage-reduction: 3.0
+
+# CERDOS
+CERDO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCerdo Roto'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    movement-speed: 0.02
+    block-interaction-range: 0.2
+    entity-interaction-range: 0.2
+    lore:
+    - '&7Otorga +0.2 al rango de interacción.'
+CERDO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCerdo Agrietado'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    movement-speed: 0.04
+    block-interaction-range: 0.4
+    entity-interaction-range: 0.4
+    lore:
+    - '&7Otorga +0.4 al rango de interacción.'
+CERDO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCerdito de Ahorros'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    movement-speed: 0.06
+    block-interaction-range: 0.6
+    entity-interaction-range: 0.6
+    lore:
+    - '&7Otorga +0.6 al rango de interacción.'
+
+# MARCHITO
+MARCHITO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo Marchito'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pvp-damage: 1.25
+    critical-strike-power: 1.25
+MARCHITO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Marchito'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pvp-damage: 2.5
+    critical-strike-power: 2.5
+MARCHITO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bReliquia Marchita'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pvp-damage: 3.75
+    critical-strike-power: 3.75
+
+# ZOMBIE
+ZOMBIE1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Zombie'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    undead-damage: 1.15
+    pve-damage-reduction: 1.15
+ZOMBIE2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Zombie'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    undead-damage: 2.3
+    pve-damage-reduction: 2.3
+ZOMBIE3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Zombie'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    undead-damage: 3.45
+    pve-damage-reduction: 3.45
+
+# OMNISCIENTE
+OMNISCIENTE1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Omnisciente'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    cooldown-reduction: 1.25
+    skill-damage: 1.25
+OMNISCIENTE2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo Omnisciente'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    cooldown-reduction: 2.5
+    skill-damage: 2.5
+OMNISCIENTE3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo del Omnisciente'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    cooldown-reduction: 3.75
+    skill-damage: 3.75
+
+# VAMPIRO
+VAMPIRO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Vampiro'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    spell-vampirism: 1.25
+    max-health: 1.25
+VAMPIRO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Vampiro'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    spell-vampirism: 2.5
+    max-health: 2.5
+VAMPIRO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Vampiro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    spell-vampirism: 3.75
+    max-health: 3.75
+
+# GLACIAL
+GLACIAL1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Glacial'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 1.2
+    fire-damage-reduction: 1.2
+GLACIAL2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo Glacial'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 2.4
+    fire-damage-reduction: 2.4
+GLACIAL3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Glacial'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    magic-damage: 3.6
+    fire-damage-reduction: 3.6
+
+# MURCIELAGO
+MURCIELAGO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Murcielago'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    step-height: 0.5
+    lore:
+    - '&7Te otorga +0.5 a la altura de tus pasos.'
+MURCIELAGO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Murcielago'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    step-height: 1.0
+    lore:
+    - '&7Te otorga +1.0 a la altura de tus pasos.'
+MURCIELAGO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Murcielago'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    step-height: 1.5
+    lore:
+    - '&7Te otorga +1.5 a la altura de tus pasos.'
+
+PROTECTORES1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Protector'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-rating: 2.5
+    block-power: 2.5
+PROTECTORES2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo Protector'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    block-rating: 5.0
+    block-power: 5.0
+PROTECTORES3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Protector'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    block-rating: 7.5
+    block-power: 7.5
+
+# CAIDOS
+CAIDOS1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bColgante de los Caidos'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage-reduction: 1.25
+    armor: 1.25
+CAIDOS2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de los Caidos'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage-reduction: 2.5
+    armor: 2.5
+CAIDOS3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de los Caidos'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    magic-damage-reduction: 3.75
+    armor: 3.75
+
+#  RAICES
+RAICES:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Raices'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    knockback-resistance: 0.3
+    jump-strength: 0.3
+
+# TOMOS
+TOMO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro del Brillo Ceruleo'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 4.5
+    skill-critical-strike-chance: 4.5
+TOMO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro del Resplandor Amatista'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 9.0
+    skill-critical-strike-chance: 9.0
+TOMO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bLibro del Fulgor Aureo'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    magic-damage: 13.5
+    skill-critical-strike-chance: 13.5
+
+# CRANEO NECROTICO
+CRANEONECRO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Basico'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    undead-damage: 1.75
+    spell-vampirism: 1.75
+    skill-critical-strike-power: 1.75
+CRANEONECRO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Poco Comun'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    undead-damage: 3.5
+    spell-vampirism: 3.5
+    skill-critical-strike-power: 3.5
+CRANEONECRO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Raro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    undead-damage: 5.25
+    spell-vampirism: 5.25
+    skill-critical-strike-power: 5.25
+CRANEONECRO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Muy Raro'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    undead-damage: 7.0
+    spell-vampirism: 7.0
+    skill-critical-strike-power: 7.0
+CRANEONECRO5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Especial'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    undead-damage: 8.75
+    spell-vampirism: 8.75
+    skill-critical-strike-power: 8.75
+CRANEONECRO6:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Legendario'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    undead-damage: 10.5
+    spell-vampirism: 10.5
+    skill-critical-strike-power: 10.5
+CRANEONECRO7:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCraneo Necrotico Muy Especial'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    undead-damage: 12.25
+    spell-vampirism: 12.25
+    skill-critical-strike-power: 12.25
+
+# FRUTO
+FRUTO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Fruto'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    attack-speed: 0.5
+    physical-damage: 9.0
+    lifesteal: 9.0
+
+# REGALOS
+REGALO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Regalo Blanco'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pve-damage: 1.75
+    projectile-damage-reduction: 1.75
+    defense: 1.75
+REGALO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Regalo Verde'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pve-damage: 3.5
+    projectile-damage-reduction: 3.5
+    defense: 3.5
+REGALO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Regalo Azul'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pve-damage: 5.25
+    projectile-damage-reduction: 5.25
+    defense: 5.25
+REGALO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Regalo Morado'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pve-damage: 7.0
+    projectile-damage-reduction: 7.0
+    defense: 7.0
+REGALO5:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Regalo Dorado'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    pve-damage: 8.75
+    projectile-damage-reduction: 8.75
+    defense: 8.75
+
+
+# HOJAS
+HOJAS:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Hojas'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    cooldown-reduction: 12.0
+    magic-damage: 12.0
+    physical-damage-reduction: 12.0
+
+# PIEDRA
+PIEDRA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Roca'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    pvp-damage: 15.0
+    critical-strike-power: 15.0
+    lifesteal: 15.0
+# CRAFTEO
+CRAFTEO:
+  base:
+    material: HEART_OF_THE_SEA
+    granted-permissions:
+    - essentials.workbench
+    name: '&bMonitor Defectuoso'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te permite usar el /craftear.'
+    tier: TIER1
+    revision-id: 3
+
+# BAG OF HOLDING
+BAGOFHOLDING:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBolso de Pastel'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te permite usar el /enderchest.'
+    granted-permissions:
+    - essentials.enderchest
+    tier: TIER2
+
+# MASCOTAS
+MASCOTADRAGONAGUA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga una Dragón de Agua mascota.'
+    granted-permissions:
+    - mcpets.dragon.agua
+    tier: TIER3
+MASCOTADRAGONAGUABEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga una Dragón bebé de Agua mascota.'
+    granted-permissions:
+    - mcpets.dragon.agua.bebe
+    tier: TIER2
+MASCOTADRAGONBOSQUE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga una Dragón del Bosque mascota.'
+    granted-permissions:
+    - mcpets.dragon.bosque
+    tier: TIER3
+MASCOTADRAGONBOSQUEBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé del Bosque mascota.'
+    granted-permissions:
+    - mcpets.dragon.bosque.bebe
+    tier: TIER2
+MASCOTADRAGONELECTRICO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón Eléctrico mascota.'
+    granted-permissions:
+    - mcpets.dragon.electro
+    tier: TIER3
+MASCOTADRAGONELECTRICOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé Eléctrico mascota.'
+    granted-permissions:
+    - mcpets.dragon.electro.bebe
+    tier: TIER2
+MASCOTADRAGONFUEGO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón de Fuego mascota.'
+    granted-permissions:
+    - mcpets.dragon.fuego
+    tier: TIER3
+MASCOTADRAGONFUEGOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé de Fuego mascota.'
+    granted-permissions:
+    - mcpets.dragon.fuego.bebe
+    tier: TIER2
+MASCOTADRAGONHIELO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón de Hielo mascota.'
+    granted-permissions:
+    - mcpets.dragon.hielo
+    tier: TIER3
+MASCOTADRAGONHIELOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón de Hielo Bebé mascota.'
+    granted-permissions:
+    - mcpets.dragon.hielo.bebe
+    tier: TIER2
+MASCOTADRAGONNECROTICO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón Necrótico mascota.'
+    granted-permissions:
+    - mcpets.dragon.necrotico
+    tier: TIER3
+MASCOTADRAGONNECROTICOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé Necrótico mascota.'
+    granted-permissions:
+    - mcpets.dragon.necrotico.bebe
+    tier: TIER2
+MASCOTADRAGONRADIANTE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón Radiante mascota.'
+    granted-permissions:
+    - mcpets.dragon.radiante
+    tier: TIER3
+MASCOTADRAGONSONICO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón Sónico mascota.'
+    granted-permissions:
+    - mcpets.dragon.sonico
+    tier: TIER3
+MASCOTADRAGONSONICOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé Sónico mascota.'
+    granted-permissions:
+    - mcpets.dragon.sonico.bebe
+    tier: TIER2
+MASCOTADRAGONVENENO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón de Veneno mascota.'
+    granted-permissions:
+    - mcpets.dragon.veneno
+    tier: TIER3
+MASCOTADRAGONVENENOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé de Veneno mascota.'
+    granted-permissions:
+    - mcpets.dragon.veneno.bebe
+    tier: TIER2
+MASCOTADRAGONVIENTO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón del Viento mascota.'
+    granted-permissions:
+    - mcpets.dragon.viento
+    tier: TIER3
+MASCOTADRAGONVIENTOBEBE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Dragón bebé del Viento mascota.'
+    granted-permissions:
+    - mcpets.dragon.viento.bebe
+    tier: TIER2
+MASCOTABUHOBOSQUE:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Búho del Bosque mascota.'
+    granted-permissions:
+    - mcpets.buhobosque
+    tier: TIER1
+MASCOTAGATOHELADO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Gato Helado mascota.'
+    granted-permissions:
+    - mcpets.gatofrio
+    tier: TIER1
+MASCOTAMUNECAMALDITA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga una Muñeca Maldita mascota.'
+    granted-permissions:
+    - mcpets.munecamaldita
+    tier: TIER1
+MASCOTAPEGASO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Esmeralda'
+    displayed-type: '&5Artefacto'
+    lore:
+    - '&7Te otorga un Pegaso mascota.'
+    granted-permissions:
+    - mcpets.pegaso
+    tier: TIER1
+
+# ESTOICO
+ESTOICO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Estoico'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    armor-toughness: 2.5
+    knockback-resistance: 0.05
+ESTOICO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Estoico'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    armor-toughness: 5.0
+    knockback-resistance: 0.05
+
+# DULCES
+DULCES1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Dulce'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-mana: 2.5
+DULCES2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo Dulce'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-mana: 5.0
+DULCES3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto Dulce'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    max-mana: 7.5
+DULCES4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bReliquia Dulce'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    max-mana: 10.0
+
+# PLUMAS
+PLUMAS1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Plumas'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    fall-damage-reduction: 7.5
+    dodge-rating: 5.0
+PLUMAS2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Plumas'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    fall-damage-reduction: 10.0
+    dodge-rating: 10.0
+PLUMAS3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Plumas'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    fall-damage-reduction: 20.0
+    dodge-rating: 15.0
+
+# PUEBLO
+PUEBLO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman del Pueblo Verde'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pvp-damage-reduction: 2.5
+    stamina-regeneration: 2.5
+PUEBLO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman del Pueblo Azul'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    pvp-damage-reduction: 5.0
+    stamina-regeneration: 5.0
+PUEBLO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman del Pueblo Morado'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pvp-damage-reduction: 7.5
+    stamina-regeneration: 7.5
+PUEBLO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto del Pueblo Dorado'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    pvp-damage-reduction: 10.0
+    stamina-regeneration: 10.0
+
+# CETUS
+CETUS1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Cetus'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    skill-damage: 2.5
+    skill-critical-strike-power: 2.5
+CETUS2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Cetus'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    skill-damage: 5.0
+    skill-critical-strike-power: 5.0
+CETUS3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Cetus'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    skill-damage: 10.0
+    skill-critical-strike-power: 10.0
+
+# OJO
+OJO1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Ojo'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    projectile-damage: 2.5
+OJO2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Ojo'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    projectile-damage: 5.0
+OJO3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto del Ojo'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    projectile-damage: 7.5
+OJO4:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bReliquia del Ojo'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    projectile-damage: 10.0
+
+# SANGRE
+SANGRE1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Sangre'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    parry-rating: 5.0
+SANGRE2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Sangre'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    parry-rating: 10.0
+SANGRE3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Sangre'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    parry-rating: 15.0
+
+# NUCLEOS
+NUCLEOS1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bNucleo Infernal'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    fire-damage-reduction: 10.0
+NUCLEOS2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bNucleo de Magma'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    fire-damage-reduction: 15.0
+NUCLEOS3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bNucleo Pesado'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    fire-damage-reduction: 25.0
+
+# VISION NOCTURNA
+VISIONNOCTURNA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAmuleto de Vision Nocturna'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    perm-effects:
+      NIGHT_VISION: 1.0
+    lore:
+    - '&7Te otorga Visión Nocturna.'
+
+# CAIDA LENTA
+PARALAVA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bParalavas'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    perm-effects:
+      SLOW_FALLING: 1.0
+    lore:
+    - '&7Te otorga Caída Lenta.'
+
+# SELLO FAMILIAR
+SELLOFAMILIAR:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bSello Familiar'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    lore:
+    - '&7Te permitir revivir a los derribados.'
+    granted-permissions:
+    - revivir
+
+# VELOCIDAD
+VELOCIDAD1:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Velocidad'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-stamina: 10.0
+    dodge-rating: 10.0
+VELOCIDAD2:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bAnillo de Velocidad'
+    displayed-type: '&5Accesorio'
+    tier: TIER1
+    max-stamina: 20.0
+    dodge-rating: 12.0
+VELOCIDAD3:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Velocidad'
+    displayed-type: '&5Accesorio'
+    tier: TIER2
+    max-stamina: 30.0
+    dodge-rating: 15.0
+
+# TALISMAN DE FUEGO
+TALISMANFUEGO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Fuego'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    fire-damage-reduction: 100.0
+
+# TALISMAN LAVA
+TALISMANLAVA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Lava'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    perm-effects:
+      FIRE_RESISTANCE: 1.0
+    lore:
+    - '&7Te otorga Resistencia al Fuego.'
+
+# TALISMAN MAREAS
+TALISMANMAREAS:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Marea'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    perm-effects:
+      CONDUIT_POWER: 1.0
+      WATER_BREATHING: 1.0
+    lore:
+    - '&7Te otorga libertad en los mares.'
+
+# RELIQUIA VAMPIRICA
+RELIQUIAVAMPIRICA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bReliquia Vampirica'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    spell-vampirism: 100.0
+    lifesteal: 100.0
+
+# ATRIBUTOS
+DESTREZA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bMaquina de Expreso'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-destreza: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Destreza.'
+CARISMA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCabello de la Armonia'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-carisma: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Carisma.'
+CONSTITUCION:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bBrason Dios de Sangre'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-constitucion: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Constitucion.'
+FUERZA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bGarra de Lobo'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-fuerza: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Fuerza.'
+SABIDURIA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bCelular de Alma'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-sabiduria: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Sabiduria.'
+INTELIGENCIA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman del Intelecto'
+    displayed-type: '&5Accesorio'
+    tier: UNICO
+    additional-inteligencia: 25.0
+    lore:
+    - '&7Te otorga 25 puntos adicionales a tu Inteligencia.'
+
+# EXPERIENCIA
+EXPGENERAL:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bArtefacto de Experiencia'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    additional-experience: 25.0
+EXPLENADOR:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Leniador'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    additional-experience-woodcutting: 25.0
+EXPGRANJA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman de Chambeador'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    additional-experience-farming: 25.0
+EXPPESCA:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman Estrellado'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    additional-experience-fishing: 25.0
+EXPMINERO:
+  base:
+    material: HEART_OF_THE_SEA
+    name: '&bTalisman del Gran Minero'
+    displayed-type: '&5Accesorio'
+    tier: TIER3
+    additional-experience-mining: 25.0
+

@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:ACACIATIER2
+unlock: false
+result: minecraft:acacia_planks 4

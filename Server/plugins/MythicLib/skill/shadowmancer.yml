@@ -1,0 +1,39 @@
+SHADOW_BURST:
+    mythicmobs-skill-id: Shadow_Burst
+    modifiers:
+    - damage
+
+SHADOW_TELEPORT:
+    mythicmobs-skill-id: Shadow_Teleport
+    
+DARK_MONARCH:
+    mythicmobs-skill-id: Dark_Monarch
+    passive-type: TIMER
+    
+DARK_MONARCH_FRIGHTEN:
+    mythicmobs-skill-id: Dark_Monarch_FRIGHTEN
+    passive-type: DAMAGED
+    
+SHADOW_KNIGHT:
+    mythicmobs-skill-id: Shadow_Knight
+    modifiers:
+    - damage
+    
+SHADOW_ARCHER:
+    mythicmobs-skill-id: Shadow_Archer
+    modifiers:
+    - damage
+    - duration
+    
+BLADES_OF_SHADOW:
+    mythicmobs-skill-id: Blades_Of_Shadow
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - duration
+    
+SHADOW_DRAGON:
+    mythicmobs-skill-id: Shadow_Dragon
+    modifiers:
+    - damage
+    - duration

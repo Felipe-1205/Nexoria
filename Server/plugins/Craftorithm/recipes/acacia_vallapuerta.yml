@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'bab'
+- 'bab'
+source:
+  a: minecraft:acacia_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:acacia_fence_gate

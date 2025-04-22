@@ -1,0 +1,212 @@
+{
+	"credit": "Made with Blockbench",
+	"texture": "head_zombie.png",
+	"textureSize": [64, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, 0, 0],
+			"submodels": [
+				{
+					"id": "zombie_head",
+					"invertAxis": "xy",
+					"translate": [0, 23.5, 0],
+					"submodels": [
+						{
+							"id": "zombie_head_dismember",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "zombie_head_death",
+									"invertAxis": "xy",
+									"translate": [0, 0, 0],
+									"submodels": [
+										{
+											"id": "zombie_new_skull_pivot",
+											"invertAxis": "xy",
+											"translate": [0, 8, 0],
+											"submodels": [
+												{
+													"id": "zombie_new_skull",
+													"invertAxis": "xy",
+													"translate": [0, -8, 0],
+													"submodels": [
+														{
+															"id": "zombie_new_skull_head",
+															"invertAxis": "xy",
+															"translate": [0, 0, 0],
+															"submodels": [
+																{
+																	"id": "zombie_new_skull_head_rot",
+																	"invertAxis": "xy",
+																	"translate": [0, -23.5, -4],
+																	"rotate": [10, 0, 0],
+																	"boxes": [
+																		{"coordinates": [-4, 1.5, 0, 8, 8, 8], "textureOffset": [0, 0]},
+																		{"coordinates": [3.25, 8.6, -0.2, 1, 1, 1], "textureOffset": [4, 6]},
+																		{"coordinates": [-4.05, 7.51, -0.1, 1, 1, 1], "textureOffset": [0, 6]},
+																		{"coordinates": [2, 1.5, 0, 1, 1, 1], "textureOffset": [12, 41]},
+																		{"coordinates": [-2, 8.5, 0, 2, 1, 1], "textureOffset": [6, 41]},
+																		{"coordinates": [-4, 5.5, 5, 1, 1, 1], "textureOffset": [28, 36]},
+																		{"coordinates": [-4, 4.5, 2, 1, 1, 1], "textureOffset": [30, 34]},
+																		{"coordinates": [0, 0.5, -0.05, 1, 1, 1], "textureOffset": [15, 46]}
+																	],
+																	"submodels": [
+																		{
+																			"id": "body_sub_14",
+																			"invertAxis": "xy",
+																			"mirrorTexture": "u",
+																			"translate": [0, 1.5, 4],
+																			"boxes": [
+																				{"coordinates": [3.25, 5, 1, 1, 1, 1], "textureOffset": [4, 4]}
+																			]
+																		},
+																		{
+																			"id": "brain",
+																			"invertAxis": "xy",
+																			"translate": [0, 5.5, 4],
+																			"boxes": [
+																				{"coordinates": [-2, -2, -2, 4, 4, 4], "textureOffset": [0, 43], "sizeAdd": 0.7}
+																			]
+																		},
+																		{
+																			"id": "eye_socket_left",
+																			"invertAxis": "xy",
+																			"mirrorTexture": "u",
+																			"translate": [0, -22.5, 4],
+																			"boxes": [
+																				{"coordinates": [-3, 27, -4, 2, 3, 1], "textureOffset": [0, 33]}
+																			],
+																			"submodels": [
+																				{
+																					"id": "eye_left",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "eye_left_sub",
+																							"invertAxis": "xy",
+																							"translate": [-2, 28, -3.5],
+																							"submodels": [
+																								{
+																									"id": "eye_left_anim",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 40], "sizeAdd": -0.5}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "eye_socket_right",
+																			"invertAxis": "xy",
+																			"translate": [0, -22.5, 4],
+																			"boxes": [
+																				{"coordinates": [1, 27, -4, 2, 3, 1], "textureOffset": [0, 33]}
+																			],
+																			"submodels": [
+																				{
+																					"id": "eye_right",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "eye_right_sub",
+																							"invertAxis": "xy",
+																							"translate": [2, 28, -3.5],
+																							"submodels": [
+																								{
+																									"id": "eye_right_anim",
+																									"invertAxis": "xy",
+																									"translate": [0, 0, 0],
+																									"boxes": [
+																										{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 40], "sizeAdd": -0.5}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "flesh_bulbs",
+																			"invertAxis": "xy",
+																			"translate": [-3.875, 7.5, 4],
+																			"submodels": [
+																				{
+																					"id": "flesh_bulb_small",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"boxes": [
+																						{"coordinates": [-0.375, 0, -1, 1, 1, 1], "textureOffset": [4, 4]}
+																					]
+																				},
+																				{
+																					"id": "flesh_bulb_large",
+																					"invertAxis": "xy",
+																					"translate": [3.875, -30, 0],
+																					"boxes": [
+																						{"coordinates": [-4.5, 29, 0, 1, 1, 1], "textureOffset": [4, 2]}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "hanging_flesh",
+																			"invertAxis": "xy",
+																			"translate": [2, 1.5, 1],
+																			"rotate": [40, 0, 0],
+																			"boxes": [
+																				{"coordinates": [-1, -2, 0, 2, 2, 0], "textureOffset": [16, 41]}
+																			]
+																		},
+																		{
+																			"id": "reg_mouth",
+																			"invertAxis": "xy",
+																			"translate": [0, 4.25, 0.15],
+																			"boxes": [
+																				{"coordinates": [-1, -4.5, -0.5, 2, 5, 1], "textureOffset": [20, 41], "sizeAdd": -0.2}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"brain.sx": "torad(55)+sin(time)*0.03+-sin(time*1.1)*0.03",
+					"brain.sy": "torad(55)+sin(time)*0.03-sin(time*1.1)*0.03",
+					"brain.sz": "torad(55)+sin(time)*0.03-sin(time*1.1)*0.03",
+					"reg_mouth.sy": "torad(55)+sin(time*0.5)*0.01*torad(55)+sin(time*3)*0.009"
+				},
+				{
+					"eye_left_anim.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"eye_left_anim.ty": "-sin(time*2.15)*0.1+head_pitch* 0.01",
+					"eye_right.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"eye_right.ty": "-sin(time*2.15)*0.1+-head_pitch* 0.01"
+				}
+			]
+		}
+	]
+}

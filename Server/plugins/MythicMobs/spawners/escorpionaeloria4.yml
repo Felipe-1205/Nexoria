@@ -1,0 +1,27 @@
+escorpionaeloria4:
+  World: eutonia
+  X: -573
+  Y: 27
+  Z: -164
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: Scorpion_King
+  Radius: 0.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '1'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 60
+  Warmup: 0
+  ActivationRange: 15.0
+  ScalingRange: 25.0
+  LeashRange: 32.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []
+  CooldownTimer: 1

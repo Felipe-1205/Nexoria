@@ -1,0 +1,338 @@
+# CLERIGOS
+BASTON1:
+  base:
+    material: BOW
+    name: '&bBaston de Olwen'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 5.0
+    attack-damage: 3.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 1.0
+    max-durability: 1000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTON2:
+  base:
+    material: BOW
+    name: '&bCetro Dorado'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 6.0
+    attack-damage: 4.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 10.0
+    max-durability: 1500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTON3:
+  base:
+    material: BOW
+    name: '&bBaston Celta Sagrado'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 7.0
+    attack-damage: 5.0
+    attack-speed: 1.9
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 20.0
+    max-durability: 2000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTON4:
+  base:
+    material: BOW
+    name: '&bBaston Alado Sagrado'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 8.0
+    attack-damage: 6.0
+    attack-speed: 1.9
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 30.0
+    max-durability: 2500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTON5:
+  base:
+    material: BOW
+    name: '&bBaston del Guardian de Northgate'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 9.0
+    attack-damage: 7.0
+    attack-speed: 2.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 40.0
+    max-durability: 3000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTON6:
+  base:
+    material: BOW
+    name: '&bBaston Divino'
+    displayed-type: '&5Canalizador de Clérigo'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 9.0
+    attack-damage: 8.0
+    attack-speed: 2.0
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - clerigo
+    lore:
+    - '&5Un d6 de daño de radiante.'
+    required-level: 50.0
+    max-durability: 3500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+# HECHICERO
+HECHICERO1:
+  base:
+    material: BOW
+    name: '&bBaston del Ermitanio Bermunde'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 5.0
+    attack-damage: 3.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 1.0
+    max-durability: 1000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+HECHICERO2:
+  base:
+    material: BOW
+    name: '&bBaston de la Serpiente Negra'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 6.0
+    attack-damage: 4.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 10.0
+    max-durability: 1500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+HECHICERO3:
+  base:
+    material: BOW
+    name: '&bBaston Nocturno'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 7.0
+    attack-damage: 5.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 20.0
+    max-durability: 2000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+HECHICERO4:
+  base:
+    material: BOW
+    name: '&bBaston del Lich'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 8.0
+    attack-damage: 6.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 30.0
+    max-durability: 2500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+HECHICERO5:
+  base:
+    material: BOW
+    name: '&bBaston de la Bruja Goblin'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 9.0
+    attack-damage: 7.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 40.0
+    max-durability: 3000.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+HECHICERO6:
+  base:
+    material: BOW
+    name: '&bBaston de la Sabiduria Profana'
+    displayed-type: '&5Canalizador de Hechicero'
+    max-stack-size: 1.0
+    disable-interaction: true
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    range: 9.0
+    attack-damage: 8.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    required-class:
+    - hechicero
+    mana-regeneration: 1.0
+    lore:
+    - '&5Un d6 de daño de fuego o necrótico.'
+    required-level: 50.0
+    max-durability: 3500.0
+    entity-interaction-range: -5.0
+    block-interaction-range: -5.0
+BASTONPRUEBAGEMA:
+  base:
+    material: DIAMOND_HOE
+    gem-sockets:
+    - Armadura
+    - Arma

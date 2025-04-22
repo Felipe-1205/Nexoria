@@ -1,0 +1,9 @@
+type: shaped
+shape:
+- 'bab'
+- 'bab'
+source:
+  a: minecraft:jungle_planks
+  b: mmoitems:MATERIAL:PALO
+unlock: false
+result: minecraft:jungle_fence_gate

@@ -1,0 +1,32 @@
+name: Segundo Aliento
+lore:
+- Otorga &8{drain} &7puntos de vida
+- tras haber golpeado a tu objetivo
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: RED_DYE
+timer:
+  base: 0
+  per-level: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+delay:
+  base: 0
+  per-level: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 2
+  per-level: 1
+cooldown:
+  base: 2
+  per-level: 1
+drain:
+  base: 6
+  per-level: 1
+  min: 0
+  max: 0
+categories:
+- "PASSIVE"

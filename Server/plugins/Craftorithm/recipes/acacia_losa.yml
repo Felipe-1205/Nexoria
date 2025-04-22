@@ -1,0 +1,7 @@
+type: shaped
+shape:
+- 'aaa'
+source:
+  a: minecraft:acacia_planks
+unlock: false
+result: minecraft:acacia_slab 6

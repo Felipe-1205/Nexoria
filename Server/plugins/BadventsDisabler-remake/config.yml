@@ -1,0 +1,71 @@
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+#  ╭━━╮╭━━━╮
+#  ┃╭╮┃╰╮╭╮┃  Plugin Version: 1.4.1
+#  ┃╰╯╰╮┃┃┃┃  Author: DrivenByData-Studio (brihtakai)
+#  ┃╭━╮┃┃┃┃┃  Version Compatibility: 1.13.x-1.21.x
+#  ┃╰━╯┣╯╰╯┃  Supported Plugins: [MultiverseCore]
+#  ╰━━━┻━━━╯
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+# This plugin will completely disable specific advancements in specific worlds and its rewards.
+# If you need support or you want to report bug, you can find me on Discord by name 'brihtec'.
+# I Would be glad if you take some time and review this plugin, so I can make it better in the future.
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+# Welcome to Badventdisabler-remake config. Here you can configure almost everything about this plugin.
+# In messages, you can use ChatColor (example: &aThisIsGreen) and HEX colors (example: &#084CFBHEXCOLOR).
+# No setting can be empty!
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+# ------------------------------- MAIN OPTIONS ---------------------------------
+# Here you list names of the worlds you want to disable advancements in.
+disabled-worlds:
+  - eutonia
+  - principal
+  - world
+  - pasatiempos
+
+# Select the mode the plugin will operate on.
+# You can choose between:
+#- ALL - this will disable ALL advancements (default)
+#- ALL-EXCEPT - this will disable ALL advancement EXCEPT these provided on list
+#- ONLY-THESE - this will disable ONLY advancements provided on list
+# (don't use colors + you can ignore case, it means you can type 'aLl' and it will still work)
+mode: "ALL"
+
+# ONLY IF YOU SELECTED ALL-EXCEPT MODE, THIS WILL BE READ:
+# As example 'story/mine_diamond' you have to write advancement KEY not name.
+# You can find list of keys here: https://minecraft.fandom.com/wiki/Advancement
+# ...or you can use /advancement command in minecraft and use TAB complete to get keys.
+all-except:
+  - "story/mine_diamond"
+
+# ONLY IF YOU SELECTED ONLY-THESE MODE, THIS WILL BE READ:
+# As example 'story/mine_diamond' you have to write advancement KEY not name.
+# You can find list of keys here: https://minecraft.fandom.com/wiki/Advancement
+# ...or you can use /advancement command in minecraft and use TAB complete to get keys.
+only-these:
+  - "story/mine_diamond"
+
+# ------------------------------------------------------------------------------
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+# ------------------------------- ALTER OPTIONS ---------------------------------
+# Set this true or false. Will it check for updates and notify you, or not?
+update-check: true
+
+# Set this true or false. Will it send message when someone 'gets' advancement in disabled world?
+enable-message-in-disabled-worlds: false
+# ...then set the message that will be sent if true (btw this won't spam - it's on 5sec cooldown):
+message-in-disabled-worlds: "&cYou are in disabled world, so you didn't get advancement."
+
+# You can customize this messages:
+# This will be sent when someone reloads the plugin (/bdreload)
+reload-message: "&cSuccessfully reloaded and changed gamerules."
+# This will be sent as a deny message to someone who doesn't have permission to execute reload command.
+no-perm: "&4✖ No perm"
+# ------------------------------------------------------------------------------
+#╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮╭━━╮
+#╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯╰━━╯
+# My Ko-fi, just in case :)  |  https://ko-fi.com/brihtakai

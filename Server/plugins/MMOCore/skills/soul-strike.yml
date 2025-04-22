@@ -1,0 +1,37 @@
+name: Soul Strike
+lore:
+- '&9Your spirit guardian swings his sword, striking'
+- '&9targets in front of you. If you use this skill'
+- '&9again at the right timing after a slash, the'
+- '&9spirit guardian continues his next swing and'
+- '&9creates a slashing combo up to 2 times.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2102'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 6
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0.5
+  per-level: 0
+  min: 0.5
+  max: 0.5

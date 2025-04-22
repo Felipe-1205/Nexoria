@@ -1,0 +1,32 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+DRAGON_SLASH:
+    mythicmobs-skill-id: Dragon_Slash
+    modifiers:
+    - damage
+
+DRAGON_DASH:
+    mythicmobs-skill-id: Dragon_Dash
+    modifiers:
+    - damage
+    
+DRAGON_SKIN:
+    mythicmobs-skill-id: Dragon_Skin
+    passive-type: DAMAGED
+    modifiers:
+    - damage
+    
+DRAGON_ZONE:
+    mythicmobs-skill-id: Dragon_Zone
+    modifiers:
+    - duration
+    
+DRAGON_BREATH:
+    mythicmobs-skill-id: Dragon_Breath
+    modifiers:
+    - damage
+    
+DRAGONBORN:
+    mythicmobs-skill-id: Dragonborn
+    modifiers:
+    - damage
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

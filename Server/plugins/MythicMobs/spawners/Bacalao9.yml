@@ -1,0 +1,27 @@
+Bacalao9:
+  World: principal
+  X: 2012
+  Y: 60
+  Z: 2467
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: NATBACALAO
+  SpawnerGroup: ''
+  Radius: 0.0
+  RadiusY: 1.0
+  UseTimer: true
+  MaxMobs: '5'
+  MobLevel: '1'
+  MobsPerSpawn: 5
+  Cooldown: 0
+  Warmup: 0
+  ActivationRange: 32.0
+  ScalingRange: 25.0
+  LeashRange: -1.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

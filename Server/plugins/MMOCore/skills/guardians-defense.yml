@@ -1,0 +1,30 @@
+name: Guardians Defense
+lore:
+- '&9Your spirit guardian covers you with his'
+- '&9shield, blocking projectiles and attacks'
+- '&9targeted at you. Use this skill continuously'
+- '&9to stay in shield mode.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2100'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

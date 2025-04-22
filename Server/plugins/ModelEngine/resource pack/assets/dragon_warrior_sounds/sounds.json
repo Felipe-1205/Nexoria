@@ -1,0 +1,105 @@
+{
+  "samus.dragon_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_aura"
+    ]
+  },
+  "samus.dragon_breath": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_breath"
+    ]
+  },
+  "samus.dragon_impact": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_impact"
+    ]
+  },
+  "samus.dragon_leap_up": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_leap_up"
+    ]
+  },
+  "samus.dragon_pierce": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_pierce"
+    ]
+  },
+  "samus.dragon_pulse": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_pulse"
+    ]
+  },
+  "samus.dragon_roar_1": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_roar_1"
+    ]
+  },
+  "samus.dragon_roar_2": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_roar_2"
+    ]
+  },
+  "samus.dragon_slash": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_slash",
+	  "samus/dragon_warrior/dragon_slash_2"
+    ]
+  },
+  "samus.dragon_slash_x": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_slash_x"
+    ]
+  },
+  "samus.dragon_smash_ground": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_smash_ground"
+    ]
+  },
+  "samus.dragon_spear_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_spear_smash"
+    ]
+  },
+  "samus.dragon_wheel": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_wheel"
+    ]
+  },
+  "samus.dragon_wheel_aura": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_wheel_aura"
+    ]
+  },
+  "samus.dragonborn_smash": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragonborn_smash"
+    ]
+  },
+  "samus.summon_dragon_spear": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/summon_dragon_spear"
+    ]
+  },
+  "samus.dragon_wings_spread": {
+    "category": "master",
+    "sounds": [
+      "samus/dragon_warrior/dragon_wings_spread"
+    ]
+  }
+}

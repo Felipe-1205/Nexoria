@@ -1,0 +1,40 @@
+name: Soul Scythe
+lore:
+- '&aSummon a soul scythe and slash your enemies,'
+- '&adraining souls from each enemy and healing yourself.'
+- ''
+- '&c{damage} Damage'
+- '&a{heal} Heal'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2157'
+damage:
+  base: 5
+  per-level: 1
+  min: 5
+  max: 7
+heal:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 5
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4

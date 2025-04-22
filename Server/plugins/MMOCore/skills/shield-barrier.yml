@@ -1,0 +1,29 @@
+name: Shield Barrier
+lore:
+- '&6Summon 4 shield barriers that protect you and'
+- '&6push away nearby targets. A shield will break'
+- "&6if you get attacked but you don't get any damage"
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2057'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 12
+  per-level: -0.3
+  min: 9
+  max: 12

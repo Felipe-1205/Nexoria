@@ -1,0 +1,35 @@
+name: Estocada del Gladiador
+lore:
+- Provoca un ataque que perfora
+- a los enemigos en línea recta 
+- ocasionando &8{damage} &7puntos de daño al impactar.
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: TRIDENT
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+damage:
+  base: 6
+  per-level: 0.3
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 8
+  per-level: -1.4
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: 0.2

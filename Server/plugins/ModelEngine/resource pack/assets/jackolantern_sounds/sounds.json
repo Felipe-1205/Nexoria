@@ -1,0 +1,20 @@
+{
+  "samus.crow_1": {
+    "category": "master",
+    "sounds": [
+      "samus/jackolantern/crow_1"
+    ]
+  },
+  "samus.crow_2": {
+    "category": "master",
+    "sounds": [
+      "samus/jackolantern/crow_2"
+    ]
+  },
+  "samus.nightmare_sound": {
+    "category": "master",
+    "sounds": [
+      "samus/jackolantern/nightmare_sound"
+    ]
+  }
+}

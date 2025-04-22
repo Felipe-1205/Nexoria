@@ -1,0 +1,8 @@
+type: shaped
+shape:
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:granite
+unlock: false
+result: minecraft:granite_wall 6

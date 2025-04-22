@@ -1,0 +1,713 @@
+{
+	"credit": "Made with Blockbench",
+	"textureSize": [600, 64],
+	"models": [
+		{
+			"part": "head",
+			"id": "head",
+			"invertAxis": "xy",
+			"translate": [0, -18, 0]
+		},
+		{
+			"part": "body",
+			"id": "body",
+			"invertAxis": "xy",
+			"translate": [0, -18, 0],
+			"submodels": [
+				{
+					"id": "all",
+					"invertAxis": "xy",
+					"translate": [0, 0, 0],
+					"submodels": [
+						{
+							"id": "creeper_swap",
+							"invertAxis": "xy",
+							"translate": [0, 0, 0],
+							"submodels": [
+								{
+									"id": "creeper_all",
+									"invertAxis": "xy",
+									"translate": [0, -1, 0],
+									"submodels": [
+										{
+											"id": "creeper_body",
+											"invertAxis": "xy",
+											"translate": [0, 1, 0],
+											"submodels": [
+												{
+													"id": "creeper_nolegs",
+													"invertAxis": "xy",
+													"translate": [0, 6, 0],
+													"submodels": [
+														{
+															"id": "creeper_body_death",
+															"invertAxis": "xy",
+															"translate": [0, -1, 0],
+															"submodels": [
+																{
+																	"id": "creeper_body_piv",
+																	"invertAxis": "xy",
+																	"translate": [0, 19, 0],
+																	"boxes": [
+																		{"coordinates": [-4, -18, -2, 8, 12, 4], "textureOffset": [16, 16]},
+																		{"coordinates": [-3, -15, -2, 6, 7, 2], "textureOffset": [38, 33]}
+																	],
+																	"submodels": [
+																		{
+																			"id": "creeper_jaw_body_top_right",
+																			"invertAxis": "xy",
+																			"translate": [1, -1.5598, -1.95851],
+																			"submodels": [
+																				{
+																					"id": "creeper_jaw_body_top_right_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "creeper_jaw_body_top_right_twitch",
+																							"invertAxis": "xy",
+																							"translate": [0, 0, 0],
+																							"submodels": [
+																								{
+																									"id": "creeper_jaw_body_top_right_rot",
+																									"invertAxis": "xy",
+																									"translate": [1, -2, 0.75],
+																									"rotate": [0, -42.5, -90],
+																									"boxes": [
+																										{"coordinates": [2.05503, -1.21756, -7.17563, 4, 4, 5], "textureOffset": [40, 22]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "creeper_jaw_body_top_left",
+																			"invertAxis": "xy",
+																			"translate": [-1, -1.5598, -1.95851],
+																			"submodels": [
+																				{
+																					"id": "creeper_jaw_body_top_left_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "creeper_jaw_body_top_left_twitch",
+																							"invertAxis": "xy",
+																							"translate": [0, 0, 0],
+																							"submodels": [
+																								{
+																									"id": "creeper_jaw_body_top_left_rot",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [-1, -2, 0.75],
+																									"rotate": [0, 42.5, 90],
+																									"boxes": [
+																										{"coordinates": [-6.05503, -1.21756, -7.17563, 4, 4, 5], "textureOffset": [40, 22]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "creeper_jaw_body_bottom_left",
+																			"invertAxis": "xy",
+																			"translate": [-0.5, -7.5098, -1.95851],
+																			"submodels": [
+																				{
+																					"id": "creeper_jaw_body_bottom_left_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "creeper_jaw_body_bottom_left_twitch",
+																							"invertAxis": "xy",
+																							"translate": [0, 0, 0],
+																							"submodels": [
+																								{
+																									"id": "creeper_jaw_body_bottom_left_rot",
+																									"invertAxis": "xy",
+																									"mirrorTexture": "u",
+																									"translate": [-1, -2, 0.75],
+																									"rotate": [0, 42.5, 90],
+																									"boxes": [
+																										{"coordinates": [-6.0396, -0.21756, -6.82241, 4, 4, 5], "textureOffset": [40, 22]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "creeper_jaw_body_bottom_right",
+																			"invertAxis": "xy",
+																			"translate": [1.5, -7.5098, -1.95851],
+																			"submodels": [
+																				{
+																					"id": "creeper_jaw_body_bottom_right_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "creeper_jaw_body_bottom_right_twitch",
+																							"invertAxis": "xy",
+																							"translate": [0, 0, 0],
+																							"submodels": [
+																								{
+																									"id": "creeper_jaw_body_bottom_right_rot",
+																									"invertAxis": "xy",
+																									"translate": [1, -2, 0.75],
+																									"rotate": [0, -42.5, -90],
+																									"boxes": [
+																										{"coordinates": [2.0396, -1.21756, -6.82241, 4, 4, 5], "textureOffset": [40, 22]}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		},
+																		{
+																			"id": "creeper_head",
+																			"invertAxis": "xy",
+																			"translate": [0, -5.75, 0],
+																			"submodels": [
+																				{
+																					"id": "creeper_head_dismember",
+																					"invertAxis": "xy",
+																					"translate": [0, 0, 0],
+																					"submodels": [
+																						{
+																							"id": "creeper_float",
+																							"invertAxis": "xy",
+																							"translate": [0, 0.25, 0],
+																							"submodels": [
+																								{
+																									"id": "creeper_head_piv",
+																									"invertAxis": "xy",
+																									"translate": [0, 8.5, 0],
+																									"boxes": [
+																										{"coordinates": [-4, -9, -4, 8, 8, 8], "textureOffset": [0, 0]}
+																									],
+																									"submodels": [
+																										{
+																											"id": "creeper_mouth_glow",
+																											"invertAxis": "xy",
+																											"translate": [0, -7, -4],
+																											"boxes": [
+																												{"coordinates": [-2, -2, 0.25, 4, 4, 1], "textureOffset": [6, 26], "sizeAdd": -0.5}
+																											]
+																										},
+																										{
+																											"id": "creeper_jaw_right",
+																											"invertAxis": "xy",
+																											"translate": [1, -5.0098, -2.95851],
+																											"submodels": [
+																												{
+																													"id": "creeper_jaw_right_dismember",
+																													"invertAxis": "xy",
+																													"translate": [0, 0, 0],
+																													"submodels": [
+																														{
+																															"id": "creeper_jaw_right_move",
+																															"invertAxis": "xy",
+																															"translate": [0, 0, 0],
+																															"submodels": [
+																																{
+																																	"id": "creeper_jaw_right_twitch",
+																																	"invertAxis": "xy",
+																																	"translate": [0, 0, 0],
+																																	"submodels": [
+																																		{
+																																			"id": "creeper_jaw_right_rot",
+																																			"invertAxis": "xy",
+																																			"translate": [1, -2, 0.75],
+																																			"rotate": [0, -42.5, -90],
+																																			"boxes": [
+																																				{"coordinates": [-2, -1.21756, -3.45988, 4, 4, 5], "textureOffset": [40, 22]}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "creeper_jaw_left",
+																											"invertAxis": "xy",
+																											"translate": [-1, -5.0098, -2.95851],
+																											"submodels": [
+																												{
+																													"id": "creeper_jaw_left_dismember",
+																													"invertAxis": "xy",
+																													"translate": [0, 0, 0],
+																													"submodels": [
+																														{
+																															"id": "creeper_jaw_left_move",
+																															"invertAxis": "xy",
+																															"translate": [0, 0, 0],
+																															"submodels": [
+																																{
+																																	"id": "creeper_jaw_left_twitch",
+																																	"invertAxis": "xy",
+																																	"translate": [0, 0, 0],
+																																	"submodels": [
+																																		{
+																																			"id": "creeper_jaw_left_rot",
+																																			"invertAxis": "xy",
+																																			"mirrorTexture": "u",
+																																			"translate": [-1, -2, 0.75],
+																																			"rotate": [0, 42.5, 90],
+																																			"boxes": [
+																																				{"coordinates": [-2, -1.21756, -3.45988, 4, 4, 5], "textureOffset": [40, 22]}
+																																			]
+																																		}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "creeper_eye_socket_right",
+																											"invertAxis": "xy",
+																											"translate": [0, -27, 0],
+																											"boxes": [
+																												{"coordinates": [1, 22, -4, 2, 2, 1], "textureOffset": [2, 0]}
+																											],
+																											"submodels": [
+																												{
+																													"id": "creeper_eye_right",
+																													"invertAxis": "xy",
+																													"translate": [0, -0.2, 0],
+																													"submodels": [
+																														{
+																															"id": "eye_right_sub",
+																															"invertAxis": "xy",
+																															"translate": [2, 22.95, -3.5],
+																															"submodels": [
+																																{
+																																	"id": "eye_right_anim",
+																																	"invertAxis": "xy",
+																																	"translate": [0, 0, 0],
+																																	"boxes": [
+																																		{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 5], "sizeAdd": -0.5}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "creeper_eye_socket_left",
+																											"invertAxis": "xy",
+																											"mirrorTexture": "u",
+																											"translate": [0, -27, 0],
+																											"boxes": [
+																												{"coordinates": [-3, 22, -4, 2, 2, 1], "textureOffset": [2, 0]}
+																											],
+																											"submodels": [
+																												{
+																													"id": "creeper_eye_left",
+																													"invertAxis": "xy",
+																													"translate": [0, -5.25, 0],
+																													"submodels": [
+																														{
+																															"id": "creeper_eye_left_sub",
+																															"invertAxis": "xy",
+																															"translate": [-2, 28, -3.5],
+																															"submodels": [
+																																{
+																																	"id": "creeper_eye_left_anim",
+																																	"invertAxis": "xy",
+																																	"mirrorTexture": "u",
+																																	"translate": [0, 0, 0],
+																																	"boxes": [
+																																		{"coordinates": [-1, -1, -0.5, 2, 2, 1], "textureOffset": [0, 5], "sizeAdd": -0.5}
+																																	]
+																																}
+																															]
+																														}
+																													]
+																												}
+																											]
+																										},
+																										{
+																											"id": "creeper_mouth",
+																											"invertAxis": "xy",
+																											"translate": [-2, -30, 0],
+																											"boxes": [
+																												{"coordinates": [0, 22, -4, 4, 2, 1], "textureOffset": [24, 0]},
+																												{"coordinates": [1, 24, -4, 2, 1, 1], "textureOffset": [24, 3]},
+																												{"coordinates": [3, 21, -4, 1, 1, 1], "textureOffset": [24, 5]},
+																												{"coordinates": [0, 21, -4, 1, 1, 1], "textureOffset": [24, 5]}
+																											]
+																										}
+																									]
+																								}
+																							]
+																						}
+																					]
+																				}
+																			]
+																		}
+																	]
+																}
+															]
+														}
+													]
+												},
+												{
+													"id": "creeper_leg1",
+													"invertAxis": "xy",
+													"mirrorTexture": "u",
+													"translate": [2, 6, 4],
+													"submodels": [
+														{
+															"id": "creeper_leg1_anim",
+															"invertAxis": "xy",
+															"mirrorTexture": "u",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-2, -6, -2, 4, 6, 4], "textureOffset": [0, 16]}
+															]
+														}
+													]
+												},
+												{
+													"id": "creeper_leg2",
+													"invertAxis": "xy",
+													"translate": [-2, 6, 4],
+													"submodels": [
+														{
+															"id": "creeper_leg2_anim",
+															"invertAxis": "xy",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-2, -6, -2, 4, 6, 4], "textureOffset": [0, 16]}
+															]
+														}
+													]
+												},
+												{
+													"id": "creeper_leg3",
+													"invertAxis": "xy",
+													"mirrorTexture": "u",
+													"translate": [2, 6, -4],
+													"submodels": [
+														{
+															"id": "creeper_leg3_anim",
+															"invertAxis": "xy",
+															"mirrorTexture": "u",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-2, -6, -2, 4, 6, 4], "textureOffset": [0, 16]}
+															]
+														}
+													]
+												},
+												{
+													"id": "creeper_leg4",
+													"invertAxis": "xy",
+													"translate": [-2, 6, -4],
+													"submodels": [
+														{
+															"id": "creeper_leg4_anim",
+															"invertAxis": "xy",
+															"translate": [0, 0, 0],
+															"boxes": [
+																{"coordinates": [-2, -6, -2, 4, 6, 4], "textureOffset": [0, 16]}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"animations": [
+				{
+					"var.veil": "clamp(if((var.distance  < var.limit  || health < 20) && var.veil_countdown < 50, var.veil + 800 * frame_time, var.veil - 800 * frame_time), 0 , 100) ",
+					"var.veil_countdown": "if(var.veil > 0, var.veil_countdown + 100 * frame_time, var.veil_countdown + 0 * frame_time)",
+					"var.walkeffects": "clamp(if(limb_speed > 0.1, var.walkeffects + 0.5 * frame_time, var.walkeffects - 1000 * frame_time), 0, 2)"
+				},
+				{
+					"all.sx": "torad(58)",
+					"all.sy": "torad(58)",
+					"all.sz": "torad(58)"
+				},
+				{
+					"creeper_swap.ty": "sin(age) * var.walkeffects",
+					"creeper_swap.tx": "sin(age * 0.5) * var.walkeffects / 4"
+				},
+				{
+					"creeper_swap.sx": "torad(57.5) +-torad(var.vanish_death) + -torad(var.swap)",
+					"creeper_swap.sy": "torad(57.5)+-torad(var.vanish_death) + -torad(var.swapy)",
+					"creeper_swap.sz": "torad(57.5)+-torad(var.vanish_death) + -torad(var.swap) ",
+					"creeper_swap.ry": "-torad(var.swap_spin)"
+				},
+				{
+					"var.distance_closure": "clamp(if(var.distance  < var.limit  , var.distance_closure + 50 * frame_time, var.distance_closure + 0 * frame_time), 0, 100)",
+					"var.swap": "clamp(if( var.distance  > var.limit  && health > 19 && var.distance_closure == 0, var.swap + 100 * frame_time, var.swap - 100 * frame_time), 0, 57.5)",
+					"var.swapy": "clamp(if(var.distance  > var.limit  && health > 19 && var.distance_closure == 0, var.swapy + 100 * frame_time, var.swapy - 100 * frame_time), 0, 57.5)",
+					"var.particlesize_delay": "clamp(if(var.particlesize != 57.5, var.particlesize_delay + 50 * frame_time, var.particlesize_delay * frame_time), 0, 50)",
+					"var.particlesize": "clamp(if(var.particlesize_delay == 50 , var.particlesize + 60 * frame_time, var.particlesize - 1000 * frame_time), 0, 57.5)",
+					"var.particlesize_delay2": "clamp(if(var.particlesize2 != 57.5, var.particlesize_delay2 + 100 * frame_time, var.particlesize_delay2 * frame_time), 0, 200)",
+					"var.particlesize2": "clamp(if(var.particlesize_delay2 == 200 , var.particlesize2 + 20 * frame_time, var.particlesize2 - 1000 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.distance": "sqrt(pow(pos_x  -player_pos_x, 2) + pow(pos_y - player_pos_y, 2) + pow(pos_z - player_pos_z, 2))",
+					"var.limit": 5
+				},
+				{
+					"creeper_all.rz": "if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90), 0)",
+					"creeper_all.rx": "if(death_time > 0, -torad(min(sqrt((death_time - 1) / 20 * 1.6), 1) * 90), 0)",
+					"creeper_all.ry": "if(death_time > 0, head_yaw* 0.05 , 0)"
+				},
+				{
+					"creeper_body.rz": "sin(time * 0.3) * 0.1 + if(death_time >0, torad(var.death_physics) * 0.7, 0) ",
+					"creeper_body.rx": "if(death_time >0, torad(var.death_physics) * 0.7, 0) ",
+					"creeper_nolegs.rx": "sin(limb_swing) * limb_speed * 0.4 + if(death_time >0, torad(var.death_physics) * 0.6, 0)  "
+				},
+				{
+					"creeper_head_piv.rz": "head_yaw* 0.002",
+					"creeper_head.rx": "head_pitch* 0.01 + -sin(time*0.05)*0.05 + sin(time*0.05)*0.006 + if(death_time >0, torad(var.death_physics) * 0.8, 0) ",
+					"creeper_head.ry": "head_yaw* 0.005 + -sin(time*0.05)*0.07+sin(time*0.05)*0.1 + if(death_time >0, torad(var.death_physics) * 0.6, 0) ",
+					"creeper_head.rz": "sin(time * 0.5) * 0.1",
+					"creeper_head.tz": "sin(limb_swing) * limb_speed * 3",
+					"creeper_eye_left_anim.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"creeper_eye_left_anim.ty": "-sin(time*2.15)*0.1+head_pitch* 0.01",
+					"creeper_eye_right.tx": "-sin(time*1.5)*0.05+-head_yaw* 0.005",
+					"creeper_eye_right.ty": "-sin(time*2.15)*0.1+-head_pitch* 0.01"
+				},
+				{
+					"var.explode": "clamp(if(var.distance  < var.limit, var.explode + 50 * frame_time, var.explode - 50 * frame_time), 0, 40)"
+				},
+				{
+					"creeper_jaw_right_move.tx": "-torad(var.explode)*3",
+					"creeper_jaw_right.rz": "sin(time * 0.5) * 0.08 + torad(var.explode)",
+					"creeper_jaw_right.ry": "torad(var.explode) * 0.7",
+					"creeper_jaw_right.rx": "sin(time * 0.5) * 0.08",
+					"creeper_jaw_right_twitch.ry": "-sin(time) * 0.02",
+					"creeper_jaw_left_move.tx": "torad(var.explode)*3",
+					"creeper_jaw_left.rz": "-sin(time * 0.5) * 0.08 + -torad(var.explode)",
+					"creeper_jaw_left.ry": "-torad(var.explode) * 0.7",
+					"creeper_jaw_left.rx": "sin(time * 0.5) * 0.08",
+					"creeper_jaw_left_twitch.ry": "sin(time) * 0.02"
+				},
+				{
+					"creeper_jaw_body_top_right.rz": "sin(time * 0.45) * 0.06 + torad(var.explode) * 0.6",
+					"creeper_jaw_body_top_right.ry": "torad(var.explode) * 0.7",
+					"creeper_jaw_body_top_right.rx": "sin(time * 0.45) * 0.06",
+					"creeper_jaw_body_top_right_twitch.ry": "-sin(time*0.45) * 0.015",
+					"creeper_jaw_body_top_left.rz": "-sin(time * 0.45) * 0.06 + -torad(var.explode) * 0.6",
+					"creeper_jaw_body_top_left.ry": "-torad(var.explode) * 0.7",
+					"creeper_jaw_body_top_left.rx": "sin(time * 0.45) * 0.06",
+					"creeper_jaw_body_top_left_twitch.ry": "sin(time*0.45) * 0.15"
+				},
+				{
+					"creeper_jaw_body_bottom_right.rz": "sin(time * 0.35) * 0.1 + torad(var.explode) * 0.35",
+					"creeper_jaw_body_bottom_right.ry": "torad(var.explode) * 0.4",
+					"creeper_jaw_body_bottom_right.rx": "sin(time * 0.35) * 0.1",
+					"creeper_jaw_body_bottom_right_twitch.ry": "-sin(time*0.35) * 0.06",
+					"creeper_jaw_body_bottom_left.rz": "-sin(time * 0.35) * 0.1 + -torad(var.explode) * 0.35",
+					"creeper_jaw_body_bottom_left.ry": "-torad(var.explode) * 0.4",
+					"creeper_jaw_body_bottom_left.rx": "sin(time * 0.35) * 0.1",
+					"creeper_jaw_body_bottom_left_twitch.ry": "sin(time*0.35) * 0.06"
+				},
+				{
+					"creeper_leg1.rx": "sin(limb_swing) * limb_speed + -torad(var.death) * (lerp(random(id + 114), -1.5, 1.5))",
+					"creeper_leg1.rz": "-sin(time * 0.3) * 0.1 +  -torad(var.death) * (lerp(random(id + 115), -1.5, 1.5))",
+					"creeper_leg1_anim.tz": "-sin(limb_swing * 2)*limb_speed * 5",
+					"creeper_leg1_anim.ty": "-clamp(sin(limb_swing * 3 )*limb_speed * 5, 0, 10)",
+					"creeper_leg2.rx": "-sin(limb_swing)*limb_speed +  -torad(var.death) * (lerp(random(id + 116), -1.5, 1.5))",
+					"creeper_leg2.rz": "-sin(time * 0.3) * 0.1 +  -torad(var.death) * (lerp(random(id + 117), -1.5, 1.5))",
+					"creeper_leg2_anim.tz": "sin(limb_swing * 2)*limb_speed * 5",
+					"creeper_leg2_anim.ty": "-clamp(-sin(limb_swing * 3 )*limb_speed * 5, 0, 10)",
+					"creeper_leg3.rx": "-sin(limb_swing)*limb_speed +  -torad(var.death) * (lerp(random(id + 118), -1.5, 1.5))",
+					"creeper_leg3.rz": "-sin(time * 0.3) * 0.1 +  -torad(var.death) * (lerp(random(id + 119), -1.5, 1.5))",
+					"creeper_leg3_anim.tz": "sin(limb_swing * 2)*limb_speed * 5",
+					"creeper_leg3_anim.ty": "-clamp(-sin(limb_swing * 3 )*limb_speed * 5, 0, 10)",
+					"creeper_leg4.rx": "sin(limb_swing)*limb_speed +  -torad(var.death) * (lerp(random(id + 120), -1.5, 1.5))",
+					"creeper_leg4.rz": "-sin(time * 0.3) * 0.1 +  -torad(var.death) * (lerp(random(id + 121), -1.5, 1.5))",
+					"creeper_leg4_anim.tz": "-sin(limb_swing * 2)*limb_speed * 5",
+					"creeper_leg4_anim.ty": "-clamp(sin(limb_swing * 3 )*limb_speed * 5, 0, 10)"
+				},
+				{
+					"var.dismember_jawtr": "clamp(if(health < lerp(random(id + 432), -7, 5), var.dismember_jawtr + 2000 * frame_time, var.dismember_jawtr - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawtr": "min(if(health < lerp(random(id + 432), -7, 5) , var.vanish_delay_jawtr + 50 * frame_time, 0), 20)",
+					"var.vanish_jawtr": "clamp(if(var.vanish_delay_jawtr >= 20, var.vanish_jawtr+ 200 * frame_time, var.vanish_jawtr - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_body_top_right_dismember.ty": "torad(var.dismember_jawtr)",
+					"creeper_jaw_body_top_right_dismember.tx": "torad(var.dismember_jawtr)",
+					"creeper_jaw_body_top_right_dismember.tz": "-torad(var.dismember_jawtr)",
+					"creeper_jaw_body_top_right_dismember.rx": "torad(var.dismember_jawtr)*0.1",
+					"creeper_jaw_body_top_right_dismember.rz": "torad(var.dismember_jawtr)*0.1",
+					"creeper_jaw_body_top_right_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawtr)",
+					"creeper_jaw_body_top_right_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawtr)",
+					"creeper_jaw_body_top_right_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawtr)"
+				},
+				{
+					"var.dismember_jawtl": "clamp(if(health < lerp(random(id + 508), -7, 5), var.dismember_jawtl + 2000 * frame_time, var.dismember_jawtl - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawtl": "min(if(health < lerp(random(id + 508), -7, 5) , var.vanish_delay_jawtl + 50 * frame_time, 0), 20)",
+					"var.vanish_jawtl": "clamp(if(var.vanish_delay_jawtl >= 20, var.vanish_jawtl+ 200 * frame_time, var.vanish_jawtl - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_body_top_left_dismember.ty": "torad(var.dismember_jawtl)",
+					"creeper_jaw_body_top_left_dismember.tx": "torad(var.dismember_jawtl)",
+					"creeper_jaw_body_top_left_dismember.tz": "torad(var.dismember_jawtl)",
+					"creeper_jaw_body_top_left_dismember.rx": "-torad(var.dismember_jawtl)*0.1",
+					"creeper_jaw_body_top_left_dismember.rz": "torad(var.dismember_jawtl)*0.1",
+					"creeper_jaw_body_top_left_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawtl)",
+					"creeper_jaw_body_top_left_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawtl)",
+					"creeper_jaw_body_top_left_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawtl)"
+				},
+				{
+					"var.dismember_jawbl": "clamp(if(health < lerp(random(id + 694), -7, 5), var.dismember_jawbl + 2000 * frame_time, var.dismember_jawbl - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawbl": "min(if(health < lerp(random(id + 694), -7, 5) , var.vanish_delay_jawbl + 50 * frame_time, 0), 20)",
+					"var.vanish_jawbl": "clamp(if(var.vanish_delay_jawbl >= 20, var.vanish_jawbl+ 200 * frame_time, var.vanish_jawbl - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_body_bottom_left_dismember.ty": "torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_left_dismember.tx": "torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_left_dismember.tz": "-torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_left_dismember.rx": "torad(var.dismember_jawbl)*0.1",
+					"creeper_jaw_body_bottom_left_dismember.rz": "-torad(var.dismember_jawbl)*0.1",
+					"creeper_jaw_body_bottom_left_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawbl)",
+					"creeper_jaw_body_bottom_left_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawbl)",
+					"creeper_jaw_body_bottom_left_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawbl)"
+				},
+				{
+					"var.dismember_jawbr": "clamp(if(health < lerp(random(id + 219), -7, 5), var.dismember_jawbr + 2000 * frame_time, var.dismember_jawbr - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawbr": "min(if(health < lerp(random(id + 219), -5, 5) , var.vanish_delay_jawbr + 50 * frame_time, 0), 20)",
+					"var.vanish_jawbr": "clamp(if(var.vanish_delay_jawbr >= 20, var.vanish_jawbr+ 200 * frame_time, var.vanish_jawbr - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_body_bottom_right_dismember.ty": "torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_right_dismember.tx": "-torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_right_dismember.tz": "torad(var.dismember_jawbl)",
+					"creeper_jaw_body_bottom_right_dismember.rx": "torad(var.dismember_jawbl)*0.1",
+					"creeper_jaw_body_bottom_right_dismember.rz": "-torad(var.dismember_jawbl)*0.1",
+					"creeper_jaw_body_bottom_right_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawbl)",
+					"creeper_jaw_body_bottom_right_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawbl)",
+					"creeper_jaw_body_bottom_right_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawbl)"
+				},
+				{
+					"var.dismember_jawr": "clamp(if(health < lerp(random(id + 367), -7, 5), var.dismember_jawr + 2000 * frame_time, var.dismember_jawr - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawr": "min(if(health < lerp(random(id + 367), -7, 5) , var.vanish_delay_jawr + 50 * frame_time, 0), 20)",
+					"var.vanish_jawr": "clamp(if(var.vanish_delay_jawr >= 20, var.vanish_jawr+ 200 * frame_time, var.vanish_jawr - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_right_dismember.ty": "torad(var.dismember_jawr)",
+					"creeper_jaw_right_dismember.tx": "-torad(var.dismember_jawr)",
+					"creeper_jaw_right_dismember.tz": "-torad(var.dismember_jawr)",
+					"creeper_jaw_right_dismember.rx": "torad(var.dismember_jawr)*0.1",
+					"creeper_jaw_right_dismember.rz": "-torad(var.dismember_jawr)*0.1",
+					"creeper_jaw_right_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawr)",
+					"creeper_jaw_right_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawr)",
+					"creeper_jaw_right_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawr)"
+				},
+				{
+					"var.dismember_jawl": "clamp(if(health < lerp(random(id + 851), -7, 5), var.dismember_jawl + 2000 * frame_time, var.dismember_jawl - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_jawl": "min(if(health < lerp(random(id + 851), -7, 5) , var.vanish_delay_jawl + 50 * frame_time, 0), 20)",
+					"var.vanish_jawl": "clamp(if(var.vanish_delay_jawl >= 20, var.vanish_jawl+ 200 * frame_time, var.vanish_jawl - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"creeper_jaw_left_dismember.ty": "torad(var.dismember_jawl)",
+					"creeper_jaw_left_dismember.tx": "torad(var.dismember_jawl)",
+					"creeper_jaw_left_dismember.tz": "torad(var.dismember_jawl)",
+					"creeper_jaw_left_dismember.rx": "torad(var.dismember_jawl)*0.1",
+					"creeper_jaw_left_dismember.rz": "-torad(var.dismember_jawl)*0.1",
+					"creeper_jaw_left_dismember.sx": "torad(57.5)+ -torad(var.vanish_jawl)",
+					"creeper_jaw_left_dismember.sy": "torad(57.5)+ -torad(var.vanish_jawl)",
+					"creeper_jaw_left_dismember.sz": "torad(57.5)+ -torad(var.vanish_jawl)"
+				},
+				{
+					"var.counter": "clamp(if(limb_speed > 0.1, var.counter + 50 * frame_time, var.counter - 100 * frame_time), 0, 15)",
+					"var.counter2": "clamp(if(limb_speed > 0.1, var.counter2 + 50 * frame_time, var.counter2 - 100 * frame_time), 0, 25)",
+					"var.counter3": "clamp(if(limb_speed > 0.1, var.counter3 + 50 * frame_time, var.counter3 - 100 * frame_time), 0, 60)",
+					"var.counter4": "clamp(if(limb_speed > 0.1, var.counter4 + 50 * frame_time, var.counter4 - 100 * frame_time), 0, 80)",
+					"var.body_punch_right": "clamp(if(swing_progress > 0, var.body_punch_right + 100 * frame_time, var.body_punch_right - 50 * frame_time), 0, 800)",
+					"var.punch_right": "clamp(if(swing_progress > 0.3, var.punch_right + 1500 * frame_time, var.punch_right - 1400 * frame_time), 0, 800)",
+					"var.haymaker": "clamp(if(swing_progress > 0, var.haymaker + 200 * frame_time, var.haymaker - 100 * frame_time), 0, 300)",
+					"var.body_bend_attack": "clamp(if(swing_progress > 0.3, var.body_bend_attack + 200 * frame_time, var.body_bend_attack - 50 * frame_time), 0, 300)",
+					"var.body_bend": "clamp(if(var.distance < var.limit, var.body_bend + 50 * frame_time, var.body_bend - 50 * frame_time), 0, 40)",
+					"var.body_bend_walk": "clamp(if(var.distance < var.limit, var.body_bend + 50 * frame_time, var.body_bend - 10 * frame_time), 0, 100)",
+					"var.death": "clamp(if(death_time > 0, var.death + 100 * frame_time, var.death - 100 * frame_time), 0, 50)",
+					"var.vanish_delay_death": "min(if(death_time >0, var.vanish_delay_death + 50 * frame_time, 0), 70)",
+					"var.vanish_death": "clamp(if(var.vanish_delay_death >= 70, var.vanish_death + 200 * frame_time, var.vanish_death - 100 * frame_time), 0, 57.5)",
+					"var.death_physics": "clamp(min(if(health <= 10, var.death_physics + 50 * frame_time, 0), 1000), 0, 800)"
+				},
+				{
+					"var.dismember_left": "clamp(if(health < lerp(random(id + 3), -5, 5) && health < lerp(random(id + 6), -8, 4), 0, if(health < lerp(random(id), -4, 7), var.dismember_left + 2000 * frame_time, var.dismember_left - 2000 * frame_time)), 0, 2000)",
+					"var.vanish_delay_left": "min(if(health < lerp(random(id + 3), -5, 5) && health < lerp(random(id + 6), -8, 4), 0, if(health < lerp(random(id), -4, 7) , var.vanish_delay_left + 50 * frame_time, 0)), 20)",
+					"var.vanish_left": "clamp(if(var.vanish_delay_left >= 20, var.vanish_left + 200 * frame_time, var.vanish_left - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.dismember_right": "clamp(if(health < lerp(random(id + 3), -5, 5), var.dismember_right + 2000 * frame_time, var.dismember_right - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_right": "min(if(health < lerp(random(id + 3), -5, 5) , var.vanish_delay_right + 50 * frame_time, 0), 20)",
+					"var.vanish_right": "clamp(if(var.vanish_delay_right >= 20, var.vanish_right+ 200 * frame_time, var.vanish_right - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.dismember_head": "clamp(if(health < lerp(random(id + 6), -8, 5), var.dismember_head + 2000 * frame_time, var.dismember_head - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_head": "min(if(health < lerp(random(id + 6), -8, 5) , var.vanish_delay_head + 50 * frame_time, 0), 20)",
+					"var.vanish_head": "clamp(if(var.vanish_delay_head >= 20, var.vanish_head+ 200 * frame_time, var.vanish_head - 100 * frame_time), 0, 57.5)"
+				},
+				{
+					"var.disarm": "clamp(if(health < lerp(random(id + 2), 0, 8), var.disarm + 2000 * frame_time, var.disarm - 2000 * frame_time), 0, 2000)",
+					"var.vanish_delay_disarm": "min(if(health < lerp(random(id + 2), 0, 8) , var.vanish_delay_disarm + 50 * frame_time, 0), 20)",
+					"var.vanish_disarm": "clamp(if(var.vanish_delay_disarm >= 20, var.vanish_disarm + 200 * frame_time, var.vanish_disarm - 100 * frame_time), 0, 50)"
+				},
+				{
+					"var.mouthflash_timer": "clamp(if(var.mouthflash_timer != 400,var.mouthflash_timer + 100 * frame_time, var.mouthflash_timer - 100000  * frame_time),0 , 400) ",
+					"var.mouthflash": "clamp(if(var.mouthflash_timer < 300, var.mouthflash - 1000 * frame_time, var.mouthflash + 500  * frame_time),0 , 57.5) "
+				}
+			]
+		},
+		{
+			"part": "leg1",
+			"id": "leg1",
+			"invertAxis": "xy",
+			"translate": [-2, -6, -4]
+		},
+		{
+			"part": "leg2",
+			"id": "leg2",
+			"invertAxis": "xy",
+			"translate": [2, -6, -4]
+		},
+		{
+			"part": "leg3",
+			"id": "leg3",
+			"invertAxis": "xy",
+			"translate": [-2, -6, 4]
+		},
+		{
+			"part": "leg4",
+			"id": "leg4",
+			"invertAxis": "xy",
+			"translate": [2, -6, 4]
+		}
+	]
+}

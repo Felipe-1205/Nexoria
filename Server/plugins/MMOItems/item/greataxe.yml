@@ -1,0 +1,144 @@
+HACHAGRANDE1:
+  base:
+    material: WOODEN_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+HACHAGRANDE2:
+  base:
+    material: STONE_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+HACHAGRANDE3:
+  base:
+    material: IRON_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 9.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+HACHAGRANDE4:
+  base:
+    material: GOLDEN_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 10.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+HACHAGRANDE5:
+  base:
+    material: DIAMOND_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 11.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+HACHAGRANDE6:
+  base:
+    material: NETHERITE_AXE
+    name: '&bHacha de Batalla'
+    displayed-type: '&5Pesada'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 12.0
+    attack-speed: 0.9
+    two-handed: true
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 1d12 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0

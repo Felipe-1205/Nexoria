@@ -1,0 +1,47 @@
+name: Hunt
+lore:
+- '&fLaunch an Arrow. Your beast changes its target whenever'
+- '&fyou start firing at a new enemy.'
+- ''
+- '&4[Panther]'
+- "&cPanther's Hunt &f- Panther's Hunt has a red glow to the arrow,"
+- '&fdealing 1.75x more damage than normal arrows and causing'
+- '&fenemies to have the glowing effect on them, allowing you to hunt them down.'
+- ''
+- '&2[Owl]'
+- "&aOwl's Hunt &f- Owl's Hunt has a green glow to the arrow,"
+- '&fcausing hit enemies to be pushed back instantly.'
+- ''
+- '&9[Turtle]'
+- "&bTurtle's Hunt &f- Turtle's Hunt has a blue glow to the arrow,"
+- '&fslowing hit enemies and making them easier to hunt.'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2148'
+damage:
+  base: 3
+  per-level: 1
+  min: 3
+  max: 4
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

@@ -1,0 +1,68 @@
+{
+    "credit": "Made by samus2002", 
+    "textures": {
+        "main": "item/assassin_texture/assassin_dagger_a"
+    }, 
+    "elements": [
+        {
+            "from": [ -11.5, -11.5, 8 ], 
+            "to":   [ 27.5, 27.5, 8 ], 
+            "rotation": { "angle": 0, "axis": "y", "origin": [8.5, 8.25, 8] }, 
+            "faces": {
+                "north": { "uv": [ 0.016, 0.016, 8, 8 ], "texture": "#main" }, 
+                "east":  { "uv": [ 1.516, 2.516, 3.25, 4.75 ], "texture": "#main" }, 
+                "south": { "uv": [ 8, 0.016, 0.016, 8 ], "texture": "#main" }, 
+                "west":  { "uv": [ 1.516, 2.516, 3.25, 4.75 ], "texture": "#main" }, 
+                "up":    { "uv": [ 1.516, 2.516, 3.25, 4.75 ], "texture": "#main" }, 
+                "down":  { "uv": [ 1.516, 2.516, 3.25, 4.75 ], "texture": "#main" }
+            }
+        }, 
+        {
+            "from": [ -10.75, -11.75, 8 ], 
+            "to":   [ 28.25, 27.25, 8 ], 
+            "rotation": { "angle": 0, "axis": "y", "origin": [8.5, 8.25, 8] }, 
+            "faces": {
+                "north": { "uv": [ 8.016, 0.016, 16, 8 ], "rotation":90, "texture": "#main" }, 
+                "east":  { "uv": [ 9.516, 2.516, 11.25, 4.75 ], "rotation":270, "texture": "#main" }, 
+                "south": { "uv": [ 16, 0.016, 8.016, 8 ], "rotation":270, "texture": "#main" }, 
+                "west":  { "uv": [ 9.516, 2.516, 11.25, 4.75 ], "rotation":270, "texture": "#main" }, 
+                "up":    { "uv": [ 9.516, 2.516, 11.25, 4.75 ], "rotation":270, "texture": "#main" }, 
+                "down":  { "uv": [ 9.516, 2.516, 11.25, 4.75 ], "rotation":270, "texture": "#main" }
+            }
+        }, 
+        {
+            "from": [ -10.5, -11, 8 ], 
+            "to":   [ 28.5, 28, 8 ], 
+            "rotation": { "angle": 0, "axis": "y", "origin": [8.5, 8.25, 8] }, 
+            "faces": {
+                "north": { "uv": [ 0.016, 8.016, 8, 16 ], "rotation":180, "texture": "#main" }, 
+                "east":  { "uv": [ 1.516, 10.516, 3.25, 12.75 ], "rotation":180, "texture": "#main" }, 
+                "south": { "uv": [ 8, 8.016, 0.016, 16 ], "rotation":180, "texture": "#main" }, 
+                "west":  { "uv": [ 1.516, 10.516, 3.25, 12.75 ], "rotation":180, "texture": "#main" }, 
+                "up":    { "uv": [ 1.516, 10.516, 3.25, 12.75 ], "rotation":180, "texture": "#main" }, 
+                "down":  { "uv": [ 1.516, 10.516, 3.25, 12.75 ], "rotation":180, "texture": "#main" }
+            }
+        }, 
+        {
+            "from": [ -11.25, -10.75, 8 ], 
+            "to":   [ 27.75, 28.25, 8 ], 
+            "rotation": { "angle": 0, "axis": "y", "origin": [8.5, 8.25, 8] }, 
+            "faces": {
+                "north": { "uv": [ 8.016, 8.016, 16, 16 ], "rotation":270, "texture": "#main" }, 
+                "east":  { "uv": [ 9.516, 10.516, 11.25, 12.75 ], "rotation":90, "texture": "#main" }, 
+                "south": { "uv": [ 16, 8.016, 8.016, 16 ], "rotation":90, "texture": "#main" }, 
+                "west":  { "uv": [ 9.516, 10.516, 11.25, 12.75 ], "rotation":90, "texture": "#main" }, 
+                "up":    { "uv": [ 9.516, 10.516, 11.25, 12.75 ], "rotation":90, "texture": "#main" }, 
+                "down":  { "uv": [ 9.516, 10.516, 11.25, 12.75 ], "rotation":90, "texture": "#main" }
+            }
+        }
+    ], 
+    "display": {
+        "head": {
+            "rotation": [ 90, 0, 0 ], 
+            "translation": [ -1.25, -19, 0 ], 
+            "scale": [ 3.5, 3.5, 3.5 ]
+        }
+    }, 
+    "__comment": "Model animated using Fizzy's model animator - http://fizzy81.github.io/animated-models/"
+}

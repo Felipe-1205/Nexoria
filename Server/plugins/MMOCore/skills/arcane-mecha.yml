@@ -1,0 +1,40 @@
+name: Arcane Mecha
+lore:
+- '&bSuit up in an arcane mecha for a certain duration,'
+- '&baltering your abilities for devastating effectiveness.'
+- '&bYour skillset changes to &9[Arcane Repulsor] &band &9[Arcane Bullets].'
+- "&bYou're in flight mode, you can float in the air during the duration"
+- '&bof the arcane mecha suit skill. You can hold shift to drift through'
+- "&bthe air towards the direction you're looking at. Looking up while"
+- '&busing this skill will levitate you upwards, looking down will'
+- '&bglide yourself downwards.'
+- ''
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2201'
+duration:
+  base: 20
+  per-level: 0.1
+  min: 22
+  max: 20
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 1
+  per-level: -0.1
+  min: 1
+  max: 30

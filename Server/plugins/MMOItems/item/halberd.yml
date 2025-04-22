@@ -1,0 +1,168 @@
+ALABARDA1:
+  base:
+    material: WOODEN_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 5.0
+    attack-speed: 1.3
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 1.0
+ALABARDA2:
+  base:
+    material: STONE_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 6.0
+    attack-speed: 1.3
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 10.0
+ALABARDA3:
+  base:
+    material: IRON_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 7.0
+    attack-speed: 1.3
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 20.0
+ALABARDA4:
+  base:
+    material: GOLDEN_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 8.0
+    attack-speed: 1.3
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 30.0
+ALABARDA5:
+  base:
+    material: DIAMOND_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 9.0
+    attack-speed: 1.3
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 40.0
+ALABARDA6:
+  base:
+    material: NETHERITE_AXE
+    name: '&bAlabarda'
+    displayed-type: '&5De Asta'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-interaction: true
+    attack-damage: 10.0
+    attack-speed: 1.3
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    two-handed: true
+    entity-interaction-range: 1.0
+    lore:
+    - '&5Un d10 de daño.'
+    required-class:
+    - guerrero
+    - monje
+    - guardian
+    - ranger
+    required-level: 50.0

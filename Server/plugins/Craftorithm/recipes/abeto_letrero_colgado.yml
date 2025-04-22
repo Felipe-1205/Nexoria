@@ -1,0 +1,10 @@
+type: shaped
+shape:
+- 'b b'
+- 'aaa'
+- 'aaa'
+source:
+  a: minecraft:spruce_planks
+  b: minecraft:chain
+unlock: false
+result: minecraft:spruce_hanging_sign 6

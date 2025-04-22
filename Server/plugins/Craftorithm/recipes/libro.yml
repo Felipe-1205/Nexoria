@@ -1,0 +1,8 @@
+type: shapeless
+source:
+- mmoitems:MATERIAL:CUERO
+- mmoitems:MATERIAL:PAPEL
+- mmoitems:MATERIAL:PAPEL
+- mmoitems:MATERIAL:PAPEL
+unlock: false
+result: minecraft:book

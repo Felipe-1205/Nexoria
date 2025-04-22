@@ -1,0 +1,1 @@
+{"textures":{"3":"modelengine:entity/monk_swift_strike_4"},"elements":[{"from":[-9.75,8.0,-9.75],"to":[25.75,8.0,25.75],"faces":{"up":{"uv":[16.0,16.0,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#3"},"down":{"uv":[16.0,0.0,0.0,16.0],"tintindex":0,"rotation":0,"texture":"#3"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

@@ -1,0 +1,31 @@
+POISON_THORNS:
+    mythicmobs-skill-id: Poison_Thorns
+    modifiers:
+    - damage
+
+VINE_WAVE:
+    mythicmobs-skill-id: Vine_Wave
+    modifiers:
+    - damage
+    
+HEALING_WISPS:
+    mythicmobs-skill-id: Healing_Wisps
+    passive-type: TIMER
+    modifiers:
+    - heal
+    
+BEAR_FORM:
+    mythicmobs-skill-id: Bear_Form
+    modifiers:
+    - damage
+    
+HAWK_FORM:
+    mythicmobs-skill-id: Hawk_Form
+    modifiers:
+    - duration
+    
+WOLF_FORM:
+    mythicmobs-skill-id: Wolf_Form
+    modifiers:
+    - damage
+    - heal

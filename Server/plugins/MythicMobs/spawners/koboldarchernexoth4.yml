@@ -1,0 +1,26 @@
+koboldarchernexoth4:
+  World: eutonia
+  X: -603
+  Y: 43
+  Z: -169
+  Yaw: 0.0
+  Pitch: 0.0
+  Breakable: false
+  MobName: Kobold_Archer
+  Radius: 0.0
+  RadiusY: 0.0
+  UseTimer: true
+  MaxMobs: '3'
+  MobLevel: '1'
+  MobsPerSpawn: 1
+  Cooldown: 0
+  Warmup: 0
+  ActivationRange: 5.0
+  ScalingRange: 25.0
+  LeashRange: 32.0
+  HealOnLeash: false
+  ResetThreatOnLeash: false
+  CheckForPlayers: true
+  ShowFlames: false
+  Conditions: []
+  SpawnConditions: []

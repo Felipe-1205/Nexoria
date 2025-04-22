@@ -1,0 +1,1 @@
+{"textures":{"1":"modelengine:entity/fx_war_cry_aura_circle"},"elements":[{"from":[-3.0,8.125,-3.0],"to":[18.0,8.125,18.0],"faces":{"up":{"uv":[5.25,5.25,0.0,0.0],"tintindex":0,"rotation":0,"texture":"#1"},"down":{"uv":[5.25,0.0,0.0,5.25],"tintindex":0,"rotation":0,"texture":"#1"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

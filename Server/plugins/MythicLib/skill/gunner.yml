@@ -1,0 +1,30 @@
+PISTOL_SHOT:
+    mythicmobs-skill-id: Pistol_Shot
+    modifiers:
+    - damage
+
+SHOTGUN_BLAST:
+    mythicmobs-skill-id: Shotgun_Blast
+    modifiers:
+    - damage
+    
+DEADEYE:
+    mythicmobs-skill-id: Deadeye
+    passive-type: TIMER
+    timer: 10
+    
+SNIPER_BACKUP:
+    mythicmobs-skill-id: Sniper_Backup
+    modifiers:
+    - damage
+    
+DEATHFIRE:
+    mythicmobs-skill-id: Deathfire
+    modifiers:
+    - damage
+    
+AIR_STRIKE:
+    mythicmobs-skill-id: Air_Strike
+    modifiers:
+    - damage
+    - duration

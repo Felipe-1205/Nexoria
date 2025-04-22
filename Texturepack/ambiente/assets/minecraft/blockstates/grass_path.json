@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "": [
+            { "model": "block/grass_path" },
+			{ "model": "block/grass_path1" },
+			{ "model": "block/grass_path2" },
+			{ "model": "block/grass_path" },
+            { "model": "block/grass_path", "y": 90, "uvlock": true },
+            { "model": "block/grass_path", "y": 180, "uvlock": true },
+            { "model": "block/grass_path", "y": 270, "uvlock": true }
+        ]
+    }
+}

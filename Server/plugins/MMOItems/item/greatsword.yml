@@ -1,0 +1,144 @@
+MANDOBLE1:
+  base:
+    material: WOODEN_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 6.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 1.0
+MANDOBLE2:
+  base:
+    material: STONE_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 10.0
+MANDOBLE3:
+  base:
+    material: IRON_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 20.0
+MANDOBLE4:
+  base:
+    material: GOLDEN_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 9.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 30.0
+MANDOBLE5:
+  base:
+    material: DIAMOND_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 10.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 40.0
+MANDOBLE6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&bMandoble'
+    displayed-type: '&5Pesada'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 11.0
+    attack-speed: 1.1
+    two-handed: true
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un 2d6 de daño.'
+    required-class:
+    - guerrero
+    - guardian
+    required-level: 50.0

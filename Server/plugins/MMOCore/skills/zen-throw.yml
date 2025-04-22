@@ -1,0 +1,43 @@
+name: Zen Throw
+lore:
+- '&fThrow your enemy backwards, slamming them to the'
+- '&fsurface, stunning them. Enemies affected by the'
+- '&fslam are also stunned.'
+- ''
+- '&c{damage} Damage'
+- '&c{duration}s Duration'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2199'
+damage:
+  base: 4
+  per-level: 1
+  min: 4
+  max: 7
+duration:
+  base: 2
+  per-level: 0.1
+  min: 2
+  max: 3
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 4
+  per-level: -0.1
+  min: 3
+  max: 4
+
+# mRxXKa1J+tFwTgxY0fJqY6IPnUMqU46mraQKj5RJIz5kO2M8yhlmKCShMqnbZQ2WjBSL+irpjZYldLOou4trBnAlPbBHnGQxjObKPX15d80=

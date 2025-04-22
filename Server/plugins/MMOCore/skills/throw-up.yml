@@ -1,0 +1,38 @@
+name: ¡Te prometo puedo hacer el 4!
+lore:
+- Lanza trozos de carne en descomposición
+- a tu objetivo ocasionando &8{damage} &7de daño por segundo
+- causando daño al impactar durante &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: ROTTEN_FLESH
+duration:
+  base: 3
+  per-level: 1.1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 2.4
+  per-level: 1.1
+delay:
+  base: 3
+  per-level: -0.5
+mana:
+  base: 8
+  per-level: 0.5
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 8
+  per-level: -1.5
+
+#wWaxMGSJlVNoNlctFUONd3QBpnV3FEVPBTRq1keVRUT6l1RTJVRnFFUPBlYiF1cBh0S1xkN

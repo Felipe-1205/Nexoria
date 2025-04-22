@@ -1,0 +1,36 @@
+name: Arcane Missile
+lore:
+- '&bEvery 5th time you cast a skill,'
+- '&byou summon 3 arcane missiles that'
+- '&btrack and damage targets'
+- ''
+- '&c{damage} Damage'
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2064'
+passive-type: TIMER
+damage:
+  base: 2
+  per-level: 5
+  min: 2
+  max: 50
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0

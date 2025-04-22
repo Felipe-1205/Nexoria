@@ -1,0 +1,10 @@
+name: Bendición de Usher
+lore:
+- La regeneración de recursos aumenta
+- en &8{extra}% &7cuando estás en el agua.
+material: LILY_PAD
+extra:
+  base: 30.0
+  per-level: 5.0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'

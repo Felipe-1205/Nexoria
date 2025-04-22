@@ -1,0 +1,479 @@
+display:
+    name: 'Mago'
+    lore:
+    - 'La fuente de su poder es la energía arcana,'
+    - 'una fuerza mística que fluye por todo el'
+    - 'universo. Los magos canalizan esta energía'
+    - 'a través de complejos rituales, gestos'
+    - 'mágicos y palabras de poder. Su control'
+    - 'sobre la energía arcana les permite'
+    - 'realizar hazañas extraordinarias que'
+    - 'desafían la comprensión de la gente común.'
+
+    attribute-lore:
+    - '&a++ &7Daño de habilidad'
+    - '&a++ &7Daño critico de habilidad'
+    - '&a+ &7Mana'
+    - '&a+ &7Regeneracion de mana'
+    - '&a+ &7Reduccion de cooldown'
+    - '&c- &7Vida'
+    - '&c- &7Armadura'
+    item: stick
+
+# Must match an existing exp curve filename from the 'expcurves' folder
+exp-curve: levels
+
+# The maximum level players can reach
+max-level: 101
+
+
+exp-table: class_exp_table
+
+skill-slots:
+    1:
+        name: "&aEspacio de habilidad I"
+        unlocked-by-default: true
+        lore: []
+    2:
+        name: "&aEspacio de habilidad II"
+        unlocked-by-default: true
+        lore: []
+    3:
+        name: "&aEspacio de habilidad III"
+        unlocked-by-default: true
+        lore: []
+    4:
+        name: "&aEspacio de habilidad IV"
+        unlocked-by-default: true
+        lore: []
+
+# This is the default mana display options, however it is not mandatory
+# to have it in your class config file. Other classes do not have this
+# section and therefore have the default mana display options.
+#
+# 'char' is the character used to generate the mana bar as a message
+# 'color' are also the colors used to generate the mana bar
+# 'icon' is the icon display on the player action bar
+# 'name' is basically displayed everywhere
+mana:
+    char: ■
+    icon: '&9⯫'
+    color:
+        full: BLUE
+        half: DARK_BLUE
+        empty: WHITE
+    name: 'Mana'
+
+
+# Special resource regeneration: (when out of combat),
+# players can regen a set % of their maximum mana/missing mana.
+# This % can scale with the player level.
+# It also works with other player resources: health, stellium and stamina!
+resource:
+    mana:
+    
+        # Scales with max mana.
+        type: MAX
+
+        # Regen from 3 to 10% of max mana every second
+        value:
+            base: 4
+
+        # Only regen when out of combat.
+        off-combat: false
+
+options:
+    off-combat-health-regen: false
+    off-combat-mana-regen: false
+    off-combat-stamina-regen: false
+    off-combat-stellium-regen: false
+    needs-permission: false
+
+attributes:
+    projectile_damage:
+        base: 0
+        per-level: 0
+    weapon_damage:
+        base: 0
+        per-level: 0
+    physical_damage:
+        base: 0
+        per-level: 0
+    critical_strike_power:
+        base: 200
+        per-level: 0
+    critical_strike_chance:
+        base: 0
+        per-level: 0
+    armor:
+        base: 0
+        per-level: -0.025
+    armor_toughness:
+        base: 0
+        per-level: -0.02
+    max_health:
+        base: 15
+        per-level: 0.15
+    health_regeneration:
+        base: 0.1
+        per-level: 0
+    max_stamina:
+        base: 20
+        per-level: 0.2
+    stamina_regeneration:
+        base: 0.166
+        per-level: 0
+    movement_speed:
+        base: 0.1
+        per-level: 0
+    additional_experience:
+        base: 0
+        per-level: 0
+    luck:
+        base: 0
+        per-level: 0
+    max_mana:
+        base: 25
+        per-level: 0.25
+    cooldown_reduction:
+        base: 0
+        per-level: 0.25
+    mana_regeneration:
+        base: 0.2
+        per-level: 0
+    skill_critical_strike_power:
+        base: 200
+        per-level: 1
+    skill_critical_strike_chance:
+        base: 0
+        per-level: 0.4
+    skill_damage:
+        base: 0
+        per-level: 1
+
+
+skills:
+    BOUNCY_FIREBALL:
+        level: 1
+        max-level: 20
+        mana:
+            base: 5
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 4
+            per-level: 0
+        damage:
+            base: 7
+            per-level: 0.25
+        ignite:
+            base: 5
+            per-level: 0
+        radius:
+            base: 2
+            per-level: 0.1
+        speed:
+            base: 3
+            per-level: 0
+    ARCANE_HAIL:
+        level: 8
+        max-level: 20
+        mana:
+            base: 10
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 30
+            per-level: 0
+        duration:
+            base: 10
+            per-level: 0
+        damage:
+            base: 3
+            per-level: 0.5
+        radius:
+            base: 5
+            per-level: 0.25
+    ARCANE_RIFT:
+        level: 15
+        max-level: 20
+        mana:
+            base: 15
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 20
+            per-level: 0
+        duration:
+            base: 5
+            per-level: 0.5
+        damage:
+            base: 6
+            per-level: 0.5
+        amplifier:
+            base: 2
+            per-level: 0
+        speed:
+            base: 1
+            per-level: 0.1
+    TARGETED_FIREBALL:
+        level: 22
+        max-level: 20
+        mana:
+            base: 15
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 10
+            per-level: 0
+        ignite:
+            base: 1
+            per-level: 1
+        damage:
+            base: 4
+            per-level: 0.125
+    CURSED_BEAM:
+        level: 29
+        max-level: 20
+        mana:
+            base: 5
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 3
+            per-level: 0
+        damage:
+            base: 5
+            per-level: 0.2
+        duration:
+            base: 1
+            per-level: 0
+    EARTHQUAKE:
+        level: 36
+        max-level: 20
+        mana:
+            base: 20.0
+            per-level: 1.0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 30.0
+            per-level: 0
+        amplifier:
+            base: 1.0
+            per-level: 0
+        duration:
+            base: 5
+            per-level: 1
+        damage:
+            base: 5.0
+            per-level: 1
+    FIRE_RAGE:
+        level: 43
+        max-level: 20
+        mana:
+            base: 20
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 60
+            per-level: 0
+        duration:
+            base: 50
+            per-level: 0
+        damage:
+            base: 4
+            per-level: 0.125
+        ignite:
+            base: 1
+            per-level: 1
+        count:
+            base: 6
+            per-level: 1
+    VOID_ZAPPER:
+        level: 50
+        max-level: 20
+        mana:
+            base: 30
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 15
+            per-level: 0
+        damage:
+            base: 5
+            per-level: 0.2
+        max:
+            base: 100
+            per-level: 100
+        extra:
+            base: 1
+            per-level: 0.1
+        length:
+            base: 3
+            per-level: 1
+        knockback:
+            base: 1
+            per-level: 0.5
+    MAGMA_FISSURE:
+        level: 57
+        max-level: 20
+        mana:
+            base: 15
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 13
+            per-level: 1
+        ignite:
+            base: 10
+            per-level: 1
+        damage:
+            base: 10
+            per-level: 0.25
+    LIFE_ENDER:
+        level: 64
+        max-level: 20
+        mana:
+            base: 40
+            per-level: 0
+        stamina:
+            base: 0
+            per-level: 0
+        timer:
+            base: 0
+            per-level: 0
+        delay:
+            base: 0
+            per-level: 0
+        cooldown:
+            base: 120
+            per-level: 0
+        damage:
+            base: 10
+            per-level: 1
+        radius:
+            base: 3
+            per-level: 0.2
+        knockback:
+            base: 1
+            per-level: 0.1
+
+# Experience sources for main class experience.
+main-exp-sources:
+- 'killmythicmob{type=NATARMADILLO;amount=6}' #animales
+- 'killmythicmob{type=NATAJOLOTE;amount=6}' #animales
+- 'killmythicmob{type=NATMURCIELAGO;amount=6}' #animales
+- 'killmythicmob{type=NATCAMELLO;amount=6}' #animales
+- 'killmythicmob{type=NATGATO;amount=6}' #animales
+- 'killmythicmob{type=NATPOLLO;amount=6}' #animales
+- 'killmythicmob{type=NATBACALAO;amount=6}' #animales
+- 'killmythicmob{type=NATVACA;amount=6}' #animales
+- 'killmythicmob{type=NATBURRO;amount=6}' #animales
+- 'killmythicmob{type=NATRANA;amount=6}' #animales
+- 'killmythicmob{type=NATCALAMAR_BRILLANTE;amount=6}' #animales
+- 'killmythicmob{type=NATLORO;amount=6}' #animales
+- 'killmythicmob{type=NATCERDO;amount=6}' #animales
+- 'killmythicmob{type=NATCONEJO;amount=6}' #animales
+- 'killmythicmob{type=NATSALMON;amount=6}' #animales
+- 'killmythicmob{type=NATOVEJA;amount=6}' #animales
+- 'killmythicmob{type=NATCALAMAR;amount=6}' #animales
+- 'killmythicmob{type=NATTORTUGA;amount=6}' #animales
+- 'killmythicmob{type=mf_deceptor_minion;amount=2-6}' #dungeon
+- 'killmythicmob{type=mf_deceptor;amount=150-300}' #boss #dungeon
+- 'killmythicmob{type=Snail;amount=2-6}' #dungeon
+- 'killmythicmob{type=Mimic;amount=10-30}' #miniboss #dungeon
+- 'killmythicmob{type=Kobold_Warrior;amount=2-6}' #dungeon
+- 'killmythicmob{type=Kobold_Archer;amount=2-6}' #dungeon
+- 'killmythicmob{type=Plant_Monster;amount=2-6}' #dungeon
+- 'killmythicmob{type=Salamander;amount=2-6}' #dungeon
+- 'killmythicmob{type=Lava_Salamander;amount=2-6}' #dungeon
+- 'killmythicmob{type=Stone_Minion;amount=2-6}' #dungeon
+- 'killmythicmob{type=Stone_Golem;amount=10-30}' #miniboss #dungeon
+- 'killmythicmob{type=Scorpion_King;amount=150-300}' #boss #dungeon
+- 'killmythicmob{type=Scorpion_Baby;amount=2-6}' #dungeon
+- 'killmythicmob{type=Wraith;amount=3-9}' #trama1
+- 'killmythicmob{type=Ghoul;amount=3-9}' #trama1
+- 'killmythicmob{type=Specter;amount=3-9}' #trama1
+- 'killmythicmob{type=ZOMBIEBASICO;amount=3-9}' #trama1
+- 'killmythicmob{type=ESQUELETOBASICO;amount=3-9}' #trama1
+- 'killmythicmob{type=WITHERESQUELETOBASICO;amount=3-9}' #trama1
+- 'killmythicmob{type=Zombie_Brute;amount=20-60}' #miniboss #trama1
+- 'killmythicmob{type=Nightharrow_Wendigo;amount=300-600}' #boss #trama1
+- 'killmythicmob{type=SkPack_FlyingSkull;amount=3-9}' #trama1
+- 'killmythicmob{type=SkPack_Warrior;amount=3-9}' #trama1
+- 'killmythicmob{type=SkPack_Archer;amount=3-9}' #trama1
+- 'killmythicmob{type=SkPack_AxeBrute;amount=20-60}' #miniboss #trama1
+- 'killmythicmob{type=SkPack_SwordBrute;amount=20-60}' #miniboss #trama1
+- 'killmythicmob{type=SkPack_Necromancer;amount=300-600}' #boss #trama1

@@ -1,0 +1,50 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [256, 256],
+	"textures": {
+		"1": "item/necromancer_texture/eternal_fire_fx"
+	},
+	"elements": [
+		{
+			"from": [-0.00025, 8.0005, 0],
+			"to": [15.99975, 8.0005, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.00025, 8]},
+			"faces": {
+				"north": {"uv": [0.002, 14.5645, 1.998, 15.5605], "texture": "#1"},
+				"east": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 180, "texture": "#1"},
+				"west": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.002, 0.002, 15.998, 15.998], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [15.998, 0.002, 0.002, 15.998], "texture": "#1"}
+			}
+		},
+		{
+			"from": [8.00025, 0, 0],
+			"to": [8.00025, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8.00025, 8]},
+			"faces": {
+				"north": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 270, "texture": "#1"},
+				"east": {"uv": [0.002, 0.002, 15.998, 15.998], "rotation": 270, "texture": "#1"},
+				"south": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 270, "texture": "#1"},
+				"west": {"uv": [15.998, 0.002, 0.002, 15.998], "rotation": 90, "texture": "#1"},
+				"up": {"uv": [0.002, 14.5645, 1.998, 15.5605], "rotation": 180, "texture": "#1"},
+				"down": {"uv": [0.002, 14.5645, 1.998, 15.5605], "texture": "#1"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -15, 1.75],
+			"scale": [2, 2, 2]
+		}
+	},
+	"groups": [
+		{
+			"name": "h_skull",
+			"origin": [8, 9.00025, 8],
+			"color": 0,
+			"boneType": "",
+			"children": [0, 1]
+		}
+	]
+}

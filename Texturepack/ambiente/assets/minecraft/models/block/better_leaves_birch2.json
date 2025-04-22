@@ -1,0 +1,42 @@
+{
+"__comment": "Designed by tomaxed with Cubik",
+"textures": {
+    "particle": "block/birch_leaves",
+    "all": "block/birch_leaves",
+    "extra": "block/birch_better_leaves"
+},
+"elements": [ 
+{
+    "from": [ 0, 0, 0 ],
+    "to": [ 16, 16, 16 ],
+    "faces": {
+        "down":  { "uv": [ 16, 16, 0, 0 ], "texture": "#all", "tintindex": 0, "cullface": "down" },
+        "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "up" },
+        "north": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "north" },
+        "south": { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "south" },
+        "west":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "west" },
+        "east":  { "uv": [ 0, 0, 16, 16 ], "texture": "#all", "tintindex": 0, "cullface": "east" }
+    }
+},
+{
+    "from": [ 14.125, -8, -6.815 ],
+    "to": [ 14.185, 24, 25.185 ],
+    "rotation": { "origin": [ 14.125, -8, -6.812 ], "axis": "y", "angle": -22.5 },
+	"shade": false,
+    "faces": {
+        "west": { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 },
+        "east": { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 }
+    }
+},
+{
+    "from": [ -6.815, -8, 1.875 ],
+    "to": [ 25.185, 24, 1.935 ],
+    "rotation": { "origin": [ -6.815, -8, 1.875 ], "axis": "y", "angle": -22.5 },
+	"shade": false,
+    "faces": {
+        "north":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 },
+        "south":  { "uv": [ 0, 0, 16, 16 ], "texture": "#extra", "tintindex": 0 }
+    }
+}
+]
+}

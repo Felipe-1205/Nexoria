@@ -1,0 +1,1 @@
+con la creación del nuevo mundo los dioses dejaron el seres que protegen el equilibrio en este, para cuidar, el mar la tierra los cielos, y a los seres que habitan en ellos esto pasando en [[Prologo 3 Neo Genesis]]

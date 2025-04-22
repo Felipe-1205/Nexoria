@@ -1,0 +1,55 @@
+CONFIRM:
+  name: '&aConfirmar'
+  lore: []
+FILL:
+  name: '&8'
+  lore: []
+PREVIOUS_PAGE:
+  name: '&aPágina Anterior'
+  lore: []
+NEXT_PAGE:
+  name: '&aPágina Siguiente'
+  lore: []
+PREVIOUS_IN_QUEUE:
+  name: '&aAnterior'
+  lore: []
+NEXT_IN_QUEUE:
+  name: '&aSiguiente'
+  lore: []
+BACK:
+  name: '&aVolver'
+  lore: []
+CRAFTING_RECIPE_DISPLAY:
+  name: '&a&lCrear&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8Condiciones:'
+  - '{crafting_time}'
+  - '{crafting_time}&7Tiempo de Creación: &c#crafting-time#&7s'
+  - ''
+  - '&8Ingredientes:'
+  - '#ingredients#'
+  - ''
+  - '&e¡Clic Izquierdo para crear!'
+  - '&e¡Clic Derecho para previsualizar!'
+UPGRADING_RECIPE_DISPLAY:
+  name: '&e&lMejorar&f #name#'
+  lore:
+  - '{conditions}'
+  - '{conditions}&8Condiciones:'
+  - ''
+  - '&8Ingredientes:'
+  - '#ingredients#'
+  - ''
+  - '&e¡Clic Izquierdo para mejorar!'
+  - '&e¡Clic Derecho para previsualizar!'
+QUEUE_ITEM_DISPLAY:
+  name: '&6&lCola&f #name#'
+  lore:
+  - '{ready}&7&oEste objeto fue creado exitosamente.'
+  - '{queue}&7&oEste objeto está en la cola de creación.'
+  - '{queue}'
+  - '{queue}&7Tiempo Restante: &c#left#'
+  - ''
+  - '{ready}&e¡Clic para reclamar!'
+  - '{queue}&e¡Clic para cancelar!'

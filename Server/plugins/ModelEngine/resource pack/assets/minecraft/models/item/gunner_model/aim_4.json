@@ -1,0 +1,42 @@
+{
+	"credit": "Made by samus2002",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "item/gunner_texture/aim",
+		"particle": "item/gunner_texture/aim"
+	},
+	"elements": [
+		{
+			"from": [3, 6, 3],
+			"to": [13, 6, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [10.5, 0, 16, 0], "texture": "#0"},
+				"east": {"uv": [10.5, 0.25, 16, 0.25], "texture": "#0"},
+				"south": {"uv": [10.5, 0.5, 16, 0.5], "texture": "#0"},
+				"west": {"uv": [10.5, 0.75, 16, 0.75], "texture": "#0"},
+				"up": {"uv": [5.5, 5.5, 0, 0], "texture": "#0"},
+				"down": {"uv": [5.5, 0, 0, 5.5], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-1, 5.875, -1],
+			"to": [17, 5.875, 17],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 6, 8]},
+			"faces": {
+				"north": {"uv": [5.75, 9.5, 10.25, 9.5], "texture": "#0"},
+				"east": {"uv": [5.75, 9.75, 10.25, 9.75], "texture": "#0"},
+				"south": {"uv": [5.75, 10, 10.25, 10], "texture": "#0"},
+				"west": {"uv": [5.75, 10.25, 10.25, 10.25], "texture": "#0"},
+				"up": {"uv": [10.25, 4.5, 5.75, 0], "texture": "#0"},
+				"down": {"uv": [10.25, 0, 5.75, 4.5], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"head": {
+			"translation": [0, -36.75, 0],
+			"scale": [3, 3, 3]
+		}
+	}
+}

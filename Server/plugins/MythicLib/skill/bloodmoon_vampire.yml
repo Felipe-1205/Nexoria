@@ -1,0 +1,42 @@
+BLOODMOON_COMBO:
+    mythicmobs-skill-id: Bloodmoon_Combo
+    modifiers:
+    - damage
+    - bladescooldown
+    - grimoirecooldown
+    - needlescooldown
+    - scythecooldown
+
+VAMPIRIC_SURGE:
+    mythicmobs-skill-id: Vampiric_Surge
+    modifiers:
+    - damage
+    - bladescooldown
+    - grimoirecooldown
+    - needlescooldown
+    - scythecooldown
+    
+BLOODBORNE_BLADES:
+    mythicmobs-skill-id: Bloodborne_Blades
+    modifiers:
+    - skillcooldown
+    
+BLOODBORNE_NEEDLES:
+    mythicmobs-skill-id: Bloodborne_Needles
+    
+BLOODBORNE_GRIMOIRE:
+    mythicmobs-skill-id: Bloodborne_Grimoire
+    passive-type: TIMER
+    modifiers:
+    - skillcooldown
+BLOODBORNE_GRIMOIRE_MMOCORE:
+    mythicmobs-skill-id: Bloodborne_Grimoire
+    
+BLOODBENDING:
+    mythicmobs-skill-id: Bloodbending
+    passive-type: TIMER
+    modifiers:
+    - heal
+    
+BLOODBORNE_SCYTHE:
+    mythicmobs-skill-id: Bloodborne_Scythe

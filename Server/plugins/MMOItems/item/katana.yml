@@ -1,0 +1,174 @@
+KATANA1:
+  base:
+    material: WOODEN_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 3.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 1.0
+KATANA2:
+  base:
+    material: STONE_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 1000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 4.0
+    attack-speed: 1.8
+    tier: TIER1
+    gem-sockets:
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 10.0
+KATANA3:
+  base:
+    material: IRON_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 1500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 5.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 20.0
+KATANA4:
+  base:
+    material: GOLDEN_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 2000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 6.0
+    attack-speed: 1.8
+    tier: TIER2
+    gem-sockets:
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 30.0
+KATANA5:
+  base:
+    material: DIAMOND_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 2500.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 7.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 40.0
+KATANA6:
+  base:
+    material: NETHERITE_SWORD
+    name: '&BKatana'
+    displayed-type: '&5Sutil'
+    max-durability: 3000.0
+    disable-crafting: true
+    disable-smelting: true
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    attack-damage: 8.0
+    attack-speed: 1.8
+    tier: TIER3
+    gem-sockets:
+    - Arma
+    - Arma
+    - Arma
+    lore:
+    - '&5Un d6 de daño.'
+    required-class:
+    - bardo
+    - clerigo
+    - guerrero
+    - hechicero
+    - mago
+    - monje
+    - picaro
+    - ranger
+    required-level: 50.0

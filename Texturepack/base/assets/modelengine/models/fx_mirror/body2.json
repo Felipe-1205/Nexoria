@@ -1,0 +1,1 @@
+{"textures":{"0":"modelengine:entity/fx_mirror"},"elements":[{"from":[-1.8600006,-1.8600006,8.0],"to":[17.86,17.86,8.0],"faces":{"south":{"uv":[0.0,0.0,4.25,4.25],"tintindex":0,"rotation":0,"texture":"#0"},"north":{"uv":[4.25,0.0,0.0,4.25],"tintindex":0,"rotation":0,"texture":"#0"}}}],"display":{"gui":{"rotation":[30,225,0]}}}

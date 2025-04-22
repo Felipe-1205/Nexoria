@@ -1,0 +1,40 @@
+SWIFT_STRIKES:
+    mythicmobs-skill-id: Swift_Strikes
+    modifiers:
+    - damage
+
+CHI_BLAST:
+    mythicmobs-skill-id: Chi_Blast
+    modifiers:
+    - damage
+    
+ZEN_THROW:
+    mythicmobs-skill-id: Zen_Throw
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - duration
+    
+FOCUS_CHI:
+    mythicmobs-skill-id: Focus_Chi
+    modifiers:
+    - heal
+    
+COUNTERSTRIKE:
+    mythicmobs-skill-id: Counterstrike
+    modifiers:
+    - damage
+    
+BEADS_OF_KARMA:
+    mythicmobs-skill-id: Beads_Of_Karma
+    passive-type: TIMER
+    modifiers:
+    - damage
+    - heal
+    
+DRAGON_FISTS:
+    mythicmobs-skill-id: Dragon_Fists
+    modifiers:
+    - damage
+    - heal
+    - duration

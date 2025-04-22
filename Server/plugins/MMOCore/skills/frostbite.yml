@@ -1,0 +1,31 @@
+name: Frostbite
+lore:
+- '&bYour skills have a 20% chance to apply frostbite to hit'
+- '&benemies. Enemies with the frostbite effect take damage overtime.'
+- ''
+- '&e{cooldown}s Cooldown'
+- '&9Costs {mana} {mana_name}'
+material: 'COAL:2188'
+passive-type: TIMER
+timer:
+  base: 10
+  per-level: 0
+  min: 10
+  max: 10
+mana:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+
+#M1S1dkNB9GUyJ3czhHVaVmQnBTV5VEVNlXTE5kMJRlT4NGRShUWOVXMaB3cLF2R2s2MWB3M

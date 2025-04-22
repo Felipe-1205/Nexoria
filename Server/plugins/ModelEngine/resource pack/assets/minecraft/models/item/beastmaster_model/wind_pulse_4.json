@@ -1,0 +1,33 @@
+{
+	"credit": "Made by samus2002",
+	"textures": {
+		"0": "item/beastmaster_texture/wind_pulse_4",
+		"particle": "item/beastmaster_texture/wind_pulse_4"
+	},
+	"elements": [
+		{
+			"from": [-7, -7, 8],
+			"to": [23, 23, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 8, 8]},
+			"faces": {
+				"north": {"uv": [3, 2.75, 13, 12.75], "texture": "#0"},
+				"east": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"south": {"uv": [13, 2.75, 3, 12.75], "texture": "#0"},
+				"west": {"uv": [0, 0, 0, 16], "texture": "#0"},
+				"up": {"uv": [0, 0, 16, 0], "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 0], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [90, 0, 0],
+			"translation": [-6, -1.75, 7.5],
+			"scale": [2, 2, 2]
+		},
+		"head": {
+			"translation": [0, -8.5, -0.75],
+			"scale": [3.5, 3.5, 3.5]
+		}
+	}
+}

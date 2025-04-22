@@ -1,0 +1,2674 @@
+# AGUA
+AGUA1:
+  base:
+    material: POTION
+    name: '&bBotella de agua'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    potion-color: 255 255 255
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    tier: TIER1
+AGUA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bBotella de agua'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    potion-color: 255 255 255
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    tier: TIER1
+AGUA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bBotella de agua'
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    potion-color: 255 255 255
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    tier: TIER1
+
+# VISION NOCTURNA
+VISIONNOCBAS1:
+  base:
+    material: POTION
+    name: '&bVision oscura basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 300.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+VISIONNOCBAS2:
+  base:
+    material: SPLASH_POTION
+    name: '&bVision oscura basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 300.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+VISIONNOCBAS3:
+  base:
+    material: LINGERING_POTION
+    name: '&bVision oscura basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 300.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+VISIONNOCAVANZADO1:
+  base:
+    material: POTION
+    name: '&bVision oscura avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 600.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+VISIONNOCAVANZADO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bVision oscura avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 600.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+VISIONNOCAVANZADO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bVision oscura avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      NIGHT_VISION:
+        duration: 600.0
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+
+# INVISIBILIDAD
+INVISIBASE1:
+  base:
+    material: POTION
+    name: '&bInvisibilidad basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+INVISIBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bInvisibilidad basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+INVISIBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bInvisibilidad basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 5 Minutos OOC'
+    tier: TIER2
+INVISIAVANZ1:
+  base:
+    material: POTION
+    name: '&bInvisibilidad avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 600.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+INVISIAVANZ2:
+  base:
+    material: SPLASH_POTION
+    name: '&bInvisibilidad avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 600.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+INVISIAVANZ3:
+  base:
+    material: LINGERING_POTION
+    name: '&bInvisibilidad avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INVISIBILITY:
+        duration: 600.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC'
+    tier: TIER3
+
+# CAIDA LENTA
+CAIDALENTABAS1:
+  base:
+    material: POTION
+    name: '&bPoción de Caida Lenta Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+CAIDALENTABAS2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Caida Lenta Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+CAIDALENTABAS3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Caida Lenta Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+CAIDALENTAAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Caida Lenta Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 450.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+CAIDALENTAAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Caida Lenta Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 450.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+CAIDALENTAAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Caida Lenta Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOW_FALLING:
+        duration: 450.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+# CONEJO
+SALTOCONEJOBAS1:
+  base:
+    material: POTION
+    name: '&bPoción de Conejo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 60.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Turno.'
+    tier: TIER1
+SALTOCONEJOBAS2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Conejo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 60.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Turno.'
+    tier: TIER1
+SALTOCONEJOBAS3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Conejo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 60.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Turno.'
+    tier: TIER1
+SALTOCONEJOINTERM1:
+  base:
+    material: POTION
+    name: '&bPoción de Conejo Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 180.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Turnos.'
+    tier: TIER2
+SALTOCONEJOINTERM2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Conejo Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 180.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Turnos.'
+    tier: TIER2
+SALTOCONEJOINTERM3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Conejo Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 180.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 2 Turnos.'
+    tier: TIER2
+SALTOCONEJOAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Conejo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Turnos.'
+    tier: TIER3
+SALTOCONEJOAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Conejo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Turnos.'
+    tier: TIER3
+SALTOCONEJOAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Conejo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      JUMP_BOOST:
+        duration: 300.0
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Turnos.'
+    tier: TIER3
+
+# CURACION
+CURACIONBAS1:
+  base:
+    material: POTION
+    name: '&bPoción de Curacion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER2
+CURACIONBAS2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Curacion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER2
+CURACIONBAS3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Curacion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER2
+CURACIONAVAN1:
+  base:
+    material: POTION
+    name: '&bPoción de Curacion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER3
+CURACIONAVAN2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Curacion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER3
+CURACIONAVAN3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Curacion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: vida
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_HEALTH:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantáneo.'
+    tier: TIER3
+
+# RESPIRACION ACUATICA
+RESPIRACION1:
+  base:
+    material: POTION
+    name: '&bPoción de Respiracion Acuatica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WATER_BREATHING:
+        duration: 420
+        amplifier: 1.0
+        tier: TIER3
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC.'
+    tier: TIER3
+RESPIRACION2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Respiracion Acuatica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WATER_BREATHING:
+        duration: 420
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC.'
+    tier: TIER3
+RESPIRACION3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Respiracion Acuatica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WATER_BREATHING:
+        duration: 420
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 10 Minutos OOC.'
+    tier: TIER3
+# DEBILIDAD
+DEBILIDADBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Debilidad Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+DEBILIDADBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Debilidad Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+DEBILIDADBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Debilidad Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+DEBILIDADAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Debilidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+DEBILIDADAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Debilidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+DEBILIDADAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Debilidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      WEAKNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+
+# FUERZA
+FUERZABASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Fuerza Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+FUERZABASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Fuerza Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+FUERZABASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Fuerza Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+FUERZAINTERMEDIA1:
+  base:
+    material: POTION
+    name: '&bPoción de Fuerza Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+FUERZAINTERMEDIA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Fuerza Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+FUERZAINTERMEDIA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Fuerza Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+FUERZAAVANZADO1:
+  base:
+    material: POTION
+    name: '&bPoción de Fuerza Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER3
+FUERZAAVANZADO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Fuerza Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER3
+FUERZAAVANZADO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Fuerza Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      STRENGTH:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER3
+
+# HERIDA
+HERIDABASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Herida Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER2
+HERIDABASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Herida Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER2
+HERIDABASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Herida Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER2
+HERIDAINTERMEDIA1:
+  base:
+    material: POTION
+    name: '&bPoción de Herida Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+HERIDAINTERMEDIA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Herida Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+HERIDAINTERMEDIA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Herida Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    cooldown-reference: danio
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      INSTANT_DAMAGE:
+        duration: 1
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+
+# BRILLO
+BRILLOBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Brillo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 300
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+BRILLOBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Brillo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 300
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+BRILLOBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Brillo Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 300
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER2
+BRILLOAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Brillo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 600
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+BRILLOAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Brillo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 600
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+BRILLOAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Brillo Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      GLOWING:
+        duration: 600
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+
+# LENTITUD
+LENTITUDBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Lentitud Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+LENTITUDBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Lentitud Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+LENTITUDBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Lentitud Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+LENTITUDMEDIA1:
+  base:
+    material: POTION
+    name: '&bPoción de Lentitud Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+LENTITUDMEDIA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Lentitud Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+LENTITUDMEDIA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Lentitud Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+LENTITUDAVANZADO1:
+  base:
+    material: POTION
+    name: '&bPoción de Lentitud Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+LENTITUDAVANZADO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Lentitud Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+LENTITUDAVANZADO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Lentitud Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SLOWNESS:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+
+# REGENERACION
+REGENERACIONBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Regeneracion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+REGENERACIONBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Regeneracion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+REGENERACIONBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Regeneracion Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+REGENERACIONINTERM1:
+  base:
+    material: POTION
+    name: '&bPoción de Regeneracion Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+REGENERACIONINTERM2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Regeneracion Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+REGENERACIONINTERM3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Regeneracion Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+REGENERACIONAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Regeneracion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+REGENERACIONAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Regeneracion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+REGENERACIONAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Regeneracion Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      REGENERATION:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+
+# VENENO
+BASEVENENO1:
+  base:
+    material: POTION
+    name: '&bPoción de Veneno Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER1
+BASEVENENO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Veneno Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER1
+BASEVENENO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Veneno Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER1
+INTERMEDIOVENENO1:
+  base:
+    material: POTION
+    name: '&bPoción de Veneno Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+INTERMEDIOVENENO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Veneno Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+INTERMEDIOVENENO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Veneno Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+AVANZADAVENENO1:
+  base:
+    material: POTION
+    name: '&bPoción de Veneno Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+AVANZADAVENENO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Veneno Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+AVANZADAVENENO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Veneno Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      POISON:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+
+# SUERTE
+SUERTE1:
+  base:
+    material: POTION
+    name: '&bPoción de Suerte'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      LUCK:
+        duration: 600
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+SUERTE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Suerte'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      LUCK:
+        duration: 600
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+SUERTE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Suerte'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      LUCK:
+        duration: 600
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: Instantánea.'
+    tier: TIER3
+
+# VELOCIDAD
+VELOCIDADBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Velocidad Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+VELOCIDADBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Velocidad Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+VELOCIDADBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Velocidad Basica'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+VELOCIDADINTERMEDIO1:
+  base:
+    material: POTION
+    name: '&bPoción de Velocidad Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+VELOCIDADINTERMEDIO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Velocidad Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+VELOCIDADINTERMEDIO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Velocidad Intermedia'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Ronda.'
+    tier: TIER2
+VELOCIDADAVANZADA1:
+  base:
+    material: POTION
+    name: '&bPoción de Velocidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+VELOCIDADAVANZADA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Velocidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+VELOCIDADAVANZADA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Velocidad Avanzada'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      SPEED:
+        duration: 60
+        amplifier: 2.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+
+# TANQUE
+TANQUEBASE1:
+  base:
+    material: POTION
+    name: '&bPoción de Tanque Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+TANQUEBASE2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Tanque Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+TANQUEBASE3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Tanque Basico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 1 Ronda.'
+    tier: TIER1
+TANQUEINTERMEDIO1:
+  base:
+    material: POTION
+    name: '&bPoción de Tanque Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+TANQUEINTERMEDIO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Tanque Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+TANQUEINTERMEDIO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Tanque Intermedio'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 120
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER2
+TANQUEAVANZADO1:
+  base:
+    material: POTION
+    name: '&bPoción de Tanque Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+TANQUEAVANZADO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Tanque Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+TANQUEAVANZADO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Tanque Avanzado'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 180
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 3 Rondas.'
+    tier: TIER3
+RESITENCIAAGUA1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Agua'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESITENCIAAGUA2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Agua'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESITENCIAAGUA3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Agua'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAELECTRICO1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Electrico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAELECTRICO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Electrico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAELECTRICO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Electrico'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAFUEGO1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Fuego'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAFUEGO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Fuego'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAFUEGO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Fuego'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAHIELO1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Hielo'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAHIELO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Hielo'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAHIELO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Hielo'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIASONIDO1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Sonido'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIASONIDO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Sonido'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIASONIDO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Sonido'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAVIENTO1:
+  base:
+    material: POTION
+    name: '&bPoción de Resistencia al Viento'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAVIENTO2:
+  base:
+    material: SPLASH_POTION
+    name: '&bPoción de Resistencia al Viento'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+RESISTENCIAVIENTO3:
+  base:
+    material: LINGERING_POTION
+    name: '&bPoción de Resistencia al Viento'
+    potion-color: 255 255 255
+    displayed-type: '&5Poción'
+    item-cooldown: 60.0
+    disable-smithing: true
+    disable-enchanting: true
+    disable-repairing: true
+    disable-smelting: true
+    disable-crafting: true
+    max-stack-size: 64.0
+    potion-effect:
+      RESISTANCE:
+        duration: 60
+        amplifier: 1.0
+    lore:
+    - '&5Duración en batalla: 2 Rondas.'
+    tier: TIER3
+POCIONDEFOTOS:
+  base:
+    material: SPLASH_POTION
+    name: Poción epicarda para tomar fotos de chill
+    potion-effect:
+      SLOW:
+        duration: 999.0
+        amplifier: 100.0

@@ -1,0 +1,5 @@
+type: shapeless
+source:
+- minecraft:dark_oak_wood
+unlock: false
+result: minecraft:dark_oak_planks 4

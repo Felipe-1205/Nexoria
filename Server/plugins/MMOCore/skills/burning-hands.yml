@@ -1,0 +1,40 @@
+name: Frenesí de Adrenalina
+lore:
+- Reúne tu adrenalina
+- y desata un cono de llamas 
+- hacia la dirección en la que miras
+- ocasionando &8{damage} &7de daño
+- durante &8{duration} &7segundos
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: CAMPFIRE
+duration:
+  base: 2
+  per-level: 1
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+damage:
+  base: 4
+  per-level: 1
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 2
+  per-level: 1
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1

@@ -1,0 +1,44 @@
+name: Paso Nuboso
+lore:
+- Teletransporta tu posición
+- mirando hacia un destino dentro
+- de &8{range} &7bloques.
+- ''
+- Un movimiento tan fugaz como
+- una melodía en el viento.
+- ''
+- '&e{cooldown}s de Reutilización'
+- '&9Cuesta {mana} {mana_name}'
+material: ENDER_PEARL
+timer:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+  #Optional: The decimal format used for this skill parameter.
+  decimal-format: '0.#'
+delay:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+mana:
+  base: 4
+  per-level: 1
+  min: 0
+  max: 0
+stamina:
+  base: 0
+  per-level: 0
+  min: 0
+  max: 0
+cooldown:
+  base: 2
+  per-level: 1
+  min: 0
+  max: 0
+range:
+  base: 8
+  per-level: 1
+  min: 0
+  max: 0
