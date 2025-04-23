@@ -1,0 +1,682 @@
+#######################################################################################################
+###########################################***EliteCreatures***########################################
+##############################################              ###########################################
+##########################################***EliteMounts Vol.4***###################################### 
+########################################***************************#################################### 
+#################################################*******###############################################
+###################################################***#################################################
+#######################################################################################################
+#######Guide#########
+#Keywords:
+#- #Despawn
+#- #Ability
+#- #Death
+#- #Sounds
+# Mounts
+#modelids: mountelephantec, mountrhinoec, mountyakec, mountyakbeastec, mountbullec
+# Elephant idle 3s || General idle 2.5s
+#petting 4s
+#walk 1.5s
+#sprint 1s
+#death 1s
+#body 0.5s
+#############################################
+#Elephant
+#############################################
+#############################################
+#Despawn# 
+#############################################
+EliteMountVol4ElephantRemove30min:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - delay 34800
+  - message{m="&41 &fmin to despawn your pet"} @owner
+  - delay 600
+  - message{m="&430 &fsec to despawn your pet"} @owner
+  - delay 500
+  - message{m="&45 &fsec to despawn your pet"} @owner
+  - delay 100
+  - remove @self
+#############################################
+#Mount Mechanics #
+#############################################
+EliteMountVol4ElephantMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=EliteMountVol4ElephantColision} @self
+  - skill{s=EliteMountVol4ElephantCheckers} @self
+#############################################
+#Colisions#
+#############################################
+EliteMountVol4ElephantColision:
+  Cooldown: 0.0
+  Conditions:
+  Skills:
+  - throw{velocity=1;velocityY=0} @LivingEntitiesInRadius{r=1.5;ignore=samefaction}
+#############################################
+#Death#
+#############################################
+EliteMountVol4ElephantDeath:
+  Skills:
+  - skill{s=EliteMountVol4ElephantDeathSound} @self
+  - state{mid=mountelephantec;s=death;li=0;lo=0;r=false} @self
+  - delay 20
+  - state{mid=mountelephantec;s=body;li=0;lo=0;r=false;repeat=50;repeatInterval=10} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=10;repeatInterval=20} @self 
+  - delay 200
+  - remove @self
+#############################################
+#Remove Skill#
+#############################################
+EliteMountVol4ElephantDespawn:
+  Skills:
+  - sound{s=ecmounts:custom.ecmounts.revoke;v=1;p=1;sc=MASTER} @Self
+  - delay 20
+  - remove @self
+#############################################
+#Mounting#
+############################################# 
+EliteMountVol4ElephantMount:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching false
+  Conditions:
+  - moving{} false
+  Skills:
+  - mountmodel{mid=mountelephantec;mount=true;drive=true;ride=true;dmg=false;f=true} @trigger
+#############################################
+#Ability#
+#############################################  
+EliteMountVol4ElephantAbility:
+  Cooldown: 10
+  TriggerConditions:
+  #- owner{} true
+  Conditions:
+  - moving{} true
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.elephantability;v=1;p=1;sc=NEUTRAL} @Self
+  - skill{s=EliteMountVol4ElephantAbilitySkill;repeat=4;repeatInterval=20} @self
+EliteMountVol4ElephantAbilitySkill:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particles{p=end_rod;amount=10;speed=0.1;hS=0.3;vS=0.3;y=1;repeat=10;repeatInterval=2} @self 1.0
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self 
+  - Aura{auraName=Ability;interval=1;duration=20} @self
+  - state{mid=mountelephantec;s=sprint;li=0;lo=0;r=false} @self
+  - sound{s=ecmounts4:custom.ecmounts4.sprint;v=1;p=1;sc=BLOCKS} @Self
+#############################################
+#Petting#
+##############################################petting 4s
+EliteMountVol4ElephantPetting:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching true
+  Conditions:
+  #- moving{} false
+  - hasaura{n=Ability} false
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.elephantpetting;v=1;p=1;sc=AMBIENT} @Self
+  - Aura{auraName=Petting;interval=1;duration=80} @self
+  - state{mid=mountelephantec;s=petting;li=5;lo=10;r=false} @self
+#############################################
+#Checkers#
+#############################################
+EliteMountVol4ElephantCheckers:
+  Cooldown: 0
+  Conditions:
+  #- onground{} true
+  Skills:
+  #Whatever Checker you need to run
+  - skill{s=EliteMountVol4ElephantWalkingSound} @self
+#############################################
+#Sounds# Elephant
+#############################################
+#ecmounts4:custom.ecmounts4
+#walk - walk
+#sprint - sprint
+#petting - elephantpet
+#death - elephantdeath
+#ability - elephantability
+
+
+#############################################
+#Woolly Rhino
+#############################################
+#Despawn# 
+#############################################
+EliteMountVol4WoollyRhinoRemove30min:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - delay 34800
+  - message{m="&41 &fmin to despawn your pet"} @owner
+  - delay 600
+  - message{m="&430 &fsec to despawn your pet"} @owner
+  - delay 500
+  - message{m="&45 &fsec to despawn your pet"} @owner
+  - delay 100
+  - remove @self
+#############################################
+#Mount Mechanics #
+#############################################
+EliteMountVol4WoollyRhinoMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=EliteMountVol4WoollyRhinoColision} @self
+  - skill{s=EliteMountVol4WoollyRhinoCheckers} @self
+#############################################
+#Colisions#
+#############################################
+EliteMountVol4WoollyRhinoColision:
+  Cooldown: 0.0
+  Conditions:
+  Skills:
+  - throw{velocity=1;velocityY=0} @LivingEntitiesInRadius{r=1.5;ignore=samefaction}
+#############################################
+#Death#
+#############################################
+EliteMountVol4WoollyRhinoDeath:
+  Skills:
+  - skill{s=EliteMountVol4WhoollyRhinoDeathSound} @self
+  - state{mid=mountrhinoec;s=death;li=0;lo=0;r=false} @self
+  - delay 20
+  - state{mid=mountrhinoec;s=body;li=0;lo=0;r=false;repeat=50;repeatInterval=10} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=10;repeatInterval=20} @self 
+  - delay 200
+  - remove @self
+#############################################
+#Remove Skill#
+#############################################
+EliteMountVol4WoollyRhinoDespawn:
+  Skills:
+  - sound{s=ecmounts:custom.ecmounts.revoke;v=1;p=1;sc=MASTER} @Self
+  - delay 20
+  - remove @self
+#############################################
+#Mounting#
+############################################# 
+EliteMountVol4WoollyRhinoMount:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching false
+  Conditions:
+  - moving{} false
+  Skills:
+  - mountmodel{mid=mountrhinoec;mount=true;drive=true;ride=true;dmg=false;f=true} @trigger
+#############################################
+#Ability#
+#############################################  
+EliteMountVol4WoollyRhinoAbility:
+  Cooldown: 10
+  TriggerConditions:
+  #- owner{} true
+  Conditions:
+  - moving{} true
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowability;v=1;p=1;sc=NEUTRAL} @Self
+  - skill{s=EliteMountVol4WoollyRhinoAbilitySkill;repeat=4;repeatInterval=20} @self
+EliteMountVol4WoollyRhinoAbilitySkill:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particles{p=end_rod;amount=10;speed=0.1;hS=0.3;vS=0.3;y=1;repeat=10;repeatInterval=2} @self 1.0
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self 
+  - Aura{auraName=Ability;interval=1;duration=20} @self
+  - state{mid=mountrhinoec;s=sprint;li=0;lo=0;r=false} @self
+  - sound{s=ecmounts4:custom.ecmounts4.sprint;v=1;p=1;sc=BLOCKS} @Self
+#############################################
+#Petting#
+##############################################petting 4s
+EliteMountVol4WoollyRhinoPetting:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching true
+  Conditions:
+  #- moving{} false
+  - hasaura{n=Ability} false
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowpetting;v=1;p=1;sc=AMBIENT} @Self
+  - Aura{auraName=Petting;interval=1;duration=80} @self
+  - state{mid=mountrhinoec;s=petting;li=5;lo=10;r=false} @self
+#############################################
+#Checkers#
+#############################################
+EliteMountVol4WoollyRhinoCheckers:
+  Cooldown: 0
+  Conditions:
+  #- onground{} true
+  Skills:
+  #Whatever Checker you need to run
+  - skill{s=EliteMountVol4WhoollyRhinoWalkingSound} @self
+#############################################
+#Mountain Yak
+#############################################
+#Despawn# 
+#############################################
+EliteMountVol4MountainYakRemove30min:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - delay 34800
+  - message{m="&41 &fmin to despawn your pet"} @owner
+  - delay 600
+  - message{m="&430 &fsec to despawn your pet"} @owner
+  - delay 500
+  - message{m="&45 &fsec to despawn your pet"} @owner
+  - delay 100
+  - remove @self
+#############################################
+#Mount Mechanics #
+#############################################
+EliteMountVol4MountainYakMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=EliteMountVol4MountainYakColision} @self
+  - skill{s=EliteMountVol4MountainYakCheckers} @self
+#############################################
+#Colisions#
+#############################################
+EliteMountVol4MountainYakColision:
+  Cooldown: 0.0
+  Conditions:
+  Skills:
+  - throw{velocity=1;velocityY=0} @LivingEntitiesInRadius{r=1.5;ignore=samefaction}
+#############################################
+#Death#
+#############################################
+EliteMountVol4MountainYakDeath:
+  Skills:
+  - skill{s=EliteMountVol4MountainYakDeathSound} @self
+  - state{mid=mountyakec;s=death;li=0;lo=0;r=false} @self
+  - delay 20
+  - state{mid=mountyakec;s=body;li=0;lo=0;r=false;repeat=50;repeatInterval=10} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=10;repeatInterval=20} @self 
+  - delay 200
+  - remove @self
+#############################################
+#Remove Skill#
+#############################################
+EliteMountVol4MountainYakDespawn:
+  Skills:
+  - sound{s=ecmounts:custom.ecmounts.revoke;v=1;p=1;sc=MASTER} @Self
+  - delay 20
+  - remove @self
+#############################################
+#Mounting#
+############################################# 
+EliteMountVol4MountainYakMount:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching false
+  Conditions:
+  - moving{} false
+  Skills:
+  - mountmodel{mid=mountyakec;mount=true;drive=true;ride=true;dmg=false;f=true} @trigger
+#############################################
+#Ability#
+#############################################  
+EliteMountVol4MountainYakAbility:
+  Cooldown: 10
+  TriggerConditions:
+  #- owner{} true
+  Conditions:
+  - moving{} true
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowability;v=1;p=1;sc=NEUTRAL} @Self
+  - skill{s=EliteMountVol4MountainYakAbilitySkill;repeat=4;repeatInterval=20} @self
+EliteMountVol4MountainYakAbilitySkill:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particles{p=end_rod;amount=10;speed=0.1;hS=0.3;vS=0.3;y=1;repeat=10;repeatInterval=2} @self 1.0
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self 
+  - Aura{auraName=Ability;interval=1;duration=20} @self
+  - state{mid=mountyakec;s=sprint;li=0;lo=0;r=false} @self
+  - sound{s=ecmounts4:custom.ecmounts4.sprint;v=1;p=1;sc=BLOCKS} @Self
+#############################################
+#Petting#
+##############################################petting 4s
+EliteMountVol4MountainYakPetting:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching true
+  Conditions:
+  #- moving{} false
+  - hasaura{n=Ability} false
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowpetting;v=1;p=1;sc=AMBIENT} @Self
+  - Aura{auraName=Petting;interval=1;duration=80} @self
+  - state{mid=mountyakec;s=petting;li=5;lo=10;r=false} @self
+#############################################
+#Checkers#
+#############################################
+EliteMountVol4MountainYakCheckers:
+  Cooldown: 0
+  Conditions:
+  #- onground{} true
+  Skills:
+  #Whatever Checker you need to run
+  - skill{s=EliteMountVol4MountainYakWalkingSound} @self
+#############################################
+#Yak Beast
+#############################################
+#Despawn# 
+#############################################
+EliteMountVol4YakBeastRemove30min:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - delay 34800
+  - message{m="&41 &fmin to despawn your pet"} @owner
+  - delay 600
+  - message{m="&430 &fsec to despawn your pet"} @owner
+  - delay 500
+  - message{m="&45 &fsec to despawn your pet"} @owner
+  - delay 100
+  - remove @self
+#############################################
+#Mount Mechanics #
+#############################################
+EliteMountVol4YakBeastMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=EliteMountVol4YakBeastColision} @self
+  - skill{s=EliteMountVol4YakBeastCheckers} @self
+#############################################
+#Colisions#
+#############################################
+EliteMountVol4YakBeastColision:
+  Cooldown: 0.0
+  Conditions:
+  Skills:
+  - throw{velocity=1;velocityY=0} @LivingEntitiesInRadius{r=1.5;ignore=samefaction}
+#############################################
+#Death#
+#############################################
+EliteMountVol4YakBeastDeath:
+  Skills:
+  - skill{s=EliteMountVol4YakBeastDeathSound} @self
+  - state{mid=mountyakbeastec;s=death;li=0;lo=0;r=false} @self
+  - delay 20
+  - state{mid=mountyakbeastec;s=body;li=0;lo=0;r=false;repeat=50;repeatInterval=10} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=10;repeatInterval=20} @self 
+  - delay 200
+  - remove @self
+#############################################
+#Remove Skill#
+#############################################
+EliteMountVol4YakBeastDespawn:
+  Skills:
+  - sound{s=ecmounts:custom.ecmounts.revoke;v=1;p=1;sc=MASTER} @Self
+  - delay 20
+  - remove @self
+#############################################
+#Mounting#
+############################################# 
+EliteMountVol4YakBeastMount:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching false
+  Conditions:
+  - moving{} false
+  Skills:
+  - mountmodel{mid=mountyakbeastec;mount=true;drive=true;ride=true;dmg=false;f=true} @trigger
+#############################################
+#Ability#
+#############################################  
+EliteMountVol4YakBeastAbility:
+  Cooldown: 10
+  TriggerConditions:
+  #- owner{} true
+  Conditions:
+  - moving{} true
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowability;v=1;p=1;sc=NEUTRAL} @Self
+  - skill{s=EliteMountVol4YakBeastAbilitySkill;repeat=4;repeatInterval=20} @self
+EliteMountVol4YakBeastAbilitySkill:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particles{p=end_rod;amount=10;speed=0.1;hS=0.3;vS=0.3;y=1;repeat=10;repeatInterval=2} @self 1.0
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self 
+  - Aura{auraName=Ability;interval=1;duration=20} @self
+  - state{mid=mountyakbeastec;s=sprint;li=0;lo=0;r=false} @self
+  - sound{s=ecmounts4:custom.ecmounts4.sprint;v=1;p=1;sc=BLOCKS} @Self
+#############################################
+#Petting#
+##############################################petting 4s
+EliteMountVol4YakBeastPetting:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching true
+  Conditions:
+  #- moving{} false
+  - hasaura{n=Ability} false
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowpetting;v=1;p=1;sc=AMBIENT} @Self
+  - Aura{auraName=Petting;interval=1;duration=80} @self
+  - state{mid=mountyakbeastec;s=petting;li=5;lo=10;r=false} @self
+#############################################
+#Checkers#
+#############################################
+EliteMountVol4YakBeastCheckers:
+  Cooldown: 0
+  Conditions:
+  #- onground{} true
+  Skills:
+  #Whatever Checker you need to run
+  - skill{s=EliteMountVol4YakBeastWalkingSound} @self
+#############################################
+#Black Bull
+#############################################
+#Despawn# 
+#############################################
+EliteMountVol4BlackBullRemove30min:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - delay 34800
+  - message{m="&41 &fmin to despawn your pet"} @owner
+  - delay 600
+  - message{m="&430 &fsec to despawn your pet"} @owner
+  - delay 500
+  - message{m="&45 &fsec to despawn your pet"} @owner
+  - delay 100
+  - remove @self
+#############################################
+#Mount Mechanics #
+#############################################
+EliteMountVol4BlackBullMechanics:
+  Cooldown: 0
+  Conditions:
+  Skills:
+  - skill{s=EliteMountVol4BlackBullColision} @self
+  - skill{s=EliteMountVol4BlackBullCheckers} @self
+#############################################
+#Colisions#
+#############################################
+EliteMountVol4BlackBullColision:
+  Cooldown: 0.0
+  Conditions:
+  Skills:
+  - throw{velocity=1;velocityY=0} @LivingEntitiesInRadius{r=1.5;ignore=samefaction}
+#############################################
+#Death#
+#############################################
+EliteMountVol4BlackBullDeath:
+  Skills:
+  - skill{s=EliteMountVol4BlackBullDeathSound} @self
+  - state{mid=mountbullec;s=death;li=0;lo=0;r=false} @self
+  - delay 20
+  - state{mid=mountbullec;s=body;li=0;lo=0;r=false;repeat=50;repeatInterval=10} @self
+  - velocity{m=set;x=0;y=0;z=0;repeat=10;repeatInterval=20} @self 
+  - delay 200
+  - remove @self
+#############################################
+#Remove Skill#
+#############################################
+EliteMountVol4BlackBullDespawn:
+  Skills:
+  - sound{s=ecmounts:custom.ecmounts.revoke;v=1;p=1;sc=MASTER} @Self
+  - delay 20
+  - remove @self
+#############################################
+#Mounting#
+############################################# 
+EliteMountVol4BlackBullMount:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching false
+  Conditions:
+  - moving{} false
+  Skills:
+  - mountmodel{mid=mountbullec;mount=true;drive=true;ride=true;dmg=false;f=true} @trigger
+#############################################
+#Ability#
+#############################################  
+EliteMountVol4BlackBullAbility:
+  Cooldown: 10
+  TriggerConditions:
+  #- owner{} true
+  Conditions:
+  - moving{} true
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowability;v=1;p=1;sc=NEUTRAL} @Self
+  - skill{s=EliteMountVol4BlackBullAbilitySkill;repeat=4;repeatInterval=20} @self
+EliteMountVol4BlackBullAbilitySkill:
+  Cooldown: 0
+  Conditions:
+  - moving{} true
+  Skills:
+  - effect:particles{p=end_rod;amount=10;speed=0.1;hS=0.3;vS=0.3;y=1;repeat=10;repeatInterval=2} @self 1.0
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self 
+  - Aura{auraName=Ability;interval=1;duration=20} @self
+  - state{mid=mountbullec;s=sprint;li=0;lo=0;r=false} @self
+  - sound{s=ecmounts4:custom.ecmounts4.sprint;v=1;p=1;sc=BLOCKS} @Self
+#############################################
+#Petting#
+##############################################petting 4s
+EliteMountVol4BlackBullPetting:
+  Cooldown: 1
+  TriggerConditions:
+  - owner{} true
+  - crouching true
+  Conditions:
+  #- moving{} false
+  - hasaura{n=Ability} false
+  - hasaura{n=Petting} false
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowpetting;v=1;p=1;sc=AMBIENT} @Self
+  - Aura{auraName=Petting;interval=1;duration=80} @self
+  - state{mid=mountbullec;s=petting;li=5;lo=10;r=false} @self
+#############################################
+#Checkers#
+#############################################
+EliteMountVol4BlackBullCheckers:
+  Cooldown: 0
+  Conditions:
+  #- onground{} true
+  Skills:
+  #Whatever Checker you need to run
+  - skill{s=EliteMountVol4BlackBullWalkingSound} @self
+  
+#############################################
+#Sounds# Elephant
+#############################################
+#ecmounts4:custom.ecmounts4
+#walk - walk
+#sprint - sprint
+#petting - elephantpet
+#death - elephantdeath
+#ability - elephantability
+
+EliteMountVol4ElephantWalkingSound:
+  Conditions:
+  - moving{} true
+  Cooldown: 1.5
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.walk;v=1;p=1;sc=WEATHER} @Self
+EliteMountVol4ElephantDeathSound:
+  Cooldown: 1.0
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.elephantdeath;v=1;p=1;sc=MASTER} @Self
+  
+  
+#############################################
+#Sounds# ALL OTHERS
+#############################################
+#ecmounts:custom.ecmounts
+#revoke - revoke
+#summon - summon
+
+EliteMountVol4WhoollyRhinoWalkingSound:
+  Conditions:
+  - moving{} true
+  Cooldown: 1.5
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.walk;v=1;p=1;sc=WEATHER} @Self
+EliteMountVol4WhoollyRhinoDeathSound:
+  Cooldown: 1.0
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowdeath;v=1;p=1;sc=MASTER} @Self
+  
+EliteMountVol4MountainYakWalkingSound:
+  Conditions:
+  - moving{} true
+  Cooldown: 1.5
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.walk;v=1;p=1;sc=WEATHER} @Self
+EliteMountVol4MountainYakDeathSound:
+  Cooldown: 1.0
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowdeath;v=1;p=1;sc=MASTER} @Self
+  
+EliteMountVol4YakBeastWalkingSound:
+  Conditions:
+  - moving{} true
+  Cooldown: 1.5
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.walk;v=1;p=1;sc=WEATHER} @Self
+EliteMountVol4YakBeastDeathSound:
+  Cooldown: 1.0
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowdeath;v=1;p=1;sc=MASTER} @Self
+  
+EliteMountVol4BlackBullWalkingSound:
+  Conditions:
+  - moving{} true
+  Cooldown: 1.5
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.walk;v=1;p=1;sc=WEATHER} @Self
+EliteMountVol4BlackBullDeathSound:
+  Cooldown: 1.0
+  Skills:
+  - sound{s=ecmounts4:custom.ecmounts4.cowdeath;v=1;p=1;sc=MASTER} @Self

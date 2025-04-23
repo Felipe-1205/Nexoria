@@ -1,0 +1,286 @@
+######## created by samus2002 #########
+
+# Rampage #
+
+Rampage:
+  Conditions:
+  - health{h=<6} true
+  Cooldown: 30
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.rampage;volume=1;pitch=1} @self
+  - effect:particlering{particle=redstone;color=#ffe261;radius=0.45;points=20;amount=1;hS=0;vS=0;y=0.1;repeat=19;repeatinterval=10} @self
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=0.75;points=30;amount=1;hS=0;vS=0;y=0.1;repeat=19;repeatinterval=10} @self
+  - potion{type=DAMAGE_RESISTANCE;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  
+# Brutal Strike #
+
+Brutal_Strike:
+  Cooldown: 0
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Shield_Barrier} castinstead Whirlwind
+  Skills:
+  - randomskill{skills=Brutal_Strike_1,Brutal_Strike_2,Brutal_Strike_3,Brutal_Pierce,Brutal_Pierce}
+
+Brutal_Strike_1:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.warrior_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Brutal_Strike_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Brutal_Strike_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=0.3;sideOffset=0.5}
+  
+Brutal_Strike_2:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.warrior_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Brutal_Strike_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Brutal_Strike_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=-0.5;sideOffset=-1}
+  
+Brutal_Strike_3:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.warrior_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Brutal_Strike_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Brutal_Strike_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=0;sideOffset=-0.8}
+  
+Brutal_Pierce:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.warrior_pierce;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Brutal_Strike_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Brutal_Pierce;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=9;y=0.3;sideOffset=0}
+  
+Brutal_Strike_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+# Charge #
+
+Charge:
+  Cooldown: 3
+  Conditions:
+  - crouching false
+  Skills:
+  - lunge{velocity=3;velocityY=0.2} @forward{f=12;y=0.1}
+  - effect:sound{s=warrior_sounds:samus.warrior_charge;volume=1;pitch=1} @self
+  - effect:particles{particle=lava;amount=7;hS=0.3;vS=0.5;speed=0;repeat=4;repeatinterval=3} @self
+  - summon{type=Charge;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  
+# Shield Barrier #
+
+Shield_Barrier:
+  Conditions:
+  - hasaurastacks{auraName=Shield_Barrier_aura} castinstead Shield_Barrier_Skill
+  Skills:
+  - Aura{auraName=Shield_Barrier_aura;interval=1;duration=5} @self
+  
+Shield_Barrier_Skill:
+  Cooldown: 7
+  Skills:
+  - Aura{auraName=Shield_Barrier;interval=1;duration=20} @self
+  - setvariable{var=caster.shield;value=1;type=INTEGER} @self
+  - onDamaged{auraName=shield_block;oH=Shield_Barrier_BREAK;c=4;cE=true;d=120} @self
+  - summon{type=Shield_Barrier;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - skill{s=Shield_Barrier_PUSH;repeat=23;repeatinterval=5} @EIR{r=1.5}
+  
+Shield_Barrier_PUSH:
+  TargetConditions:
+  - mythicmobtype{t=Shield_Barrier} false
+  - mythicmobtype{t=Brutal_Strike_1} false
+  - mythicmobtype{t=Brutal_Strike_2} false
+  - mythicmobtype{t=Brutal_Strike_3} false
+  - mythicmobtype{t=Brutal_Pierce} false
+  - mythicmobtype{t=Charge} false
+  - mythicmobtype{t=Chain_Hook} false
+  - mythicmobtype{t=Whirlwind} false
+  - mythicmobtype{t=Judgement_Shield} false
+  - mythicmobtype{t=Judgement_Sword} false
+  Skills:
+  - throw{velocity=3;velocityY=0}
+
+Shield_Barrier_BREAK:
+  Conditions:
+  - varEquals{var=caster.shield;value=1} cast Shield_Barrier_BREAK1
+  - varEquals{var=caster.shield;value=2} cast Shield_Barrier_BREAK2
+  - varEquals{var=caster.shield;value=3} cast Shield_Barrier_BREAK3
+  - varEquals{var=caster.shield;value=4} cast Shield_Barrier_BREAK4
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.shield_break;volume=1;pitch=1} @self
+  - variableadd{var=caster.shield;amount=1} @self
+  
+Shield_Barrier_BREAK1:
+  Skills:
+  - signal{s=BROKE1} @MIR{r=4;t=Shield_Barrier;target=armorstands}
+  
+Shield_Barrier_BREAK2:
+  Skills:
+  - signal{s=BROKE2} @MIR{r=4;t=Shield_Barrier;target=armorstands}
+  
+Shield_Barrier_BREAK3:
+  Skills:
+  - signal{s=BROKE3} @MIR{r=4;t=Shield_Barrier;target=armorstands}
+  
+Shield_Barrier_BREAK4:
+  Skills:
+  - signal{s=BROKE4} @MIR{r=4;t=Shield_Barrier;target=armorstands}
+  
+BROKE1:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=shield_barrier_1_broken:4}
+  - effect:particles{particle=block_crack;m=HONEY_BLOCK;amount=10;hS=0.6;vS=0.3;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+
+BROKE2:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=shield_barrier_2_broken:4}
+  - effect:particles{particle=block_crack;m=HONEY_BLOCK;amount=10;hS=0.6;vS=0.3;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+
+BROKE3:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=shield_barrier_3_broken:4}
+  - effect:particles{particle=block_crack;m=HONEY_BLOCK;amount=10;hS=0.6;vS=0.3;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+
+BROKE4:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=block_crack;m=HONEY_BLOCK;amount=10;hS=0.6;vS=0.3;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+
+# Chain Hook #
+
+Chain_Hook:
+  Conditions:
+  - crouching true
+  Cooldown: 2
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.chain;volume=1;pitch=1} @self
+  - summon{type=Chain_Hook;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7.5;y=-0.5;sideOffset=-0.1}
+  - projectile{onHit=Chain_Hook_hit;v=21;i=1;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=true;hs=false;hfs=0;sfo=0.5;syo=0.8;tyo=0.8} @Forward{f=15;y=0}
+
+Chain_Hook_hit:
+  TargetConditions:
+  - mythicmobtype{t=Shield_Barrier} false
+  - mythicmobtype{t=Brutal_Strike_1} false
+  - mythicmobtype{t=Brutal_Strike_2} false
+  - mythicmobtype{t=Brutal_Strike_3} false
+  - mythicmobtype{t=Brutal_Pierce} false
+  - mythicmobtype{t=Charge} false
+  - mythicmobtype{t=Chain_Hook} false
+  - mythicmobtype{t=Whirlwind} false
+  - mythicmobtype{t=Judgement_Shield} false
+  - mythicmobtype{t=Judgement_Sword} false
+  Skills:
+  - skill{s=Chain_Hook_Target} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST}
+  
+Chain_Hook_Target:
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.chain_hit;volume=1;pitch=1} @self
+  - damage{a="<modifier.damage>"}
+  - pull{velocity=7}
+  
+# Whirlwind #
+
+Whirlwind:
+  Cooldown: 7
+  Skills:
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false} @self
+  - lunge{velocity=0.15;velocityY=0;repeat=55;repeatinterval=1} @forward{f=2;y=0}
+  - effect:sound{s=warrior_sounds:samus.whirlwind;volume=1;pitch=1;repeat=6;repeatinterval=8} @self
+  - summon{type=Whirlwind;amount=1;radius=0;yRadius=0;onSurface=true;repeat=6;repeatinterval=8} @forward{f=5;y=0.15}
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true;repeat=6;repeatinterval=8} @EIR{r=5}
+
+# Judgement #
+
+Judgement:
+  Cooldown: 10
+  Conditions:
+  - crouching true
+  Skills:
+  - effect:particles{particle=redstone;color=#ffe261;amount=15;hS=0.25;vS=0.5;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=10;repeatinterval=3} @self
+  - orbital{bulletType=MOB;mob=Judgement_Shield;r=0;points=1;i=1;duration=2000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - lunge{velocity=0.3;velocityY=0;repeat=30;repeatinterval=1} @forward{f=2;y=-0.1}
+  - effect:sound{s=block.metal.step;volume=1.2;pitch=1;repeat=6;repeatinterval=5} @self
+  - skill{s=Judgement_STUN;repeat=6;repeatinterval=5} @EIR{r=4}
+  - effect:sound{s=warrior_sounds:samus.judgement_leap;volume=1;pitch=1;delay=15} @self
+  - delay 32
+  - lunge{velocity=1;velocityY=1.2} @forward{f=2;y=6}
+  - stun{d=16;f=false;CancelOnTakeDamage=false;CancelOnDeath=true;delay=10} @self
+  - delay 15
+  - summon{type=Judgement_Sword;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - totem{md=2000;c=4;oS=Judgement_DAMAGE;oT=Judgement_DAMAGE_TIMER;hnp=true;hp=true;hR=1;vR=1;i=40;delay=18} @MIR{r=10;t=Judgement_Sword;target=armorstands;sort=NEAREST}
+  - effect:sound{s=warrior_sounds:samus.judgement_smash1;volume=1;pitch=1} @self
+  - delay 12
+  - onDamaged{auraName=landresist;d=20;cE=true;damageMods="FALL 0"} @self
+  - leap{velocity=250} @forward{f=0.2;y=-5}
+
+Judgement_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false} @EntitiesNearOrigin{r=10;ignore=self}
+  - effect:particleorbital{r=0.5;points=16;t="<modifier.duration> * 20";i=1;particle=crit;oy=2.5} @EntitiesNearOrigin{r=10;ignore=self}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true} @EntitiesNearOrigin{r=10;ignore=self}
+
+Judgement_DAMAGE_TIMER:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.warrior_pierce;volume=0.8;pitch=0.9} @self
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true} @EntitiesNearOrigin{r=10;ignore=self}
+  
+Judgement_FX:
+  Skills:
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=2;amount=30}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=3;amount=60}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=3;points=20;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=3;points=20;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=4;amount=90}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=4;points=30;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=4;points=30;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=6;amount=120}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=6;points=50;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=6;points=50;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=7;amount=160}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=7;points=70;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=7;points=70;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=8;amount=200}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=8;points=80;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=8;points=80;amount=1;hS=0;vS=0;y=0.1}
+  - delay 1
+  - effect:particlesphere{particle=redstone;color=#ffe261;radius=10;amount=260}
+  - effect:particlering{particle=redstone;color=#ffe261;radius=10;points=100;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=redstone;color=#f04e1d;radius=10;points=100;amount=1;hS=0;vS=0;y=0.1}
+  
+Judgement_STUN:
+  TargetConditions:
+  - mythicmobtype{t=Shield_Barrier} false
+  - mythicmobtype{t=Brutal_Strike_1} false
+  - mythicmobtype{t=Brutal_Strike_2} false
+  - mythicmobtype{t=Brutal_Strike_3} false
+  - mythicmobtype{t=Brutal_Pierce} false
+  - mythicmobtype{t=Charge} false
+  - mythicmobtype{t=Chain_Hook} false
+  - mythicmobtype{t=Whirlwind} false
+  - mythicmobtype{t=Judgement_Shield} false
+  - mythicmobtype{t=Judgement_Sword} false
+  Skills:
+  - throw{velocity=5;velocityY=1.5}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false}
+  - effect:particleorbital{r=0.5;points=16;t=40;i=1;particle=crit;oy=2.5}
+  - damage{a=2;pkb=false;hnp=true;hp=true}
+  - effect:sound{s=warrior_sounds:samus.chain_hit;volume=1;pitch=0.9} @EIR{r=4;limit=1}
+  

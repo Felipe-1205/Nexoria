@@ -1,0 +1,452 @@
+######## created by samus2002 #########
+
+# VFX #
+
+VFX_Bloodborne_Blades:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_dagger;lockpitch=true;delay=4} @self ~onSpawn
+  - brightness{b=15;s=15;delay=4} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0;delay=4} @self ~onSpawn
+  - state{s=spawn;speed=1;delay=4} @self ~onSpawn
+  - skill{s=Bloodbending_Blades_REMOVE_AS_CHILD} @owner ~onTimer:10
+  - potion{type=SPEED;duration=20;level=0;hasParticles=false} @owner ~onTimer:10
+VFX_Bloodborne_Grimoire:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_grimoire;lockpitch=true;delay=4} @self ~onSpawn
+  - brightness{b=15;s=15;delay=4} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0;delay=4} @self ~onSpawn
+  - state{s=spawn;speed=1;delay=4} @self ~onSpawn
+  - skill{s=Bloodbending_Grimoire_REMOVE_AS_CHILD} @owner ~onTimer:10
+  
+VFX_Bloodborne_Needles:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle;delay=4} @self ~onSpawn
+  - brightness{b=15;s=15;delay=4} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0;delay=4} @self ~onSpawn
+  - state{s=spawn;speed=1;delay=4} @self ~onSpawn
+  - skill{s=Bloodbending_Needles_REMOVE_AS_CHILD} @owner ~onTimer:10
+VFX_Bloodborne_Needles_PRO:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=shooting;speed=1;delay=1} @self ~onSpawn
+VFX_Bloodborne_Needles_STUCK1:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=stuck1;speed=1} @self ~onSpawn
+VFX_Bloodborne_Needles_STUCK2:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=stuck2;speed=1} @self ~onSpawn
+VFX_Bloodborne_Needles_STUCK3:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=stuck3;speed=1} @self ~onSpawn
+VFX_Bloodborne_Needles_STUCK4:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=stuck4;speed=1} @self ~onSpawn
+VFX_Bloodborne_Needles_STUCK5:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_needle} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=stuck5;speed=1} @self ~onSpawn
+  
+VFX_Bloodborne_Scythe:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_scythe;lockpitch=true;delay=4} @self ~onSpawn
+  - brightness{b=15;s=15;delay=4} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0;delay=4} @self ~onSpawn
+  - state{s=spawn;speed=1;delay=4} @self ~onSpawn
+  - skill{s=Bloodbending_Scythe_REMOVE_AS_CHILD} @owner ~onTimer:10
+  - potion{type=SLOW;duration=20;level=0;hasParticles=false} @owner ~onTimer:10
+VFX_Bloodborne_Scythe_SPIN:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_scythe_spin;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - state{s=skill3;speed=1} @self ~onSpawn
+  #- look{immediately=true;force=true;delay=13} @owner ~onTimer:1
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.7;pitch=0.6} @self ~onTimer:5
+VFX_Bloodborne_Scythe_SPIN_BACK:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodborne_scythe_spin;lockpitch=true;delay=6} @self ~onSpawn
+  - brightness{b=15;s=15;delay=6} @self ~onSpawn
+  - state{s=skill3;speed=1;delay=6} @self ~onSpawn
+  - skill{s=SCYTHE_Surge_MISSILE_End_Back_REMOVE} @PIR{r=5} ~onTimer:5
+  - look{force=true} @owner ~onTimer:1
+  - remove{delay=100} @self ~onSpawn
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.7;pitch=0.6} @self ~onTimer:5
+  
+VFX_Blood_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_impact_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_blood_impact_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_blood_impact_1;b=11;s=11;delay=8} @self ~onSpawn
+  - brightness{mid=vfx_blood_impact_1;b=7;s=7;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_blood_impact_1;b=3;s=3;delay=12} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_blood_impact_1;p=bone;nm=vfx_blood_impact_7;np=bone;delay=12} @self ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+VFX_Bloodmoon_Slash_DIAG1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=11;s=11;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=7;s=7;delay=12} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=3;s=3;delay=14} @self ~onSpawn
+  
+  - state{s=left-right-diag} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_8;np=body;delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+VFX_Bloodmoon_Slash_DIAG2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=11;s=11;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=7;s=7;delay=12} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=3;s=3;delay=14} @self ~onSpawn
+  
+  - state{s=right-left-diag} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_8;np=body;delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+VFX_Bloodmoon_THRUST:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_thrust_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_thrust_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_thrust_1;b=11;s=11;delay=8} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_thrust_1;b=7;s=7;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_thrust_1;b=3;s=3;delay=12} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone;nm=vfx_bloodmoon_thrust_7;np=bone;delay=12} @self ~onSpawn
+  
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_thrust_1;p=bone2;nm=vfx_bloodmoon_thrust_7;np=bone2;delay=12} @self ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+VFX_Bloodmoon_Slash_HORIZ1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=11;s=11;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=7;s=7;delay=12} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=3;s=3;delay=14} @self ~onSpawn
+  
+  - state{s=right-left-horiz} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_8;np=body;delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+VFX_Bloodmoon_Slash_HORIZ2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_slash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=15;s=15} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=11;s=11;delay=10} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=7;s=7;delay=12} @self ~onSpawn
+  - brightness{mid=vfx_bloodmoon_slash_1;b=3;s=3;delay=14} @self ~onSpawn
+  
+  - state{s=left-right-horiz} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_bloodmoon_slash_1;p=body;nm=vfx_bloodmoon_slash_8;np=body;delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+VFX_BLADES_Surge:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_bloodmoon_dash;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+VFX_BLOODSPIKES_SMALL:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_spike_s;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_BLOODSPIKES_MEDIUM:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_spike_m;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+VFX_BLOODSPIKES_BIG:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_spike_b;lockpitch=true} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+VFX_BLOOD_METEOR:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_meteor;delay=3} @self ~onSpawn
+  - brightness{b=15;s=15;delay=3} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0;delay=3} @self ~onSpawn
+  - state{s=spawn;delay=4} @self ~onSpawn
+  - state{s=loop;delay=14} @self ~onSpawn
+  - stun{d=3;f=false;CancelOnTakeDamage=false;CancelOnDeath=true;delay=4} @self ~onSpawn
+VFX_BLOOD_METEOR_Rupture:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_rupture_1;lockpitch=true} @self ~onSpawn
+  - brightness{mid=vfx_blood_rupture_1;b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - tint{m=vfx_blood_rupture_1;p=crack;c=000000;em=false} @self ~onSpawn
+  
+  - changepart{m=vfx_blood_rupture_1;p=crack;nm=vfx_blood_rupture_2;np=crack;delay=55} @self ~onSpawn
+  - changepart{m=vfx_blood_rupture_1;p=crack;nm=vfx_blood_rupture_3;np=crack;delay=56} @self ~onSpawn
+  - changepart{m=vfx_blood_rupture_1;p=crack;nm=vfx_blood_rupture_4;np=crack;delay=58} @self ~onSpawn
+  - changepart{m=vfx_blood_rupture_1;p=crack;nm=vfx_blood_rupture_5;np=crack;delay=60} @self ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+  
+VFX_BLOOD_BAT:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_blood_bat} @self ~onSpawn
+  - brightness{b=15;s=15} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - state{s=despawn;delay=20} @self ~onSpawn
+  - state{s=loop;delay=5} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn

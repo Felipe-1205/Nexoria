@@ -1,0 +1,178 @@
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#           Drakonin Pack Vol.1            #
+#            Mobs - MythicMobs             #
+#               by Nocsy                   #
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+############################################
+#                   Egg                    #
+############################################
+
+Nocsy_Drakonin-Fairy_Egg:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Equipment: []
+  Skills:
+  - setAI{ai=false} ~onSpawn
+  - model{mid=nocsy_fairy_drakonin_egg;n=false} @self ~onSpawn
+  - setvariable{var=caster.crack;value=0;s=CASTER} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_Egg_Interaction} ~onDamaged
+  - skill{s=Nocsy_Drakonin-Fairy_Egg_Interaction} ~onInteract
+  - skill{s=Nocsy_Drakonin-Fairy_Egg_Sound} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin-Fairy_Egg_Sound} @self ~onInteract
+  - potion{type=SLOW;duration=9999999;level=255} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_CancelEvent;sync=true} ~onAttack
+  Display: "§6Drakonin egg"
+  Health: 1000
+  Damage: 0
+  Options:
+    Despawn: true
+    Collidable: false
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.1
+
+############################################
+#               Fire Dragon                #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Fairy-Adult:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_fairy_drakonin;n=false;drive=true} @self ~onSpawn
+  - addtag{t=fairy} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin-Fairy_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin-Fairy_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin-Fairy_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin-Fairy_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin-Fairy_Sound_Ambient} @self ~onSpawn
+  Display: "§6Fariy Drakonin"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.42
+    MaxCombatDistance: 5
+    AttackSpeed: 1.6
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Fairy-Baby:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_fairy_drakonin_baby;n=false} @self ~onSpawn
+  - addtag{t=fairy} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin-Fairy_Tame-Effect} ~onSignal:TAMING
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§6Fire Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby - MCPets -----------#
+Nocsy_Drakonin-Fairy-Baby-MCPets:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_fairy_drakonin_baby;n=false} @self ~onSpawn
+  - addtag{t=fairy} @self ~onSpawn
+  - setLivingPet{id=Nocsy_Drakonin-Fairy_Baby;followOnTame=true;tamingProgress=0} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin-Fairy_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin-Fairy_Tame-Effect} ~onSignal:TAMING
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin-Fairy_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§6Fairy Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false

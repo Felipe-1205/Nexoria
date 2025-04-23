@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 187.161.133.179
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739832081193
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739851976711
+  login: 1739849428753
+money: '0'
+last-account-name: leonard_pascal
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 49.822246021890614
+  y: 80.0
+  z: -0.898555003334492
+  yaw: -121.99388122558594
+  pitch: 10.560843467712402
+nickname: Arthur
+logoutlocation:
+  world: 5e9ebc87-7d95-497a-9572-3b14d23ece80
+  world-name: spawn
+  x: -1106.8551094996403
+  y: 10.0
+  z: 656.6596732601615
+  yaw: -98.4000244140625
+  pitch: 19.049999237060547

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.29.31.41
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739751468447
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739751493096
+  login: 1739751425600
+money: '0'
+last-account-name: Kirki_
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -1859.1047116802308
+  y: 78.0
+  z: -1694.0941481125822
+  yaw: -121.72964477539062
+  pitch: 0.6399046778678894
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 911.6086526680239
+  y: 76.0
+  z: 2912.285977459093
+  yaw: 81.40642547607422
+  pitch: 1.5608752965927124
+nickname: Kirkigar

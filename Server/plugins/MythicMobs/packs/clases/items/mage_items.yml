@@ -1,0 +1,255 @@
+######## created by samus2002 #########
+  
+mage_staff:
+  Id: stone_sword
+  Display: "<gradient:#6ef0ff:#5e76ff:#6ef0ff>Staff of Mage"
+  Model: 2021
+  Lore:
+  - '<gradient:#6ef0ff:#5e76ff:#6ef0ff>The staff of a Mage'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Fireball} @self ~onSwing
+  - skill{s=Blink} @self ~onUse
+  - skill{s=Meteor} @self ~onUse
+  - skill{s=Frost_Nova} @self ~onCrouch
+  - skill{s=Inferno_Chains} @self ~onSwing
+  
+mage_staff_shiny:
+  Id: stone_sword
+  Display: "<gradient:#6ef0ff:#fffd9c:#6ef0ff>Shiny Staff of Mage"
+  Model: 2022
+  Lore:
+  - '<gradient:#6ef0ff:#fffd9c:#6ef0ff>The staff of a Mage'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Fireball} @self ~onSwing
+  - skill{s=Blink} @self ~onUse
+  - skill{s=Meteor} @self ~onUse
+  - skill{s=Frost_Nova} @self ~onCrouch
+  - skill{s=Inferno_Chains} @self ~onSwing
+  
+arcane_missile:
+  Id: paper
+  Display: "&6"
+  Model: 2244
+  Hide:
+  - ATTRIBUTES
+
+blink_1:
+  Id: paper
+  Display: "&6"
+  Model: 2245
+  Hide:
+  - ATTRIBUTES
+ 
+blink_2:
+  Id: paper
+  Display: "&6"
+  Model: 2246
+  Hide:
+  - ATTRIBUTES
+  
+blink_3:
+  Id: paper
+  Display: "&6"
+  Model: 2247
+  Hide:
+  - ATTRIBUTES
+  
+blink_4:
+  Id: paper
+  Display: "&6"
+  Model: 2248
+  Hide:
+  - ATTRIBUTES
+  
+blink_5:
+  Id: paper
+  Display: "&6"
+  Model: 2249
+  Hide:
+  - ATTRIBUTES
+  
+blink_6:
+  Id: paper
+  Display: "&6"
+  Model: 2250
+  Hide:
+  - ATTRIBUTES
+  
+fireball_fireball:
+  Id: paper
+  Display: "&6"
+  Model: 2251
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_1:
+  Id: paper
+  Display: "&6"
+  Model: 2252
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_2:
+  Id: paper
+  Display: "&6"
+  Model: 2253
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_3:
+  Id: paper
+  Display: "&6"
+  Model: 2254
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_4:
+  Id: paper
+  Display: "&6"
+  Model: 2255
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_5:
+  Id: paper
+  Display: "&6"
+  Model: 2256
+  Hide:
+  - ATTRIBUTES
+  
+frost_nova_6:
+  Id: paper
+  Display: "&6"
+  Model: 2257
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_1:
+  Id: paper
+  Display: "&6"
+  Model: 2258
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_2:
+  Id: paper
+  Display: "&6"
+  Model: 2259
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_3:
+  Id: paper
+  Display: "&6"
+  Model: 2260
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_4:
+  Id: paper
+  Display: "&6"
+  Model: 2261
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_5:
+  Id: paper
+  Display: "&6"
+  Model: 2262
+  Hide:
+  - ATTRIBUTES
+  
+groundd_crack_6:
+  Id: paper
+  Display: "&6"
+  Model: 2263
+  Hide:
+  - ATTRIBUTES
+  
+ground_crack_explode_1:
+  Id: paper
+  Display: "&6"
+  Model: 2264
+  Hide:
+  - ATTRIBUTES
+  
+ground_crack_explode_2:
+  Id: paper
+  Display: "&6"
+  Model: 2265
+  Hide:
+  - ATTRIBUTES
+  
+ground_crack_explode_3:
+  Id: paper
+  Display: "&6"
+  Model: 2266
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_1:
+  Id: paper
+  Display: "&6"
+  Model: 2267
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_2:
+  Id: paper
+  Display: "&6"
+  Model: 2268
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_3:
+  Id: paper
+  Display: "&6"
+  Model: 2269
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_4:
+  Id: paper
+  Display: "&6"
+  Model: 2270
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_5:
+  Id: paper
+  Display: "&6"
+  Model: 2271
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_6:
+  Id: paper
+  Display: "&6"
+  Model: 2272
+  Hide:
+  - ATTRIBUTES
+  
+inferno_chains_7:
+  Id: paper
+  Display: "&6"
+  Model: 2273
+  Hide:
+  - ATTRIBUTES
+  
+meteor:
+  Id: paper
+  Display: "&6"
+  Model: 2274
+  Hide:
+  - ATTRIBUTES
+  

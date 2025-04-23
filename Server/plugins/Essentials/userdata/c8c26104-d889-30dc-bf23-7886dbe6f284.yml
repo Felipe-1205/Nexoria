@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 38.253.146.115
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739685742351
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739688322733
+  login: 1739683831418
+money: '0'
+last-account-name: EthelRoxana17
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2954.0221181793036
+  y: 81.0
+  z: 464.5808034906302
+  yaw: 132.01934814453125
+  pitch: -1.649894118309021
+nickname: Ethel
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2965.4948838177293
+  y: 76.9789998934269
+  z: 460.3167344082323
+  yaw: -45.794151306152344
+  pitch: 80.8499755859375

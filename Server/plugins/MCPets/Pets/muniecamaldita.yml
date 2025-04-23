@@ -1,0 +1,33 @@
+Id: muniecamaldita
+MythicMob: dark_element_pet
+Permission: mcpets.munecamaldita
+Mountable: false
+AutoRide: false
+MountType: walking
+DespawnOnDismount: false
+Distance: 10
+SpawnRange: 1
+InventorySize: 18
+ComingBackRange: 10
+Icon:
+  Name: §5§lMuñeca Maldita
+  TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE1YTNiYWMwN2MyNTZjY2ZiMjhkMDQ2ZTNkMzk5OWU1ZjQ3ZTVjMzkzZWI0MTIwMDZhNWQ4OWEzOGNiZjI0In19fQ==
+  Description:
+  - §4§lFuerza §73
+  - §2§lDestreza §74
+  - §6§lConstitucion §74
+  - §5§lSabiduria §75
+  - §1§lInteligencia §75
+  - §d§lCarisma §77
+Levels:
+  Lvl_Beginner:
+    Name: Unico
+    ExperienceThreshold: 0
+    MaxHealth: 40
+    Regeneration: 0.4
+    ResistanceModifier: 1
+    DamageModifier: 1
+    Power: 1
+    Cooldowns:
+      Respawn: 60
+      Revoke: 0

@@ -1,0 +1,56 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: NivlekNot
+  UUID: db79b5d2-006f-330e-bae3-c00f907985e5
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740078332626
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -1.0
+      y: 68.0
+      z: -110.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740078332626
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740078362487
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 12.0
+      y: 79.0
+      z: -134.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740078362487
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740078647900
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -31.0
+      y: 79.0
+      z: -199.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740078647900
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740078740679
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -24.0
+      y: 57.0
+      z: -257.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740078740679
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740078789152
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 6.0
+      y: 59.0
+      z: -377.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740078789152
+Finished: true

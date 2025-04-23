@@ -1,0 +1,599 @@
+######## created by samus2002 #########
+
+Arcane_Hit:
+  Skills:
+  - randomskill{skills=Arcane_Hit1,Arcane_Hit2,Arcane_Hit3}
+
+Arcane_Hit1:
+  Skills:
+  - state{s=skill} @self
+
+Arcane_Hit2:
+  Skills:
+  - state{s=skill2} @self
+  
+Arcane_Hit3:
+  Skills:
+  - state{s=skill3} @self
+
+  
+# Magical Tinkering #
+
+Magical_Tinkering:
+  Skills:
+  - skill{s=Magical_Tinkering_SKILL;cooldown=<modifier.tinkercooldown>}
+  - skill{s=Arcane_Jetpack_SKILL}
+  
+Magical_Tinkering_SKILL:
+  Conditions:
+  - hasaura{n=Magical_Tinkering_SHIELD} false
+  Skills:
+  - effect:sound{s=ui.stonecutter.select_recipe;volume=0.8;pitch=1.5;repeat=3;repeati=2} @self
+  - orbital{auraName=MTA;bulletType=MOB;mob=VFX_Magical_Tinkering;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=22;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 11
+  - effect:sound{s=entity.item.break;volume=0.8;pitch=1.5} @self
+  #give shield
+  - shield{amount=1;maxShield="<modifier.shield>";repeat="<modifier.shield>";repeati=1} @self
+  - delay 1
+  - onDamaged{auraName=Magical_Tinkering_SHIELD;i=10;duration=30;oT=Magical_Tinkering_TICK;oH=Magical_Tinkering_REMOVEAURA;cE=false} @self
+  
+Magical_Tinkering_REMOVEAURA:
+  Skills:
+  - auraremove{aura=Magical_Tinkering_SHIELD} @self
+
+Magical_Tinkering_TICK:
+  Skills:
+  - Aura{auraName=Magical_Tinkering_SHIELD;duration=40} @self
+  
+  
+  
+Arcane_Jetpack_SKILL:
+  Cooldown: 0
+  Conditions:
+  - crouching true
+  - hasaura{n=Arcane_Mecha_Aura} true
+  - hasaura{n=Arcane_Mecha_Aura_READY} false
+  Skills:
+  - effect:sound{s=entity.blaze.shoot;volume=0.3;pitch=0.05;cooldown=0.2} @self
+  
+  
+  - skill{s=Arcane_Jetpack_Fly}
+
+Arcane_Jetpack_Fly:
+  Conditions:
+  - pitch{p=<-15} castinstead Arcane_Jetpack_FlyUp
+  - pitch{p=>15} castinstead Arcane_Jetpack_FlyDown
+  - pitch{p=<-35} castinstead Arcane_Jetpack_FlyUpMore
+  - pitch{p=>35} castinstead Arcane_Jetpack_FlyDownMore
+  Skills:
+  - lunge{velocity=0.5} @forward
+  
+Arcane_Jetpack_FlyUp:
+  Skills:
+  - lunge{velocity=0.5;velocityY=0.2} @forward
+  
+Arcane_Jetpack_FlyDown:
+  Skills:
+  - lunge{velocity=0.5;velocityY=-0.2} @forward
+  
+Arcane_Jetpack_FlyUpMore:
+  Skills:
+  - lunge{velocity=0.5;velocityY=0.4} @forward
+  
+Arcane_Jetpack_FlyDownMore:
+  Skills:
+  - lunge{velocity=0.5;velocityY=-0.4} @forward
+  
+# Arcane Blast #
+  
+Arcane_Blast:
+  Skills:
+  - skill{s=Arcane_Blast_FIRE}
+  - skill{s=Arcane_Repulsor_FIRE}
+  
+Arcane_Blast_FIRE:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} false
+  Skills:
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.5} @self
+  - effect:sound{s=entity.firework_rocket.large_blast;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.7;pitch=0.6} @self
+  - projectile{bulletType=MOB;mob=VFX_Arcane_Blast;onHit=Arcane_Blast_DAMAGE_D;onEnd=Arcane_Blast_DAMAGE_D;oT=Arcane_Blast_TRAIL;v=18;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0;hitConditions=[- entitytype{t=ARMOR_STAND} false]} @Forward{f=25;y=0}
+  
+Arcane_Blast_TRAIL:
+  Cooldown: 0.1
+  Skills:
+  - summon{type=VFX_Arcane_Blast_Trail;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+  
+Arcane_Blast_DAMAGE_D:
+  Skills:
+  - skill{s=Arcane_Blast_DAMAGE} @EntitiesNearOrigin{r=4}
+  #- summon{type=VFX_Arcane_Explosion;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+  - effect:particles{particle=sonic_boom;amount=3;hS=0.7;vS=0.7;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @origin
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=0.5;delay=3} @origin
+  
+Arcane_Blast_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+
+
+
+
+Arcane_Repulsor_SCAN:
+  Cooldown: 3
+  TargetConditions:
+  - hasaura{n=RepulsorAURA} true
+  Skills:
+  - SudoSkill{s=Arcane_Repulsor_MOTION;cat=true}
+Arcane_Repulsor_MOTION:
+  Skills:
+  - signal{s=REPULSOR} @trigger{target=armorstands}
+  
+Arcane_Repulsor_FIRE:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} true
+  Skills:
+  #- skill{s=Arcane_Repulsor_MOTION} @Child{target=armorstands}
+  - Aura{auraName=RepulsorAURA;duration=40} @self
+  
+  - delay 15
+  
+  - effect:sound{s=block.beacon.activate;volume=1.5;pitch=1.2} @self
+  - effect:sound{s=block.beacon.activate;volume=1.5;pitch=1.5;delay=10} @self
+  - summon{type=VFX_Arcane_Repulsor;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=1.25;y=0}
+  - projectile{oS=Arcane_Repulsor_START;onHit=Arcane_Repulsor_HIT_D;onEnd=Arcane_Repulsor_END_D;v=1;i=1;hR=1;vR=1;mr=14;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0;hitConditions=[- entitytype{t=ARMOR_STAND} false]} @Forward{f=25;y=0}
+  - delay 8
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.4;pitch=1.4} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.65} @self
+  - effect:sound{s=entity.firework_rocket.large_blast;volume=1.1;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.hurt;volume=0.4;pitch=0.4} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.5;pitch=0.6} @self
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=0.8} @self
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=0.5;delay=3} @self
+
+
+  
+  
+  
+Arcane_Repulsor_START:
+  Skills:
+  - delay 4
+  - modifyProjectile{trait=VELOCITY;action=SET;value=50}
+  
+  
+Arcane_Repulsor_HIT_D:
+  Skills:
+  - skill{s=Arcane_Repulsor_DAMAGE} @EntitiesNearOrigin{r=3}
+  
+Arcane_Repulsor_END_D:
+  Skills:
+  - skill{s=Arcane_Repulsor_EXPLOSION_DAMAGE} @EntitiesNearOrigin{r=5}
+  #- summon{type=VFX_Arcane_Repulsor_Explosion;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+  - effect:particles{particle=sonic_boom;amount=6;hS=1.4;vS=1.4;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Arcane_Repulsor_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:particles{particle=sonic_boom;size=1;amount=1;hS=0;vS=0;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  
+Arcane_Repulsor_EXPLOSION_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:particles{particle=sonic_boom;size=1;amount=1;hS=0;vS=0;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  - damage{a="<modifier.damage> * 2";pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=5}
+  
+# Flamethrower #
+  
+Flamethrower:
+  Skills:
+  - skill{s=Flamethrower_FIRE}
+  - skill{s=Arcane_Bullets_FIRE}
+  
+Flamethrower_FIRE:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} false
+  Skills:
+  - effect:sound{s=entity.blaze.shoot;volume=0.4;pitch=0.1;repeat=2;repeati=1} @self
+  
+  - projectile{gravity=-0.1;md=40;hn=25;vn=3;onTick=Flamethrower_FIRE_TICK;onHit=Flamethrower_DAMAGE_D;v=15;i=1;hR=1;vR=1;mr=11;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0} @Forward{f=15;y=0}
+  - projectile{gravity=-0.1;md=40;hn=25;vn=3;delay=1;onTick=Flamethrower_FIRE_TICK;onHit=Flamethrower_DAMAGE_D;v=15;i=1;hR=1;vR=1;mr=11;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0} @Forward{f=15;y=0}
+  
+Flamethrower_FIRE_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.85}
+  - effect:particles{particle=soul_fire_flame;amount=2;hS=0.01;vS=0.01;y=0;speed=0.001;forwardOffset=0;sideOffset=0} @origin
+  
+Flamethrower_DAMAGE_D:
+  Skills:
+  - skill{s=Flamethrower_DAMAGE} @EntitiesNearOrigin{r=2}
+  
+Flamethrower_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Flamethrower_DAMAGE_TICK} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Flamethrower_DAMAGE_TICK;duration=10}
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - skill{s=Flamethrower_DAMAGE_BURN}
+  
+Flamethrower_DAMAGE_BURN:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Flamethrower_BURN_AURA} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:particles{particle=soul_fire_flame;amount=25;hS=0.25;vS=0.6;y=0.8;speed=0.001;forwardOffset=0;sideOffset=0;repeat="<modifier.duration> - 1";repeati=20}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat="<modifier.duration> - 1";repeati=20}
+  - Aura{auraName=Flamethrower_BURN_AURA;duration="<modifier.duration> * 20"}
+  
+  
+  
+
+  
+Arcane_Bullets_FIRE:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} true
+  Skills:
+  - Aura{auraName=BulletAURA;duration=5} @self
+  #- skill{s=Arcane_Bullets_MOTION_SIGNAL}
+  - skill{s=Arcane_Bullets_FIRE_PRO}
+  - potion{type=LEVITATION;duration=10;level=-1;hasParticles=false} @self
+
+  
+Arcane_Bullets_FIRE_PRO:
+  Cooldown: 0.01
+  Conditions:
+  - hasaura{n=BulletAURA} true
+  Skills:
+  - projectile{oT=Arcane_Bullets_T;onHit=Arcane_Bullets_HIT_D;v=40;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0;hitConditions=[- entitytype{t=ARMOR_STAND} false]} @Forward{f=25;y=0}
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.45} @self
+  
+Arcane_Bullets_T:
+  Skills:
+  - effect:particles{particle=crit_magic;amount=2;hS=0.01;vS=0.01;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+
+Arcane_Bullets_HIT_D:
+  Skills:
+  - skill{s=Arcane_Bullets_DAMAGE} @EntitiesNearOrigin{r=2;sort=NEAREST;limit=1}
+  - effect:particles{particle=sonic_boom;size=1;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+
+Arcane_Bullets_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  
+  
+  
+Arcane_Bullets_SCAN:
+  #Cooldown: 3
+  #TargetConditions:
+  #- hasaura{n=RepulsorAURA} true
+  Skills:
+  - SudoSkill{s=Arcane_Bullets_MOTION;cat=true}
+Arcane_Bullets_MOTION:
+  Skills:
+  - signal{s=BULLET} @trigger{target=armorstands}
+  
+  
+
+
+
+
+Arcane_Bullets_STARTMOTION:
+  Cooldown: 99999
+  TargetConditions:
+  - hasaura{n=BulletAURA} true
+  Skills:
+  - setSkillCooldown{skill=Arcane_Bullets_STOPMOTION;seconds=0} @self
+  - state{s=shoot_gun;li=5;lo=5} @self
+  
+Arcane_Bullets_STOPMOTION:
+  Cooldown: 99999
+  TargetConditions:
+  - hasaura{n=BulletAURA} false
+  Skills:
+  - setSkillCooldown{skill=Arcane_Bullets_STARTMOTION;seconds=0} @self
+  - state{s=shoot_gun;li=5;lo=5;remove=true} @self
+  
+# Arcane Turret #
+
+Arcane_Turret:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} false
+  Skills:
+  - summon{type=VFX_Arcane_Turret;amount=1;radius=0;yRadius=0;onSurface=true;sio=true} @forward{f=1;y=0;lockpitch=true}
+  - skill{s=COMMAND_TURRET_FIREPRO;repeat=14;repeati=20;origin=@forward{f=1;y=0;lockpitch=true}} @EntitiesNearOrigin{r=15;ignore=armorstands;sort=NEAREST;limit=1;
+    conditions=[
+      - entitytype{t=ARMOR_STAND} false
+      - mmoCanTarget{interaction=OFFENSE_ACTION} true
+    ]}
+  - Aura{auraName=ONONON;duration=28} @self
+  - Aura{auraName=ONON;duration=31} @self
+
+    
+COMMAND_TURRET_FIRE:
+  TriggerConditions:
+  - hasaura{n=HASTARGET} true
+  Conditions:
+  - hasaura{n=ONON} false
+  Skills:
+  - skill{s=COMMAND_TURRET_FIRE2;targetisorigin=true} @trigger{target=armorstands}
+  
+COMMAND_TURRET_FIRE2:
+  Skills:
+  - effect:sound{s=entity.firework_rocket.blast;volume=0.8;pitch=0.5}
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.4}
+  
+  - sudoskill{s=COMMAND_TURRET_FIREPROSUDO}
+COMMAND_TURRET_FIREPRO:
+  Conditions:
+  - hasaura{n=ONON} false
+  Skills:
+  - projectile{fromorigin=true;onHit=COMMAND_TURRET_FIRE_DAMAGE_D;v=22;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.7;syo=1.55;tyo=0.65;sso=0;hitConditions=[- entitytype{t=ARMOR_STAND} false]}
+  
+COMMAND_TURRET_FIREPROSUDO:
+  Skills:
+  - projectile{bulletType=MOB;mob=VFX_Arcane_Turret_Laser;v=22;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.2;syo=1.55;tyo=1.4;sso=-0.00001;hitConditions=[- entitytype{t=ARMOR_STAND} false]} @forward{f=20;y=0;lockpitch=true}
+  - state{s=shoot} @self
+
+COMMAND_TURRET_FIRE_DAMAGE_D:
+  Skills:
+  - skill{s=COMMAND_TURRET_FIRE_DAMAGE} @EntitiesNearOrigin{r=2.5;sort=NEAREST;limit=1}
+COMMAND_TURRET_FIRE_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+
+  
+COMMAND_TURRET_LOOKTARGET:
+  TriggerConditions:
+  - hasaura{n=HASTARGET} true
+  Conditions:
+  - hasaura{n=ONON} false
+  Skills:
+  - sudoskill{s=COMMAND_TURRET_LOOK;targetisorigin=true} @trigger{target=armorstands}
+
+COMMAND_TURRET_LOOK:
+  Skills:
+  - skill{s=COMMAND_TURRET_LOOK_S} @EntitiesNearOrigin{r=15;ignore=armorstands;sort=NEAREST;ofowner=true;limit=1;
+    conditions=[
+      - entitytype{t=ARMOR_STAND} false
+      - mmoCanTarget{interaction=OFFENSE_ACTION} true
+    ]}
+  
+COMMAND_TURRET_LOOK_S:
+  Skills:
+  - look{headOnly=true;immediately=true}
+
+  
+  
+  
+COMMAND_TURRET_SCAN:
+  Conditions:
+  - hasaura{n=ONONON} false
+  Skills:
+  - sudoskill{s=COMMAND_TURRET_SCAN_ENTITIES;targetisorigin=true} @trigger{target=armorstands}
+
+COMMAND_TURRET_SCAN_ENTITIES:
+  Skills:
+  - skill{s=COMMAND_TURRET_TARGET2} @EntitiesNearOrigin{r=10;ignore=armorstands;sort=NEAREST;ofowner=true;limit=1;
+    conditions=[
+      - entitytype{t=ARMOR_STAND} false
+      - mmoCanTarget{interaction=OFFENSE_ACTION} true
+    ]}
+
+COMMAND_TURRET_TARGET2:
+  TargetConditions:
+  - isLiving true
+  Skills:
+  - Aura{auraName=HASTARGET;duration=10} @self
+  
+TURRET_IDLESTATE:
+  Skills:
+  - skill{s=TURRET_IDLE}
+  - skill{s=TURRET_STILL}
+  
+TURRET_IDLE:
+  Cooldown: 99999
+  Conditions:
+  - hasaura{n=HASTARGET} false
+  Skills:
+  - setSkillCooldown{skill=TURRET_STILL;seconds=0} @self
+  - defaultstate{t=idle;s=idle;li=5;lo=5} @self
+  
+TURRET_STILL:
+  Cooldown: 99999
+  Conditions:
+  - hasaura{n=HASTARGET} true
+  Skills:
+  - setSkillCooldown{skill=TURRET_IDLE;seconds=0} @self
+  - defaultstate{t=idle;s=still;li=5;lo=5} @self
+
+
+
+
+
+  
+# Engine Glide #
+  
+Engine_Glide:
+  Conditions:
+  - onground true
+  - hasaura{n=Arcane_Mecha_Aura} false
+  Skills:
+  - effect:sound{s=entity.firework_rocket.launch;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.6;pitch=0.4} @self
+
+  - skill{s=Engine_Glide_SUMMON}
+  - effect:particles{particle=soul_fire_flame;amount=2;hS=0.01;vS=0.01;y=0.1;speed=0;repeat=20;repeatinterval=1} @forward{f=0;y=0;sideOffset=0.8;lockpitch=true}
+  - effect:particles{particle=soul_fire_flame;amount=2;hS=0.01;vS=0.01;y=0.1;speed=0;repeat=20;repeatinterval=1} @forward{f=0;y=0;sideOffset=-0.8;lockpitch=true}
+  
+  #fire path totem
+  - totem{md=40;oH=Engine_Glide_DAMAGE_D;hnp=true;hp=true;hR=2;vR=1;i=10;repeat=2;repeati=7} @self
+  
+  - delay 1
+  
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_1_SETFIRE;delay=1} @EIR{target=armorstands}
+  - summon{t=Engine_Glide_2;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_2_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_1_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_2;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_2_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_1_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_2;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_2_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_1_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_2;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_2_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_1_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_2;a=1;sio=true} @self
+  
+  - delay 2
+  #- skill{s=Engine_Glide_2_SETFIRE;delay=1} @Child{target=armorstands}
+  - summon{t=Engine_Glide_1;a=1;sio=true} @self
+  
+Engine_Glide_DAMAGE_D:
+  Skills:
+  - skill{s=Engine_Glide_DAMAGE} @EntitiesNearOrigin{r=2;ignore=armorstands}
+  
+Engine_Glide_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Engine_Glide_DAMAGE_TICK} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Engine_Glide_DAMAGE_TICK;duration=10}
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=1.5}
+  - summon{type=VFX_Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - skill{s=Engine_Glide_DAMAGE_BURN}
+  
+Engine_Glide_DAMAGE_BURN:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Flamethrower_BURN_AURA} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:particles{particle=soul_fire_flame;amount=25;hS=0.25;vS=0.6;y=0.8;speed=0.001;forwardOffset=0;sideOffset=0;repeat="<modifier.duration> - 1";repeati=20}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat="<modifier.duration> - 1";repeati=20}
+  - Aura{auraName=Flamethrower_BURN_AURA;duration="<modifier.duration> * 20"}
+  
+  
+Engine_Glide_1_SETFIRE:
+  Skills:
+  - effect:blockmask{m=SOUL_FIRE;r=0;d=40;onlyair=true;noair=false} @triggerlocation
+  - remove{delay=1} @trigger
+Engine_Glide_2_SETFIRE:
+  Skills:
+  - effect:blockmask{m=SOUL_FIRE;r=0.5;d=40;onlyair=true;noair=false} @triggerlocation
+  - remove{delay=1} @trigger
+  
+  
+Engine_Glide_SUMMON:
+  Cooldown: 0.8
+  Skills:
+  - summon{t=Engine_Glide_DUMMY;a=1;sio=true} @self
+
+Engine_Glide_DASH:
+  Skills:
+  - delay 2
+  - potion{type=SLOW;duration=20;level=2;hasParticles=false} @NearestPlayer{r=3}
+  - potion{type=LEVITATION;duration=2;level=3;hasParticles=false} @NearestPlayer{r=3}
+  - delay 1
+  - throw{velocity=4;velocityY=0.01;repeat=20;repeati=1} @NearestPlayer{r=3}
+
+  
+# Chrono Cataclysm #
+
+Chrono_Cataclysm:
+  Conditions:
+  - hasaura{n=Arcane_Mecha_Aura} false
+  Skills:
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=1} @self
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=0.7;delay=16} @self
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=0.6;delay=36} @self
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=0.3;delay=56} @self
+  
+  - skill{s=Chrono_Cataclysm_TARGET} @EIR{r=15;limit=3}
+  
+Chrono_Cataclysm_TARGET:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=CCA} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - orbital{auraName=CCA;bulletType=MOB;mob=VFX_Chrono_Cataclysm;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=116;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - potion{type=SLOW;duration=40;level=0;hasParticles=false}
+  - potion{type=SLOW;duration=40;level=1;hasParticles=false;delay=16}
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false;delay=36}
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false;delay=56}
+
+  
+# Arcane Mecha #
+
+Arcane_Mecha:
+  Skills:
+  - Aura{auraName=Arcane_Mecha_Aura;duration="<modifier.duration> * 20"} @self
+  - Aura{auraName=Arcane_Mecha_Aura_READY;duration=15} @self
+  
+  - orbital{bulletType=MOB;mob=VFX_Arcane_Mecha;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=item.trident.return;volume=1.4;pitch=0.5} @self
+  - effect:particles{particle=flash;amount=1;hS=0;vS=0;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=flash;amount=1;hS=0;vS=0;y=0.5;speed=0;forwardOffset=0;sideOffset=0;delay=5} @self
+  
+  - onDamaged{auraName=landresist;d="(<modifier.duration> * 20) + 40";cE=true;damageMods="FALL 0"} @self
+  - hidefromplayers{d="<modifier.duration> * 20"} @PIR{r=100}
+  - potion{type=INVISIBILITY;duration="<modifier.duration> * 20";level=50;hasParticles=false} @self
+  - potion{type=SLOW_FALLING;duration="(<modifier.duration> * 20) + 40";level=2;hasParticles=false} @self
+  - potion{type=LEVITATION;duration="<modifier.duration> * 20";level=-1;hasParticles=false} @self

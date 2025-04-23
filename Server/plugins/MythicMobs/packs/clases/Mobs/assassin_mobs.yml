@@ -1,0 +1,182 @@
+######## created by samus2002 #########
+
+# Blade Slash #
+
+Assassin_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: assassin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=redstone;amount=5;hS=0.7;y=1;forwardOffset=-0.5;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=assassin_slash_1:4;delay=2} ~onSpawn
+  - equip{item=assassin_slash_2:4;delay=4} ~onSpawn
+  - equip{item=assassin_slash_3:4;delay=6} ~onSpawn
+  - equip{item=assassin_slash_4:4;delay=8} ~onSpawn
+  - equip{item=assassin_slash_5:4;delay=10} ~onSpawn
+  - equip{item=assassin_slash_6:4;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+Assassin_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,180
+  ItemHead: assassin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=redstone;amount=5;hS=0.7;y=1;forwardOffset=-0.5;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=assassin_slash_1:4;delay=2} ~onSpawn
+  - equip{item=assassin_slash_2:4;delay=4} ~onSpawn
+  - equip{item=assassin_slash_3:4;delay=6} ~onSpawn
+  - equip{item=assassin_slash_4:4;delay=8} ~onSpawn
+  - equip{item=assassin_slash_5:4;delay=10} ~onSpawn
+  - equip{item=assassin_slash_6:4;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+Assassin_Slash_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,45
+  ItemHead: assassin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=redstone;amount=5;hS=0.7;y=1;forwardOffset=-0.5;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=assassin_slash_1:4;delay=2} ~onSpawn
+  - equip{item=assassin_slash_2:4;delay=4} ~onSpawn
+  - equip{item=assassin_slash_3:4;delay=6} ~onSpawn
+  - equip{item=assassin_slash_4:4;delay=8} ~onSpawn
+  - equip{item=assassin_slash_5:4;delay=10} ~onSpawn
+  - equip{item=assassin_slash_6:4;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+Assassin_Slash_4:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,135
+  ItemHead: assassin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=redstone;amount=5;hS=0.7;y=1;forwardOffset=-0.5;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=assassin_slash_1:4;delay=2} ~onSpawn
+  - equip{item=assassin_slash_2:4;delay=4} ~onSpawn
+  - equip{item=assassin_slash_3:4;delay=6} ~onSpawn
+  - equip{item=assassin_slash_4:4;delay=8} ~onSpawn
+  - equip{item=assassin_slash_5:4;delay=10} ~onSpawn
+  - equip{item=assassin_slash_6:4;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+# Dash #
+
+Assassin_Dash:
+  Type: ARMOR_STAND
+  ItemHand: assassin_dash_1
+  Pose:
+    RightArm: 0,0,0
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=assassin_dash_1:0;delay=2} ~onSpawn
+  - equip{item=assassin_dash_2:0;delay=4} ~onSpawn
+  - equip{item=assassin_dash_3:0;delay=6} ~onSpawn
+  - equip{item=assassin_dash_4:0;delay=8} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Shadow Walk #
+
+Shadow_Walk:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: assassin_impact_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=assassin_impact_1:4;delay=2} ~onSpawn
+  - equip{item=assassin_impact_2:4;delay=4} ~onSpawn
+  - equip{item=assassin_impact_3:4;delay=6} ~onSpawn
+  - equip{item=assassin_impact_4:4;delay=8} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Dagger Throw #
+
+Dagger_Throw:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: assassin_dagger_a
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - equip{item=assassin_dagger_a:4} ~onSpawn
+  - effect:particles{particle=reddust;amount=10;hS=0.1;vS=0.1;speed=0;y=1} @self ~onTimer:1
+  
+# Razor Spin #
+
+Razor_Spin:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: assassin_spin_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=assassin_spin_1:0;delay=2} ~onSpawn
+  - equip{item=assassin_spin_2:0;delay=4} ~onSpawn
+  - equip{item=assassin_spin_3:0;delay=6} ~onSpawn
+  - equip{item=assassin_spin_4:0;delay=8} ~onSpawn
+  - equip{item=assassin_spin_5:0;delay=10} ~onSpawn
+  - equip{item=assassin_spin_6:0;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+# Blade Dance #
+
+Blade_Dance:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: assassin_x_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=assassin_x_1:0;delay=2} ~onSpawn
+  - equip{item=assassin_x_2:0;delay=4} ~onSpawn
+  - equip{item=assassin_x_3:0;delay=6} ~onSpawn
+  - equip{item=assassin_x_4:0;delay=8} ~onSpawn
+  - equip{item=assassin_x_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn

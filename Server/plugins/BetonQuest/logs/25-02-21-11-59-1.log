@@ -1,0 +1,763 @@
+[25.02.21 11:59:52 FINE]: [BetonQuest] BetonQuest 2.2.1 is starting...
+[25.02.21 11:59:52 FINE]: [BetonQuest] Running on JRE 21.0.6 (build 7, optional Ubuntu-122.04.1, pre-release info N/A) by Ubuntu
+[25.02.21 11:59:52 FINE]: [BetonQuest] (ConfigurationFile) No patch found.
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded configVersion language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded pl language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded en language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded de language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded fr language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded cn language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded es language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded nl language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded it language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded hu language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded vi language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded pt-br language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded pt-pt language
+[25.02.21 11:59:52 FINE]: [BetonQuest] Loaded ru language
+[25.02.21 11:59:52 INFO]: [BetonQuest] Using SQLite for storing data!
+[25.02.21 11:59:52 FINE]: [BetonQuest] There are 0 global_tags and 0 global_points loaded
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering advancement condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering and condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering armor condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering biome condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering burning condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering check condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chestitem condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering conversation condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering dayofweek condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering effect condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering empty condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering entities condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering experience condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering facing condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering fly condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering gamemode condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globalpoint condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globaltag condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering hand condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering health condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering height condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering hunger condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering inconversation condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering item condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering itemdurability condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering journal condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering language condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering location condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering looking condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering mooncycle condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering numbercompare condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering objective condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering or condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering partialdate condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering party condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering permission condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering point condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering random condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering rating condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering realtime condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering ride condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering score condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering scoretag condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering sneak condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering stage condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering tag condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering testforblock condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering time condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering variable condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering weather condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering world condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering burn event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering cancel event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering cancelconversation event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chat event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chestclear event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chestgive event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chesttake event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering compass event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering command event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering conversation event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering damage event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering deleffect event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering deleteglobalpoint event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering deletepoint event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering door event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering drop event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering effect event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering experience event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering explosion event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering folder event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering first event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering give event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering givejournal event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globaltag event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globalpoint event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering hunger event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering if event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering itemdurability event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering journal event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering kill event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering language event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering lever event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering lightning event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering log event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering notify event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering notifyall event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering objective event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering opsudo event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering party event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering pickrandom event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering point event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering removeentity event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering run event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering runForAll event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering runIndependent event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering setblock event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering score event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering scoretag event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering spawn event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering stage event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering sudo event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering tag event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering take event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering teleport event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering time event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering variable event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering velocity event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering weather event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering action objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering arrow objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering block objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering breed objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering brew objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chestput objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering command objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering consume objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering craft objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering delay objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering die objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering enchant objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering experience objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering fish objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering interact objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering kill objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering location objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering login objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering logout objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering mobkill objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering password objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering pickup objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering ride objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering shear objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering smelt objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering stage objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering step objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering tame objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering variable objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering equip objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering jump objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering resourcepack objective type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering condition variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering eval variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globalpoint [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering globaltag [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering item [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering itemdurability [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering location [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering math [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering npc variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering objective [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering point [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering player variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering randomnumber [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering tag [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering version [legacy]variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering simple conversation IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering tellraw conversation IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chest conversation IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering combined conversation IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering slowtellraw conversation IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering simple interceptor type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering none interceptor type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering suppress notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering chat notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering advancement notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering actionbar notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering bossbar notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering title notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering totem notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering subtitle notify IO type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering sound notify IO type
+[25.02.21 11:59:52 INFO]: [BetonQuest] Hooking into LuckPerms
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering luckperms event type
+[25.02.21 11:59:52 INFO]: [BetonQuest] Hooking into Vault
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering money event type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering money condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering money variable type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering permission event type
+[25.02.21 11:59:52 INFO]: [BetonQuest] Hooking into WorldEdit
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering paste [legacy]event type
+[25.02.21 11:59:52 INFO]: [BetonQuest] Hooking into WorldGuard
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering region [legacy]condition type
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering region objective type
+[25.02.21 11:59:52 INFO]: [BetonQuest] Hooking into PlaceholderAPI
+[25.02.21 11:59:52 FINE]: [BetonQuest] Registering ph [legacy]variable type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into ProtocolLib
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering menu conversation IO type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering packet interceptor type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering freeze [legacy]event type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into MythicMobs
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mythicmobdistance condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmobkill objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mspawnmob event type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into Citizens
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering npckill objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering npcinteract objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering npcrange objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering movenpc event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering stopnpc event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering teleportnpc event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering chest conversation IO type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering combined conversation IO type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering citizen variable type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering npcdistance condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering npclocation condition type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into MythicLib
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmostat [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoskill objective type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into Magic
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering wand [legacy]condition type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into MMOCore
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoclass [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoattribute [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoprofession [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoprofessionlevelup objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmochangeclass objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmocorebreakblock objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoclassexperience [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoprofessionexperience [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmocoreclasspoints [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmocoreattributepoints [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmocoreattributereallocationpoints [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmocoreskillpoints [legacy]event type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into DecentHolograms
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into Shopkeepers
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering shopkeeper [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering shopamount [legacy]condition type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into Skript
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering skript [legacy]event type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Hooking into MMOItems
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitem [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmohand [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitemcraft objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitemupgrade objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitemapplygem objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitemgive [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering mmoitemtake event type
+[25.02.21 11:59:53 INFO]: [BetonQuest] Using DecentHolograms as dedicated hologram provider!
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering menu [legacy]condition type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering menu objective type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering menu [legacy]event type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registering menu [legacy]variable type
+[25.02.21 11:59:53 FINE]: [BetonQuest] Registered command rpgmenu!
+[25.02.21 11:59:53 INFO]: [BetonQuest] BetonQuest successfully enabled!
+[25.02.21 12:00:03 FINE]: [BetonQuest] Registering finishdungeon objective type
+[25.02.21 12:00:03 FINE]: [BetonQuest] Registering playdungeon [legacy]event type
+[25.02.21 12:00:11 INFO]: [BetonQuest] Enabled compatibility for LuckPerms, WorldEdit, Skript, DecentHolograms, PlaceholderAPI, MythicLib, MMOItems, WorldGuard, ProtocolLib, Citizens, Magic, Shopkeepers, MythicMobs, MMOCore, Vault!
+[25.02.21 12:00:11 FINE]: [BetonQuest] Registering updatevisibility [legacy]event type
+[25.02.21 12:00:11 FINE]: [BetonQuest] Registering npcregion condition type
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Stopping schedulers...
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> Loading stuff in package botanica
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.recompensabotanica' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.iniciobotanica' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.botanicacontinuar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.botanicamisioncumplida' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.misionaceptadabotanica' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.botanicapausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Event 'botanica.premiobotanica' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Condition 'botanica.botanicaenpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica>   Objective 'botanica.recogehierba' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> Loading conversation 'Marla'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> Conversation loaded: 4 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> (Schedules) Parsing schedules for package 'botanica'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> (Schedules) Parsed schedule 'botanica.botanicamis'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> (Schedules) Finished loading schedules from package 'botanica'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <botanica> Everything in package botanica loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> Loading stuff in package diariaaeloria
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.quitarmatmade' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.diairaenpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.diariacterminar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.quitarmatpie' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.misionaceptada' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.diairacontinuacion' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.misioncumplida' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.iniciodiaria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.recompensadiaria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Event 'diariaaeloria.diariacontinuar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Condition 'diariaaeloria.enpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Condition 'diariaaeloria.materiesinvpie' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Condition 'diariaaeloria.materiesinvmade' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Condition 'diariaaeloria.trayendo' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria>   Objective 'diariaaeloria.consiguematerial' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> Loading conversation 'Bob'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> Conversation loaded: 6 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> (Schedules) Parsing schedules for package 'diariaaeloria'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> (Schedules) Parsed schedule 'diariaaeloria.mineriamis'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> (Schedules) Finished loading schedules from package 'diariaaeloria'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <diariaaeloria> Everything in package diariaaeloria loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> Loading stuff in package tala
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.talapausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.misionaceptadatala' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.recompensatala' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.talacontinuar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.iniciotala' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.talamisioncumplida' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Event 'tala.premiotala' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Condition 'tala.talaenpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala>   Objective 'tala.talaarboles' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> Loading conversation 'Alric'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> Conversation loaded: 4 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> (Schedules) Parsing schedules for package 'tala'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> (Schedules) Parsed schedule 'tala.talamis'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> (Schedules) Finished loading schedules from package 'tala'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <tala> Everything in package tala loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> Loading stuff in package pesca
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.misionaceptadapesca' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.iniciopesca' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.premiopesca' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.recompensapesca' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.pescacontinuar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.pescamisioncumplida' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Event 'pesca.pescapausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Condition 'pesca.pescaenpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca>   Objective 'pesca.pescapeces' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> Loading conversation 'Branquia'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> Conversation loaded: 4 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> (Schedules) Parsing schedules for package 'pesca'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> (Schedules) Parsed schedule 'pesca.pescamis'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> (Schedules) Finished loading schedules from package 'pesca'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <pesca> Everything in package pesca loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> Loading stuff in package mineria
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.mineriamisioncumplida' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.mineriacontinuar' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.iniciomineria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.mineriapausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.recompensamineria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.misionaceptadamineria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Event 'mineria.premiomineria' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Condition 'mineria.mineriaenpausa' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria>   Objective 'mineria.romperbloques' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> Loading conversation 'Grum'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> Conversation loaded: 4 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> (Schedules) Parsing schedules for package 'mineria'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> (Schedules) Parsed schedule 'mineria.mineriamis'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> (Schedules) Finished loading schedules from package 'mineria'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <mineria> Everything in package mineria loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> Loading stuff in package nexothexplo
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.misionexplonexcompleta1' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.misionexplonexcompleta2' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.eventhablarnpc4' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.eventhablarnpc5' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.eventhablarnpc2' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.eventhablarnpc3' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.exploracioncompletada' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.inicioexploracion' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.misionexploracionterminada' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Event 'nexothexplo.misionexploracionempezada' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Condition 'nexothexplo.yahecho' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Objective 'nexothexplo.hablarnpc4' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Objective 'nexothexplo.hablarnpc3' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Objective 'nexothexplo.hablarnpc2' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Objective 'nexothexplo.hablarnpc1' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo>   Objective 'nexothexplo.hablarnpc5' loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> Loading conversation 'NexothIslaDioses'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> Conversation loaded: 4 NPC options and 3 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> (Schedules) Parsing schedules for package 'nexothexplo'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> (Schedules) Package contains no schedules.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <nexothexplo> Everything in package nexothexplo loaded
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> Loading stuff in package exploradoraeloria
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> Loading conversation 'Ben'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> Conversation loaded: 13 NPC options and 12 player options
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> (Schedules) Parsing schedules for package 'exploradoraeloria'.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> (Schedules) Package contains no schedules.
+[25.02.21 12:00:11 FINE]: [BetonQuest] <exploradoraeloria> Everything in package exploradoraeloria loaded
+[25.02.21 12:00:11 INFO]: [BetonQuest] There are 9 conditions, 48 events, 10 objectives and 7 conversations loaded from 7 packages.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Starting schedulers...
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Starting simple scheduler.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Collecting missed schedules...
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Found 0 missed schedule runs that will be caught up.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Simple scheduler start complete.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Starting realtime scheduler.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Collecting reboot schedules...
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Found 0 reboot schedules. They will be run on next server tick.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Found 0 missed schedule runs that will be caught up.
+[25.02.21 12:00:11 FINE]: [BetonQuest] (Schedules) Realtime scheduler start complete.
+[25.02.21 12:00:11 INFO]: [BetonQuest] §aReloaded 0§a menus
+[25.02.21 12:36:42 FINE]: [BetonQuest] Loaded 2 objectives, 2 tags, 0 points, 0 journal entries and 0 items for APHNYX with profile APHNYX
+[25.02.21 12:36:42 FINE]: [BetonQuest] Inserting data for APHNYX with profile APHNYX
+[25.02.21 12:36:55 WARNING]: [BetonQuest] Loaded 'MisionOthil.tomarflores' objective from the database, but it is not defined in configuration. Skipping.
+[25.02.21 12:36:55 FINE]: [BetonQuest] Additional stacktrace:
+org.betonquest.betonquest.exceptions.ObjectNotFoundException: Package in ID 'MisionOthil.tomarflores' does not exist
+	at BetonQuest.jar//org.betonquest.betonquest.id.ID.<init>(ID.java:68)
+	at BetonQuest.jar//org.betonquest.betonquest.id.ID.<init>(ID.java:88)
+	at BetonQuest.jar//org.betonquest.betonquest.id.ObjectiveID.<init>(ObjectiveID.java:11)
+	at BetonQuest.jar//org.betonquest.betonquest.database.PlayerData.startObjectives(PlayerData.java:356)
+	at BetonQuest.jar//org.betonquest.betonquest.JoinQuitListener.onPlayerJoin(JoinQuitListener.java:62)
+	at com.destroystokyo.paper.event.executor.asm.generated.GeneratedEventExecutor785.execute(Unknown Source)
+	at org.bukkit.plugin.EventExecutor$2.execute(EventExecutor.java:77)
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:81)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
+	at net.minecraft.server.players.PlayerList.placeNewPlayer(PlayerList.java:347)
+	at net.minecraft.server.network.ServerConfigurationPacketListenerImpl.handleConfigurationFinished(ServerConfigurationPacketListenerImpl.java:153)
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:22)
+	at net.minecraft.network.protocol.configuration.ServerboundFinishConfigurationPacket.handle(ServerboundFinishConfigurationPacket.java:13)
+	at net.minecraft.network.protocol.PacketUtils.lambda$ensureRunningOnSameThread$0(PacketUtils.java:55)
+	at net.minecraft.server.TickTask.run(TickTask.java:18)
+	at net.minecraft.util.thread.BlockableEventLoop.doRunTask(BlockableEventLoop.java:151)
+	at net.minecraft.util.thread.ReentrantBlockableEventLoop.doRunTask(ReentrantBlockableEventLoop.java:24)
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:1511)
+	at net.minecraft.server.MinecraftServer.doRunTask(MinecraftServer.java:195)
+	at net.minecraft.util.thread.BlockableEventLoop.pollTask(BlockableEventLoop.java:125)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:1488)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:1411)
+	at net.minecraft.util.thread.BlockableEventLoop.runAllTasks(BlockableEventLoop.java:114)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1603)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1231)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:323)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+
+[25.02.21 12:48:05 FINE]: [BetonQuest] Loaded 0 objectives, 0 tags, 0 points, 0 journal entries and 0 items for null with profile null
+[25.02.21 12:48:05 FINE]: [BetonQuest] Inserting data for null with profile null
+[25.02.21 13:26:12 FINE]: [BetonQuest] Loaded 0 objectives, 1 tags, 0 points, 0 journal entries and 0 items for NivlekNot with profile NivlekNot
+[25.02.21 13:26:12 FINE]: [BetonQuest] Inserting data for NivlekNot with profile NivlekNot
+[25.02.21 13:26:59 FINE]: [BetonQuest] Loaded 0 objectives, 1 tags, 0 points, 0 journal entries and 0 items for _Etriox_ with profile _Etriox_
+[25.02.21 13:26:59 FINE]: [BetonQuest] Inserting data for _Etriox_ with profile _Etriox_
+[25.02.21 13:28:30 FINE]: [BetonQuest] Loaded 3 objectives, 0 tags, 0 points, 0 journal entries and 0 items for YudaxNot with profile YudaxNot
+[25.02.21 13:28:30 FINE]: [BetonQuest] Inserting data for YudaxNot with profile YudaxNot
+[25.02.21 13:31:58 FINE]: [BetonQuest] <diariaaeloria> Starting conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:31:58 FINE]: [BetonQuest] <diariaaeloria> FALSE:  condition diariaaeloria.enpausa for YudaxNot with profile YudaxNot
+[25.02.21 13:31:58 FINE]: [BetonQuest] <diariaaeloria> FALSE:  condition diariaaeloria.trayendo for YudaxNot with profile YudaxNot
+[25.02.21 13:31:59 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.misionaceptada for YudaxNot with profile YudaxNot
+[25.02.21 13:31:59 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.iniciodiaria for YudaxNot with profile YudaxNot
+[25.02.21 13:31:59 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.diairacontinuacion for YudaxNot with profile YudaxNot
+[25.02.21 13:31:59 FINE]: [BetonQuest] <diariaaeloria> Ending conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:32:00 FINE]: [BetonQuest] <diariaaeloria> Starting conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:32:00 FINE]: [BetonQuest] <diariaaeloria> FALSE:  condition diariaaeloria.enpausa for YudaxNot with profile YudaxNot
+[25.02.21 13:32:00 FINE]: [BetonQuest] <diariaaeloria> TRUE:  condition diariaaeloria.trayendo for YudaxNot with profile YudaxNot
+[25.02.21 13:32:01 FINE]: [BetonQuest] <diariaaeloria> Ending conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:36:07 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '354' but there is no conversation assigned to it.
+[25.02.21 13:36:17 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '65' but there is no conversation assigned to it.
+[25.02.21 13:36:24 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:24 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:25 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:25 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:26 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:26 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:27 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:27 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:28 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:28 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:28 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:28 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:30 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:31 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:31 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:32 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:32 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:33 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:33 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:34 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:34 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:34 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:34 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:35 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:35 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:36 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:36 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:37 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:37 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:37 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:37 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:40 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:41 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:41 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:42 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:42 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:42 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:42 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:45 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:45 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:47 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:49 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:50 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:50 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:51 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:51 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:52 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:52 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:53 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:53 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:53 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:53 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:54 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:54 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:55 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:55 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:56 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:56 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:56 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:56 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:57 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:57 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:57 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:57 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:36:59 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:03 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:05 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:05 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:06 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:06 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:07 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:07 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:08 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:08 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:08 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:08 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:09 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:09 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:10 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:10 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:10 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:10 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:11 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:11 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:13 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:14 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:15 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:15 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:16 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:16 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:17 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:17 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:17 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:17 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:18 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:18 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:19 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:19 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:22 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:22 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:23 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:23 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:25 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:27 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:28 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:28 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:29 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:29 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:29 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:29 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:30 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:30 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:31 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:31 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:32 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:32 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:35 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:37 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:37 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:37 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:37 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:38 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:38 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:39 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:39 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:40 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:40 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:41 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:41 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:41 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:41 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:42 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:42 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:46 FINE]: [BetonQuest] <diariaaeloria> Condition check in "diariaaeloria.consiguematerial" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:37:46 FINE]: [BetonQuest] <diariaaeloria> Objective "diariaaeloria.consiguematerial" has been completed for YudaxNot with profile YudaxNot, firing events.
+[25.02.21 13:37:46 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.misioncumplida for YudaxNot with profile YudaxNot
+[25.02.21 13:37:46 FINE]: [BetonQuest] <diariaaeloria> Firing events in objective "diariaaeloria.consiguematerial" for YudaxNot with profile YudaxNot finished
+[25.02.21 13:37:59 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '65' but there is no conversation assigned to it.
+[25.02.21 13:38:13 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:13 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:13 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:13 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:14 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:15 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:15 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:20 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:20 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:20 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:20 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:21 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:22 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:22 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:24 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:25 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:25 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:27 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:27 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:29 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:29 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:30 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:32 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:32 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:34 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:34 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:34 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:34 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:35 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:36 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:36 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:36 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:36 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:41 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:41 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:42 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:42 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:42 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:42 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:43 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:44 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:45 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:46 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:46 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:54 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:55 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:56 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:59 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:38:59 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:00 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:00 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:00 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:00 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:01 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:02 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:02 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:02 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:02 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:03 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:03 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:03 FINE]: [BetonQuest] <mineria> Condition check in "mineria.romperbloques" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:03 FINE]: [BetonQuest] <botanica> Condition check in "botanica.recogehierba" objective for YudaxNot with profile YudaxNot
+[25.02.21 13:39:28 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '350' but there is no conversation assigned to it.
+[25.02.21 13:39:57 FINE]: [BetonQuest] <diariaaeloria> Starting conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:39:57 FINE]: [BetonQuest] <diariaaeloria> FALSE:  condition diariaaeloria.enpausa for YudaxNot with profile YudaxNot
+[25.02.21 13:39:57 FINE]: [BetonQuest] <diariaaeloria> TRUE:  condition diariaaeloria.trayendo for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> TRUE:  condition diariaaeloria.materiesinvmade for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> TRUE:  condition diariaaeloria.materiesinvpie for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.diairaenpausa for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.diariacterminar for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.recompensadiaria for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.quitarmatmade for YudaxNot with profile YudaxNot
+[25.02.21 13:39:58 FINE]: [BetonQuest] <diariaaeloria> Firing event diariaaeloria.quitarmatpie for YudaxNot with profile YudaxNot
+[25.02.21 13:39:59 FINE]: [BetonQuest] <diariaaeloria> Ending conversation 'diariaaeloria.Bob' for 'YudaxNot with profile YudaxNot'.
+[25.02.21 13:40:56 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '301' but there is no conversation assigned to it.
+[25.02.21 13:41:00 FINE]: [BetonQuest] Player 'YudaxNot' clicked NPC '300' but there is no conversation assigned to it.
+[25.02.21 13:43:05 FINE]: [BetonQuest] Loaded 0 objectives, 1 tags, 0 points, 0 journal entries and 0 items for _Etriox_ with profile _Etriox_
+[25.02.21 13:43:05 FINE]: [BetonQuest] Inserting data for _Etriox_ with profile _Etriox_
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Stopping schedulers...
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Stopping realtimedaily scheduler.
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Successfully shut down executor service.
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Stop complete.
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Stopping realtimecron scheduler.
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Successfully shut down executor service.
+[25.02.21 13:43:21 FINE]: [BetonQuest] (Schedules) Stop complete.
+[25.02.21 13:43:21 INFO]: [BetonQuest] BetonQuest successfully disabled!

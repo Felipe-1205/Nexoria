@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 27.50.12.164
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740194904037
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740194941077
+  login: 1740194517003
+money: '0'
+last-account-name: Catoncio_1
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2953.3914095049263
+  y: 81.0
+  z: 464.9268911215159
+  yaw: 91.53338623046875
+  pitch: 19.705114364624023
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2989.391531318095
+  y: 80.0
+  z: 459.9231295062022
+  yaw: 78.29998779296875
+  pitch: 13.500000953674316
+nickname: Belcebú

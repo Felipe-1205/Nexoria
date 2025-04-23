@@ -1,0 +1,30 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.46.139.235
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1725330208487
+  login: 1725330171161
+money: '0'
+last-account-name: Sartenazonador
+logoutlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: -1.8147054975822716
+  y: -60.0
+  z: -12.748547500261404
+  yaw: 122.31696319580078
+  pitch: -90.0

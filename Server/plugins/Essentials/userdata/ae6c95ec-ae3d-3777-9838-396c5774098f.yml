@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 186.79.152.10
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739848306214
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739848767066
+  login: 1739848254335
+money: '0'
+last-account-name: Santy_sonic
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.4708103187536
+  y: 81.0
+  z: 465.8440099670342
+  yaw: 122.88345336914062
+  pitch: 28.8551082611084
+nickname: Balador
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2987.5842499855894
+  y: 80.5625
+  z: 459.75415406871275
+  yaw: -42.14996337890625
+  pitch: 35.39999771118164

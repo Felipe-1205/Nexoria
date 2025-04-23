@@ -1,0 +1,286 @@
+######## created by samus2002 #########
+
+Changetarget:  
+  Cooldown: 0
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+# Snail #
+  
+Snail_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=21}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=10} @self
+  - state{s=attack;li=8;lo=7} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.snail_attack;volume=1;pitch=1} @self 0.5
+  - delay 14
+  - totem{md=2;c=1;oH=Snail_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+
+Snail_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=2;pkb=false;hnp=false;hp=true}
+  
+Snail_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=rms_dark_forest_sounds:samus.snail_hit;volume=1;pitch=1} @self
+  
+Snail_Death:
+  Skills:
+  - delay 10
+  - partvisibility{m=snail;p=front_snail;v=false;em=false} @self
+  - partvisibility{m=snail;p=left_eye;v=false;em=false} @self
+  - partvisibility{m=snail;p=right_eye;v=false;em=false} @self
+  - partvisibility{m=snail;p=back_snail;v=false;em=false} @self
+  
+# Mimic #
+  
+Mimic_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=23}
+  - state{s=attack;li=6;lo=7} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.mimic_attack;volume=1;pitch=1} @self
+  - delay 10
+  - totem{md=2;c=1;oH=Mimic_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+
+Mimic_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=3;pkb=false;hnp=false;hp=true}
+  
+Mimic_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.blaze.hurt;volume=1;pitch=0.85} @self
+  
+Mimic_Death:
+  Skills:
+  - delay 15
+  - effect:sound{s=block.chest.open;volume=1;pitch=0.85} @self
+  
+# Kobold Warrior #
+  
+Kobold_Warrior_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=29}
+  - state{s=attack;li=7;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=17} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_attack;volume=1;pitch=1} @self 0.5
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_warrior_sword;volume=1;pitch=1;delay=10} @self
+  - delay 19
+  - totem{md=2;c=1;oH=Kobold_Warrior_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+
+Kobold_Warrior_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=4;pkb=false;hnp=false;hp=true}
+  
+Kobold_Warrior_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_attack;volume=1;pitch=1.2} @self
+  
+# Kobold Archer #
+  
+Kobold_Archer_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=40}
+  - state{s=attack;li=10;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=17} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_attack;volume=1;pitch=1;delay=7} @self 0.5
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_archer_bow;volume=1;pitch=1;delay=10} @self
+  - delay 20
+  - shoot{type=ARROW;velocity=0.4;damage=5;accuracy=1} @target{ignore=samefaction}
+  
+# Plant Monster #
+  
+Plant_Monster_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=29}
+  - state{s=attack;li=7;lo=10} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.plant_monster_attack;volume=1;pitch=1} @self
+  - delay 12
+  - totem{md=2;c=1;oH=Plant_Monster_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+
+Plant_Monster_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=4;pkb=false;hnp=false;hp=true}
+  
+Plant_Monster_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=rms_dark_forest_sounds:samus.plant_monster_idle;volume=1;pitch=1.2} @self
+  
+# Wraith #
+  
+Wraith_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=23}
+  - state{s=attack;li=8;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=20} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.wraith_attack;volume=1;pitch=1} @self 0.5
+  - delay 13
+  - totem{md=2;c=1;oH=Wraith_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+
+Wraith_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=4;pkb=false;hnp=false;hp=true}
+  
+Wraith_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=rms_dark_forest_sounds:samus.wraith_attack;volume=1;pitch=1.2} @self
+  
+# Salamander #
+  
+Salamander_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=24}
+  - state{s=bite;li=6;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=5} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_attack;volume=1;pitch=1} @self 0.5
+  - delay 6
+  - lunge{velocity=0.7;velocityY=0.2} @target
+  - delay 8
+  - skill{s=Salamander_Attack_DAMAGE} @PIR{r=3}
+  #- totem{md=2;c=1;oH=Salamander_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+
+Salamander_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=6;pkb=false;hnp=false;hp=true}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  
+Salamander_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_attack;volume=1;pitch=1.2} @self
+  
+# Lava Salamander #
+  
+Lava_Salamander_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  Skills:
+  - gcd{ticks=24}
+  - state{s=bite;li=6;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=5} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_attack;volume=1;pitch=1} @self 0.5
+  - delay 6
+  - lunge{velocity=0.7;velocityY=0.2} @target
+  - delay 8
+  - skill{s=Lava_Salamander_Attack_DAMAGE} @PIR{r=3}
+  #- totem{md=2;c=1;oH=Salamander_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+
+Lava_Salamander_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=4;pkb=false;hnp=false;hp=true}
+  - ignite{ticks=80}
+
+# Stone Minion #
+  
+Stone_Minion_Roll:
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=80}
+  - state{s=roll_start;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=17} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_minion_roll;volume=1;pitch=0.7} @self
+  - delay 18
+  - state{s=roll} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_minion_roll;volume=1;pitch=1;repeat=2;repeatinterval=20} @self
+  - setspeed{speed=2;type=walking} @self
+  #- lunge{velocity=0.2;velocityY=0.01;repeat=60;repeatinterval=1} @target
+  - skill{s=Stone_Minion_Roll_DAMAGE;repeat=5;repeatinterval=10} @PIR{r=2}
+  - delay 60
+  - setspeed{speed=1;type=walking} @self
+  - state{s=roll;remove=true} @self
+  
+Stone_Minion_Roll_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=3;pkb=false;hnp=false;hp=true}
+  
+Stone_Minion_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=block.stone.break;volume=1.5;pitch=1.2} @self
+  - effect:particles{particle=block_crack;m=STONE;amount=10;hS=0.3;vS=0.3;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
+
+# Stone Golem #
+  
+Stone_Golem_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=34}
+  - state{s=attack;li=10;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=34} @self
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_golem_attack;volume=1;pitch=1;delay=8} @self
+  - delay 15
+  - totem{md=2;c=1;oH=Stone_Golem_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+  
+Stone_Golem_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=6;pkb=false;hnp=false;hp=true}
+  - effect:particles{particle=block_crack;m=STONE;amount=10;hS=0.4;vS=0.4;y=0.6;speed=0;forwardOffset=0;sideOffset=0}
+  
+Stone_Golem_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.iron_golem.hurt;volume=1;pitch=0.9} @self
+  - effect:particles{particle=block_crack;m=STONE;amount=15;hS=0.4;vS=0.6;y=0.6;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+#MWMthTZPpESWtEcsplR3wWUrdVWwElaNhXWU1UMNRUT5lEWiFVQjhFcEdTRMBFSkBFNTJEN

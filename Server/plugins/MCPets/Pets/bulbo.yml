@@ -1,0 +1,71 @@
+Id: bulbo
+MythicMob: bulbsprigPET
+Permission: mcpets.bulbo
+Mountable: false
+AutoRide: false
+MountType: walking
+DespawnOnDismount: false
+DespawnSkill: bulbPETDESPAWN
+Distance: 10
+SpawnRange: 1
+InventorySize: 18
+ComingBackRange: 10
+Icon:
+  Name: §5§lBulbo
+  TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJiMzdhNzgxMzMyYWJmN2QyNDE3OTVhODA2YjUwNWJjMGFmYzdiNDAxNTY0NTk1OTE4NTcwMDNlMGQ3ODgxOCJ9fX0=
+  Description:
+  - §4§lFuerza §73
+  - §2§lDestreza §72
+  - §6§lConstitucion §75
+  - §5§lSabiduria §74
+  - §1§lInteligencia §73
+  - §d§lCarisma §74
+Levels:
+  Lvl_Beginner:
+    Name: Unico
+    ExperienceThreshold: 0
+    MaxHealth: 45
+    Regeneration: 0.5
+    ResistanceModifier: 1
+    DamageModifier: 1
+    Power: 1
+    Cooldowns:
+      Respawn: 60
+      Revoke: 0
+Skins:
+  Skin1:
+    MythicMob: bulbsprigPET
+    Permission: mcpets.bulbo
+    Icon:
+      Name: §5§lBulbo Primavera
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJiMzdhNzgxMzMyYWJmN2QyNDE3OTVhODA2YjUwNWJjMGFmYzdiNDAxNTY0NTk1OTE4NTcwMDNlMGQ3ODgxOCJ9fX0=
+  Skin2:
+    MythicMob: bulbcactiPET
+    Permission: mcpets.bulbo.cactus
+    Icon:
+      Name: §5§lBulbo Cactus
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTZhMWZlMWYxMjlmN2UyMzdiMWMwMmRkYTY3NTgzYjc5ZjY0NGM1ZmY1NzMxZDYyYzc0MWZmNmQxMTQ5NDQ2NCJ9fX0=
+  Skin3:
+    MythicMob: bulbfungiPET
+    Permission: mcpets.bulbo.hongo
+    Icon:
+      Name: §5§lBulbo Hongo
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGJjNDBmZjMzZjQ4MmRjYTFkMTc2Y2YyNDUyY2Y2MDRmZDY0NjJjNDQzYzJiMGM5Y2UwOWFiNzEzOTljNmE3YSJ9fX0=
+  Skin4:
+    MythicMob: bulbshroomPET
+    Permission: mcpets.bulbo.seta
+    Icon:
+      Name: §5§lBulbo Seta
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDMzZDMwNzEyZWRiY2E1N2VhM2UwMWYwMmI5ODY1YWVlOGU1N2Y3N2M2OGFlMmQ1YWE4NzExZmU5NzI1MzQ0ZiJ9fX0=
+  Skin5:
+    MythicMob: bulbsunflowerPET
+    Permission: mcpets.bulbo.girasol
+    Icon:
+      Name: §5§lBulbo Girasol
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzk1MGI3YjlkMzU1NTU4MDI3ODU1NTMwOTBhY2Q3YmJjMDI1MTZjNGI1NDdiNTZjN2NmYmIwYjkxM2UzNWE5MCJ9fX0=
+  Skin6:
+    MythicMob: bulbwitherPET
+    Permission: mcpets.bulbo.rosanegra
+    Icon:
+      Name: §5§lBulbo Rosa Negra
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzkzNjNkYzVlYjI1NjI5NWE4M2Y3YzhiOThlOWI5MzVmZjRkMDRmZWVjMTE0OWY4MDQ4MGI2ZjgwZTQwMmI5MCJ9fX0=

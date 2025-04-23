@@ -1,0 +1,12 @@
+location: spawn:-1115.536:12.000:659.491
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&2Tutoriales'
+    height: 0.3
+  actions: {}

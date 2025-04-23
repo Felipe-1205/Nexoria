@@ -1,0 +1,501 @@
+#-----------  Sound -----------#
+Toffy_Fall_Dragon_Egg_Sound:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=block.wood.hit;v=1;p=1.6}
+  - delay 20
+  - removetag{t=sound} @self
+
+#-----------  Interaction -----------#
+Toffy_Fall_Dragon_Egg_Interaction:
+  Conditions:
+  - hastag{t=interacted} false
+  - hastag{t=eclode} false
+  - variableEquals{var=caster.crack;value=4} castInstead Toffy_Fall_Dragon_Eclode
+  Skills:
+  - addtag{t=interacted} @self
+  - variableadd{var=caster.crack;amount=1} @self
+  - setAI{ai=true} @self
+  - state{s=interact;li=0;lo=0;speed=1} @self
+  - setAI{ai=false} @self
+  - delay 26
+  - removetag{t=interacted} @self
+ 
+
+Toffy_Fall_Dragon_SpawnRandom:
+  Skills:
+  - effect:particles{p=explosion_normal;amount=5;speed=0.1;hS=0.15;vS=0.05} @SelfLocation{y=0}
+  - summon{type=Toffy_Fall_Dragon-Baby-MCPets;amount=1;radius=0;os=false;yRadiusUpOnly=true;yRadius=0;inheritFaction=true;sio=false} @SelfLocation{y
+
+############################################
+#            GLOBAL Drakonin               #
+############################################
+
+#----------- Spell cast -----------#
+Toffy_Fall_Dragon_Spell:
+  Conditions:
+  - hastag{t=start_fly} false
+  - hastag{t=end_fly} false
+  Skills:
+  - skill{s=Toffy_Fall_Dragon_Spell}
+
+#----------- Engage Fly -----------#
+Toffy_Fall_Dragon_StartFly:
+  Conditions:
+  - ModelHasDriver{} true
+  - altitude{h=1.05to3000} true
+  - hastag{t=start_fly} false
+  - hastag{t=fly} false
+  Skills:
+  - skill{s=[
+            - dismountmodel{p=mount} @self
+            - delay 1
+            - mountmodel{mode=flying} @Owner
+            ]}
+  - potion{type=SPEED;duration=25;level=4;hasParticles=false} @self
+  - skill{s=Toffy_Fall_Dragon_StartFly-FORCE}
+
+Toffy_Fall_Dragon_StartFly-FORCE:
+  Skills:
+  - addtag{t=start_fly} @self
+  - state{s=fly_start;li=3;lo=3;speed=1.6} @self
+  - setAI{ai=false} @self
+  - delay 4
+  - addtag{t=fly} @self
+  - setAI{ai=true} @self
+  - delay 10
+  - skill{s=Toffy_Fall_Dragon_Sound_Flap} @self
+  - particle{
+             a=1;
+             s=0.6;
+             particle=explosion_normal;
+             amount=1;
+             d=true;
+            } @Ring{r=3;points=20;yOffset=-1;}
+  - delay 11
+  - removetag{t=start_fly} @self
+  - state{s=fly_loop;li=0;lo=0} @self
+
+#----------- Fly Loop -----------#
+Toffy_Fall_Dragon_FlyLoop:
+  Skills:
+  - Aura{auraName=Toffy_Fall_Dragon_FlyLoop-Sound-Aura;onTick=Toffy_Fall_Dragon_Fly;interval=8;d=2147483646} @self
+  - Aura{auraName=Toffy_Fall_Dragon_FlyLoopNoMount-Sound-Aura;onTick=Toffy_Fall_Dragon_Fly-NoMount;interval=8;d=2147483646} @self
+  - Aura{auraName=Toffy_Fall_Dragon_FlyStartLoop-Sound-Aura;onTick=Toffy_Fall_Dragon_StartFly;interval=3;d=2147483646} @self
+  - Aura{auraName=Toffy_Fall_Dragon_FlyLandLoop-Sound-Aura;onTick=Toffy_Fall_Dragon_FlyLand;interval=3;d=2147483646} @self
+
+Toffy_Fall_Dragon_Fly-NoMount:
+  Conditions:
+  - ModelHasDriver{} false
+  - hastag{t=fly} false
+  - hastag{t=start_fly} false
+  - altitude{h=1.05to3000} true
+  Skills:
+  - addtag{t=fly} @self
+
+Toffy_Fall_Dragon_Fly:
+  Conditions:
+  - hastag{t=plunge} false
+  - hastag{t=fly} true
+  - hastag{t=start_fly} false
+  - hastag{t=fly_animation} false
+  - hastag{t=end_fly} false
+  Skills:
+  - addtag{t=fly_animation} @self
+  - potion{type=SPEED;duration=25;level=6;hasParticles=false} @self
+  - delay 13
+  - skill{s=Toffy_Fall_Dragon_Fly_effect}
+  - skill{s=Toffy_Fall_Dragon_Sound_Flap} @self
+  - delay 13
+  - removetag{t=fly_animation} @self
+
+Toffy_Fall_Dragon_Fly_effect:
+  Conditions:
+  - altitude{h=0to3} true
+  Skills: []
+  
+#----------- Engage Land -----------#
+Toffy_Fall_Dragon_FlyLand-Remount:
+  Conditions:
+  - ModelHasDriver{} true
+  - hasowner{} true
+  Skills:
+  - skill{s=[
+          - dismountmodel{p=mount} @self
+          - delay 1
+          - mountmodel{mode=flying} @Owner
+          ]}
+  
+Toffy_Fall_Dragon_FlyLand:
+  Conditions:
+  - hastag{t=start_fly} false
+  - hastag{t=fly} true
+  - altitude{h=0to1.05} true
+  - hastag{t=end_fly} false
+  - hastag{t=plunge} false
+  Skills:
+  - addtag{t=end_fly} @self
+  - state{s=fly_loop;remove=true} @self
+  - state{s=fly_end;li=2;lo=2;speed=1.4} @self
+  - setAI{ai=false} @self
+  - delay 12
+  - setAI{ai=true} @self
+  - projectile{i=1;maxRange=2;v=0.05;md=5;hitRadius=0.1;sE=false;sb=true;hs=true;hfs=0.01;
+      onTick=[
+              - pull{velocity=7;to=true} @Self
+             ];
+      onEnd=[
+              - particle{
+                         a=1;
+                         s=0.6;
+                         particle=explosion_normal;
+                         amount=1;
+                         d=true;
+                        } @Ring{r=4;points=20;yOffset=0.1;}
+              - sound{s=entity.horse.breathe;v=2;p=0.8} @self
+            ];} @Forward{f=4;y=-20}
+  - skill{s=Toffy_Fall_Dragon_FlyLand-Remount}
+  - delay 20
+  - setAI{ai=true} @self
+  - removetag{t=fly} @self
+  - removetag{t=end_fly} @self
+
+#----------- Animate Plunge -----------#
+Toffy_Fall_Dragon_Animate-Plunge_Start:
+  Conditions:
+  - hastag{t=fly} true
+  - hastag{t=plunge} false
+  Skills:
+  - addtag{t=plunge} @self
+  - state{s=plunge_start;li=0;lo=0} @self
+  - setAI{ai=false} @self
+  - delay 6
+  - skill{s=Toffy_Fall_Dragon_Sound_Flap} @self
+  - delay 6
+  - state{s=plunge_loop;li=0;lo=0} @self
+  - setAI{ai=true} @self
+  - projectile{i=1;maxRange=200;v=14;md=2147483646;hitRadius=1;sE=false;sb=true;hs=false;hfs=0.01;
+      onTick=[
+        - teleport
+        - skill{s=Toffy_Fall_Dragon_Animate-Plunge}
+        - sound{s=entity.horse.breathe;v=2;p=0.1} @self
+      ];
+      onEnd=[
+        - skill{s=Toffy_Fall_Dragon_Animate-Plunge_Land}
+        - throw{velocity=10;velocityY=3} @ENO{r=4;ignore=players,samefaction}
+        ];
+      } @SelfLocation{y=-200}
+  
+Toffy_Fall_Dragon_Animate-Plunge:
+  Conditions:
+  - hastag{t=plunge} true
+  - altitude{h<=1.5} castInstead Toffy_Fall_Dragon_Animate-Plunge_Land
+  - hastag{t=plunge_animate} false
+  Skills:
+  - addtag{t=plunge_animate} @self
+  - setAI{ai=false} @self
+  - delay 15
+  - setAI{ai=true} @self
+  - removetag{t=plunge_animate} @self
+
+Toffy_Fall_Dragon_Animate-Plunge_Land:
+  Conditions:
+  - hastag{t=plunge} true
+  Skills:
+  - setAI{ai=true} @self
+  - signal{s=PLUNGE_LAND} @self
+  - state{s=plunge_loop;remove=true} @self
+  - state{s=plunge_end;li=0;lo=0} @self
+  - sound{s=entity.ender_dragon.flap;v=2;p=0.1} @self
+  - projectile{i=1;maxRange=2;v=0.05;md=5;hitRadius=0.1;sE=false;sb=true;hs=true;hfs=0.01;
+      onTick=[
+        - pull{velocity=7;to=true} @Self
+      ];} @SelfLocation{y=-10}
+  - particle{
+             a=1;
+             s=1;
+             particle=explosion_normal;
+             amount=2;
+             d=true;
+            } @RingAroundOrigin{r=6;points=20;yOffset=-0.3;}
+  - delay 10
+  - skill{s=[
+          - dismountmodel{p=mount} @self
+          - delay 1
+          - mountmodel{mode=flying} @Owner
+          ]}
+  - particle{
+             a=1;
+             s=0.8;
+             particle=explosion_normal;
+             amount=2;
+             d=true;
+            } @RingAroundOrigin{r=3;points=20;yOffset=-0.3;}
+  - delay 20
+  - removetag{t=fly} @self
+  - state{s=fly_loop;remove=true} @self
+  - removetag{t=plunge} @self
+  - setAI{ai=true} @self
+
+
+#----------- Sounds (Attack/Hurt/etc...) -----------#
+Toffy_Fall_Dragon_Sound_Attack:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.ravager.roar;v=0.3;p=0.5} @self
+  - delay 40
+  - removetag{t=sound} @self
+Toffy_Fall_Dragon_Sound_Hurt:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.ravager.hurt;v=1;p=0.3}
+  - delay 40
+  - removetag{t=sound} @self
+Toffy_Fall_Dragon_Sound_Death:
+  Skills:
+  - sound{s=entity.ender_dragon.ambient;v=1.2;p=0.1} @self
+Toffy_Fall_Dragon_Sound_Ambient:
+  Skills:
+  - Aura{auraName=Toffy_Fall_Dragon_Sound_Ambient-Aura;onTick=Toffy_Fall_Dragon_Sound_Ambient-Play;interval=300;d=2147483646} @self
+  - Aura{auraName=Toffy_Fall_Dragon_Sound_Ambient-Move-Aura;onTick=Toffy_Fall_Dragon_Sound_Ambient-Move-Play;interval=5;d=2147483646} @self
+Toffy_Fall_Dragon_Sound_Ambient-Move-Play:
+  Conditions:
+  - hastag{t=sound_move} false
+  - hastag{t=fly} false
+  - isMoving{} true
+  Skills:
+  - addtag{t=sound_move} @self
+  - sound{s=entity.polar_bear.step;v=0.3;p=1} @self
+  - delay 10
+  - removetag{t=sound_move} @self
+Toffy_Fall_Dragon_Sound_Ambient-Play:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.zombie_horse.ambient;v=1;p=0.8} @self
+  - delay 40
+  - removetag{t=sound} @self
+Toffy_Fall_Dragon_Sound_Mount:
+  Skills:
+  - sound{s=entity.horse.saddle;v=1;p=0.3}
+Toffy_Fall_Dragon_Baby_Sound_Hurt:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.silverfish.hurt;v=1;p=0.3}
+  - delay 40
+  - removetag{t=sound} @self
+Toffy_Fall_Dragon_Baby_Sound_Death:
+  Skills:
+  - sound{s=entity.silverfish.death;v=1;p=0.3} @self
+Toffy_Fall_Dragon_Baby_Sound_Ambient:
+  Skills:
+  - Aura{auraName=Toffy_Fall_Dragon_Baby_Sound_Ambient-Aura;onTick=Toffy_Fall_Dragon_Baby_Sound_Ambient-Play;interval=250;d=2147483646} @self
+Toffy_Fall_Dragon_Baby_Sound_Ambient-Play:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.silverfish.ambient;v=0.4;p=0.3} @self
+  - delay 40
+  - removetag{t=sound} @self
+Toffy_Fall_Dragon_Baby_Sound_Flap:
+  Skills:
+  - sound{s=entity.phantom.flap;v=1.0;p=1.8} @self
+Toffy_Fall_Dragon_Sound_Flap:
+  Skills:
+  - sound{s=entity.ender_dragon.flap;v=0.8;p=0.5} @self
+Toffy_Fall_Dragon_Sound_Feed:
+  Skills:
+  - sound{s=entity.fox.eat;v=1;p=0.6}
+
+#----------- Mount -----------#
+Toffy_Fall_Dragon_Owner:
+  Conditions:
+  - hasOwner{} false
+  - ModelHasDriver false
+  Skills:
+  - setOwner{} @trigger
+
+Toffy_Fall_Dragon_Mount:
+  Skills:
+  - skill{s=Toffy_Fall_Dragon_Owner}
+  - skill{s=Toffy_Fall_Dragon_Mount_Owner} @trigger
+
+Toffy_Fall_Dragon_Mount_Owner:
+  Conditions:
+  - hasowner{} castInstead Toffy_Fall_Dragon_Mount_Owner-MCPets
+  Skills:
+  - skill{s=Toffy_Fall_Dragon_Sound_Mount} @self
+  - mountmodel{mode=walking}
+
+Toffy_Fall_Dragon_Mount_Owner-MCPets:
+  Conditions:
+  - owner{} true
+  Skills:
+  - skill{s=Toffy_Fall_Dragon_Sound_Mount} @self
+  - mountmodel{mode=walking}
+#----------- AI/Behavior -----------#
+Toffy_Fall_Dragon_AI:
+  Skills:
+  - Aura{auraName=Toffy_Fall_Dragon_AI-Aura;onTick=Toffy_Fall_Dragon_AI-Tick;interval=1;d=2147483646} @self
+
+Toffy_Fall_Dragon_Threat_Owner:
+  Conditions:
+  - hasowner{} true
+  - hastag{t=owner_marked} false
+  Skills:
+  - addtag{t=owner_marked} @self
+  - threat{amount=1000000} @Owner
+
+Toffy_Fall_Dragon_AI-Tick:
+  Conditions:
+  - hastag{t=flee} false
+  - targetwithin{d=3} castinstead Toffy_Fall_Dragon_AI-Stop
+  - hastag{t=come} castinstead Toffy_Fall_Dragon_AI-Tick-Walk
+  Skills:
+  - addtag{t=come} @self
+  - skill{s=Toffy_Fall_Dragon_Threat_Owner}
+  - removetag{t=stop} @self
+  - removetag{t=idle} @self
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=meleeattack}
+  - runaigoalselector{goal=randomstroll}
+Toffy_Fall_Dragon_AI-Tick-Walk: # Drakonin walk
+  Conditions:
+  - hastag{t=come} true
+  - hastag{t=fly} castInstead Toffy_Fall_Dragon_AI-Tick-Fly
+  - moving{} true
+  - hastag{t=walk} false
+  Skills:
+  - state{s=walk_loop;li=0;lo=0;speed=1.8} @self
+  - addtag{t=walk} @self
+  - delay 11
+  - removetag{t=walk} @self
+  
+Toffy_Fall_Dragon_AI-Tick-Fly:
+  Conditions:
+  - hastag{t=fly} true
+  - hastag{t=fly_animate} false
+  Skills:
+  - state{s=fly_loop;remove=true} @self
+  - state{s=fly_loop;li=0;lo=0;speed=1.3} @self
+  - addtag{t=fly_animate} @self
+  - skill{s=[
+            - delay 10
+            - skill{s=Toffy_Fall_Dragon_Baby_Sound_Flap}
+            ]} @self
+  - potion{type=SPEED;duration=25;level=1;hasParticles=false} @self
+  - delay 20
+  - removetag{t=fly_animate} @self
+Toffy_Fall_Dragon_AI-Stop:
+  Skills:
+  - addtag{t=stop} @self
+  - skill{s=[
+            - potion{type=SLOW;duration=5;lvl=126;hasParticles=false} @self
+            ];repeat=5;repeatInterval=1} @self
+  - skill{s=Toffy_Fall_Dragon_AI-Stop-Loop;repeat=20;repeatInterval=1}
+  - removetag{t=come} @self
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=meleeattack}
+  - runaigoalselector{goal=randomstroll}
+  - skill{s=Toffy_Fall_Dragon_AI-Stop-IdleLoop}
+Toffy_Fall_Dragon_AI-Stop-Loop:
+  Conditions:
+  - hastag{t=idle} true
+  - hastag{t=come} false
+  Skills:
+  - potion{type=SLOW;duration=15;lvl=126;hasParticles=false} @self
+Toffy_Fall_Dragon_AI-Stop-IdleLoop:
+  Conditions:
+  - hastag{t=idle} false
+  - hastag{t=fly} castInstead Toffy_Fall_Dragon_AI-Stop-Fly
+  Skills:
+  - state{s=walk_loop;remove=true;} @self
+  - skill{s=Toffy_Fall_Dragon_AI-Stop-Loop;repeat=50;repeatInterval=1}
+  - addtag{t=idle} @self
+  - delay 38
+  - removetag{t=idle} @self
+Toffy_Fall_Dragon_AI-Stop-Fly:
+  Conditions:
+  - hastag{t=fly} true
+  - hastag{t=fly_animate} false
+  Skills:
+  - skill{s=Toffy_Fall_Dragon_AI-Stop-Loop;repeat=20;repeatInterval=1}
+  - state{s=fly_loop;remove=true} @self
+  - state{s=fly_loop;li=0;lo=0;speed=1.3} @self
+  - addtag{t=idle} @self
+  - addtag{t=fly_animate} @self
+  - skill{s=[
+            - delay 10
+            - skill{s=Toffy_Fall_Dragon_Baby_Sound_Flap}
+            ]} @self
+  - delay 19
+  - removetag{t=fly_animate} @self
+  - removetag{t=idle} @self
+Toffy_Fall_Dragon_AI-Flee:
+  Conditions:
+  - hastag{t=flee} false
+  Skills:
+  - addtag{t=flee} @self
+  - removetag{t=come} @self
+  - removetag{t=stop} @self
+  - removetag{t=idle} @self
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=fleeplayers}
+
+#----------- Interact -----------#
+Toffy_Fall_Dragon_Interact:
+  Skills:
+  - delay 3
+  - skill{s=Toffy_Fall_Dragon_Interact-Skill}
+  
+Toffy_Fall_Dragon_Interact-Skill:
+  Conditions:
+  - hastag{t=feeding} false
+  - hastag{t=interacted} false
+  - hastag{t=fly} castInstead Toffy_Fall_Dragon_Interact-Land
+  Skills:
+  - addtag{t=interacted} @self
+  - addtag{t=fly} @self
+  - addtag{t=fly_animate} @self
+  - state{s=walk_loop;remove=true} @self
+  - state{s=fly_start;li=0;lo=0;speed=1.75} @self
+  - potion{type=SPEED;duration=2147483647;level=1;force=true;p=false} @self
+  - skill{s=[
+            - delay 10
+            - skill{s=Toffy_Fall_Dragon_Baby_Sound_Flap}
+            ]} @self
+  - delay 23
+  - removetag{t=fly_animate} @self
+  - removetag{t=interacted} @self
+  - state{s=fly_loop;li=0;lo=0;speed=1.75} @self
+  
+Toffy_Fall_Dragon_Interact-Land:
+  Skills:
+  - addtag{t=interacted} @self
+  - addtag{t=fly_animate} @self
+  - removetag{t=fly} @self
+  - state{s=fly_loop;remove=true} @self
+  - state{s=fly_end;li=0;lo=0;speed=1.75} @self
+  - potion{type=SPEED;duration=20;level=1;force=true;p=false} @self
+  - delay 23
+  - removetag{t=interacted} @self
+  - removetag{t=fly_animate} @self
+
+Toffy_Fall_Dragon_Tame-Effect:
+  Skills:
+  - effect:particles{p=HEART;amount=5;speed=0.1;hS=0.15;vS=0.15;yOffset=1.6} @SelfLocation{y=0}
+
+#----------- CancelEvent -----------#
+Toffy_Fall_Dragon_CancelEvent:
+  Skills:
+  - CancelEvent

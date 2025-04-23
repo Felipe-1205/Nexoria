@@ -1,0 +1,206 @@
+######## created by samus2002 #########
+  
+archer_bow:
+  Id: stone_sword
+  Display: "<gradient:#30f060:#f05d30:#30f060>Bow of Archer"
+  Model: 2019
+  Lore:
+  - '<gradient:#30f060:#f05d30:#30f060>The bow of an Archer'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Quick_Shot} @self ~onSwing
+  - skill{s=Backstep} @self ~onUse
+  - skill{s=Deadly_Javelin} @self ~onUse
+  - skill{s=Windrazor} @self ~onCrouch
+  - skill{s=Dragon_Piercer} @self ~onSwing
+  
+archer_bow_shiny:
+  Id: stone_sword
+  Display: "<gradient:#e8a01a:#fffd9c:#e8a01a>Shiny Bow of Archer"
+  Model: 2020
+  Lore:
+  - '<gradient:#e8a01a:#fffd9c:#e8a01a>The bow of an Archer'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Quick_Shot} @self ~onSwing
+  - skill{s=Backstep} @self ~onUse
+  - skill{s=Deadly_Javelin} @self ~onUse
+  - skill{s=Windrazor} @self ~onCrouch
+  - skill{s=Dragon_Piercer} @self ~onSwing
+  
+archer_bow_spirit_1:
+  Id: paper
+  Display: "&6"
+  Model: 2220
+  Hide:
+  - ATTRIBUTES
+
+archer_bow_spirit_2:
+  Id: paper
+  Display: "&6"
+  Model: 2221
+  Hide:
+  - ATTRIBUTES
+ 
+archer_bow_spirit_3:
+  Id: paper
+  Display: "&6"
+  Model: 2222
+  Hide:
+  - ATTRIBUTES
+  
+archer_bow_spirit_4:
+  Id: paper
+  Display: "&6"
+  Model: 2223
+  Hide:
+  - ATTRIBUTES
+  
+archer_bow_spirit_dragon_1:
+  Id: paper
+  Display: "&6"
+  Model: 2224
+  Hide:
+  - ATTRIBUTES
+  
+archer_bow_spirit_dragon_2:
+  Id: paper
+  Display: "&6"
+  Model: 2225
+  Hide:
+  - ATTRIBUTES
+  
+archer_bow_spirit_dragon_3:
+  Id: paper
+  Display: "&6"
+  Model: 2226
+  Hide:
+  - ATTRIBUTES
+  
+archer_bow_spirit_dragon_4:
+  Id: paper
+  Display: "&6"
+  Model: 2227
+  Hide:
+  - ATTRIBUTES
+  
+backstep_1:
+  Id: paper
+  Display: "&6"
+  Model: 2228
+  Hide:
+  - ATTRIBUTES
+  
+backstep_2:
+  Id: paper
+  Display: "&6"
+  Model: 2229
+  Hide:
+  - ATTRIBUTES
+  
+backstep_3:
+  Id: paper
+  Display: "&6"
+  Model: 2230
+  Hide:
+  - ATTRIBUTES
+  
+backstep_4:
+  Id: paper
+  Display: "&6"
+  Model: 2231
+  Hide:
+  - ATTRIBUTES
+  
+backstep_5:
+  Id: paper
+  Display: "&6"
+  Model: 2232
+  Hide:
+  - ATTRIBUTES
+  
+dragon_arrow:
+  Id: paper
+  Display: "&6"
+  Model: 2233
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spirit_1:
+  Id: paper
+  Display: "&6"
+  Model: 2234
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spirit_2:
+  Id: paper
+  Display: "&6"
+  Model: 2235
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spirit_3:
+  Id: paper
+  Display: "&6"
+  Model: 2236
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spirit_4:
+  Id: paper
+  Display: "&6"
+  Model: 2237
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spirit_open:
+  Id: paper
+  Display: "&6"
+  Model: 2238
+  Hide:
+  - ATTRIBUTES
+  
+hunters_focus_1:
+  Id: paper
+  Display: "&6"
+  Model: 2239
+  Hide:
+  - ATTRIBUTES
+  
+hunters_focus_2:
+  Id: paper
+  Display: "&6"
+  Model: 2240
+  Hide:
+  - ATTRIBUTES
+  
+hunters_focus_3:
+  Id: paper
+  Display: "&6"
+  Model: 2241
+  Hide:
+  - ATTRIBUTES
+  
+javelin:
+  Id: paper
+  Display: "&6"
+  Model: 2242
+  Hide:
+  - ATTRIBUTES
+  
+quick_shot:
+  Id: paper
+  Display: "&6"
+  Model: 2243
+  Hide:
+  - ATTRIBUTES
+  

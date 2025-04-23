@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 187.189.69.67
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739660827836
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739662232964
+  login: 1739658510904
+money: '0'
+last-account-name: Satoru_G
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.985595738859
+  y: 81.0
+  z: 463.24619042164187
+  yaw: 44.289852142333984
+  pitch: 17.447511672973633
+nickname: Valeria
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2970.8920844678014
+  y: 76.375
+  z: 463.49309817825093
+  yaw: -56.099853515625
+  pitch: 21.473865509033203

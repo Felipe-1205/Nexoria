@@ -1,0 +1,192 @@
+######## created by samus2002 #########
+
+# Ghoul #
+
+Ghoul:
+  Type: ZOMBIE
+  Display: '&fGhoul'
+  Health: 25
+  Damage: 3
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  - randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=ghoul;step=1;tint=false;usm=true} @self ~onSpawn
+  - setstance{stance=Walking} @self
+  - effect:sound{s=entity.husk.ambient;volume=0.75;pitch=0.8} @self ~onTimer:140 0.35
+  - effect:sound{s=entity.husk.ambient;volume=0.75;pitch=1} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Ghoul_Attack} ~onTimer:20
+  - skill{s=Ghoul_Dash} ~onTimer:40 0.7
+  - skill{s=Ghoul_Hit} ~onDamaged
+  - effect:sound{s=entity.player.attack.crit;volume=0.55;pitch=0.33} @self ~onDamaged
+  
+# Specter #
+
+Specter:
+  Type: SKELETON
+  Display: '&fSpecter'
+  Health: 45
+  Damage: 4
+  Options:
+    MovementSpeed: 0.2
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - bow:HAND
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - lookatplayers
+  - randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=specter;step=1;tint=false;usm=true} @self ~onSpawn
+  - look @target ~onTimer:1
+  - effect:sound{s=entity.phantom.ambient;volume=0.75;pitch=0.8} @self ~onTimer:140 0.35
+  - effect:sound{s=entity.phantom.ambient;volume=0.75;pitch=1} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  #- bodyclamp{c=30} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onShoot
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Specter_Attack} ~onTimer:60 0.7
+  - skill{s=Specter_Attack} ~onTimer:40 0.3
+  - skill{s=Specter_Hit} ~onDamaged
+  - effect:sound{s=entity.player.attack.crit;volume=0.55;pitch=0.33} @self ~onDamaged
+
+# Zombie Brute #
+
+Zombie_Brute:
+  Type: ZOMBIE
+  Display: '&fZombie Brute'
+  Health: 80
+  Damage: 10
+  Options:
+    MovementSpeed: 0.21
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 30
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  #- randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=zombie_brute;step=1;tint=false;usm=true} @self ~onSpawn
+  - skill{s=Zombie_Brute_Undying_Resilience} @self ~onDamaged 0.25
+  - skill{s=Zombie_Brute_Undying_Resilience_HEAL} @self ~onDamaged
+  - setstance{stance=Walking} @self
+  - effect:sound{s=entity.zoglin.ambient;volume=0.75;pitch=0.65} @self ~onTimer:140 0.35
+  - effect:sound{s=entity.zoglin.ambient;volume=0.75;pitch=0.8} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Zombie_Brute_Attack} ~onTimer:40 0.3
+  - skill{s=Zombie_Brute_Attack} ~onTimer:70 0.7
+  - skill{s=Zombie_Brute_Dash} ~onTimer:60 0.7
+  - skill{s=Zombie_Brute_Hit} ~onDamaged
+  - effect:sound{s=entity.player.attack.crit;volume=0.55;pitch=0.33} @self ~onDamaged
+
+# Nightharrow Wendigo #
+
+Nightharrow_Wendigo:
+  Type: ZOMBIE
+  Display: '&fNightharrow Wendigo'
+  Health: 1000
+  Damage: 16
+  BossBar:
+    Enabled: true
+    Title: '&4Nightharrow Wendigo'
+    Range: 35
+    Color: RED
+    Style: SEGMENTED_12
+    DarkenSky: false
+  Options:
+    MovementSpeed: 0.24
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 45
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  Drops:
+  - nightharrow_sword 1 1
+  AIGoalSelectors:
+  - clear
+  - meleeattack
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=nightharrow_wendigo;step=1;tint=false;usm=true} @self ~onSpawn
+  - setstance{stance=Walking} @self ~onSpawn
+  - effect:sound{s=entity.polar_bear.ambient;volume=0.8;pitch=0.6} @self ~onTimer:140 0.35
+  - effect:sound{s=entity.polar_bear.ambient;volume=0.8;pitch=0.45} @self ~onDeath
+  - skill{s=Nightharrow_Wendigo_TouchGround} ~onTimer:1
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Nightharrow_Wendigo_P1} ~onTimer:20 >50%
+  - skill{s=Nightharrow_Wendigo_P2} ~onTimer:20 <50%
+  - skill{s=Nightharrow_Wendigo_Dash} ~onTimer:60 0.7
+  - skill{s=Nightharrow_Wendigo_Hit} ~onDamaged
+  - effect:sound{s=entity.player.attack.crit;volume=0.55;pitch=0.33} @self ~onDamaged
+
+#k3NvNUUuxkS4EETr5WQstGOJtmTxUFROVzaq5UNjRlTw0kVRJDTGx2dM5kN3gHW4EzUmNXO

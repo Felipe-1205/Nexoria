@@ -1,0 +1,70 @@
+
+
+Pumpkin_Bombs:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_pumpkin;n=false} @self ~onSpawn
+  
+dash_dummy:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Drift_dash_skill} ~onSpawn 
+  - effect:particles{particle=portal;amount=6;hS=0.3;vS=0.15;speed=0;y=0.5} @self ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Midnight_Crow:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_crow;n=false} @self ~onSpawn
+  
+Scarecrow_Summon:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_scarecrow;n=false} @self ~onSpawn
+  - remove{delay=140} @self ~onSpawn
+  - effect:particlering{particle=redstone;color=#19191c;radius=8;points=70;amount=1;hS=0;vS=0;y=0.1} @self ~onTimer:8
+  
+Nightmare:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_pumpkin_skull;n=false} @self ~onSpawn
+  - skill{s=Nightmare_FX} @EIR{r=4;limit=1;sort=NEAREST} ~onTimer:10

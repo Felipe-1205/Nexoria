@@ -1,0 +1,430 @@
+######## created by samus2002 #########
+
+# Evasion #
+
+Evasion:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: evasion_1
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=evasion_1:4;delay=3} ~onSpawn
+  - equip{item=evasion_2:4;delay=6} ~onSpawn
+  - equip{item=evasion_3:4;delay=9} ~onSpawn
+  - equip{item=evasion_4:4;delay=12} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+# Double Strike #
+
+Double_Strike_Red:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=strike_slash_1:0;delay=3} ~onSpawn
+  - equip{item=strike_slash_2:0;delay=4} ~onSpawn
+  - equip{item=strike_slash_3:0;delay=5} ~onSpawn
+  - equip{item=strike_slash_4:0;delay=6} ~onSpawn
+  - equip{item=strike_slash_5:0;delay=7} ~onSpawn
+  - equip{item=strike_slash_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Double_Strike_Red_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=basic_strike_1:0;delay=3} ~onSpawn
+  - equip{item=basic_strike_2:0;delay=4} ~onSpawn
+  - equip{item=basic_strike_3:0;delay=5} ~onSpawn
+  - equip{item=basic_strike_4:0;delay=6} ~onSpawn
+  - equip{item=basic_strike_5:0;delay=7} ~onSpawn
+  - equip{item=basic_strike_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Double_Strike_Blue:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,180
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_strike_slash_1:0;delay=3} ~onSpawn
+  - equip{item=blue_strike_slash_2:0;delay=4} ~onSpawn
+  - equip{item=blue_strike_slash_3:0;delay=5} ~onSpawn
+  - equip{item=blue_strike_slash_4:0;delay=6} ~onSpawn
+  - equip{item=blue_strike_slash_5:0;delay=7} ~onSpawn
+  - equip{item=blue_strike_slash_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Double_Strike_Blue_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_basic_strike_1:0;delay=3} ~onSpawn
+  - equip{item=blue_basic_strike_2:0;delay=4} ~onSpawn
+  - equip{item=blue_basic_strike_3:0;delay=5} ~onSpawn
+  - equip{item=blue_basic_strike_4:0;delay=6} ~onSpawn
+  - equip{item=blue_basic_strike_5:0;delay=7} ~onSpawn
+  - equip{item=blue_basic_strike_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+# Agile Strike #
+
+Agile_Strike_Dash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=agile_strike_1:0;delay=3} ~onSpawn
+  - equip{item=agile_strike_2:0;delay=5} ~onSpawn
+  - equip{item=agile_strike_3:0;delay=7} ~onSpawn
+  - equip{item=agile_strike_4:0;delay=9} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Agile_Strike_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_strike_1:0;delay=3} ~onSpawn
+  - equip{item=blue_strike_2:0;delay=4} ~onSpawn
+  - equip{item=blue_strike_3:0;delay=5} ~onSpawn
+  - equip{item=blue_strike_4:0;delay=6} ~onSpawn
+  - equip{item=blue_strike_5:0;delay=7} ~onSpawn
+  - equip{item=blue_strike_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+# Uppercut #
+
+Uppercut:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=uppercut_1:0;delay=3} ~onSpawn
+  - equip{item=uppercut_2:0;delay=4} ~onSpawn
+  - equip{item=uppercut_3:0;delay=5} ~onSpawn
+  - equip{item=uppercut_4:0;delay=6} ~onSpawn
+  - equip{item=uppercut_5:0;delay=7} ~onSpawn
+  - equip{item=uppercut_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Uppercut_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=strike_1:4;delay=3} ~onSpawn
+  - equip{item=strike_2:4;delay=4} ~onSpawn
+  - equip{item=strike_3:4;delay=5} ~onSpawn
+  - equip{item=strike_4:4;delay=6} ~onSpawn
+  - equip{item=strike_5:4;delay=7} ~onSpawn
+  - equip{item=strike_6:4;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+# Diving Strike #
+
+Diving_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_uppercut_1:0;delay=3} ~onSpawn
+  - equip{item=blue_uppercut_2:0;delay=4} ~onSpawn
+  - equip{item=blue_uppercut_3:0;delay=5} ~onSpawn
+  - equip{item=blue_uppercut_4:0;delay=6} ~onSpawn
+  - equip{item=blue_uppercut_5:0;delay=7} ~onSpawn
+  - equip{item=blue_uppercut_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Diving_Strike_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_strike_1:5;delay=3} ~onSpawn
+  - equip{item=blue_strike_2:5;delay=4} ~onSpawn
+  - equip{item=blue_strike_3:5;delay=5} ~onSpawn
+  - equip{item=blue_strike_4:5;delay=6} ~onSpawn
+  - equip{item=blue_strike_5:5;delay=7} ~onSpawn
+  - equip{item=blue_strike_6:5;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Diving_Strike_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=diving_strike_rupture_1:5;delay=3} ~onSpawn
+  - equip{item=diving_strike_rupture_2:5;delay=15} ~onSpawn
+  - equip{item=diving_strike_rupture_3:5;delay=17} ~onSpawn
+  - equip{item=diving_strike_rupture_4:5;delay=19} ~onSpawn
+  - equip{item=diving_strike_rupture_5:5;delay=21} ~onSpawn
+  - equip{item=diving_strike_rupture_6:5;delay=23} ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+  
+# Deadly Squash #
+
+Deadly_Squash_Palm:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  Options:
+    Marker: false
+    Interactable: false
+    HasArms: true
+    Collidable: false
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @self ~onSpawn
+  - velocity{m=set;x=0;y=-7;z=0;delay=13} @self ~onSpawn
+  - equip{item=deadly_squash:0;delay=2} ~onSpawn
+  - equip{item=deadly_squash_2:0;delay=34} ~onSpawn
+  - equip{item=deadly_squash_3:0;delay=36} ~onSpawn
+  - equip{item=deadly_squash_4:0;delay=38} ~onSpawn
+  - equip{item=deadly_squash_4:0} ~onSpawn
+  - equip{item=deadly_squash_3:0;delay=2} ~onSpawn
+  - equip{item=deadly_squash_2:0;delay=4} ~onSpawn
+  - equip{item=deadly_squash:0;delay=6} ~onSpawn
+  - summon{type=Deadly_Squash_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=15} @origin{yoffset=-1} ~onSpawn
+  - remove{delay=40} @self ~onSpawn
+  
+Deadly_Squash_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=strike_1:5;delay=3} ~onSpawn
+  - equip{item=strike_2:5;delay=4} ~onSpawn
+  - equip{item=strike_3:5;delay=5} ~onSpawn
+  - equip{item=strike_4:5;delay=6} ~onSpawn
+  - equip{item=strike_5:5;delay=7} ~onSpawn
+  - equip{item=strike_6:5;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+# Multi Strike #
+
+Multi_Strike_Shadow_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=multi_strike_1_1:4;delay=3} ~onSpawn
+  - equip{item=multi_strike_1_2:4;delay=5} ~onSpawn
+  - equip{item=multi_strike_1_3:4;delay=7} ~onSpawn
+  - equip{item=multi_strike_1_4:4;delay=9} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Multi_Strike_Shadow_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=multi_strike_2_1:4;delay=3} ~onSpawn
+  - equip{item=multi_strike_2_2:4;delay=5} ~onSpawn
+  - equip{item=multi_strike_2_3:4;delay=7} ~onSpawn
+  - equip{item=multi_strike_2_4:4;delay=9} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Multi_Strike_Shadow_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=multi_strike_3_1:4;delay=3} ~onSpawn
+  - equip{item=multi_strike_3_2:4;delay=5} ~onSpawn
+  - equip{item=multi_strike_3_3:4;delay=7} ~onSpawn
+  - equip{item=multi_strike_3_4:4;delay=9} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Multi_Strike_Shadow_4:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=multi_strike_4_1:4;delay=3} ~onSpawn
+  - equip{item=multi_strike_4_2:4;delay=5} ~onSpawn
+  - equip{item=multi_strike_4_3:4;delay=7} ~onSpawn
+  - equip{item=multi_strike_4_4:4;delay=9} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Multi_Strike_RED:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=uppercut_1:5;delay=3} ~onSpawn
+  - equip{item=uppercut_2:5;delay=4} ~onSpawn
+  - equip{item=uppercut_3:5;delay=5} ~onSpawn
+  - equip{item=uppercut_4:5;delay=6} ~onSpawn
+  - equip{item=uppercut_5:5;delay=7} ~onSpawn
+  - equip{item=uppercut_6:5;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Multi_Strike_RED_HIT:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=strike_1:0;delay=3} ~onSpawn
+  - equip{item=strike_2:0;delay=4} ~onSpawn
+  - equip{item=strike_3:0;delay=5} ~onSpawn
+  - equip{item=strike_4:0;delay=6} ~onSpawn
+  - equip{item=strike_5:0;delay=7} ~onSpawn
+  - equip{item=strike_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Multi_Strike_BLUE:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,180
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_uppercut_1:5;delay=3} ~onSpawn
+  - equip{item=blue_uppercut_2:5;delay=4} ~onSpawn
+  - equip{item=blue_uppercut_3:5;delay=5} ~onSpawn
+  - equip{item=blue_uppercut_4:5;delay=6} ~onSpawn
+  - equip{item=blue_uppercut_5:5;delay=7} ~onSpawn
+  - equip{item=blue_uppercut_6:5;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Multi_Strike_BLUE_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blue_strike_1:0;delay=3} ~onSpawn
+  - equip{item=blue_strike_2:0;delay=4} ~onSpawn
+  - equip{item=blue_strike_3:0;delay=5} ~onSpawn
+  - equip{item=blue_strike_4:0;delay=6} ~onSpawn
+  - equip{item=blue_strike_5:0;delay=7} ~onSpawn
+  - equip{item=blue_strike_6:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn

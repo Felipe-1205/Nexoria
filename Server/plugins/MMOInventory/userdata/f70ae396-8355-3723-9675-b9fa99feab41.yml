@@ -1,0 +1,167 @@
+inventory:
+  '22':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Eliminador 5000","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Daño Crítico: ","italic":false,"color":"gray"},{"text":"+3%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Daño Físico: ","italic":false,"color":"gray"},{"text":"+3%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/3WQzUrDQBRGL4JlbBGsILqSMGA3umgtRejKYTK2g/ljJiChlNDGFgLVQBIEKX0Gd67dZdVFXyF5E5/EpIWEUpzFB3PvgTnz1QEQXOi6yW2mS1d1DKJz6mqmYPA1wmkyTxMvTXrE82ZREPoBviuGu0yTrpImD7/fP4o6yTaBQsNsHfte0M/H89vuzT/YU7aODqg91vA/ZotiP02Thc2ZUDp4jOC8FC3StR2LwQmhlElpCgfB2f6eq9BgGte5QVRT3CM4Lff5Nxk0W1O28N/898lrECq9drtdg6sSsYaO5JRorkp0MmCPCLYHQbNEmEGHxLAlHI1yu8uqRi4tjThM3Sk2WlV/COpDaQtnZzBYYhlPYtzHxTWvwBzIOAg/cX+0xHuybraJ4jAHD5zxaryqwXVJU8HtrXf+DH9mrmW+MFHZVx0UvcJxkR34A4D7PLwIAgAA
+  '23':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Eliminador 4000","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Daño Crítico: ","italic":false,"color":"gray"},{"text":"+1.5%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Daño Físico: ","italic":false,"color":"gray"},{"text":"+1.5%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/3WQzUrDQBRGL4IltghWEF2VMGA3ijRoEbqRYTK2g/ljJiChlNDGFgLVQBIEKX0KwbW7rLroKyRv4lO4NGkhoaiz+GDuPTBnvjqABCe6bjKb6sJVHQPrjLiaySm8D1GazNLES5Mu9rxpFIR+gC6L4TbT5FpOk9uvj09ZHWfrQCZhtop9L+jl49mFctU9/we8z1bRH9wObfiv03lBTNJkbjPKZQWNJDguZYt0bceicIAJoUKY3JHgaHfPVGhQjenMwKrJFQkOy33+VQrN9oTO/Wf/ZfwUhPJNp9OpwVmJWANHMII1V8U67tO7b9gcCZolQg0ywIYtYG+Y251WVTJhadih6lax0a46lKA+EDZ3tgb9BRLxOEY9VFzzCsy+iIPwDfWGC7Qj62brKA5z8JczWo6WNWiVNOHM3njnz7AH6lrmI+WVfdVB0SvsF6nADzwx6ZEMAgAA
+  '24':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Talisman de Regalo Blanco","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Daño PvE: ","italic":false,"color":"gray"},{"text":"+1.8%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Defensa: ","italic":false,"color":"gray"},{"text":"+1.8","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Reducción de Daño por Proyectiles: ","italic":false,"color":"gray"},{"text":"+1.8%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/32RzUrDQBSFL4I1VgR/EBduwqDdKEIRUbqRmIxtJH/ORCGUEtI4lUBsJImFUvoart1lXXyDFF/E53Bh0mLaWnAWF+acw+G7M2WAEhyqqi6bWKW2QfRbLJqygm1JUIU6tgmW7jNB166+YXI42Cni+bRNy8CwLogiplQnFgdbi74swRrBdUHRqxxsFp4mqBgOKm3T8b3o2enyj4wn7MnxA/7ad7puUILdGdfDL9AMY7twsSY2BM2ksNJscbBf6JJMDUWwsDRl3KicC67LoiD0Ag7KDWoSa4pxN0A0dmJUQ/kVnSC9TuMg7KNac4AWiO3xKIrDLPgPOBq2hqW5V5DwDdboHPnezLKyUlm0FZ1g+GyiNOmkiZsmM9AMJhOnM03O+DS5+Hp75yVnPAp4o4drmdI5rp5eHi1nWId1I6dILAUIe3x1XW/8MdlhWvkShLwRBn3mxp7Por/1Cx2a12N+nminiW/KmPBV1Jr/41yD1XxW4Qf5NuIKagIAAA==
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Insignia de Hoguera 2","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"❤
+        Salud: ","italic":false,"color":"gray"},{"text":"+4","italic":false,"color":"red"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/3WQ0UqEQBSGD0FhG4EVsbfDXOxN3exWBF416KADOi6OQSKLuK4tgqygbhDLPkp3gde9gr1JT5ImuC3UufjhzP/D+eYfAEhwaVk2c6klAs3jxGJqYNoOhcDHdfVcV1Fd3ZEoiossTzJ83T52Wlc3qK7uv97ekQjT9UJptujq9o8IT17itLXndZW6jDpojGcSnPeHWw1cb0rhmKgqFcJ2PAnkfZ9pIDMumM4ZMWz9kTpkIsFpH2rYKQxHc7YqkuUqCdEiRka2XMd5iCZHcNEHLfIUGJSYrvEgw89IcNa7lKsG4a6AA79hHO7KYWJqEo9qHejJaNeKBANDuI7XIVgbLMqwxApu16YIWxdllr9ixd/gPdrg86Mo8yb4DzTezra/f9hWB4etjuEboMhmwrsBAAA=
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Insignia de Hoguera 1","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"❤
+        Salud: ","italic":false,"color":"gray"},{"text":"+2","italic":false,"color":"red"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/3WQwUrDQBRFH4ISK0JVpNswi250E0WErBzSIRnITEomgiGUkKaxBEIDSVqQ0k9xJ2TtL4x/4peYEEgt6FtceHMvvDN3AKDANWMO9QgT4cTnmFEjtB2XQBggWb/KOpb1A47jpMyLNEe37WOnsr5XZf34/f6hiihbL/Rmi2/u/ojwdJNkrT2XdeZR4qoamilw2R9uNfT8KYFTbBhECMf1FRge+nQCQ8oFNTnFlmM+ExdrCpz3oYadwGg8p6syXa7SSF0kqpUv10kRqdoJXPVBhl9Ci2Dbs56gGwUuepdww8LcE3AUNIyjfTlUTG3sk0kHejbet6LAwBKe63cIbItEFVVIR+3aFOGYosqLN6QHW3RAG359llXRBP+BRrvZ7vcP2+rguFUNfgBvNgQ9uwEAAA==
+  '15':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Talisman de Vampiro","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"❤
+        Salud: ","italic":false,"color":"gray"},{"text":"+1.2","italic":false,"color":"red"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Vampirismo de Hechizos: ","italic":false,"color":"gray"},{"text":"+1.2%","italic":false,"color":"red"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/21Qy0rDQBS9CJZYEXxQdBkG7EYRoojQjQzpYAYzSciEYiglpGnEQGokiYKW/oQLd4ILIWt/If6J3+AHmDGQWvAuDtx7DodzTxtAgg5jJnUI417fNTCjqqebNoHnISqL67IIyuIUB0GYJWmUoENxrLEsTuSyOPt6fZe5H99PetUWHChHx8v0y5s88Kd3URpl00SehLIWBjfRU5I1+v1/XI3oIYyFYlwWsUOJLStoJMF2k1Wg57gWgTWsqoRz03Yl2FzmaR+kAWYWtU1Fgo2GrN4k0OmOHT+uUvm3IlYdMmnBXiPjFtF1rzagnJ1/w+9IsLuojHJLxy7p11nWu4uuJNhqZMRQNWw4HFaGoxbsNHeGrzyNYN3RFuZtjTu2W2e8nCGe+znqIbFWDZkXPE/SR9QbztDSO97nR5anlfDfr9B8NP9bgGgUVgUq8AMxtwuABQIAAA==

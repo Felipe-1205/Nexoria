@@ -1,0 +1,603 @@
+######## created by samus2002 #########
+
+# Flow State #
+
+Flow_State:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=flow_state_1:4} ~onSpawn
+  - equip{item=flow_state_2:4} ~onSignal:FLOWSTATE2
+  - equip{item=flow_state_3:4} ~onSignal:FLOWSTATE3
+  - skill{s=Flow_State_OWNERCHECK} @owner ~onTimer:3
+  
+# Blood Slash #
+
+Blood_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-25
+  ItemHand: blood_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_slash_1:0;delay=2} ~onSpawn
+  - equip{item=blood_slash_2:0;delay=3} ~onSpawn
+  - equip{item=blood_slash_3:0;delay=4} ~onSpawn
+  - equip{item=blood_slash_4:0;delay=5} ~onSpawn
+  - equip{item=blood_slash_5:0;delay=6} ~onSpawn
+  - equip{item=blood_slash_6:0;delay=7} ~onSpawn
+  - equip{item=blood_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Blood_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-155
+  ItemHand: blood_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_slash_1:0;delay=2} ~onSpawn
+  - equip{item=blood_slash_2:0;delay=3} ~onSpawn
+  - equip{item=blood_slash_3:0;delay=4} ~onSpawn
+  - equip{item=blood_slash_4:0;delay=5} ~onSpawn
+  - equip{item=blood_slash_5:0;delay=6} ~onSpawn
+  - equip{item=blood_slash_6:0;delay=7} ~onSpawn
+  - equip{item=blood_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Blood_Pierce:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  ItemHand: blood_pierce_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_pierce_1:0;delay=2} ~onSpawn
+  - equip{item=blood_pierce_2:0;delay=3} ~onSpawn
+  - equip{item=blood_pierce_3:0;delay=4} ~onSpawn
+  - equip{item=blood_pierce_4:0;delay=5} ~onSpawn
+  - equip{item=blood_pierce_5:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+# Laceration #
+
+Laceration_Dash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: laceration_dash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=laceration_dash_1:0;delay=2} ~onSpawn
+  - equip{item=laceration_dash_2:0;delay=3} ~onSpawn
+  - equip{item=laceration_dash_3:0;delay=4} ~onSpawn
+  - equip{item=laceration_dash_4:0;delay=5} ~onSpawn
+  - equip{item=laceration_dash_5:0;delay=6} ~onSpawn
+  - equip{item=laceration_dash_6:0;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+Laceration_Slash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: laceration_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=laceration_slash_1:0;delay=2} ~onSpawn
+  - equip{item=laceration_slash_2:0;delay=3} ~onSpawn
+  - equip{item=laceration_slash_3:0;delay=4} ~onSpawn
+  - equip{item=laceration_slash_4:0;delay=5} ~onSpawn
+  - equip{item=laceration_slash_5:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Blood_Cut1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: blood_cut_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_cut_1:0;delay=2} ~onSpawn
+  - equip{item=blood_cut_2:0;delay=3} ~onSpawn
+  - equip{item=blood_cut_3:0;delay=4} ~onSpawn
+  - equip{item=blood_cut_4:0;delay=5} ~onSpawn
+  - equip{item=blood_cut_5:0;delay=6} ~onSpawn
+  - equip{item=blood_cut_6:0;delay=7} ~onSpawn
+  - equip{item=blood_cut_7:0;delay=8} ~onSpawn
+  - equip{item=blood_cut_8:0;delay=9} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Blood_Cut2:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_cut_1:5;delay=2} ~onSpawn
+  - equip{item=blood_cut_2:5;delay=3} ~onSpawn
+  - equip{item=blood_cut_3:5;delay=4} ~onSpawn
+  - equip{item=blood_cut_4:5;delay=5} ~onSpawn
+  - equip{item=blood_cut_5:5;delay=6} ~onSpawn
+  - equip{item=blood_cut_6:5;delay=7} ~onSpawn
+  - equip{item=blood_cut_7:5;delay=8} ~onSpawn
+  - equip{item=blood_cut_8:5;delay=9} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Blood_Cut3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: blood_cut_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blood_cut_1:4;delay=2} ~onSpawn
+  - equip{item=blood_cut_2:4;delay=3} ~onSpawn
+  - equip{item=blood_cut_3:4;delay=4} ~onSpawn
+  - equip{item=blood_cut_4:4;delay=5} ~onSpawn
+  - equip{item=blood_cut_5:4;delay=6} ~onSpawn
+  - equip{item=blood_cut_6:4;delay=7} ~onSpawn
+  - equip{item=blood_cut_7:4;delay=8} ~onSpawn
+  - equip{item=blood_cut_8:4;delay=9} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Smoke Bomb #
+
+Smoke_Bomb:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: smoke_bomb
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=smoke_bomb:4} ~onSpawn
+  
+Smoke_Bomb_Smoke:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: smoke_bomb_smoke_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=smoke_bomb_smoke_5:0;delay=3} ~onSpawn
+  - equip{item=smoke_bomb_smoke_4:0;delay=6} ~onSpawn
+  - equip{item=smoke_bomb_smoke_3:0;delay=9} ~onSpawn
+  - equip{item=smoke_bomb_smoke_2:0;delay=12} ~onSpawn
+  - equip{item=smoke_bomb_smoke_1:0;delay=15} ~onSpawn
+  - equip{item=smoke_bomb_smoke_2:0;delay=18} ~onSpawn
+  - equip{item=smoke_bomb_smoke_3:0;delay=21} ~onSpawn
+  - equip{item=smoke_bomb_smoke_4:0;delay=24} ~onSpawn
+  - equip{item=smoke_bomb_smoke_5:0;delay=27} ~onSpawn
+  - remove{delay=30} @self ~onSpawn
+  
+Smoke_Bomb_Smoke_Small:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: smoke_bomb_smoke_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=smoke_bomb_smoke_5:4;delay=2} ~onSpawn
+  - equip{item=smoke_bomb_smoke_4:4;delay=4} ~onSpawn
+  - equip{item=smoke_bomb_smoke_3:4;delay=6} ~onSpawn
+  - equip{item=smoke_bomb_smoke_2:4;delay=8} ~onSpawn
+  - equip{item=smoke_bomb_smoke_1:4;delay=10} ~onSpawn
+  - equip{item=smoke_bomb_smoke_2:4;delay=12} ~onSpawn
+  - equip{item=smoke_bomb_smoke_3:4;delay=14} ~onSpawn
+  - equip{item=smoke_bomb_smoke_4:4;delay=16} ~onSpawn
+  - equip{item=smoke_bomb_smoke_5:4;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Smoke_Bomb_Totem_Dummy:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Smoke_Bomb_Totem_Dummy_AURA} @PIR{r=5} ~onTimer:10
+  - remove{delay=120} @self ~onSpawn
+  
+# Piercing Shuriken #
+
+Piercing_Shuriken:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: shuriken_blade_a
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shuriken_blade_a:4} ~onSpawn
+  
+Shuriken_Mark:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: shuriken_mark
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shuriken_mark:4} ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+# Death Charge #
+
+Death_Charge:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: death_charge_spin
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @owner ~onSpawn
+  - equip{item=death_charge_spin:4} ~onSpawn
+  - remove{delay=5} @self ~onSpawn
+  
+Death_Charge_Longer:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: death_charge_spin
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @owner ~onSpawn
+  - equip{item=death_charge_spin:4} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Forbidden Art #
+
+Shadow_Spin:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: shadow_spin
+  Options:
+    Marker: true
+    Small: false
+    Collidable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @owner ~onSpawn
+  - equip{item=shadow_spin:4} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Death_Mark:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: death_mark_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=death_mark_1:0;delay=2} ~onSpawn
+  - equip{item=death_mark_2:0;delay=4} ~onSpawn
+  - equip{item=death_mark_3:0;delay=6} ~onSpawn
+  - equip{item=death_mark_4:0;delay=8} ~onSpawn
+  - equip{item=death_mark_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Ninja_Shadow_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: ninja_shadow_1_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ninja_shadow_1_1:0;delay=2} ~onSpawn
+  - equip{item=ninja_shadow_1_2:0;delay=3} ~onSpawn
+  - equip{item=ninja_shadow_1_3:0;delay=4} ~onSpawn
+  - equip{item=ninja_shadow_1_4:0;delay=5} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+  
+Ninja_Shadow_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: ninja_shadow_2_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ninja_shadow_2_1:0;delay=2} ~onSpawn
+  - equip{item=ninja_shadow_2_2:0;delay=3} ~onSpawn
+  - equip{item=ninja_shadow_2_3:0;delay=4} ~onSpawn
+  - equip{item=ninja_shadow_2_4:0;delay=5} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+  
+Ninja_Shadow_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: ninja_shadow_3_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ninja_shadow_3_1:0;delay=2} ~onSpawn
+  - equip{item=ninja_shadow_3_2:0;delay=3} ~onSpawn
+  - equip{item=ninja_shadow_3_3:0;delay=4} ~onSpawn
+  - equip{item=ninja_shadow_3_4:0;delay=5} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+  
+Ninja_Shadow_4:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: ninja_shadow_4_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ninja_shadow_4_1:0;delay=2} ~onSpawn
+  - equip{item=ninja_shadow_4_2:0;delay=3} ~onSpawn
+  - equip{item=ninja_shadow_4_3:0;delay=4} ~onSpawn
+  - equip{item=ninja_shadow_4_4:0;delay=5} ~onSpawn
+  - remove{delay=6} @self ~onSpawn
+  
+Shadow_Slash_0:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-180
+  ItemHand: shadow_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_slash_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_slash_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_slash_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_slash_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_slash_5:0;delay=6} ~onSpawn
+  - equip{item=shadow_slash_6:0;delay=7} ~onSpawn
+  - equip{item=shadow_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Shadow_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-45
+  ItemHand: shadow_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_slash_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_slash_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_slash_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_slash_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_slash_5:0;delay=6} ~onSpawn
+  - equip{item=shadow_slash_6:0;delay=7} ~onSpawn
+  - equip{item=shadow_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Shadow_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-135
+  ItemHand: shadow_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_slash_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_slash_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_slash_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_slash_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_slash_5:0;delay=6} ~onSpawn
+  - equip{item=shadow_slash_6:0;delay=7} ~onSpawn
+  - equip{item=shadow_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Shadow_Slash_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: shadow_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_slash_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_slash_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_slash_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_slash_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_slash_5:0;delay=6} ~onSpawn
+  - equip{item=shadow_slash_6:0;delay=7} ~onSpawn
+  - equip{item=shadow_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Shadow_Slash_Down:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  ItemHand: shadow_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_slash_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_slash_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_slash_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_slash_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_slash_5:0;delay=6} ~onSpawn
+  - equip{item=shadow_slash_6:0;delay=7} ~onSpawn
+  - equip{item=shadow_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Shadow_Pierce:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  ItemHand: shadow_pierce_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_pierce_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_pierce_2:0;delay=3} ~onSpawn
+  - equip{item=shadow_pierce_3:0;delay=4} ~onSpawn
+  - equip{item=shadow_pierce_4:0;delay=5} ~onSpawn
+  - equip{item=shadow_pierce_5:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Shadow_Cut:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+      LeftArm: 0,0,0
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Shadow_Cut} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Shadow_Ground_Pound:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: ground_pound_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ground_pound_1:0;delay=2} ~onSpawn
+  - equip{item=ground_pound_2:0;delay=3} ~onSpawn
+  - equip{item=ground_pound_3:0;delay=4} ~onSpawn
+  - equip{item=ground_pound_4:0;delay=5} ~onSpawn
+  - equip{item=ground_pound_5:0;delay=6} ~onSpawn
+  - equip{item=ground_pound_6:0;delay=7} ~onSpawn
+  - equip{item=ground_pound_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn

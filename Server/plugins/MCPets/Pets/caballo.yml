@@ -1,0 +1,64 @@
+Id: caballo
+MythicMob: vs_h_black
+Permission: mcpets.caballo
+Mountable: true
+AutoRide: false
+MountType: walking
+DespawnOnDismount: false
+Distance: 10
+SpawnRange: 1
+InventorySize: 18
+ComingBackRange: 10
+Icon:
+  Name: §5§lCaballo
+  TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU4OGQ0MjNjMTdjZjZhYWJkM2YxMjU0MjRlOTE4NWE5MzZmNDNlYjdiM2FjMDhjODEzMmQ0Y2IyYTBiYmI3MyJ9fX0=
+  Description:
+  - §4§lFuerza §74
+  - §2§lDestreza §74
+  - §6§lConstitucion §75
+  - §5§lSabiduria §73
+  - §1§lInteligencia §72
+  - §d§lCarisma §73
+Levels:
+  Lvl_Beginner:
+    Name: Unico
+    ExperienceThreshold: 0
+    MaxHealth: 45
+    Regeneration: 0.5
+    ResistanceModifier: 1
+    DamageModifier: 1
+    Power: 1
+    Cooldowns:
+      Respawn: 60
+      Revoke: 0
+Skins:
+  Skin1:
+    MythicMob: vs_h_black
+    Permission: mcpets.caballo
+    Icon:
+      Name: §5§lCaballo Negro
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZGU4OGQ0MjNjMTdjZjZhYWJkM2YxMjU0MjRlOTE4NWE5MzZmNDNlYjdiM2FjMDhjODEzMmQ0Y2IyYTBiYmI3MyJ9fX0=
+  Skin2:
+    MythicMob: vs_h_white
+    Permission: mcpets.caballo.blanco
+    Icon:
+      Name: §5§lCaballo Blanco
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGIwM2ViMTNkNzk4ZjM4MjM3MDMzNTdhYTZlOGZkMjlkZmYzMDEwODcxYjRlNTRmOTI4ZTI3MGQ3NDEwOTY5YiJ9fX0=
+  Skin3:
+    MythicMob: vs_h_brown
+    Permission: mcpets.caballo.marron
+    Icon:
+      Name: §5§lCaballo Marron
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODVjZTE5NGE1NDMxNWFjYzNiZjlkYjdlZGY2ZTdkYTI5ZjQ5NTI0YjFiOGFmMGVmOWU0YWMzZGYyMjgwYjBkOCJ9fX0=
+  Skin4:
+    MythicMob: vs_h_brown_spots
+    Permission: mcpets.caballo.moteado
+    Icon:
+      Name: §5§lCaballo Moteado
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjk5MDgyMTk1MWZkOWFiOTMwMWFlYmY1ZDc2YTliNjBmMTVlYmY2MTllMWM5ZThkNjY4OTE5ZDM5NGQ5YTkzMyJ9fX0=
+  Skin5:
+    MythicMob: vs_h_luckyluke
+    Permission: mcpets.caballo.saltain
+    Icon:
+      Name: §5§lCaballo Saltarin
+      TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2Q4ODY0M2IwNDg2Nzk2MjRhNDJlZTA0NjY2YTQ4NjVlYzE2ODcxYzczMjc5NzM0NjVhZjZiZDVhYmRkOGNhNyJ9fX0=

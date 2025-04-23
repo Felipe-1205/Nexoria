@@ -1,0 +1,66 @@
+id: 29fd8388-8ad2-3557-a4b8-906cbc75df5e
+name: Felipe1205
+created: 1734879104814
+updated: 1739746345636
+last_cast: 1734883962265
+cooldown_expiration: 0
+last_death_location: 72.50071202708332,1.0,-268.5193095216486,pasatiempos,30.97784,10.350035
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells:
+  skills:
+    cast_count: 1
+    last_cast: 1734880269318
+    last_earn: 0
+    cooldown_expiration: 0
+    charges: 0.0
+  nuke:
+    cast_count: 1
+    last_cast: 1734879876014
+    last_earn: 1734879876015
+    cooldown_expiration: 1734879936014
+    charges: 0.0
+  icbm:
+    cast_count: 0
+    last_cast: 1734883958188
+    last_earn: 0
+    cooldown_expiration: 1734883968188
+    charges: 0.0
+  missile:
+    cast_count: 0
+    last_cast: 1734880281980
+    last_earn: 0
+    cooldown_expiration: 1734880282980
+    charges: 0.0
+  fireball:
+    cast_count: 0
+    last_cast: 1734883945694
+    last_earn: 0
+    cooldown_expiration: 1734883955694
+    charges: 0.0
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data:
+  sp: 10.0
+properties:
+  version: 7
+shown_help: true
+classes:
+  caster: {}
+  mage:
+    effect_color: 7021689537,38907549c691,447d2d41dc9f
+    mana_timestamp: 1739746345501
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 20.0

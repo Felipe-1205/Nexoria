@@ -1,0 +1,175 @@
+######## created by samus2002 #########
+
+# Necromancer #
+  
+Eternal_Flame_P:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: eternal_flame
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=eternal_flame:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - effect:particles{particle=soul_fire_flame;amount=3;hS=0.3;vS=0.3;y=1;speed=0;forwardOffset=-0.5;sideOffset=0} @self ~onTimer:2
+
+Eternal_Wheel1_P:
+  Type: ZOMBIE
+  Display: '&3'
+  Health: 650
+  Damage: 6
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: false
+    Invincible: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=eternal_wheel;n=false;step=2} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.eternal_wheel;volume=0.9;pitch=1} @self ~onTimer:30
+  - effect:sound{s=block.fire.ambient;volume=1;pitch=1} @self ~onTimer:25
+  - skill{s=Wheel_of_Eternal_Flame_DAMAGE_P} @EIR{r=3.5} ~onTimer:5
+  #- look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onTimer:1
+  - lunge{velocity=1.5;velocityY=-1} @forward{f=5;y=-1} ~onTimer:3
+  - setrotation{relative=true;yaw=25} @self ~onTimer:3
+  - setrotation{relative=true;yaw=10} @self ~onTimer:5
+  - remove{delay=100} @self ~onSpawn
+  
+Eternal_Wheel2_P:
+  Type: ZOMBIE
+  Display: '&3'
+  Health: 650
+  Damage: 6
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: false
+    Invincible: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=eternal_wheel;n=false;step=2} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.eternal_wheel;volume=0.9;pitch=1} @self ~onTimer:30
+  - effect:sound{s=block.fire.ambient;volume=1;pitch=1} @self ~onTimer:25
+  - skill{s=Wheel_of_Eternal_Flame_DAMAGE_P} @EIR{r=3.5} ~onTimer:5
+  #- look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onTimer:1
+  - lunge{velocity=1.5;velocityY=-1} @forward{f=5;y=-1} ~onTimer:3
+  - setrotation{relative=true;yaw=-25} @self ~onTimer:3
+  - setrotation{relative=true;yaw=-10} @self ~onTimer:5
+  - remove{delay=100} @self ~onSpawn
+  
+Skeletal_Minion_P:
+  Type: WOLF
+  Display: '&3Skeletal Minion'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.3
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Invincible: true
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  - 4 gotoowner
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=skeletal_minion;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.skeletal_minion_idle;volume=1;pitch=1} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.skeletal_minion_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=necromancer_sounds:samus.skeletal_minion_idle;volume=1;pitch=0.8} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Skeletal_Minion_Attack_P} ~onTimer:10
+  - skill{s=Skeletal_Minion_Spawn_P} ~onSpawn
+  - skill{s=Minion_ENCHANT} ~onSignal:EMPOWER
+  - skill{s=Empower_Minions_GET} @trigger ~onSignal:EMPOWER
+  - remove{delay=300} @self ~onSpawn
+  
+Will_O_Wisp_P:
+  Type: VEX
+  Display: '&3Will O Wisp'
+  Health: 20
+  Damage: 2
+  Options:
+    MovementSpeed: 0.3
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: false
+    Invincible: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - FALL 0
+  AITargetSelectors:
+  - 0 clear
+  - 1 monsters
+  Skills:
+  - effect:particles{particle=soul_fire_flame;amount=7;hS=0.3;vS=0.3;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:10
+  - model{mid=will_o_wisp;n=false;step=1} @self ~onSpawn
+  - look{headOnly=false;immediately=true} @target ~onTimer:1
+  - effect:sound{s=necromancer_sounds:samus.wisp_idle;volume=1;pitch=1} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.wisp_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=necromancer_sounds:samus.wisp_idle;volume=1;pitch=0.8} @self ~onDeath
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - damage{a=1;pkb=true} @EIR{r=2} ~onTimer:5
+  - skill{s=Will_O_Wisps_EXPLODE_P;delay=200} ~onSpawn
+  - partvisibility{m=will_o_wisp;p=skull;v=false;delay=199} @self ~onSpawn
+  - partvisibility{m=will_o_wisp;p=skull_jaw;v=false;delay=199} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  - skill{s=Empower_Minions_GET} @trigger ~onSignal:EMPOWER
+  - skill{s=Minion_ENCHANT} ~onSignal:EMPOWER

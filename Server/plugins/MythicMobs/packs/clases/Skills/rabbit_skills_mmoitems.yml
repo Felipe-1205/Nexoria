@@ -1,0 +1,197 @@
+######## created by samus2002 #########
+
+# Easter Eggs #
+
+Easter_Eggs:
+  Conditions:
+  - hasaurastacks{auraName=Easter_Eggs_Slam_Aura} cast Easter_Eggs_Summon
+  Skills:
+  - Aura{auraName=Easter_Eggs;duration=10} @self
+  
+Easter_Eggs_Summon:
+  Cooldown: 3
+  Conditions:
+  - crouching false
+  Skills:
+  - randomskill{skills=Easter_Eggs_Summon_1,Easter_Eggs_Summon_2,Easter_Eggs_Summon_3}
+  - effect:sound{s=entity.chicken.egg;volume=0.7;pitch=1} @self
+  
+Easter_Eggs_Summon_1:
+  Skills:
+  - summon{type=easter_egg_blue;amount=1;radius=5;yRadius=1.5;onSurface=true} @self
+  - skill{s=Easter_Eggs_Summon_1_EFFECT;repeat=99;repeatinterval=1}
+  
+Easter_Eggs_Summon_1_EFFECT:
+  Cooldown: 1
+  Conditions:
+  - mobsInRadius{types=easter_egg_blue;amount=1;radius=1.5}
+  Skills:
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - effect:particlering{particle=redstone;color=#63ceff;radius=0.75;points=15;amount=1;hS=0;vS=0;y=0.1;repeatinterval=10;repeat="<modifier.duration> * 2"} @self
+  - effect:sound{s=entity.turtle.egg_crack;volume=1;pitch=1} @self
+  - effect:sound{s=entity.item.pickup;volume=1;pitch=0.7} @self
+  - effect:sound{s=entity.wither.shoot;volume=1;pitch=1.2;delay=1} @self
+  
+Easter_Eggs_Summon_REMOVE:
+  Cooldown: 1
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - remove{delay=5} @self
+  - effect:particles{particle=explosion_large;amount=1;hS=0;vS=0;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+  
+  
+  
+Easter_Eggs_Summon_2:
+  Skills:
+  - summon{type=easter_egg_pink;amount=1;radius=5;yRadius=1.5;onSurface=true} @self
+  - skill{s=Easter_Eggs_Summon_2_EFFECT;repeat=99;repeatinterval=1}
+  
+Easter_Eggs_Summon_2_EFFECT:
+  Cooldown: 1
+  Conditions:
+  - mobsInRadius{types=easter_egg_pink;amount=1;radius=1.5}
+  Skills:
+  - effect:particles{particle=explosion_huge;amount=1;hS=0;vS=0;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=entity.turtle.egg_crack;volume=1;pitch=1} @self
+  - effect:sound{s=entity.item.pickup;volume=1;pitch=0.7} @self
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=1.2;delay=1} @self
+  - damage{a="<modifier.damage>"} @EIR{r=5}
+  
+  
+  
+Easter_Eggs_Summon_3:
+  Skills:
+  - summon{type=easter_egg_yellow;amount=1;radius=5;yRadius=1.5;onSurface=true} @self
+  - skill{s=Easter_Eggs_Summon_3_EFFECT;repeat=99;repeatinterval=1}
+  
+Easter_Eggs_Summon_3_EFFECT:
+  Cooldown: 1
+  Conditions:
+  - mobsInRadius{types=easter_egg_yellow;amount=1;radius=1.5}
+  Skills:
+  - heal{a="<modifier.heal>"} @self
+  - effect:particles{particle=glow;amount=7;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=entity.turtle.egg_crack;volume=1;pitch=1} @self
+  - effect:sound{s=entity.item.pickup;volume=1;pitch=0.7} @self
+  - effect:sound{s=block.note_block.chime;volume=1;pitch=1.2;delay=1} @self
+  
+  
+Easter_Eggs_Slam_Aura:
+  Skills:
+  - Aura{auraName=Easter_Eggs_Slam_Aura;duration=10} @self
+  
+# Easter Slam #
+
+Easter_Slam:
+  Conditions:
+  - hasaurastacks{auraName=Easter_Eggs} cast Easter_Eggs_Slam_Aura
+  - crouching false
+  Skills:
+  - effect:sound{s=entity.shulker_bullet.hit;volume=0.7;pitch=0.7} @self
+  - totem{md=2;c=1;oH=Easter_Slam_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=easter_slam;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0;sideOffset=0}
+  
+Easter_Slam_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true} @EntitiesNearOrigin{r=2;limit=2}
+  
+# Carrot Rush #
+  
+Carrot_Rush:
+  Conditions:
+  - crouching false
+  Skills:
+  - potion{type=SLOW;duration=20;level=50;hasParticles=false} @self
+  - delay 5
+  - Aura{auraName=Carrot_Rush;duration=25} @self
+  - summon{type=rabbit_carrot;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=-1.5;y=0;sideOffset=0}
+  - delay 16
+  - damage{a="<modifier.damage>"} @EIR{r=4}
+  - lunge{velocity=3;velocityY=0.15} @forward{f=12;y=0.1}
+  - onDamaged{auraName=resist;d=15;cE=true;damageMods="FALL 0"} @self
+  
+# Easter Onslaught #
+
+Easter_Onslaught:
+  Conditions:
+  - hasaurastacks{auraName=Carrot_Rush} false
+  Skills:
+  - summon{type=easter_bunny;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.5;y=0;sideOffset=0}
+  - effect:sound{s=entity.rabbit.attack;volume=1.2;pitch=1;delay=3} @self
+  - totem{md=2;c=1;oH=Easter_Onslaught_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3.5}
+  - summon{type=rabbit_tooth;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3.5;y=0;sideOffset=0}
+  
+Easter_Onslaught_DAMAGE:
+  Skills:
+  - delay 19
+  - skill{s=Easter_Onslaught_DAMAGE2} @EntitiesNearOrigin{r=2}
+  
+Easter_Onslaught_DAMAGE2:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=2;repeatinterval=20;delay=20}
+  - effect:particles{particle=drip_lava;amount=6;hS=0.3;vS=0.7;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeatinterval=10;delay=20}
+
+# Rain of Easter Eggs #
+
+Rain_of_Easter_Eggs:
+  Conditions:
+  - hasaurastacks{auraName=Carrot_Rush} false
+  Skills:
+  - effect:sound{s=entity.parrot.ambient;volume=0.8;pitch=1;delay=3} @self
+  - projectile{bulletType=MOB;mob=easter_chick;onTick=Rain_of_Easter_Eggs_EGGDROP;v=6;i=1;hR=1;vR=1;mr=30;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=3;g=-0.02} @Forward{f=20;y=0}
+
+Rain_of_Easter_Eggs_EGGDROP:
+  Cooldown: 0.7
+  Skills:
+  - randomskill{skills=Rain_of_Easter_Eggs_EGGDROP_1,Rain_of_Easter_Eggs_EGGDROP_2,Rain_of_Easter_Eggs_EGGDROP_3}
+  
+Rain_of_Easter_Eggs_EGGDROP_1:
+  Skills:
+  - projectile{fromorigin=true;bulletType=MOB;mob=easter_egg_blue_PRO;onEnd=Rain_of_Easter_Eggs_EGGDROP_1_HIT;v=10;i=1;hR=1;vR=1;mr=30;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=-1;tyo=-12} @Forward{f=0;y=-5}
+
+Rain_of_Easter_Eggs_EGGDROP_1_HIT:
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=redstone;color=#8cfbff;amount=10;hS=0.4;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeatinterval=10;repeat="<modifier.duration> * 2"} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=1;hasParticles=false} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=redstone;color=#8cfbff;amount=20;hS=0.7;vS=0.7;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=explosion_large;amount=5;hS=0.3;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=0.6;pitch=1.2} @self
+
+
+
+Rain_of_Easter_Eggs_EGGDROP_2:
+  Skills:
+  - projectile{fromorigin=true;bulletType=MOB;mob=easter_egg_pink_PRO;onEnd=Rain_of_Easter_Eggs_EGGDROP_2_HIT;v=10;i=1;hR=1;vR=1;mr=30;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=-1;tyo=-12} @Forward{f=0;y=-5}
+
+Rain_of_Easter_Eggs_EGGDROP_2_HIT:
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=5}
+  - damage{a="<modifier.damage> * 0.2";repeat=2;repeatinterval=20} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=flame;amount=10;hS=0.5;vS=0.8;y=0.7;speed=0.05;forwardOffset=0;sideOffset=0;repeat=5;repeatinterval=10} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=flame;amount=20;hS=0.7;vS=0.7;y=1;speed=0.15;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=explosion_large;amount=5;hS=0.3;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=0.6;pitch=1.2} @self
+  
+  
+  
+  
+Rain_of_Easter_Eggs_EGGDROP_3:
+  Skills:
+  - projectile{fromorigin=true;bulletType=MOB;mob=easter_egg_yellow_PRO;onEnd=Rain_of_Easter_Eggs_EGGDROP_3_HIT;v=10;i=1;hR=1;vR=1;mr=30;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=-1;tyo=-12} @Forward{f=0;y=-5}
+
+Rain_of_Easter_Eggs_EGGDROP_3_HIT:
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=5}
+  - orbital{r=0.5;onTick=Rain_of_Easter_Eggs_EGGDROP_3_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2.5} @EntitiesNearOrigin{r=5}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=crit;amount=20;hS=0.7;vS=0.7;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=explosion_large;amount=5;hS=0.3;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=0.6;pitch=1.2} @self
+  
+Rain_of_Easter_Eggs_EGGDROP_3_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin

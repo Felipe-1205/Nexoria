@@ -1,0 +1,408 @@
+
+
+Arcane_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-25
+  ItemHand: arcane_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_slash_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_slash_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_slash_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_slash_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_slash_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_slash_6:0;delay=7} ~onSpawn
+  - equip{item=arcane_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Arcane_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-155
+  ItemHand: arcane_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_slash_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_slash_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_slash_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_slash_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_slash_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_slash_6:0;delay=7} ~onSpawn
+  - equip{item=arcane_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Arcane_Slash_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  ItemHand: arcane_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_slash_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_slash_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_slash_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_slash_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_slash_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_slash_6:0;delay=7} ~onSpawn
+  - equip{item=arcane_slash_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Arcane_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: arcane_impact_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_impact_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_impact_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_impact_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_impact_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_impact_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_impact_6:0;delay=7} ~onSpawn
+  - equip{item=arcane_impact_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+  
+Blizzard_Icicle:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: blizzard_icicle
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blizzard_icicle:4;delay=1} ~onSpawn
+  
+Blizzard_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: blizzard_impact_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blizzard_impact_1:0;delay=2} ~onSpawn
+  - equip{item=blizzard_impact_2:0;delay=3} ~onSpawn
+  - equip{item=blizzard_impact_3:0;delay=4} ~onSpawn
+  - equip{item=blizzard_impact_4:0;delay=5} ~onSpawn
+  - equip{item=blizzard_impact_5:0;delay=6} ~onSpawn
+  - equip{item=blizzard_impact_6:0;delay=7} ~onSpawn
+  - equip{item=blizzard_impact_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+
+Cloak_Of_Hastur:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=hastur;n=false} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - remove{delay=56} @self ~onSpawn
+  
+  
+
+Chains_of_Void_Portal_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=void_rupture_1:0;delay=2} ~onSpawn
+  - equip{item=void_rupture_2:0;delay=3} ~onSpawn
+  - equip{item=void_rupture_3:0;delay=4} ~onSpawn
+  - equip{item=void_rupture_4:0;delay=5} ~onSpawn
+  - equip{item=void_rupture_5:0;delay=6} ~onSpawn
+  - equip{item=void_rupture_6:0;delay=7} ~onSpawn
+  - equip{item=void_rupture_3:0;delay=100} ~onSpawn
+  - equip{item=void_rupture_2:0;delay=101} ~onSpawn
+  - equip{item=void_rupture_1:0;delay=102} ~onSpawn
+  - remove{delay=103} @self ~onSpawn
+  
+Chains_of_Void_Portal_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=void_rupture_1:4;delay=22} ~onSpawn
+  - equip{item=void_rupture_2:4;delay=23} ~onSpawn
+  - equip{item=void_rupture_3:4;delay=24} ~onSpawn
+  - equip{item=void_rupture_4:4;delay=25} ~onSpawn
+  - equip{item=void_rupture_5:4;delay=26} ~onSpawn
+  - equip{item=void_rupture_6:4;delay=27} ~onSpawn
+  - equip{item=void_rupture_3:4;delay=80} ~onSpawn
+  - equip{item=void_rupture_2:4;delay=81} ~onSpawn
+  - equip{item=void_rupture_1:4;delay=82} ~onSpawn
+  - remove{delay=83} @self ~onSpawn
+  
+Chains_of_Void_Portal_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=void_rupture_1:0;delay=29} ~onSpawn
+  - equip{item=void_rupture_2:0;delay=30} ~onSpawn
+  - equip{item=void_rupture_3:0;delay=31} ~onSpawn
+  - equip{item=void_rupture_4:0;delay=32} ~onSpawn
+  - equip{item=void_rupture_5:0;delay=33} ~onSpawn
+  - equip{item=void_rupture_6:0;delay=34} ~onSpawn
+  - equip{item=void_rupture_3:0;delay=73} ~onSpawn
+  - equip{item=void_rupture_2:0;delay=74} ~onSpawn
+  - equip{item=void_rupture_1:0;delay=75} ~onSpawn
+  - remove{delay=76} @self ~onSpawn
+  
+Chains_of_Void:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=void_chains;n=false;delay=2} @self ~onSpawn
+  - state{s=slam;delay=2} @self ~onSpawn
+  - state{s=slam_quit;delay=72} @self ~onSpawn
+  - remove{delay=101} @self ~onSpawn
+  
+Chains_of_Void_DamageChain:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=void_chains;n=false;delay=27} @self ~onSpawn
+  - state{s=spike;delay=27} @self ~onSpawn
+  - remove{delay=75} @self ~onSpawn
+  
+
+Meteor_Storm_Circle:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=meteor_storm_magic_circle;n=false} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+Meteor_Storm_Meteor:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=meteor_storm_meteor;n=false} @self ~onSpawn
+  - skill{s=Meteor_Storm_Tick} @self ~onTimer:1
+  
+Meteor_Storm_Explosion:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=lava;amount=10;hS=1;vS=1;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self ~onSpawn
+  - effect:particles{particle=block_crack;m=NETHERRACK;amount=50;hS=2;vS=2;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self ~onSpawn
+  - equip{item=meteor_storm_explosion_1:0;delay=2} ~onSpawn
+  - equip{item=meteor_storm_explosion_2:0;delay=4} ~onSpawn
+  - equip{item=meteor_storm_explosion_3:0;delay=6} ~onSpawn
+  - equip{item=meteor_storm_explosion_4:0;delay=8} ~onSpawn
+  - equip{item=meteor_storm_explosion_5:0;delay=10} ~onSpawn
+  - equip{item=meteor_storm_explosion_6:0;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+
+Arcane_Devastation_Circle:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=arcane_magic_circle;n=false} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+Arcane_Bolt_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_bolt_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_bolt_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_bolt_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_bolt_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_bolt_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_bolt_6:0;delay=7} ~onSpawn
+  - equip{item=arcane_bolt_7:0;delay=8} ~onSpawn
+  - equip{item=arcane_bolt_8:0;delay=9} ~onSpawn
+  - equip{item=arcane_bolt_9:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Arcane_Bolt_2:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_bolt_1:5;delay=2} ~onSpawn
+  - equip{item=arcane_bolt_2:5;delay=3} ~onSpawn
+  - equip{item=arcane_bolt_3:5;delay=4} ~onSpawn
+  - equip{item=arcane_bolt_4:5;delay=5} ~onSpawn
+  - equip{item=arcane_bolt_5:5;delay=6} ~onSpawn
+  - equip{item=arcane_bolt_6:5;delay=7} ~onSpawn
+  - equip{item=arcane_bolt_7:5;delay=8} ~onSpawn
+  - equip{item=arcane_bolt_8:5;delay=9} ~onSpawn
+  - equip{item=arcane_bolt_9:5;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Arcane_Bolt_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_bolt_1:4;delay=2} ~onSpawn
+  - equip{item=arcane_bolt_2:4;delay=3} ~onSpawn
+  - equip{item=arcane_bolt_3:4;delay=4} ~onSpawn
+  - equip{item=arcane_bolt_4:4;delay=5} ~onSpawn
+  - equip{item=arcane_bolt_5:4;delay=6} ~onSpawn
+  - equip{item=arcane_bolt_6:4;delay=7} ~onSpawn
+  - equip{item=arcane_bolt_7:4;delay=8} ~onSpawn
+  - equip{item=arcane_bolt_8:4;delay=9} ~onSpawn
+  - equip{item=arcane_bolt_9:4;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Arcane_Thunder:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_thunder_1:0;delay=2} ~onSpawn
+  - equip{item=arcane_thunder_2:0;delay=3} ~onSpawn
+  - equip{item=arcane_thunder_3:0;delay=4} ~onSpawn
+  - equip{item=arcane_thunder_4:0;delay=5} ~onSpawn
+  - equip{item=arcane_thunder_5:0;delay=6} ~onSpawn
+  - equip{item=arcane_thunder_6:0;delay=7} ~onSpawn
+  
+  - equip{item=arcane_thunder_2:0;delay=8} ~onSpawn
+  - equip{item=arcane_thunder_3:0;delay=9} ~onSpawn
+  - equip{item=arcane_thunder_4:0;delay=10} ~onSpawn
+  - equip{item=arcane_thunder_5:0;delay=11} ~onSpawn
+  - equip{item=arcane_thunder_6:0;delay=12} ~onSpawn
+  
+  - equip{item=arcane_thunder_2:0;delay=13} ~onSpawn
+  - equip{item=arcane_thunder_3:0;delay=14} ~onSpawn
+  - equip{item=arcane_thunder_4:0;delay=15} ~onSpawn
+  - equip{item=arcane_thunder_5:0;delay=16} ~onSpawn
+  - equip{item=arcane_thunder_6:0;delay=17} ~onSpawn
+  
+  - equip{item=arcane_thunder_2:0;delay=18} ~onSpawn
+  - equip{item=arcane_thunder_3:0;delay=19} ~onSpawn
+  - equip{item=arcane_thunder_4:0;delay=20} ~onSpawn
+  - equip{item=arcane_thunder_5:0;delay=21} ~onSpawn
+  - equip{item=arcane_thunder_6:0;delay=22} ~onSpawn
+  
+  - equip{item=arcane_thunder_2:0;delay=23} ~onSpawn
+  - equip{item=arcane_thunder_3:0;delay=24} ~onSpawn
+  - equip{item=arcane_thunder_4:0;delay=25} ~onSpawn
+  - equip{item=arcane_thunder_5:0;delay=26} ~onSpawn
+  - equip{item=arcane_thunder_6:0;delay=27} ~onSpawn
+  
+  - equip{item=arcane_thunder_7:0;delay=28} ~onSpawn
+  - equip{item=arcane_thunder_8:0;delay=29} ~onSpawn
+  - equip{item=arcane_thunder_9:0;delay=30} ~onSpawn
+  - remove{delay=31} @self ~onSpawn

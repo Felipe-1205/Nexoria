@@ -1,0 +1,181 @@
+######## created by samus2002 #########
+
+# Healing Wisps #
+
+Healing_Wisps:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=druid_sounds:samus.healing_wisp_aura;volume=0.5;pitch=1} @self ~onTimer:40
+  - model{mid=wisp;n=false} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  
+# Poison Thorns #
+
+Poison_Thorns:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=thorns;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+# Vine Wave #
+
+Vine_Wave:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=vine;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=50} @self ~onSpawn
+  
+Vine_Entangle:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=vine_entangle;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+# Bear Form #
+
+Bear_Form:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=bear;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=45} @self ~onSpawn
+  
+Crack:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=crack_1:0;delay=0} ~onSpawn
+  - equip{item=crack_2:0;delay=40} ~onSpawn
+  - equip{item=crack_3:0;delay=42} ~onSpawn
+  - equip{item=crack_4:0;delay=44} ~onSpawn
+  - equip{item=crack_5:0;delay=46} ~onSpawn
+  - equip{item=crack_6:0;delay=48} ~onSpawn
+  - remove{delay=50} @self ~onSpawn
+  
+# Hawk Form #
+
+Hawk_Form:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=druid_sounds:samus.hawk_screech;volume=1;pitch=1} @self ~onSpawn
+  - model{mid=hawk;n=false} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+# Hurricane #
+
+Hurricane:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=druid_sounds:samus.hurricane_aura;volume=1;pitch=1} @self ~onSpawn
+  - effect:sound{s=druid_sounds:samus.hurricane;volume=1;pitch=1;delay=1} @self ~onSpawn
+  - model{mid=hurricane;n=false} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#e8f1ff;amount=25;hS=0.7;vS=1;y=1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:7
+  - effect:particles{particle=block_crack;m=OAK_LEAVES;amount=25;hS=0.7;vS=1;y=1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:7
+  - skill{s=Hurricane_PULL} @EIR{r=4} ~onTimer:1
+  
+# Wolf Form #
+
+Wolf_Form:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=wolf;n=false} @self ~onSpawn
+  - state{s=attack;li=10;lo=10} @self ~onSpawn
+  - remove{delay=58} @self ~onSpawn
+  
+Wolf_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=scratch_1:0;delay=3} ~onSpawn
+  - equip{item=scratch_2:0;delay=5} ~onSpawn
+  - equip{item=scratch_3:0;delay=7} ~onSpawn
+  - equip{item=scratch_4:0;delay=9} ~onSpawn
+  - equip{item=scratch_5:0;delay=11} ~onSpawn
+  - equip{item=scratch_6:0;delay=13} ~onSpawn
+  - equip{item=scratch_7:0;delay=15} ~onSpawn
+  - remove{delay=17} @self ~onSpawn
+  
+Wolf_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,180,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=scratch_1:0;delay=3} ~onSpawn
+  - equip{item=scratch_2:0;delay=5} ~onSpawn
+  - equip{item=scratch_3:0;delay=7} ~onSpawn
+  - equip{item=scratch_4:0;delay=9} ~onSpawn
+  - equip{item=scratch_5:0;delay=11} ~onSpawn
+  - equip{item=scratch_6:0;delay=13} ~onSpawn
+  - equip{item=scratch_7:0;delay=15} ~onSpawn
+  - remove{delay=17} @self ~onSpawn

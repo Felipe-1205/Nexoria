@@ -1,0 +1,379 @@
+######## created by samus2002 #########
+
+# Self Recovery #
+
+Self_Recovery:
+  Cooldown: 1
+  Skills:
+  - effect:particleorbital{r=0.5;points=20;t=20;i=1;particle=redstone;color=#bbff82;oy=1} @self
+  - heal{a=1} @self
+  
+# Light Beam #
+
+Light_Beam:
+  Cooldown: 2
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Healing_Totem_SS_aura} castinstead Solar_Beam
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.light_beam;volume=2;pitch=1} @self
+  - projectile{onStart=Light_Beam_SUMMON;onTick=Light_Beam_FX;onHit=Light_Beam_DAMAGE;v=40;i=1;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=0.5;tyo=0.5} @Forward{f=20;y=0}
+  
+Light_Beam_SUMMON:
+  Skills:
+  - summon{type=Light_Beam;amount=1;radius=0;yRadius=0;onSurface=false} @Forward{f=5;y=0}
+  
+Light_Beam_FX:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffc78;amount=3;hS=0.35;y=0.5;forwardOffset=0;vS=0.35;speed=0} @origin
+  
+Light_Beam_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  - owner{} false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - damage{a=4;pkb=false;hnp=true;hp=true} @EntitiesNearOrigin{r=2}
+  
+# Heal Beam #
+
+Heal_Beam:
+  Cooldown: 2
+  Conditions:
+  - crouching false
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.heal_beam;volume=3;pitch=1} @self
+  - projectile{onStart=Heal_Beam_SUMMON;onTick=Heal_Beam_FX;onHit=Heal_Beam_HEAL;v=40;i=1;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=0.5;tyo=0.5} @Forward{f=20;y=0}
+  
+Heal_Beam_SUMMON:
+  Skills:
+  - summon{type=Heal_Beam;amount=1;radius=0;yRadius=0;onSurface=false} @Forward{f=5;y=0}
+  
+Heal_Beam_FX:
+  Skills:
+  - effect:particles{particle=redstone;color=#bbff82;amount=3;hS=0.35;y=0.5;forwardOffset=0;vS=0.35;speed=0} @origin
+  
+Heal_Beam_HEAL:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - heal{a=3} @EntitiesNearOrigin{r=2}
+  - effect:particles{particle=villager_happy;amount=10;hS=0.3;y=0.5;forwardOffset=0;vS=0.8;speed=0} @EntitiesNearOrigin{r=2}
+  
+# Healing Totem #
+
+Healing_Totem:
+  Conditions:
+  - hasaurastacks{auraName=Healing_Totem_aura} castinstead Healing_Totem_Skill
+  Skills:
+  - Aura{auraName=Healing_Totem_aura;interval=1;duration=5} @self
+  
+Healing_Totem_Skill:
+  Cooldown: 5
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.healing_totem_summon;volume=1;pitch=1} @self
+  - projectile{onEnd=Healing_Totem_SUMMON;v=40;i=1;hR=1;vR=1;mr=2;hnp=false;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1;tyo=1} @Forward{f=20;y=0}
+  - setvariable{var=caster.form;value=1;type=INTEGER} @self
+  - Aura{auraName=Healing_Totem_SS_aura;interval=1;duration=40} @self
+  
+Healing_Totem_SUMMON:
+  Skills:
+  - summon{type=Healing_Totem;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Healing_Totem_SKILL1:
+  Conditions:
+  - lastsignal{s=HEAL} true
+  Skills:
+  - heal{a=1} @EIR{r=4}
+  
+Healing_Totem_SKILL2:
+  Conditions:
+  - lastsignal{s=HEAL} true
+  Skills:
+  - effect:particles{particle=villager_happy;amount=10;hS=0.3;y=0.5;forwardOffset=0;vS=0.7;speed=0} @EIR{r=4}
+  
+Healing_Totem_SKILL3:
+  Conditions:
+  - lastsignal{s=HEAL} true
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.healing_aura;volume=1;pitch=1} @self
+  
+Healing_Totem_SKILL4:
+  Conditions:
+  - lastsignal{s=HEAL} true
+  Skills:
+  - effect:particlering{particle=redstone;color=#bbff82;radius=4;points=50;amount=1;hS=0;vS=0;y=0.2} @self
+  
+Healing_Totem_SKILL5:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=totem_healing:4;delay=1}
+  - effect:sound{s=shaman_sounds:samus.healing_form;volume=1;pitch=1} @self
+  
+# Fire Totem #
+
+Fire_Totem_SKILL1:
+  Conditions:
+  - lastsignal{s=FIRE} true
+  Skills:
+  - effect:particles{particle=lava;amount=10;hS=0.3;y=0.4;forwardOffset=0;vS=0.4;speed=0} @self
+  
+Fire_Totem_SKILL2:
+  Conditions:
+  - lastsignal{s=FIRE} true
+  - offgcd
+  TargetConditions:
+  - owner{} cast Fire_Totem_SKILL2-5
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - projectile{onTick=Fire_Totem_SKILL2_TICK;onHit=Fire_Totem_SKILL2_HIT;v=1;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=true;sB=true;sfo=0;hs=false;hfs=0;syo=0.7;tyo=0}
+  - effect:sound{s=shaman_sounds:samus.fire_shoot;volume=1;pitch=1;delay=10} @self
+
+Fire_Totem_SKILL2-5:
+  Conditions:
+  - lastsignal{s=FIRE} true
+  - offgcd
+  TargetConditions:
+  - owner{} cast Fire_Totem_SKILL2
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - skill{s=Fire_Totem_SKILL2} @EIR{r=25;limit=1;sort=RANDOM}
+  
+Fire_Totem_SKILL2_HIT:
+  TargetConditions:
+  - owner{} false
+  - isblocking false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - damage{a=3} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST}
+  - ignite{ticks=60} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST}
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0;forwardOffset=0;vS=0;speed=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=1} @origin
+  
+Fire_Totem_SKILL2_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.2}
+  - effect:particles{particle=flame;amount=15;hS=0.1;vS=0.1;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @origin
+
+Fire_Totem_SKILL5:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=totem_fire:4;delay=1}
+  - effect:sound{s=shaman_sounds:samus.fire_form;volume=1;pitch=1} @self
+  
+# Wind Totem #
+
+Wind_Totem_SKILL5:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - equip{item=totem_wind:4;delay=1}
+  - effect:sound{s=shaman_sounds:samus.wind_form;volume=1;pitch=1} @self
+  
+Wind_Totem_SKILL1:
+  Conditions:
+  - lastsignal{s=WIND} true
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=1;points=10;amount=1;hS=0.1;vS=0.3;y=0.15} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=2;points=20;amount=1;hS=0.1;vS=0.3;y=0.15;delay=1} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=3;points=30;amount=1;hS=0.1;vS=0.3;y=0.15;delay=2} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=4;points=40;amount=1;hS=0.1;vS=0.3;y=0.15;delay=3} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=6;points=50;amount=1;hS=0.1;vS=0.3;y=0.15;delay=4} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=8;points=60;amount=1;hS=0.1;vS=0.3;y=0.15;delay=5} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=10;points=80;amount=1;hS=0.1;vS=0.3;y=0.15;delay=6} @self
+  - effect:particlering{particle=redstone;color=#e5fffc;radius=13;points=100;amount=1;hS=0.1;vS=0.3;y=0.15;delay=7} @self
+  - effect:sound{s=shaman_sounds:samus.wind_blow;volume=1;pitch=1} @self
+  - throw{velocity=12;velocityY=3}
+
+# Totem Form #
+
+Totem_Form_stacks:
+  Conditions:
+  - varEquals{var=caster.form;value=3} castinstead Totem_Form_stacks_reset
+  Skills:
+  - variableadd{var=caster.form;amount=1} @self
+
+Totem_Form_stacks_reset:
+  Skills:
+  - setvariable{var=caster.form;value=1;type=INTEGER} @self
+
+Totem_Form:
+  Conditions:
+  - varEquals{var=caster.form;value=1} cast Fire_Form
+  - varEquals{var=caster.form;value=2} cast Wind_Form
+  - varEquals{var=caster.form;value=3} cast Heal_Form
+  - crouching true
+  Cooldown: 1
+  Skills:
+  - skill{s=Totem_Form_stacks}
+  
+Fire_Form:
+  Conditions:
+  - crouching true
+  Skills:
+  - signal{s=FIRE} @MIR{r=30;t=Healing_Totem}
+  
+Wind_Form:
+  Conditions:
+  - crouching true
+  Skills:
+  - signal{s=WIND} @MIR{r=30;t=Healing_Totem}
+  
+Heal_Form:
+  Conditions:
+  - crouching true
+  Skills:
+  - signal{s=HEAL} @MIR{r=30;t=Healing_Totem}
+  
+# Solar Beam #
+
+Solar_Beam:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.fire_form;volume=1;pitch=1} @self
+  - leap{velocity=100} @forward{f=0.5;y=2}
+  - delay 10
+  - stun{d=60;f=true;CancelOnTakeDamage=false;CancelOnDeath=true} @self
+  - effect:sound{s=shaman_sounds:samus.solar_beam;volume=1.1;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Solar_Beam;r=0;points=1;i=1;duration=2000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @forward{f=3;y=0}
+  - skill{s=Solar_Beam_PRO} @Forward{f=20;y=0}
+  - delay 60
+  - potion{type=SLOW_FALLING;duration=80;level=1;hasParticles=false} @self
+
+Solar_Beam_PRO:
+  Skills:
+  - projectile{onTick=Solar_Beam_FX;onHit=Solar_Beam_DAMAGE;onEnd=Solar_Beam_EXPLODE;v=40;i=1;hR=1;vR=1;mr=7;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=0.5;tyo=0.5;repeat=19;repeatinterval=2}
+  
+Solar_Beam_EXPLODE:
+  TargetConditions:
+  - isblocking false
+  - owner{} false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - effect:particles{particle=explosion_huge;amount=1;hS=0;y=0;forwardOffset=0;vS=0;speed=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=1;pitch=1} @origin
+  - damage{a=6;pkb=false;hnp=true;hp=true} @EntitiesNearOrigin{r=3}
+  - ignite{ticks=100} @EntitiesNearOrigin{r=3}
+
+Solar_Beam_FX:
+  Skills:
+  - effect:particles{particle=flame;amount=7;hS=0.4;y=0.5;forwardOffset=0;vS=0.4;speed=0} @origin
+  
+Solar_Beam_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  - owner{} false
+  - mythicmobtype{t=Light_Beam} false
+  - mythicmobtype{t=Heal_Beam} false
+  - mythicmobtype{t=Solar_Beam} false
+  - mythicmobtype{t=Healing_Totem} false
+  - mythicmobtype{t=Ancestral_Power} false
+  - mythicmobtype{t=Ancestral_Beam} false
+  Skills:
+  - damage{a=6;pkb=false;hnp=true;hp=true}
+  - ignite{ticks=100}
+
+Solar_Beam_LOOP:
+  Skills:
+  - equip{item=solar_beam_2:4}
+  - delay 1
+  - equip{item=solar_beam_8:4}
+  
+# Ancestral Power #
+
+Ancestral_Power:
+  Cooldown: 7
+  Conditions:
+  - crouching true
+  Skills:
+  - effect:particlesphere{particle=redstone;color=#fffc78;radius=1.5;amount=60;repeat=10;repeatinterval=2;y=0.7} @self
+  - shield{amount=10;maxShield=30} @self
+  - effect:sound{s=shaman_sounds:samus.ancestral_beam_summon;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Ancestral_Power;onTick=Ancestral_Power_FX;v=2;i=1;hR=1;vR=1;mr=20;hnp=false;hO=0;sE=false;sB=false;hs=true;hfs=10;syo=0.5;tyo=0.5} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Ancestral_Beam;v=2;i=1;hR=1;vR=1;mr=20;hnp=false;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=0.5;tyo=0.5} @Forward{f=20;y=0}
+
+Ancestral_Power_FX:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffc78;amount=3;hS=0.35;y=0.5;forwardOffset=0;vS=0.35;speed=0} @origin
+
+Ancestral_Circle_FX:
+  Skills:
+  - equip{item=ancestral_beam_circle_1:0;delay=1}
+  - equip{item=ancestral_beam_circle_2:0;delay=2}
+  - equip{item=ancestral_beam_circle_3:0;delay=3}
+  - equip{item=ancestral_beam_circle_4:0;delay=4}
+  - equip{item=ancestral_beam_circle_5:0;delay=5}
+  - equip{item=ancestral_beam_circle_6:0;delay=6}
+  - equip{item=ancestral_beam_circle_7:0;delay=7}
+  - equip{item=ancestral_beam_circle_8:0;delay=8}
+  - equip{item=ancestral_beam_circle_9:0;delay=9}
+  
+Ancestral_Beam_FX:
+  Skills:
+  - effect:sound{s=shaman_sounds:samus.ancestral_beam;volume=2;pitch=1} @self
+  - equip{item=ancestral_beam_1:0;delay=1}
+  - skill{s=Ancestral_Beam_LOOP;repeat=9;repeatinterval=2;delay=2}
+  - equip{item=ancestral_beam_3:0;delay=22}
+  - equip{item=ancestral_beam_4:0;delay=23}
+  - equip{item=ancestral_beam_5:0;delay=24}
+  - equip{item=ancestral_beam_6:0;delay=25}
+  - equip{item=ancestral_beam_7:0;delay=26}
+  - equip{item=ancestral_beam_8:0;delay=27}
+  - equip{item=ancestral_beam_9:0;delay=28}
+  - equip{item=air:0;delay=29}
+  
+Ancestral_Beam_LOOP:
+  Skills:
+  - equip{item=ancestral_beam_2:0}
+  - delay 1
+  - equip{item=ancestral_beam_10:0}
+  
+  
+Ancestral_Beam_TICK:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffc78;amount=15;hS=1.8;y=0.2;forwardOffset=0;vS=0.35;speed=0} @origin
+  
+Ancestral_Beam_HIT:
+  Skills:
+  - damage{a=8;pkb=false;hnp=true;hp=true} @EntitiesNearOrigin{r=5}

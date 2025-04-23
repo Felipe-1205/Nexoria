@@ -1,0 +1,50 @@
+
+illusion_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2873
+  Hide:
+  - ATTRIBUTES
+ 
+illusion_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2874
+  Hide:
+  - ATTRIBUTES
+
+illusion_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2875
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2876
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2877
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2878
+  Hide:
+  - ATTRIBUTES
+  
+illusion_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2879
+  Hide:
+  - ATTRIBUTES
+  

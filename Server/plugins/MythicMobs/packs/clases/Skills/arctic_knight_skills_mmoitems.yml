@@ -1,0 +1,503 @@
+######## created by samus2002 #########
+
+# Frostbite #
+
+Frostbite:
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Frostbite_aura;duration=20} @self
+
+Frost_Strike_FROSTBITE:
+  Conditions:
+  - hasaura{n=Frostbite_aura} true
+  TargetConditions:
+  - hasaura{n=Frostbite_HAS} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Frostbite_HAS;duration=80}
+  - orbital{bulletType=MOB;mob=Frostbite_FX;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=80;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - potion{type=SLOW;duration=80;level=1;hasParticles=false}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=3;repeati=20}
+
+Snowflake_HIT_FX:
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=entity.player.hurt_freeze;volume=0.7;pitch=1.1} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.7;pitch=1.4} @self
+  - effect:sound{s=entity.player.hurt_freeze;volume=0.7;pitch=1.1}
+  - effect:sound{s=entity.warden.attack_impact;volume=0.7;pitch=1.4}
+  - summon{type=Snowflake_FX;amount=1;radius=1;yRadius=1.5;onSurface=false}
+  - summon{type=Snowflake_FX;amount=1;radius=1;yRadius=1.5;onSurface=false}
+  - summon{type=Snowflake_FX;amount=1;radius=1;yRadius=1.5;onSurface=false}
+  
+Snowflake_RANDOM:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Snowflake_RANDOM1,Snowflake_RANDOM2}
+  
+Snowflake_RANDOM1:
+  Cooldown: 0
+  Skills:
+  - state{s=skill1} @self
+  
+Snowflake_RANDOM2:
+  Cooldown: 0
+  Skills:
+  - state{s=skill2} @self
+  
+# Frost Strike #
+  
+Frost_Strike:
+  Conditions:
+  - crouching false
+  Skills:
+  - skill{s=Frost_Strike_1}
+  - skill{s=Frost_Strike_2}
+  - skill{s=Frost_Strike_3}
+  
+Frost_Strike_1:
+  Conditions:
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=1} false
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=Frost_Strike_Stack;duration=120;maxStacks=2;delay=1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.allay.hurt;volume=0.5;pitch=1.4} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.5} @self
+  - totem{md=2;c=1;oH=Frost_Strike_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Frost_Strike_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Frost_Strike_2:
+  Conditions:
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=1} true
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=Frost_Strike_Stack;duration=120;maxStacks=2;delay=1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.allay.hurt;volume=0.5;pitch=1.4} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.5} @self
+  - totem{md=2;c=1;oH=Frost_Strike_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Frost_Strike_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Frost_Strike_3:
+  Conditions:
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=1} false
+  - hasaurastacks{auraName=Frost_Strike_Stack;stacks=2} true
+  Skills:
+  - auraremove{aura=Frost_Strike_Stack;delay=1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=1.4} @self
+  - effect:sound{s=entity.vex.hurt;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.allay.hurt;volume=0.5;pitch=1.4} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.5} @self
+  - summon{type=Frost_Strike_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+  
+  - totem{md=2;c=1;oH=Frost_Strike_DAMAGE_D2;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=2.5;lockpitch=true}
+  - summon{type=Glacier_Smash_Small;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0;sideOffset=0;lockpitch=true}
+  
+  - delay 3
+  
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.65;pitch=1.3} @self
+  - effect:sound{s=block.glass.break;volume=0.6;pitch=0.6} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.6;pitch=0.6} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.3;pitch=1.4} @self
+  
+Frost_Strike_DAMAGE_D:
+  Skills:
+  - skill{s=Frost_Strike_DAMAGE} @EntitiesNearOrigin{r=3}
+  
+Frost_Strike_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+
+Frost_Strike_DAMAGE_D2:
+  Skills:
+  - skill{s=Frost_Strike_DAMAGE2;delay=3} @EntitiesNearOrigin{r=4}
+  
+Frost_Strike_DAMAGE2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage> * 1.5";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  - throw{velocity=0;velocityY=4}
+  #- throw{velocity=0;velocityY=-4;delay=3}
+
+  
+# Glacial Impalement #
+  
+Glacial_Impalement:
+  Conditions:
+  - crouching false
+  Skills:
+  - effect:sound{s=entity.illusioner.cast_spell;volume=0.6;pitch=1.4;delay=2} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.6;delay=2} @self
+  - potion{type=SLOW;duration=56;level=1;hasParticles=false} @self
+  - orbital{bulletType=MOB;mob=Glacial_Impalement_SUM;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=56;oy=1.7;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+  - delay 56
+  
+  - effect:sound{s=item.trident.throw;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.allay.hurt;volume=0.6;pitch=0.6} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.25;pitch=1.5} @self
+  - projectile{bulletType=MOB;mob=Glacial_Impalement_PRO;onHit=Glacial_Impalement_HIT_D;v=28;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0.3;sE=false;sB=false;hs=false;hfs=0;sfo=0.7;syo=1.5;tyo=1.5;sso=1.3} @Forward{f=25;y=0}
+
+Glacial_Impalement_HIT_D:
+  Skills:
+  - skill{s=Glacial_Impalement_HIT} @EntitiesNearOrigin{r=2.5}
+  
+Glacial_Impalement_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - hasaura{n=Glacial_Impalement_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Glacial_Impalement_HIT;duration=5}
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+
+# Glacier Smash #
+
+Glacier_Smash:
+  Conditions:
+  - hasaurastacks{auraName=Glacier_Smash_aura} castinstead Glacier_Smash_SKILL
+  Skills:
+  - Aura{auraName=Glacier_Smash_aura;interval=1;duration=5} @self
+  
+Glacier_Smash_SKILL:
+  Cooldown: 5
+  Skills:
+  - summon{type=Glacier_Smash_Jump;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  
+  - delay 1
+  - effect:sound{s=entity.warden.heartbeat;volume=1.3;pitch=0.6} @self
+  - effect:sound{s=entity.warden.sonic_charge;volume=1.3;pitch=1.45} @self
+  - leap{velocity=250} @forward{f=2;y=3;lockpitch=true}
+  - delay 20
+  - onDamaged{auraName=landresist;d=40;cE=true} @self
+  - leap{velocity=400} @forward{f=4;y=-5;lockpitch=true}
+  - delay 8
+  
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.7;pitch=1.2} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.75;pitch=0.4} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.7} @self
+  - effect:sound{s=entity.warden.death;volume=0.6;pitch=0.65} @self
+  - summon{type=Glacier_Smash_Land;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - summon{type=Glacier_Smash_Big;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - skill{s=Glacier_Smash_HIT_D}
+  - effect:particles{particle=flash;amount=1;hS=0;vS=0;y=0.2;speed=0.2;forwardOffset=0;sideOffset=0} @forward{f=0;y=0}
+
+
+  
+Glacier_Smash_HIT_D:
+  Skills:
+  - skill{s=Glacier_Smash_HIT} @EIR{r=8}
+  
+Glacier_Smash_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  - orbital{bulletType=MOB;mob=Freeze_FX;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.35;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false}
+
+  
+# Arctic Charge #
+  
+Arctic_Charge:
+  Conditions:
+  - onground true
+  Skills:
+  - Aura{auraName=Arctic_Charge;duration=30} @self
+  - potion{type=SLOW;duration=8;level=55;hasParticles=false} @self
+  - effect:sound{s=block.beacon.activate;volume=1.5;pitch=0.6} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=8.5;amount=400} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=8;amount=360;delay=1} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=7.5;amount=340;delay=2} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=7;amount=280;delay=3} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=6;amount=240;delay=4} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=5;amount=200;delay=5} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=4;amount=160;delay=6} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=3;amount=120;delay=7} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=2;amount=80;delay=8} @self
+  - effect:particlesphere{particle=redstone;color=#8abeff;radius=1;amount=40;delay=9} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.8;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.skeleton_horse.death;volume=0.7;pitch=0.5;delay=3} @self
+
+  - delay 15
+  
+  - totem{md=60;oT=Arctic_Charge_Path_FX;oH=Arctic_Charge_Path_SLOW2;hnp=true;hp=true;hR=1.2;vR=0.6;i=10;repeat=6;repeati=3} @self{y=-0.1}
+  - effect:sound{s=entity.wither.shoot;volume=0.45;pitch=0.5} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.45;pitch=0.5;delay=5} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.8;pitch=0.7;delay=2} @self
+  - effect:sound{s=entity.skeleton_horse.death;volume=0.7;pitch=0.5;delay=3} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.45;pitch=0.5;delay=10} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.45;pitch=0.5;delay=15} @self
+  - onDamaged{auraName=landresist2;d=20;cE=true} @self
+  - lunge{velocity=1;velocityY=0.02;repeat=20;repeatinterval=1} @forward{f=12;y=0.05;lockpitch=true}
+  - effect:particles{particle=redstone;color=#0d234d;amount=50;hS=0.6;vS=0.6;y=0.8;speed=0;forwardOffset=0;sideOffset=0;repeat=9;repeati=2} @forward{f=-1;y=0}
+  - delay 2
+  - orbital{bulletType=MOB;mob=Arctic_Charge_FX;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=30;oy=1.35;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - totem{md=2;c=1;oH=Arctic_Charge_HIT_D;hnp=true;hp=true;hR=2;vR=1;i=1;repeat=9;repeatinterval=2} @forward{f=1;lockpitch=true}
+  
+Arctic_Charge_Path_FX:
+  Skills:
+  - effect:particles{particle=redstone;color=#94d4ff;amount=50;hS=1.5;vS=0.15;y=-1.2;speed=0;forwardOffset=0;sideOffset=0}
+  
+Arctic_Charge_Path_SLOW2:
+  Skills:
+  - skill{s=Arctic_Charge_Path_SLOW} @EntitiesNearOrigin{r=3}
+  
+Arctic_Charge_Path_SLOW:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - hasaura{n=Arctic_Charge_HIT2} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Arctic_Charge_HIT2;duration=10}
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.35;vS=0.15;y=-1.5;speed=0;forwardOffset=0;sideOffset=0;repeat=11;repeatinterval=5}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  
+Arctic_Charge_HIT_D:
+  Skills:
+  - skill{s=Arctic_Charge_HIT} @EntitiesNearOrigin{r=4}
+  
+Arctic_Charge_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - hasaura{n=Arctic_Charge_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Arctic_Charge_HIT;duration=4}
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  - throw{velocity=-10;velocityY=6}
+
+
+  
+# Frozen Shield #
+
+Frozen_Shield:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Frozen_Shield_STACK
+  Skills:
+  - auraremove{aura=Frozen_Shield_STACK} @self
+  
+Frozen_Shield_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Frozen_Shield_STACK;stacks=2} castinstead Frozen_Shield_Skill
+  Skills:
+  - Aura{auraName=Frozen_Shield_STACK;duration=120;maxStacks=2} @self
+  
+Frozen_Shield_Skill:
+  Cooldown: 7
+  Skills:
+  - auraremove{aura=Frozen_Shield_STACK} @self
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.7} @self
+  - effect:sound{s=entity.evoker.prepare_summon;volume=0.7;pitch=1.5} @self
+  - orbital{bulletType=MOB;mob=Frost_Shield_FX;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="(<modifier.duration> * 20) + 4";oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+
+  - delay "<modifier.duration> * 20"
+  
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.5} @self
+  - effect:sound{s=entity.allay.hurt;volume=0.6;pitch=0.6} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.4;pitch=0.6} @self
+  - projectile{bulletType=MOB;mob=Frost_Shield_PRO;onHit=Frozen_Shield_HIT_D;onEnd=Frozen_Shield_END;v=23;i=1;hR=1;vR=1;mr=8;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0.5;syo=1.5;tyo=1.5} @Forward{f=25;y=0;lockpitch=true}
+
+Frozen_Shield_HIT_D:
+  Skills:
+  - skill{s=Frozen_Shield_HIT} @EntitiesNearOrigin{r=5}
+  
+Frozen_Shield_END:
+  Skills:
+  - effect:particles{particle=snowflake;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#8abeff;amount=100;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.7} @self
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @origin
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.7} @origin
+  
+Frozen_Shield_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - hasaura{n=Frozen_Shield_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Frozen_Shield_HIT;duration=7}
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  - throw{velocity=11;velocityY=3}
+
+  
+Frozen_Shield_BLOCK:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  Skills:
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.5} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Frozen_Shield_BLOCK_PRO:
+  Conditions:
+  - damagecause{cause=PROJECTILE} true
+  Skills:
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.5} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Frozen_Shield_BLOCK2:
+  Conditions:
+  - damagecause{cause=BLOCK_EXPLOSION} true
+  Skills:
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.5} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Frozen_Shield_BLOCK3:
+  Conditions:
+  - damagecause{cause=ENTITY_EXPLOSION} true
+  Skills:
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.5} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Frozen_Shield_BLOCK4:
+  Conditions:
+  - damagecause{cause=MAGIC} true
+  Skills:
+  - effect:sound{s=item.shield.block;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.5} @self
+  - effect:particles{particle=block_crack;m=ICE;amount=80;hS=2;vS=2;y=1.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+# Permafrost Lance #
+
+Permafrost_Lance:
+  Skills:
+  - orbital{bulletType=MOB;mob=Permafrost_Lance1;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=20;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 8
+  - lunge{velocity=0.45;velocityY=0.02;repeat=4;repeatinterval=1} @forward{f=12;y=0.05;lockpitch=true}
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.5} @self
+  - totem{md=2;c=1;oH=Permafrost_Lance_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  - summon{type=Frost_Strike_1_ULT;amount=1;radius=0;yRadius=0;onSurface=true;delay=2} @forward{f=3;y=0.2;sideOffset=0;lockpitch=true}
+
+  - delay 7
+  
+  - orbital{bulletType=MOB;mob=Permafrost_Lance2;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=20;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 8
+  - lunge{velocity=0.45;velocityY=0.02;repeat=4;repeatinterval=1} @forward{f=12;y=0.05;lockpitch=true}
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.5} @self
+  - totem{md=2;c=1;oH=Permafrost_Lance_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  - summon{type=Frost_Strike_2_ULT;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0.2;sideOffset=0;lockpitch=true}
+
+  - delay 7
+  
+  - orbital{bulletType=MOB;mob=Permafrost_Lance3;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=20;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 9
+  - lunge{velocity=0.01;velocityY=1.15;repeat=4;repeatinterval=1} @forward{f=0;y=5;lockpitch=true}
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.5} @self
+  - totem{md=2;c=1;oH=Permafrost_Lance_DAMAGE_D3;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  - orbital{bulletType=MOB;mob=Frost_Strike_3_ULT;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=16;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+  - stun{d=10;f=false;CancelOnTakeDamage=false;CancelOnDeath=true;delay=7} @self
+  
+  - delay 12
+  
+  - effect:sound{s=entity.warden.roar;volume=0.9;pitch=1.3} @self
+  - lunge{velocity=0.9;velocityY=-1.5;repeat=4;repeatinterval=1} @forward{f=3;y=-5;lockpitch=true}
+  - onDamaged{auraName=landresists;d=20;cE=true} @self
+  - projectile{bulletType=MOB;mob=Permafrost_Lance_PRO;onHitBlockSkill=Permafrost_Lance_HIT_D;v=35;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=5;tyo=0} @Forward{f=15;y=-20;lockpitch=true}
+
+Permafrost_Lance_HIT_D:
+  Skills:
+  - summon{type=Permafrost_Lance4;amount=1;radius=0;yRadius=0;onSurface=true} @ProjectileForward{f=5;y=6}
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.7;pitch=1.2} @origin
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.4} @origin
+  - effect:sound{s=entity.warden.attack_impact;volume=0.75;pitch=0.4} @origin
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.7} @origin
+  - effect:sound{s=entity.warden.death;volume=0.6;pitch=0.65} @origin
+  - summon{type=Glacier_Smash_Land;amount=1;radius=0;yRadius=0;onSurface=true} @ProjectileForward{f=2;y=1.8}
+  - summon{type=Glacier_Smash_Big2;amount=1;radius=0;yRadius=0;onSurface=true} @ProjectileForward{f=2;y=1.8}
+  - skill{s=Permafrost_Lance_HIT} @EntitiesNearOrigin{r=8}
+  - effect:particles{particle=flash;amount=1;hS=0;vS=0;y=0.2;speed=0.2;forwardOffset=0;sideOffset=0} @ProjectileForward{f=2;y=1.8}
+
+  
+Permafrost_Lance_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - hasaura{n=Permafrost_Lance_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=Permafrost_Lance_HIT;duration=5}
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage> * 2";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  - throw{velocity=5;velocityY=-12}
+  - delay 5
+  - orbital{bulletType=MOB;mob=Freeze_FX;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.35;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false}
+  
+Permafrost_Lance_DAMAGE_D:
+  Skills:
+  - skill{s=Permafrost_Lance_DAMAGE} @EntitiesNearOrigin{r=7}
+  
+Permafrost_Lance_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=10;velocityY=2}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2
+  
+Permafrost_Lance_DAMAGE_D3:
+  Skills:
+  - skill{s=Permafrost_Lance_DAMAGE3} @EntitiesNearOrigin{r=7}
+  
+Permafrost_Lance_DAMAGE3:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Frost_Shield_Shield} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Snowflake_HIT_FX}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=9}
+  - skill{s=Frost_Strike_FROSTBITE} 0.2

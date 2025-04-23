@@ -1,0 +1,53 @@
+npcs:
+  '340': "NexothIslaDioses"
+
+conversations:
+  NexothIslaDioses: 
+    quester: "&6Joel" 
+    first: "yahecho,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Hey! Pareces algo perdido ¿Necesitas ayuda?"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7Primero te recomiendo ir a la capital, allí seguro encontrarás a &6Henry &7que te dirá a donde ir &c[X:-676 Z:454]."
+        pointer: "Perfecto" 
+      SiRechazan:
+        text: "&7Entiendo, en ese caso muy buena suerte."
+      yahecho:
+        text: "&7Hey! No te hagas, ya conoces bien estas tierras."
+        conditions: "yahecho"
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7Por favor, no conozco estas tierras."
+        event: misionexploracionempezada,inicioexploracion
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7No pasa nada, lo haré por mi cuenta."
+        pointer: "SiRechazan" 
+      Perfecto:
+        text: "&7¡Muchas gracias!"
+
+conditions:
+  yahecho: "tag exploracion_ya_hecha"
+
+events: 
+  misionexploracionempezada: "notify &5¡Misión Aceptada, a explorar!"
+  inicioexploracion: "objective start hablarnpc1"
+  eventhablarnpc2: "objective start hablarnpc2"
+  eventhablarnpc3: "objective start hablarnpc3"
+  eventhablarnpc4: "objective start hablarnpc4"
+  eventhablarnpc5: "objective start hablarnpc5"
+  misionexplonexcompleta1: "mmoclassexperience 1500"
+  misionexplonexcompleta2: "mmoitemgive MATERIAL MONEDA_2"
+  misionexploracionterminada: "notify &6&l¡Misión Completada!"
+  exploracioncompletada: "tag add exploracion_ya_hecha"
+
+objectives: 
+  hablarnpc1:  "npcinteract 341 interaction:right events:eventhablarnpc2"
+  hablarnpc2:  "npcinteract 342 interaction:right events:eventhablarnpc3"
+  hablarnpc3:  "npcinteract 343 interaction:right events:eventhablarnpc4"
+  hablarnpc4:  "npcinteract 344 interaction:right events:eventhablarnpc5"
+  hablarnpc5:  "npcinteract 345 interaction:right events:misionexplonexcompleta1,misionexplonexcompleta2,misionexploracionterminada,exploracioncompletada"

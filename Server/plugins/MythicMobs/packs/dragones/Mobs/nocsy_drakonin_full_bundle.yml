@@ -1,0 +1,1077 @@
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#           Drakonin Pack Vol.1            #
+#            Mobs - MythicMobs             #
+#               by Nocsy                   #
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+############################################
+#                   Egg                    #
+############################################
+
+Nocsy_Drakonin_Egg:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Equipment: []
+  Skills:
+  - setAI{ai=false} ~onSpawn
+  - model{mid=nocsy_drakonin_egg;n=false} @self ~onSpawn
+  - setvariable{var=caster.crack;value=0;s=CASTER} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Egg_Interaction} ~onDamaged
+  - skill{s=Nocsy_Drakonin_Egg_Interaction} ~onInteract
+  - skill{s=Nocsy_Drakonin_Egg_Sound} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Egg_Sound} @self ~onInteract
+  - potion{type=SLOW;duration=9999999;level=255} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_CancelEvent;sync=true} ~onAttack
+  Display: "§6Drakonin egg"
+  Health: 1000
+  Damage: 0
+  Options:
+    Despawn: true
+    Collidable: false
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.1
+
+############################################
+#               Fire Dragon                #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Fire-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin;n=false;drive=true} @self ~onSpawn
+  - addtag{t=fire} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§6Fire Drakonin"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.5
+    MaxCombatDistance: 5
+    AttackSpeed: 1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Fire-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby;n=false} @self ~onSpawn
+  - addtag{t=fire} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§6Fire Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Fire-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_firespell;n=false} @self ~onSpawn
+  - addtag{t=fire} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Fire-Spawn} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Fire-Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Fire-Cast} ~onTimer:30
+  - skill{s=Nocsy_Drakonin_SpellEntity-Fire-Despawn;delay=200} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Fire-Hold} ~onTimer:1
+  Display: "§6Fire Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#              Dark Drakonin               #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Dark-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin2;n=false;drive=true} @self ~onSpawn
+  - addtag{t=dark} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§7Dark Drakonin"
+  Health: 250
+  Damage: 11
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Dark-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby2;n=false} @self ~onSpawn
+  - addtag{t=dark} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§7Dark Drakonin"
+  Health: 50
+  Damage: 6
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Dark-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_shadowspell;n=false} @self ~onSpawn
+  - addtag{t=dark} @self ~onSpawn
+  Display: "§7Dark Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#              Water Wyvern                #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Water-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin3;n=false;drive=true} @self ~onSpawn
+  - addtag{t=water} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Spell-Water-Plunge} ~onSignal:PLUNGE_LAND
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§bWater Drakonin"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Water-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby3;n=false} @self ~onSpawn
+  - addtag{t=water} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§bWater Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Water-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_water_geyser;n=false} @self ~onSpawn
+  - addtag{t=water} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Water-Spawn} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Water-Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Water-Despawn;delay=30} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Water-Cast} ~onTimer:40
+  Display: "§bWater Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#             Cloud Wyvern                 #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Cloud-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin4;n=false;drive=true} @self ~onSpawn
+  - addtag{t=cloud} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§bWater Drakonin"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.42
+    MaxCombatDistance: 5
+    AttackSpeed: 1.6
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Cloud-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby4;n=false} @self ~onSpawn
+  - addtag{t=cloud} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§7Cloud Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Cloud-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_tornado;n=false} @self ~onSpawn
+  - addtag{t=cloud} @self ~onSpawn
+  Display: "§7Cloud Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#             Volcanic Drakonin            #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Volcanic-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin5;n=false;drive=true} @self ~onSpawn
+  - addtag{t=volcanic} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Spell-Volcanic-Plunge} ~onSignal:PLUNGE_LAND
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§cVolcanic Drakonin"
+  Health: 250
+  Damage: 11
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.42
+    MaxCombatDistance: 5
+    AttackSpeed: 1.6
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Volcanic-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby5;n=false} @self ~onSpawn
+  - addtag{t=volcanic} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§cVolcanic Drakonin"
+  Health: 50
+  Damage: 6
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Volcanic-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_rocks;n=false} @self ~onSpawn
+  - addtag{t=volcanic} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Volcanic-Spawn} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Volcanic-Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Volcanic-Despawn;delay=60} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Volcanic-Cast} ~onTimer:30
+  Display: "§cVolcanic Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#            Poison Drakonin               #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Poison-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin6;n=false;drive=true} @self ~onSpawn
+  - addtag{t=poison} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Spell-Poison-Plunge} ~onSignal:PLUNGE_LAND
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§aPoison Drakonin"
+  Health: 250
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.42
+    MaxCombatDistance: 5
+    AttackSpeed: 1.6
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Poison-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby6;n=false} @self ~onSpawn
+  - addtag{t=poison} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§aPoison Drakonin"
+  Health: 50
+  Damage: 3
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Poison-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_poisoncloud;n=false} @self ~onSpawn
+  - addtag{t=poison} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Poison-Spawn} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Poison-Cast} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Poison-Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Poison-Despawn;delay=140} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Poison-Cast} ~onTimer:10
+  Display: "§aPoison Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#            Forest Drakonin               #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Forest-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin7;n=false;drive=true} @self ~onSpawn
+  - addtag{t=forest} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_Spell-Forest-Plunge} ~onSignal:PLUNGE_LAND
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§aForest Drakonin"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Forest-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby7;n=false} @self ~onSpawn
+  - addtag{t=forest} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§aForest Drakonin"
+  Health: 50
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Spell -----------#
+Nocsy_Drakonin-Forest-Spell:
+  Type: ARMOR_STAND
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_drakonin_roots;n=false} @self ~onSpawn
+  - addtag{t=forest} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Forest-Spawn} ~onSpawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Forest-Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_SpellEntity-Forest-Cast} ~onTimer:40
+  - skill{s=Nocsy_Drakonin_SpellEntity-Forest-Despawn;delay=100} ~onSpawn 
+  Display: "§aPoison Drakonin"
+  Options:
+    Invincible: true
+    Invisible: true
+    Collidable: false
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+
+############################################
+#              Night Wyvern                #
+############################################
+
+#----------- Adult -----------#
+Nocsy_Drakonin-Night-Adult:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin8;n=false;drive=true} @self ~onSpawn
+  - addtag{t=night} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Mount} ~onInteract
+  - skill{s=Nocsy_Drakonin_Owner} ~onInteract
+  - skill{s=Nocsy_Drakonin_Spell} ~onSignal:SPELL
+  - skill{s=Nocsy_Drakonin_FlyLoop} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Sound_Ambient} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_MCPets} ~onSignal:MCPETS
+  Display: "§9Night Drakonin"
+  Health: 250
+  Damage: 9
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+#----------- Baby -----------#
+Nocsy_Drakonin-Night-Baby:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_drakonin_baby8;n=false} @self ~onSpawn
+  - addtag{t=night} @self ~onSpawn
+  - skill{s=Nocsy_Drakonin_Variable} ~onSpawn
+  - skill{s=Nocsy_Drakonin_PlayerTame_Init} ~onInteract
+  - skill{s=Nocsy_Drakonin_AI} ~onSpawn
+  - skill{s=Nocsy_Drakonin_Despawn} ~onDespawn
+  - skill{s=Nocsy_Drakonin_Death} ~onDeath
+  - skill{s=Nocsy_Drakonin_Interact} ~onInteract
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Death} @self ~onDeath
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Hurt} @self ~onDamaged
+  - skill{s=Nocsy_Drakonin_Baby_Sound_Ambient} @self ~onSpawn
+  Display: "§9Night Drakonin"
+  Health: 50
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false

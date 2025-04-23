@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.173.139.100
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739659551527
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739662313852
+  login: 1739661867682
+money: '0'
+last-account-name: IvanTheQuirky
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.9889076524596
+  y: 81.0
+  z: 464.905353105705
+  yaw: 114.60006713867188
+  pitch: 6.300003528594971
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2927.7635442285514
+  y: 84.5
+  z: 469.47601620754574
+  yaw: 84.15057373046875
+  pitch: 44.69997787475586
+nickname: sabnock

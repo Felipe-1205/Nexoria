@@ -1,0 +1,214 @@
+######## uploaded by Zhaitan on nulledassets.net #########
+  
+abyssion_sword:
+  Id: stone_sword
+  Display: "<gradient:#423397:#00afff:#423397>Sword of Abyssion"
+  Model: 1
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>An ancient sword used by Abyssion'
+  Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Aqua_Slash} @self ~onSwing
+  - skill{s=Abyssal_Dash} @self ~onUse
+  - skill{s=Tidal_Wave} @self ~onUse
+  - skill{s=Aqua_Aura} @self ~onCrouch
+  - skill{s=Abyssal_Smash} @self ~onSwing
+  
+abyssion_sword_shiny:
+  Id: stone_sword
+  Display: "<gradient:#ffd34b:#fffde7:#423397>Shiny Sword of Abyssion"
+  Model: 2
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>An ancient sword used by Abyssion'
+  Unbreakable: true
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Aqua_Slash} @self ~onSwing
+  - skill{s=Abyssal_Dash} @self ~onUse
+  - skill{s=Tidal_Wave} @self ~onUse
+  - skill{s=Aqua_Aura} @self ~onCrouch
+  - skill{s=Abyssal_Smash} @self ~onSwing
+  
+abyssion_head:
+  Id: paper
+  Display: "<gradient:#423397:#00afff:#423397>Head of Abyssion"
+  Model: 16
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  Skills:
+  - skill{s=Aqua_Haste_Crucible_Head} @self ~onTimer:10
+  
+abyssion_helmet:
+  Id: leather_helmet
+  Display: "<gradient:#423397:#00afff:#423397>Helmet of Abyssion"
+  Options:
+    Color: 101,107,156
+  Model: 4
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>An ancient helmet worn by Abyssion'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  Skills:
+  - skill{s=Aqua_Haste_Crucible_Helmet} @self ~onTimer:10
+  
+abyssion_chestplate:
+  Id: leather_chestplate
+  Display: "<gradient:#423397:#00afff:#423397>Chestplate of Abyssion"
+  Options:
+    Color: 101,107,156
+  Model: 4
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>An ancient chestplate worn by Abyssion'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  Skills:
+  - skill{s=Aqua_Haste_Crucible_Head} @self ~onTimer:10
+  - skill{s=Aqua_Haste_Crucible_Helmet} @self ~onTimer:10
+  
+abyssion_leggings:
+  Id: leather_leggings
+  Display: "<gradient:#423397:#00afff:#423397>Leggings of Abyssion"
+  Options:
+    Color: 101,107,156
+  Model: 4
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>An ancient leggings worn by Abyssion'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  Skills:
+  - skill{s=Aqua_Haste_Crucible_Head} @self ~onTimer:10
+  - skill{s=Aqua_Haste_Crucible_Helmet} @self ~onTimer:10
+  
+abyssion_boots:
+  Id: leather_boots
+  Display: "<gradient:#423397:#00afff:#423397>Boots of Abyssion"
+  Options:
+    Color: 101,107,156
+  Model: 4
+  Lore:
+  - '<gradient:#423397:#00afff:#423397>Ancient boots worn by Abyssion'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  Skills:
+  - skill{s=Aqua_Haste_Crucible_Head} @self ~onTimer:10
+  - skill{s=Aqua_Haste_Crucible_Helmet} @self ~onTimer:10
+  
+abyssion_water_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 1
+  Hide:
+  - ATTRIBUTES
+
+abyssion_water_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2
+  Hide:
+  - ATTRIBUTES
+ 
+abyssion_water_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 3
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 4
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 5
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 6
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_slash_7:
+  Id: paper
+  Display: "&6"
+  Model: 7
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_wave:
+  Id: paper
+  Display: "&6"
+  Model: 8
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_bubble:
+  Id: paper
+  Display: "&6"
+  Model: 9
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_1:
+  Id: paper
+  Display: "&6"
+  Model: 10
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_2:
+  Id: paper
+  Display: "&6"
+  Model: 11
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_3:
+  Id: paper
+  Display: "&6"
+  Model: 12
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_big_1:
+  Id: paper
+  Display: "&6"
+  Model: 13
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_big_2:
+  Id: paper
+  Display: "&6"
+  Model: 14
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_water_rune_big_3:
+  Id: paper
+  Display: "&6"
+  Model: 15
+  Hide:
+  - ATTRIBUTES
+  
+abyssion_head:
+  Id: paper
+  Display: "&6"
+  Model: 16
+  Hide:
+  - ATTRIBUTES

@@ -1,0 +1,317 @@
+
+
+Queen_Tarot_BUFF:
+  Cooldown: 0
+  Conditions:
+  - mobsInRadius{types=Queen_Tarot;amount=1to10;radius=2.5} false
+  - hasaura{n=Queen_Tarot_STOP} false
+  Skills:
+  - orbital{bulletType=MOB;mob=Queen_Tarot;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=-0.8;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @self
+  
+Queen_Tarot:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Queen_Tarot_STOP} false
+  Skills:
+  - skill{s=Queen_Tarot_BUFF} @self
+  - onDamaged{onHit=Queen_Tarot_STUN;auraName=tarotqueen;cancelEvent=true;d=20} @self
+  - skill{s=Queen_Tarot_ACTIVATE} @MIR{r=4;t=Queen_Tarot;target=armorstands;sort=NEAREST;limit=1}
+
+
+
+
+Queen_Tarot_STUN:
+  Skills:
+  - Aura{auraName=Queen_Tarot_STOP;duration=120} @self
+  - skill{s=Queen_Tarot_FX_HIT} @EIR{r=4}
+  - effect:sound{s=entity.illusioner.cast_spell;volume=0.7;pitch=1.2} @self
+  
+Queen_Tarot_FX_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - hasaura{n=Queen_Tarot_HIT} false
+  Skills:
+  - Aura{auraName=Queen_Tarot_HIT;duration="<modifier.duration> * 20"}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false}
+  - orbital{r=0.5;onTick=Mirror_Dimension_HIT_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2.5}
+
+
+Queen_Tarot_REMOVE:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Queen_Tarot} false
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @owner
+  
+Queen_Tarot_REMOVE_BUFF:
+  Cooldown: 0
+  TargetConditions:
+  - hasaura{n=Queen_Tarot_STOP} true
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @owner
+  
+Queen_Tarot_ACTIVATE:
+  Conditions:
+  - hasaura{n=Queen_Tarot_STOP} false
+  Skills:
+  - SudoSkill{s=Queen_Tarot_SKILL1;setcasterastrigger=true} @MIR{r=4;t=Queen_Tarot;target=armorstands;sort=NEAREST;limit=1}
+  
+Queen_Tarot_SKILL1:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Queen_Tarot;duration=50} @self
+  
+  
+Card_Throw:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.card_throw;volume=0.8;pitch="random(0.8, 1.1)"} @self
+  - randomskill{skills=Card_Throw_1,Card_Throw_2,Card_Throw_3}
+
+Card_Throw_1:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Card_Throw_2:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=8;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=-8;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Card_Throw_3:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=12;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Card_Throw;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=-12;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Card_Throw_HIT_D:
+  Skills:
+  - skill{s=Card_Throw_HIT} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+Card_Throw_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Mirror_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=0.6;pitch=1} @origin
+
+
+Phantom_Blink:
+  Conditions:
+  - onground true
+  Skills:
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @self
+  - lunge{velocity=1.5;velocityY=0.5} @forward{f=-7;y=4.5;lockpitch=true}
+  - stun{d=15;f=true;CancelOnTakeDamage=false;CancelOnDeath=true;delay=8} @self
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Phantom_Blink_Clone;onHit=Phantom_Blink_HIT_D;oS=Phantom_Blink_Tick;v=1;i=1;hR=1;vR=1;mr=8;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @forward{f=-7;y=2;lockpitch=true}
+  
+  - delay 8
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @self
+  - effect:sound{s=illusionist_sounds:samus.card_throw;volume=0.8;pitch="random(0.8, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Card_Throw_2;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=0} @Forward{f=15;y=-2;lockpitch=true}
+  - projectile{bulletType=MOB;mob=Card_Throw_2;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=12;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=0} @Forward{f=15;y=-2;lockpitch=true}
+  - projectile{bulletType=MOB;mob=Card_Throw_2;onHit=Card_Throw_HIT_D;v=18;i=1;hR=1;vR=1;mr=14;hnp=true;hO=-12;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=0} @Forward{f=15;y=-2;lockpitch=true}
+
+
+Phantom_Blink_Tick:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.mirror_shuriken;volume=1;pitch=1} @origin
+  - modifyProjectile{trait=VELOCITY;action=SET;value=24;delay=10}
+
+  
+Phantom_Blink_HIT_D:
+  Skills:
+  - skill{s=Phantom_Blink_HIT} @EntitiesNearOrigin{r=3.5}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=0.6;pitch=1} @self
+  
+Phantom_Blink_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Mirror_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+Mirror_Shuriken:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.mirror_shuriken;volume=1;pitch=1.5} @self
+  - projectile{bulletType=MOB;mob=Mirror_Shuriken;onHit=Mirror_Shuriken_hit;onEnd=Mirror_Shuriken_MISSILE_SUDO;v=26;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Mirror_Shuriken_Summon:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.mirror_shuriken;volume=1;pitch=1.2} @self
+  - summon{type=Mirror_ShurikenBACK;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - delay 1
+  - skill{s=Mirror_Shuriken_SUDO}
+  
+Mirror_Shuriken_SUDO:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - SudoSkill{s=Mirror_Shuriken_MISSILE_SUDO;setcasterastrigger=true} @MIR{r=80;t=Mirror_ShurikenBACK;target=armorstands}
+  
+Mirror_Shuriken_MISSILE_SUDO:
+  Skills:
+  - missile{fO=true;bulletType=MOB;mob=Mirror_ShurikenBACK;onHit=Mirror_Shuriken_hit_Back;md=100;mr=400;v=32;i=1;hR=1;vR=1;in=2;sE=false;sB=false;syo=0.3;tyo=1} @self
+  
+  
+Mirror_Shuriken_hit:
+  Skills:
+  - skill{s=Mirror_Shuriken_hit_Target} @EntitiesNearOrigin{r=3}
+  
+Mirror_Shuriken_hit_Target:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - throw{velocity=12;velocityY=0}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=1;pitch=1}
+  
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:particles{particle=drip_water;amount=10;hS=0.3;vS=0.7;y=0.5;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeati=20}
+
+  
+Mirror_Shuriken_hit_Back:
+  TargetConditions:
+  - isCaster castinstead Mirror_Shuriken_End_Back_REMOVE
+  Skills:
+  - skill{s=Mirror_Shuriken_hit_Target2} @EntitiesNearOrigin{r=3}
+
+Mirror_Shuriken_hit_Target2:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - pull{velocity=4.5}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=0.6;pitch=1}
+  
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=3;repeati=20;delay=20}
+  - effect:particles{particle=drip_water;amount=10;hS=0.3;vS=0.7;y=0.5;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeati=20}
+
+  
+Mirror_Shuriken_End_Back_REMOVE:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - remove @self
+  
+  
+Mirage_Slot:
+  Conditions:
+  - onground true
+  Skills:
+  - effect:sound{s=entity.illusioner.mirror_move;volume=0.8;pitch=1} @self
+  - onDamaged{auraName=resist;d=12;cE=true} @self
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5} @self
+  - effect:particles{particle=redstone;color=#bdfff2;amount=20;speed=0;hS=0.3;vS=0.7;y=0.5;delay=11} @self
+  - lunge{velocity=1.15;velocityY=0.05;repeat=3;repeatinterval=1} @forward{f=12;y=0.05;lockpitch=true}
+  - stun{d=15;f=true;CancelOnTakeDamage=false;CancelOnDeath=true;delay=11} @self
+  - projectile{bulletType=MOB;mob=Phantom_Blink_Clone_2;onHit=Mirage_Slot_HIT_D;oS=Mirage_Slot_Tick;v=1;i=1;hR=1;vR=1;mr=8;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @forward{f=12;y=0.05;lockpitch=true}
+  
+Mirage_Slot_Tick:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.mirror_shuriken;volume=1;pitch=1} @origin
+  - modifyProjectile{trait=VELOCITY;action=SET;value=24;delay=10}
+  
+Mirage_Slot_HIT_D:
+  Skills:
+  - skill{s=Mirage_Slot_HIT} @EntitiesNearOrigin{r=3.5}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=0.6;pitch=1} @self
+  
+Mirage_Slot_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Mirror_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+
+Mirror_Needles:
+  Skills:
+  - effect:sound{s=illusionist_sounds:samus.summon_mirror;volume=0.8;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Mirror_Needles_Mirror;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=60;oy=-0.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - potion{type=SLOW;duration=60;level=2;hasParticles=false} @self
+
+  - delay 10
+  - projectile{bulletType=MOB;sso=1;mob=Mirror_Needles_Needle_1;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+  - delay 10
+  - projectile{bulletType=MOB;sso=-1;mob=Mirror_Needles_Needle_2;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=-3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+  - delay 10
+  - projectile{bulletType=MOB;sso=1;mob=Mirror_Needles_Needle_1;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+  - delay 10
+  - projectile{bulletType=MOB;sso=-1;mob=Mirror_Needles_Needle_2;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=-3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+  - delay 10
+  - projectile{bulletType=MOB;sso=1;mob=Mirror_Needles_Needle_1;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+  - delay 10
+  - projectile{bulletType=MOB;sso=-1;mob=Mirror_Needles_Needle_2;onHit=Mirror_Needles_HIT_D;v=20;i=1;hR=1;vR=1;mr=17;hnp=true;hO=-3;sE=false;sB=true;hs=false;hfs=0;sfo=2;syo=2;tyo=2} @forward{f=12;y=0;lockpitch=true}
+  - effect:sound{s=illusionist_sounds:samus.shoot_needle;volume=0.8;pitch=1} @self
+  
+Mirror_Needles_HIT_D:
+  Skills:
+  - skill{s=Mirror_Needles_HIT} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+Mirror_Needles_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Mirror_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=0.6;pitch=1} @origin
+  
+
+Mirror_Dimension:
+  Skills:
+  - leap{velocity=100} @forward{f=0.1;y=2;lockpitch=true}
+  - delay 5
+  - onDamaged{auraName=resist;d=12;cE=true} @self
+  - leap{velocity=100} @forward{f=0.1;y=-3;lockpitch=true}
+  
+  - delay 3
+  - effect:sound{s=illusionist_sounds:samus.mirror_impact;volume=1;pitch=0.7} @self
+  - effect:sound{s=entity.evoker.prepare_summon;volume=1;pitch=1;delay=1} @self
+  - skill{s=Mirror_Dimension_HIT} @EIR{r=7}
+  - summon{type=Mirror_Dimension_Portal;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;lockpitch=true}
+  
+  - delay 40
+  - summon{type=Mirror_Dimension_Portal;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=15;y=0;lockpitch=true}
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=1} @self
+
+
+Mirror_Dimension_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false}
+  - orbital{r=0.5;onTick=Mirror_Dimension_HIT_TICK;points=16;interval=1;duration=40;oy=2.5}
+
+  - teleportin{vector=15,0,0;delay=40}
+
+Mirror_Dimension_HIT_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#bdfff2;amount=2;speed=0;hS=0;vS=0} @origin

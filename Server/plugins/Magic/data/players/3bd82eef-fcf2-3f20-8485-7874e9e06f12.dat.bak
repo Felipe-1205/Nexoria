@@ -1,0 +1,33 @@
+id: 3bd82eef-fcf2-3f20-8485-7874e9e06f12
+name: Fakenciano
+created: 1739833042537
+updated: 1739833383257
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+classes:
+  caster: {}
+  mage:
+    effect_color: 7f08c53bdf3b,d64cda74e06d,696bf2a73c89
+    mana_timestamp: 1739833381548
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 20.0

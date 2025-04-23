@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 37.15.139.158
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740351927246
+  login: 1740350684103
+money: '0'
+last-account-name: SraAmatista
+lastlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: 44.211613138179885
+  y: -60.0
+  z: 154.47168833298213
+  yaw: -66.84423828125
+  pitch: 4.500997066497803
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 42.025751263727166
+  y: 86.0
+  z: 142.9277660792108
+  yaw: -147.74990844726562
+  pitch: 16.94999122619629
+nickname: Sylph

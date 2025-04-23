@@ -1,0 +1,225 @@
+variables:
+	{susurrar.%player%} = false
+	{bajo.%player%} = false
+	{hablar.%player%} = true
+	{gritar.%player%} = false
+	{ooc.%player%} = false
+	{toggle_variable.%player%} = true
+	{modo.%player%} = "normal"
+on first join:
+	set {susurrar.%player%} to false
+	set {bajo.%player%} to false
+	set {hablar.%player%} to true
+	set {gritar.%player%} to false
+	set {ooc.%player%} to false
+	set {toggle_variable.%player%} to true
+	set {modo.%player%} to "normal"
+command /actualizar:
+	trigger:
+		loop all players:
+			set {_class} to placeholder "mmocore_class" from loop-player
+			if {_class} is "Admin":
+				execute console command "lp user %loop-player% parent settrack clases adminis"
+			set {_level} to placeholder "mmocore_level" from loop-player parsed as number
+			if {_class} is "Bardo":
+				execute console command "lp user %loop-player% parent settrack clases bardo"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Paso Nuboso: Rodeado por una bruma plateada, te teletransportas hasta 6 bloques a un lugar desocupado visible. Usos: 2 veces por combate."
+					execute console command "adminhabilidad agregar %loop-player% 4 Bendición de Usher: Recuperas un uso de habilidades al estar en agua natural o bajo la lluvia. Pasiva, se activa cada 2 rondas."
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 5 Colmillos de la Abuela: Invoca colmillos oscuros que atacan en línea recta de 6 bloques, causando 3d4 de daño perforante a cada objetivo en el trayecto. Carisma vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 6 Pavo, Cinta y TNT: Invocas un pavo con TNT que explota en un radio de 3 bloques desde el punto de impacto, infligiendo 4d6 de daño de fuego a los enemigos en el área. Carisma vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 7 Modo Rana: Obtienes agilidad de rana que te permite caminar sobre el agua durante 3 rondas, facilitando esquivar ataques. Usos: 2 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 8 La Perdición de los Pollos: Dispara huevos rápidamente, impidiendo que el objetivo se acerque a ti y manteniéndolo a 4 bloques de distancia por 2 rondas. Carisma vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 9 Mini-Explosión: Realiza una explosión dirigida a un solo objetivo, causando 3d10 de daño de fuego. Carisma vs Defensa del objetivo."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 10 El Último Regalo de Santa: Lanzas un regalo explosivo que empuja a todos a 6 bloques de distancia del punto de explosión. Carisma vs Defensa del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 11 Con este Tesoro Helado…: Invoca un muñeco de nieve armado que ataca con 2d4 de daño de hielo después de tu turno y tiene 10 puntos de vida. Puede sacrificarse por el equipo y dura 3 rondas. Usos: 1 vez por combate."
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 12 La Fuerza: Usando tu mente, tomas control de un enemigo por 5 segundos y lo lanzas hasta 10 bloques en la dirección deseada. Carisma vs Constitución del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 13 ¡Te prometo puedo hacer el 4!: Desencadenas una ráfaga de carne en descomposición que inflige 3d12 de daño necrótico y envenena al objetivo si acierta. Carisma vs Defensa del objetivo. Usos: 1 vez por combate, no se recupera con Bendición de Usher."
+			if {_class} is "Clerigo":
+				execute console command "lp user %loop-player% parent settrack clases clerigo"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Sana sana: Restauras 3d4 puntos de vida a un objetivo. Puedes canalizar esta bendición hacia ti mismo. Usos: 2 veces por combate."
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Aura Gélida: Un aura helada ralentiza a todas las entidades cercanas, reduciendo su movimiento a la mitad en un radio de 5 bloques por 1 ronda. Usos: 2 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Primeros Auxilios: Con una mano llena de luz, restauras 2d6 puntos de vida a un aliado cercano cada turno durante 2 turnos. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Descarga Divina: Un rayo de luz divina impacta a un objetivo que puedas ver, causando 3d4 de daño radiante si supera su Defensa. Constitución vs Defensa del objetivo. Usos: 3 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Restauración Mayor: Sana instantáneamente 4d8 puntos de vida a un objetivo con una acción. Usos: 2 veces por combate."
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Castigo Divino: Invoca rayos que golpean a todos en un radio de 3 bloques, causando 3d6 de daño eléctrico. Constitución vs Defensa del objetivo. Usos: 2 veces por combate. "
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Exorcismo: Un círculo oscuro drena 3d4 puntos de vida a todos en un radio de 5 bloques, por cada turno que permanezcan allí durante 4 rondas. Usos: 1 vez por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Escalera de Eldoria: Desde el cielo desciende un rayo que inflige 3d12 de daño radiante a quienes no puedan evadirlo. Constitución vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Los Héroes Nunca Mueren: Emite una ola de energía sanadora que restaura 5d8 de vida a todos los aliados cercanos en un radio de 5 bloques. Usos: 1 vez por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Ira Estelar: Llama a las estrellas para causar 8d6 de daño radiante en un ataque masivo contra tus enemigos. Constitución vs Defensa. Usos: 1 vez por combate."
+			if {_class} is "Guardian":
+				execute console command "lp user %loop-player% parent settrack clases guardian"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Dominio Simple: Levanta un escudo en forma de cúpula que protege a ti y a tus aliados de todo daño durante 1 ronda. Usos: 2 veces por combate."
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Carga del Oso Blanco: Te lanzas hacia adelante con fuerza arrolladora, derribando a enemigos en el camino. Constitución vs Defensa del objetivo. Usos: 2 veces por combate. "
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Curitas: Cura 2d10 de vida a ti mismo. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Sentinela: Crea un aura de lentitud alrededor del enemigo, reduciendo su movimiento a 0 pies durante 1 ronda. Constitución vs Constitución. Usos: 4 veces por combate. "
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Los Brazos de Bahamut: Dominas al enemigo, ralentizándolo y lanzándolo 5 bloques en una dirección al final de la ronda. Constitución vs Constitución. Usos: 2 veces por combate. "
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Onda de Thamur: Inscribes un círculo de frío que reduce a la mitad la velocidad y la destreza en un radio de 6 bloques durante 1 ronda. Usos: 2 veces por combate."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 ¡Yo tanqueo!: Absorbes el daño de un aliado, desviándolo hacia ti durante las siguientes 2 rondas o hasta quedar sin puntos de golpe. Usos: 2 veces por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 ¡/Me Explota!: Te conviertes en una bomba viviente, explotando en un radio de 5 bloques y causando 5d12 de daño de fuego (recibes la mitad del daño). Constitución vs Defensa del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Terremoto: Golpeas el suelo, creando una línea de energía que derriba a los enemigos en un trayecto de 10 bloques. Constitución vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Jackpot: Te vuelves inmortal e inmune a todo tipo de daño durante 4 rondas; el efecto se pierde al atacar. Usos: 1 vez por combate."
+			if {_class} is "Guerrero":
+				execute console command "lp user %loop-player% parent settrack clases guerrero"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Corte Circular: Ejecutas un ataque circular, infligiendo el daño de tu arma a todos los enemigos a 1 bloque de distancia. Usos: 4 veces por combate. "
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Desgarrar: Atacas una herida abierta del enemigo, causando daño adicional de 1d6 perforante por cada 10 puntos de vida que le falten. Usos: 2 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Jet Gatling: Realiza dos ataques seguidos en un mismo turno. Usos: 3 veces por combate. "
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Granada Táctica: Lanzas una granada de 3d6 de daño de fuego en un radio de 3 bloques y empujas a los enemigos al explotar. Fuerza vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Llama Interna: Tu siguiente ataque prende al enemigo en llamas, causando 1d4 de daño de fuego adicional por turno hasta extinguirse. Usos: 2 veces por combate. "
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Estocada del Gladiador: Ejecuta un ataque en línea recta de 5 bloques, hiriendo a todos los enemigos en el trayecto con el daño de tu arma. Usos: 2 veces por combate."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Carga del Oso Blanco: Te lanzas 7 bloques hacia adelante con una fuerza imparable, empujando a todos los enemigos que no superen tu tirada. Fuerza vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Frenesí de Adrenalina: Libera una onda de llamas que inflige 4d10 de daño de fuego a todos los enemigos en el área. Fuerza vs Defensa del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Purgatorio: Controla tu adrenalina y llama a flamas masivas que dañan y empujan a todos los enemigos cercanos con 4d10 de daño de fuego. Usos: 1 vez por combate. "
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Segundo Aliento: Al impactar, sanas la mitad del daño infligido al enemigo. Se activa una vez cada 4 golpes."
+			if {_class} is "Hechicero":
+				execute console command "lp user %loop-player% parent settrack clases hechicero"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Esencias de Maná: Cada vez que aciertas un golpe, lanzas un d20. Si obtienes entre 18 y 20, recuperas 1 uso de habilidades."
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 FIREBALL!: Lanzas una bola de fuego que causa 2d8 de daño de fuego y explota en 3 astillas adicionales, cada una causando 1d4 de daño de fuego a enemigos cercanos. Inteligencia vs Defensa del objetivo. Usos: 3 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Ventisca: Lanzas 5 bolas de nieve que causan 1d6 de daño de hielo cada una, en un rango de 10 bloques. Inteligencia vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Corrosión: Creas un área de infección corrosiva de 3 bloques que causa 2d6 de daño necrótico y envenena a los enemigos en el área por 2 rondas. Inteligencia vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Exorcismo: Invoca un círculo oscuro que drena 3d4 de vida por turno a todos los enemigos en un radio de 5 bloques durante 4 rondas. Usos: 1 vez por combate."
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Sendero Mágico: Creas una nube mágica que te da movilidad y amortigua caídas, moviéndose contigo a 8 bloques de velocidad durante 4 rondas. Usos: 1 vez por combate."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Tormenta de Fuego: Lanzas 6 rayos de fuego que se dirigen a los enemigos cercanos, causando 3d4 de daño de fuego cada uno. Inteligencia vs Defensa de cada objetivo. Usos: 1 vez por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Cuchillo de Hielo: Arrojas un cuchillo de hielo que inflige 2d8 de daño de hielo y reduce 4 pies de movimiento del objetivo durante 2 rondas. Inteligencia vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Meteorito: Invoca un meteorito que inflige 2d6 de daño de fuego y 2d6 de daño contundente en un radio de 4 bloques. Inteligencia vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Agujero Negro: Crea un agujero negro que atrapa a todos los seres vivos en un área de 8 bloques, impidiendo su movimiento y dejándolos vulnerables. Usos: 1 vez por combate."
+			if {_class} is "Mago":
+				execute console command "lp user %loop-player% parent settrack clases mago"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Fireball Saltarina: Lanzas una bola de fuego que rebota hasta impactar en una entidad o pared, causando 2d8 de daño de fuego en un radio de 3 bloques. Rebota un máximo de 2 veces. Inteligencia vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Granizo de Morvath: Genera una lluvia necrótica que causa 1d10 de daño necrótico y reduce en 3 bloques la movilidad de los afectados durante 1 ronda. Inteligencia vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Grieta Arcana: Invoca una grieta de energía mágica en línea recta que derriba a los enemigos que no la evaden, causando 2d8 de daño necrótico. Inteligencia vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Elemental Blast: Genera una bola de fuego que persigue al objetivo y causa 5d4 de daño de fuego si impacta. Solo se puede evitar con defensa exitosa. Inteligencia vs Defensa menos Destreza del objetivo."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Descarga Sobrenatural: Un misil de energía arcana que causa ceguera por 1 ronda y 4d4 de daño eléctrico a un objetivo. Inteligencia vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Terremoto: Envía una onda de choque en línea de 10 bloques que derriba a todos los enemigos en su camino. Inteligencia vs Defensa del objetivo."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 ¡Quemados!: Canalizas energía y entras en un estado donde puedes lanzar bolas de fuego de 2d8 sin gastar usos, mientras no te muevas o seas movido. Inteligencia vs Defensa del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Makankosappo: Lanza un rayo radiante que rebota en superficies, causando 2d4 de daño radiante por impacto. Cada rebote suma 1d4 de daño hasta cortar la racha de rebotes. Inteligencia vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Fisura de Magma: Invoca un rayo de magma ardiente que causa 3d12 de daño de fuego y prende al objetivo, causando 1d4 de daño de fuego por turno. Inteligencia vs Defensa del objetivo. Usos: 1 vez por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Hirosaki: Invocas un meteorito devastador que tarda 1 turno en impactar, causando 3d12 de daño de fuego y 3d12 de daño contundente en un radio de 6 bloques. Inteligencia vs Defensa del objetivo. Usos: 1 vez por combate. "
+			if {_class} is "Monje":
+				execute console command "lp user %loop-player% parent settrack clases monje"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Debilitar: Usa tu Ki para reducir las defensas del objetivo, haciendo que los siguientes ataques contra él inflijan 2d4 de daño adicional durante 1 ronda. Usos: 3 veces por combate. "
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Flamas de Simurg: Conjura una bola de fuego que causa 3d6 de daño de fuego, con alcance de 6 bloques. Fuerza vs Defensa del objetivo. Usos: 3 veces por combate."
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Confundir: Realizas una maniobra que gira a tu enemigo 180 grados, dejándolo desorientado y aumentando el daño del siguiente ataque en 1d8. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Uppercut: Un poderoso golpe lanza al enemigo por los aires, causando 1d6 adicional al impacto y 1d8 de daño contundente por cada 5 bloques de caída (mínimo 1d8, máximo 6d8). Usos: 2 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Latigazo de Ki: Envías un latigazo de Ki en línea recta que derriba a los enemigos y causa daño de caída acumulable hasta 6d6 por cada 5 bloques de distancia. Fuerza vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Combustión Espontánea: Canalizas Ki a través del enemigo, encendiéndolo en llamas durante 2 rondas, causándole 1d4 de daño de fuego cada turno. Fuerza vs Defensa. Usos: 2 veces por combate."
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Puñetazo Aturdidor: Golpeas a una criatura y bloqueas su flujo de Ki, dejándola aturdida durante 1d4 turnos. Usos: 2 veces por combate."
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Ceguera: Atacas el flujo de Ki de los ojos de tu enemigo, causando ceguera temporal durante 1d6 turnos. Usos: 2 veces por combate."
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Black Meteor: Revestido en Ki, impactas a un enemigo infligiendo 2d12 de daño radiante, desplazándote tú y el enemigo 4 bloques en direcciones opuestas. Fuerza vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Destello Radiante: Preparas un ataque potente, causando 4d12 de daño radiante a un objetivo y a enemigos en un radio de 2 bloques alrededor de él. Usos: 1 vez por combate."
+			if {_class} is "Ranger":
+				execute console command "lp user %loop-player% parent settrack clases ranger"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Arrojar Objeto: Lanza un objeto con gran precisión hacia el objetivo, causando 3d4 de daño contundente. Destreza vs Defensa del objetivo. Usos: 4 veces por combate. "
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Lluvia de Flechas Congeladas: Genera una lluvia de flechas heladas en un área de 3 bloques, causando 2d4 de daño perforante y 2d4 de daño de hielo, reduciendo la movilidad del objetivo en 2 bloques. Alcance: 20 bloques. Destreza vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Objeto Explosivo: Transformas un objeto en un explosivo que inflige 2d8 de daño contundente y 2d8 de fuego en un área de 2 bloques. Destreza vs Defensa del objetivo. Usos: 2 veces por combate."
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Marchitamiento: Maldices temporalmente a un enemigo con daño de 2 puntos por turno durante 2 rondas. Usos: 2 veces por combate."
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Destello: Lanzas una explosión radiante que inflige 3d6 de daño y aturde a los enemigos por 1 turno. Alcance: 20 bloques. Destreza vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Huida: Aumenta tu agilidad y velocidad, dándote ventaja en pruebas de Destreza y el doble de movimiento durante 2 rondas. Usos: 1 vez por combate. "
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Lanzamiento de TNT: Invoca y arroja una dinamita que inflige 2d12 de daño de fuego y 2d12 de daño contundente en un área de 4 bloques. Destreza vs Defensa del objetivo. Usos: 1 vez por combate. "
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Impulso Ligero: Te mueves 10 bloques en línea recta hacia adelante, golpeando e infligiendo 2d4 de daño contundente a cualquier entidad en el camino. Destreza vs Defensa. Usos: 2 veces por combate. "
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Marca del Cazador: Inmovilizas a un enemigo durante 2 rondas, haciéndolo vulnerable a los ataques, que se realizan con ventaja. Destreza vs Defensa. Usos: 1 vez por combate. "
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 La Perdición del Cazador: Despliegas un área que acumula daño durante 3 rondas y libera una explosión al finalizar, aturdiendo al enemigo por 2 turnos si sobrevive. Destreza vs Defensa del objetivo. Usos: 1 vez por combate. "
+			if {_class} is "Picaro":
+				execute console command "lp user %loop-player% parent settrack clases picaro"
+				if {_level} >= 1:
+					execute console command "adminhabilidad agregar %loop-player% 3 Envenenar: Ataque que causa envenenamiento al objetivo durante 1 ronda. Destreza vs Defensa del objetivo. Usos: 3 veces por combate. "
+				if {_level} >= 8:
+					execute console command "adminhabilidad agregar %loop-player% 4 Puñalada: Causa 2d6 de daño adicional al atacar por la espalda. Pasiva. "
+				if {_level} >= 15:
+					execute console command "adminhabilidad agregar %loop-player% 5 Acrobacias: Permite esquivar ataques con ventaja en pruebas de Destreza durante los siguientes 2 turnos. Usos: 2 veces por combate. "
+				if {_level} >= 22:
+					execute console command "adminhabilidad agregar %loop-player% 6 Punto Débil: Identificas el punto débil del enemigo, infligiendo 2d6 de daño adicional durante las próximas 2 rondas. Usos: 2 veces por combate. "
+				if {_level} >= 29:
+					execute console command "adminhabilidad agregar %loop-player% 7 Emboscada: Causa un daño adicional de 1d12 en el primer golpe del combate. Pasiva. "
+				if {_level} >= 36:
+					execute console command "adminhabilidad agregar %loop-player% 8 Ataque Furtivo: Inflige 2d6 de daño adicional si el objetivo está alejado de sus aliados (mínimo 5 bloques de distancia). Pasiva. "
+				if {_level} >= 43:
+					execute console command "adminhabilidad agregar %loop-player% 9 Dash: Te impulsas rápidamente, esquivando un ataque de forma exitosa. Usos: 1 vez por combate. "
+				if {_level} >= 50:
+					execute console command "adminhabilidad agregar %loop-player% 10 Granada Aturdidora: Lanzas una granada que aturde a los objetivos durante 1d4 turnos al impactar en un radio de 5 bloques. Destreza vs Defensa. Usos: 1 vez por combate. "
+				if {_level} >= 57:
+					execute console command "adminhabilidad agregar %loop-player% 11 Velo de las Sombras: Te vuelves invisible durante 2 rondas y puedes seguir atacando sin perder el sigilo. Usos: 1 vez por combate. "
+				if {_level} >= 64:
+					execute console command "adminhabilidad agregar %loop-player% 12 Teletransportación: Te mueves casi instantáneamente a una ubicación dentro de un rango de 10 bloques. Usos: 2 veces por combate. "
+
+every 300 seconds:
+    execute console command "actualizar"

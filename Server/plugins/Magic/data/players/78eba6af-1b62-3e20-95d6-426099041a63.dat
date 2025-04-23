@@ -1,0 +1,34 @@
+id: 78eba6af-1b62-3e20-95d6-426099041a63
+name: loler923
+created: 1739651676336
+updated: 1739662214967
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 68e9332b550,a0c51967b43f,df56170fa7b0
+    mana_timestamp: 1739662214844
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 16.665000915527344

@@ -1,0 +1,34 @@
+id: c9dc162a-a79c-317b-82fa-8cdf0083345e
+name: _Etriox_
+created: 1739651569837
+updated: 1740706200894
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: 2108.967288229927,63.0,-1791.3198695682665,principal,-27.849884,33.281845
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 24cd40a6b79,b59ae67e136,ccd1b4cbb50f
+    mana_timestamp: 1740706200753
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 27.114999771118164

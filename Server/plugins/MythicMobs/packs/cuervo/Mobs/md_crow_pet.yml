@@ -1,0 +1,45 @@
+md_crow_pet:
+  Type: wolf
+  Display: 'Roo'
+  Health: 100
+  Damage: 2
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  DamageModifiers:
+  - POISON 0
+  - WITHER 0
+  - MAGIC 0
+  - HOT_FLOOR 0
+  - FIRE_TICK 0
+  - BLOCK_EXPLOSION 0
+  - ENTITY_EXPLOSION 0
+  - SUFFOCATION 0
+  - CONTACT 0
+  - PROJECTILE 0.5  
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=md_crow;n=name} @self ~onSpawn
+  - skill{s=md_crow_call_feed;cd=2} @self ~onInteract
+  - sound{s=entity.parrot.hurt;p=0.7;v=1.2} @self ~onDamaged
+# CIv8F9X3TJ9IfIevan2E2+TZB1W73OFQKkKmMUGwcQdrCbJj+FpwfGdL70s3tU2FYfeTcuxGCahxf7VJ/dMx+s3mjF1OjB6a/wLv255eyq4=

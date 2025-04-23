@@ -1,0 +1,52 @@
+npcs:
+  '337': "Alric"
+
+conversations:
+  Alric: 
+    quester: "&6Alric" 
+    first: "Cooldown,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Ey, muchacho/a! La madera no se corta sola, y el pueblo necesita más troncos. ¿Puedes ayudarme hoy?"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7Tienes que talar 96 troncos de abedul. Usa un buen hacha y no te preocupes por los árboles, plantaremos más después."
+        pointer: "Perfecto" 
+      SiRechazan:
+        text: "&7Está bien, no todos los días son para talar. Si cambias de opinión, ya sabes dónde encontrarme."
+      Cooldown:
+        text: "&7Tranquilo/a, muchacho/a, ya hiciste tu parte por hoy. La madera puede esperar hasta mañana."
+        conditions: "talaenpausa"  
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7Sí, dime qué hay que hacer."
+        event: misionaceptadatala,iniciotala
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7Lo siento, pero hoy no puedo."
+        pointer: "SiRechazan" 
+      Perfecto:
+        text: "&7¡Entendido! Voy a llenar ese almacén de madera."
+
+conditions:
+  talaenpausa: "tag tala_en_pausa"
+
+schedules:
+  talamis: 
+    type: realtime-cron 
+    time: '0 0 * * *' 
+    events: talacontinuar
+
+events: 
+  misionaceptadatala: "notify &5¡Misión Aceptada, a talar!"
+  iniciotala: "objective start talaarboles"
+  talamisioncumplida: "notify &6Tala: ¡Misión Cumplida!"
+  premiotala: "mmoprofessionexperience woodcutting 750"
+  recompensatala: "mmoitemgive MATERIAL MONEDA_1 10"
+  talapausa: "tag add tala_en_pausa"
+  talacontinuar: "tag delete tala_en_pausa"
+
+objectives: 
+  talaarboles:  "mmocorebreakblock 96 block:BIRCH_LOG events:talamisioncumplida,premiotala,recompensatala,talapausa" 

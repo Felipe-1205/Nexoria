@@ -1,0 +1,196 @@
+######## created by samus2002 #########
+
+# Hunter Focus #
+
+Hunter_Focus:
+  Type: ARMOR_STAND
+  ItemHead: hunters_focus_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=hunters_focus_1:4} ~onSpawn
+  - equip{item=hunters_focus_2:4} ~onSignal:FOCUS2
+  - equip{item=hunters_focus_3:4} ~onSignal:FOCUS3
+  - remove @self ~onSignal:FOCUSEND
+  - remove{delay=140} @self ~onSpawn
+  
+# Quick Shot #
+
+Quick_Shot:
+  Type: ARMOR_STAND
+  ItemHead: quick_shot
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_shot:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Quick_Shot_25:
+  Type: ARMOR_STAND
+  ItemHead: quick_shot
+  Pose:
+    Head: 0,5,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_shot:4} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Quick_Shot_-25:
+  Type: ARMOR_STAND
+  ItemHead: quick_shot
+  Pose:
+    Head: 0,-5,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_shot:4} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Quick_Shot_50:
+  Type: ARMOR_STAND
+  ItemHead: quick_shot
+  Pose:
+    Head: 0,10,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_shot:4} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Quick_Shot_-50:
+  Type: ARMOR_STAND
+  ItemHead: quick_shot
+  Pose:
+    Head: 0,-10,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_shot:4} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+# Backstep #
+
+Backstep:
+  Type: ARMOR_STAND
+  ItemHead: backstep_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=backstep_1:4} ~onSpawn
+  - equip{item=backstep_2:4;delay=2} ~onSpawn
+  - equip{item=backstep_3:4;delay=4} ~onSpawn
+  - equip{item=backstep_4:4;delay=6} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+# Windrazor #
+
+Windrazor:
+  Type: ARMOR_STAND
+  ItemHead: archer_bow_spirit_1
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=archer_bow_spirit_1:4} ~onSpawn
+  - equip{item=archer_bow_spirit_2:4;delay=2} ~onSpawn
+  - equip{item=archer_bow_spirit_3:4;delay=4} ~onSpawn
+  - equip{item=archer_bow_spirit_4:4;delay=6} ~onSpawn
+  - effect:sound{s=archer_sounds:samus.bow_spirit_summon;volume=1;pitch=1} @self ~onSpawn
+ 
+# Deadly Javelin #
+
+Deadly_Javelin:
+  Type: ARMOR_STAND
+  ItemHead: javelin
+  Pose:
+    Head: 0,2,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=javelin:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  #- effect:particles{particle=redstone;color=#93ff73;amount=2;hS=0.1;vS=0.1;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+    
+# Arrow Barrage #
+
+Arrow_Barrage:
+  Type: ARMOR_STAND
+  ItemHead: archer_bow_spirit_dragon_1
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=archer_bow_spirit_dragon_1:4} ~onSpawn
+  - equip{item=archer_bow_spirit_dragon_2:4;delay=2} ~onSpawn
+  - equip{item=archer_bow_spirit_dragon_3:4;delay=4} ~onSpawn
+  - equip{item=archer_bow_spirit_dragon_4:4;delay=6} ~onSpawn
+  - effect:sound{s=archer_sounds:samus.bow_spirit_summon;volume=1;pitch=1} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+# Dragon Piercer #
+
+Dragon_Piercer:
+  Type: ARMOR_STAND
+  ItemHead: dragon_spirit_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_spirit_1:4} ~onSpawn
+  - equip{item=dragon_spirit_2:4;delay=2} ~onSpawn
+  - equip{item=dragon_spirit_3:4;delay=4} ~onSpawn
+  - equip{item=dragon_spirit_4:4;delay=6} ~onSpawn
+  - effect:sound{s=archer_sounds:samus.dragon_growl;volume=1;pitch=1;delay=10} @self ~onSpawn
+  - equip{item=dragon_spirit_open:4;delay=60} ~onSpawn
+  - effect:sound{s=archer_sounds:samus.dragon_roar;volume=1;pitch=1;delay=50} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+Dragon_Arrow:
+  Type: ARMOR_STAND
+  ItemHead: dragon_arrow
+  Pose:
+    Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_arrow:4} ~onSpawn
+  - animatearmorstand{d=100;head=0,0,-360;ignoreempty=false} @self ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - effect:particleorbital{r=1.3;points=25;t=50;i=1;particle=flame;oy=1;rX=45;rY=0;rZ=0} @self ~onSpawn
+  - effect:particleorbital{r=1.3;points=25;t=50;i=1;particle=flame;oy=1;rX=-45;rY=0;rZ=0} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#fc6f03;amount=7;hS=0.3;vS=0.3;y=1.3;speed=0;forwardOffset=-2;sideOffset=0} @self ~onTimer:1

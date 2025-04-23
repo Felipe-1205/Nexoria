@@ -1,0 +1,159 @@
+######## created by samus2002 #########
+
+# Scorpion King #
+
+Scorpion_King:
+  Type: ZOMBIE
+  Display: '&2Rey Escorpión'
+  Health: 350
+  Damage: 9
+  BossBar:
+    Enabled: true
+    Title: '&4Rey Escorpión'
+    Range: 25
+    Color: RED
+    Style: SEGMENTED_12
+    DarkenSky: false
+  Options:
+    MovementSpeed: 0.24
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=scorpion_king;n=false;step=1;drive=true} @self ~onSpawn
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=1} @self ~onDeath
+  - skill{s=Scorpion_King_Dash} ~onTimer:200 0.5
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Melee_Attack} ~onTimer:10 0.7
+  - skill{s=Scorpion_King_Skill-1} ~onTimer:20 >60%
+  - skill{s=Scorpion_King_Skill-2} ~onTimer:20 <60%
+  Drops:
+  - mmoitems{type=ornament;id=TALISMANTARANTULA} 1 0.05
+  - mmoitems{type=material;id=MONEDA_2} 1-2 0.25
+  - GemasBosses
+  - mmoitems{type=consumable;id=PERGAMINOXP_3} 1 0.05
+  
+Scorpion_Baby:
+  Type: ZOMBIE
+  Display: '&2Scorpion Baby'
+  Health: 2
+  Damage: 5
+  Options:
+    MovementSpeed: 0.28
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=scorpion_baby;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=2} @self ~onTimer:140 0.35
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Baby_Melee_Attack} ~onTimer:10
+  - remove{delay=200} @self ~onSpawn
+  Drops:
+  - mmoitems{type=material;id=MONEDA_1} 1-2 0.10
+  - MobsComunes
+  
+Poison_Puddle:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+    Small: false
+    Invisible: true
+    Interactable: false
+    Collidable: false
+    Invincible: true
+  Skills:
+  - model{mid=poison_puddle;n=false;step=1} @self ~onSpawn
+  - potion{type=POISON;duration=80;level=1;hasParticles=false} @PIR{r=4} ~onTimer:20
+  - skill{s=Poison_Puddle_LOOP} ~onTimer:40
+  - effect:sound{s=scorpion_sounds:samus.scorpion_poison;volume=0.9;pitch=1} @self ~onTimer:40
+  - remove{delay=160} @self ~onSpawn
+  
+Scorpion_Baby_Pet:
+  Type: WOLF
+  Display: '&2Scorpion Baby'
+  Health: 100
+  Damage: 2
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: true
+    Persistent: false
+    Invincible: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  - 4 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 monsters
+  Skills:
+  - model{mid=scorpion_baby;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=2} @self ~onTimer:140 0.35
+  - effect:sound{s=scorpion_sounds:samus.scorpion_idle;volume=1;pitch=2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Baby_Melee_Attack_Pet} ~onTimer:10
+
+# idvjdjv/8X/d6Htk57FYiJkM+Wf0gogpO1yX1a3vdv77bIdILJiB5JUVdBK5I1JnxsZtDlh5f91USRGIu4N4rbQXJW42MoezHMXU9qCSKR0=

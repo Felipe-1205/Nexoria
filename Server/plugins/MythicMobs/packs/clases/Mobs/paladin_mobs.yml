@@ -1,0 +1,365 @@
+######## created by samus2002 #########
+
+# Radiant Aura #
+
+Radiant_Aura:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  #- model{mid=holy_ring;n=false} @self ~onSpawn
+  - equip{item=holy_ring_1:4} ~onSpawn
+  - equip{item=holy_ring_2:4} ~onSignal:HOLYRING2
+  - equip{item=holy_ring_3:4} ~onSignal:HOLYRING3
+  - remove @self ~onSignal:HOLYRING_END
+  - remove{delay=141} @self ~onSpawn
+  #- mounttarget{delay=1} @owner ~onSpawn
+  - auraremove{aura=Radiant_Aura_Stack;delay=140} @owner ~onSpawn
+  
+# Holy Strike #
+
+Holy_Strike_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: paladin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=paladin_slash_1:0;delay=2} ~onSpawn
+  - equip{item=paladin_slash_2:0;delay=4} ~onSpawn
+  - equip{item=paladin_slash_3:0;delay=6} ~onSpawn
+  - equip{item=paladin_slash_4:0;delay=8} ~onSpawn
+  - equip{item=paladin_slash_5:0;delay=10} ~onSpawn
+  - equip{item=paladin_slash_6:0;delay=12} ~onSpawn
+  - equip{item=paladin_slash_7:0;delay=14} ~onSpawn
+  - equip{item=paladin_slash_8:0;delay=16} ~onSpawn
+  - equip{item=paladin_slash_9:0;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Holy_Strike_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,180
+  ItemHand: paladin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=paladin_slash_1:0;delay=2} ~onSpawn
+  - equip{item=paladin_slash_2:0;delay=4} ~onSpawn
+  - equip{item=paladin_slash_3:0;delay=6} ~onSpawn
+  - equip{item=paladin_slash_4:0;delay=8} ~onSpawn
+  - equip{item=paladin_slash_5:0;delay=10} ~onSpawn
+  - equip{item=paladin_slash_6:0;delay=12} ~onSpawn
+  - equip{item=paladin_slash_7:0;delay=14} ~onSpawn
+  - equip{item=paladin_slash_8:0;delay=16} ~onSpawn
+  - equip{item=paladin_slash_9:0;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Holy_Strike_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  ItemHand: paladin_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=paladin_slash_1:0;delay=2} ~onSpawn
+  - equip{item=paladin_slash_2:0;delay=4} ~onSpawn
+  - equip{item=paladin_slash_3:0;delay=6} ~onSpawn
+  - equip{item=paladin_slash_4:0;delay=8} ~onSpawn
+  - equip{item=paladin_slash_5:0;delay=10} ~onSpawn
+  - equip{item=paladin_slash_6:0;delay=12} ~onSpawn
+  - equip{item=paladin_slash_7:0;delay=14} ~onSpawn
+  - equip{item=paladin_slash_8:0;delay=16} ~onSpawn
+  - equip{item=paladin_slash_9:0;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+# Unbreakable Will #
+  
+Unbreakable_Will:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: paladin_shield_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @owner ~onSpawn
+  - equip{item=paladin_shield_1:4;delay=1} ~onSpawn
+  - equip{item=paladin_shield_2:4;delay=2} ~onSpawn
+  - equip{item=paladin_shield_3:4;delay=3} ~onSpawn
+  - equip{item=paladin_shield_4:4;delay=4} ~onSpawn
+  - equip{item=paladin_shield_5:4;delay=5} ~onSpawn
+  - equip{item=paladin_shield_6:4;delay=6} ~onSpawn
+  - equip{item=paladin_shield_7:4;delay=7} ~onSpawn
+  - equip{item=paladin_shield_8:4;delay=8} ~onSpawn
+  - equip{item=paladin_shield_9:4;delay=9} ~onSpawn
+  - equip{item=paladin_shield_10:4;delay=10} ~onSpawn
+  - equip{item=paladin_shield_6:4;delay=18} ~onSpawn
+  - equip{item=paladin_shield_5:4;delay=19} ~onSpawn
+  - equip{item=paladin_shield_4:4;delay=20} ~onSpawn
+  - equip{item=paladin_shield_3:4;delay=21} ~onSpawn
+  - equip{item=paladin_shield_2:4;delay=22} ~onSpawn
+  - equip{item=paladin_shield_1:4;delay=23} ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.shield_form;volume=0.8;pitch=1} @self ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.shield_creation;volume=0.8;pitch=1;delay=6} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+# Heavenly Shield #
+
+Heavenly_Shield:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=holy_shield_aura:4} @self ~onSpawn
+  - animatearmorstand{d=200;head=0,-360,0;ignoreempty=false} @self ~onSpawn
+  
+# Hammer Of Justice #
+  
+Hammer_Of_Justice:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=paladin_hammer_fx;n=false} @self ~onSpawn
+  - state{s=smash} @self ~onSpawn
+  - remove{delay=29} @self ~onSpawn
+  
+Light_Eruption:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: light_eruption_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=light_eruption_1:0;delay=2} ~onSpawn
+  - equip{item=light_eruption_2:0;delay=4} ~onSpawn
+  - equip{item=light_eruption_3:0;delay=6} ~onSpawn
+  - equip{item=light_eruption_4:0;delay=8} ~onSpawn
+  - equip{item=light_eruption_5:0;delay=10} ~onSpawn
+  - equip{item=light_eruption_6:0;delay=12} ~onSpawn
+  - equip{item=light_eruption_7:0;delay=14} ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.light_eruption;volume=0.9;pitch=1} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+# Bound Seal #
+
+Bound_Seal_Chain:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: holy_chains
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=holy_chains:4;delay=1} ~onSpawn
+  - animatearmorstand{d=200;head=0,-360,0;ignoreempty=false} @self ~onSpawn
+  - remove{delay=60} @self ~onSpawn
+  
+Bound_Seal_Spear2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: holy_spear_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  #- look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - equip{item=holy_spear_1:0;delay=2} ~onSpawn
+  - equip{item=holy_spear_2:0;delay=3} ~onSpawn
+  - equip{item=holy_spear_3:0;delay=4} ~onSpawn
+  - equip{item=holy_spear_4:0;delay=5} ~onSpawn
+  
+Bound_Seal_Spear:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=holy_spear;n=false} @self ~onSpawn
+  - state{s=stab} @self ~onSpawn
+  - remove{delay=23} @self ~onSpawn
+  
+  
+Bound_Seal_Mark:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: holy_mark_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=holy_mark_1:4;delay=2} ~onSpawn
+  - equip{item=holy_mark_2:4;delay=3} ~onSpawn
+  - equip{item=holy_mark_3:4;delay=4} ~onSpawn
+  - equip{item=holy_mark_4:4;delay=5} ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+# Hammer Of Justice #
+  
+Hammer_Of_Justice:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=paladin_hammer_fx;n=false} @self ~onSpawn
+  - state{s=smash} @self ~onSpawn
+  - remove{delay=29} @self ~onSpawn
+  
+# Last Stand #
+  
+holy_smash_rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: holy_smash_rupture_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=holy_smash_rupture_1:0;delay=2} ~onSpawn
+  - equip{item=holy_smash_rupture_2:0;delay=34} ~onSpawn
+  - equip{item=holy_smash_rupture_3:0;delay=36} ~onSpawn
+  - equip{item=holy_smash_rupture_4:0;delay=38} ~onSpawn
+  - equip{item=holy_smash_rupture_5:0;delay=40} ~onSpawn
+  - equip{item=holy_smash_rupture_6:0;delay=42} ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.ground_smash;volume=0.9;pitch=1} @self ~onSpawn
+  - remove{delay=44} @self ~onSpawn
+  
+light_beam_fx:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: light_beam_fx_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=light_beam_fx_1:0;delay=2} ~onSpawn
+  - equip{item=light_beam_fx_2:0;delay=4} ~onSpawn
+  - equip{item=light_beam_fx_3:0;delay=6} ~onSpawn
+  - equip{item=light_beam_fx_4:0;delay=8} ~onSpawn
+  - equip{item=light_beam_fx_5:0;delay=10} ~onSpawn
+  - equip{item=light_beam_fx_6:0;delay=12} ~onSpawn
+  - equip{item=light_beam_fx_7:0;delay=14} ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.light_eruption;volume=0.5;pitch=1} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+light_beam_fx_rotated:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  ItemOffHand: light_beam_fx_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=light_beam_fx_1:5;delay=2} ~onSpawn
+  - equip{item=light_beam_fx_2:5;delay=4} ~onSpawn
+  - equip{item=light_beam_fx_3:5;delay=6} ~onSpawn
+  - equip{item=light_beam_fx_4:5;delay=8} ~onSpawn
+  - equip{item=light_beam_fx_5:5;delay=10} ~onSpawn
+  - equip{item=light_beam_fx_6:5;delay=12} ~onSpawn
+  - equip{item=light_beam_fx_7:5;delay=14} ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.light_eruption;volume=0.5;pitch=1} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+paladin_spin_slash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @owner ~onSpawn
+  - equip{item=paladin_spin_slash:0;delay=2} ~onSpawn
+  #- effect:sound{s=paladin_sounds:samus.spin_attack;volume=0.9;pitch=1} @self ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.spin_attack_wheel;volume=0.9;pitch=1} @self ~onSpawn
+  - equip{item=AIR:0;delay=13} ~onSpawn
+  - equip{item=holy_wings_clean_1:4;delay=15} ~onSpawn
+  - equip{item=holy_wings_clean_2:4;delay=16} ~onSpawn
+  - equip{item=holy_wings_clean_3:4;delay=17} ~onSpawn
+  - equip{item=holy_wings_clean_4:4;delay=18} ~onSpawn
+  - equip{item=holy_wings_clean_5:4;delay=19} ~onSpawn
+  - equip{item=holy_wings_5:4;delay=24} ~onSpawn
+  - equip{item=holy_wings_4:4;delay=31} ~onSpawn
+  - equip{item=holy_wings_3:4;delay=32} ~onSpawn
+  - equip{item=holy_wings_2:4;delay=33} ~onSpawn
+  - equip{item=holy_wings_1:4;delay=34} ~onSpawn
+  #- effect:sound{s=paladin_sounds:samus.spin_attack;volume=0.9;pitch=1;delay=20} @self ~onSpawn
+  - effect:sound{s=paladin_sounds:samus.spin_attack_wheel;volume=0.9;pitch=1;delay=20} @self ~onSpawn
+  - remove{delay=35} @self ~onSpawn

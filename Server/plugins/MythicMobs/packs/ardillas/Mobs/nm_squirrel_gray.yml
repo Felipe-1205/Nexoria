@@ -1,0 +1,38 @@
+nm_squirrel_gray:
+  Type: wolf
+  Display: ''
+  Health: 16
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - FIRE 1.2
+  Skills:
+  - model{mid=nm_squirrel_gray;n=name} @self ~onSpawn
+  - model{mid=nm_squirrel_gray;n=name} @self ~onLoad
+  - sound{s=entity.rabbit.hurt;p=0.7;v=1} @self ~onDamaged
+  - randomskill{s=nm_squirrel_hurt_1,nm_squirrel_hurt_2,nm_squirrel_hurt_3;sync=true} ~onDamaged
+  - sound{s=entity.rabbit.death;p=0.7;v=1} @self ~onDeath
+  - randomskill{s=nm_squirrel_sniff_parse,nm_squirrel_tail_wiggle_parse,nm_squirrel_jump_parse;sync=true;cd=3} ~onInteract

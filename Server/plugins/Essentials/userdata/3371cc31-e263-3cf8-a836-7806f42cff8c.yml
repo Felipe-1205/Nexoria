@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 170.51.98.119
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739661509242
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740009085468
+  login: 1740008476113
+money: '0'
+last-account-name: IsJustEpicButter
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2954.1266494811316
+  y: 77.0
+  z: 470.53903492126807
+  yaw: 82.130126953125
+  pitch: 29.41097640991211
+nickname: Igris
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 36.4834926978491
+  y: 80.0
+  z: 22.48851384989975
+  yaw: -78.6070556640625
+  pitch: 28.71921730041504

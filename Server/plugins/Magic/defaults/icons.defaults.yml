@@ -1,0 +1,1679 @@
+#
+
+default:
+  item: ender_pearl
+  item_disabled: ender_pearl
+  force_url: true
+  url: http://textures.minecraft.net/texture/5163dafac1d91a8c91db576caac784336791a6e18d8f7f62778fc47bf146b6
+  url_disabled: http://textures.minecraft.net/texture/1c28376acb23cd93322c0a5d569b48b7cd631a6d65dd4f226adb9e9dd7e5c
+  glyph: 
+admission:
+  item: skull:http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992{18239}
+  item_disabled: skull:http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992{18240}
+  legacy_item: spell_icon:182
+  legacy_item_disabled: spell_icon_disabled:182
+  url: http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992
+  type: spell
+  glyph: 
+  vanilla_item: oak_door{18001}
+  vanilla_item_disabled: oak_door{18002}
+airscooter:
+  item: skull:http://textures.minecraft.net/texture/4a23ccd51565d2e246675c86aef11b5412662c15ecc2e9f3ef425adc91d1{18065}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a23ccd51565d2e246675c86aef11b5412662c15ecc2e9f3ef425adc91d1{18066}
+  legacy_item: spell_icon:241
+  legacy_item_disabled: spell_icon_disabled:241
+  url: http://textures.minecraft.net/texture/4a23ccd51565d2e246675c86aef11b5412662c15ecc2e9f3ef425adc91d1
+  type: spell
+  glyph: 
+  vanilla_item: bone_meal{18001}
+  vanilla_item_disabled: bone_meal{18002}
+anvil:
+  item: skull:http://textures.minecraft.net/texture/505b8ba793c372d9fb45db20df80c1606b19b7421a9bbcc258ae2a65d65ea7{18087}
+  item_disabled: skull:http://textures.minecraft.net/texture/505b8ba793c372d9fb45db20df80c1606b19b7421a9bbcc258ae2a65d65ea7{18088}
+  legacy_item: spell_icon:90
+  legacy_item_disabled: spell_icon_disabled:90
+  url: http://textures.minecraft.net/texture/505b8ba793c372d9fb45db20df80c1606b19b7421a9bbcc258ae2a65d65ea7
+  type: spell
+  glyph: 
+  vanilla_item: anvil{18001}
+  vanilla_item_disabled: anvil{18002}
+arrow:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18185}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18186}
+  legacy_item: spell_icon:57
+  legacy_item_disabled: spell_icon_disabled:57
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  glyph: 
+  vanilla_item: arrow{18001}
+  vanilla_item_disabled: arrow{18002}
+arrow9:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18109}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18110}
+  legacy_item: spell_icon:249
+  legacy_item_disabled: spell_icon_disabled:249
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  glyph: 
+  vanilla_item: spectral_arrow{CustomModelData:18024}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18025}
+arrow_blink:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18183}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18184}
+  legacy_item: spell_icon:248
+  legacy_item_disabled: spell_icon_disabled:248
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18022,Potion:regeneration}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18023,Potion:regeneration}
+arrow_bomb:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18117}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18118}
+  legacy_item: spell_icon:247
+  legacy_item_disabled: spell_icon_disabled:247
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18020,Potion:healing}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18021,Potion:healing}
+arrow_fire:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18067}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18068}
+  legacy_item: spell_icon:246
+  legacy_item_disabled: spell_icon_disabled:246
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18018,Potion:fire_resistance}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18019,Potion:fire_resistance}
+arrow_grapple:
+  item: spectral_arrow{CustomModelData:18012}
+  item_disabled: spectral_arrow{CustomModelData:18013}
+  legacy_item: spell_icon:243
+  legacy_item_disabled: spell_icon_disabled:243
+  type: spell
+arrow_ice:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18161}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18162}
+  legacy_item: spell_icon:244
+  legacy_item_disabled: spell_icon_disabled:244
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18014,Potion:slow_falling}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18015,Potion:slow_falling}
+arrow_light:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18181}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18182}
+  legacy_item: spell_icon:242
+  legacy_item_disabled: spell_icon_disabled:242
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{18010}
+  vanilla_item_disabled: spectral_arrow{18011}
+arrow_poison:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18219}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18220}
+  legacy_item: spell_icon:245
+  legacy_item_disabled: spell_icon_disabled:245
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18016,Potion:poison}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18017,Potion:poison}
+arrow_regular:
+  item: arrow{18001}
+  item_disabled: arrow{18002}
+  legacy_item: arrow
+  type: spell
+arrow_shock:
+  item: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18009}
+  item_disabled: skull:http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094{18010}
+  legacy_item: spell_icon:250
+  legacy_item_disabled: spell_icon_disabled:250
+  url: http://textures.minecraft.net/texture/ea96e1b8c4d458f8f5443fa66eb376981f7b2ec385386db67faf3f1589094
+  type: spell
+  vanilla_item: spectral_arrow{CustomModelData:18026,Potion:swiftness}
+  vanilla_item_disabled: spectral_arrow{CustomModelData:18027,Potion:swiftness}
+arrowrain:
+  item: skull:http://textures.minecraft.net/texture/7d89462020cc12f63d5117d37b52e642536de7fa774d2d96e80c72e1d4ff6{18039}
+  item_disabled: skull:http://textures.minecraft.net/texture/7d89462020cc12f63d5117d37b52e642536de7fa774d2d96e80c72e1d4ff6{18040}
+  legacy_item: spell_icon:54
+  legacy_item_disabled: spell_icon_disabled:54
+  url: http://textures.minecraft.net/texture/7d89462020cc12f63d5117d37b52e642536de7fa774d2d96e80c72e1d4ff6
+  type: spell
+  glyph: 
+  vanilla_item: spectral_arrow{18028}
+  vanilla_item_disabled: spectral_arrow{18029}
+blast:
+  item: skull:http://textures.minecraft.net/texture/4a458a62561a9e6ab960b9bdccaddbf039429c836dfacdd39ff7c7085c9e9b9{18223}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a458a62561a9e6ab960b9bdccaddbf039429c836dfacdd39ff7c7085c9e9b9{18224}
+  legacy_item: spell_icon:108
+  legacy_item_disabled: spell_icon_disabled:108
+  url: http://textures.minecraft.net/texture/4a458a62561a9e6ab960b9bdccaddbf039429c836dfacdd39ff7c7085c9e9b9
+  type: spell
+  glyph: 
+  vanilla_item: gunpowder{18001}
+  vanilla_item_disabled: gunpowder{18002}
+blessing:
+  item: skull:http://textures.minecraft.net/texture/775c41bd5e4ef3cba5f9bdc5258973c95477e819cb20c163ffb378db5ae3{18137}
+  item_disabled: skull:http://textures.minecraft.net/texture/775c41bd5e4ef3cba5f9bdc5258973c95477e819cb20c163ffb378db5ae3{18138}
+  legacy_item: spell_icon:10
+  legacy_item_disabled: spell_icon_disabled:10
+  url: http://textures.minecraft.net/texture/775c41bd5e4ef3cba5f9bdc5258973c95477e819cb20c163ffb378db5ae3
+  type: spell
+  glyph: 
+  vanilla_item: honey_bottle{18001}
+  vanilla_item_disabled: honey_bottle{18002}
+blind:
+  item: skull:http://textures.minecraft.net/texture/c7a8e7c9d3375135e39aa6d57b4e60539cf8f6efc5b58c83a13caf40561560{18179}
+  item_disabled: skull:http://textures.minecraft.net/texture/c7a8e7c9d3375135e39aa6d57b4e60539cf8f6efc5b58c83a13caf40561560{18180}
+  legacy_item: spell_icon:166
+  legacy_item_disabled: spell_icon_disabled:166
+  url: http://textures.minecraft.net/texture/c7a8e7c9d3375135e39aa6d57b4e60539cf8f6efc5b58c83a13caf40561560
+  type: spell
+  glyph: 
+  vanilla_item: ink_sac{18001}
+  vanilla_item_disabled: ink_sac{18002}
+blink:
+  item: skull:http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2{18069}
+  item_disabled: skull:http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2{18070}
+  legacy_item: spell_icon:134
+  legacy_item_disabled: spell_icon_disabled:134
+  url: http://textures.minecraft.net/texture/a35cfb663dbde27598eebe76b0fdac2593f1d696b3e6b9e044edeb8d48c2e2
+  type: spell
+  glyph: 
+  vanilla_item: ender_pearl{18001}
+  vanilla_item_disabled: ender_pearl{18002}
+blob:
+  item: skull:http://textures.minecraft.net/texture/bc8e7e971bbac56883fe9bfe1b38c5f568ece6cbe09ca59d85f6dab4688d14{18081}
+  item_disabled: skull:http://textures.minecraft.net/texture/bc8e7e971bbac56883fe9bfe1b38c5f568ece6cbe09ca59d85f6dab4688d14{18082}
+  legacy_item: spell_icon:128
+  legacy_item_disabled: spell_icon_disabled:128
+  url: http://textures.minecraft.net/texture/bc8e7e971bbac56883fe9bfe1b38c5f568ece6cbe09ca59d85f6dab4688d14
+  type: spell
+  glyph: 
+  vanilla_item: clay_ball{18001}
+  vanilla_item_disabled: clay_ball{18002}
+bomb:
+  item: skull:http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e{18233}
+  item_disabled: skull:http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e{18234}
+  legacy_item: spell_icon:93
+  legacy_item_disabled: spell_icon_disabled:93
+  url: http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e
+  type: spell
+  glyph: 
+  vanilla_item: black_carpet{18001}
+  vanilla_item_disabled: black_carpet{18002}
+boom:
+  item: skull:http://textures.minecraft.net/texture/70df3afc6a6035b189f83d2cfc84ff9ffe33750273247d1e41acb5a805f54{18287}
+  item_disabled: skull:http://textures.minecraft.net/texture/70df3afc6a6035b189f83d2cfc84ff9ffe33750273247d1e41acb5a805f54{18288}
+  legacy_item: spell_icon:35
+  legacy_item_disabled: spell_icon_disabled:35
+  url: http://textures.minecraft.net/texture/70df3afc6a6035b189f83d2cfc84ff9ffe33750273247d1e41acb5a805f54
+  type: spell
+  glyph: 
+  vanilla_item: blaze_powder{18001}
+  vanilla_item_disabled: blaze_powder{18002}
+boomstown:
+  item: skull:http://textures.minecraft.net/texture/91e9bb78d29e2967d52274d370ad78cb61d15eca3d26a8d6bfc24f887072fa81{18289}
+  item_disabled: skull:http://textures.minecraft.net/texture/91e9bb78d29e2967d52274d370ad78cb61d15eca3d26a8d6bfc24f887072fa81{18290}
+  legacy_item: spell_icon:196
+  legacy_item_disabled: spell_icon_disabled:196
+  url: http://textures.minecraft.net/texture/91e9bb78d29e2967d52274d370ad78cb61d15eca3d26a8d6bfc24f887072fa81
+  type: spell
+  glyph: 
+  vanilla_item: firework_rocket{18003}
+  vanilla_item_disabled: firework_rocket{18004}
+boon:
+  item: skull:http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c{18265}
+  item_disabled: skull:http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c{18266}
+  legacy_item: spell_icon:11
+  legacy_item_disabled: spell_icon_disabled:11
+  url: http://textures.minecraft.net/texture/15987e49e7ed16df536f4dbf685e7720b88b4de6deaf614d84ab9f9884725c
+  type: spell
+  glyph: 
+  vanilla_item: chorus_fruit{18001}
+  vanilla_item_disabled: chorus_fruit{18002}
+bow:
+  item: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18225}
+  item_disabled: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18226}
+  legacy_item: bow:2
+  legacy_item_disabled: bow:2
+  url: http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7
+  type: spell
+  glyph: 
+  vanilla_item: bow{18010}
+  vanilla_item_disabled: bow{18011}
+breach:
+  item: skull:http://textures.minecraft.net/texture/672e0c305074a7acf671e7644291d7f745baecf05743395e28d1f04cbbb4{18155}
+  item_disabled: skull:http://textures.minecraft.net/texture/672e0c305074a7acf671e7644291d7f745baecf05743395e28d1f04cbbb4{18156}
+  legacy_item: spell_icon:120
+  legacy_item_disabled: spell_icon_disabled:120
+  url: http://textures.minecraft.net/texture/672e0c305074a7acf671e7644291d7f745baecf05743395e28d1f04cbbb4
+  type: spell
+  glyph: 
+  vanilla_item: acacia_door{18001}
+  vanilla_item_disabled: acacia_door{18002}
+broom:
+  item: skull:http://textures.minecraft.net/texture/7f4f1b4c6661ab552b21df8ed841a221296512de46c86e8dee891efbd2fba6{18047}
+  item_disabled: skull:http://textures.minecraft.net/texture/7f4f1b4c6661ab552b21df8ed841a221296512de46c86e8dee891efbd2fba6{18048}
+  legacy_item: spell_icon:168
+  legacy_item_disabled: spell_icon_disabled:168
+  url: http://textures.minecraft.net/texture/7f4f1b4c6661ab552b21df8ed841a221296512de46c86e8dee891efbd2fba6
+  type: spell
+  glyph: 
+  vanilla_item: acacia_sapling{18002}
+  vanilla_item_disabled: acacia_sapling{18003}
+bubble:
+  item: skull:http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced{18141}
+  item_disabled: skull:http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced{18142}
+  legacy_item: spell_icon:76
+  legacy_item_disabled: spell_icon_disabled:76
+  url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
+  type: spell
+  glyph: 
+  vanilla_item: cyan_dye{18001}
+  vanilla_item_disabled: cyan_dye{18002}
+buyshop:
+  item: sulphur
+  type: spell
+  glyph: 
+cage:
+  item: skull:http://textures.minecraft.net/texture/862a3ecb44ccf65458b5413a909cd68bb76cef8d397827eaace2d59635b9943{18217}
+  item_disabled: skull:http://textures.minecraft.net/texture/862a3ecb44ccf65458b5413a909cd68bb76cef8d397827eaace2d59635b9943{18218}
+  legacy_item: spell_icon:157
+  legacy_item_disabled: spell_icon_disabled:157
+  url: http://textures.minecraft.net/texture/862a3ecb44ccf65458b5413a909cd68bb76cef8d397827eaace2d59635b9943
+  type: spell
+  glyph: 
+  vanilla_item: iron_bars{18001}
+  vanilla_item_disabled: iron_bars{18002}
+camera:
+  item: spell_icon:155
+  item_disabled: spell_icon_disabled:155
+  url: http://textures.minecraft.net/texture/e49b4f3261328c05350ee4031212d2fc7555f211af91c0f0278a5aaf9cec65
+  type: spell
+  glyph: 
+capture:
+  url: https://textures.minecraft.net/texture/3c1f906a216b0482e3a0b667320edcfb2579e71a08b3dc060007e350ce65e52e
+  item: skull:https://textures.minecraft.net/texture/3c1f906a216b0482e3a0b667320edcfb2579e71a08b3dc060007e350ce65e52e{18381}
+  item_disabled: skull:https://textures.minecraft.net/texture/3c1f906a216b0482e3a0b667320edcfb2579e71a08b3dc060007e350ce65e52e{18382}
+  legacy_item: spell_icon:251
+  legacy_item_disabled: spell_icon_disabled:251
+  type: spell
+  glyph: 
+  vanilla_item: turtle_egg{18001}
+  vanilla_item_disabled: turtle_egg{18002}
+cat:
+  item: skull:http://textures.minecraft.net/texture/c87fd886605b6aaf6af2b2ea5b205bcdcb60b453b0353ceece0861cfc67ada4{18083}
+  item_disabled: skull:http://textures.minecraft.net/texture/c87fd886605b6aaf6af2b2ea5b205bcdcb60b453b0353ceece0861cfc67ada4{18084}
+  legacy_item: spell_icon:70
+  legacy_item_disabled: spell_icon_disabled:70
+  url: http://textures.minecraft.net/texture/c87fd886605b6aaf6af2b2ea5b205bcdcb60b453b0353ceece0861cfc67ada4
+  type: spell
+  glyph: 
+  vanilla_item: cod{18001}
+  vanilla_item_disabled: cod{18002}
+chainlightning:
+  item: skull:http://textures.minecraft.net/texture/1e5b76818c576079939b5a4b033ddfb5c2364fc9f764e573c59508b811e365{18005}
+  item_disabled: skull:http://textures.minecraft.net/texture/1e5b76818c576079939b5a4b033ddfb5c2364fc9f764e573c59508b811e365{18006}
+  legacy_item: spell_icon:164
+  legacy_item_disabled: spell_icon_disabled:164
+  url: http://textures.minecraft.net/texture/1e5b76818c576079939b5a4b033ddfb5c2364fc9f764e573c59508b811e365
+  type: spell
+  glyph: 
+  vanilla_item: sweet_berries{18001}
+  vanilla_item_disabled: sweet_berries{18002}
+chop:
+  item: skull:http://textures.minecraft.net/texture/7033deb4e25f57413fb15bd3f7019d4ea659a4637d75597248590d746778f{18215}
+  item_disabled: skull:http://textures.minecraft.net/texture/7033deb4e25f57413fb15bd3f7019d4ea659a4637d75597248590d746778f{18216}
+  legacy_item: spell_icon:124
+  legacy_item_disabled: spell_icon_disabled:124
+  url: http://textures.minecraft.net/texture/7033deb4e25f57413fb15bd3f7019d4ea659a4637d75597248590d746778f
+  type: spell
+  glyph: 
+  vanilla_item: iron_axe{18001}
+  vanilla_item_disabled: iron_axe{18002}
+cloak:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18197}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18198}
+  legacy_item: spell_icon:116
+  legacy_item_disabled: spell_icon_disabled:116
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: chainmail_chestplate{18001}
+  vanilla_item_disabled: chainmail_chestplate{18002}
+cluster:
+  item: skull:http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e{18235}
+  item_disabled: skull:http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e{18236}
+  legacy_item: spell_icon:92
+  legacy_item_disabled: spell_icon_disabled:92
+  url: http://textures.minecraft.net/texture/e474575ab89654506a3928a03f70e5e0c11849dd1451e24e19c678cb1294e
+  type: spell
+  glyph: 
+  vanilla_item: pumpkin_seeds{18001}
+  vanilla_item_disabled: pumpkin_seeds{18002}
+collapse:
+  item: skull:http://textures.minecraft.net/texture/1789289cba5bdef5f92dee5165a99d063f8785db78bdc6b41e3c4b099c04ca4{18249}
+  item_disabled: skull:http://textures.minecraft.net/texture/1789289cba5bdef5f92dee5165a99d063f8785db78bdc6b41e3c4b099c04ca4{18250}
+  legacy_item: spell_icon:114
+  legacy_item_disabled: spell_icon_disabled:114
+  url: http://textures.minecraft.net/texture/1789289cba5bdef5f92dee5165a99d063f8785db78bdc6b41e3c4b099c04ca4
+  type: spell
+  glyph: 
+  vanilla_item: nether_sprouts{18001}
+  vanilla_item_disabled: nether_sprouts{18002}
+counterspell:
+  item: skull:http://textures.minecraft.net/texture/36cf36693ac95c88c8dd92e1d5a54c92f593e802b3ae834c6bd87628b1b83{18101}
+  item_disabled: skull:http://textures.minecraft.net/texture/36cf36693ac95c88c8dd92e1d5a54c92f593e802b3ae834c6bd87628b1b83{18102}
+  legacy_item: spell_icon:119
+  legacy_item_disabled: spell_icon_disabled:119
+  url: http://textures.minecraft.net/texture/36cf36693ac95c88c8dd92e1d5a54c92f593e802b3ae834c6bd87628b1b83
+  type: spell
+  glyph: 
+  vanilla_item: music_disc_pigstep{18001}
+  vanilla_item_disabled: music_disc_pigstep{18002}
+critical:
+  item: skull:http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496{18107}
+  item_disabled: skull:http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496{18108}
+  legacy_item: spell_icon:161
+  legacy_item_disabled: spell_icon_disabled:161
+  url: http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496
+  type: spell
+  glyph: 
+  vanilla_item: prismarine_shard{18003}
+  vanilla_item_disabled: prismarine_shard{18004}
+cure:
+  item: skull:http://textures.minecraft.net/texture/1364e3f9597a295108d202d20c2f02539d5ad8377fef53ef622603a7f45b52f{18127}
+  item_disabled: skull:http://textures.minecraft.net/texture/1364e3f9597a295108d202d20c2f02539d5ad8377fef53ef622603a7f45b52f{18128}
+  legacy_item: spell_icon:44
+  legacy_item_disabled: spell_icon_disabled:44
+  url: http://textures.minecraft.net/texture/1364e3f9597a295108d202d20c2f02539d5ad8377fef53ef622603a7f45b52f
+  type: spell
+  glyph: 
+  vanilla_item: milk_bucket{18001}
+  vanilla_item_disabled: milk_bucket{18002}
+curse:
+  item: skull:http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d{18149}
+  item_disabled: skull:http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d{18150}
+  legacy_item: spell_icon:9
+  legacy_item_disabled: spell_icon_disabled:9
+  url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+  type: spell
+  glyph: 
+  vanilla_item: rotten_flesh{18001}
+  vanilla_item_disabled: rotten_flesh{18002}
+day:
+  item: skull:http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb{18247}
+  item_disabled: skull:http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb{18248}
+  legacy_item: spell_icon:84
+  legacy_item_disabled: spell_icon_disabled:84
+  url: http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb
+  type: spell
+  glyph: 
+  vanilla_item: honeycomb{18001}
+  vanilla_item_disabled: honeycomb{18002}
+disarm:
+  item: skull:http://textures.minecraft.net/texture/ff418f5c02c74f8e54645d05897b954c568f22753eea5fb559b898322aa79{18295}
+  item_disabled: skull:http://textures.minecraft.net/texture/ff418f5c02c74f8e54645d05897b954c568f22753eea5fb559b898322aa79{18296}
+  legacy_item: spell_icon:43
+  legacy_item_disabled: spell_icon_disabled:43
+  url: http://textures.minecraft.net/texture/ff418f5c02c74f8e54645d05897b954c568f22753eea5fb559b898322aa79
+  type: spell
+  glyph: 
+  vanilla_item: warped_fungus_on_a_stick{18001}
+  vanilla_item_disabled: warped_fungus_on_a_stick{18002}
+disintegrate:
+  item: skull:http://textures.minecraft.net/texture/89f9399aceb3211c3ca1259d5b1bb1f3fb61a4d5626a757ee1a1ccec28a0ae{18011}
+  item_disabled: skull:http://textures.minecraft.net/texture/89f9399aceb3211c3ca1259d5b1bb1f3fb61a4d5626a757ee1a1ccec28a0ae{18012}
+  legacy_item: spell_icon:133
+  legacy_item_disabled: spell_icon_disabled:133
+  url: http://textures.minecraft.net/texture/89f9399aceb3211c3ca1259d5b1bb1f3fb61a4d5626a757ee1a1ccec28a0ae
+  type: spell
+  glyph: 
+  vanilla_item: cocoa_beans{18001}
+  vanilla_item_disabled: cocoa_beans{18002}
+dragonball:
+  item: skull:http://textures.minecraft.net/texture/c52264ac4e5621668c43e87aed7918ed6b883abc5018769c9536d27b77f{18063}
+  item_disabled: skull:http://textures.minecraft.net/texture/c52264ac4e5621668c43e87aed7918ed6b883abc5018769c9536d27b77f{18064}
+  legacy_item: spell_icon:152
+  legacy_item_disabled: spell_icon_disabled:152
+  url: http://textures.minecraft.net/texture/c52264ac4e5621668c43e87aed7918ed6b883abc5018769c9536d27b77f
+  type: spell
+  glyph: 
+  vanilla_item: dragon_head{18001}
+  vanilla_item_disabled: dragon_head{18002}
+earth:
+  item: spell_icon:141
+  item_disabled: spell_icon_disabled:141
+  url: http://textures.minecraft.net/texture/5d9ddb39f5cd587f63bb175dfaf55baaa917c1a2a3ca987a18d90c9e1a578d
+  type: spell
+  glyph: 
+earthquake:
+  item: skull:http://textures.minecraft.net/texture/64764ad7b991afd8886d847f439b3d1753bc2632a7dbc047a9a040aa1ff98{18045}
+  item_disabled: skull:http://textures.minecraft.net/texture/64764ad7b991afd8886d847f439b3d1753bc2632a7dbc047a9a040aa1ff98{18046}
+  legacy_item: spell_icon:109
+  legacy_item_disabled: spell_icon_disabled:109
+  url: http://textures.minecraft.net/texture/64764ad7b991afd8886d847f439b3d1753bc2632a7dbc047a9a040aa1ff98
+  type: spell
+  glyph: 
+  vanilla_item: brown_dye{18001}
+  vanilla_item_disabled: brown_dye{18002}
+effects:
+  item: skull:http://textures.minecraft.net/texture/b5ccb1a5547f7d1beb4896c6fad4fedbb17ebced53a86b7e96e417114a0cae4{18299}
+  item_disabled: skull:http://textures.minecraft.net/texture/b5ccb1a5547f7d1beb4896c6fad4fedbb17ebced53a86b7e96e417114a0cae4{18300}
+  legacy_item: spell_icon:126
+  legacy_item_disabled: spell_icon_disabled:126
+  url: http://textures.minecraft.net/texture/b5ccb1a5547f7d1beb4896c6fad4fedbb17ebced53a86b7e96e417114a0cae4
+  type: spell
+  glyph: 
+  vanilla_item: orange_dye{18001}
+  vanilla_item_disabled: orange_dye{18002}
+emp:
+  item: skull:http://textures.minecraft.net/texture/615baaf7223ce4ff011aa2db6b71c3022151c7f2b873c85d62ef69a36785a61{18091}
+  item_disabled: skull:http://textures.minecraft.net/texture/615baaf7223ce4ff011aa2db6b71c3022151c7f2b873c85d62ef69a36785a61{18092}
+  legacy_item: spell_icon:131
+  legacy_item_disabled: spell_icon_disabled:131
+  url: http://textures.minecraft.net/texture/615baaf7223ce4ff011aa2db6b71c3022151c7f2b873c85d62ef69a36785a61
+  type: spell
+  glyph: 
+  vanilla_item: redstone_torch{18001}
+  vanilla_item_disabled: redstone_torch{18002}
+entangle:
+  item: skull:http://textures.minecraft.net/texture/b2545861d5871f75caa3b378ec44655bcb3d6cabe697b27303dbdaa8b5b5{18251}
+  item_disabled: skull:http://textures.minecraft.net/texture/b2545861d5871f75caa3b378ec44655bcb3d6cabe697b27303dbdaa8b5b5{18252}
+  legacy_item: spell_icon:177
+  legacy_item_disabled: spell_icon_disabled:177
+  url: http://textures.minecraft.net/texture/b2545861d5871f75caa3b378ec44655bcb3d6cabe697b27303dbdaa8b5b5
+  type: spell
+  glyph: 
+  vanilla_item: birch_fence{18001}
+  vanilla_item_disabled: birch_fence{18002}
+extinguish:
+  item: spell_icon:232
+  item_disabled: spell_icon_disabled:232
+  url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+  type: spell
+  glyph: 
+familiar:
+  item: skull:http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4{18041}
+  item_disabled: skull:http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4{18042}
+  legacy_item: spell_icon:63
+  legacy_item_disabled: spell_icon_disabled:63
+  url: http://textures.minecraft.net/texture/621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
+  type: spell
+  glyph: 
+  vanilla_item: egg{18001}
+  vanilla_item_disabled: egg{18002}
+farm:
+  item: skull:http://textures.minecraft.net/texture/5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5{18277}
+  item_disabled: skull:http://textures.minecraft.net/texture/5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5{18278}
+  legacy_item: spell_icon:68
+  legacy_item_disabled: spell_icon_disabled:68
+  url: http://textures.minecraft.net/texture/5d6c6eda942f7f5f71c3161c7306f4aed307d82895f9d2b07ab4525718edc5
+  type: spell
+  glyph: 
+  vanilla_item: melon_slice{18001}
+  vanilla_item_disabled: melon_slice{18002}
+fire:
+  item: skull:http://textures.minecraft.net/texture/7dbb7f75e74ad4218d2af7191752b5952144436ce8aa2bb6fb27168e6f28af{18291}
+  item_disabled: skull:http://textures.minecraft.net/texture/7dbb7f75e74ad4218d2af7191752b5952144436ce8aa2bb6fb27168e6f28af{18292}
+  legacy_item: spell_icon:75
+  legacy_item_disabled: spell_icon_disabled:75
+  url: http://textures.minecraft.net/texture/7dbb7f75e74ad4218d2af7191752b5952144436ce8aa2bb6fb27168e6f28af
+  type: spell
+  glyph: 
+  vanilla_item: flint_and_steel{18001}
+  vanilla_item_disabled: flint_and_steel{18002}
+fireball:
+  item: skull:http://textures.minecraft.net/texture/e511624fac75f03cf2f3a56d5fe4582d6e74fc9f5e1e1160af1941ee144928{18013}
+  item_disabled: skull:http://textures.minecraft.net/texture/e511624fac75f03cf2f3a56d5fe4582d6e74fc9f5e1e1160af1941ee144928{18014}
+  legacy_item: spell_icon:153
+  legacy_item_disabled: spell_icon_disabled:153
+  url: http://textures.minecraft.net/texture/e511624fac75f03cf2f3a56d5fe4582d6e74fc9f5e1e1160af1941ee144928
+  type: spell
+  glyph: 
+  vanilla_item: fire_charge{18001}
+  vanilla_item_disabled: fire_charge{18002}
+flamethrower:
+  item: skull:http://textures.minecraft.net/texture/92d331289b5e527c540652d61561a2e90f52a8755c1c7d0cd1a1a98f49de450{18003}
+  item_disabled: skull:http://textures.minecraft.net/texture/92d331289b5e527c540652d61561a2e90f52a8755c1c7d0cd1a1a98f49de450{18004}
+  legacy_item: spell_icon:144
+  legacy_item_disabled: spell_icon_disabled:144
+  url: http://textures.minecraft.net/texture/92d331289b5e527c540652d61561a2e90f52a8755c1c7d0cd1a1a98f49de450
+  type: spell
+  glyph: 
+  vanilla_item: campfire{18001}
+  vanilla_item_disabled: campfire{18002}
+flare:
+  item: skull:http://textures.minecraft.net/texture/aa7e54c1c7634bdf1118db91da9e12b6b4d17f7fb7b7d5b0d06d554feb737bf{18027}
+  item_disabled: skull:http://textures.minecraft.net/texture/aa7e54c1c7634bdf1118db91da9e12b6b4d17f7fb7b7d5b0d06d554feb737bf{18028}
+  legacy_item: spell_icon:148
+  legacy_item_disabled: spell_icon_disabled:148
+  url: http://textures.minecraft.net/texture/aa7e54c1c7634bdf1118db91da9e12b6b4d17f7fb7b7d5b0d06d554feb737bf
+  type: spell
+  glyph: 
+  vanilla_item: firework_star{18001}
+  vanilla_item_disabled: firework_star{18002}
+flashbang:
+  item: skull:http://textures.minecraft.net/texture/964590674dbaf76126bd87694bfe97575be8de19aac4a8d9aa5579f8f01ed1{18275}
+  item_disabled: skull:http://textures.minecraft.net/texture/964590674dbaf76126bd87694bfe97575be8de19aac4a8d9aa5579f8f01ed1{18276}
+  legacy_item: spell_icon:58
+  legacy_item_disabled: spell_icon_disabled:58
+  url: http://textures.minecraft.net/texture/964590674dbaf76126bd87694bfe97575be8de19aac4a8d9aa5579f8f01ed1
+  type: spell
+  glyph: 
+  vanilla_item: soul_campfire{18001}
+  vanilla_item_disabled: soul_campfire{18002}
+fling:
+  item: skull:http://textures.minecraft.net/texture/7cc2fb583d1762a16a50fa5ac37bc09b46def63e68205116d650391f9233ed{18129}
+  item_disabled: skull:http://textures.minecraft.net/texture/7cc2fb583d1762a16a50fa5ac37bc09b46def63e68205116d650391f9233ed{18130}
+  legacy_item: spell_icon:60
+  legacy_item_disabled: spell_icon_disabled:60
+  url: http://textures.minecraft.net/texture/7cc2fb583d1762a16a50fa5ac37bc09b46def63e68205116d650391f9233ed
+  type: spell
+  glyph: 
+  vanilla_item: feather{18001}
+  vanilla_item_disabled: feather{18002}
+force:
+  item: skull:http://textures.minecraft.net/texture/c7142a19d8c84389da74b69641542b8b2fafbed8f7515d1d36c63c96bd749{18261}
+  item_disabled: skull:http://textures.minecraft.net/texture/c7142a19d8c84389da74b69641542b8b2fafbed8f7515d1d36c63c96bd749{18262}
+  legacy_item: spell_icon:151
+  legacy_item_disabled: spell_icon_disabled:151
+  url: http://textures.minecraft.net/texture/c7142a19d8c84389da74b69641542b8b2fafbed8f7515d1d36c63c96bd749
+  type: spell
+  glyph: 
+  vanilla_item: leather{18001}
+  vanilla_item_disabled: leather{18002}
+frost:
+  item: skull:http://textures.minecraft.net/texture/ff39da1c8acc158ee5aa7f0352e4738aefe3365f28841badd603e2ffe42a{18199}
+  item_disabled: skull:http://textures.minecraft.net/texture/ff39da1c8acc158ee5aa7f0352e4738aefe3365f28841badd603e2ffe42a{18200}
+  legacy_item: spell_icon:37
+  legacy_item_disabled: spell_icon_disabled:37
+  url: http://textures.minecraft.net/texture/ff39da1c8acc158ee5aa7f0352e4738aefe3365f28841badd603e2ffe42a
+  type: spell
+  glyph: 
+  vanilla_item: snowball{18001}
+  vanilla_item_disabled: snowball{18002}
+fury:
+  item: skull:http://textures.minecraft.net/texture/c64f6eeb78485e49b219f40a9d6a8131c539fef932f1cbb5f379adfebdd8c31{18079}
+  item_disabled: skull:http://textures.minecraft.net/texture/c64f6eeb78485e49b219f40a9d6a8131c539fef932f1cbb5f379adfebdd8c31{18080}
+  legacy_item: spell_icon:162
+  legacy_item_disabled: spell_icon_disabled:162
+  url: http://textures.minecraft.net/texture/c64f6eeb78485e49b219f40a9d6a8131c539fef932f1cbb5f379adfebdd8c31
+  type: spell
+  glyph: 
+  vanilla_item: seagrass{18001}
+  vanilla_item_disabled: seagrass{18002}
+fxdemo:
+  item: spell_icon:199
+  item_disabled: spell_icon_disabled:199
+  url: http://textures.minecraft.net/texture/ce6ed0a5f7e23bc3d34d73baa0b9c3f838e85014d2ff290801dc7486dd4da6
+  type: spell
+  glyph: 
+gasp:
+  item: skull:http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e{18135}
+  item_disabled: skull:http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e{18136}
+  legacy_item: spell_icon:186
+  legacy_item_disabled: spell_icon_disabled:186
+  url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+  type: spell
+  glyph: 
+  vanilla_item: glass_bottle{18001}
+  vanilla_item_disabled: glass_bottle{18002}
+gather:
+  item: skull:http://textures.minecraft.net/texture/ff78194bb5fe3f374ca6a1727c04247b7bac331cff248bf642acc8e73647e{18053}
+  item_disabled: skull:http://textures.minecraft.net/texture/ff78194bb5fe3f374ca6a1727c04247b7bac331cff248bf642acc8e73647e{18054}
+  legacy_item: spell_icon:48
+  legacy_item_disabled: spell_icon_disabled:48
+  url: http://textures.minecraft.net/texture/ff78194bb5fe3f374ca6a1727c04247b7bac331cff248bf642acc8e73647e
+  type: spell
+  glyph: 
+  vanilla_item: soul_lantern{18001}
+  vanilla_item_disabled: soul_lantern{18002}
+gatling:
+  item: skull:http://textures.minecraft.net/texture/7134aed98232d9946f9dbd738a37e68f36a9a773a863dde206bb9115b993d78{18201}
+  item_disabled: skull:http://textures.minecraft.net/texture/7134aed98232d9946f9dbd738a37e68f36a9a773a863dde206bb9115b993d78{18202}
+  legacy_item: spell_icon:55
+  legacy_item_disabled: spell_icon_disabled:55
+  url: http://textures.minecraft.net/texture/7134aed98232d9946f9dbd738a37e68f36a9a773a863dde206bb9115b993d78
+  type: spell
+  glyph: 
+  vanilla_item: chain{18001}
+  vanilla_item_disabled: chain{18002}
+ghast:
+  item: skull:http://textures.minecraft.net/texture/8b6a72138d69fbbd2fea3fa251cabd87152e4f1c97e5f986bf685571db3cc0{18099}
+  item_disabled: skull:http://textures.minecraft.net/texture/8b6a72138d69fbbd2fea3fa251cabd87152e4f1c97e5f986bf685571db3cc0{18100}
+  legacy_item: spell_icon:66
+  legacy_item_disabled: spell_icon_disabled:66
+  url: http://textures.minecraft.net/texture/8b6a72138d69fbbd2fea3fa251cabd87152e4f1c97e5f986bf685571db3cc0
+  type: spell
+  glyph: 
+  vanilla_item: pufferfish{18001}
+  vanilla_item_disabled: pufferfish{18002}
+gills:
+  item: spell_icon:83
+  item_disabled: spell_icon_disabled:83
+  url: http://textures.minecraft.net/texture/b47a2ebba3629cd387581f7b4b2bd471bc793f9d3b353862da8e9198e18c3193
+  type: spell
+  glyph: 
+glide:
+  item: skull:http://textures.minecraft.net/texture/0da6cb9e9cd875794b8b9f3a4b77227a18adb963b42af21d52d58d2ef24e47{18021}
+  item_disabled: skull:http://textures.minecraft.net/texture/0da6cb9e9cd875794b8b9f3a4b77227a18adb963b42af21d52d58d2ef24e47{18022}
+  legacy_item: spell_icon:202
+  legacy_item_disabled: spell_icon_disabled:202
+  url: http://textures.minecraft.net/texture/0da6cb9e9cd875794b8b9f3a4b77227a18adb963b42af21d52d58d2ef24e47
+  type: spell
+  glyph: 
+  vanilla_item: elytra{18001}
+  vanilla_item_disabled: elytra{18002}
+grab:
+  item: spell_icon:34
+  item_disabled: spell_icon_disabled:34
+  url: http://textures.minecraft.net/texture/e13e9af0957a9dd4995811ef3e869b4ad8fbb59ca7474e4c84ce7f6019b079
+  type: spell
+  glyph: 
+grenade:
+  item: skull:http://textures.minecraft.net/texture/c6a7fcfee0ffebae25b69bd16f55c993898ba72791d3a89e58736e7bad0faa3{18167}
+  item_disabled: skull:http://textures.minecraft.net/texture/c6a7fcfee0ffebae25b69bd16f55c993898ba72791d3a89e58736e7bad0faa3{18168}
+  legacy_item: spell_icon:91
+  legacy_item_disabled: spell_icon_disabled:91
+  url: http://textures.minecraft.net/texture/c6a7fcfee0ffebae25b69bd16f55c993898ba72791d3a89e58736e7bad0faa3
+  type: spell
+  glyph: 
+  vanilla_item: tnt{18001}
+  vanilla_item_disabled: tnt{18002}
+grow:
+  item: skull:http://textures.minecraft.net/texture/b54fa4fb25cef58bc69cac7292e32e449322cac2ace4810a8a0749b2fbbb154{18237}
+  item_disabled: skull:http://textures.minecraft.net/texture/b54fa4fb25cef58bc69cac7292e32e449322cac2ace4810a8a0749b2fbbb154{18238}
+  legacy_item: spell_icon:147
+  legacy_item_disabled: spell_icon_disabled:147
+  url: http://textures.minecraft.net/texture/b54fa4fb25cef58bc69cac7292e32e449322cac2ace4810a8a0749b2fbbb154
+  type: spell
+  glyph: 
+  vanilla_item: cookie{18001}
+  vanilla_item_disabled: cookie{18002}
+growth:
+  item: skull:http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb{18119}
+  item_disabled: skull:http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb{18120}
+  legacy_item: spell_icon:167
+  legacy_item_disabled: spell_icon_disabled:167
+  url: http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb
+  type: spell
+  glyph: 
+  vanilla_item: oak_sapling{18001}
+  vanilla_item_disabled: oak_sapling{18002}
+gui_actionbar:
+  item: warped_sign{18006}
+  item_disabled: crimson_sign{18006}
+  legacy_item: diamond_axe:235
+  legacy_item_disabled: diamond_axe:235
+  type: upgrade
+  glyph: 
+gui_bossbar:
+  item: warped_sign{18007}
+  item_disabled: crimson_sign{18007}
+  legacy_item: diamond_axe:235
+  type: upgrade
+  glyph: 
+gui_none:
+  item: warped_sign{18008}
+  item_disabled: crimson_sign{18008}
+  legacy_item: diamond_axe:234
+  type: upgrade
+  glyph: 
+harden:
+  item: skull:http://textures.minecraft.net/texture/25147d8c6addc07635b183ae1c4459f173bdfde239d949f56ce56d2728911e2{18145}
+  item_disabled: skull:http://textures.minecraft.net/texture/25147d8c6addc07635b183ae1c4459f173bdfde239d949f56ce56d2728911e2{18146}
+  legacy_item: spell_icon:185
+  legacy_item_disabled: spell_icon_disabled:185
+  url: http://textures.minecraft.net/texture/25147d8c6addc07635b183ae1c4459f173bdfde239d949f56ce56d2728911e2
+  type: spell
+  glyph: 
+  vanilla_item: obsidian{18001}
+  vanilla_item_disabled: obsidian{18002}
+hat:
+  item: skull:http://textures.minecraft.net/texture/2abee4fe341011b9a0ae2fb83644f695521fd4e4c6198fe23112f1acbf38369{18243}
+  item_disabled: skull:http://textures.minecraft.net/texture/2abee4fe341011b9a0ae2fb83644f695521fd4e4c6198fe23112f1acbf38369{18244}
+  legacy_item: spell_icon:136
+  legacy_item_disabled: spell_icon_disabled:136
+  url: http://textures.minecraft.net/texture/2abee4fe341011b9a0ae2fb83644f695521fd4e4c6198fe23112f1acbf38369
+  type: spell
+  glyph: 
+  vanilla_item: leather_helmet{18001}
+  vanilla_item_disabled: leather_helmet{18002}
+heal:
+  item: skull:http://textures.minecraft.net/texture/6b7da98ef45cf45185d21d61f5fa3d5966a3ee52273620a6e4dfd54cf99dbc{18193}
+  item_disabled: skull:http://textures.minecraft.net/texture/6b7da98ef45cf45185d21d61f5fa3d5966a3ee52273620a6e4dfd54cf99dbc{18194}
+  legacy_item: spell_icon:45
+  legacy_item_disabled: spell_icon_disabled:45
+  url: http://textures.minecraft.net/texture/6b7da98ef45cf45185d21d61f5fa3d5966a3ee52273620a6e4dfd54cf99dbc
+  type: spell
+  glyph: 
+  vanilla_item: apple{18001}
+  vanilla_item_disabled: apple{18002}
+healing:
+  item: spell_icon:46
+  item_disabled: spell_icon_disabled:46
+  url: http://textures.minecraft.net/texture/6b7da98ef45cf45185d21d61f5fa3d5966a3ee52273620a6e4dfd54cf99dbc
+  type: spell
+  glyph: 
+homing:
+  item: skull:http://textures.minecraft.net/texture/e3152dba6ee22b6e89e88878acc5a01f5964946b8938e9a1470dfabbeeca{18245}
+  item_disabled: skull:http://textures.minecraft.net/texture/e3152dba6ee22b6e89e88878acc5a01f5964946b8938e9a1470dfabbeeca{18246}
+  legacy_item: spell_icon:163
+  legacy_item_disabled: spell_icon_disabled:163
+  url: http://textures.minecraft.net/texture/e3152dba6ee22b6e89e88878acc5a01f5964946b8938e9a1470dfabbeeca
+  type: spell
+  glyph: 
+  vanilla_item: lime_dye{18001}
+  vanilla_item_disabled: lime_dye{18002}
+horse:
+  item: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18213}
+  item_disabled: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18214}
+  legacy_item: spell_icon:49
+  legacy_item_disabled: spell_icon_disabled:49
+  url: http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d
+  type: spell
+  glyph: 
+  vanilla_item: saddle{18001}
+  vanilla_item_disabled: saddle{18002}
+icbm:
+  item: skull:http://textures.minecraft.net/texture/9c2e9d8395cacd9922869c15373cf7cb16da0a5ce5f3c632b19ceb3929c9a11{18271}
+  item_disabled: skull:http://textures.minecraft.net/texture/9c2e9d8395cacd9922869c15373cf7cb16da0a5ce5f3c632b19ceb3929c9a11{18272}
+  legacy_item: spell_icon:51
+  legacy_item_disabled: spell_icon_disabled:51
+  url: http://textures.minecraft.net/texture/9c2e9d8395cacd9922869c15373cf7cb16da0a5ce5f3c632b19ceb3929c9a11
+  type: spell
+  glyph: 
+  vanilla_item: potato{18001}
+  vanilla_item_disabled: potato{18002}
+icon_black:
+  item: black_concrete{CustomModelData:18025}
+  legacy_item: wool:15
+icon_gray:
+  item: gray_concrete{18001}
+  legacy_item: wool:8
+icon_no:
+  item: red_stained_glass_pane{18001}
+  legacy_item: wool:14
+icon_placeholder:
+  item: gray_stained_glass_pane{18001}
+  legacy_item: stained_glass:8
+icon_yes:
+  item: lime_stained_glass_pane{18001}
+  legacy_item: wool:5
+invincible:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18279}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18280}
+  legacy_item: spell_icon:74
+  legacy_item_disabled: spell_icon_disabled:74
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: golden_apple{18001}
+  vanilla_item_disabled: golden_apple{18002}
+kill:
+  item: skull:http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c{18231}
+  item_disabled: skull:http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c{18232}
+  legacy_item: spell_icon:170
+  legacy_item_disabled: spell_icon_disabled:170
+  url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+  type: spell
+  glyph: 
+  vanilla_item: bone{18003}
+  vanilla_item_disabled: bone{18004}
+laser:
+  item: skull:http://textures.minecraft.net/texture/7cc8e096a2ac99bf264b3e827f1e3aa07ba688d7b4f470128f741132625e{18157}
+  item_disabled: skull:http://textures.minecraft.net/texture/7cc8e096a2ac99bf264b3e827f1e3aa07ba688d7b4f470128f741132625e{18158}
+  legacy_item: spell_icon:145
+  legacy_item_disabled: spell_icon_disabled:145
+  url: http://textures.minecraft.net/texture/7cc8e096a2ac99bf264b3e827f1e3aa07ba688d7b4f470128f741132625e
+  type: spell
+  glyph: 
+  vanilla_item: bamboo{18001}
+  vanilla_item_disabled: bamboo{18002}
+lava:
+  item: skull:http://textures.minecraft.net/texture/a9e073da36aaf2c844da428cd4a19dfde32c8cdc2404eed4a135f6095b17c{18221}
+  item_disabled: skull:http://textures.minecraft.net/texture/a9e073da36aaf2c844da428cd4a19dfde32c8cdc2404eed4a135f6095b17c{18222}
+  legacy_item: spell_icon:139
+  legacy_item_disabled: spell_icon_disabled:139
+  url: http://textures.minecraft.net/texture/a9e073da36aaf2c844da428cd4a19dfde32c8cdc2404eed4a135f6095b17c
+  type: spell
+  glyph: 
+  vanilla_item: lava_bucket{18001}
+  vanilla_item_disabled: lava_bucket{18002}
+levitate:
+  item: skull:http://textures.minecraft.net/texture/d02585f4a2b47524541d67ae253cf21fde8eea1c21494f61df5f4929a76e0{18229}
+  item_disabled: skull:http://textures.minecraft.net/texture/d02585f4a2b47524541d67ae253cf21fde8eea1c21494f61df5f4929a76e0{18230}
+  legacy_item: spell_icon:150
+  legacy_item_disabled: spell_icon_disabled:150
+  url: http://textures.minecraft.net/texture/d02585f4a2b47524541d67ae253cf21fde8eea1c21494f61df5f4929a76e0
+  type: spell
+  glyph: 
+  vanilla_item: bone_meal{18003}
+  vanilla_item_disabled: bone_meal{18004}
+lift:
+  item: skull:http://textures.minecraft.net/texture/111de372969a39e34c3af5e6d2392e7876a1f13cf7a37d7513ad60c168bfd7b9{18195}
+  item_disabled: skull:http://textures.minecraft.net/texture/111de372969a39e34c3af5e6d2392e7876a1f13cf7a37d7513ad60c168bfd7b9{18196}
+  legacy_item: spell_icon:181
+  legacy_item_disabled: spell_icon_disabled:181
+  url: http://textures.minecraft.net/texture/111de372969a39e34c3af5e6d2392e7876a1f13cf7a37d7513ad60c168bfd7b9
+  type: spell
+  glyph: 
+  vanilla_item: green_dye{18001}
+  vanilla_item_disabled: green_dye{18002}
+lightning:
+  item: skull:http://textures.minecraft.net/texture/c0d34b6c68eca9dae0f9dabeadeb5f72536fa20ab4ecf669be895baf1c17{18203}
+  item_disabled: skull:http://textures.minecraft.net/texture/c0d34b6c68eca9dae0f9dabeadeb5f72536fa20ab4ecf669be895baf1c17{18204}
+  legacy_item: spell_icon:39
+  legacy_item_disabled: spell_icon_disabled:39
+  url: http://textures.minecraft.net/texture/c0d34b6c68eca9dae0f9dabeadeb5f72536fa20ab4ecf669be895baf1c17
+  type: spell
+  glyph: 
+  vanilla_item: quartz{18001}
+  vanilla_item_disabled: quartz{18002}
+lockpick:
+  item: skull:http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992{18133}
+  item_disabled: skull:http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992{18134}
+  legacy_item: spell_icon:184
+  legacy_item_disabled: spell_icon_disabled:184
+  url: http://textures.minecraft.net/texture/3944e12e8e67fd67a55359df56c3c59c99550f6eaccb23813769afb2f1992
+  type: spell
+  glyph: 
+  vanilla_item: tripwire_hook{18001}
+  vanilla_item_disabled: tripwire_hook{18002}
+magichat:
+  item: spell_icon:138
+  item_disabled: spell_icon_disabled:138
+  url: http://textures.minecraft.net/texture/2abee4fe341011b9a0ae2fb83644f695521fd4e4c6198fe23112f1acbf38369
+  type: spell
+  glyph: 
+map:
+  item: spell_icon:154
+  item_disabled: spell_icon_disabled:154
+  url: http://textures.minecraft.net/texture/c36adcbe21b520b7355936c89cd2b335ca5318e68173eaaa82e62f5fb986
+  type: spell
+  glyph: 
+meteor:
+  item: skull:http://textures.minecraft.net/texture/f554672caf6e5335954614fb185acb15148e71423d97d0d5ff6023c247d5eb21{18007}
+  item_disabled: skull:http://textures.minecraft.net/texture/f554672caf6e5335954614fb185acb15148e71423d97d0d5ff6023c247d5eb21{18008}
+  legacy_item: spell_icon:56
+  legacy_item_disabled: spell_icon_disabled:56
+  url: http://textures.minecraft.net/texture/f554672caf6e5335954614fb185acb15148e71423d97d0d5ff6023c247d5eb21
+  type: spell
+  glyph: 
+  vanilla_item: melon_seeds{18001}
+  vanilla_item_disabled: melon_seeds{18002}
+mine:
+  item: skull:http://textures.minecraft.net/texture/c688f9a3b3db226582ae3f49d34aa9077b4d4f8102dd46f21bcb784a68f2c63{18143}
+  item_disabled: skull:http://textures.minecraft.net/texture/c688f9a3b3db226582ae3f49d34aa9077b4d4f8102dd46f21bcb784a68f2c63{18144}
+  legacy_item: spell_icon:123
+  legacy_item_disabled: spell_icon_disabled:123
+  url: http://textures.minecraft.net/texture/c688f9a3b3db226582ae3f49d34aa9077b4d4f8102dd46f21bcb784a68f2c63
+  type: spell
+  glyph: 
+  vanilla_item: iron_pickaxe{18001}
+  vanilla_item_disabled: iron_pickaxe{18002}
+missile:
+  item: skull:http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac{18255}
+  item_disabled: skull:http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac{18256}
+  legacy_item: spell_icon:160
+  legacy_item_disabled: spell_icon_disabled:160
+  url: http://textures.minecraft.net/texture/2ba95570c7b712713632d4c0d2fc66906613d3850a596a0267c6d763fe741ac
+  type: spell
+  glyph: 
+  vanilla_item: prismarine_shard{18001}
+  vanilla_item_disabled: prismarine_shard{18002}
+mob:
+  item: skull:http://textures.minecraft.net/texture/74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb{18111}
+  item_disabled: skull:http://textures.minecraft.net/texture/74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb{18112}
+  legacy_item: spell_icon:67
+  legacy_item_disabled: spell_icon_disabled:67
+  url: http://textures.minecraft.net/texture/74e9c6e98582ffd8ff8feb3322cd1849c43fb16b158abb11ca7b42eda7743eb
+  type: spell
+  glyph: 
+  vanilla_item: salmon_bucket{18001}
+  vanilla_item_disabled: salmon_bucket{18002}
+monster:
+  item: skull:http://textures.minecraft.net/texture/cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1{18055}
+  item_disabled: skull:http://textures.minecraft.net/texture/cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1{18056}
+  legacy_item: spell_icon:64
+  legacy_item_disabled: spell_icon_disabled:64
+  url: http://textures.minecraft.net/texture/cd541541daaff50896cd258bdbdd4cf80c3ba816735726078bfe393927e57f1
+  type: spell
+  glyph: 
+  vanilla_item: rabbit_hide{18001}
+  vanilla_item_disabled: rabbit_hide{18002}
+mount:
+  item: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18267}
+  item_disabled: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18268}
+  legacy_item: spell_icon:49
+  legacy_item_disabled: spell_icon_disabled:49
+  url: http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d
+  type: spell
+  glyph: 
+  vanilla_item: saddle{18003}
+  vanilla_item_disabled: saddle{18004}
+music:
+  item: skull:http://textures.minecraft.net/texture/a2ea21c79fa115b9a63625a2c9c5ec3dd92e1d1a7024162790237da9d98ee28{18171}
+  item_disabled: skull:http://textures.minecraft.net/texture/a2ea21c79fa115b9a63625a2c9c5ec3dd92e1d1a7024162790237da9d98ee28{18172}
+  legacy_item: spell_icon:47
+  legacy_item_disabled: spell_icon_disabled:47
+  url: http://textures.minecraft.net/texture/a2ea21c79fa115b9a63625a2c9c5ec3dd92e1d1a7024162790237da9d98ee28
+  type: spell
+  glyph: 
+  vanilla_item: music_disc_mellohi{18001}
+  vanilla_item_disabled: music_disc_mellohi{18002}
+nathanwolf:
+  item: crimson_sign{18003}
+  item_disabled: crimson_sign{CustomModelData:18004}
+  legacy_item: spell_icon:7
+  legacy_item_disabled: spell_icon_disabled:7
+  url: http://textures.minecraft.net/texture/4077aff230c0d496e5cb19f1b3984dd645992a761dcf8b49c7cb0ba230173354
+  glyph: 
+  type: other
+neutron:
+  item: skull:http://textures.minecraft.net/texture/1eed1e4d70522ccd538b75ded4baa680e3dfe55426c560ff7b521be5cdf614f{18023}
+  item_disabled: skull:http://textures.minecraft.net/texture/1eed1e4d70522ccd538b75ded4baa680e3dfe55426c560ff7b521be5cdf614f{18024}
+  legacy_item: spell_icon:52
+  legacy_item_disabled: spell_icon_disabled:52
+  url: http://textures.minecraft.net/texture/1eed1e4d70522ccd538b75ded4baa680e3dfe55426c560ff7b521be5cdf614f
+  type: spell
+  glyph: 
+  vanilla_item: phantom_membrane{18001}
+  vanilla_item_disabled: phantom_membrane{18002}
+night:
+  item: skull:http://textures.minecraft.net/texture/15f1fe5d5cc447e215243b4cf0b4eb56331f1b4f40909bb91a2963929ef1c2{18033}
+  item_disabled: skull:http://textures.minecraft.net/texture/15f1fe5d5cc447e215243b4cf0b4eb56331f1b4f40909bb91a2963929ef1c2{18034}
+  legacy_item: spell_icon:85
+  legacy_item_disabled: spell_icon_disabled:85
+  url: http://textures.minecraft.net/texture/15f1fe5d5cc447e215243b4cf0b4eb56331f1b4f40909bb91a2963929ef1c2
+  type: spell
+  glyph: 
+  vanilla_item: gray_dye{18001}
+  vanilla_item_disabled: gray_dye{18002}
+nuke:
+  item: skull:http://textures.minecraft.net/texture/f27c497b89fdcbf754b59aaadcc7e49c5217f1677bf9f8803c4cca519b3a2{18285}
+  item_disabled: skull:http://textures.minecraft.net/texture/f27c497b89fdcbf754b59aaadcc7e49c5217f1677bf9f8803c4cca519b3a2{18286}
+  legacy_item: spell_icon:36
+  legacy_item_disabled: spell_icon_disabled:36
+  url: http://textures.minecraft.net/texture/f27c497b89fdcbf754b59aaadcc7e49c5217f1677bf9f8803c4cca519b3a2
+  type: spell
+  glyph: 
+  vanilla_item: brown_mushroom{18001}
+  vanilla_item_disabled: brown_mushroom{18002}
+peek:
+  item: skull:http://textures.minecraft.net/texture/42fe4273a62118f32881159ab3d6eded9fac90748deedbdb16204d107f843{18015}
+  item_disabled: skull:http://textures.minecraft.net/texture/42fe4273a62118f32881159ab3d6eded9fac90748deedbdb16204d107f843{18016}
+  legacy_item: spell_icon:121
+  legacy_item_disabled: spell_icon_disabled:121
+  url: http://textures.minecraft.net/texture/42fe4273a62118f32881159ab3d6eded9fac90748deedbdb16204d107f843
+  type: spell
+  glyph: 
+  vanilla_item: glass_pane{18001}
+  vanilla_item_disabled: glass_pane{18002}
+petrify:
+  item: skull:http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188{18273}
+  item_disabled: skull:http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188{18274}
+  legacy_item: spell_icon:175
+  legacy_item_disabled: spell_icon_disabled:175
+  url: http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188
+  type: spell
+  glyph: 
+  vanilla_item: light_gray_dye{18001}
+  vanilla_item_disabled: light_gray_dye{18002}
+phase:
+  item: skull:http://textures.minecraft.net/texture/3186699cf52cb2f732b7948784b262a49d43a57c801368f776e3c9a88151d{18029}
+  item_disabled: skull:http://textures.minecraft.net/texture/3186699cf52cb2f732b7948784b262a49d43a57c801368f776e3c9a88151d{18030}
+  legacy_item: spell_icon:72
+  legacy_item_disabled: spell_icon_disabled:72
+  url: http://textures.minecraft.net/texture/3186699cf52cb2f732b7948784b262a49d43a57c801368f776e3c9a88151d
+  type: spell
+  glyph: 
+  vanilla_item: crimson_door{18001}
+  vanilla_item_disabled: crimson_door{18002}
+phasebackup:
+  item: spell_icon:73
+  item_disabled: spell_icon_disabled:73
+  url: http://textures.minecraft.net/texture/3186699cf52cb2f732b7948784b262a49d43a57c801368f776e3c9a88151d
+  type: spell
+  glyph: 
+pickpocket:
+  item: skull:http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1{18281}
+  item_disabled: skull:http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1{18282}
+  legacy_item: spell_icon:107
+  legacy_item_disabled: spell_icon_disabled:107
+  url: http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1
+  type: spell
+  glyph: 
+  vanilla_item: rabbit_stew{18001}
+  vanilla_item_disabled: rabbit_stew{18002}
+platform:
+  item: skull:http://textures.minecraft.net/texture/48e69c5a76182441d98326284e9342c1dac2a786ba47e8226884f65594c3bd3a{18191}
+  item_disabled: skull:http://textures.minecraft.net/texture/48e69c5a76182441d98326284e9342c1dac2a786ba47e8226884f65594c3bd3a{18192}
+  legacy_item: spell_icon:24
+  legacy_item_disabled: spell_icon_disabled:24
+  url: http://textures.minecraft.net/texture/48e69c5a76182441d98326284e9342c1dac2a786ba47e8226884f65594c3bd3a
+  type: spell
+  glyph: 
+  vanilla_item: magenta_dye{18001}
+  vanilla_item_disabled: magenta_dye{18002}
+poison:
+  item: skull:http://textures.minecraft.net/texture/f441923eb636b6fbc4cfba5475fd6abae52a41593a63d99bfecdd4d845b91a{18071}
+  item_disabled: skull:http://textures.minecraft.net/texture/f441923eb636b6fbc4cfba5475fd6abae52a41593a63d99bfecdd4d845b91a{18072}
+  legacy_item: spell_icon:180
+  legacy_item_disabled: spell_icon_disabled:180
+  url: http://textures.minecraft.net/texture/f441923eb636b6fbc4cfba5475fd6abae52a41593a63d99bfecdd4d845b91a
+  type: spell
+  glyph: 
+  vanilla_item: fermented_spider_eye{18001}
+  vanilla_item_disabled: fermented_spider_eye{18002}
+pollinate:
+  item: skull:http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb{18269}
+  item_disabled: skull:http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb{18270}
+  legacy_item: spell_icon:167
+  legacy_item_disabled: spell_icon_disabled:167
+  url: http://textures.minecraft.net/texture/b6d7a7f167e24d166ab1d8dedd79311481d4e1ebddbaba8ec6cb394713fb
+  type: spell
+  glyph: 
+  vanilla_item: allium{18001}
+  vanilla_item_disabled: allium{18002}
+polymorph:
+  item: skull:http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188{18051}
+  item_disabled: skull:http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188{18052}
+  legacy_item: spell_icon:176
+  legacy_item_disabled: spell_icon_disabled:176
+  url: http://textures.minecraft.net/texture/7e453aa5908121dcf1cd8cf9f04459741f7879d99c01fb71bf243c25c3188
+  type: spell
+  glyph: 
+  vanilla_item: pufferfish_bucket{18001}
+  vanilla_item_disabled: pufferfish_bucket{18002}
+portal:
+  item: skull:http://textures.minecraft.net/texture/65627b236b77eef7b4f31726ed5dbb8f3cdf29a7f8cf820fa34c6cae82f9{18085}
+  item_disabled: skull:http://textures.minecraft.net/texture/65627b236b77eef7b4f31726ed5dbb8f3cdf29a7f8cf820fa34c6cae82f9{18086}
+  legacy_item: spell_icon:71
+  legacy_item_disabled: spell_icon_disabled:71
+  url: http://textures.minecraft.net/texture/65627b236b77eef7b4f31726ed5dbb8f3cdf29a7f8cf820fa34c6cae82f9
+  type: spell
+  glyph: 
+  vanilla_item: crying_obsidian{18001}
+  vanilla_item_disabled: crying_obsidian{18002}
+projectile:
+  item: skull:http://textures.minecraft.net/texture/d8532e9a6994e828df3a7236a7b3686194eba57dae3eb10789d98915cbb3336{18105}
+  item_disabled: skull:http://textures.minecraft.net/texture/d8532e9a6994e828df3a7236a7b3686194eba57dae3eb10789d98915cbb3336{18106}
+  legacy_item: spell_icon:197
+  legacy_item_disabled: spell_icon_disabled:197
+  url: http://textures.minecraft.net/texture/d8532e9a6994e828df3a7236a7b3686194eba57dae3eb10789d98915cbb3336
+  type: spell
+  glyph: 
+  vanilla_item: prismarine_shard{18005}
+  vanilla_item_disabled: prismarine_shard{18006}
+projector:
+  item: skull:http://textures.minecraft.net/texture/6eb68dc909b12ef5fb397c23fdecbc416d9a76825170c106b1faeb97b4749{18259}
+  item_disabled: skull:http://textures.minecraft.net/texture/6eb68dc909b12ef5fb397c23fdecbc416d9a76825170c106b1faeb97b4749{18260}
+  legacy_item: spell_icon:169
+  legacy_item_disabled: spell_icon_disabled:169
+  url: http://textures.minecraft.net/texture/6eb68dc909b12ef5fb397c23fdecbc416d9a76825170c106b1faeb97b4749
+  type: spell
+  glyph: 
+  vanilla_item: white_stained_glass{18001}
+  vanilla_item_disabled: white_stained_glass{18002}
+protection_all:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18253}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18254}
+  legacy_item: spell_icon:234
+  legacy_item_disabled: spell_icon_disabled:234
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18010}
+  vanilla_item_disabled: shield{18011}
+protection_explosions:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18147}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18148}
+  legacy_item: spell_icon:235
+  legacy_item_disabled: spell_icon_disabled:235
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18012}
+  vanilla_item_disabled: shield{18013}
+protection_falling:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18151}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18152}
+  legacy_item: spell_icon:236
+  legacy_item_disabled: spell_icon_disabled:236
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18014}
+  vanilla_item_disabled: shield{18015}
+protection_fire:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18025}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18026}
+  legacy_item: spell_icon:237
+  legacy_item_disabled: spell_icon_disabled:237
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18016}
+  vanilla_item_disabled: shield{18017}
+protection_physical:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18061}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18062}
+  legacy_item: spell_icon:238
+  legacy_item_disabled: spell_icon_disabled:238
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18018}
+  vanilla_item_disabled: shield{18019}
+protection_projectiles:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18263}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18264}
+  legacy_item: spell_icon:239
+  legacy_item_disabled: spell_icon_disabled:239
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: shield{18020}
+  vanilla_item_disabled: shield{18021}
+pull:
+  item: skull:http://textures.minecraft.net/texture/e13e9af0957a9dd4995811ef3e869b4ad8fbb59ca7474e4c84ce7f6019b079{18001}
+  item_disabled: skull:http://textures.minecraft.net/texture/e13e9af0957a9dd4995811ef3e869b4ad8fbb59ca7474e4c84ce7f6019b079{18002}
+  legacy_item: spell_icon:33
+  legacy_item_disabled: spell_icon_disabled:33
+  url: http://textures.minecraft.net/texture/e13e9af0957a9dd4995811ef3e869b4ad8fbb59ca7474e4c84ce7f6019b079
+  type: spell
+  glyph: 
+  vanilla_item: fishing_rod{18001}
+  vanilla_item_disabled: fishing_rod{18002}
+push:
+  item: skull:http://textures.minecraft.net/texture/44a760e06345bd9edd2475d6469dfb952278ca3ec7634aa334e1d7bfcc8644f{18121}
+  item_disabled: skull:http://textures.minecraft.net/texture/44a760e06345bd9edd2475d6469dfb952278ca3ec7634aa334e1d7bfcc8644f{18122}
+  legacy_item: spell_icon:32
+  legacy_item_disabled: spell_icon_disabled:32
+  url: http://textures.minecraft.net/texture/44a760e06345bd9edd2475d6469dfb952278ca3ec7634aa334e1d7bfcc8644f
+  type: spell
+  glyph: 
+  vanilla_item: wheat{18001}
+  vanilla_item_disabled: wheat{18002}
+railgun:
+  item: skull:http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496{18107}
+  item_disabled: skull:http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496{18108}
+  legacy_item: spell_icon:161
+  legacy_item_disabled: spell_icon_disabled:161
+  url: http://textures.minecraft.net/texture/436cb244bd2a9c1734f2db6517a973a91b1773f02ca4b481af5f24d17bb1496
+  type: spell
+  glyph: 
+  vanilla_item: prismarine_shard{18003}
+  vanilla_item_disabled: prismarine_shard{18004}
+rainbow:
+  item: spell_icon:193
+  item_disabled: spell_icon_disabled:193
+  url: http://textures.minecraft.net/texture/4e693cf3b7bf83248527aacc2714638b55587cde593963d1f861884f5be1638
+  type: spell
+  glyph: 
+randomtp:
+  item: spell_icon:201
+  item_disabled: spell_icon_disabled:201
+  url: http://textures.minecraft.net/texture/1adaf6e6e387bc18567671bb82e948488bbacff97763ee5985442814989f5d
+  type: spell
+  glyph: 
+recall:
+  item: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18169}
+  item_disabled: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18170}
+  legacy_item: spell_icon:149
+  legacy_item_disabled: spell_icon_disabled:149
+  url: http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7
+  type: spell
+  glyph: 
+  vanilla_item: jungle_door{18001}
+  vanilla_item_disabled: jungle_door{18002}
+reflect:
+  item: skull:http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc{18017}
+  item_disabled: skull:http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc{18018}
+  legacy_item: spell_icon:23
+  legacy_item_disabled: spell_icon_disabled:23
+  url: http://textures.minecraft.net/texture/38f77caf858c927df996e277cf6e9fbb9b3cd71aa34e4412da4d6312cc8dfc
+  type: spell
+  glyph: 
+  vanilla_item: pink_dye{18001}
+  vanilla_item_disabled: pink_dye{18002}
+rocket:
+  item: skull:http://textures.minecraft.net/texture/5a532e9d2221b1a2ffdbc701578331c8da41c36d1487696fefa584373572{18095}
+  item_disabled: skull:http://textures.minecraft.net/texture/5a532e9d2221b1a2ffdbc701578331c8da41c36d1487696fefa584373572{18096}
+  legacy_item: spell_icon:191
+  legacy_item_disabled: spell_icon_disabled:191
+  url: http://textures.minecraft.net/texture/5a532e9d2221b1a2ffdbc701578331c8da41c36d1487696fefa584373572
+  type: spell
+  glyph: 
+  vanilla_item: firework_rocket{18001}
+  vanilla_item_disabled: firework_rocket{18002}
+rubberize:
+  item: skull:http://textures.minecraft.net/texture/fced4114232f1aff90c5fbb3535e89c546858b14bae3fea7ecc896b2bd51{18059}
+  item_disabled: skull:http://textures.minecraft.net/texture/fced4114232f1aff90c5fbb3535e89c546858b14bae3fea7ecc896b2bd51{18060}
+  legacy_item: spell_icon:173
+  legacy_item_disabled: spell_icon_disabled:173
+  url: http://textures.minecraft.net/texture/fced4114232f1aff90c5fbb3535e89c546858b14bae3fea7ecc896b2bd51
+  type: spell
+  glyph: 
+  vanilla_item: slime_block{18001}
+  vanilla_item_disabled: slime_block{18002}
+sandblast:
+  item: skull:http://textures.minecraft.net/texture/c1dc6e8c5e3da4aed0ca478e195b8fe3a438fd8cb775b9d10fa1ff7d2dcf714{18077}
+  item_disabled: skull:http://textures.minecraft.net/texture/c1dc6e8c5e3da4aed0ca478e195b8fe3a438fd8cb775b9d10fa1ff7d2dcf714{18078}
+  legacy_item: spell_icon:122
+  legacy_item_disabled: spell_icon_disabled:122
+  url: http://textures.minecraft.net/texture/c1dc6e8c5e3da4aed0ca478e195b8fe3a438fd8cb775b9d10fa1ff7d2dcf714
+  type: spell
+  glyph: 
+  vanilla_item: sand{18001}
+  vanilla_item_disabled: sand{18002}
+secure:
+  item: skull:http://textures.minecraft.net/texture/e266e2ffa06f553ef326d8c92994c77edde2e521697b5fb4637ed644443e12{18159}
+  item_disabled: skull:http://textures.minecraft.net/texture/e266e2ffa06f553ef326d8c92994c77edde2e521697b5fb4637ed644443e12{18160}
+  legacy_item: spell_icon:183
+  legacy_item_disabled: spell_icon_disabled:183
+  url: http://textures.minecraft.net/texture/e266e2ffa06f553ef326d8c92994c77edde2e521697b5fb4637ed644443e12
+  type: spell
+  glyph: 
+  vanilla_item: trapped_chest{18001}
+  vanilla_item_disabled: trapped_chest{18002}
+sellshop:
+  item: sulphur
+  type: spell
+  glyph: 
+sharpen_sword:
+  item: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18031}
+  item_disabled: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18032}
+  legacy_item: spell_icon:240
+  legacy_item_disabled: spell_icon_disabled:240
+  url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+  type: spell
+  glyph: 
+  vanilla_item: diamond_sword{18104}
+  vanilla_item_disabled: diamond_sword{18105}
+shell:
+  item: skull:http://textures.minecraft.net/texture/3dbb78853b526f9b712b4e431fb332eae0e6cd3dea9a610e9ecf54c31f7c6d{18293}
+  item_disabled: skull:http://textures.minecraft.net/texture/3dbb78853b526f9b712b4e431fb332eae0e6cd3dea9a610e9ecf54c31f7c6d{18294}
+  legacy_item: spell_icon:22
+  legacy_item_disabled: spell_icon_disabled:22
+  url: http://textures.minecraft.net/texture/3dbb78853b526f9b712b4e431fb332eae0e6cd3dea9a610e9ecf54c31f7c6d
+  type: spell
+  glyph: 
+  vanilla_item: scute{18001}
+  vanilla_item_disabled: scute{18002}
+shrink:
+  item: skull:http://textures.minecraft.net/texture/dd91c092cb93f6f4152629a02ddf617557381a16694a46eba3468446363c08e{18163}
+  item_disabled: skull:http://textures.minecraft.net/texture/dd91c092cb93f6f4152629a02ddf617557381a16694a46eba3468446363c08e{18164}
+  legacy_item: spell_icon:146
+  legacy_item_disabled: spell_icon_disabled:146
+  url: http://textures.minecraft.net/texture/dd91c092cb93f6f4152629a02ddf617557381a16694a46eba3468446363c08e
+  type: spell
+  glyph: 
+  vanilla_item: red_mushroom{18001}
+  vanilla_item_disabled: red_mushroom{18002}
+shuriken:
+  item: skull:http://textures.minecraft.net/texture/c79a5d6fbb1fe7435edbb9e72cb1d02f6e91597eb4b79d818ae583cda21f{18037}
+  item_disabled: skull:http://textures.minecraft.net/texture/c79a5d6fbb1fe7435edbb9e72cb1d02f6e91597eb4b79d818ae583cda21f{18038}
+  legacy_item: spell_icon:194
+  legacy_item_disabled: spell_icon_disabled:194
+  url: http://textures.minecraft.net/texture/c79a5d6fbb1fe7435edbb9e72cb1d02f6e91597eb4b79d818ae583cda21f
+  type: spell
+  glyph: 
+  vanilla_item: emerald{18002}
+  vanilla_item_disabled: emerald{18003}
+silence:
+  item: skull:http://textures.minecraft.net/texture/ad7e09a7af7af5acc286e6a4dd3c2f69b55ace33b7838ca899545570e946ee{18057}
+  item_disabled: skull:http://textures.minecraft.net/texture/ad7e09a7af7af5acc286e6a4dd3c2f69b55ace33b7838ca899545570e946ee{18058}
+  legacy_item: spell_icon:8
+  legacy_item_disabled: spell_icon_disabled:8
+  url: http://textures.minecraft.net/texture/ad7e09a7af7af5acc286e6a4dd3c2f69b55ace33b7838ca899545570e946ee
+  type: spell
+  glyph: 
+  vanilla_item: music_disc_11{18002}
+  vanilla_item_disabled: music_disc_11{18003}
+singularity:
+  item: skull:http://textures.minecraft.net/texture/ac60643368ba49652b36989878bf296e25d5b3d7526f283ef8cd7470a7a51e8{18097}
+  item_disabled: skull:http://textures.minecraft.net/texture/ac60643368ba49652b36989878bf296e25d5b3d7526f283ef8cd7470a7a51e8{18098}
+  legacy_item: spell_icon:190
+  legacy_item_disabled: spell_icon_disabled:190
+  url: http://textures.minecraft.net/texture/ac60643368ba49652b36989878bf296e25d5b3d7526f283ef8cd7470a7a51e8
+  type: spell
+  glyph: 
+  vanilla_item: coal{18001}
+  vanilla_item_disabled: coal{18002}
+smite:
+  item: skull:http://textures.minecraft.net/texture/a31cc0ffb1e814e1c82301067ea318356befa65dc1a027afbfd498709cad58{18019}
+  item_disabled: skull:http://textures.minecraft.net/texture/a31cc0ffb1e814e1c82301067ea318356befa65dc1a027afbfd498709cad58{18020}
+  legacy_item: spell_icon:40
+  legacy_item_disabled: spell_icon_disabled:40
+  url: http://textures.minecraft.net/texture/a31cc0ffb1e814e1c82301067ea318356befa65dc1a027afbfd498709cad58
+  type: spell
+  glyph: 
+  vanilla_item: sea_pickle{18001}
+  vanilla_item_disabled: sea_pickle{18002}
+sparkle:
+  url: https://textures.minecraft.net/texture/242c649f037613f86f6c9ba0fbdf11ce4a1dc8f9a1bb3d6dc5dacf42a3c095f8
+  item: skull:https://textures.minecraft.net/texture/242c649f037613f86f6c9ba0fbdf11ce4a1dc8f9a1bb3d6dc5dacf42a3c095f8{18383}
+  item_disabled: skull:https://textures.minecraft.net/texture/242c649f037613f86f6c9ba0fbdf11ce4a1dc8f9a1bb3d6dc5dacf42a3c095f8{18384}
+  type: spell
+  glyph: 
+  vanilla_item: glowstone_dust{18003}
+  vanilla_item_disabled: glowstone_dust{18004}
+sponge:
+  item: skull:http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e{18177}
+  item_disabled: skull:http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e{18178}
+  legacy_item: spell_icon:186
+  legacy_item_disabled: spell_icon_disabled:186
+  url: http://textures.minecraft.net/texture/c28bdd34810f866527daaf283da71826a8378286b2a43a626615fa1b3639e
+  type: spell
+  glyph: 
+  vanilla_item: sponge{18001}
+  vanilla_item_disabled: sponge{18002}
+stash:
+  item: skull:http://textures.minecraft.net/texture/a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067{18241}
+  item_disabled: skull:http://textures.minecraft.net/texture/a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067{18242}
+  legacy_item: spell_icon:106
+  legacy_item_disabled: spell_icon_disabled:106
+  url: http://textures.minecraft.net/texture/a6cc486c2be1cb9dfcb2e53dd9a3e9a883bfadb27cb956f1896d602b4067
+  type: spell
+  glyph: 
+  vanilla_item: ender_chest{18001}
+  vanilla_item_disabled: ender_chest{18002}
+sticky:
+  item: skull:http://textures.minecraft.net/texture/f873525428823bffa57b74bdb1251de6e7c49660b35c995d2bf5d04a1ff34b8f{18115}
+  item_disabled: skull:http://textures.minecraft.net/texture/f873525428823bffa57b74bdb1251de6e7c49660b35c995d2bf5d04a1ff34b8f{18116}
+  legacy_item: spell_icon:165
+  legacy_item_disabled: spell_icon_disabled:165
+  url: http://textures.minecraft.net/texture/f873525428823bffa57b74bdb1251de6e7c49660b35c995d2bf5d04a1ff34b8f
+  type: spell
+  glyph: 
+  vanilla_item: baked_potato{18001}
+  vanilla_item_disabled: baked_potato{18002}
+stream:
+  item: skull:http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced{18211}
+  item_disabled: skull:http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced{18212}
+  legacy_item: spell_icon:140
+  legacy_item_disabled: spell_icon_disabled:140
+  url: http://textures.minecraft.net/texture/b750768d23e447d95b662344f426cc96228a4047f7a8ced0f4861edbbeaced
+  type: spell
+  glyph: 
+  vanilla_item: lapis_lazuli{18001}
+  vanilla_item_disabled: lapis_lazuli{18002}
+stun:
+  item: skull:http://textures.minecraft.net/texture/a4b47e6847d71c60d0a6453313435d61f15b1523abd9741de36366deec1f38d6{18283}
+  item_disabled: skull:http://textures.minecraft.net/texture/a4b47e6847d71c60d0a6453313435d61f15b1523abd9741de36366deec1f38d6{18284}
+  legacy_item: spell_icon:179
+  legacy_item_disabled: spell_icon_disabled:179
+  url: http://textures.minecraft.net/texture/a4b47e6847d71c60d0a6453313435d61f15b1523abd9741de36366deec1f38d6
+  type: spell
+  glyph: 
+  vanilla_item: blue_dye{18001}
+  vanilla_item_disabled: blue_dye{18002}
+superkill:
+  item: skull:http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c{18075}
+  item_disabled: skull:http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c{18076}
+  legacy_item: spell_icon:171
+  legacy_item_disabled: spell_icon_disabled:171
+  url: http://textures.minecraft.net/texture/71a235c48123b487e864fa21016e223ad4070c6d977b0a519f7dd743d39e47c
+  type: spell
+  glyph: 
+  vanilla_item: bone{18001}
+  vanilla_item_disabled: bone{18002}
+sweep:
+  item: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18093}
+  item_disabled: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18094}
+  legacy_item: spell_icon:178
+  legacy_item_disabled: spell_icon_disabled:178
+  url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+  type: spell
+  glyph: 
+  vanilla_item: dried_kelp{18001}
+  vanilla_item_disabled: dried_kelp{18002}
+tag:
+  item: skull:http://textures.minecraft.net/texture/c5acc4b5a7079df3f51cd9388508a5860fc60e9bcde97f9abee62b457d7e{18165}
+  item_disabled: skull:http://textures.minecraft.net/texture/c5acc4b5a7079df3f51cd9388508a5860fc60e9bcde97f9abee62b457d7e{18166}
+  legacy_item: spell_icon:29
+  legacy_item_disabled: spell_icon_disabled:29
+  url: http://textures.minecraft.net/texture/c5acc4b5a7079df3f51cd9388508a5860fc60e9bcde97f9abee62b457d7e
+  type: spell
+  glyph: 
+  vanilla_item: oak_sign{18003}
+  vanilla_item_disabled: oak_sign{18004}
+tame:
+  item: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18035}
+  item_disabled: skull:http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d{18036}
+  legacy_item: spell_icon:50
+  legacy_item_disabled: spell_icon_disabled:50
+  url: http://textures.minecraft.net/texture/ddb5db33eac28ccfce38f179044575cb9de8195bc1ed843d4345da5f13b63d
+  type: spell
+  glyph: 
+  vanilla_item: salmon{18001}
+  vanilla_item_disabled: salmon{18002}
+tendril:
+  item: skull:http://textures.minecraft.net/texture/564e7e4b718a7136188385cae256de87a6cb29c85744c9c123509a4c7cec69d0{18043}
+  item_disabled: skull:http://textures.minecraft.net/texture/564e7e4b718a7136188385cae256de87a6cb29c85744c9c123509a4c7cec69d0{18044}
+  legacy_item: spell_icon:129
+  legacy_item_disabled: spell_icon_disabled:129
+  url: http://textures.minecraft.net/texture/564e7e4b718a7136188385cae256de87a6cb29c85744c9c123509a4c7cec69d0
+  type: spell
+  glyph: 
+  vanilla_item: cooked_mutton{18001}
+  vanilla_item_disabled: cooked_mutton{18002}
+tent:
+  item: skull:http://textures.minecraft.net/texture/443e10a710998d47d238e291a8ba8f6abf42bc7e419d1d8dcc8c55707ebb19{18227}
+  item_disabled: skull:http://textures.minecraft.net/texture/443e10a710998d47d238e291a8ba8f6abf42bc7e419d1d8dcc8c55707ebb19{18228}
+  legacy_item: spell_icon:156
+  legacy_item_disabled: spell_icon_disabled:156
+  url: http://textures.minecraft.net/texture/443e10a710998d47d238e291a8ba8f6abf42bc7e419d1d8dcc8c55707ebb19
+  type: spell
+  glyph: 
+  vanilla_item: brown_wool{18001}
+  vanilla_item_disabled: brown_wool{18002}
+testdummy:
+  item: skull:http://textures.minecraft.net/texture/f6f3e3c8aeff6128b1194ccf7e3eaddcf438e1938471a66ef76a09d4a3a1932{18103}
+  item_disabled: skull:http://textures.minecraft.net/texture/f6f3e3c8aeff6128b1194ccf7e3eaddcf438e1938471a66ef76a09d4a3a1932{18104}
+  legacy_item: spell_icon:65
+  legacy_item_disabled: spell_icon_disabled:65
+  url: http://textures.minecraft.net/texture/f6f3e3c8aeff6128b1194ccf7e3eaddcf438e1938471a66ef76a09d4a3a1932
+  type: spell
+  glyph: 
+  vanilla_item: totem_of_undying{18001}
+  vanilla_item_disabled: totem_of_undying{18002}
+time:
+  item: skull:http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb{18257}
+  item_disabled: skull:http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb{18258}
+  legacy_item: spell_icon:86
+  legacy_item_disabled: spell_icon_disabled:86
+  url: http://textures.minecraft.net/texture/1b5c8c12faec6646fd9cd8c610f138f51fbaaee1182baff8fa4f32d683b25eb
+  type: spell
+  glyph: 
+  vanilla_item: pumpkin_pie{18001}
+  vanilla_item_disabled: pumpkin_pie{18002}
+torch:
+  item: skull:http://textures.minecraft.net/texture/08f4793551132fad5bdb5d185269881a8de6fa4b86c6bde92c2bf467e097{18139}
+  item_disabled: skull:http://textures.minecraft.net/texture/08f4793551132fad5bdb5d185269881a8de6fa4b86c6bde92c2bf467e097{18140}
+  legacy_item: spell_icon:62
+  legacy_item_disabled: spell_icon_disabled:62
+  url: http://textures.minecraft.net/texture/08f4793551132fad5bdb5d185269881a8de6fa4b86c6bde92c2bf467e097
+  type: spell
+  glyph: 
+  vanilla_item: torch{18001}
+  vanilla_item_disabled: torch{18002}
+tornado:
+  item: skull:http://textures.minecraft.net/texture/2362826553aaf78fd8b511fdedba941738ddd21c0f889e6bf2697d5a4f74f27{18153}
+  item_disabled: skull:http://textures.minecraft.net/texture/2362826553aaf78fd8b511fdedba941738ddd21c0f889e6bf2697d5a4f74f27{18154}
+  legacy_item: spell_icon:192
+  legacy_item_disabled: spell_icon_disabled:192
+  url: http://textures.minecraft.net/texture/2362826553aaf78fd8b511fdedba941738ddd21c0f889e6bf2697d5a4f74f27
+  type: spell
+  glyph: 
+  vanilla_item: hopper{18001}
+  vanilla_item_disabled: hopper{18002}
+torture:
+  item: skull:http://textures.minecraft.net/texture/df19b39e565b16cbdabe364b91e35894d1e9bac0ad3fa4b0905ec4f366627{18049}
+  item_disabled: skull:http://textures.minecraft.net/texture/df19b39e565b16cbdabe364b91e35894d1e9bac0ad3fa4b0905ec4f366627{18050}
+  legacy_item: spell_icon:172
+  legacy_item_disabled: spell_icon_disabled:172
+  url: http://textures.minecraft.net/texture/df19b39e565b16cbdabe364b91e35894d1e9bac0ad3fa4b0905ec4f366627
+  type: spell
+  glyph: 
+  vanilla_item: beetroot{18001}
+  vanilla_item_disabled: beetroot{18002}
+toss:
+  item: skull:http://textures.minecraft.net/texture/44471f5f9792fd21dd1e652f2ac5f47e49eeebd4fb289f4174ec20dc7b57e6{18207}
+  item_disabled: skull:http://textures.minecraft.net/texture/44471f5f9792fd21dd1e652f2ac5f47e49eeebd4fb289f4174ec20dc7b57e6{18208}
+  legacy_item: spell_icon:30
+  legacy_item_disabled: spell_icon_disabled:30
+  url: http://textures.minecraft.net/texture/44471f5f9792fd21dd1e652f2ac5f47e49eeebd4fb289f4174ec20dc7b57e6
+  type: spell
+  glyph: 
+  vanilla_item: black_dye{18003}
+  vanilla_item_disabled: black_dye{18004}
+tracking:
+  item: skull:http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1{18209}
+  item_disabled: skull:http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1{18210}
+  legacy_item: spell_icon:189
+  legacy_item_disabled: spell_icon_disabled:189
+  url: http://textures.minecraft.net/texture/3bc9de58822a3f7c6c23e212cf954fc728a6b2e45c54a89b4af5e453d39b1
+  type: spell
+  glyph: 
+  vanilla_item: ender_eye{18001}
+  vanilla_item_disabled: ender_eye{18002}
+upgrades:
+  item: skull:http://textures.minecraft.net/texture/ce6ed0a5f7e23bc3d34d73baa0b9c3f838e85014d2ff290801dc7486dd4da6{18187}
+  item_disabled: skull:http://textures.minecraft.net/texture/ce6ed0a5f7e23bc3d34d73baa0b9c3f838e85014d2ff290801dc7486dd4da6{18188}
+  legacy_item: spell_icon:187
+  legacy_item_disabled: spell_icon_disabled:187
+  url: http://textures.minecraft.net/texture/ce6ed0a5f7e23bc3d34d73baa0b9c3f838e85014d2ff290801dc7486dd4da6
+  type: spell
+  glyph: 
+  vanilla_item: rabbit_foot{18001}
+  vanilla_item_disabled: rabbit_foot{18002}
+vanish:
+  item: spell_icon:116
+  item_disabled: spell_icon_disabled:116
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+vengeance:
+  item: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18113}
+  item_disabled: skull:http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a{18114}
+  legacy_item: spell_icon:239
+  legacy_item_disabled: spell_icon_disabled:239
+  url: http://textures.minecraft.net/texture/4a68c3ec585277cad3da3955fac44fbe7a7f98271fd529d26ce110d8884a8a
+  type: spell
+  glyph: 
+  vanilla_item: spider_eye{18001}
+  vanilla_item_disabled: spider_eye{18002}
+volley:
+  item: skull:http://textures.minecraft.net/texture/c7c963831339c9e82e91cd29bfa36ab616d78555dfbe7e72983e2e254180a2ab{18189}
+  item_disabled: skull:http://textures.minecraft.net/texture/c7c963831339c9e82e91cd29bfa36ab616d78555dfbe7e72983e2e254180a2ab{18190}
+  legacy_item: spell_icon:31
+  legacy_item_disabled: spell_icon_disabled:31
+  url: http://textures.minecraft.net/texture/c7c963831339c9e82e91cd29bfa36ab616d78555dfbe7e72983e2e254180a2ab
+  type: spell
+  glyph: 
+  vanilla_item: wheat_seeds{18001}
+  vanilla_item_disabled: wheat_seeds{18002}
+walls:
+  item: skull:http://textures.minecraft.net/texture/4fed122b86ffaeaee36ab4a8c1c27f46fb5bddc83322c8a165d0f27aeb1830{18175}
+  item_disabled: skull:http://textures.minecraft.net/texture/4fed122b86ffaeaee36ab4a8c1c27f46fb5bddc83322c8a165d0f27aeb1830{18176}
+  legacy_item: spell_icon:130
+  legacy_item_disabled: spell_icon_disabled:130
+  url: http://textures.minecraft.net/texture/4fed122b86ffaeaee36ab4a8c1c27f46fb5bddc83322c8a165d0f27aeb1830
+  type: spell
+  glyph: 
+  vanilla_item: terracotta{18001}
+  vanilla_item_disabled: terracotta{18002}
+wand:
+  item: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18125}
+  item_disabled: skull:http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7{18126}
+  legacy_item: spell_icon:233
+  legacy_item_disabled: spell_icon_disabled:233
+  url: http://textures.minecraft.net/texture/58c573cefdc8cc1b8c894340cb54ab343523ec2ffa0afc7536968391ae1e7
+  type: spell
+  glyph: 
+  vanilla_item: blaze_rod{18045}
+  vanilla_item_disabled: blaze_rod{18046}
+wave:
+  item: skull:http://textures.minecraft.net/texture/1d7cb6f2a4b2c2059621b7f6f84b5f0bc84c19ce981d054c26cec012ac{18089}
+  item_disabled: skull:http://textures.minecraft.net/texture/1d7cb6f2a4b2c2059621b7f6f84b5f0bc84c19ce981d054c26cec012ac{18090}
+  legacy_item: spell_icon:195
+  legacy_item_disabled: spell_icon_disabled:195
+  url: http://textures.minecraft.net/texture/1d7cb6f2a4b2c2059621b7f6f84b5f0bc84c19ce981d054c26cec012ac
+  type: spell
+  glyph: 
+  vanilla_item: light_blue_dye{18001}
+  vanilla_item_disabled: light_blue_dye{18002}
+wear:
+  item: spell_icon:137
+  item_disabled: spell_icon_disabled:137
+  url: http://textures.minecraft.net/texture/2abee4fe341011b9a0ae2fb83644f695521fd4e4c6198fe23112f1acbf38369
+  type: spell
+  glyph: 
+weather:
+  item: skull:http://textures.minecraft.net/texture/cd76c83453ba48a6aceac090ef4e2c8918ecd8891e91621bed2e03fad8a7f6{18205}
+  item_disabled: skull:http://textures.minecraft.net/texture/cd76c83453ba48a6aceac090ef4e2c8918ecd8891e91621bed2e03fad8a7f6{18206}
+  legacy_item: spell_icon:59
+  legacy_item_disabled: spell_icon_disabled:59
+  url: http://textures.minecraft.net/texture/cd76c83453ba48a6aceac090ef4e2c8918ecd8891e91621bed2e03fad8a7f6
+  type: spell
+  glyph: 
+  vanilla_item: popped_chorus_fruit{18001}
+  vanilla_item_disabled: popped_chorus_fruit{18002}
+webbing:
+  item: spell_icon:203
+  item_disabled: spell_icon_disabled:203
+  url: http://textures.minecraft.net/texture/672e0c305074a7acf671e7644291d7f745baecf05743395e28d1f04cbbb4
+  type: spell
+  glyph: 
+whip:
+  item: skull:http://textures.minecraft.net/texture/543a93796b389fc710671b62106068619b7673e7bf48a6c77bc4db921d54{18173}
+  item_disabled: skull:http://textures.minecraft.net/texture/543a93796b389fc710671b62106068619b7673e7bf48a6c77bc4db921d54{18174}
+  legacy_item: spell_icon:198
+  legacy_item_disabled: spell_icon_disabled:198
+  url: http://textures.minecraft.net/texture/543a93796b389fc710671b62106068619b7673e7bf48a6c77bc4db921d54
+  type: spell
+  glyph: 
+  vanilla_item: lead{18001}
+  vanilla_item_disabled: lead{18002}
+wither:
+  item: wither_skeleton_skull{18001}
+  item_disabled: wither_skeleton_skull{18002}
+  legacy_item: spell_icon:53
+  legacy_item_disabled: spell_icon_disabled:53
+  url: http://textures.minecraft.net/texture/ac90eba543a9b9609c4815542e88274e50c152c837a22d3f5f64847b95e2
+  type: spell
+  glyph: 
+wolf:
+  item: skull:http://textures.minecraft.net/texture/f73d8d925fd45eee331437cc496403f96516a5d35a8e62189990d8beee6a14{18073}
+  item_disabled: skull:http://textures.minecraft.net/texture/f73d8d925fd45eee331437cc496403f96516a5d35a8e62189990d8beee6a14{18074}
+  legacy_item: spell_icon:69
+  legacy_item_disabled: spell_icon_disabled:69
+  url: http://textures.minecraft.net/texture/f73d8d925fd45eee331437cc496403f96516a5d35a8e62189990d8beee6a14
+  type: spell
+  glyph: 
+  vanilla_item: beef{18001}
+  vanilla_item_disabled: beef{18002}
+workbench:
+  item: skull:http://textures.minecraft.net/texture/a5bf87cdeeefecb473472dc7c858ffa2e3ec5bd48c3718df49e2798e4aeff{18123}
+  item_disabled: skull:http://textures.minecraft.net/texture/a5bf87cdeeefecb473472dc7c858ffa2e3ec5bd48c3718df49e2798e4aeff{18124}
+  legacy_item: spell_icon:105
+  legacy_item_disabled: spell_icon_disabled:105
+  url: http://textures.minecraft.net/texture/a5bf87cdeeefecb473472dc7c858ffa2e3ec5bd48c3718df49e2798e4aeff
+  type: spell
+  glyph: 
+  vanilla_item: crafting_table{18001}
+  vanilla_item_disabled: crafting_table{18002}
+wound:
+  item: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18131}
+  item_disabled: skull:http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a{18132}
+  legacy_item: spell_icon:178
+  legacy_item_disabled: spell_icon_disabled:178
+  url: http://textures.minecraft.net/texture/df4396a2bc47bc4dd545fc787a3ad8a0a75b8783cb5d81482c2016fab9cd2a
+  type: spell
+  glyph: 
+  vanilla_item: diamond_sword{18102}
+  vanilla_item_disabled: diamond_sword{18103}

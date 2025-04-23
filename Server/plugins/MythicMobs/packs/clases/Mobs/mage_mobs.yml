@@ -1,0 +1,311 @@
+######## created by samus2002 #########
+
+# Arcane Missile #
+
+Arcane_Missile:
+  Type: ARMOR_STAND
+  ItemHead: arcane_missile
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.arcane_missile;volume=0.2;pitch=1} @self ~onSpawn
+  - equip{item=arcane_missile:4} ~onSpawn
+  #- animatearmorstand{d=20;head=0,-25,0;ignoreempty=false} @self ~onSpawn
+  #- look{headOnly=false;immediately=true} @forward ~onTimer:1
+  - effect:particles{particle=redstone;color=#73f8ff;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Arcane_Missile2:
+  Type: ARMOR_STAND
+  ItemHead: arcane_missile
+  Pose:
+      Head: 0,25,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_missile:4} ~onSpawn
+  - animatearmorstand{d=40;head=0,-25,0;ignoreempty=false} @self ~onSpawn
+  #- look{headOnly=false;immediately=true} @forward ~onTimer:1
+  - effect:particles{particle=redstone;color=#73f8ff;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Arcane_Missile3:
+  Type: ARMOR_STAND
+  ItemHead: arcane_missile
+  Pose:
+      Head: 0,-25,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arcane_missile:4} ~onSpawn
+  - animatearmorstand{d=40;head=0,25,0;ignoreempty=false} @self ~onSpawn
+  #- look{headOnly=false;immediately=true} @forward ~onTimer:1
+  - effect:particles{particle=redstone;color=#73f8ff;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+# Fireball #
+
+Fireball_ball:
+  Type: ARMOR_STAND
+  ItemHead: fireball_fireball
+  Pose:
+      Head: 0,180,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=fireball_fireball:4} ~onSpawn
+  - animatearmorstand{d=100;head=0,-360,0;ignoreempty=false} @self ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - effect:particles{particle=flame;amount=2;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+# Backstep #
+
+Blink1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blink_6:0;delay=2} ~onSpawn
+  - equip{item=blink_5:0;delay=3} ~onSpawn
+  - equip{item=blink_4:0;delay=4} ~onSpawn
+  - equip{item=blink_3:0;delay=5} ~onSpawn
+  - equip{item=blink_2:0;delay=6} ~onSpawn
+  - equip{item=blink_1:0;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+Blink2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=blink_1:0;delay=2} ~onSpawn
+  - equip{item=blink_2:0;delay=3} ~onSpawn
+  - equip{item=blink_3:0;delay=4} ~onSpawn
+  - equip{item=blink_4:0;delay=5} ~onSpawn
+  - equip{item=blink_5:0;delay=6} ~onSpawn
+  - equip{item=blink_6:0;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+# Frost Nova #
+
+Frost_Nova:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.frost_nova;volume=0.4;pitch=1} @self ~onSpawn
+  - equip{item=frost_nova_1:0;delay=2} ~onSpawn
+  - equip{item=frost_nova_2:0;delay=3} ~onSpawn
+  - equip{item=frost_nova_3:0;delay=4} ~onSpawn
+  - equip{item=frost_nova_4:0;delay=5} ~onSpawn
+  - equip{item=frost_nova_5:0;delay=6} ~onSpawn
+  - equip{item=frost_nova_6:0;delay=7} ~onSpawn
+  - equip{item=frost_nova_5:0;delay=12} ~onSpawn
+  - equip{item=frost_nova_4:0;delay=13} ~onSpawn
+  - equip{item=frost_nova_3:0;delay=14} ~onSpawn
+  - equip{item=frost_nova_2:0;delay=15} ~onSpawn
+  - equip{item=frost_nova_1:0;delay=16} ~onSpawn
+  - remove{delay=17} @self ~onSpawn
+  
+# Meteor #
+
+Meteor:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: meteor
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=meteor:4} ~onSpawn
+  - effect:particles{particle=lava;amount=6;hS=0.25;vS=0.25;y=1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:1
+  - effect:particles{particle=campfire_cosy_smoke;amount=3;hS=0.35;vS=0.15;y=1;speed=0.01;forwardOffset=0;sideOffset=0} @self ~onTimer:1
+  
+Ground_Crack:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=ground_crack_explode_3:0;delay=2} ~onSpawn
+  - equip{item=ground_crack_explode_2:0;delay=42} ~onSpawn
+  - equip{item=ground_crack_explode_1:0;delay=44} ~onSpawn
+  - equip{item=groundd_crack_1:0;delay=46} ~onSpawn
+  - equip{item=groundd_crack_2:0;delay=48} ~onSpawn
+  - equip{item=groundd_crack_3:0;delay=50} ~onSpawn
+  - equip{item=groundd_crack_4:0;delay=52} ~onSpawn
+  - equip{item=groundd_crack_5:0;delay=54} ~onSpawn
+  - equip{item=groundd_crack_6:0;delay=56} ~onSpawn
+  - skill{s=CRACK_REMOVE} ~onSpawn
+  - skill{s=CRACK_REMOVE} ~onTimer:1
+  - remove{delay=58} @self ~onSpawn
+  
+# Quake #
+
+Quake:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=groundd_crack_1:4;delay=0} ~onSpawn
+  - equip{item=groundd_crack_2:4;delay=40} ~onSpawn
+  - equip{item=groundd_crack_3:4;delay=42} ~onSpawn
+  - equip{item=groundd_crack_4:4;delay=44} ~onSpawn
+  - equip{item=groundd_crack_5:4;delay=46} ~onSpawn
+  - equip{item=groundd_crack_6:4;delay=48} ~onSpawn
+  - remove{delay=50} @self ~onSpawn
+  
+# Inferno Chains #
+
+Inferno_Chains1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.inferno_chains_summon;volume=0.8;pitch=1} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain;volume=0.8;pitch=1;delay=4} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain_hit;volume=0.8;pitch=1;delay=12} @self ~onSpawn
+  - equip{item=inferno_chains_1:0;delay=3} ~onSpawn
+  - equip{item=inferno_chains_2:0;delay=6} ~onSpawn
+  - equip{item=inferno_chains_3:0;delay=9} ~onSpawn
+  - equip{item=inferno_chains_4:0;delay=12} ~onSpawn
+  - equip{item=inferno_chains_5:0;delay=15} ~onSpawn
+  - equip{item=inferno_chains_6:0;delay=18} ~onSpawn
+  - equip{item=inferno_chains_7:0;delay=21} ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+Inferno_Chains2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,180,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.inferno_chains_summon;volume=0.8;pitch=1} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain;volume=0.8;pitch=1;delay=4} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain_hit;volume=0.8;pitch=1;delay=12} @self ~onSpawn
+  - equip{item=inferno_chains_1:0;delay=3} ~onSpawn
+  - equip{item=inferno_chains_2:0;delay=6} ~onSpawn
+  - equip{item=inferno_chains_3:0;delay=9} ~onSpawn
+  - equip{item=inferno_chains_4:0;delay=12} ~onSpawn
+  - equip{item=inferno_chains_5:0;delay=15} ~onSpawn
+  - equip{item=inferno_chains_6:0;delay=18} ~onSpawn
+  - equip{item=inferno_chains_7:0;delay=21} ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+Inferno_Chains3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,90,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.inferno_chains_summon;volume=0.8;pitch=1} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain;volume=0.8;pitch=1;delay=4} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain_hit;volume=0.8;pitch=1;delay=12} @self ~onSpawn
+  - equip{item=inferno_chains_1:0;delay=3} ~onSpawn
+  - equip{item=inferno_chains_2:0;delay=6} ~onSpawn
+  - equip{item=inferno_chains_3:0;delay=9} ~onSpawn
+  - equip{item=inferno_chains_4:0;delay=12} ~onSpawn
+  - equip{item=inferno_chains_5:0;delay=15} ~onSpawn
+  - equip{item=inferno_chains_6:0;delay=18} ~onSpawn
+  - equip{item=inferno_chains_7:0;delay=21} ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+Inferno_Chains4:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,-90,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=mage_sounds:samus.inferno_chains_summon;volume=0.8;pitch=1} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain;volume=0.8;pitch=1;delay=4} @self ~onSpawn
+  - effect:sound{s=mage_sounds:samus.inferno_chains_chain_hit;volume=0.8;pitch=1;delay=12} @self ~onSpawn
+  - equip{item=inferno_chains_1:0;delay=3} ~onSpawn
+  - equip{item=inferno_chains_2:0;delay=6} ~onSpawn
+  - equip{item=inferno_chains_3:0;delay=9} ~onSpawn
+  - equip{item=inferno_chains_4:0;delay=12} ~onSpawn
+  - equip{item=inferno_chains_5:0;delay=15} ~onSpawn
+  - equip{item=inferno_chains_6:0;delay=18} ~onSpawn
+  - equip{item=inferno_chains_7:0;delay=21} ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+Inferno_Chains_Crack:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=block_crack;m=DIRT;amount=20;hS=1;vS=0.4;speed=0;forwardOffset=0;sideOffset=0;delay=9} @self ~onSpawn
+  - equip{item=groundd_crack_1:0;delay=9} ~onSpawn
+  - equip{item=ground_crack_explode_1:0;delay=42} ~onSpawn
+  - equip{item=ground_crack_explode_2:0;delay=45} ~onSpawn
+  - equip{item=ground_crack_explode_3:0;delay=48} ~onSpawn
+  - remove{delay=51} @self ~onSpawn

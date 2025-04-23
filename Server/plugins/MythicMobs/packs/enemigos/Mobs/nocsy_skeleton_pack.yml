@@ -1,0 +1,246 @@
+SkPack_DummySpawnerNecromancer:
+  Type: ARMOR_STAND
+  Drops: []
+  Equipment: []
+  Skills:
+  - skill{s=SkPack_Necromancer_soul_breath_projectile_dummy} @self ~onSpawn
+  Display: "§f"
+  Health: 10
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    KnockbackResistance: 1
+    Invisible: true
+    Invincible: true
+
+SkPack_FlyingSkull:
+  Type: BEE
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 lookatplayers
+  - 3 float
+  - 4 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_skeleton_skull;n=false} @self ~onSpawn
+  - skill{s=SkPack_FlyingSkullAura} @self ~onSpawn
+  - skill{s=SkPackCancelMelee;sync=true} ~onAttack
+  - skill{s=SkPack_Skeleton_Skull_Damaged_Sound} @self ~onDamaged <=100% 0.6
+  - sound{s=entity.wither_skeleton.death;v=1;p=0.8} @self ~onDeath
+  - potion{type=LEVITATION;duration=30;lvl=2} @self
+  Display: "§7Ressurected"
+  Health: 10
+  Damage: 0
+  Options:
+    Despawn: true
+    Gravity: false
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.28
+
+SkPack_Warrior:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 lookatplayers
+  - 3 float
+  - 4 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_skeleton_warrior;n=false} @self ~onSpawn
+  - skill{s=SkPack_WarriorMelee} @self ~onAttack
+  - skill{s=SkPack_WarriorBlock;sync=true} @self ~onDamaged <=100% 0.3
+  - skill{s=SkPackCancelMelee;sync=true} @self ~onAttack
+  - skill{s=SkPack_Skeleton_Ambient_Sound_Aura} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Damaged_Sound} @self ~onDamaged <=100% 0.6
+  - sound{s=entity.wither_skeleton.death;v=1;p=0.8} @self ~onDeath
+  Display: "§7Skeleton Warrior"
+  Health: 50
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.24
+
+SkPack_Archer:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  - 2 float
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=nocsy_skeleton_archer;n=false} @self ~onSpawn
+  - skill{s=SkPack_Archer_arrow_aura;sync=true} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Ambient_Sound_Aura} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Damaged_Sound} @self ~onDamaged <=100% 0.6
+  - sound{s=entity.wither_skeleton.death;v=1;p=0.8} @self ~onDeath
+  Display: "§7Skeleton Archer"
+  Health: 30
+  Damage: 10
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.24
+
+SkPack_AxeBrute:
+  Type: HUSK
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_skeleton_brute1;n=false} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Ambient_Sound_Aura} @self ~onSpawn
+  - skill{s=SkPack_AxeBrute_battle} ~onAttack
+  - skill{s=SkPackCancelMelee;sync=true} ~onAttack
+  - skill{s=SkPack_Skeleton_Damaged_Sound_Boss} @self ~onDamaged <=100% 0.6
+  - sound{s=entity.ravager.death;v=1;p=0.8} @self ~onDeath
+  Display: "§7Skeleton brute"
+  Health: 200
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.19
+    
+    
+SkPack_SwordBrute:
+  Type: HUSK
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 lookatplayers
+  - 3 float
+  - 4 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_skeleton_brute2;n=false} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Ambient_Sound_Aura} @self ~onSpawn
+  - skill{s=SkPack_SwordBrute_battle} ~onAttack
+  - skill{s=SkPackCancelMelee;sync=true} ~onAttack
+  - skill{s=SkPack_Skeleton_Damaged_Sound_Boss} @self ~onDamaged <=100% 0.6
+  - sound{s=entity.ravager.death;v=1;p=0.8} @self ~onDeath
+  Display: "§7Skeleton brute"
+  Health: 300
+  Damage: 0
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.19
+    
+SkPack_Necromancer:
+  Type: HUSK
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_skeleton_necromancer;n=false} @self ~onSpawn
+  - skill{s=SkPack_Necromancer_teleport}
+  - skill{s=SkPack_Necromancer_projectile_aura}
+  - skill{s=SkPack_Necromancer_battle;sync=true} ~onAttack
+  - skill{s=SkPack_Necromancer_repulse} ~onDamaged <=100%  0.3
+  - skill{s=SkPack_Necromancer_soul_breath_trigger} @self ~onDamaged  =80%
+  - skill{s=SkPack_Necromancer_repulse} @self ~onDamaged =75%
+  - skill{s=SkPack_Necromancer_lantern_summoning_trigger} @self ~onDamaged  =70%
+  - skill{s=SkPack_Necromancer_soul_breath_trigger} @self ~onDamaged =60%
+  - skill{s=SkPack_Necromancer_repulse} @self ~onDamaged =50%
+  - skill{s=SkPack_Necromancer_lantern_summoning_trigger} @self ~onDamaged  =45%
+  - skill{s=SkPack_Necromancer_soul_breath_trigger} @self ~onDamaged =40%
+  - skill{s=SkPack_Necromancer_lantern_summoning_trigger} @self ~onDamaged  =30%
+  - skill{s=SkPack_Necromancer_repulse} @self ~onDamaged =25%
+  - skill{s=SkPack_Necromancer_soul_breath_trigger} @self ~onDamaged =20%
+  - skill{s=SkPack_Necromancer_lantern_summoning_trigger} @self ~onDamaged =10%
+  - skill{s=SkPack_Necromancer_repulse} @self ~onDamaged =5%
+  - skill{s=SkPackCancelMelee;sync=true} ~onAttack
+  - skill{s=SkPack_Skeleton_Ambient_Sound_Aura} @self ~onSpawn
+  - skill{s=SkPack_Skeleton_Damaged_Sound_Boss} @self ~onDamaged <=100% 0.8
+  - skill{s=SkPack_Invincibility;sync=true} @self ~onDamaged
+  - sound{s=entity.wither.death;v=1;p=0.1} @self ~onDeath
+  Display: "§cHeidard, the Necromancer"
+  Health: 800
+  Damage: 0
+  Modules:
+    ThreatTable: true
+  BossBar:
+    Enabled: true
+    Title: '§cHeidard, the Necromancer'
+    Range: 40
+    Color: RED
+    Style: SOLID
+  Options:
+    Despawn: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    KnockbackResistance: 1
+    FollowRange: 20
+    AttackSpeed: 1
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.28

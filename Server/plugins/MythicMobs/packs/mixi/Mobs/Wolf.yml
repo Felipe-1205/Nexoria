@@ -1,0 +1,335 @@
+wolf-black:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=blackwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-gray:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=graywolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-brown:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=brownwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-white:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=whitewolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-spectral:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=spectralwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=ownerhurttarget} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=attacker} @self
+  - runaitargetselector{target=monsters} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=leapattarget} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=gotoowner 3} @self
+  - runaigoalselector{goal=swim} @self
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  
+wolf-evil:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=evilwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-darkbrown:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=darkbrownwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-bluegray:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=bluegraywolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+wolf-red:
+  Type: WOLF
+  Health: 100
+  Damage: 5
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - setowner @parent ~onSpawn
+  - model{mid=redwolf;n=false;mount=true} @self ~onSpawn
+  - state{s=attack;li=0;lo=0;delay=10} @self ~onAttack
+  - state{s=jump;li=0;lo=2} @self ~onAttack 0.5
+  - state{s=warning;li=0;lo=0;delay=10} @self ~onEnterCombat
+  - skill{s=wolfjump_anim} @self ~onTimer:10
+  - skill{s=wolfsprint} @self ~onTimer:20
+  - sudoskill{s=wolf-ghost;cat=true} @owner ~onDeath
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales

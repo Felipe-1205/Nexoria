@@ -1,0 +1,325 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+######## created by samus2002 #########
+  
+dragon_circle_1:
+  Id: paper
+  Display: "&6"
+  Model: 20320
+  Hide:
+  - ATTRIBUTES
+
+dragon_circle_2:
+  Id: paper
+  Display: "&6"
+  Model: 20321
+  Hide:
+  - ATTRIBUTES
+ 
+dragon_circle_3:
+  Id: paper
+  Display: "&6"
+  Model: 20322
+  Hide:
+  - ATTRIBUTES
+  
+dragon_circle_4:
+  Id: paper
+  Display: "&6"
+  Model: 20323
+  Hide:
+  - ATTRIBUTES
+  
+dragon_circle_5:
+  Id: paper
+  Display: "&6"
+  Model: 20324
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_charge_1:
+  Id: paper
+  Display: "&6"
+  Model: 20325
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_charge_2:
+  Id: paper
+  Display: "&6"
+  Model: 20326
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_charge_3:
+  Id: paper
+  Display: "&6"
+  Model: 20327
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_charge_4:
+  Id: paper
+  Display: "&6"
+  Model: 20328
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_pierce_1:
+  Id: paper
+  Display: "&6"
+  Model: 20329
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_pierce_2:
+  Id: paper
+  Display: "&6"
+  Model: 20330
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_pierce_3:
+  Id: paper
+  Display: "&6"
+  Model: 20331
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_pierce_4:
+  Id: paper
+  Display: "&6"
+  Model: 20332
+  Hide:
+  - ATTRIBUTES
+  
+dragon_dash_pierce_5:
+  Id: paper
+  Display: "&6"
+  Model: 20333
+  Hide:
+  - ATTRIBUTES
+  
+dragon_ground_slash:
+  Id: paper
+  Display: "&6"
+  Model: 20334
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 20335
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 20336
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 20337
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 20338
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 20339
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 20340
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 20341
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 20342
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 20343
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 20344
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 20345
+  Hide:
+  - ATTRIBUTES
+  
+dragon_smash_rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 20346
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spin:
+  Id: paper
+  Display: "&6"
+  Model: 20347
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spin_1:
+  Id: paper
+  Display: "&6"
+  Model: 20348
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spin_2:
+  Id: paper
+  Display: "&6"
+  Model: 20349
+  Hide:
+  - ATTRIBUTES
+  
+dragon_spin_3:
+  Id: paper
+  Display: "&6"
+  Model: 20350
+  Hide:
+  - ATTRIBUTES
+  
+dragon_warrior_spear_spirit_1:
+  Id: paper
+  Display: "&6"
+  Model: 20351
+  Hide:
+  - ATTRIBUTES
+  
+dragon_warrior_spear_spirit_2:
+  Id: paper
+  Display: "&6"
+  Model: 20352
+  Hide:
+  - ATTRIBUTES
+  
+dragon_warrior_spear_spirit_3:
+  Id: paper
+  Display: "&6"
+  Model: 20353
+  Hide:
+  - ATTRIBUTES
+  
+dragon_warrior_spear_spirit_4:
+  Id: paper
+  Display: "&6"
+  Model: 20354
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_1:
+  Id: paper
+  Display: "&6"
+  Model: 20355
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_2:
+  Id: paper
+  Display: "&6"
+  Model: 20356
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_3:
+  Id: paper
+  Display: "&6"
+  Model: 20357
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_4:
+  Id: paper
+  Display: "&6"
+  Model: 20358
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_5:
+  Id: paper
+  Display: "&6"
+  Model: 20359
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_6:
+  Id: paper
+  Display: "&6"
+  Model: 20360
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_7:
+  Id: paper
+  Display: "&6"
+  Model: 20361
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_8:
+  Id: paper
+  Display: "&6"
+  Model: 20362
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_9:
+  Id: paper
+  Display: "&6"
+  Model: 20363
+  Hide:
+  - ATTRIBUTES
+  
+dragon_wings_a:
+  Id: paper
+  Display: "&6"
+  Model: 20364
+  Hide:
+  - ATTRIBUTES
+  
+dragon_slash_2_opp:
+  Id: paper
+  Display: "&6"
+  Model: 20365
+  Hide:
+  - ATTRIBUTES
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

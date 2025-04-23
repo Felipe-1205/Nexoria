@@ -1,0 +1,336 @@
+command /s [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:	
+			if {susurrar.%player%} is true:
+				send "&eYa estas en el canal de susurrar" to player
+			else:
+				set {susurrar.%player%} to true
+				set {bajo.%player%} to false
+				set {hablar.%player%} to false
+				set {gritar.%player%} to false
+				set {ooc.%player%} to false
+				send "&8[&eAhora estas susurrando&8]" to player
+		else if arg 1 is set:
+			send "&8[&5Susurrando&8][&5%{_name}%&8]&7: %{_msg}%" to all players in radius 2 around player
+			send "&8[&5Susurrando&8][&5%{_name}%&8]&7: %{_msg}%" to the console
+command /b [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:	
+			if {bajo.%player%} is true:
+				send "&eYa estas en el canal de hablar bajo" to player
+			else:
+				set {susurrar.%player%} to false
+				set {bajo.%player%} to true
+				set {hablar.%player%} to false
+				set {gritar.%player%} to false
+				set {ooc.%player%} to false
+				send "&8[&eAhora estas hablando bajo&8]" to player
+		else if arg 1 is set:
+			send "&8[&bBajo&8][&b%{_name}%&8]&7: %{_msg}%" to all players in radius 7 around player
+			send "&8[&bBajo&8][&b%{_name}%&8]&7: %{_msg}%" to the console
+command /h [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:	
+			if {hablar.%player%} is true:
+				send "&eYa estas en el canal de rol" to player
+			else:
+				set {susurrar.%player%} to false
+				set {bajo.%player%} to false
+				set {hablar.%player%} to true
+				set {gritar.%player%} to false
+				set {ooc.%player%} to false
+				send "&8[&eAhora estas hablando por rol&8]" to player
+		else if arg 1 is set:
+			send "&8[&9Hablando&8][&9%{_name}%&8]&7: %{_msg}%" to all players in radius 20 around player
+			send "&8[&9Hablando&8][&9%{_name}%&8]&7: %{_msg}%" to the console
+command /g [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:
+			if {gritar.%player%} is true:
+				send "&eYa estabas gritando" to player
+			else:
+				set {susurrar.%player%} to false
+				set {bajo.%player%} to false
+				set {hablar.%player%} to false
+				set {gritar.%player%} to true
+				set {ooc.%player%} to false
+				send "&8[&eAhora estas gritando&8]" to player
+		else if arg 1 is set:
+			send "&8[&4Gritando&8][&4%{_name}%&8]&7: %{_msg}%" to all players in radius 40 around player
+			send "&8[&4Gritando&8][&4%{_name}%&8]&7: %{_msg}%" to the console
+command /ooc [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:
+			if {ooc.%player%} is true:
+				send "&eYa estas en el canal de occ" to player
+			else:
+				set {susurrar.%player%} to false
+				set {bajo.%player%} to false
+				set {hablar.%player%} to false
+				set {gritar.%player%} to false
+				set {ooc.%player%} to true
+				send "&8[&eAhora estas hablando por ooc&8]" to player
+		else if arg 1 is set:
+			send "&8[&dOOC&8][&d%{_name}%&8]&7: %{_msg}%" to all players in radius 45 around player
+			send "&8[&dOOC&8][&d%{_name}%&8]&7: %{_msg}%" to the console
+command /staff <text>:
+	permission: staffchat
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		send "&8[&6STAFF&8][&6%{_name}%&8]&7: %{_msg}%" to the console
+		loop all players:
+			if loop-player has permission "staffchat":
+				send "&8[&6STAFF&8][&6%{_name}%&8]&7: %{_msg}%" to loop-player
+
+command /evento <text>:
+	permission: eventos
+	trigger:
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		send "&8[&4&lEvento&8]&7&l: %{_msg}%" to the console
+		loop all players:
+			send "&8[&4&lEvento&8]&7&l: %{_msg}%" to loop-player
+
+command /anuncio <text>:
+	permission: anuncio
+	trigger:
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		send "&8[&c&lAdministracion&8]&7&l: %{_msg}%" to the console
+		loop all players:
+			send "&8[&c&lAdministracion&8]&7&l: %{_msg}%" to loop-player
+
+command /mjc <number> <text> <text>:
+	permission: staff
+	usage: "&eError: Uso incorrecto. La sintaxis correcta es: /mjc <Distancia> <nombre> <mensaje>."
+	trigger:
+		set {_nombre} to arg 2
+		replace all "_" with " " in {_nombre}
+		set {_msg} to arg 3
+		replace all "&" in {_msg} with "§"
+		send "&8[&cNPC&8][&c%{_nombre}%&8]&7: %{_msg}%" to all players in radius arg 1 around player
+		send "&8[&cNPC&8][&c%{_nombre}%&8]&7: %{_msg}%" to the console
+
+command /global [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if arg 1 isn't set:
+			if {toggle_variable.%player%} is true:
+				set {toggle_variable.%player%} to false
+				send "&eEl chat global ha sido desactivado." to player
+			else:
+				set {toggle_variable.%player%} to true
+				send "&eEl chat global ha sido activado." to player
+		else if arg 1 is set:
+			send "&8[&aGLOBAL&8][&a%{_name}%&8]&7: %{_msg}%" to the console
+			loop all players:
+				if {toggle_variable.%loop-player%} is true:
+					send "&8[&aGLOBAL&8][&a%{_name}%&8]&7: %{_msg}%" to loop-player
+command /do <text>:
+	trigger:
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if {susurrar.%player%} is true:
+			send "&5&o%{_msg}%" to all players in radius 2 around player
+			send "&5&o%{_msg}%" to the console
+		else if {bajo.%player%} is true:
+			send "&b&o%{_msg}%" to all players in radius 7 around player
+			send "&b&o%{_msg}%" to the console
+		else if {hablar.%player%} is true:
+			send "&9&o%{_msg}%" to all players in radius 20 around player
+			send "&9&o%{_msg}%" to the console
+		else if {gritar.%player%} is true:
+			send "&4&o%{_msg}%" to all players in radius 40 around player
+			send "&4&o%{_msg}%" to the console
+		else if {ooc.%player%} is true:
+			send "&d&o%{_msg}% &8[&5MUY OOC&8]" to all players in radius 45 around player
+			send "&d&o%{_msg}% &8[&5MUY OOC&8]" to the console
+command /me <text>:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_msg} to arg 1
+		replace all "&" in {_msg} with "§"
+		if {susurrar.%player%} is true:
+			send "&5%{_name}% &5%{_msg}%" to all players in radius 2 around player
+			send "&5%{_name}% &5%{_msg}%" to the console
+		else if {bajo.%player%} is true:
+			send "&b%{_name}% &b%{_msg}%" to all players in radius 7 around player
+			send "&b%{_name}% &b%{_msg}%" to the console
+		else if {hablar.%player%} is true:
+			send "&9%{_name}% &9%{_msg}%" to all players in radius 20 around player
+			send "&9%{_name}% &9%{_msg}%" to the console
+		else if {gritar.%player%} is true:
+			send "&4%{_name}% &4%{_msg}%" to all players in radius 40 around player
+			send "&4%{_name}% &4%{_msg}%" to the console
+		else if {ooc.%player%} is true:
+			send "&d%{_name}% &d%{_msg}% &8[&5MUY OOC&8]" to all players in radius 45 around player
+			send "&d%{_name}% &d%{_msg}% &8[&5MUY OOC&8]" to the console
+on chat:
+	cancel event
+	set {_msg} to message
+	replace all "&" in {_msg} with "§"
+	set {_name} to placeholder "essentials_nickname"
+	if {gritar.%player%} is true:
+		send "&8[&4Gritando&8][&4%{_name}%&8]&7: %{_msg}%" to all players in radius 40 around player
+		send "&8[&4Gritando&8][&4%{_name}%&8]&7: %{_msg}%" to the console
+	else if {susurrar.%player%} is true:
+		send "&8[&5Susurrando&8][&5%{_name}%&8]&7: %{_msg}%" to all players in radius 2 around player
+		send "&8[&5Susurrando&8][&5%{_name}%&8]&7: %{_msg}%" to the console
+	else if {bajo.%player%} is true:
+		send "&8[&bBajo&8][&b%{_name}%&8]&7: %{_msg}%" to all players in radius 7 around player
+		send "&8[&bBajo&8][&b%{_name}%&8]&7: %{_msg}%" to the console
+	else if {hablar.%player%} is true:
+		send "&8[&9Hablando&8][&9%{_name}%&8]&7: %{_msg}%" to all players in radius 20 around player
+		send "&8[&9Hablando&8][&9%{_name}%&8]&7: %{_msg}%" to the console
+	else if {ooc.%player%} is true:
+		send "&8[&dOOC&8][&d%{_name}%&8]&7: %{_msg}%" to all players in radius 45 around player
+		send "&8[&dOOC&8][&d%{_name}%&8]&7: %{_msg}%" to the console
+
+on command:
+	if command is "tell", "msg", "r" or "m":
+		cancel event
+		send "&eNo puedes utilizar esto." to player
+
+
+command /habilidad [<text>] [<number>] [<text>]:
+	trigger:
+		if arg 1 is "mostrar":
+			if arg 2 is set:
+				set {_habilidad} to {habilidad.%player%.%arg 2%}
+				if {_habilidad} is set:
+					set {_name} to placeholder "essentials_nickname"
+					if {gritar.%player%} is true:
+						send "&8[&4%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to all players in radius 40 around player
+						send "&8[&4%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to the console
+					else if {susurrar.%player%} is true:
+						send "&8[&5%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to all players in radius 2 around player
+						send "&8[&5%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to the console
+					else if {bajo.%player%} is true:
+						send "&8[&b%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to all players in radius 7 around player
+						send "&8[&b%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to the console
+					else if {hablar.%player%} is true:
+						send "&8[&9%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to all players in radius 20 around player
+						send "&8[&9%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to the console
+					else if {ooc.%player%} is true:
+						send "&8[&d%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to all players in radius 45 around player
+						send "&8[&d%{_name}% usó la habilidad&8]&7: %{_habilidad}%" to the console
+				else:
+					send "&eNo tienes ninguna habilidad guardada en la posición %arg 2%." to player
+			else:
+				send "&eUso: /habilidad mostrar <número>" to player
+		else if arg 1 is "lista":
+			send "&1Tus habilidades:" to player
+			loop 100 times:
+				if {habilidad.%player%.%loop-value%} is set:
+					set {_habilidad} to {habilidad.%player%.%loop-value%}
+					send "&3Habilidad %loop-value%: &7%{_habilidad}%" to player
+		else:
+			send "&eComando inválido. Usa /habilidad [mostrar/lista] <número>." to player
+command /adminhabilidad [<text>] [<player>] [<number>] [<text>]:
+    permission: staff
+    trigger:
+        if arg 1 is "agregar":
+            if arg 2 is set:
+                if arg 3 is set:
+                    if arg 4 is set:
+                        set {habilidad.%arg 2%.%arg 3%} to arg 4
+                        send "&eHabilidad %arg 3% del jugador %arg 2% guardada con éxito" to player
+                    else:
+                        send "&eUso: /adminhabilidad agregar <jugador> <número> <texto>" to player
+                else:
+                    send "&eUso: /adminhabilidad agregar <jugador> <número> <texto>" to player
+            else:
+                send "&eUso: /adminhabilidad agregar <jugador> <número> <texto>" to player
+        else if arg 1 is "mostrar":
+            if arg 2 is set:
+                if arg 3 is set:
+                    set {_habilidad} to {habilidad.%arg 2%.%arg 3%}
+                    if {_habilidad} is set:
+                        send "&3Habilidad del jugador %arg 2% en la posición %arg 3%: &7%{_habilidad}%" to player
+                    else:
+                        send "&eEl jugador %arg 2% no tiene ninguna habilidad guardada en la posición %arg 3%." to player
+                else:
+                    send "&eUso: /adminhabilidad mostrar <jugador> <número>" to player
+            else:
+                send "&eUso: /adminhabilidad mostrar <jugador> <número>" to player
+        else if arg 1 is "borrar":
+            if arg 2 is set:
+                if arg 3 is set:
+                    delete {habilidad.%arg 2%.%arg 3%}
+                    send "&eHabilidad %arg 3% del jugador %arg 2% eliminada." to player
+                else:
+                    send "&eUso: /adminhabilidad borrar <jugador> <número>" to player
+            else:
+                send "&eUso: /adminhabilidad borrar <jugador> <número>" to player
+        else if arg 1 is "lista":
+            if arg 2 is set:
+                send "&1Habilidades del jugador %arg 2%:" to player
+                loop 100 times:
+                    if {habilidad.%arg 2%.%loop-value%} is set:
+                        set {_habilidad} to {habilidad.%arg 2%.%loop-value%}
+                        send "&3Habilidad %loop-value%: &7%{_habilidad}%" to player
+            else:
+                send "&eUso: /adminhabilidad lista <jugador>" to player
+        else:
+            send "&eComando inválido. Usa /adminhabilidad [agregar/mostrar/borrar/lista] <jugador> <número> <texto (solo para set)>." to player
+command /mensajero [<player>] [<text>]:
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                set {_player} to arg 1
+                set {_text} to arg 2
+                set {_animal} to random integer between 1 and 8 
+                if {_animal} is 1:
+                    set {_animalName} to "águila"
+                    set {_delay} to 5 seconds
+                else if {_animal} is 2:
+                    set {_animalName} to "guepardo"
+                    set {_delay} to 10 seconds
+                else if {_animal} is 3:
+                    set {_animalName} to "caballo"
+                    set {_delay} to 15 seconds
+                else if {_animal} is 4:
+                    set {_animalName} to "lobo"
+                    set {_delay} to 20 seconds
+                else if {_animal} is 5:
+                    set {_animalName} to "perro"
+                    set {_delay} to 30 seconds
+                else if {_animal} is 6:
+                    set {_animalName} to "ciervo"
+                    set {_delay} to 40 seconds
+                else if {_animal} is 7:
+                    set {_animalName} to "conejo"
+                    set {_delay} to 50 seconds
+                else if {_animal} is 8:
+                    set {_animalName} to "tortuga"
+                    set {_delay} to 60 seconds
+                send "&2El espiritu animal de un %{_animalName}% ha sido enviado con el mensaje" to player
+                wait {_delay}
+                if {_player} is online:
+                    send "&2Un %{_animalName}% espiritual llega con un mensaje: &7%{_text}%" to {_player}
+                    send "&2Un %{_animalName}% espiritual llega con un mensaje: &7%{_text}%" to the console
+                else:
+                    send "&eEl jugador %{_player}% no está en línea. El mensaje no pudo ser entregado." to player
+            else:
+                send "&eUso: /mensajero <jugador> <texto>" to player
+        else:
+            send "&eUso: /mensajero <jugador> <texto>" to player

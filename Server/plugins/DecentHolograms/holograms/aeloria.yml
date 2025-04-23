@@ -1,0 +1,12 @@
+location: spawn:-1057.300:11.000:656.498
+enabled: true
+display-range: 48
+update-range: 48
+update-interval: 20
+facing: 0.0
+down-origin: false
+pages:
+- lines:
+  - content: '&6Aeloria'
+    height: 0.3
+  actions: {}

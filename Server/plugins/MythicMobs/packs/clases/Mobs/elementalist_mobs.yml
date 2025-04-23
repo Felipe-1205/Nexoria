@@ -1,0 +1,222 @@
+######## created by samus2002 #########
+
+# Air Burst #
+
+Air_Burst:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_air_bubble} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=40} @self ~onSpawn
+  
+Earth_Toss_Left:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_earth_toss_left} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Earth_Toss_Right:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_earth_toss_right} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Earth_Toss_Pro:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - lockmodel{l=true} @self ~onSpawn
+  - model{usestatemachine=true;mid=fx_earth_toss_pro} @self ~onSpawn
+  
+Aqua_Whip:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_tentacle} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=29} @self ~onSpawn
+  
+Underworld_Beast:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_underworld_beast} @self ~onSpawn
+  - lockmodel{l=true} @self ~onSpawn
+  #- BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+  
+Underworld_Beast_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_underworld_beast_rupture;lockpitch=true} @self ~onSpawn
+  - lockmodel{l=true} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=62} @self ~onSpawn
+  
+Extreme_Wind_Hawk:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_hawk} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - state{s=despawn;delay=88} @self ~onSpawn
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3;delay=112} @self ~onSpawn
+  - remove{delay=120} @self ~onSpawn
+  
+Extreme_Wind_Whirlwind:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_whirlwind} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=130} @self ~onSpawn
+  
+Earth_Golem:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_earth_golem} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=61} @self ~onSpawn
+  - effect:particles{particle=block_crack;m=granite;amount=25;hS=1.3;vS=1.3;y=0.4;speed=0;forwardOffset=0;sideOffset=0;delay=60} @self ~onSpawn
+  - effect:sound{s=elementalist_sounds:samus.stone_break;volume=0.6;pitch=1;delay=60} @self ~onSpawn
+  
+  
+Terra_Wall:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_terra_wall} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=31} @self ~onSpawn
+  
+Terra_Wall_Pro:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_terra_wall} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  
+Overheat:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_underworld_beast;lockpitch=true} @self ~onSpawn
+  - skill{s=Overheat_LOOK} ~onTimer:1
+  - bodyrotation{playermode=true} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - remove{delay=137} @self ~onSpawn
+  
+Overheat_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_underworld_beast_rupture;lockpitch=true} @self ~onSpawn
+  - lockmodel{l=true} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - remove{delay=137} @self ~onSpawn

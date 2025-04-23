@@ -1,0 +1,372 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+######## created by samus2002 #########
+
+# Dragon Skin #
+
+Dragon_Skin:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: dragon_circle_1
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_circle_1:4;delay=3} ~onSpawn
+  - equip{item=dragon_circle_2:4;delay=6} ~onSpawn
+  - equip{item=dragon_circle_3:4;delay=9} ~onSpawn
+  - equip{item=dragon_circle_4:4;delay=12} ~onSpawn
+  - equip{item=dragon_circle_5:4;delay=15} ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+# Dragon Slash #
+
+Dragon_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_slash_1:0;delay=3} ~onSpawn
+  - equip{item=dragon_slash_2:0;delay=5} ~onSpawn
+  - equip{item=dragon_slash_3:0;delay=7} ~onSpawn
+  - equip{item=dragon_slash_4:0;delay=9} ~onSpawn
+  - equip{item=dragon_slash_5:0;delay=11} ~onSpawn
+  - equip{item=dragon_slash_6:0;delay=13} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Dragon_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,180
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_slash_1:0;delay=3} ~onSpawn
+  - equip{item=dragon_slash_2:0;delay=5} ~onSpawn
+  - equip{item=dragon_slash_3:0;delay=7} ~onSpawn
+  - equip{item=dragon_slash_4:0;delay=9} ~onSpawn
+  - equip{item=dragon_slash_5:0;delay=11} ~onSpawn
+  - equip{item=dragon_slash_6:0;delay=13} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Dragon_Slash_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,25
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_slash_1:0;delay=3} ~onSpawn
+  - equip{item=dragon_slash_2:0;delay=5} ~onSpawn
+  - equip{item=dragon_slash_3:0;delay=7} ~onSpawn
+  - equip{item=dragon_slash_4:0;delay=9} ~onSpawn
+  - equip{item=dragon_slash_5:0;delay=11} ~onSpawn
+  - equip{item=dragon_slash_6:0;delay=13} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Dragon_Slash_4:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,155
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_slash_1:0;delay=3} ~onSpawn
+  - equip{item=dragon_slash_2:0;delay=5} ~onSpawn
+  - equip{item=dragon_slash_3:0;delay=7} ~onSpawn
+  - equip{item=dragon_slash_4:0;delay=9} ~onSpawn
+  - equip{item=dragon_slash_5:0;delay=11} ~onSpawn
+  - equip{item=dragon_slash_6:0;delay=13} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+# Dragon Dash #
+
+Dragon_Dash_Charge:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: dragon_dash_charge_1
+  Options:
+    Marker: false
+    Interactable: false
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget @Owner ~onSpawn
+  - equip{item=dragon_dash_charge_1:0;delay=2} ~onSpawn
+  - equip{item=dragon_dash_charge_2:0;delay=4} ~onSpawn
+  - equip{item=dragon_dash_charge_3:0;delay=6} ~onSpawn
+  - equip{item=dragon_dash_charge_4:0;delay=8} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Dragon_Dash_Pierce:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: charge_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_dash_pierce_1:0;delay=2} ~onSpawn
+  - equip{item=dragon_dash_pierce_2:0;delay=4} ~onSpawn
+  - equip{item=dragon_dash_pierce_3:0;delay=6} ~onSpawn
+  - equip{item=dragon_dash_pierce_4:0;delay=8} ~onSpawn
+  - equip{item=dragon_dash_pierce_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+# Dragon Wheel #
+
+Dragon_Wheel:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: dragon_spin
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget @Owner ~onSpawn
+  - equip{item=dragon_spin:4} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+# Dragon Zone #
+  
+Dragon_Zone_Spear:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: dragon_warrior_spear_spirit_1
+  Options:
+    Marker: false
+    Interactable: false
+    HasArms: true
+    Collidable: false
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @self ~onSpawn
+  - velocity{m=set;x=0;y=-3;z=0;delay=13} @self ~onSpawn
+  - effect:sound{s=dragon_warrior_sounds:samus.summon_dragon_spear;volume=1;pitch=1} @self ~onSpawn
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_spear_smash;volume=1;pitch=1;delay=14} @self ~onSpawn
+  - summon{type=Dragon_Zone_Impact;amount=1;radius=0;yRadius=0;onSurface=true;delay=16} @self ~onSpawn
+  - equip{item=dragon_warrior_spear_spirit_1:0;delay=2} ~onSpawn
+  - equip{item=dragon_warrior_spear_spirit_2:0;delay=4} ~onSpawn
+  - equip{item=dragon_warrior_spear_spirit_3:0;delay=6} ~onSpawn
+  - equip{item=dragon_warrior_spear_spirit_4:0;delay=8} ~onSpawn
+  
+Dragon_Zone:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - skill{s=Dragon_Zone_Buff;delay=14} @PIR{r=12} ~onTimer:10
+  - effect:particlering{particle=redstone;color=#4d1ae8;radius=12;points=300;amount=1;hS=0;vS=0;y=0.1;delay=14} @self ~onTimer:5
+  #- effect:particlering{particle=redstone;color=#8209de;radius=8;points=200;amount=1;hS=0;vS=0;y=0.1;delay=14} @self ~onTimer:5
+  #- effect:particles{particle=splash;amount=150;hS=5;vS=0.1;speed=0;y=0.2} @self ~onTimer:5
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_aura;volume=1.2;pitch=1;delay=14} @self ~onTimer:40
+  
+Dragon_Zone_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: dragon_circle_1
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_circle_1:0;delay=3} ~onSpawn
+  - equip{item=dragon_circle_2:0;delay=6} ~onSpawn
+  - equip{item=dragon_circle_3:0;delay=9} ~onSpawn
+  - equip{item=dragon_circle_4:0;delay=12} ~onSpawn
+  - equip{item=dragon_circle_5:0;delay=15} ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+# Dragon Breath #
+
+Dragon_Breath_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: dragon_slash_2
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - equip{item=dragon_slash_2:4;delay=1} ~onSpawn
+  
+Dragon_Breath_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: dragon_slash_2_opp
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - equip{item=dragon_slash_2_opp:4;delay=1} ~onSpawn
+  
+# Dragonborn #
+
+Dragonborn_Wings:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+      Head: 0,0,0
+  ItemHand: dragon_dash_charge_1
+  Options:
+    Marker: false
+    Interactable: false
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget @Owner ~onSpawn
+  - equip{item=dragon_dash_charge_1:0;delay=2} ~onSpawn
+  - equip{item=dragon_dash_charge_2:0;delay=4} ~onSpawn
+  - equip{item=dragon_dash_charge_3:0;delay=6} ~onSpawn
+  - equip{item=dragon_dash_charge_4:0;delay=8} ~onSpawn
+  - equip{item=AIR:0;delay=10} ~onSpawn
+  - equip{item=dragon_wings_1:4;delay=10} ~onSpawn
+  - equip{item=dragon_wings_2:4;delay=12} ~onSpawn
+  - equip{item=dragon_wings_3:4;delay=14} ~onSpawn
+  - equip{item=dragon_wings_4:4;delay=16} ~onSpawn
+  - equip{item=dragon_wings_5:4;delay=18} ~onSpawn
+  - equip{item=dragon_wings_a:4;delay=20} ~onSpawn
+  - equip{item=dragon_wings_4:4;delay=62} ~onSpawn
+  - equip{item=dragon_wings_3:4;delay=64} ~onSpawn
+  - equip{item=dragon_wings_2:4;delay=66} ~onSpawn
+  - equip{item=dragon_wings_1:4;delay=68} ~onSpawn
+  - remove{delay=70} @self ~onSpawn
+  
+Dragon_Ground_Slash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: dragon_ground_slash
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_ground_slash:0;delay=1} ~onSpawn
+  
+Dragon_Ground_Slash90:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,90,0
+  ItemHand: dragon_ground_slash
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_ground_slash:0;delay=1} ~onSpawn
+  
+Dragon_Ground_Slash180:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,180,0
+  ItemHand: dragon_ground_slash
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_ground_slash:0;delay=1} ~onSpawn
+  
+Dragon_Ground_Slash270:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,270,0
+  ItemHand: dragon_ground_slash
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_ground_slash:0;delay=1} ~onSpawn
+  
+Dragon_Smash_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: dragon_smash_rupture_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=dragon_smash_rupture_1:0;delay=2} ~onSpawn
+  - equip{item=dragon_smash_rupture_2:0;delay=44} ~onSpawn
+  - equip{item=dragon_smash_rupture_3:0;delay=46} ~onSpawn
+  - equip{item=dragon_smash_rupture_4:0;delay=48} ~onSpawn
+  - equip{item=dragon_smash_rupture_5:0;delay=50} ~onSpawn
+  - equip{item=dragon_smash_rupture_6:0;delay=52} ~onSpawn
+  - remove{delay=54} @self ~onSpawn
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

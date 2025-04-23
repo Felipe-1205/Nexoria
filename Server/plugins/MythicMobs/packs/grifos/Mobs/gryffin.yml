@@ -1,0 +1,131 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+lr_gryffin_pet:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills: 
+  - skill{s=lr_gryffin_dropfeather} @self ~onTimer:20 .5
+  - setstance{stance=ground} @self ~onSpawn 
+  - skill{s=lr_gryffin_LAND} @selflocation{y=-1} ~onTimer:1
+  - skill{s=lr_gryffin_AIR} @selflocation{y=-1} ~onTimer:1
+  - model{mid=lr_gryffin;n=false;step=1;drive=true} @self ~onSpawn
+  - model{mid=lr_gryffin;n=false;step=1;drive=true} @self ~onLoad
+  - bodyclamp{mh=15;mb=15;s=0} @self ~onSpawn
+  Health: 100
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+lr_gryffin_corvid_pet:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills: 
+  - setstance{stance=ground} @self ~onSpawn 
+  - effect:particles{particle=squid_ink;amount=5;hS=1;vS=1} @self ~onTimer:1
+  - skill{s=lr_gryffin_LAND} @selflocation{y=-1} ~onTimer:1
+  - skill{s=lr_gryffin_AIR} @selflocation{y=-1} ~onTimer:1
+  - model{mid=lr_gryffin_corvid;n=false;step=1;drive=true} @self ~onSpawn
+  - model{mid=lr_gryffin_corvid;n=false;step=1;drive=true} @self ~onLoad
+  - bodyclamp{mh=15;mb=15;s=0} @self ~onSpawn
+  Health: 100
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+LR_GRYFFIN_nest:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+  Skills:
+  - skill{s=LR_GRYFFIN_grab_egg} @self ~onInteract
+  - model{mid=lr_gryffin_nest;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_nest;d=false;i=true;step=1} @self ~onLoad  
+  
+LR_GRYFFIN_feather:
+  Type: ARMOR_STAND
+  Options:
+    Invincible: true
+  Skills:
+  - skill{s=LR_GRYFFIN_feather} @self ~onSpawn
+  - model{mid=lr_gryffin_feather;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_feather;d=false;i=true;step=1} @self ~onLoad  
+  
+  
+  
+LR_GRYFFIN_falling_death:
+  Type: ARMOR_STAND
+  Options:
+    Invicible: true
+  Skills:
+  - skill{s=LR_GRYFFIN_falling_death_ground} @self ~onTimer:1
+  - skill{s=LR_GRYFFIN_falling_death_spawn} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin;d=false;i=true;step=1} @self ~onLoad  
+  
+  
+LR_GRYFFIN_whirlwind:
+  Type: HORSE
+  AITargetSelectors:
+  - clear
+  AIGoalSelectors:
+  - clear
+  Options:
+    Invincible: true
+    Silent: true
+    Collidable: false
+    #Marker: true
+  Skills:
+  - BodyClamp{hu=true;mh=360;mb=360;s=360} @self ~onSpawn
+  - skill{s=LR_GRYFFIN_whirlwind_spawn} @self ~onSpawn
+  - model{mid=lr_gryffin_whirlwind;d=false;i=true;step=1} @self ~onSpawn
+  - model{mid=lr_gryffin_whirlwind;d=false;i=true;step=1} @self ~onLoad  
+

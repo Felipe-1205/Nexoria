@@ -1,0 +1,86 @@
+id: db79b5d2-006f-330e-bae3-c00f907985e5
+name: NivlekNot
+created: 1734886069522
+updated: 1740694406451
+last_cast: 1736910513680
+cooldown_expiration: 0
+last_death_location: -609.9698340214653,126.0,-672.0388713678303,principal,11.783295,13.767619
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells:
+  missile:
+    cast_count: 0
+    last_cast: 1736910513641
+    last_earn: 0
+    cooldown_expiration: 1736910514641
+    charges: 0.0
+wands:
+  wand:
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 3839
+      type: STICK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Magic Missile","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gold","bold":false},{"text":"
+          (","italic":false,"color":"white"},{"text":"Wand","italic":false,"color":"dark_aqua"},{"text":")","italic":false,"color":"white"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Beginner ","color":"gray"},{"text":"Magic
+          Wand","color":"white"}],"italic":false}'
+        - '{"text":"Bound to none","italic":true,"color":"dark_aqua"}'
+        - '{"text":"","extra":[{"text":"Fire a bolt of pure magic","color":"aqua"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Cooldown: ","color":"yellow"},{"text":"One
+          second","color":"gold"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Range: ","color":"blue"},{"text":"24 ","color":"gold"},{"text":"meters","color":"blue"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Lasts for 10 seconds","color":"gray"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Earns up to ","color":"dark_green"},{"text":"20
+          ","color":"gold"},{"text":"SP","color":"aqua"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Mana: 50","color":"yellow"}],"italic":false}'
+        - '{"text":"","extra":[{"text":"Mana Regeneration: 5/s","color":"yellow"}],"italic":false}'
+        custom-model-data: 18001
+        attribute-modifiers:
+          minecraft:generic.attack_speed:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 10.0
+            name: Equipment Modifier
+            slot: mainhand
+            uuid: d8188b78-e60d-4a24-bd50-49e4e5e3192a
+            operation: 0
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        - HIDE_UNBREAKABLE
+        - HIDE_ADDITIONAL_TOOLTIP
+        Unbreakable: true
+        custom: H4sIAAAAAAAA/zXOTQrCMBBA4SlGDNpjiCsLU2Oa5DSSnwkEaxLaqgvx7org7sG3eVuABtiVqDZbYE+bA4d1eWaagOWSiQNf6FZHu9Cf+Y8vKcA+OGWcDKcOcYidEEidsyQ6jxgNKqMlyRVsHjTNqWQA2HBgyX+znZfkr69eI/ZvDi3FSH65+DKWCQ4uDNpIlGFw5yNZZZSOKPpAR39G4a2mQZ3093x3z2EqtVo3UgMfkJ4XCs0AAAA=
+    wand:
+      owner: none
+      version: 7
+      owner_id: db79b5d2-006f-330e-bae3-c00f907985e5
+      template: wand
+      icon: stick{18001}
+      effect_color: bd689505d6b4,ea7978f031de,c403ca8e6728
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: d2af663841b6,743449fc8588,5e973c2960fa
+    mana_timestamp: 1740694406306
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 86.39835357666016

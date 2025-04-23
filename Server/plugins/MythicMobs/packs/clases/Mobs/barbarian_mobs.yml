@@ -1,0 +1,440 @@
+
+
+Rageblade_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Rageblade_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Rageblade_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Rageblade_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_impact_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_babarian_impact_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Primal_Axe_PRO:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_axe} @self ~onSpawn
+  
+  - effect:sound{s=item.trident.throw;volume=0.4;pitch=0.4} @self ~onTimer:5
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+Primal_Axe_PINNED:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_axe} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  
+  - skill{s=Primal_Axe_CHECKOWNER} @PIR{r=2} ~onTimer:1
+  
+  - remove{delay=60} @self ~onSpawn
+  
+  
+  
+  
+  
+War_Cry:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_war_cry_aura;lockpitch=true} @self ~onSpawn
+  
+War_Cry_Taunt:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_taunt;lockpitch=true} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+War_Cry_Spread:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_war_cry_spread_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill;speed=0.9} @self ~onSpawn
+  
+  - changepart{m=fx_war_cry_spread_1;p=body;nm=fx_war_cry_spread_2;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_war_cry_spread_3;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_war_cry_spread_4;np=body;delay=6} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_war_cry_spread_5;np=body;delay=8} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_war_cry_spread_6;np=body;delay=10} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_impact_1;p=body;nm=fx_war_cry_spread_7;np=body;delay=12} @self ~onSpawn
+  
+  - remove{delay=12} @self ~onSpawn
+  
+  
+Cone_Rupture1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_cone_rupture;lockpitch=true} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+
+  - remove{delay=54} @self ~onSpawn
+  
+Cone_Rupture2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_cone_rupture;lockpitch=true} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill2} @self ~onSpawn
+
+  - remove{delay=54} @self ~onSpawn
+  
+Cone_Rupture3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_cone_rupture;lockpitch=true} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill3} @self ~onSpawn
+
+  - remove{delay=54} @self ~onSpawn
+  
+  
+Double_Edge:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_double_edge_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body;nm=fx_babarian_double_edge_7;np=body;delay=6} @self ~onSpawn
+  
+  
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_2;np=body2;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_3;np=body2;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_4;np=body2;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_5;np=body2;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_6;np=body2;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_double_edge_1;p=body2;nm=fx_babarian_double_edge_7;np=body2;delay=6} @self ~onSpawn
+  
+  
+  
+  - remove{delay=7} @self ~onSpawn
+  
+  
+Eternal_Fury:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_eternal_fury_aura;lockpitch=true} @self ~onSpawn
+  
+  
+  
+Rageblade_1_B:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Rageblade_2_B:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn
+  
+Rageblade_3_B:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=fx_babarian_slash_1} @self ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+  - state{s=skill6} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_2;np=body;delay=1} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_3;np=body;delay=2} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_4;np=body;delay=3} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_5;np=body;delay=4} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_6;np=body;delay=5} @self ~onSpawn
+  
+  - changepart{m=fx_babarian_slash_1;p=body;nm=fx_babarian_slash_7;np=body;delay=6} @self ~onSpawn
+  
+  - remove{delay=7} @self ~onSpawn

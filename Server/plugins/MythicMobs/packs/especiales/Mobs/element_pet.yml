@@ -1,0 +1,291 @@
+
+# =============================== Curse Doll ===============================  
+
+
+dark_element_pet:
+  Type: wolf
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    NoAI: true
+    Collidable: false
+  Skills:
+  - gcd{ticks=25} @self ~onSpawn
+  - setAI{ai=true;delay=18} @self ~onSpawn
+  - model{mid=dark_element_pet} @self ~onSpawn
+  - bodyclamp{m=dark_element_pet;mh=30} @self ~onSpawn
+  - cancelEvent{sync=true} @self ~onAttack
+  - randomskill{s=dark_element_pet_attack,dark_element_pet_skill} @target ~onTimer:10
+  - effect:particles{particle=reddust;color=#b4355c;amount=30;hs=0.4;vs=0.4;y=0.3;size=1;delay=49} @ModelPart{m=dark_element_pet;p=body} ~onDeath
+  - effect:sound{s=block.fire.extinguish;v=0.6;p=0;delay=49} @self ~onDeath
+  - LockModel{l=false} @self ~onDeath
+ 
+# ------------------------------- Curse Doll vfx -------------------------------
+ 
+dark_element_pet_attack:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+  Skills:
+  - model{mid=dark_element_pet_attack} @self ~onSpawn
+  - bodyclamp{m=dark_element_pet_attack} @self ~onSpawn
+  - changepart{m=dark_element_pet_attack;pid=f1;nm=dark_element_pet_attack_vfx;npid=f1;delay=1} @self ~onSpawn
+  - changepart{m=dark_element_pet_attack;pid=f1;nm=dark_element_pet_attack_vfx;npid=f2;delay=2} @self ~onSpawn
+  - changepart{m=dark_element_pet_attack;pid=f1;nm=dark_element_pet_attack_vfx;npid=f3;delay=4} @self ~onSpawn
+  - changepart{m=dark_element_pet_attack;pid=f1;nm=dark_element_pet_attack_vfx;npid=f4;delay=6} @self ~onSpawn
+  - changepart{m=dark_element_pet_attack;pid=f1;nm=dark_element_pet_attack_vfx;npid=f5;delay=8} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn 
+  
+dark_element_pet_skill:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+  Skills:
+  - model{mid=dark_element_pet_skill} @self ~onSpawn
+  - bodyclamp{m=dark_element_pet_skill} @self ~onSpawn
+  - remove{delay=200} @self ~onSpawn 
+  - effect:particles{particle=reddust;color=#b4355c;amount=30;hs=2.4;vs=0.4;y=0.4;size=1} @self ~onTimer:5
+  
+# =============================== Forzen Cat ===============================  
+ 
+forzen_element_pet:
+  Type: wolf
+  Display: '&Icy Cat'
+  Health: 50                     #  Pet's Health adjust in mcpets file
+  Damage: 0                      #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    NoAI: true
+    Collidable: false
+  Skills:
+  - gcd{ticks=38} @self ~onSpawn
+  - setAI{ai=true;delay=33} @self ~onSpawn
+  - model{mid=forzen_element_pet} @self ~onSpawn
+  - bodyclamp{m=forzen_element_pet;mh=30} @self ~onSpawn
+  - cancelEvent{sync=true} @self ~onAttack
+  - randomskill{s=forzen_element_pet_skill,forzen_element_pet_attack} @target ~onTimer:20
+  - effect:particles{particle=reddust;color=#8cf2e0;amount=30;hs=0.4;vs=0.4;y=0.3;size=1;delay=60} @ModelPart{m=forzen_element_pet;p=main} ~onDeath
+  - effect:sound{s=block.fire.extinguish;v=0.6;p=0;delay=60} @self ~onDeath
+  - LockModel{l=false} @self ~onDeath
+  
+# ------------------------------- Forzen Cat vfx -------------------------------
+  
+forzen_element_pet_attack:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+  Skills:
+  - model{mid=forzen_element_pet_attack} @self ~onSpawn
+  - bodyclamp{m=forzen_element_pet_attack} @self ~onSpawn
+  - changepart{m=forzen_element_pet_attack;pid=f1;nm=forzen_element_pet_attack_vfx;npid=f1;delay=1} @self ~onSpawn
+  - changepart{m=forzen_element_pet_attack;pid=f1;nm=forzen_element_pet_attack_vfx;npid=f2;delay=3} @self ~onSpawn
+  - changepart{m=forzen_element_pet_attack;pid=f1;nm=forzen_element_pet_attack_vfx;npid=f3;delay=5} @self ~onSpawn
+  - changepart{m=forzen_element_pet_attack;pid=f1;nm=forzen_element_pet_attack_vfx;npid=f4;delay=7} @self ~onSpawn
+  - changepart{m=forzen_element_pet_attack;pid=f1;nm=forzen_element_pet_attack_vfx;npid=f5;delay=9} @self ~onSpawn
+  - remove{delay=11} @self ~onSpawn 
+  
+forzen_element_pet_skill:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+  Skills:
+  - model{mid=forzen_element_pet_skill} @self ~onSpawn
+  - bodyclamp{m=forzen_element_pet_skill} @self ~onSpawn
+  
+forzen_element_pet_skill2:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+  Skills:
+  - model{mid=forzen_element_pet_skill2} @self ~onSpawn
+  - bodyclamp{m=forzen_element_pet_skill2} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f1;delay=1} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f2;delay=2} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f3;delay=3} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f4;delay=4} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f5;delay=5} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f6;delay=6} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f7;delay=7} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f8;delay=8} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f9;delay=9} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f10;delay=10} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f11;delay=11} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f12;delay=12} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f13;delay=13} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f14;delay=14} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f15;delay=15} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f16;delay=17} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f17;delay=19} @self ~onSpawn
+  - changepart{m=forzen_element_pet_skill2;pid=f1;nm=forzen_element_pet_skill2_vfx;npid=f18;delay=21} @self ~onSpawn
+  - remove{delay=23} @self ~onSpawn 
+  - sound{s=block.glass.break;p=1.5;v=2;delay=7} @self ~onSpawn
+  
+# =============================== Forest Owl =============================== 
+  
+forest_element_pet:
+  Type: wolf
+  Health: 50                       #  Pet's Health adjust in mcpets file
+  Damage: 0                        #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    NoAI: true
+    Collidable: false
+  Skills:
+  - gcd{ticks=42} @self ~onSpawn
+  - setAI{ai=true;delay=37} @self ~onSpawn
+  - model{mid=forest_element_pet} @self ~onSpawn
+  - bodyclamp{m=forest_element_pet;mh=30} @self ~onSpawn
+  - cancelEvent{sync=true} @self ~onAttack
+  - randomskill{s=forest_element_pet_attack,forest_element_pet_skill} @target ~onTimer:20
+  - effect:particles{particle=reddust;color=#32b642;amount=30;hs=0.4;vs=0.4;y=0.3;size=1;delay=40} @ModelPart{m=forest_element_pet;p=main} ~onDeath
+  - effect:sound{s=block.fire.extinguish;v=0.6;p=0;delay=40} @self ~onDeath
+  - LockModel{l=false} @self ~onDeath
+  
+# ------------------------------- Forest Owl vfx -------------------------------
+  
+forest_element_pet_attack:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+  Skills:
+  - model{mid=forest_element_pet_attack} @self ~onSpawn
+  - bodyclamp{m=forest_element_pet_attack} @self ~onSpawn
+  - changepart{m=forest_element_pet_attack;pid=f1;nm=forest_element_pet_attack_vfx;npid=f1;delay=1} @self ~onSpawn
+  - changepart{m=forest_element_pet_attack;pid=f1;nm=forest_element_pet_attack_vfx;npid=f2;delay=3} @self ~onSpawn
+  - changepart{m=forest_element_pet_attack;pid=f1;nm=forest_element_pet_attack_vfx;npid=f3;delay=5} @self ~onSpawn
+  - changepart{m=forest_element_pet_attack;pid=f1;nm=forest_element_pet_attack_vfx;npid=f4;delay=7} @self ~onSpawn
+  - changepart{m=forest_element_pet_attack;pid=f1;nm=forest_element_pet_attack_vfx;npid=f5;delay=9} @self ~onSpawn
+  - remove{delay=11} @self ~onSpawn 
+  
+forest_element_pet_skill:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+  Skills:
+  - model{mid=forest_element_pet_skill} @self ~onSpawn
+  - bodyclamp{m=forest_element_pet_skill} @self ~onSpawn
+  

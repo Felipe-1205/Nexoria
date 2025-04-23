@@ -1,0 +1,572 @@
+command /mjd <number> <text> <number> <text>:
+	permission: staff
+	usage: "&eError: Uso incorrecto. La sintaxis correcta es: /mjc <Distancia> <nombre el ponga _ para un espacio> <modificador solo si despues pone un atributo si no ponga 0> <algun atributo o formula de #d#>."
+	trigger:
+		set {_distancia} to arg 1
+		set {_nombre} to arg 2
+		set {_modificador} to arg 3
+		set {_opcional} to arg 3
+		replace all "_" with " " in {_nombre}
+		if arg 4 is "Fuerza", "Inteligencia", "Destreza", "Sabiduria", "Constitucion" or "Carisma" :
+			if {modo.%player%} is "pifia":
+				set {_resultado} to 1
+			else if {modo.%player%} is "critico":
+				set {_resultado} to 20
+			else if {modo.%player%} is "normal":
+				set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_modificador}+{_resultado}
+			send "&8[&c%{_nombre}%&8]&fTiro &c&l%arg 4% &fy salió un &c%{_resultado}%+%{_modificador}%: &l%{_respuesta}%&f."  to all players in radius {_distancia} around player
+			send "&8[&c%{_nombre}%&8]&fTiro &c&l%arg 4% &fy salió un &c%{_resultado}%+%{_modificador}%: &l%{_respuesta}%&f."  to the console
+		else if arg 4 matches "[0-9]+d[0-9]+":
+			set {_tiradas::*} to split arg 4 at "d"
+			set {_numDados} to {_tiradas::1} parsed as number
+			set {_caras} to {_tiradas::2} parsed as number
+			if {_numDados} > 100:
+				send "&eNo puedes tirar más de 100 dados a la vez." to the player
+				stop
+			if {_caras} > 100:
+				send "&eEl dado no puede tener más de 100 caras." to the player
+				stop
+			set {_sumaTotal} to 0
+			if {modo.%player%} is "pifia":
+				set {_sumaTotal} to {_numDados}
+			else if {modo.%player%} is "critico":
+				set {_sumaTotal} to {_numDados} * {_caras}
+			else if {modo.%player%} is "normal":
+				loop {_numDados} times:
+					set {_resultado} to a random integer between 1 and {_caras}
+					add {_resultado} to {_sumaTotal}
+			send "&8[&c%{_nombre}%&8]&fTiro &c&l%arg 4% &fy salió un &c&l%{_sumaTotal}%&f."  to all players in radius {_distancia} around player
+			send "&8[&c%{_nombre}%&8]&fTiro &c&l%arg 4% &fy salió un &c&l%{_sumaTotal}%&f."  to the console
+command /dado [<text>]:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		if arg-1 is not set:
+			if {modo.%player%} is "pifia":
+				if {susurrar.%player%} is true:
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l1&f."  to all players in radius 2 around player
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l1&f."  to the console
+				else if {bajo.%player%} is true:
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l1&f."  to all players in radius 7 around player
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l1&f."  to the console
+				else if {hablar.%player%} is true:
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l1&f."  to all players in radius 20 around player
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l1&f."  to the console
+				else if {gritar.%player%} is true:
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l1&f."  to all players in radius 40 around player
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l1&f."  to the console
+				else if {ooc.%player%} is true:
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l1&f."  to all players in radius 45 around player
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l1&f."  to the console
+			else if {modo.%player%} is "critico":
+				if {susurrar.%player%} is true:
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l20&f."  to all players in radius 2 around player
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l20&f."  to the console
+				else if {bajo.%player%} is true:
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l20&f."  to all players in radius 7 around player
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l20&f."  to the console
+				else if {hablar.%player%} is true:
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l20&f."  to all players in radius 20 around player
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l20&f."  to the console
+				else if {gritar.%player%} is true:
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l20&f."  to all players in radius 40 around player
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l20&f."  to the console
+				else if {ooc.%player%} is true:
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l20&f."  to all players in radius 45 around player
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l20&f."  to the console
+			else if {modo.%player%} is "normal":
+				set {_resultado} to a random integer between 1 and 20
+				if {susurrar.%player%} is true:
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l%{_resultado}%&f."  to all players in radius 2 around player
+					send "&8[&5%{_name}%&8] &fTiro &5&l1d20 &fy salió un &5&l%{_resultado}%&f."  to the console
+				else if {bajo.%player%} is true:
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l%{_resultado}%&f."  to all players in radius 7 around player
+					send "&8[&b%{_name}%&8]&fTiro &b&l1d20 &fy salió un &b&l%{_resultado}%&f."  to the console
+				else if {hablar.%player%} is true:
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l%{_resultado}%&f."  to all players in radius 20 around player
+					send "&8[&9%{_name}%&8]&fTiro &9&l1d20 &fy salió un &9&l%{_resultado}%&f."  to the console
+				else if {gritar.%player%} is true:
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l%{_resultado}%&f."  to all players in radius 40 around player
+					send "&8[&4%{_name}%&8]&fTiro &4&l1d20 &fy salió un &4&l%{_resultado}%&f."  to the console
+				else if {ooc.%player%} is true:
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l%{_resultado}%&f."  to all players in radius 45 around player
+					send "&8[&d%{_name}%&8]&fTiro &d&l1d20 &fy salió un &d&l%{_resultado}%&f."  to the console
+		else:
+			if arg-1 matches "[0-9]+d[0-9]+":
+				set {_tiradas::*} to split arg-1 at "d"
+				set {_numDados} to {_tiradas::1} parsed as number
+				set {_caras} to {_tiradas::2} parsed as number
+				if {_numDados} > 100:
+					send "&eNo puedes tirar más de 100 dados a la vez." to the player
+					stop
+				if {_caras} > 100:
+					send "&eEl dado no puede tener más de 100 caras." to the player
+					stop
+				set {_sumaTotal} to 0
+				if {modo.%player%} is "pifia":
+					if {susurrar.%player%} is true:
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_numDados}%&f."  to all players in radius 2 around player
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_numDados}%&f."  to the console
+					else if {bajo.%player%} is true:
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_numDados}%&f."  to all players in radius 7 around player
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_numDados}%&f."  to the console
+					else if {hablar.%player%} is true:
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_numDados}%&f."  to all players in radius 20 around player
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_numDados}%&f."  to the console
+					else if {gritar.%player%} is true:
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_numDados}%&f."  to all players in radius 40 around player
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_numDados}%&f."  to the console
+					else if {ooc.%player%} is true:
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_numDados}%&f."  to all players in radius 45 around player
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_numDados}%&f."  to the console
+				else if {modo.%player%} is "critico":
+					set {_sumaTotal} to {_numDados} * {_caras}
+					if {susurrar.%player%} is true:
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_sumaTotal}%&f."  to all players in radius 2 around player
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_sumaTotal}%&f."  to the console
+					else if {bajo.%player%} is true:
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_sumaTotal}%&f."  to all players in radius 7 around player
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_sumaTotal}%&f."  to the console
+					else if {hablar.%player%} is true:
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_sumaTotal}%&f."  to all players in radius 20 around player
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_sumaTotal}%&f."  to the console
+					else if {gritar.%player%} is true:
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_sumaTotal}%&f."  to all players in radius 40 around player
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_sumaTotal}%&f."  to the console
+					else if {ooc.%player%} is true:
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_sumaTotal}%&f."  to all players in radius 45 around player
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_sumaTotal}%&f."  to the console
+				else if {modo.%player%} is "normal":
+					loop {_numDados} times:
+						set {_resultado} to a random integer between 1 and {_caras}
+						add {_resultado} to {_sumaTotal}
+					if {susurrar.%player%} is true:
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_sumaTotal}%&f."  to all players in radius 2 around player
+						send "&8[&5%{_name}%&8] &fTiro &5&l%arg-1% &fy salió un &5&l%{_sumaTotal}%&f."  to the console
+					else if {bajo.%player%} is true:
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_sumaTotal}%&f."  to all players in radius 7 around player
+						send "&8[&b%{_name}%&8]&fTiro &b&l%arg-1% &fy salió un &b&l%{_sumaTotal}%&f."  to the console
+					else if {hablar.%player%} is true:
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_sumaTotal}%&f."  to all players in radius 20 around player
+						send "&8[&9%{_name}%&8]&fTiro &9&l%arg-1% &fy salió un &9&l%{_sumaTotal}%&f."  to the console
+					else if {gritar.%player%} is true:
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_sumaTotal}%&f."  to all players in radius 40 around player
+						send "&8[&4%{_name}%&8]&fTiro &4&l%arg-1% &fy salió un &4&l%{_sumaTotal}%&f."  to the console
+					else if {ooc.%player%} is true:
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_sumaTotal}%&f."  to all players in radius 45 around player
+						send "&8[&d%{_name}%&8]&fTiro &d&l%arg-1% &fy salió un &d&l%{_sumaTotal}%&f."  to the console
+			else:
+				send "&eFormato incorrecto. Usa algo como (numero)d(numero) para tirar múltiples dados." to the player
+command /modo <text> <player>:
+	permission: staff
+	trigger:
+		if arg-1 is "pifia" or "critico" or "normal":
+			set {modo.%arg-2%} to arg-1
+			send "&eModo de %arg-2% ha sido cambiado a %arg-1%." to player
+		else:
+			send "&eModo inválido. Usa: pifia, critico, o normal." to player	
+command /calculadora <text>:
+	trigger:
+		set {_operacion} to arg-1
+		set {_resultado} to 0
+		set {_valid} to false
+		# Aceptamos números con decimales (con "."), además de enteros
+		if {_operacion} matches "[0-9.]+[+-x/][0-9.]+":
+			set {_valid} to true
+		else:
+			send "&eFormato inválido. Usa (número)(+ - x /)(número). Los decimales usan punto (.)." to player
+			stop
+		# Si la operación contiene "+"
+		if {_operacion} contains "+":
+			set {_numeros::*} to split {_operacion} at "+"
+			set {_resultado} to {_numeros::1} parsed as number + {_numeros::2} parsed as number
+		# Si la operación contiene "-"
+		else if {_operacion} contains "-":
+			set {_numeros::*} to split {_operacion} at "-"
+			set {_resultado} to {_numeros::1} parsed as number - {_numeros::2} parsed as number
+		# Si la operación contiene "x"
+		else if {_operacion} contains "x":
+			set {_numeros::*} to split {_operacion} at "x"
+			set {_resultado} to {_numeros::1} parsed as number * {_numeros::2} parsed as number
+		# Si la operación contiene "/"
+		else if {_operacion} contains "/":
+			set {_numeros::*} to split {_operacion} at "/"
+			# Verificar que no se divida por 0
+			if {_numeros::2} parsed as number is 0:
+				send "&eError: No se puede dividir por 0." to player
+				stop
+			set {_resultado} to {_numeros::1} parsed as number / {_numeros::2} parsed as number
+		# Enviar el resultado al jugador y a la consola
+		send "&aEl resultado de &b%arg-1% &aes &b%{_resultado}%&a." to player
+		send "&aEl resultado de &b%arg-1% &aes &b%{_resultado}%&a." to the console
+
+command /carisma:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_carisma"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f." to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lCarisma &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lCarisma &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lCarisma &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lCarisma &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lCarisma &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /inteligencia:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_inteligencia"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lInteligencia &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lInteligencia &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lInteligencia &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lInteligencia &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lInteligencia &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /sabiduria:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_sabiduria"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lSabiduria &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lSabiduria &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lSabiduria &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lSabiduria &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lSabiduria &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /destreza:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_destreza"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lDestreza &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lDestreza &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lDestreza &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lDestreza &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lDestreza &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /constitucion:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_constitucion"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lConstitucion &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lConstitucion &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lConstitucion &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lConstitucion &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lConstitucion &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /fuerza:
+	trigger:
+		set {_name} to placeholder "essentials_nickname"
+		set {_stat} to placeholder "mmocore_attribute_fuerza"
+		set {_atributo} to {_stat} parsed as number / 5
+		set {_respuesta} to 0
+		if {modo.%player%} is "pifia":
+			set {_respuesta} to {_atributo}+1
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &51+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &91+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &41+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d1+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "critico":
+			set {_respuesta} to {_atributo}+20
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &520+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &920+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &420+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d20+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+		else if {modo.%player%} is "normal":
+			set {_resultado} to a random integer between 1 and 20
+			set {_respuesta} to {_atributo}+{_resultado}
+			if {susurrar.%player%} is true:
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 2 around player
+				send "&8[&5%{_name}%&8] &fTiro &5&lFuerza &fy salió un &5%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {bajo.%player%} is true:
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 7 around player
+				send "&8[&b%{_name}%&8]&fTiro &b&lFuerza &fy salió un &b%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 20 around player
+				send "&8[&9%{_name}%&8]&fTiro &9&lFuerza &fy salió un &9%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {gritar.%player%} is true:
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 40 around player
+				send "&8[&4%{_name}%&8]&fTiro &4&lFuerza &fy salió un &4%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+			else if {ooc.%player%} is true:
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to all players in radius 45 around player
+				send "&8[&d%{_name}%&8]&fTiro &d&lFuerza &fy salió un &d%{_resultado}%+%{_atributo}%: &l%{_respuesta}%&f."  to the console
+command /atributos:
+	trigger:
+		set {_fue} to placeholder "mmocore_attribute_fuerza"
+		set {_atfue} to {_fue} parsed as number / 5
+		set {_car} to placeholder "mmocore_attribute_carisma"
+		set {_atcar} to {_car} parsed as number / 5
+		set {_int} to placeholder "mmocore_attribute_inteligencia"
+		set {_atint} to {_int} parsed as number / 5
+		set {_sab} to placeholder "mmocore_attribute_sabiduria"
+		set {_atsab} to {_sab} parsed as number / 5
+		set {_des} to placeholder "mmocore_attribute_destreza"
+		set {_atdes} to {_des} parsed as number / 5
+		set {_con} to placeholder "mmocore_attribute_constitucion"
+		set {_atcon} to {_con} parsed as number / 5
+		send "&3&l▰▰▰▰▰▰▰▰▰▰▰▰&b&lAtributos&3&l▰▰▰▰▰▰▰▰▰▰▰▰" to the player
+		send "&4Fuerza: &7%{_fue}%&4/&7100 &4Modificador: &7%{_atfue}%" to the player
+		send "&6Constitucion: &7%{_con}%&6/&7100 &6Modificador: &7%{_atcon}%" to the player
+		send "&5Sabiduria: &7%{_sab}%&5/&7100 &5Modificador: &7%{_atsab}%" to the player
+		send "&dCarisma: &7%{_car}%&d/&7100 &dModificador: &7%{_atcar}%" to the player
+		send "&2Destreza: &7%{_des}%&2/&7100 &2Modificador: &7%{_atdes}%" to the player
+		send "&1Inteligencia: &7%{_int}%&1/&7100 &1Modificador: &7%{_atint}%" to the player
+		send "&3&l▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰" to the player

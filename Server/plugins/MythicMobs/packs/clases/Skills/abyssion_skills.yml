@@ -1,0 +1,154 @@
+######## created by samus2002 #########
+
+# Aqua Haste #
+
+Aqua_Haste:
+  Conditions:
+  - inblock{b=WATER} true
+  Skills:
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self
+  - potion{type=INCREASE_DAMAGE;duration=20;level=1;hasParticles=false} @self
+  - potion{type=WATER_BREATHING;duration=20;level=1;hasParticles=false} @self
+  
+Aqua_Haste_Crucible_Head:
+  Conditions:
+  - inblock{b=WATER} true
+  - wearing{slot=HEAD;m=abyssion_head} true
+  - wearing{slot=CHEST;m=abyssion_chestplate} true
+  - wearing{slot=LEGS;m=abyssion_leggings} true
+  - wearing{slot=FEET;m=abyssion_boots} true
+  Skills:
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self
+  - potion{type=INCREASE_DAMAGE;duration=20;level=1;hasParticles=false} @self
+  - potion{type=WATER_BREATHING;duration=20;level=1;hasParticles=false} @self
+  
+Aqua_Haste_Crucible_Helmet:
+  Conditions:
+  - inblock{b=WATER} true
+  - wearing{slot=HEAD;m=abyssion_helmet} true
+  - wearing{slot=CHEST;m=abyssion_chestplate} true
+  - wearing{slot=LEGS;m=abyssion_leggings} true
+  - wearing{slot=FEET;m=abyssion_boots} true
+  Skills:
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false} @self
+  - potion{type=INCREASE_DAMAGE;duration=20;level=1;hasParticles=false} @self
+  - potion{type=WATER_BREATHING;duration=20;level=1;hasParticles=false} @self
+  
+# Aqua Slash #
+
+Aqua_Slash:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Aqua_Slash_1,Aqua_Slash_2,Aqua_Slash_3,Aqua_Slash_4}
+  
+Aqua_Slash_1:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Aqua_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Aqua_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3}
+  
+Aqua_Slash_2:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Aqua_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Aqua_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5}
+  
+Aqua_Slash_3:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Aqua_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Aqua_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3;so=-0.5}
+  
+Aqua_Slash_4:
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Aqua_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Aqua_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5;so=-0.5}
+  
+Aqua_Slash_DAMAGE:
+  Skills:
+  - damage{a=3;pkb=false;hnp=false;hp=true}
+  
+# Abyssal Dash #
+
+Abyssal_Dash:
+  Skills:
+  - leap{velocity=250} @forward{f=5;y=0.2}
+  - effect:sound{s=abyssion_sounds:samus.abyssion_water_dash;volume=1;pitch=1} @self
+  - damage{a=5;repeat=5;repeatinterval=4} @EIR{r=3}
+  - potion{type=SLOW;duration=80;level=2;hasParticles=false;repeat=5;repeatinterval=4} @EIR{r=3}
+  - effect:particles{particle=splash;amount=15;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self
+  - effect:particles{particle=drip_water;amount=10;hS=0.3;vS=0.7;speed=0;repeat=9;repeatinterval=2} @self
+  
+# Tidal Wave #
+
+Tidal_Wave:
+  Conditions:
+  - crouching true
+  Skills:
+  - projectile{bulletType=MOB;mob=Tidal_Wave;onHit=Tidal_Wave_HIT;v=14;i=1;hR=1;vR=1;mr=20;hnp=true;hp=true;hO=0;sE=false;sB=false;d=200;hs=true;hfs=1} @forward{f=5;y=0}
+
+Tidal_Wave_HIT:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - damage{a=4} @EntitiesNearOrigin{r=3}
+  - throw{velocity=9;velocityY=4} @EntitiesNearOrigin{r=3}
+  - effect:particles{particle=splash;amount=30;hS=0;vS=0;speed=0} @origin
+
+# Aqua Aura #
+
+Aqua_Aura:
+  Conditions:
+  - hasaurastacks{auraName=Aqua_Aura_aura} castinstead Aqua_Aura_REQ
+  Skills:
+  - Aura{auraName=Aqua_Aura_aura;interval=1;duration=5} @self
+  
+Aqua_Aura_REQ:
+  Cooldown: 10
+  Skills:
+  - summon{type=Aqua_Aura;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  
+Aqua_Aura_Buff:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false}
+  - potion{type=INCREASE_DAMAGE;duration=20;level=1;hasParticles=false}
+  
+# Abyssal Smash #
+
+Abyssal_Smash_Land:
+  Skills:
+  - summon{type=Abyssal_Smash_big_rune;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+
+Abyssal_Smash:
+  Conditions:
+  - crouching true
+  Skills:
+  - summon{type=Abyssal_Smash_small_rune;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - delay 1
+  - leap{velocity=150} @forward{f=1;y=3}
+  - delay 10
+  - onDamaged{auraName=landresist;d=40;damageMods="FALL 0"} @self
+  - leap{velocity=200} @forward{f=2;y=-5}
+  - delay 8
+  - skill{s=Abyssal_Smash_Land}
+  
+Abyssal_Smash_Damage:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - damage{a=7}
+  - throw{velocity=0;velocityY=9}
+  - delay 5
+  - potion{type=LEVITATION;duration=100;level=0;hasParticles=false}
+  - orbital{bulletType=MOB;mob=Abyssion_Bubble;r=0;onEnd=Abyssal_Smash_Bubble_Pop;points=1;i=1;duration=100;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  
+Abyssal_Smash_Bubble_Pop:
+  Skills:
+  - effect:particles{particle=splash;amount=30;hS=1;vS=1;speed=0;y=1}
+# RYhkX#pGU6jCPnunZ131i2iXSl8JmIK7f9Vr4BCjWvYQPKgIWbsCyEnCDO5i6Un7V0YRtj
+
+
+# 9811YM9LVQLX1ZW

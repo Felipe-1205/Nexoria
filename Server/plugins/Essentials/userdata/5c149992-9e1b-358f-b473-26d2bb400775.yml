@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.26.197.194
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740616926649
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740694735561
+  login: 1740692845544
+money: '0'
+last-account-name: YudaxNot
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 50.467020573511455
+  y: 80.45236753161028
+  z: 18.92990287066649
+  yaw: -32.999755859375
+  pitch: 20.850011825561523
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -579.7904132442884
+  y: 118.0
+  z: -655.5373844012329
+  yaw: -38.47705078125
+  pitch: 10.667665481567383
+nickname: Orion

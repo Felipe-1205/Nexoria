@@ -1,0 +1,176 @@
+
+
+Queen_Tarot:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_card_orbital;n=false} @self ~onSpawn
+  - skill{s=Queen_Tarot_REMOVE;delay=50} @self ~onTimer:10
+  - skill{s=Queen_Tarot_REMOVE_BUFF} @Owner ~onTimer:1
+  
+Card_Throw:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_card_throw;n=false} @self ~onSpawn
+  
+Card_Throw_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_card_throw;n=false} @self ~onSpawn
+  - state{s=idle2} @self ~onSpawn
+  
+Phantom_Blink_Clone:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_clone;n=false} @self ~onSpawn
+  - state{s=skill_2} @self ~onSpawn
+  
+Phantom_Blink_Clone_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_clone;n=false} @self ~onSpawn
+  - state{s=skill_1} @self ~onSpawn
+  
+Mirror_Shuriken:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - model{mid=fx_mirror_shuriken;n=false} @self ~onSpawn
+  
+Mirror_ShurikenBACK:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - model{mid=fx_mirror_shuriken;n=false} @self ~onSpawn
+  - skill{s=Mirror_Shuriken_End_Back_REMOVE} @EIR{r=5} ~onTimer:5
+  - remove{delay=100} @self ~onSpawn
+
+  
+Mirror_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=illusion_impact_1:0;delay=2} ~onSpawn
+  - equip{item=illusion_impact_2:0;delay=3} ~onSpawn
+  - equip{item=illusion_impact_3:0;delay=4} ~onSpawn
+  - equip{item=illusion_impact_4:0;delay=5} ~onSpawn
+  - equip{item=illusion_impact_5:0;delay=6} ~onSpawn
+  - equip{item=illusion_impact_6:0;delay=7} ~onSpawn
+  - equip{item=illusion_impact_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Mirror_Needles_Mirror:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_mirror;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=60} @self ~onSpawn
+  
+Mirror_Needles_Needle_1:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_mirror_needle;n=false} @self ~onSpawn
+  - state{s=skill_1} @self ~onSpawn
+  
+Mirror_Needles_Needle_2:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=fx_mirror_needle;n=false} @self ~onSpawn
+  - state{s=skill_2} @self ~onSpawn
+  
+Mirror_Dimension_Portal:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - polygon{db=0.25;y=0.1;mpd=false;scale=7;
+    oE=[ - effect:particles{p=redstone;color=#bdfff2} ];
+    oS=[ - effect:particles{p=redstone;color=#bdfff2} ]
+    ;p=8;skip=6} @Origin ~onTimer:5
+  - remove{delay=40} @self ~onSpawn

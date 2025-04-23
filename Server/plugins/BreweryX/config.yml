@@ -1,0 +1,426 @@
+# !!! IMPORTANT: BreweryX configuration files do NOT support external comments! If you add any comments, they will be overwritten !!!
+# Our proper config guide can be found at: https://brewery.lumamc.net/en/guide/edit_config/
+# Still have questions? Join our Discord: https://discord.gg/ZTGCzeKg45
+
+# La traducción a utilizar
+# Tipos disponibles: en (Inglés), de (Alemán), es (Español), fr (Francés), it (Italiano), ru (Ruso), zh (Chino), uk (Ukrainian)
+language: es
+
+# Should BreweryX check for updates? Specify which service you'd like to use for update checking or disable it.
+# Options available: GitHub, Snapshots, Spigot, None [GitHub]
+resolveUpdatesFrom: GITHUB
+
+# Intervalo de autoguardado en minutos [10]
+autosave: 10
+
+# Prefijo usado en los mensajes
+pluginPrefix: '&2[BreweryX]&f '
+
+# Mostrar mensajes de depuración en los registros [false]
+debug: false
+
+# -- Ajustes de almacenamiento --
+storage:
+  # Tipo de almacenamiento a utilizar [FLATFILE]
+  # Tipos disponibles: FlatFile, MySQL, SQLite, MongoDB
+  type: SQLITE
+  # El nombre de la base de datos. Cuando sea un archivo, será el nombre del archivo. [brewery-data]
+  database: brewery-data
+  tablePrefix: brewery_
+  address: localhost
+  username: root
+  password: password
+
+# Si el jugador debería despertar en /home al iniciar sesión después de beber demasiado (Un plugin de /home debe estar instalado) [true]
+enableHome: true
+
+# Tipo de la teletransportación a casa: ['cmd: home']
+# bed = El jugador aparecerá en su cama
+# 'cmd: home' = Se ejecutará /home como el jugador. Debe de tener permisos para usarlo sin retraso.
+# 'cmd: spawn' = Se ejecutará /spawn como el jugador.
+# 'cmd: whatever' = Se ejecutará /lo-que-sea como el jugador.
+homeType: 'cmd: home'
+
+# Si el jugador debería "despertarse" en un lugar aleatorio al estar descontectado por un tiempo después de haber bedido (los lugares deben definirse con '/brew Wakeup add' por un administrador)
+# El jugador despertará al más cercano de dos lugares aleatorios del mundo [true]
+enableWake: true
+
+# Si el jugador debería requerir varios intentos para poder iniciar sesión cuando haya bebido demasiado [true]
+enableLoginDisallow: true
+
+# Si el jugador debería desmayarse (ser expulsado del servidor) si bebe la cantidad máxima posible de alcohol [false]
+enableKickOnOverdrink: false
+
+# Si el jugador debería vomitar al estar muy borracho (los objetos usados se definen debajo) [true]
+# El objeto no puede ser recogido y se mantendrá en el suelo hasta que desaparezca.
+enablePuke: true
+
+# Objetos que serán lanzados múltiples veces, imposibles de recoger, al vomitar [Soul_Sand]
+# Puede ser una lista de objetos, como por ejemplo [Soul_sand, Slime_block, Dirt]
+pukeItem:
+- HONEY_BLOCK
+
+# Tiempo en segundos hasta que los objetos de vómito desaparezcan, (por defecto de Minecraft 300 = 5 min) [60]
+# Si el tiempo por defecto es cambiado en el spigot.yml, este valor tambien será afectado.
+pukeDespawntime: 60
+
+# Cuanto debería tambalearse el jugador dependiendo de la cantidad de alcohol que haya bebido. Puede ajustarse a 0, y a mayor que 100 [100]
+stumblePercent: 100
+
+# Muestra al jugador su estado de borrachera cuando bebe o come un objeto que reduzca su alcohol [true]
+showStatusOnDrink: true
+
+# Objeto/fuerza. Consumible. Reduce el nivel de alcohol por <fuerza> al consumirse. (lista)
+drainItems:
+- Bread/4
+- Milk_Bucket/2
+
+# Muestra particulas sobre los calderos cuando tienen ingredientes y una fuente de calor. [true]
+# El color cambiante de las particulas puede ayudar a controlar el tiempo con algunas recetas
+enableCauldronParticles: true
+
+# Si las particulas del caldero deberían reducirse al mínimo [false]
+minimalParticles: false
+
+# Si se activa la creación y uso de las mesas de sellado (2 botellas over 4 tablas de madera) [true, true]
+craftSealingTable: true
+enableSealingTable: true
+
+# Por defecto, BreweryX utiliza un ahumador como mesa de sellado. Esta opción te permite cambiarlo
+# IMPORTANTE: Debe de ser un contenedor - un bloque que pueda contener objetos (por ejemplo, SMOKER, CHEST, BLAST_FURNACE).
+sealingTableBlock: SMOKER
+
+# Muestra siempre las estrellas en el objeto dependiendo de su calidad. Si se desactiva, solo aparecera durante su cocinado [true]
+alwaysShowQuality: true
+
+# Muestra siempre el nivel de alcohol del objeto. Si se desactiva, solo se mostrará en el estante de pociones [false]
+alwaysShowAlc: false
+
+# Always show that a brew is alcoholic by putting "Alcoholic" in the item's lore
+# Sealed brews will show that a brew is alcoholic, but not its alcohol content
+alwaysShowAlcIndicator: true
+
+# Si se debería mostrar quien hizo la bebida [false]
+showBrewer: false
+
+# Si los toneles solo son creados cuando el cartel contiene la palabra "barrel" (o una traducción cuando se usa otro idioma) [true]
+requireKeywordOnSigns: true
+
+# Si se activa el enevjecimiento en los barriles de -Minecraft- [true] y cuantas bebidas de BreweryX pueden ponerse en estos [6]
+ageInMCBarrels: true
+maxBrewsInMCBarrels: 6
+
+# Duración (en minutos) de un 'año' al envejecer bebidas [20]
+agingYearDuration: 20
+
+# Aliases para el comando '/breweryx'. Requiere un reinicio del servidor para tomar efecto. (lista) [brewery, brew]
+commandAliases:
+- brewery
+- brew
+
+# Los ingredientes usados y otros datos de cocina están guardados en todos los objetos de BreweryX. para prevernir
+# que clientes hack puedan leer exactamente que se utiliza en un objeto, los datos se pueden codificar/revolver.
+# Este es un proceso rápido para impedir que los jugadores saquen las recetas con hacks al obtener la bebida.
+
+# El punto negativo es que los objetos solo podrán utilizarse en servers que utilicen la misma clave de codificación.
+# Cuando utilices varios servidores (como, por ejemplo, con BungeeCord), define una base de datos MySQL en los ajustes de almacenamiento más arriba.
+
+# Activa esto cuando quieras hacer más difícil hackear las recetas, y no piensas compartir bebidas a través de descargas del mundo, esquemáticos u otros medios. [false]
+enableEncode: false
+encodeKey: 457718880487027803
+
+# -- Compatibilidad de plugins --
+
+# Activa para comprobar otros plugins (si instalados) por permisos de tonel [true]
+# Los plugins 'Landlord' y 'Protection Stones' usan WorldGuard Flag. 'ClaimChunk' es soportado nativamente.
+useWorldGuard: true
+useLWC: true
+useGriefPrevention: true
+useTowny: true
+useLands: true
+useBlockLocker: true
+useGMInventories: true
+
+# Usa un cofre al abrir un tonel para contrastar con el resto de plugins de protección
+# Esto podría confundir plugins anti-trampas, pero aparte de eso, es seguro utilizarlo
+# Utiliza esto para el plugin 'Residence' y otros que no comprueben todos los casos en el evento PlayerInteractEvent
+useVirtualChestPerms: false
+
+# Activa el registro de los inventarios de tonel a LogBlock [true]
+useLogBlock: true
+
+# Si los objetos en la mano secundaria deberían añadirse al caldero también [false]
+useOffhandForCauldron: false
+
+# Esta opción ya no hace nada, y se eliminará en futuras versiones de BreweryX.
+# BreweryX siempre carga los datos de forma asíncrona, con las excepciones del inicio y el apagado del servidor.
+loadDataAsync: true
+
+# Tiempo (en días) por el que se guarda los datos de borrachera en la memoria después de que un jugador se desconecte, para aplicar resaca. [7]
+hangoverDays: 7
+
+# Colorea la información (lore) de un objeto dependiendo de su calidad mientras está A) en un tonel y/o B) en un estante de pociones [true, true]
+colorInBarrels: true
+colorInBrewer: true
+
+# Si un tonel grande puede abrirse desde cualquiera de sus bloques, no solo el grifo o el cartel. Esto está siempre activado para los toneles pequeños. [true]
+openLargeBarrelEverywhere: true
+
+# Cuántas filas debe tener el inventario de cada tipo de barril [3,1]
+# Debe ser un número entero entre 1 y 6 (una limitación de Minecraft / GUI)
+# (Se requiere reiniciar el servidor para que los cambios aquí surtan efecto)
+barrelInvSizeLarge: 3
+barrelInvSizeSmall: 1
+
+# Permitir vaciar bebidas en tolvas para descartarlas, manteniendo la botella de cristal [true]
+brewHopperDump: true
+
+# Si el chat escrito se distorsiona cuando el jugador está borracho, para aparentarlo tambien al escribir
+# Como de distorsionado estñe dependerá de como de borracho esté el jugador
+# Debajo están los ajustes para qué y como cambian las cosas en el chat
+enableChatDistortion: true
+
+# Registrar en el servidor lo que el jugador realmente escribió antes de que sus palabras fueran alteradas [false]
+logRealChat: false
+
+# Texto despues de los comandos especificados será distorsionado cuando se emborrache (lista) [- /gl]
+distortCommands:
+- /gl
+- /global
+- /fl
+- /s
+- /letter
+- /g
+- /l
+- /lokal
+- /local
+- /mail send
+- /m
+- /msg
+- /w
+- /whisper
+- /reply
+- /r
+- /t
+- /tell
+
+# Distorsiona el texto escrito en carteles mientras se esté borracho [false]
+distortSignText: false
+
+# Encierra el texto en estos carácteres para ignorar la distorsión del char (usa "," como separador) (lista) [- '[,]']
+# Ejemplo de chat: Hola estoy borracho *Estoy probando BreweryX*
+distortBypass:
+- '*,*'
+- '[,]'
+
+# Palabras y letras que serán alteradas cuando se use el chat estando borracho.
+# Será procesado del primero al último y una frase escrita es alterada en ese orden.
+
+# replace: Palabra o letra a reemplazar. (Especial: "-space": reemplaza el espacio, "-random": inserta en posición aleatoria, "-all": todo, "-start": al principio, "-end": Al final.)
+# to: Con qué reemplazarlo.
+# pre: Palabras y letras antes de la palabra esperada (separar con ",")
+# match: true = Una de las palabras "pre" debe estar antes de la palabra esperada, false = ninguna de las palabras "pre" se permite antes de la palabra esperada
+# alcohol: 1-100 borrachera mínima a partir de la que la palabra es reemplazada
+# percentage: Probabilidad de que la palabra se reemplace en porcentaje
+words:
+- replace: s
+  to: sh
+  alcohol: 30
+  percentage: 90
+- replace: ch
+  to: sh
+  pre: u,s,o,a
+  match: false
+  alcohol: 10
+  percentage: 70
+- replace: h
+  to: hh
+  pre: sch,h,t
+  match: false
+  alcohol: 20
+  percentage: 60
+- replace: th
+  to: thl
+  alcohol: 30
+  percentage: 40
+- replace: sch
+  to: shk
+  alcohol: 40
+  percentage: 60
+- replace: u
+  to: uuh
+  percentage: 20
+- replace: y
+  to: yy
+  alcohol: 15
+  percentage: 60
+- replace: e
+  to: ee
+  alcohol: 15
+  percentage: 40
+- replace: you
+  to: u
+  percentage: 40
+- replace: u
+  to: uo
+  pre: u
+  match: false
+  percentage: 60
+- replace: that
+  to: taht
+  alcohol: 40
+  percentage: 20
+- replace: p
+  to: b
+  percentage: 30
+- replace: p
+  to: b
+  alcohol: 60
+  percentage: 70
+- replace: up
+  to: ubb
+  alcohol: 25
+  percentage: 80
+- replace: o
+  to: oh
+  percentage: 20
+- replace: ei
+  to: i
+  alcohol: 15
+  percentage: 30
+- replace: b
+  to: bb
+  alcohol: 40
+  percentage: 80
+- replace: '!!!'
+  to: '!!!111!!!eleven!1!'
+  pre: '!'
+  match: false
+  alcohol: 70
+  percentage: 20
+- replace: '!'
+  to: '!!'
+  pre: '!'
+  match: false
+  percentage: 90
+- replace: drunk
+  to: dhrkunn
+  pre: are
+  match: false
+  alcohol: 65
+  percentage: 70
+- replace: walk
+  to: whhealhk
+  pre: you can, you can still, you can not
+  match: false
+  alcohol: 30
+  percentage: 80
+- replace: wtf
+  to: wft
+  alcohol: 40
+  percentage: 20
+- replace: lol
+  to: loool
+  alcohol: 10
+  percentage: 80
+- replace: afk
+  to: aafkayyy
+  alcohol: 30
+  percentage: 30
+- replace: write
+  to: wreitt
+  pre: you can,you can still,you can not
+  match: false
+  alcohol: 50
+  percentage: 80
+- replace: drink
+  to: booze
+  alcohol: 70
+  percentage: 80
+- replace: '?'
+  to: ????
+  pre: '?'
+  match: false
+  alcohol: 40
+  percentage: 80
+- replace: -space
+  to: ''
+  pre: h,g,w
+  match: true
+  alcohol: 10
+- replace: -space
+  to: ''
+  alcohol: 35
+  percentage: 30
+- replace: -space
+  to: ''
+  percentage: 10
+- replace: -start
+  to: dho
+  alcohol: 50
+  percentage: 15
+- replace: -start
+  to: hhn
+  alcohol: 50
+  percentage: 10
+- replace: -random
+  to: lu
+  percentage: 10
+- replace: -random
+  to: lug
+  alcohol: 50
+  percentage: 10
+- replace: -random
+  to: blub
+  alcohol: 80
+  percentage: 20
+- replace: -random
+  to: lerg
+  alcohol: 85
+  percentage: 40
+- replace: -random
+  to: gul
+  alcohol: 80
+  percentage: 40
+- replace: -random
+  to: ' '
+  alcohol: 70
+  percentage: 100
+- replace: -random
+  to: ' '
+  alcohol: 40
+  percentage: 60
+- replace: -random
+  to: ' '
+  alcohol: 30
+  percentage: 50
+- replace: -end
+  to: '!'
+  alcohol: 30
+  percentage: 40
+- replace: -random
+  to: ' *hic* '
+  alcohol: 70
+  percentage: 80
+- replace: -random
+  to: ' *hic* '
+  alcohol: 40
+  percentage: 15
+- replace: -space
+  to: ' *hic* '
+  alcohol: 20
+  percentage: 5
+- replace: -end
+  to: ' *hic*'
+  alcohol: 50
+  percentage: 70
+- replace: -all
+  to: '*burp*'
+  alcohol: 60
+  percentage: 3
+- replace: -all
+  to: '*burp*'
+  alcohol: 80
+  percentage: 6
+
+# Yep, that's it! The end of config.yml! I had so much fun! And you?...

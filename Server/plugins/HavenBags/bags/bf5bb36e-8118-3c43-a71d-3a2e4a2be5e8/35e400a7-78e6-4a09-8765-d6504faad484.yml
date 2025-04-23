@@ -1,0 +1,11 @@
+uuid: 35e400a7-78e6-4a09-8765-d6504faad484
+owner: bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8
+creator: bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8
+size: 9
+custommodeldata: 1
+texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNiM2FjZGMxMWNhNzQ3YmY3MTBlNTlmNGM4ZTliM2Q5NDlmZGQzNjRjNjg2OTgzMWNhODc4ZjA3NjNkMTc4NyJ9fX0=
+trusted: []
+auto-pickup: all
+weight-max: 0
+content: '[{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"LOOM"},{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"SMOKER","amount":64},{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"OCHRE_FROGLIGHT"},{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"GLOWSTONE","amount":64},{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"SMITHING_TABLE"},{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"ANVIL","amount":64},null,null,null]'
+weight: 1300.0

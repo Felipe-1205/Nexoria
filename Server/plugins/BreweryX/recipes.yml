@@ -1,0 +1,464 @@
+# !!! IMPORTANT: BreweryX configuration files do NOT support external comments! If you add any comments, they will be overwritten !!!
+# -- Recetas para pociones --
+
+# Guías más acordes para esta sección se pueden encontrar en nuestra wiki - https://brewery.lumamc.net/guide/recipies/
+
+# name: Nombres diferentes para mal/normal/bien (Códigos de formato admitidos: como por ejemplo &6, o hexadecimales como &#123123)
+#   name: "La peor bebida/Buena bebida/¡El mejor trago de toda mi absoluta existencia!"
+
+# ingredients: Lista de "material/cantidad'
+#   Con un objeto en tu mano, usa /brew ItemName para obtener su material para usarlo en una receta
+#   Una lista de materiales puede encontrarse aquí: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+#   Objetos de plugins con 'plugin:id' (A día de hoy se soportan Brewery, Oraxen, ItemsAdder)
+#   O un objeto personalizado definido arriba
+
+# cookingtime: Tiempo en minutos reales que los ingredientes deben estar hirviendo
+
+# distillruns: Cuantas veces debe de ser destilado para la cantidad máxima de alcohol (0=sin destilación)
+
+# distilltime: Como de largo (en segundos) debe de ser cada destilado (0=Tiempo por defecto de 40 segundos). El estándar de Minecraft son 20 segundos
+
+# wood: Madera del tonel 0=cualquiera 1=Abedul 2=Roble 3=Jungla 4=Abeto 5=Acacia 6=Roble Oscuro 7=Carmesí 8=Distorsionado 9=Manglar 10=Cerezo 11=Bambú 12=Cobre cortado
+#   El barril de Minecraft está hecho de roble
+
+# age: Tiempo, en días de Minecraft, por los que la poción debe envejecer en toneles. 0=No requiere envejecer
+
+# color: Color después de destilar/envejecer.
+#   Colores utilizables: DARK_RED, RED, BRIGHT_RED, ORANGE, YELLOW, PINK, PURPLE, BLUE, CYAN, WATER, TEAL, OLIVE, GREEN, LIME, BLACK, GREY, BRIGHT_GREY, WHITE
+#   O colores RGB (hexadecimal: por ejemplo '99FF33') (con '') (busca "Color HTML" en internet)
+
+# difficulty: 1-10 precisión requerida para obtener buena calidad (1 = poca precisión/fácil, 10 = muy preciso/difícil)
+
+# alcohol: Cantidad absoluta de alcohol, 0-100, en una bebida perfecta (será añadido directamente al jugador, 100 implica desmayarse)
+
+# lore: Lista de texto adicional en la bebida terminada. (Códigos de formato posibles, como &6)
+#   Lore específico por calidad es posible, usando + mal, ++ normal, +++ bien, añadidos al principio de la línea.
+#   - +++ ¡La mejor bebida!
+#   - ++ Una bebida decente.
+#   - + Una basura de bebida
+
+# servercommands: Lista de comandos ejecutados por el -Servidor- al beber (se puede usar %player_name% %quality%)
+#   Se pueden especificar comandos por calidad, usando + mal, ++ normal, +++ bien, añadido al principio de la línea.
+#   - +++ op %player%
+#   - ++ money give %player% 10
+#   - + kill %player%
+#   El comando puede retrasarse antes de ejecutar añadiendo "/ <cantidad>s" al final, donde "s" significa segundos, como en este ejemplo:
+#   - op Jsinco / 3s
+
+# playercommands: Lista de comandos ejecutados por el -jugador- al beber (se puede usar %player_name%  %quality%)
+#   Se pueden especificar comandos por calidad, usando + mal, ++ normal, +++ bien, añadido al principio de la línea.
+#   - +++ spawn
+#   - ++ home
+#   - + suicide
+#   El comando puede retrasarse antes de ejecutar añadiendo "/ <cantidad>s" al final, donde "s" significa segundos, como en este ejemplo:
+#   - op Jsinco / 3s
+
+# drinkmessage: Mensaje de chat para el jugador al beber
+
+# drinktitle: Título en la pantalla del jugador al beber
+
+# glint: Booleano si el objeto debiera brillar como un objeto encantado
+
+# customModelData: Etiqueta de datos de modelo personalizados. Esto es un número que puede usarse al aplicar texturas personalizadas al objeto.
+#   Puede especificarse uno para la bebida entera, o uno por cada calidad, separados por /
+#   customModelData: 1
+#   customModelData: 1/2/3
+
+# effects: Lista de efecto/nivel/duración. Efectos de pocion aplicables al beber, duración en segundos.
+#   Efectos posibles: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+#   Los rangos de nivel o duración pueden especificarse con un "-", por ejemplo 'SPEED/1-2/30-40' = nivel 1 y 30 segundos en la peor calidad, nivel 2 y 40 segundos a la mejor
+#   Los rangos tambien funcionan en alto-bajo, por ejemplo 'POISON/3-1/20-5' para efectos más débiles a la mejor calidad.
+#   Duración más larga posible: 1638 segundos. Efectos instantáneos no requieren especificar ninguna duración.
+
+
+# Los ejemplos muestran todas las opciones disponibles para las recetas
+recipes:
+  ex:
+    enabled: true
+    name: Bad Example/Example/Good Example
+    ingredients:
+    - Bedrock/2
+    - Spruce_Planks/8
+    - Bedrock/1
+    - Brewery:Wheatbeer/2
+    - ExoticGarden:Grape/3
+    - ex-item/4
+    cookingtime: 3
+    distillruns: 2
+    distilltime: 60
+    wood: 4
+    age: 11
+    color: DARK_RED
+    difficulty: 3
+    alcohol: 14
+    lore:
+    - This is an example brew
+    - ++Just a normal Example
+    - This text would be on the brew
+    - + Smells disgusting
+    - ++ Smells alright
+    - +++ Smells really good
+    servercommands:
+    - +++ weather clear
+    - + weather rain
+    playercommands:
+    - homes
+    drinkmessage: Tastes good
+    drinktitle: Warms you from inside
+    glint: true
+    customModelData: 556/557/557
+    effects:
+    - FIRE_RESISTANCE/20
+    - HEAL/1
+    - WEAKNESS/2-3/50-60
+    - POISON/1-0/20-0
+  wheatbeer:
+    name: Cerveza de trigo Apestosa/cerveza de trigo/cerveza de trigo fina
+    ingredients:
+    - Wheat/3
+    cookingtime: 8
+    distillruns: 0
+    wood: 1
+    age: 2
+    color: ffb84d
+    difficulty: 1
+    alcohol: 5
+    lore:
+    - +++ &8Refrescante
+  beer:
+    name: Cerveza Apestosa/Cerveza/Cerveza fina
+    ingredients:
+    - Wheat/6
+    cookingtime: 8
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: ffd333
+    difficulty: 1
+    alcohol: 6
+    lore:
+    - +++ &8Sabor crujiente
+  darkbeer:
+    name: Cerveza oscura apestosa/cerveza oscura/cerveza oscura fina
+    ingredients:
+    - Wheat/6
+    cookingtime: 8
+    distillruns: 3
+    wood: 6
+    age: 0
+    color: '650013'
+    difficulty: 2
+    alcohol: 7
+    lore:
+    - +++ &8Sabor tostado
+  wine:
+    name: Vino Rojo
+    ingredients:
+    - Sweet_Berries/5
+    cookingtime: 5
+    distillruns: 0
+    wood: 0
+    age: 20
+    color: RED
+    difficulty: 4
+    alcohol: 8
+    lore:
+    - + &8Duro
+    - + &8Acorchado
+    - ++ &8Suave
+    - +++ &8Suave
+  mead:
+    name: Hidromiel incomoda/Hidromiel/&6Hidromiel dorado
+    ingredients:
+    - Sugar_Cane/6
+    cookingtime: 3
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 2
+    alcohol: 9
+    lore:
+    - +++ Tiene un brillo dorado
+  ap_mead:
+    name: Hidromiel de manzana/Hidromiel de manzana dulce/&6Hidromiel de manzana dorada
+      dulce
+    ingredients:
+    - Sugar_Cane/6
+    - Apple/2
+    cookingtime: 4
+    distillruns: 0
+    wood: 2
+    age: 4
+    color: ORANGE
+    difficulty: 4
+    alcohol: 11
+    lore:
+    - ¿Hay algo de manzana en esto?
+    - Sabor refrescante de manzana
+    - El toque más dulce de manzana
+    effects:
+    - WATER_BREATHING/1-2/15
+  cidre:
+    name: Sidra miserable/Sidra de manzana/Sidra de manzana excelente
+    ingredients:
+    - Apple/14
+    cookingtime: 7
+    distillruns: 0
+    wood: 0
+    age: 3
+    color: f86820
+    difficulty: 4
+    alcohol: 7
+  apple_liquor:
+    name: Licor de manzana agria/Licor de manzana/Calvados
+    ingredients:
+    - Apple/12
+    - Diamond/300
+    - Barrel/20
+    - bedrock/2
+    - egg/3
+    cookingtime: 16
+    distillruns: 3
+    wood: 5
+    age: 6
+    color: BRIGHT_RED
+    difficulty: 5
+    alcohol: 14
+    lore:
+    - +Agrio como el ácido
+    - +++ Buen licor de manzana
+  whiskey:
+    name: Whisky feo/Whisky/Whisky escocés antiestético
+    ingredients:
+    - Wheat/10
+    cookingtime: 10
+    distillruns: 2
+    distilltime: 50
+    wood: 4
+    age: 18
+    color: ORANGE
+    difficulty: 7
+    alcohol: 26
+    lore:
+    - '&7Whisky de pura malta'
+  rum:
+    name: Ron amargo/Ron picante/&6Ron dorado
+    ingredients:
+    - Sugar_Cane/18
+    cookingtime: 6
+    distillruns: 2
+    distilltime: 30
+    wood: 2
+    age: 14
+    color: DARK_RED
+    difficulty: 6
+    alcohol: 30
+    lore:
+    - + &8Too bitter to drink
+    - ++ &8Spiced by the barrel
+    - +++ &eSpiced Gold
+    effects:
+    - FIRE_RESISTANCE/1/20-100
+    - POISON/1-0/30-0
+  vodka:
+    name: Vodka pésimo/Vodka/Vodka ruso
+    ingredients:
+    - Potato/10
+    cookingtime: 15
+    distillruns: 3
+    age: 0
+    color: WHITE
+    difficulty: 4
+    alcohol: 20
+    lore:
+    - + &8Almost undrinkable
+    effects:
+    - WEAKNESS/15
+    - POISON/10
+  shroom_vodka:
+    name: Vodka de hongos /Vodka de hongos/Vodka de hongos brillante
+    ingredients:
+    - Potato/10
+    - Red_Mushroom/3
+    - Brown_Mushroom/3
+    cookingtime: 18
+    distillruns: 5
+    age: 0
+    color: ff9999
+    difficulty: 7
+    alcohol: 18
+    lore:
+    - +++&aBrilla en la oscuridad
+    effects:
+    - WEAKNESS/80
+    - CONFUSION/27
+    - NIGHT_VISION/50-80
+    - BLINDNESS/12-2
+    - SLOW/10-3
+  gin:
+    name: Ginebra pálida/ginebra/Ginebra de alta calidad
+    ingredients:
+    - Wheat/9
+    - blue-flowers/6
+    - Apple/1
+    cookingtime: 6
+    distillruns: 2
+    color: 99ddff
+    difficulty: 6
+    alcohol: 20
+    lore:
+    - ++ With the
+    - ++ taste of juniper
+    - +++ Perfectly finished off
+    - +++ with juniper
+  tequila:
+    name: Mezcal/Tequila/Tequila añejo
+    ingredients:
+    - cactus/8
+    cookingtime: 15
+    distillruns: 2
+    wood: 1
+    age: 12
+    color: f5f07e
+    difficulty: 5
+    alcohol: 20
+    lore:
+    - Espíritu del desierto
+  absinthe:
+    name: Absenta pobre/Absenta/Absenta fuerte
+    ingredients:
+    - Grass/15
+    cookingtime: 3
+    distillruns: 6
+    distilltime: 80
+    color: GREEN
+    difficulty: 8
+    alcohol: 42
+    lore:
+    - +++&8Licor de alto grado
+    effects:
+    - POISON/15-25
+  gr_absinthe:
+    name: Absenta pobre/Absenta verde/Absenta verde brillante
+    ingredients:
+    - Grass/17
+    - Poisonous_Potato/2
+    cookingtime: 5
+    distillruns: 6
+    distilltime: 85
+    color: LIME
+    difficulty: 9
+    alcohol: 46
+    lore:
+    - '&aParece venenoso'
+    effects:
+    - POISON/25-40
+    - HARM/2
+    - NIGHT_VISION/40-60
+  potato_soup:
+    name: Sopa de papa
+    ingredients:
+    - Potato/5
+    - Grass/3
+    cookingtime: 3
+    color: ORANGE
+    difficulty: 1
+    effects:
+    - HEAL/0-1
+  coffee:
+    name: Café rancio/Café/Café fuerte
+    ingredients:
+    - Cocoa_Beans/12
+    - Milk_Bucket/2
+    cookingtime: 2
+    color: BLACK
+    difficulty: 3
+    alcohol: -6
+    lore:
+    - + &8Probablemente tenga una semana
+    effects:
+    - REGENERATION/1/2-5
+    - SPEED/1/2-5
+  eggnog:
+    name: Licor de huevo/Ponche de huevo/Ponche de huevo
+    ingredients:
+    - Egg/5
+    - Sugar/2
+    - Milk_Bucket/1
+    cookingtime: 2
+    age: 3
+    color: ffe680
+    difficulty: 4
+    alcohol: 10
+    lore:
+    - Hecho con huevo crudo
+  g_vodka:
+    name: Vodka Rancio/&6 Vodka Dorado/&6 Vodka Dorado Brillante
+    ingredients:
+    - Potato/10
+    - Gold_Nugget/2
+    cookingtime: 18
+    distillruns: 3
+    age: 0
+    color: ORANGE
+    difficulty: 6
+    alcohol: 20
+    effects:
+    - WEAKNESS/28
+    - POISON/4
+  fire_whiskey:
+    name: Whisky en polvo/Whisky ardiente/Whisky llameante
+    ingredients:
+    - Wheat/10
+    - Blaze_Powder/2
+    cookingtime: 12
+    distillruns: 3
+    distilltime: 55
+    wood: 4
+    age: 18
+    color: ORANGE
+    difficulty: 7
+    alcohol: 28
+    drinkmessage: Tienes una sensación de ardor en la boca.
+  hot_choc:
+    name: Chocolate Caliente
+    ingredients:
+    - cookie/3
+    cookingtime: 2
+    color: DARK_RED
+    difficulty: 2
+    effects:
+    - FAST_DIGGING/10
+  iced_coffee:
+    name: Café aguado/Café helado/Café helado fuerte
+    ingredients:
+    - cookie/8
+    - snowball/4
+    - milk_bucket/1
+    cookingtime: 1
+    color: BLACK
+    difficulty: 4
+    alcohol: -8
+    effects:
+    - REGENERATION/30
+    - SPEED/10
+
+# More recipe ideas:
+# Dandelion Liquor
+# Beetroot Spirit
+# Poppy Liquor: Macum/Grand Poppy
+# Bamboo Liquor: Chu Yeh Ching
+# Cachaca
+# Cognac
+# Sake
+# Buorbon
+# Moonshine
+# Different Wines
+# Brandy
+# Amaretto
+# etc. as well as variations like,
+# Pumpkin Spice Beer
+# Melon Vodka
+
+# There are a lot of items in Minecraft like Vines, Milk and items added by plugins that would make great ingredients.

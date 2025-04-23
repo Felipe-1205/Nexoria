@@ -1,0 +1,237 @@
+# Order matters inside of this file.
+#
+# Players can equip items by shift-clicking an item inside
+# the UI, which will put the item into whatever slot supports
+# it. Items which appear first in this config file will be
+# prioritized over items further down the config file.
+
+# Vanilla Slots
+HELMET:
+    type: helmet
+    material: DIAMOND_HOE
+    durability: 1
+    name: '&6Ranura para Casco'
+    slot: 11
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+CHESTPLATE:
+    type: chestplate
+    material: DIAMOND_HOE
+    durability: 2
+    name: '&6Ranura para Casco'
+    slot: 20
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+LEGGINGS:
+    type: leggings
+    material: DIAMOND_HOE
+    durability: 3
+    name: '&6Ranura para Casco'
+    slot: 29
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+BOOTS:
+    type: boots
+    material: DIAMOND_HOE
+    durability: 4
+    name: '&6Ranura para Casco'
+    slot: 38
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+OFF_HAND:
+    type: off_hand
+    material: DIAMOND_HOE
+    durability: 14
+    name: '&6Ranura para Casco'
+    slot: 19
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+
+# Artifact slots
+ARTIFACT_1:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 13
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_2:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 14
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_3:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 15
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_4:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 16
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_5:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 22
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_6:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 23
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_7:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 24
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_8:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 25
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_9:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 31
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_10:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 32
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_11:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 33
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_12:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 34
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_13:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 40
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_14:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 41
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_15:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 42
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+ARTIFACT_16:
+    type: accessory
+    material: DIAMOND_HOE
+    durability: 10
+    name: '&6Ranura para Accesorio'
+    slot: 43
+    restrictions:
+    - 'mmoitemstype{type=ACCESSORY}'
+    - 'unique{enabled=true}'
+    lore:
+    - Arrastra y suelta un objeto para equiparlo.
+
+# Misc
+FILL:
+    type: fill
+    material: DIAMOND_HOE
+    durability: 15
+    name: '&a'
+    slot: -1
+    lore: []
+
+#cEOSJ0YCdDOLlGTZtmRLVGZVpnT3FEVPBTRq1keVRUT6t2RV90YJFVOWJ0NtZGRkxUNZZjN

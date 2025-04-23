@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 24.128.174.72
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1741212657862
+  login: 1741212605473
+money: '0'
+last-account-name: nqio
+lastlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: 0.0
+  y: -60.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: 5e9ebc87-7d95-497a-9572-3b14d23ece80
+  world-name: spawn
+  x: -1113.0142766340111
+  y: 10.0
+  z: 655.6589121785474
+  yaw: -103.57333374023438
+  pitch: 1.763340950012207

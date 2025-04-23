@@ -1,0 +1,197 @@
+
+  
+Pumpkin_Bombs:
+  Skills:
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.7} @self
+  - randomskill{skills=Pumpkin_Bombs_1,Pumpkin_Bombs_2,Pumpkin_Bombs_3}
+
+Pumpkin_Bombs_1:
+  Skills:
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+
+Pumpkin_Bombs_2:
+  Skills:
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=7;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=-7;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+
+Pumpkin_Bombs_3:
+  Skills:
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=11;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Pumpkin_Bombs;onEnd=Pumpkin_Bombs_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=-11;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=3;g=1} @Forward{f=15;y=0}
+
+Pumpkin_Bombs_HIT_D:
+  Skills:
+  - skill{s=Pumpkin_Bombs_HIT} @EntitiesNearOrigin{r=4;sort=NEAREST}
+  - effect:particles{particle=explosion_large;amount=2;hS=0;vS=0;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=0.6;pitch=1.25} @origin
+
+Pumpkin_Bombs_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  
+
+Drift:
+  Conditions:
+  - onground true
+  Skills:
+  - skill{s=Drift_dash_req}
+
+Drift_dash_req:
+  Cooldown: 0.8 
+  Conditions:
+  - OnGround true
+  Skills:
+  - summon{t=dash_dummy;a=1;sio=true} @self
+
+Drift_dash_skill:
+  Skills:
+  - delay 2
+  - potion{type=SLOW;duration=2;level=2;hasParticles=false} @NearestPlayer{r=3}
+  - potion{type=LEVITATION;duration=2;level=3;hasParticles=false} @NearestPlayer{r=3}
+  - delay 1
+  - throw{velocity=15;velocityY=-10} @NearestPlayer{r=3}
+  - effect:sound{s=entity.phantom.flap;v=0.3;p=0.2} @origin
+  - effect:sound{s=entity.blaze.shoot;v=0.5;p=1.4} @self
+  - effect:particles{particle=spell_witch;amount=7;hS=0.3;vS=0.5;speed=0;repeat=6;repeatinterval=3} @NearestPlayer{r=4}
+  - effect:particles{particle=portal;amount=7;hS=0.3;vS=0.5;speed=0;repeat=6;repeatinterval=3} @NearestPlayer{r=4}
+  
+  - delay 8
+  
+  - effect:sound{s=item.armor.equip_leather;v=0.1;p=1} @self
+
+  
+
+Summon_Scarecrow:
+  Skills:
+  - effect:sound{s=entity.illusioner.cast_spell;volume=1;pitch=0.7} @self
+  - projectile{onEnd=Summon_Scarecrow_END;v=30;i=1;hR=1;vR=1;mr=25;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1} @TargetBlock
+  
+Summon_Scarecrow_END:
+  Skills:
+  - summon{type=Scarecrow_Summon;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=140;oT=Summon_Scarecrow_HIT_D;hnp=true;hp=true;hR=1;vR=1;i=20;delay=1} @origin
+  
+Summon_Scarecrow_HIT_D:
+  Skills:
+  - skill{s=Summon_Scarecrow_HIT} @EntitiesNearOrigin{r=8}
+  
+Summon_Scarecrow_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:particles{particle=redstone;color=#070f14;amount=20;hS=1;vS=1;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - damage{a="<modifier.damage>"}
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch="random(0.9, 1.1)"} @origin
+  - skill{s=Summon_Scarecrow_HIT2}
+  
+Summon_Scarecrow_HIT2:
+  TargetConditions:
+  - hasaura{n=Midnight_Crows_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Summon_Scarecrow_HIT3}
+  
+Summon_Scarecrow_HIT3:
+  Skills:
+  - Aura{auraName=Midnight_Crows_HIT;duration=60}
+  - throw{velocity=1.4;velocityY=0;repeat=59;repeatinterval=1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;speed=0;hS=0.3;vS=1;y=0.5;repeat=7;repeatinterval=8}
+  - effect:particles{particle=redstone;color=#2c5252;amount=5;speed=0;hS=0.3;vS=1;y=0.5;repeat=7;repeatinterval=8}
+
+  
+Midnight_Crows:
+  Skills:
+  - effect:sound{s=jackolantern_sounds:samus.crow_1;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.7;pitch=1.1} @self
+  - effect:sound{s=jackolantern_sounds:samus.crow_2;volume=0.8;pitch=1;delay=12} @self
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=20;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5;delay=1} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=18;i=1;hR=1;vR=1;mr=20;hnp=true;hO=10;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.7;delay=3} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=17;i=1;hR=1;vR=1;mr=20;hnp=true;hO=-7;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5;delay=6} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=22;i=1;hR=1;vR=1;mr=20;hnp=true;hO=2;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.3;delay=9} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=19;i=1;hR=1;vR=1;mr=20;hnp=true;hO=-5;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.6;delay=11} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=21;i=1;hR=1;vR=1;mr=20;hnp=true;hO=5;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.8;delay=15} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=23;i=1;hR=1;vR=1;mr=20;hnp=true;hO=-9;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.2;delay=17} @Forward{f=15;y=0}
+  - projectile{bulletType=MOB;mob=Midnight_Crow;onHit=Midnight_Crows_HIT_D;v=20;i=1;hR=1;vR=1;mr=20;hnp=true;hO=4;sE=true;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5;delay=20} @Forward{f=15;y=0}
+  
+Midnight_Crows_HIT_D:
+  Skills:
+  - skill{s=Midnight_Crows_HIT} @EntitiesNearOrigin{r=3;sort=NEAREST;limit=1}
+  - skill{s=Midnight_Crows_HIT2} @EntitiesNearOrigin{r=3;sort=NEAREST;limit=1}
+  
+Midnight_Crows_HIT2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - potion{type=BLINDNESS;duration=60;level=3;hasParticles=false}
+  - effect:particles{particle=redstone;color=#070f14;amount=20;hS=1;vS=1;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Midnight_Crows_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Midnight_Crows_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch="random(0.9, 1.1)"} @origin
+  - Aura{auraName=Midnight_Crows_HIT;duration=60}
+  - throw{velocity=1.4;velocityY=0;repeat=59;repeatinterval=1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;speed=0;hS=0.3;vS=1;y=0.5;repeat=7;repeatinterval=8}
+  - effect:particles{particle=redstone;color=#2c5252;amount=5;speed=0;hS=0.3;vS=1;y=0.5;repeat=7;repeatinterval=8}
+  
+
+Nightmare:
+  Skills:
+  - effect:sound{s=jackolantern_sounds:samus.nightmare_sound;volume=0.8;pitch=1} @self
+  - effect:particles{particle=redstone;color=#4d031f;amount=10;hS=0.4;vS=0.7;speed=0;y=0.8;repeat=19;repeati=10} @self
+  - effect:particlering{particle=redstone;color=#290601;radius=10;points=80;amount=1;hS=0;vS=0;y=0.1;repeat=19;repeati=10} @self
+  - effect:particlering{particle=redstone;color=#420b03;radius=10;points=80;amount=1;hS=0;vS=0;y=0.3;repeat=19;repeati=10} @self
+  - effect:particlering{particle=redstone;color=#590e04;radius=10;points=80;amount=1;hS=0;vS=0;y=0.5;repeat=19;repeati=10} @self
+  - skill{s=Nightmare_HIT_D;repeat=9;repeati=20} @EIR{r=10}
+  - skill{s=Nightmare_HIT_D2;repeat=3;repeati=50} @EIR{r=10}
+  
+Nightmare_HIT_D:
+  Skills:
+  - skill{s=Nightmare_HIT}
+  - skill{s=Nightmare_FX2}
+  
+Nightmare_HIT_D2:
+  Skills:
+  - skill{s=Nightmare_HIT2}
+  
+Nightmare_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:particlelinehelix{Fo=false;db=0.4;hl=4;syo=1;tyo=1;p=redstone;hr=0.2;md=50;repeat=1;repeati=10}
+  - Aura{auraName=Skull_aura;duration=60;delay=1}
+  - potion{type=DARKNESS;duration=60;level=1;hasParticles=false}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - consume{d="<modifier.damage>";h="<modifier.heal>"}
+  - effect:sound{s=entity.blaze.hurt;volume=0.5;pitch=0.5} @self
+  
+Nightmare_FX2:
+  TargetConditions:
+  - hasaura{n=Skull_aura} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - orbital{bulletType=MOB;mob=Nightmare;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=20000;oy=-0.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  
+Nightmare_FX:
+  TargetConditions:
+  - hasaura{n=Skull_aura} false
+  Skills:
+  - remove @self
+  
+Nightmare_HIT2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - effect:sound{s=entity.ghast.ambient;volume=0.8;pitch=0.5}

@@ -1,0 +1,15 @@
+General:
+  bStats: true
+Size:
+  Transition: true
+  TransitionSteps: 30
+  IsReachMultiplier: true
+  IsStepHeightMultiplier: true
+  IsSpeedMultiplier: true
+  IsJumpMultiplier: true
+  IsSaveFallDistanceMultiplier: true
+  ReachMultiplier: 1
+  StepHeightMultiplier: 1
+  SpeedMultiplier: 1
+  JumpMultiplier: 1
+  SaveFallDistanceMultiplier: 1

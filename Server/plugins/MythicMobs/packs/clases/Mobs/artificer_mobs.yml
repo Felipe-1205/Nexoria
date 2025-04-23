@@ -1,0 +1,191 @@
+######## created by samus2002 #########
+
+# VFX #
+
+VFX_Magical_Tinkering:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_tinkering_shield;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  
+VFX_Arcane_Blast:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_blast} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Arcane_Blast_Trail:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_blast_trail} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - skill{s=Arcane_Hit} ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+VFX_Arcane_Hit:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_hit;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - skill{s=Arcane_Hit} ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+
+VFX_Arcane_Turret:
+  Type: ARMOR_STAND
+  Options:
+    Marker: false
+    CanMove: true
+    CanTick: true
+    Small: false
+    Interactable: false
+    HasArms: true
+    NoAI: false
+    Invisible: true
+    LockPitch: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_turret;lockpitch=true} @self ~onSpawn
+  - BodyRotation{mh=360;mb=360;player=true} @self ~onSpawn
+  - state{s=spawn;lo=10} @self ~onSpawn
+  - effect:sound{s=block.anvil.land;volume=0.8;pitch=1.6} @self ~onSpawn
+  - effect:sound{s=block.anvil.land;volume=0.8;pitch=1.6;delay=13} @self ~onSpawn
+  - effect:sound{s=block.anvil.land;volume=0.8;pitch=1.6;delay=26} @self ~onSpawn
+  - effect:sound{s=block.redstone_torch.burnout;volume=0.8;pitch=0.6;delay=10} @self ~onSpawn
+  - setstance{s=hasnotarget} @self ~onSpawn
+  - skill{s=TURRET_IDLESTATE} ~onTimer:5
+  - state{s=despawn;li=10;lo=10;delay=320} @self ~onSpawn
+  - effect:sound{s=block.beacon.activate;volume=0.8;pitch=0.9} @self ~onSpawn
+  - effect:sound{s=block.beacon.deactivate;volume=0.8;pitch=0.9;delay=320} @self ~onSpawn
+  
+  - SudoSkill{s=COMMAND_TURRET_SCAN;setcasterastrigger=true;repeat=320;repeati=1} @owner ~onSpawn
+  - SudoSkill{s=COMMAND_TURRET_LOOKTARGET;setcasterastrigger=true;repeat=320;repeati=1} @owner ~onSpawn
+  - SudoSkill{s=COMMAND_TURRET_FIRE;setcasterastrigger=true;repeat=15;repeati=20} @owner ~onSpawn
+  
+  - remove{delay=370} @self ~onSpawn
+  
+VFX_Arcane_Turret_Laser:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_turret_laser;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+Engine_Glide_DUMMY:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Engine_Glide_DASH} ~onSpawn 
+  - effect:particles{particle=smoke_large;amount=6;hS=0.3;vS=0.15;speed=0;y=0.3} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+  
+Engine_Glide_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - SudoSkill{s=Engine_Glide_1_SETFIRE;setcasterastrigger=true;delay=4} @owner ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+Engine_Glide_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - SudoSkill{s=Engine_Glide_2_SETFIRE;setcasterastrigger=true;delay=4} @owner ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+VFX_Chrono_Cataclysm:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_clockwork;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Arcane_Mecha:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_mecha} @self ~onSpawn
+  - state{s=shoot_repulsor;li=10;lo=10;speed=1.3} @self ~onSignal:REPULSOR
+  
+  - effect:particles{particle=soul_fire_flame;amount=2;hS=0.01;vS=0.01;y=0;speed=0} @modelpart{p=left_jetpack_point;em=true} ~onTimer:2
+  - effect:particles{particle=soul_fire_flame;amount=2;hS=0.01;vS=0.01;y=0;speed=0} @modelpart{p=right_jetpack_point;em=true} ~onTimer:2
+  
+  - skill{s=Arcane_Bullets_STARTMOTION} @owner ~onSignal:BULLET
+  - skill{s=Arcane_Bullets_STOPMOTION} @owner ~onTimer:5
+  
+  - skill{s=Arcane_Repulsor_SCAN} @owner ~onTimer:3
+  - skill{s=Arcane_Bullets_SCAN} @owner ~onTimer:3
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Arcane_Repulsor:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_arcane_repulsor} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn

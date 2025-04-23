@@ -1,0 +1,932 @@
+######## created by samus2002 #########
+
+Changetarget:  
+  Cooldown: 0
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+
+Ghoul_Step:
+  Skills:
+  - effect:sound{s=entity.wolf.step;volume=1;pitch=1} @self
+  
+Zombie_Brute_Step:
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=1;pitch=0.6} @self
+  
+Zombie_Brute_Run_Step_FX:
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=1;pitch=0.4} @self
+  - effect:particles{particle=campfire_cosy_smoke;size=0.7;amount=4;hS=0.6;vS=0.1;speed=0.1;y=0.1} @self
+
+Ghoul_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.husk.hurt;volume=0.8;pitch=1.3} @self
+
+Specter_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.phantom.hurt;volume=0.7;pitch=1.2} @self
+  
+Zombie_Brute_Hit:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=entity.husk.hurt;volume=0.8;pitch=0.7} @self
+  
+Nightharrow_Wendigo_Hit:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Ghost_Aura} castinstead Nightharrow_Wendigo_CancelDamage
+  Skills:
+  - effect:sound{s=entity.polar_bear.hurt;volume=0.8;pitch=0.8} @self
+
+CancelDamage:
+  Skills:
+  - CancelEvent
+  
+Nightharrow_Wendigo_Hit2:
+  Skills:
+  - effect:sound{s=entity.polar_bear.hurt;volume=0.8;pitch=0.8} @self
+  
+Nightharrow_Wendigo_CancelDamage:
+  Skills:
+  - randomskill{skills=Nightharrow_Wendigo_Hit2 60,CancelDamage 40}
+  
+Undead_Mob_Freeze:
+  Skills:
+  - clearThreat{} @self
+  - runaitargetselector{target=clear}
+  - potion{type=SLOW;duration=300;level=50;hasParticles=false} @self
+
+
+Undead_Mob_Unfreeze:
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  
+  - potionclear{type=SLOW} @self
+  - Aura{auraName=Unfreeze_Aura;duration=20} @self
+
+  
+Undead_Mob_Freeze2:
+  Skills:
+  - potion{type=SLOW;duration=300;level=50;hasParticles=false} @self
+
+
+Undead_Mob_Unfreeze2:
+  Skills:
+  - potionclear{type=SLOW} @self
+  - Aura{auraName=Unfreeze_Aura;duration=20} @self
+  
+# Ghoul #
+
+# Dash #
+
+Ghoul_Dash:
+  Skills:
+  - randomskill{skills=Ghoul_Walk 75,Ghoul_Run 25}
+
+Ghoul_Walk:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Ghoul_Run;seconds=0} @self
+  - defaultstate{t=walk;s=walk;li=5;lo=5} @self
+  - setspeed{speed=1.1;type=walking} @self
+  - setstance{stance=Walking} @self
+  
+Ghoul_Run:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Ghoul_Walk;seconds=0} @self
+  - defaultstate{t=walk;s=run;li=5;lo=5} @self
+  - setspeed{speed=2;type=walking} @self
+  - setstance{stance=Running} @self
+  
+# Attack #
+
+Ghoul_Short_Leap:
+  Conditions:
+  - targetwithin{d=3} false
+  Skills:
+  #- runaitargetselector{target=clear}
+  #- runaitargetselector{target=clear;delay=15}
+  #- runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.5;velocityY=0.1;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+Ghoul_Attack:
+  Skills:
+  - randomskill{skills=Ghoul_Necrotic_Claw_Left 30,Ghoul_Necrotic_Claw_Right 30,Ghoul_Grave_Leap 40}
+  
+Ghoul_Necrotic_Claw_Left:
+  Conditions:
+  - offgcd
+  - targetwithin{d=5} true
+  Skills:
+  - gcd{ticks=34}
+  - state{s=necrotic_claws_left;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Ghoul_Attack_Sound;delay=7} @self
+  
+Ghoul_Necrotic_Claw_Right:
+  Conditions:
+  - offgcd
+  - targetwithin{d=5} true
+  Skills:
+  - gcd{ticks=34}
+  - state{s=necrotic_claws_right;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Ghoul_Attack_Sound;delay=7} @self
+  
+Ghoul_Attack_Sound:
+  Skills:
+  - effect:sound{s=entity.husk.hurt;volume=0.8;pitch=1.3} @self 0.5
+  
+Ghoul_Necrotic_Claw_Attack_Trigger:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.2} @self
+  - totem{md=2;c=1;oH=Ghoul_Necrotic_Claw_Attack_DAMAGE;hnp=false;hp=true;hR=2.5;vR=2.5;i=1} @forward{f=1.3}
+  
+Ghoul_Necrotic_Claw_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1;pkb=true}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.panda.bite;volume=0.9;pitch=1.3} @self
+  
+# Grave Leap #
+
+Ghoul_Grave_Leap:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  - stance{s=Running;str=true} true
+  Skills:
+  - gcd{ticks=75}
+  - state{s=grave_leap;li=5;lo=5;speed=<random.float.0.9to1.1>} @self
+  
+Ghoul_Grave_Leap_Leap:
+  Skills:
+  #- runaitargetselector{target=clear}
+  #- runaitargetselector{target=clear;delay=20}
+  #- runaitargetselector{target=players;delay=20}
+  
+  #- delay 5
+  
+  - lunge{velocity=0.7;velocityY=0.12;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+  
+Ghoul_Grave_Leap_Attack:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.7} @self
+  - totem{md=2;c=1;oH=Ghoul_Grave_Leap_Attack_DAMAGE;hnp=false;hp=true;hR=2.5;vR=2.5;i=1} @forward{f=1.3}
+  
+  
+Ghoul_Grave_Leap_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.panda.bite;volume=0.9;pitch=1.3} @self
+  
+  
+  
+  
+  
+  
+  
+# Specter #
+
+# Spectral Bolt #
+
+Specter_Attack:
+  Skills:
+  - randomskill{skills=Specter_Spectral_Bolt 70,Specter_Ectoplasmic_Explosion 30}
+  
+Specter_Spectral_Bolt:
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=70}
+  - state{s=spectral_bolt;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Specter_Attack_Sound;delay=30} @self
+
+Specter_Attack_Sound:
+  Skills:
+  - effect:sound{s=entity.phantom.ambient;volume=0.8;pitch=0.8} @self 0.5
+  
+Specter_Spectral_Bolt_Attack:
+  Skills:
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=0.6} @self
+  - projectile{md=60;oH=Specter_Spectral_Bolt_Attack_DAMAGE;oT=Specter_Spectral_Bolt_Attack_TICK;v=20;i=1;hR=1;vR=1;mr=20;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.25;tyo=1.25} @target
+  
+Specter_Spectral_Bolt_Attack_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#baf4ff;amount=25;size=0.75;hS=0.2;vS=0.2;y=0;forwardOffset=0;sideOffset=0} @origin
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.93}
+  
+  
+Specter_Spectral_Bolt_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1;pkb=true}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - effect:sound{s=entity.warden.attack_impact;volume=1;pitch=0.6} @self
+  - orbital{r=0.65;onTick=Specter_Spectral_Bolt_TICK;points=16;interval=1;duration=60;oy=0.1}
+
+Specter_Spectral_Bolt_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#baf4ff;size=0.5;amount=3;speed=0;hS=0;vS=0} @origin
+  
+# Ectoplasmic Explosion #
+
+Specter_Ectoplasmic_Explosion:
+  Conditions:
+  - offgcd
+  - targetwithin{d=18} true
+  Skills:
+  - gcd{ticks=74}
+  - state{s=ectoplasmic_explosion;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Specter_Attack_Sound;delay=30} @self
+
+Specter_Ectoplasmic_Explosion_Attack:
+  Skills:
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=0.4} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.7;pitch=0.7} @self
+  
+  - particlesphere{p=redstone;color=#bca6ff;amount=30;radius=1} @self
+  - particlesphere{p=redstone;color=#bca6ff;amount=50;radius=2;delay=1} @self
+  - particlesphere{p=redstone;color=#bca6ff;amount=70;radius=3;delay=2} @self
+  - particlesphere{p=redstone;color=#bca6ff;amount=90;radius=4;delay=3} @self
+  - particlesphere{p=redstone;color=#bca6ff;amount=120;radius=5;delay=4} @self
+  
+  - projectile{md=60;oH=Specter_Ectoplasmic_Explosion_Attack_DAMAGE;oT=Specter_Ectoplasmic_Explosion_Attack_TICK;v=25;i=1;hR=1;vR=1;mr=20;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.25;tyo=1.25} @target
+  - projectile{md=60;oH=Specter_Ectoplasmic_Explosion_Attack_DAMAGE;oT=Specter_Ectoplasmic_Explosion_Attack_TICK;v=25;i=1;hR=1;vR=1;mr=20;hnp=false;hO=90;sE=false;sB=false;hs=false;hfs=0;syo=1.25;tyo=1.25} @target
+  - projectile{md=60;oH=Specter_Ectoplasmic_Explosion_Attack_DAMAGE;oT=Specter_Ectoplasmic_Explosion_Attack_TICK;v=25;i=1;hR=1;vR=1;mr=20;hnp=false;hO=180;sE=false;sB=false;hs=false;hfs=0;syo=1.25;tyo=1.25} @target
+  - projectile{md=60;oH=Specter_Ectoplasmic_Explosion_Attack_DAMAGE;oT=Specter_Ectoplasmic_Explosion_Attack_TICK;v=25;i=1;hR=1;vR=1;mr=20;hnp=false;hO=270;sE=false;sB=false;hs=false;hfs=0;syo=1.25;tyo=1.25} @target
+  
+Specter_Ectoplasmic_Explosion_Attack_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#bca6ff;amount=25;size=0.75;hS=0.2;vS=0.2;y=0;forwardOffset=0;sideOffset=0} @origin
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.93}
+  
+  
+Specter_Ectoplasmic_Explosion_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - potion{type=SLOW;duration=100;level=1;hasParticles=false}
+  - effect:sound{s=entity.warden.attack_impact;volume=1;pitch=0.6} @self
+  - orbital{r=0.65;onTick=Specter_Ectoplasmic_Explosion_TICK;points=16;interval=1;duration=100;oy=0.1}
+
+Specter_Ectoplasmic_Explosion_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#bca6ff;size=0.5;amount=3;speed=0;hS=0;vS=0} @origin
+  
+  
+  
+  
+  
+# Zombie Brute #
+
+# Dash #
+
+Zombie_Brute_Dash:
+  Skills:
+  - randomskill{skills=Zombie_Brute_Walk 70,Zombie_Brute_Run 30}
+
+Zombie_Brute_Walk:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Zombie_Brute_Run;seconds=0} @self
+  - defaultstate{t=walk;s=walk;li=5;lo=5} @self
+  - setspeed{speed=1.1;type=walking} @self
+  - setstance{stance=Walking} @self
+  
+Zombie_Brute_Run:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Zombie_Brute_Walk;seconds=0} @self
+  - defaultstate{t=walk;s=run;li=5;lo=5} @self
+  - setspeed{speed=1.8;type=walking} @self
+  - setstance{stance=Running} @self
+  
+# Attack #
+
+Zombie_Brute_Attack:
+  Skills:
+  - randomskill{skills=Zombie_Brute_Decay_Swing 60,Zombie_Brute_Revenant_Smash 40}
+  
+Zombie_Brute_Decay_Swing:
+  Conditions:
+  - offgcd
+  - targetwithin{d=6} true
+  Skills:
+  - gcd{ticks=60}
+  - state{s=decay_swing_left;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Zombie_Brute_Sound;delay=9} @self
+
+Zombie_Brute_Sound:
+  Skills:
+  - effect:sound{s=entity.zoglin.attack;volume=0.8;pitch=0.8} @self 0.5
+  
+Zombie_Brute_Decay_Swing_Trigger:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - totem{md=2;c=1;oH=Zombie_Brute_Decay_Swing_DAMAGE;hnp=false;hp=true;hR=3;vR=3;i=1} @forward{f=1.5}
+  
+Zombie_Brute_Decay_Swing_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1;pkb=true}
+  - throw{velocity=5;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.zoglin.step;volume=0.9;pitch=0.8} @self
+  
+# Revenant Smash #
+
+Zombie_Brute_Revenant_Smash:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - targetwithin{d=13} true
+  - stance{s=Running;str=true} true
+  Skills:
+  - gcd{ticks=75}
+  - state{s=revenant_smash;li=5;lo=5;speed=<random.float.0.9to1.1>} @self
+  
+Zombie_Brute_Revenant_Smash_Leap:
+  Conditions:
+  - targetwithin{d=5} false
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=20}
+  - runaitargetselector{target=players;delay=20}
+  
+  - delay 2
+  
+  - lunge{velocity=0.9;velocityY=0.12;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+  
+Zombie_Brute_Revenant_Smash_Attack:
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.9;pitch=0.6} @self
+  - effect:sound{s=entity.boat.paddle_land;volume=0.9;pitch=0.4} @self
+  - effect:sound{s=block.ancient_debris.break;volume=0.9;pitch=0.5} @self
+  - effect:sound{s=entity.armor_stand.break;volume=0.9;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Zombie_Brute_Revenant_Smash_Attack_DAMAGE;hnp=false;hp=true;hR=5;vR=3;i=1} @forward{f=0}
+  - effect:particles{particle=campfire_cosy_smoke;size=0.9;amount=10;hS=0.85;vS=0.15;speed=0.1;y=0.1} @forward{f=0}
+  
+  
+Zombie_Brute_Revenant_Smash_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=3;velocityY=5}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  
+  
+Zombie_Brute_Undying_Resilience:
+  Cooldown: 12
+  Conditions:
+  - offgcd
+  - hasaura{n=Undying_Resilience_Aura} false
+  Skills:
+  - gcd{ticks=55}
+  - skill{s=Undead_Mob_Freeze}
+  - effect:sound{s=entity.zoglin.ambient;volume=0.8;pitch=0.5} @self
+  - state{s=bear;li=10;lo=20} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=50;level=2;hasParticles=false} @self
+  - Aura{auraName=Undying_Resilience_Aura;duration=50} @self
+  
+  - delay 50
+  
+  - state{s=bear;li=5;lo=20;remove=true} @self
+  - skill{s=Undead_Mob_Unfreeze}
+  
+Zombie_Brute_Undying_Resilience_HEAL:
+  Conditions:
+  - hasaura{n=Undying_Resilience_Aura} true
+  Skills:
+  - heal{a=5} @self
+  - effect:particles{particle=glow;size=0.9;amount=20;hS=0.85;vS=0.7;speed=0.1;y=1.2} @forward{f=0}
+  
+
+
+
+# Nightharrow Wendigo #
+
+# Attack #
+
+Nightharrow_Wendigo_P1:
+  Conditions:
+  - offgcd
+  Skills:
+  - randomskill{skills=Nightharrow_Wendigo_Combo1 33,Nightharrow_Wendigo_Combo2 32,Summon_Ghouls 15,Nightharrow_Wendigo_LeapSmash 20}
+
+Nightharrow_Wendigo_P2:
+  Conditions:
+  - offgcd
+  Skills:
+  - randomskill{skills=Nightharrow_Wendigo_Combo1 20,Nightharrow_Wendigo_Combo2 20,Nightharrow_Wendigo_Combo3 20,Summon_Ghouls 12, Nightharrow_Wendigo_LeapSmash 15,Nightharrow_Wendigo_Howl 13}
+
+# Dash #
+
+Nightharrow_Wendigo_Dash:
+  Conditions:
+  - hasaura{n=Ghost_Aura} false
+  Skills:
+  - randomskill{skills=Nightharrow_Wendigo_Walk 70,Nightharrow_Wendigo_Run 30}
+
+Nightharrow_Wendigo_Walk:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Nightharrow_Wendigo_Run;seconds=0} @self
+  - defaultstate{t=walk;s=walk;li=5;lo=5} @self
+  - setspeed{speed=1.3;type=walking} @self
+  - setstance{stance=Walking} @self
+  
+Nightharrow_Wendigo_Run:
+  Cooldown: 99999
+  Skills:
+  - setSkillCooldown{skill=Nightharrow_Wendigo_Walk;seconds=0} @self
+  - defaultstate{t=walk;s=run;li=5;lo=5} @self
+  - setspeed{speed=2.5;type=walking} @self
+  - setstance{stance=Running} @self
+  
+# P1 #
+
+Nightharrow_Wendigo_Combo1_Leap:
+  Conditions:
+  - targetwithin{d=4} false
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.4;velocityY=0.1;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+Nightharrow_Wendigo_Combo1:
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  - hasaura{n=Ghost_Aura} castinstead Nightharrow_Wendigo_Combo1GHOST
+  Skills:
+  - gcd{ticks=80}
+  - state{s=combo1;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=15} @self
+
+Nightharrow_Wendigo_Combo1GHOST:
+  Skills:
+  - gcd{ticks=70}
+  - state{s=combo1;li=5;lo=5;speed=<random.float.1.3to1.5>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=15} @self
+  
+Nightharrow_Wendigo_Sound:
+  Skills:
+  - effect:sound{s=entity.polar_bear.warning;volume=0.8;pitch=0.6} @self 0.5
+  
+Nightharrow_Wendigo_Combo1_Attack:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.9;pitch=0.4} @self
+  - skill{s=Nightharrow_Wendigo_Combo1_DAMAGE_D}
+  
+Nightharrow_Wendigo_Combo1_DAMAGE_D:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_Combo1_DAMAGE_D2
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo1_DAMAGE;hnp=false;hp=true;hR=3;vR=3;i=1} @forward{f=2}
+  
+Nightharrow_Wendigo_Combo1_DAMAGE_D2:
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo1_DAMAGE_P2;hnp=false;hp=true;hR=3;vR=3;i=1} @forward{f=2}
+  
+Nightharrow_Wendigo_Combo1_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1;pkb=true}
+  - throw{velocity=3;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+Nightharrow_Wendigo_Combo1_DAMAGE_P2:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=4;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+  
+  
+  
+  
+  
+Nightharrow_Wendigo_Combo2_Leap:
+  Conditions:
+  - targetwithin{d=4} false
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.4;velocityY=0.1;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+Nightharrow_Wendigo_Combo2_Leap_2:
+  Conditions:
+  - targetwithin{d=4} false
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.3;velocityY=0.1;repeat=2;repeati=1} @forward{f=5;y=-1}
+  
+Nightharrow_Wendigo_Combo2:
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  - hasaura{n=Ghost_Aura} castinstead Nightharrow_Wendigo_Combo2GHOST
+  Skills:
+  - gcd{ticks=100}
+  - state{s=combo2;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=29} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=60} @self
+
+Nightharrow_Wendigo_Combo2GHOST:
+  Skills:
+  - gcd{ticks=90}
+  - state{s=combo2;li=5;lo=5;speed=<random.float.1.3to1.5>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=29} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=60} @self
+  
+Nightharrow_Wendigo_Combo2_Attack:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.9;pitch=0.4} @self
+  - skill{s=Nightharrow_Wendigo_Combo2_DAMAGE_D}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_D:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_Combo2_DAMAGE_D2
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo2_DAMAGE;hnp=false;hp=true;hR=3;vR=3;i=1} @forward{f=2}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_D2:
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo2_DAMAGE_P2;hnp=false;hp=true;hR=3;vR=3;i=1} @forward{f=2}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1;pkb=true}
+  - throw{velocity=3;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_P2:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=4;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+
+Nightharrow_Wendigo_Combo2_Attack_2:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.9;pitch=0.4} @self
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.7;pitch=0.4;delay=2} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.7;pitch=0.6;delay=2} @self
+  - effect:particles{particle=campfire_cosy_smoke;size=0.9;amount=9;hS=0.7;vS=0.15;speed=0.1;y=0.1} @forward{f=4}
+  - skill{s=Nightharrow_Wendigo_Combo2_DAMAGE_D_2}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_D_2:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_Combo2_DAMAGE_D2_2
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo2_DAMAGE_2;hnp=false;hp=true;hR=5;vR=3;i=1} @forward{f=4}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_D2_2:
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo2_DAMAGE_2_P2;hnp=false;hp=true;hR=5;vR=3;i=1} @forward{f=4}
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_2:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=4;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+Nightharrow_Wendigo_Combo2_DAMAGE_2_P2:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=2;pkb=true}
+  - throw{velocity=4;velocityY=0}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+
+  
+  
+  
+  
+  
+  
+Nightharrow_Wendigo_Leap_Up:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_Leap_Up_P2
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.9;velocityY=1.5} @forward{f=1;y=5}
+  - effect:sound{s=entity.warden.heartbeat;volume=0.9;pitch=0.7} @self
+  - Aura{auraName=Leap_Aura;duration=120;delay=10} @self
+
+
+Nightharrow_Wendigo_Leap_Up_P2:
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=1.1;velocityY=1.8} @forward{f=1;y=5}
+  - effect:sound{s=entity.warden.heartbeat;volume=0.9;pitch=0.7} @self
+  - Aura{auraName=Leap_Aura;duration=120;delay=10} @self
+  
+  
+Nightharrow_Wendigo_LeapSmash:
+  Cooldown: 7
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  - hasaura{n=Ghost_Aura} false
+  Skills:
+  - gcd{ticks=80}
+  - state{s=leap_up;li=5;lo=5} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=9} @self
+  - delay 24
+  - state{s=leap_down_loop;li=1;lo=1} @self
+  - delay 17
+  - onDamaged{auraName=landresist;d=40;cE=true;damageMods="FALL 0"} @self
+  - lunge{velocity=1;velocityY=-0.5;repeat=2;repeati=1} @PIR{r=50;limit=1}
+  
+Nightharrow_Wendigo_TouchGround:
+  Cooldown: 4
+  Conditions:
+  - altitude{h=0to6} true
+  - hasaura{n=Leap_Aura} true
+  Skills:
+  - gcd{ticks=65}
+  - auraremove{aura=Leap_Aura} @self
+  - state{s=leap_down_loop;li=1;lo=1;remove=true} @self
+  - delay 1
+  - state{s=smash;li=1;lo=5} @self
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.7;pitch=0.4;delay=2} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.7;pitch=0.6;delay=2} @self
+  - effect:particles{particle=campfire_cosy_smoke;size=0.9;amount=14;hS=1.1;vS=0.2;speed=0.15;y=0.1;delay=2} @forward{f=2.5}
+  - skill{s=Nightharrow_Wendigo_TouchGround_DAMAGE_D}
+  
+Nightharrow_Wendigo_TouchGround_DAMAGE_D:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_TouchGround_DAMAGE_D_2
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_TouchGround_DAMAGE;hnp=false;hp=true;hR=6;vR=3;i=1;delay=2} @forward{f=2.5}
+  
+Nightharrow_Wendigo_TouchGround_DAMAGE_D_2:
+  Skills:
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_TouchGround_DAMAGE_P2;hnp=false;hp=true;hR=6;vR=3;i=1;delay=2} @forward{f=2.5}
+  
+Nightharrow_Wendigo_TouchGround_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=6;velocityY=3}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+Nightharrow_Wendigo_TouchGround_DAMAGE_P2:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=2;pkb=true}
+  - throw{velocity=6;velocityY=4}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+
+  
+  
+  
+  
+  
+Summon_Ghouls:
+  Cooldown: 30
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  - hasaura{n=Ghost_Aura} false
+  Skills:
+  - gcd{ticks=60}
+  - state{s=summon;li=5;lo=5} @self
+  - delay 8
+  - effect:sound{s=entity.wither.spawn;volume=0.9;pitch=0.6} @self
+  
+Nightharrow_Wendigo_Summon_Start:
+  Skills:
+  - effect:particles{particle=redstone;color=#8ff8e2;size=0.4;amount=25;hS=0.05;vS=0.05;speed=0;y=0;repeat=17;repeati=2} @modelpart{p=summonpoint}
+  
+Nightharrow_Wendigo_Summon_Smash:
+  Conditions:
+  - health{h=<150} castinstead Nightharrow_Wendigo_Summon_Smash_P2
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=0.5} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.9;pitch=0.8} @self
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  
+Nightharrow_Wendigo_Summon_Smash_P2:
+  Skills:
+  - effect:sound{s=item.trident.return;volume=0.9;pitch=0.5} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.9;pitch=0.8} @self
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  - projectile{md=40;oT=Nightharrow_Wendigo_Summon_Smash_TICK;onEnd=Nightharrow_Wendigo_Summon_Smash_SUMMON;v=7;i=1;hR=1;vR=1;mr=15;hnp=false;hp=false;hO=<random.0to360>;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0} @forward{f=10;y=0}
+  
+  
+Nightharrow_Wendigo_Summon_Smash_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#8ff8e2;amount=25;size=0.4;hS=0.05;vS=0.05;y=0;forwardOffset=0;sideOffset=0} @origin
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.97;delay=3}
+  
+Nightharrow_Wendigo_Summon_Smash_SUMMON:
+  Skills:
+  - effect:sound{s=entity.camel.dash;volume=0.4;pitch=0.5} @origin
+  - effect:particles{p=redstone;color=#8ff8e2;amount=50;size=0.4;hS=0.4;vS=0.7;y=0.2;forwardOffset=0;sideOffset=0} @origin
+  - summon{type=Ghoul;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+
+
+
+# P2 #
+
+  
+  
+
+
+Nightharrow_Wendigo_Combo3_Leap:
+  Conditions:
+  - targetwithin{d=4} false
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=clear;delay=15}
+  - runaitargetselector{target=players;delay=15}
+  
+  - lunge{velocity=0.4;velocityY=0.1;repeat=3;repeati=1} @forward{f=5;y=-1}
+  
+Nightharrow_Wendigo_Combo3:
+  Conditions:
+  - offgcd
+  - targetwithin{d=7} true
+  - hasaura{n=Ghost_Aura} castinstead Nightharrow_Wendigo_Combo3GHOST
+  Skills:
+  - gcd{ticks=100}
+  - state{s=combo3;li=5;lo=5;speed=<random.float.0.9to1.3>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=22} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=50} @self
+
+Nightharrow_Wendigo_Combo3GHOST:
+  Skills:
+  - gcd{ticks=90}
+  - state{s=combo3;li=5;lo=5;speed=<random.float.1.3to1.5>} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=22} @self
+  - skill{s=Nightharrow_Wendigo_Sound;delay=50} @self
+
+Nightharrow_Wendigo_Combo3_Attack_Up:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.9;pitch=0.4} @self
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo3_Attack_Up_DAMAGE;hnp=false;hp=true;hR=4;vR=3;i=1} @forward{f=2}
+  
+Nightharrow_Wendigo_Combo3_Attack_Up_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=1.5;pkb=true}
+  - throw{velocity=1;velocityY=9}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+
+
+
+Nightharrow_Wendigo_Combo3_Attack_Spin:
+  Skills:
+  - effect:sound{s=entity.witch.throw;volume=0.9;pitch=0.1} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.6;pitch=0.8} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.9;pitch=0.4} @self
+  - totem{md=2;c=1;oH=Nightharrow_Wendigo_Combo3_Attack_Spin_DAMAGE;hnp=false;hp=true;hR=6;vR=3;i=1} @forward{f=0.5}
+  
+Nightharrow_Wendigo_Combo3_Attack_Spin_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - basedamage{m=2;pkb=true}
+  - throw{velocity=12;velocityY=2}
+  - effect:sound{s=entity.player.hurt;volume=0.55;pitch=0.33}
+  - effect:sound{s=entity.wither.shoot;volume=0.67;pitch=1.3} @self
+  - effect:sound{s=entity.goat.ram_impact;volume=0.9;pitch=0.8} @self
+  
+  
+  
+Nightharrow_Wendigo_Howl:
+  Cooldown: 25
+  Conditions:
+  - offgcd
+  - targetwithin{d=15} true
+  Skills:
+  - gcd{ticks=60}
+  - state{s=howl;li=5;lo=5} @self
+  - Aura{auraName=Ghost_Aura;duration=220} @self
+  - delay 38
+  - effect:sound{s=entity.wither.ambient;volume=0.9;pitch=1.3} @self
+  - effect:sound{s=entity.phantom.ambient;volume=0.9;pitch=0.7} @self
+  
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=15;points=200;amount=1;hS=0;vS=0;y=0.1;delay=0} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=14;points=170;amount=1;hS=0;vS=0;y=0.1;delay=2} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=13;points=150;amount=1;hS=0;vS=0;y=0.1;delay=4} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=12;points=140;amount=1;hS=0;vS=0;y=0.1;delay=6} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=11;points=130;amount=1;hS=0;vS=0;y=0.1;delay=8} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=10;points=120;amount=1;hS=0;vS=0;y=0.1;delay=10} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=9;points=110;amount=1;hS=0;vS=0;y=0.1;delay=12} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=8;points=100;amount=1;hS=0;vS=0;y=0.1;delay=14} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=7;points=90;amount=1;hS=0;vS=0;y=0.1;delay=16} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=6;points=80;amount=1;hS=0;vS=0;y=0.1;delay=18} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=5;points=70;amount=1;hS=0;vS=0;y=0.1;delay=20} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=4;points=60;amount=1;hS=0;vS=0;y=0.1;delay=22} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=3;points=45;amount=1;hS=0;vS=0;y=0.1;delay=24} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=2;points=30;amount=1;hS=0;vS=0;y=0.1;delay=26} @self
+  - effect:particlering{particle=redstone;color=#8ff8e2;size=0.85;radius=1;points=15;amount=1;hS=0;vS=0;y=0.1;delay=28} @self
+  
+  - delay 38
+  - model{mid=nightharrow_wendigo;remove=true} @self
+  - delay 1
+  - effect:sound{s=entity.wither.hurt;volume=0.8;pitch=0.6} @self
+  - effect:particles{particle=redstone;color=#8ff8e2;size=0.9;amount=80;hS=0.65;vS=1.7;speed=0.15;y=1} @self
+  - effect:particles{particle=end_rod;size=0.9;amount=12;hS=0.65;vS=1.7;speed=0.15;y=1} @self
+  - effect:particles{particle=flash;size=0.9;amount=1;hS=0;vS=0;speed=0.15;y=1} @self
+  - model{mid=nightharrow_wendigo_ghost;step=1;tint=false;usm=true} @self
+  
+  - defaultstate{t=walk;s=run;li=5;lo=5;speed=1.3} @self
+  - setspeed{speed=2.5;type=walking} @self
+  - setstance{stance=Ghost} @self
+  - setSkillCooldown{skill=Nightharrow_Wendigo_Walk;seconds=0} @self
+  
+  - delay 140
+  - model{mid=nightharrow_wendigo_ghost;remove=true} @self
+  - delay 1
+  - effect:sound{s=entity.wither.hurt;volume=0.8;pitch=0.9} @self
+  - effect:particles{particle=redstone;color=#8ff8e2;size=0.9;amount=80;hS=0.65;vS=1.7;speed=0.15;y=1} @self
+  - effect:particles{particle=end_rod;size=0.9;amount=12;hS=0.65;vS=1.7;speed=0.15;y=1} @self
+  - effect:particles{particle=flash;size=0.9;amount=1;hS=0;vS=0;speed=0.15;y=1} @self
+  - model{mid=nightharrow_wendigo;step=1;tint=false;usm=true} @self
+  
+  - skill{s=Nightharrow_Wendigo_Walk}
+  
+ 
+# x67llwkDochTE7UJcjzvnk/eetJwyG3wc+L0z9WG2SKUO3vYe7XCbuJjX/8jpvxJFYW+25E3hLiGhGD1D7wGZVXzCzN7C3q19ocndDFzML8=

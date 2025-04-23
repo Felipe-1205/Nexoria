@@ -1,0 +1,184 @@
+command /admintoggle:
+    permission: permisos.admin
+    trigger:
+        if player has permission "group.admin":
+            execute console command "lp user %player% parent settrack principal default"
+            execute console command "deop %player%"  # Quitar OP al cambiar a default
+            send "&cHas sido removido del grupo Admin, ahora eres un usuario y se te ha quitado el OP."
+        else:
+            execute console command "lp user %player% parent settrack principal admin"
+            execute console command "op %player%"  # Dar OP al cambiar a admin
+            send "&aHas sido agregado al grupo Admin y se te ha dado OP."
+
+command /stafftoggle:
+    permission: permisos.staff
+    trigger:
+        if player has permission "group.staff":
+            execute console command "lp user %player% parent settrack principal default"
+            send "&cHas sido removido del grupo Staff, ahora eres un usuario."
+        else:
+            execute console command "lp user %player% parent settrack principal admin"
+            send "&aHas sido agregado al grupo Staff."
+
+command /buildertoggle:
+    permission: permisos.builder
+    trigger:
+        if player has permission "group.builder":
+            execute console command "lp user %player% parent settrack principal default"
+            send "&cHas sido removido del grupo builder, ahora eres un usuario."
+        else:
+            execute console command "lp user %player% parent settrack principal admin"
+            send "&aHas sido agregado al grupo builder."
+command /estatura <number>:
+    trigger:
+        set {_class} to placeholder "mmocore_class"
+        if {_class} is "Human":
+            send "&ePrimero elige una clase" to player
+        else:
+            if player has permission "staff":
+                set {_altura} to arg-1
+                set {_resultado} to {_altura} / 1.875
+                execute console command "entitysize player %player% %{_resultado}%"
+                send "&aTu estatura se ha establecido en &e%{_altura}% &ametros." to player
+            else:
+                if {estatura_usada::%player%} is true:
+                    send "&cYa has establecido tu estatura una vez. No puedes usar este comando de nuevo." to player
+                    stop
+                set {_altura} to arg-1
+                set {_resultado} to {_altura} / 1.875
+                execute console command "entitysize player %player% %{_resultado}%"
+                set {estatura_usada::%player%} to true
+                send "&aTu estatura se ha establecido en &e%{_altura}% &ametros." to player
+command /raza:
+    trigger:
+        if player has permission "staff":
+            execute console command "cp razas %player%"
+        else:
+            if {raza_usada::%player%} is true:
+                send "&cYa has establecido tu raza una vez. No puedes usar este comando de nuevo." to player
+                stop
+            execute console command "cp razas %player%"
+            set {raza_usada::%player%} to true
+command /crear:
+    trigger:
+        execute console command "cp crear %player%"
+command /menu:
+    trigger:
+        execute console command "cp menu %player%"
+command /profesion:
+    trigger:
+        if player has permission "staff":
+            execute console command "cp profesiones %player%"
+        else:
+            if {profesion_usada::%player%} is true:
+                send "&cYa has establecido tu profesion una vez. No puedes usar este comando de nuevo." to player
+                stop
+            execute console command "cp profesiones %player%"
+            set {profesion_usada::%player%} to true
+command /nombre [<text>]:
+    trigger:
+        set {_nombre} to arg-1
+        if player has permission "staff":
+            execute console command "nick %player% %{_nombre}%"
+        else:
+            if {nombre_usado::%player%} is true:
+                send "&cYa has establecido tu nombre una vez. No puedes usar este comando de nuevo." to player
+                stop
+            execute console command "nick %player% %{_nombre}%"
+            set {nombre_usado::%player%} to true
+command /reset [<player>]:
+    permission: staff
+    permission message: &cNo tienes permiso para usar este comando.
+    trigger:
+        if arg-1 is not set:
+            send "&cDebes especificar un jugador." to player
+        else:
+            if player exists:
+                send "&aReseteando jugador %arg-1%..." to player
+                execute console command "entitysize player %arg-1% 1"
+                set {estatura_usada::%player%} to false
+                execute console command "mmocore admin reset all %arg-1%"
+                execute console command "lp user %arg-1% parent cleartrack razas"
+                set {raza_usada::%player%} to false
+                execute console command "nick %arg-1% none"
+                set {nombre_usado::%player%} to false
+                execute console command "lp user %arg-1% parent cleartrack profesiones"
+                set {profesion_usada::%player%} to false
+                loop 100 times:
+                    if {habilidad.%arg-1%.%loop-value%} is set:
+                        delete {habilidad.%arg-1%.%loop-value%}
+                send "&aJugador %arg-1% ha sido reseteado correctamente." to player
+            else:
+                send "&cEl jugador %arg-1% no está en línea." to player
+command /vida [<text>] [<number>]:
+	trigger:
+		set {_vida} to placeholder "mmocore_max_health" parsed as number 
+		if {vida::%player%} is not set:
+			set {vida::%player%} to {_vida}
+		if arg 1 is "reiniciar":
+			set {vida::%player%} to {_vida}
+			send "&aTu vida ha sido reiniciada a tu máximo de &b%{vida::%player%}% &ade puntos." to player
+		else if arg 1 is "modificar":
+			if arg 2 is set:
+				add arg 2 to {vida::%player%}
+				if arg 2 >= 0:
+					send "&aHas sumado &b%arg 2% &aa tu vida. Vida actual: &b%{vida::%player%}%/%{_vida}%." to player
+				else:
+					send "&aHas restado &b%abs(arg 2)% &aa tu vida. Vida actual: &b%{vida::%player%}%/%{_vida}%." to player
+			else:
+				send "&cDebes especificar un número para modificar la vida. Usa /vida modificar <número>." to player
+		else if arg 1 is "mostrar":
+			set {_name} to placeholder "essentials_nickname"
+			if {gritar.%player%} is true:
+				send "&8[&4La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to all players in radius 40 around player
+				send "&8[&4La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to the console
+			else if {susurrar.%player%} is true:
+				send "&8[&5La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to all players in radius 2 around player
+				send "&8[&5La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to the console
+			else if {bajo.%player%} is true:
+				send "&8[&bLa vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to all players in radius 7 around player
+				send "&8[&bLa vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to the console
+			else if {hablar.%player%} is true:
+				send "&8[&9La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to all players in radius 20 around player
+				send "&8[&9La vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to the console
+			else if {ooc.%player%} is true:
+				send "&8[&dLa vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to all players in radius 45 around player
+				send "&8[&dLa vida actual de %{_name}% es&8]&7: %{vida::%player%}%/%{_vida}%" to the console
+		else:
+			send "&eComando inválido. Usa /vida [reiniciar/modificar/mostrar] <número>." to player
+command /xpget [<number>]:
+    permission: xppatdos
+    trigger:
+        execute console command "mmocore admin exp give %player% main %arg-1%"
+command /permisoget [<text>]:
+    permission: permisodar
+    trigger:
+        execute console command "lp user %player% permission set %arg-1% true"
+command /pointget [<text>] [<number>]:
+    permission: puntospatdos
+    trigger:
+        execute console command "mmocore admin %arg-1% give %player% %arg-2%"
+
+command /craftear:
+    permission: essentials.workbench
+    trigger:
+        make player execute command "essentials:craft"
+
+every 50 seconds:
+    loop all players:
+        if loop-player has permission "respirar":
+            if loop-player does not have potion of water breathing:
+                execute console command "effect give %loop-player% minecraft:water_breathing 60 0 true"
+
+command /kitinicio:
+    permission: kitinciio
+    trigger:
+        execute console command "mi give ACCESSORY CRAFTEO %player% 1"
+        execute console command "mi give MISCELLANEOUS CURACIONBAS1 %player% 10"
+        execute console command "mi give CONSUMABLE CHULETASADA %player% 64"
+        execute console command "mi give MATERIAL MONEDA_2 %player% 1"
+        execute console command "mi give TOOL PESCA1 %player% 1"
+        execute console command "mi give TOOL PICO_TIER1 %player% 1"
+        execute console command "mi give TOOL DALLES_TIER1 %player% 1"
+        execute console command "mi give TOOL HACHA_TIER1 %player% 1"
+        execute console command "mi give CONSUMABLE CABALLO %player% 1"

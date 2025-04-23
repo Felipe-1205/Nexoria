@@ -1,0 +1,107 @@
+#
+
+base:
+  storage:
+    path: subclass
+    mana_max: path
+    mana_regeneration: path
+    mana: mana_regeneration
+    mana_timestamp: mana_regeneration
+    spell_levels: class
+    spells: class
+    brushes: class
+    hotbar_count: subclass
+    attributes: mage,wand
+vanilla:
+  health_scale: 0
+  entity_attributes:
+    generic_max_health:
+      value: 20
+      operation: base
+    generic_follow_range:
+      value: 0
+      operation: base
+    generic_knockback_resistance:
+      value: 0
+      operation: base
+    generic_movement_speed:
+      value: 0.1
+      operation: base
+    generic_attack_damage:
+      value: 2
+      operation: base
+    generic_armor:
+      value: 0
+      operation: base
+    generic_armor_toughness:
+      value: 0
+      operation: base
+    generic_attack_knockback:
+      value: 0
+      operation: base
+    generic_attack_speed:
+      value: 4
+      operation: base
+    generic_luck:
+      value: 0
+      operation: base
+    generic_flying_speed:
+      value: 0.4
+      operation: base
+archer_mage:
+  inherit: base
+  locked: false
+  path: archer
+  active_spell: arrow_regular
+  spells:
+  - arrow_regular
+  - arrow_poison
+battle_mage:
+  parent: caster
+  locked: false
+  path: battle
+  spells:
+  - missile
+  - arrow
+  - fire
+  - push
+  mana_max: 50
+  mana_regeneration: 5
+broomrider:
+  storage:
+    spell_levels: class
+caster:
+  inherit: base
+  locked: false
+  spells:
+  - missile
+mage:
+  parent: caster
+  locked: false
+  effect_color: random
+  path: beginner
+  spells:
+  - missile
+  mana_max: 50
+  mana_regeneration: 5
+butterfly:
+  icon: feather
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: butterfly
+crown:
+  icon: gold_nugget
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: crown
+tail:
+  icon: leash
+  passive: true
+  locked: true
+  triggers:
+    join:
+      effects: tail

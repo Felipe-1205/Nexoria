@@ -1,0 +1,640 @@
+######## created by samus2002 #########
+
+# Focus Chi #
+
+Focus_Chi:
+  Cooldown: 1
+  Skills:
+  - onDamaged{auraName=Focus_Chi_aura;c=1;oH=Focus_Chi_Skill;cE=false} @self
+  
+Focus_Chi_Skill:
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=entity.allay.hurt;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.turtle.hurt;volume=0.8;pitch=0.6} @self
+  - skill{s=Focus_Chi_Skill_HEAL} @PIR{r=5.5}
+  - summon{type=VFX_Focus_Chi_Heal;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  
+Focus_Chi_Skill_HEAL:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - heal{a=3}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=1}
+  
+# Swift Strikes #
+  
+Swift_Strikes:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Dragon_Fists} false
+  - crouching false
+  Skills:
+  - skill{s=Swift_Strikes_1}
+  - skill{s=Swift_Strikes_2}
+  
+Swift_Strikes_1:
+  Conditions:
+  - hasaura{n=Swift_Strikes_1_USED} false
+  Skills:
+  - Aura{auraName=Swift_Strikes_1_USED;duration=99999;delay=2} @self
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+
+Swift_Strikes_2:
+  Conditions:
+  - hasaura{n=Swift_Strikes_1_USED} true
+  Skills:
+  - auraremove{aura=Swift_Strikes_1_USED;delay=2} @self
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=entity.witch.throw;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch0.6} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - totem{md=2;c=1;oH=Swift_Strikes_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  - summon{type=VFX_Swift_Strikes_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0.7;y=0.2;sideOffset=0;lockpitch=true}
+
+Swift_Strikes_DAMAGE_D:
+  Skills:
+  - skill{s=Swift_Strikes_DAMAGE} @EntitiesNearOrigin{r=3}
+  
+Swift_Strikes_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.85}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=1.3}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+
+# Chi Blast #
+  
+Chi_Blast:
+  Cooldown: 2
+  Conditions:
+  - hasaura{n=Dragon_Fists} false
+  - crouching false
+  Skills:
+  - effect:sound{s=entity.phantom.hurt;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.drowned.shoot;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.shulker.shoot;volume=0.7;pitch=0.7} @self
+  - projectile{bulletType=MOB;mob=VFX_Chi_Blast;onHit=Chi_Blast_HIT_D;v=24;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0.1;syo=1.5;tyo=1.5;sso=0} @Forward{f=25;y=0}
+  
+  
+Chi_Blast_HIT_D:
+  Skills:
+  - skill{s=Chi_Blast_HIT} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+Chi_Blast_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Chi_Blast_HIT} false
+  Skills:
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1.3}
+  - effect:sound{s=item.trident.return;volume=0.7;pitch=1.3}
+  - Aura{auraName=Chi_Blast_HIT;duration=80}
+  - damage{a=4;pkb=true;hnp=true;hp=true;delay=1}
+  - potion{type=SLOW;duration=80;level=1;hasParticles=false}
+  - orbital{auraName=CHIBLAST;bulletType=MOB;mob=VFX_Chi_Blast_Hit;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=80;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - effect:sound{s=item.trident.riptide_1;volume=1.1;pitch=0.6;delay=11} @self
+  
+  - delay 15
+  
+  - propel{v=4}
+  
+  - delay 1
+  
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  - delay 2
+  - skill{s=Chi_Blast_KICK} @EIR{r=3}
+  - skill{s=Chi_Blast_KICKREMOVE} @MIR{r=3;type=VFX_Chi_Blast_Hit;limit=1;sort=NEAREST;target=armorstands}
+  - skill{s=Chi_Blast_KICK_CANCEL} @EIR{r=3}
+  
+Chi_Blast_KICK:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Chi_Blast_HIT} true
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.8;pitch=0.6}
+  - effect:sound{s=entity.player.attack.knockback;volume=0.7;pitch=0.8}
+  - effect:sound{s=entity.player.attack.crit;volume=0.7;pitch=0.8}
+  - damage{a=4;pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  - auraremove{aura=Chi_Blast_HIT}
+  - auraremove{aura=CHIBLAST}
+  - stun{d=5;f=true} @self
+  
+Chi_Blast_KICKREMOVE:
+  Skills:
+  - remove
+  
+Chi_Blast_KICK_CANCEL:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Chi_Blast_HIT} true
+  Skills:
+  - cancel
+  
+# Zen Throw #
+
+Zen_Throw:
+  Conditions:
+  - hasaura{n=Dragon_Fists} false
+  - hasaurastacks{auraName=Zen_Throw_aura} castinstead Zen_Throw_SKILL
+  Skills:
+  - Aura{auraName=Zen_Throw_aura;interval=1;duration=5} @self
+  
+Zen_Throw_SKILL:
+  Cooldown: 3
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.8;pitch=0.6} @self
+  - summon{type=VFX_Zen_Throw;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+  - totem{md=2;c=1;oH=Zen_Throw_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.6;lockpitch=true}
+  
+Zen_Throw_DAMAGE_D:
+  Skills:
+  - skill{s=Zen_Throw_DAMAGE} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Zen_Throw_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - throw{velocity=-9;velocityY=8}
+  - delay 12
+  - throw{velocity=6;velocityY=-11}
+  - delay 6
+  - effect:sound{s=entity.zoglin.step;volume=0.8;pitch=0.45}
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.5;pitch=0.6}
+  - totem{md=2;c=1;oS=Zen_Throw_DAMAGE_BW;oH=Zen_Throw_DAMAGE_AOE;hnp=true;hp=true;hR=2;vR=2;i=1}
+  - summon{type=VFX_Zen_Throw_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Zen_Throw_DAMAGE_BW:
+  Skills:
+  - blockwave{duration=40;radius=4;radiusY=2;velocity=1.2;shape=sphere;hidesourceblock=false} @origin
+  
+Zen_Throw_DAMAGE_AOE:
+  Skills:
+  - skill{s=Zen_Throw_DAMAGE_AOE_DAMAGE} @EntitiesNearOrigin{r=4.5}
+  
+Zen_Throw_DAMAGE_AOE_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a=4;pkb=true;hnp=true;hp=true}
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false}
+  - effect:particleorbital{r=0.5;points=16;t=60;i=1;particle=crit;oy=2.5}
+  
+# Beads of Karma #
+  
+Beads_Of_Karma:
+  Cooldown: 4
+  Conditions:
+  - hasaura{n=Dragon_Fists} false
+  - crouching true
+  Skills:
+  - Aura{auraName=Beads_Of_Karma_aura;duration=80} @self
+  - potion{type=SLOW;duration=80;level=50;hasParticles=false} @self
+  - summon{type=VFX_Beads_Of_Karma;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:sound{s=block.beacon.activate;volume=0.75;pitch=1.3} @self
+  - effect:sound{s=entity.warden.sonic_charge;volume=0.75;pitch=1.3} @self
+  
+  - delay 16
+  
+  - effect:sound{s=entity.wither.death;volume=0.75;pitch=1.3} @self
+  - effect:sound{s=entity.wither.ambient;volume=0.6;pitch=0.6} @self
+  
+  - totem{md=2;c=1;oH=Beads_Of_Karma_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0;lockpitch=true}
+  - skill{s=Beads_Of_Karma_BUFF_D} @PIR{r=7}
+  - skill{s=Beads_Of_Karma_BUFF_D} @self
+  
+  - delay 20
+  
+  - totem{md=2;c=1;oH=Beads_Of_Karma_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0;lockpitch=true}
+  - skill{s=Beads_Of_Karma_BUFF_D} @PIR{r=7}
+  - skill{s=Beads_Of_Karma_BUFF_D} @self
+  
+  - delay 20
+  
+  - totem{md=2;c=1;oH=Beads_Of_Karma_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0;lockpitch=true}
+  - skill{s=Beads_Of_Karma_BUFF_D} @PIR{r=7}
+  - skill{s=Beads_Of_Karma_BUFF_D} @self
+  
+Beads_Of_Karma_BUFF_D:
+  Skills:
+  - potionclear{type=BLINDNESS,CONFUSION,DARKNESS,HARM,HUNGER,POISON,SLOW_DIGGING,UNLUCK,WEAKNESS,WITHER}
+  - heal{a=6}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=1}
+  
+Beads_Of_Karma_DAMAGE_D:
+  Skills:
+  - skill{s=Beads_Of_Karma_DAMAGE} @EntitiesNearOrigin{r=7}
+  
+Beads_Of_Karma_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.6;pitch=0.85}
+  - effect:sound{s=entity.player.hurt;volume=0.6;pitch=1.3}
+  - damage{a=3;pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=15;velocityY=0}
+
+  
+# Counterstrike #
+
+Counterstrike:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Dragon_Fists} false
+  - crouching castinstead Counterstrike_STACK
+  - hasaura{n=Counterstrike_SHIELD} castinstead Counterstrike_CHIWAVE
+  Skills:
+  - auraremove{aura=Counterstrike_STACK} @self
+  - skill{s=Counterstrike_CHICIRCLE1}
+  
+Counterstrike_CHIWAVE:
+  Conditions:
+  - hasaurastacks{auraName=Counterstrike_SHIELD;stacks=>3} castinstead Counterstrike_CHIWAVE_LVL_2
+  Skills:
+  #shoot chi wave
+  - skill{s=Counterstrike_CHIWAVE_LVL_1}
+  
+  
+  
+  
+Counterstrike_CHICIRCLE1:
+  Conditions:
+  - hasaura{n=Counterstrike_SHIELD} true
+  - hasaurastacks{auraName=Counterstrike_SHIELD;stacks=>3} cast Counterstrike_CHICIRCLE2
+  Skills:
+  - effect:particlering{particle=redstone;color=#FFFFFF;size=0.75;radius=1;points=40;amount=1;hS=0;vS=0;y=0.1} @self
+  
+Counterstrike_CHICIRCLE2:
+  Conditions:
+  - hasaurastacks{auraName=Counterstrike_SHIELD;stacks=>7} cast Counterstrike_CHICIRCLE3
+  Skills:
+  - effect:particlering{particle=redstone;color=#FFFFFF;size=0.75;radius=2;points=80;amount=1;hS=0;vS=0;y=0.1} @self
+  
+Counterstrike_CHICIRCLE3:
+  Conditions:
+  - hasaurastacks{auraName=Counterstrike_SHIELD;stacks=>9} cast Counterstrike_CHIWAVE_LVL_3
+  Skills:
+  - effect:particlering{particle=redstone;color=#FFFFFF;size=0.75;radius=3;points=120;amount=1;hS=0;vS=0;y=0.1} @self
+  
+Counterstrike_CHIWAVE_LVL_1:
+  Skills:
+  - auraremove{aura=Counterstrike_SHIELD} @self
+  - auraremove{aura=COUNTERSTRIKEORBITAL} @self
+  - remove @MIR{r=2;type=VFX_Absorb_Shield;limit=1;sort=NEAREST;target=armorstands}
+  - auraremove{aura=Counterstrike_Shield_HIT_aura} @self
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=1.5} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.7;pitch=1.5} @self
+  - projectile{bulletType=MOB;mob=VFX_Chi_Wave_LVL_1;onHit=Counterstrike_CHIWAVE_LVL_1_HIT_D;v=7;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=1.5;tyo=1.5;sso=0} @Forward{f=25;y=0}
+  
+Counterstrike_CHIWAVE_LVL_1_HIT_D:
+  Skills:
+  - skill{s=Counterstrike_CHIWAVE_LVL_1_HIT} @EntitiesNearOrigin{r=2.5}
+  
+Counterstrike_CHIWAVE_LVL_1_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1.3}
+  - effect:sound{s=item.trident.return;volume=0.7;pitch=1.3}
+  - damage{a=3;pkb=true;hnp=true;hp=true}
+  - throw{velocity=4;velocityY=0}
+  
+  
+  
+  
+  
+Counterstrike_CHIWAVE_LVL_2:
+  Conditions:
+  - hasaurastacks{auraName=Counterstrike_SHIELD;stacks=>7} castinstead Counterstrike_CHIWAVE_LVL_3
+  Skills:
+  - auraremove{aura=Counterstrike_SHIELD} @self
+  - auraremove{aura=COUNTERSTRIKEORBITAL} @self
+  - remove @MIR{r=2;type=VFX_Absorb_Shield;limit=1;sort=NEAREST;target=armorstands}
+  - auraremove{aura=Counterstrike_Shield_HIT_aura} @self
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=1} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.7;pitch=1} @self
+  - projectile{bulletType=MOB;mob=VFX_Chi_Wave_LVL_2;onHit=Counterstrike_CHIWAVE_LVL_2_HIT_D;v=15;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=1.5;tyo=1.5;sso=0} @Forward{f=25;y=0}
+  
+Counterstrike_CHIWAVE_LVL_2_HIT_D:
+  Skills:
+  - skill{s=Counterstrike_CHIWAVE_LVL_2_HIT} @EntitiesNearOrigin{r=4}
+  
+Counterstrike_CHIWAVE_LVL_2_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1.3}
+  - effect:sound{s=item.trident.return;volume=0.7;pitch=1.3}
+  - damage{a=5;pkb=true;hnp=true;hp=true}
+  - throw{velocity=8;velocityY=0}
+  
+  
+  
+  
+  
+Counterstrike_CHIWAVE_LVL_3:
+  Skills:
+  - auraremove{aura=Counterstrike_SHIELD} @self
+  - auraremove{aura=COUNTERSTRIKEORBITAL} @self
+  - remove @MIR{r=2;type=VFX_Absorb_Shield;limit=1;sort=NEAREST;target=armorstands}
+  - auraremove{aura=Counterstrike_Shield_HIT_aura} @self
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.wither.hurt;volume=0.7;pitch=0.6} @self
+  - projectile{bulletType=MOB;mob=VFX_Chi_Wave_LVL_3;onHit=Counterstrike_CHIWAVE_LVL_3_HIT_D;v=26;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=1.5;tyo=1.5;sso=0} @Forward{f=25;y=0}
+  
+Counterstrike_CHIWAVE_LVL_3_HIT_D:
+  Skills:
+  - skill{s=Counterstrike_CHIWAVE_LVL_3_HIT} @EntitiesNearOrigin{r=6}
+  
+Counterstrike_CHIWAVE_LVL_3_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1.3}
+  - effect:sound{s=item.trident.return;volume=0.7;pitch=1.3}
+  - damage{a=7;pkb=true;hnp=true;hp=true}
+  - throw{velocity=12;velocityY=0}
+  
+  
+  
+  
+Counterstrike_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Counterstrike_STACK;stacks=2} castinstead Counterstrike_Shield_DOUBLE
+  Skills:
+  - Aura{auraName=Counterstrike_STACK;duration=120;maxStacks=2} @self
+  
+Counterstrike_Shield_DOUBLE:
+  Skills:
+  - skill{s=Counterstrike_Shield_Skill}
+  - skill{s=Counterstrike_CHICIRCLE1}
+  
+Counterstrike_Shield_Skill:
+  Cooldown: 7
+  Skills:
+  - auraremove{aura=Counterstrike_STACK} @self
+  - Aura{auraName=Counterstrike_SHIELD;duration=99999;maxStacks=10} @self
+  - orbital{auraName=COUNTERSTRIKEORBITAL;bulletType=MOB;mob=VFX_Absorb_Shield;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - onDamaged{auraName=Counterstrike_Shield_HIT_aura;c=99999;oH=Counterstrike_Shield_HITSTACK;cE=true} @self
+  
+Counterstrike_Shield_HITSTACK:
+  Skills:
+  #stack up shield
+  - Aura{auraName=Counterstrike_SHIELD;duration=99999;maxStacks=10} @self
+  - signal{s=HIT} @MIR{r=2;type=VFX_Absorb_Shield;limit=1;sort=NEAREST;target=armorstands}
+  - effect:sound{s=item.bottle.fill_dragonbreath;volume=0.8;pitch=1.05} @self
+  
+# Dragon Fists #
+
+Dragon_Fists:
+  Cooldown: 15
+  Conditions:
+  - crouching true
+  Skills:
+  - Aura{auraName=Dragon_Fists;duration=115} @self
+  - potion{type=SLOW;duration=115;level=0;hasParticles=false} @self
+  - orbital{bulletType=MOB;mob=VFX_Dragon_Fists;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=115;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=entity.illusioner.prepare_mirror;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.evoker.prepare_summon;volume=0.8;pitch=0.5} @self
+  - effect:sound{s=entity.wither.spawn;volume=0.6;pitch=1.4} @self
+  
+  - delay 14
+  
+  #fist bang
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.7} @self
+  - effect:sound{s=entity.player.hurt;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=entity.blaze.hurt;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.8;pitch=0.9} @self
+  
+  - delay 20
+  
+  #palm strike
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_PALM;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  
+  - delay 10
+  
+  #fist strike
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_FIST;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  
+  - delay 6
+  
+  #fist strike
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_FIST;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  
+  - delay 8
+  
+  #palm strike
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_PALM;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  
+  - delay 15
+  
+  #swing up
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_SWINGUP;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  
+  - delay 11
+  
+  #smash down
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Fists_DAMAGE_D_SWINGDOWN;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;y=1.3;lockpitch=true}
+  
+  - delay 13
+  
+  #strike ground (stun)
+  - effect:sound{s=entity.wither.shoot;volume=0.7;pitch=1.3} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.6;pitch=1} @self
+  - totem{md=2;c=1;oS=Dragon_Fists_DAMAGE_BW;oH=Dragon_Fists_DAMAGE_D_STRIKEGROUND;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=3;lockpitch=true}
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.7;pitch=0.7} @self
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.6} @self
+  - effect:sound{s=entity.blaze.hurt;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1} @self
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.6;pitch=0.6} @self
+
+
+Dragon_Fists_DAMAGE_D_PALM:
+  Skills:
+  - skill{s=Dragon_Fists_DAMAGE_PALM} @EntitiesNearOrigin{r=5}
+  
+Dragon_Fists_DAMAGE_PALM:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.blaze.hurt;volume=0.7;pitch=0.4}
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1}
+  - damage{a=3;pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=8;velocityY=0}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+  
+Dragon_Fists_DAMAGE_D_FIST:
+  Skills:
+  - skill{s=Dragon_Fists_DAMAGE_FIST} @EntitiesNearOrigin{r=5}
+  
+Dragon_Fists_DAMAGE_FIST:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.blaze.hurt;volume=0.7;pitch=0.4}
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1}
+  - damage{a=3;pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+Dragon_Fists_DAMAGE_D_SWINGUP:
+  Skills:
+  - skill{s=Dragon_Fists_DAMAGE_SWINGUP} @EntitiesNearOrigin{r=5}
+  
+Dragon_Fists_DAMAGE_SWINGUP:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.blaze.hurt;volume=0.7;pitch=0.4}
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1}
+  - damage{a=3;pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=8}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+Dragon_Fists_DAMAGE_D_SWINGDOWN:
+  Skills:
+  - skill{s=Dragon_Fists_DAMAGE_SWINGDOWN} @EntitiesNearOrigin{r=5}
+  
+Dragon_Fists_DAMAGE_SWINGDOWN:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - effect:sound{s=entity.zoglin.step;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.6}
+  - effect:sound{s=entity.blaze.hurt;volume=0.7;pitch=0.4}
+  - effect:sound{s=entity.elder_guardian.hurt;volume=0.7;pitch=1}
+  - damage{a=3;pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=-10}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+Dragon_Fists_DAMAGE_D_STRIKEGROUND:
+  Skills:
+  - skill{s=Dragon_Fists_DAMAGE_STRIKEGROUND} @EntitiesNearOrigin{r=5}
+  
+Dragon_Fists_DAMAGE_STRIKEGROUND:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a=5;pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=-7}
+  - potion{type=SLOW;duration=80;level=50;hasParticles=false}
+  - effect:particleorbital{r=0.5;points=16;t=80;i=1;particle=crit;oy=2.5}
+  - summon{type=VFX_Swift_Strikes_IMPACT;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Dragon_Fists_DAMAGE_BW:
+  Skills:
+  - blockwave{duration=60;radius=6;radiusY=2;velocity=2;shape=sphere;hidesourceblock=false} @origin
+  - effect:particles{particle=end_rod;amount=10;hS=2;vS=1.2;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=explosion_huge;amount=1;hS=0;vS=0;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - skill{s=Dragon_Fists_DAMAGE_BW_HEAL} @PlayersNearOrigin{r=10;target=players,self}
+  - summon{type=VFX_Focus_Chi_Heal2;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Dragon_Fists_DAMAGE_BW_HEAL:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - heal{a=10}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=0.1}
+  - effect:particlering{particle=totem;radius=1;points=20;amount=1;hS=0;vS=0;y=1}

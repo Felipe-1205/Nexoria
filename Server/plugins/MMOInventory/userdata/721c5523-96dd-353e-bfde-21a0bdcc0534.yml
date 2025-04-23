@@ -1,0 +1,26 @@
+inventory:
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Monitor Defectuoso","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Artefacto","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":"Te permite usar el /craftear.","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/4VR3UrDMBQ+KGKdCCoTvfCiRNiVTIaIsLvSxi2ytiMpQimldCVlxbpKmyky9jy99hXqi5lu0G0geHNIzvlO8v20ABS4ME2bONhkgeFamkn0YGRTDFMPVWVclVFVPmi54HEYiQzd1s11rcpHh6vvPH9LBFfnRZirPFXvojyMBQ/z7i72XpV4K/ngaV+eJlWZOgRTtYd8Bc4bBnUNHHeM4UjTdcyYTV0FTnfnxIBDnWpPDrYVOGlmkjuGdmdiZrNEZLlq8JhHYp4VmQLXDWpANcvBRjDG1CSMEdticOUhXhR8JpIwLbqfWf464bNoWlM7axaxpQ/lKoM9z9+HdtOn+IXUz9S0APYVuNz4Sdh4pLnyt5Wk487GSAVaQ+ZQd836eYGYCAXqo/oqLbMHTEr4Qn1vgXYEBj/fhcgl8C+daOkvtx1Z5Xjjoc4/QfnbS3UscFDXHvwCGTrC0CACAAA=

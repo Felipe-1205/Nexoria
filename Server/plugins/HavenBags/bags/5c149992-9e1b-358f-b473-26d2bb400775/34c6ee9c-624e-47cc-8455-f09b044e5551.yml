@@ -1,0 +1,18 @@
+uuid: 34c6ee9c-624e-47cc-8455-f09b044e5551
+owner: 5c149992-9e1b-358f-b473-26d2bb400775
+creator: 5c149992-9e1b-358f-b473-26d2bb400775
+size: 27
+custommodeldata: 3
+texture: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNGNiM2FjZGMxMWNhNzQ3YmY3MTBlNTlmNGM4ZTliM2Q5NDlmZGQzNjRjNjg2OTgzMWNhODc4ZjA3NjNkMTc4NyJ9fX0=
+trusted:
+- YudaxNot
+auto-pickup: 'null'
+weight-max: 0
+content: '[{"==":"org.bukkit.inventory.ItemStack","v":3839,"type":"NETHERITE_HOE","meta":{"==":"ItemMeta","meta-type":"UNSPECIFIC","display-name":"{\"text\":\"\",\"extra\":[{\"text\":\"Dalles
+  Maestro\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"blue\",\"bold\":false}]}","lore":["{\"text\":\"\",\"extra\":[{\"text\":\"Herramienta\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"red\",\"bold\":false}]}","{\"text\":\"\",\"extra\":[{\"text\":\"\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"white\",\"bold\":false}]}","{\"text\":\"\",\"extra\":[{\"text\":\"Nivel
+  de Agricultura: \",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"yellow\",\"bold\":false},{\"text\":\"50\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"red\",\"bold\":false}]}","{\"text\":\"\",\"extra\":[{\"text\":\"\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"white\",\"bold\":false}]}","{\"text\":\"\",\"extra\":[{\"text\":\"
+  \",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"dark_aqua\",\"bold\":false},{\"text\":\"Nivel:
+  \",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"gray\",\"bold\":false},{\"text\":\"TIER
+  3\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"blue\",\"bold\":true}]}","{\"text\":\"\",\"extra\":[{\"text\":\"Durabilidad:
+  3500 / 3500\",\"obfuscated\":false,\"italic\":false,\"underlined\":false,\"strikethrough\":false,\"color\":\"gray\",\"bold\":false}]}"],"attribute-modifiers":{"minecraft:generic.attack_speed":[{"==":"org.bukkit.attribute.AttributeModifier","amount":0.0,"name":"mmoitems:decoy","uuid":"ccf8bd19-26dc-41ba-beab-7240cf2f36ee","operation":0}]},"ItemFlags":["HIDE_ATTRIBUTES"],"Damage":1992,"custom":"H4sIAAAAAAAA/21RTUvDQBCdWoVQLFRFRL2EPXgSLJZamts22TQL+Si7K1hKCbGNEogW0lSQ0qt/JRcv/oX6x0xamra2l1l23pt5b2ZKABKcW5ZDBbG4q3VtbFHVNR1G4KuH5snLPBkYfhR5b4H/HnvoNsst4zzx7eDDD+WhL+PXKBhMwngSeYqcltSr28xammws2BncnCehoITJtRXe0NLK5yAMht5QkWv1alW+WzyoL0El95dFl2pwrGHTJNzNmjxIUM4JqX0ClZum5oWhP5Ytzx/H0UiCk5xBbNXAtuBw0OsX4SLPW/jJ1R4ZblGTii5A+bsA1+vFUI5bJllVU7tdkKBkcMG6S019injsxUhB2Tcdy2nzeBR9IqU3RVv23N+f1FNK/O8SzfqzAlzuaKoM6wvFfSC3qDCW4NUOyEgHU5ahxY1ZOszRCefUsV0dMyuFAeBegtPtNYtuh8ChcBxzvy4xxbLz2Rrc2B+om3fJDgVHWazBHxQla990AgAA"}},null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null]'
+weight: 3500.0

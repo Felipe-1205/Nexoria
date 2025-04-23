@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 38.52.152.154
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739660324628
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739660349846
+  login: 1739657262138
+money: '0'
+last-account-name: CainDesu
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2951.893530096225
+  y: 81.0
+  z: 464.9037902019349
+  yaw: 99.44998168945312
+  pitch: 14.699997901916504
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: 103.72797428028584
+  y: 153.0
+  z: 181.07610267991544
+  yaw: 163.87168884277344
+  pitch: 18.60003089904785
+nickname: Asmoday

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 152.201.185.234
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740283281358
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740283506263
+  login: 1740283198603
+money: '0'
+last-account-name: zeta4401
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.787311327597
+  y: 81.0
+  z: 462.7972380977931
+  yaw: 40.579010009765625
+  pitch: -22.619400024414062
+nickname: Theo
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -354.98946808314923
+  y: 67.0
+  z: 574.9571512653127
+  yaw: 121.64608764648438
+  pitch: 17.172279357910156

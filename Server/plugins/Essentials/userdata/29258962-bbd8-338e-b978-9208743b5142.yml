@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 187.190.193.41
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739660553619
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739661354651
+  login: 1739652744758
+money: '0'
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2953.718760905964
+  y: 81.0
+  z: 465.447230884143
+  yaw: 155.7001495361328
+  pitch: 8.850028038024902
+last-account-name: Niri_nico
+nickname: Nao
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -892.1534267478676
+  y: 201.0
+  z: 647.0028964723091
+  yaw: -69.02685546875
+  pitch: 19.803783416748047

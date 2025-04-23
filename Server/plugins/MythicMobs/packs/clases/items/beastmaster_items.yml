@@ -1,0 +1,497 @@
+
+arrow_owl:
+  Id: paper
+  Display: "&6"
+  Model: 2769
+  Hide:
+  - ATTRIBUTES
+ 
+arrow_panther:
+  Id: paper
+  Display: "&6"
+  Model: 2770
+  Hide:
+  - ATTRIBUTES
+  
+arrow_turtle:
+  Id: paper
+  Display: "&6"
+  Model: 2771
+  Hide:
+  - ATTRIBUTES
+  
+back_dash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2772
+  Hide:
+  - ATTRIBUTES
+  
+back_dash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2773
+  Hide:
+  - ATTRIBUTES
+
+back_dash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2774
+  Hide:
+  - ATTRIBUTES
+ 
+impact_owl_1:
+  Id: paper
+  Display: "&6"
+  Model: 2775
+  Hide:
+  - ATTRIBUTES
+  
+impact_owl_2:
+  Id: paper
+  Display: "&6"
+  Model: 2776
+  Hide:
+  - ATTRIBUTES
+  
+impact_owl_3:
+  Id: paper
+  Display: "&6"
+  Model: 2777
+  Hide:
+  - ATTRIBUTES
+  
+impact_owl_4:
+  Id: paper
+  Display: "&6"
+  Model: 2778
+  Hide:
+  - ATTRIBUTES
+
+impact_owl_5:
+  Id: paper
+  Display: "&6"
+  Model: 2779
+  Hide:
+  - ATTRIBUTES
+ 
+impact_owl_6:
+  Id: paper
+  Display: "&6"
+  Model: 2780
+  Hide:
+  - ATTRIBUTES
+  
+impact_owl_7:
+  Id: paper
+  Display: "&6"
+  Model: 2781
+  Hide:
+  - ATTRIBUTES
+  
+impact_panther_1:
+  Id: paper
+  Display: "&6"
+  Model: 2782
+  Hide:
+  - ATTRIBUTES
+  
+impact_panther_2:
+  Id: paper
+  Display: "&6"
+  Model: 2783
+  Hide:
+  - ATTRIBUTES
+
+impact_panther_3:
+  Id: paper
+  Display: "&6"
+  Model: 2784
+  Hide:
+  - ATTRIBUTES
+ 
+impact_panther_4:
+  Id: paper
+  Display: "&6"
+  Model: 2785
+  Hide:
+  - ATTRIBUTES
+  
+impact_panther_5:
+  Id: paper
+  Display: "&6"
+  Model: 2786
+  Hide:
+  - ATTRIBUTES
+  
+impact_panther_6:
+  Id: paper
+  Display: "&6"
+  Model: 2787
+  Hide:
+  - ATTRIBUTES
+  
+impact_panther_7:
+  Id: paper
+  Display: "&6"
+  Model: 2788
+  Hide:
+  - ATTRIBUTES
+
+impact_turtle_1:
+  Id: paper
+  Display: "&6"
+  Model: 2789
+  Hide:
+  - ATTRIBUTES
+ 
+impact_turtle_2:
+  Id: paper
+  Display: "&6"
+  Model: 2790
+  Hide:
+  - ATTRIBUTES
+  
+impact_turtle_3:
+  Id: paper
+  Display: "&6"
+  Model: 2791
+  Hide:
+  - ATTRIBUTES
+
+impact_turtle_4:
+  Id: paper
+  Display: "&6"
+  Model: 2792
+  Hide:
+  - ATTRIBUTES
+ 
+impact_turtle_5:
+  Id: paper
+  Display: "&6"
+  Model: 2793
+  Hide:
+  - ATTRIBUTES
+  
+impact_turtle_6:
+  Id: paper
+  Display: "&6"
+  Model: 2794
+  Hide:
+  - ATTRIBUTES
+  
+impact_turtle_7:
+  Id: paper
+  Display: "&6"
+  Model: 2795
+  Hide:
+  - ATTRIBUTES
+  
+quick_dash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2796
+  Hide:
+  - ATTRIBUTES
+
+quick_dash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2797
+  Hide:
+  - ATTRIBUTES
+ 
+quick_dash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2798
+  Hide:
+  - ATTRIBUTES
+  
+slash_fenrir_1:
+  Id: paper
+  Display: "&6"
+  Model: 2799
+  Hide:
+  - ATTRIBUTES
+  
+slash_fenrir_2:
+  Id: paper
+  Display: "&6"
+  Model: 2800
+  Hide:
+  - ATTRIBUTES
+ 
+slash_fenrir_3:
+  Id: paper
+  Display: "&6"
+  Model: 2801
+  Hide:
+  - ATTRIBUTES
+  
+slash_fenrir_4:
+  Id: paper
+  Display: "&6"
+  Model: 2802
+  Hide:
+  - ATTRIBUTES
+  
+slash_fenrir_5:
+  Id: paper
+  Display: "&6"
+  Model: 2803
+  Hide:
+  - ATTRIBUTES
+  
+slash_panther_1:
+  Id: paper
+  Display: "&6"
+  Model: 2804
+  Hide:
+  - ATTRIBUTES
+
+slash_panther_2:
+  Id: paper
+  Display: "&6"
+  Model: 2805
+  Hide:
+  - ATTRIBUTES
+ 
+slash_panther_3:
+  Id: paper
+  Display: "&6"
+  Model: 2806
+  Hide:
+  - ATTRIBUTES
+  
+slash_panther_4:
+  Id: paper
+  Display: "&6"
+  Model: 2807
+  Hide:
+  - ATTRIBUTES
+  
+slash_panther_5:
+  Id: paper
+  Display: "&6"
+  Model: 2808
+  Hide:
+  - ATTRIBUTES
+  
+turtle_rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 2809
+  Hide:
+  - ATTRIBUTES
+
+turtle_rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 2810
+  Hide:
+  - ATTRIBUTES
+ 
+turtle_rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 2811
+  Hide:
+  - ATTRIBUTES
+  
+turtle_rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 2812
+  Hide:
+  - ATTRIBUTES
+  
+turtle_rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 2813
+  Hide:
+  - ATTRIBUTES
+  
+turtle_rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 2814
+  Hide:
+  - ATTRIBUTES
+
+wind_pulse_1:
+  Id: paper
+  Display: "&6"
+  Model: 2815
+  Hide:
+  - ATTRIBUTES
+ 
+wind_pulse_2:
+  Id: paper
+  Display: "&6"
+  Model: 2816
+  Hide:
+  - ATTRIBUTES
+  
+wind_pulse_3:
+  Id: paper
+  Display: "&6"
+  Model: 2817
+  Hide:
+  - ATTRIBUTES
+  
+wind_pulse_4:
+  Id: paper
+  Display: "&6"
+  Model: 2818
+  Hide:
+  - ATTRIBUTES
+  
+wind_pulse_5:
+  Id: paper
+  Display: "&6"
+  Model: 2819
+  Hide:
+  - ATTRIBUTES
+
+wind_pulse_6:
+  Id: paper
+  Display: "&6"
+  Model: 2820
+  Hide:
+  - ATTRIBUTES
+ 
+wind_pulse_7:
+  Id: paper
+  Display: "&6"
+  Model: 2821
+  Hide:
+  - ATTRIBUTES
+  
+x_owl_1:
+  Id: paper
+  Display: "&6"
+  Model: 2822
+  Hide:
+  - ATTRIBUTES
+
+x_owl_2:
+  Id: paper
+  Display: "&6"
+  Model: 2823
+  Hide:
+  - ATTRIBUTES
+ 
+x_owl_3:
+  Id: paper
+  Display: "&6"
+  Model: 2824
+  Hide:
+  - ATTRIBUTES
+  
+x_panther_1:
+  Id: paper
+  Display: "&6"
+  Model: 2825
+  Hide:
+  - ATTRIBUTES
+  
+x_panther_2:
+  Id: paper
+  Display: "&6"
+  Model: 2826
+  Hide:
+  - ATTRIBUTES
+  
+x_panther_3:
+  Id: paper
+  Display: "&6"
+  Model: 2827
+  Hide:
+  - ATTRIBUTES
+
+x_turtle_1:
+  Id: paper
+  Display: "&6"
+  Model: 2828
+  Hide:
+  - ATTRIBUTES
+ 
+x_turtle_2:
+  Id: paper
+  Display: "&6"
+  Model: 2829
+  Hide:
+  - ATTRIBUTES
+  
+x_turtle_3:
+  Id: paper
+  Display: "&6"
+  Model: 2830
+  Hide:
+  - ATTRIBUTES
+  
+arrow_owl_1:
+  Id: paper
+  Display: "&6"
+  Model: 2831
+  Hide:
+  - ATTRIBUTES
+  
+arrow_owl_2:
+  Id: paper
+  Display: "&6"
+  Model: 2832
+  Hide:
+  - ATTRIBUTES
+ 
+impact_fenrir_1:
+  Id: paper
+  Display: "&6"
+  Model: 2833
+  Hide:
+  - ATTRIBUTES
+ 
+impact_fenrir_2:
+  Id: paper
+  Display: "&6"
+  Model: 2834
+  Hide:
+  - ATTRIBUTES
+  
+impact_fenrir_3:
+  Id: paper
+  Display: "&6"
+  Model: 2835
+  Hide:
+  - ATTRIBUTES
+
+impact_fenrir_4:
+  Id: paper
+  Display: "&6"
+  Model: 2836
+  Hide:
+  - ATTRIBUTES
+ 
+impact_fenrir_5:
+  Id: paper
+  Display: "&6"
+  Model: 2837
+  Hide:
+  - ATTRIBUTES
+  
+impact_fenrir_6:
+  Id: paper
+  Display: "&6"
+  Model: 2838
+  Hide:
+  - ATTRIBUTES
+  
+impact_fenrir_7:
+  Id: paper
+  Display: "&6"
+  Model: 2839
+  Hide:
+  - ATTRIBUTES

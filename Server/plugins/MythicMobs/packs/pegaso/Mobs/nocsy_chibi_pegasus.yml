@@ -1,0 +1,47 @@
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#                Pegasus                   #
+#               by Nocsy                   #
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+
+#----------- Chibi -----------#
+Nocsy_Chibi_Pegasus:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=nocsy_chibi_pegasus;n=false;lockyaw=true} @self ~onSpawn
+  - skill{s=Nocsy_Chibi_Pegasus-Ambient_Sound} ~onTimer:250
+  - skill{s=Nocsy_Chibi_Pegasus-Effect} ~onTimer:20
+  - skill{s=Nocsy_Chibi_Pegasus-Hurt_Sound} ~onDamaged
+  - skill{s=Nocsy_Chibi_Pegasus-Death_Sound} ~onDeath
+  Display: "§bBaby Pegasus"
+  Health: 6
+  Damage: 6
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.34
+    MaxCombatDistance: 5
+    AttackSpeed: 2.2
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+
+# 1609K9VHES0SGB7I8X1D4QEG0

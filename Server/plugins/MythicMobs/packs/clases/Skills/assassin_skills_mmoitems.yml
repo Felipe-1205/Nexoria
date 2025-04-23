@@ -1,0 +1,291 @@
+######## created by samus2002 #########
+
+# Assassin's Blade #
+
+Assassins_Blade:
+  Skills:
+  - Aura{auraName=Assassins_Blade_Aura;duration=20} @self
+  
+BLEED_FX_80_PASSIVE:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaurastacks{auraName=Assassins_Blade_Aura} true
+  Skills:
+  - effect:particles{particle=drip_lava;amount=12;hS=0.2;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=15;repeatinterval=5}
+  - damage{a=2;pkb=true;hnp=true;hp=true;repeat=3;repeatinterval=20}
+  
+BLEED_FX_80:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=1;repeat=3;repeatinterval=20} @self
+  - effect:particles{particle=drip_lava;amount=12;hS=0.2;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=15;repeatinterval=5}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=3;repeatinterval=20}
+  
+# Blade Slash #
+
+Blade_Slash:
+  Cooldown: 0
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Shadow_Walk} castinstead Blade_Slash_CRIT
+  - hasaurastacks{auraName=Dash} castinstead Razor_Spin
+  - hasaurastacks{auraName=ATTACK_CD} false
+  Skills:
+  - randomskill{skills=Assassin_Slash_1,Assassin_Slash_2,Assassin_Slash_3,Assassin_Slash_4}
+
+Assassin_Slash_1:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  - totem{md=2;c=1;oH=Assassin_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3}
+  
+Assassin_Slash_2:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  - totem{md=2;c=1;oH=Assassin_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5}
+  
+Assassin_Slash_3:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  - totem{md=2;c=1;oH=Assassin_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3;so=-0.5}
+  
+Assassin_Slash_4:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  - totem{md=2;c=1;oH=Assassin_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5;so=-0.5}
+  
+Assassin_Slash_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - skill{s=BLEED_FX_80} 0.15
+  
+Blade_Slash_CRIT:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_critical;volume=0.9;pitch=1} @self
+  - totem{md=2;c=1;oH=Blade_Slash_CRIT_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3;so=-0.5}
+  - summon{type=Assassin_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5;so=-0.5}
+  - potionclear{} @self
+  - auraremove{aura=Shadow_Walk} @self
+  - effect:particles{particle=reddust;amount=30;hS=0.4;vS=1;speed=0} @self
+  
+Blade_Slash_CRIT_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 2";pkb=false;hnp=true;hp=true}
+  - skill{s=BLEED_FX_80}
+  
+# Dash #
+
+Assassin_Dash:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Shadow_Walk} cast Clear_Shadow_Walk
+  Skills:
+  - lunge{velocity=4;velocityY=0} @forward{f=15;y=0.1}
+  - Aura{auraName=Dash;interval=1;duration=15} @self
+  - effect:sound{s=assassin_sounds:samus.dash;volume=1;pitch=1} @self
+  - skill{s=Assassin_Dash_D;repeat=3;repeatinterval=4} @EIR{r=3}
+  - skill{s=BLEED_FX_80} @EIR{r=3} 0.15
+  - effect:particles{particle=reddust;amount=15;hS=0.3;vS=0.7;speed=0;repeat=2;repeatinterval=5} @self
+  - delay 5
+  - summon{type=Assassin_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  
+Assassin_Dash_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=2} @self
+  - damage{a="<modifier.damage>"}
+  
+# Razor Spin #
+
+Razor_Spin:
+  Conditions:
+  - hasaurastacks{auraName=ATTACK_CD} false
+  Skills:
+  - skill{s=Razor_Spin_S;delay=0}
+  
+Razor_Spin_S:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_spin;volume=1;pitch=1} @self
+  - effect:particles{particle=reddust;amount=30;hS=0.4;vS=0.15;speed=0} @self
+  - summon{type=Razor_Spin;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2}
+  - skill{s=Razor_Spin_D} @EIR{r=4}
+  
+Razor_Spin_D:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=10} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+# Shadow Walk #
+
+Shadow_Walk:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Walk_aura} castinstead Shadow_Walk_Skill
+  Skills:
+  - Aura{auraName=Shadow_Walk_aura;interval=1;duration=5} @self
+  
+Shadow_Walk_Skill:
+  Cooldown: 7
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.shadow_walk;volume=1;pitch=1} @self
+  - effect:particles{particle=reddust;amount=30;hS=0.4;vS=1;speed=0} @self
+  - Aura{auraName=Shadow_Walk;interval=1;duration="<modifier.duration> * 20"} @self
+  - summon{type=Shadow_Walk;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - hidefromplayers{d="<modifier.duration> * 20"} @PIR{r=100}
+  - potion{type=INVISIBILITY;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  
+Clear_Shadow_Walk:
+  Skills:
+  - potionclear{} @self
+  - auraremove{aura=Shadow_Walk} @self
+  - effect:particles{particle=reddust;amount=30;hS=0.4;vS=1;speed=0} @self
+  
+# Dagger Throw #
+
+Dagger_Throw:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Walk} cast Clear_Shadow_Walk
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=1;pitch=1;repeat=2;repeatinterval=1} @self
+  - projectile{bulletType=MOB;mob=Dagger_Throw;onEnd=Dagger_Throw_END;onHit=Dagger_Throw_HIT;v=35;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Dagger_Throw;onEnd=Dagger_Throw_END;onHit=Dagger_Throw_HIT;v=35;i=1;hR=1;vR=1;mr=35;hnp=true;hO=15;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Dagger_Throw;onEnd=Dagger_Throw_END;onHit=Dagger_Throw_HIT;v=35;i=1;hR=1;vR=1;mr=35;hnp=true;hO=-15;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+
+Dagger_Throw_HIT:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=10} @self
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  - effect:sound{s=assassin_sounds:samus.blade_critical;volume=1;pitch=1.1} @self
+
+Dagger_Throw_END:
+  Skills:
+  - skill{s=Dagger_Throw_HIT_FX} @origin
+
+Dagger_Throw_HIT_FX:
+  Skills:
+  - effect:particlesphere{particle=redstone;radius=1;amount=10} @origin
+  - effect:particlesphere{particle=redstone;radius=1.5;amount=15;delay=1} @origin
+  - effect:particlesphere{particle=redstone;radius=2;amount=20;delay=2} @origin
+  - effect:particlesphere{particle=redstone;radius=2.5;amount=25;delay=3} @origin
+
+# Blade Dance #
+  
+Blade_Dance:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Walk} cast Clear_Shadow_Walk
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=25} @self
+  - effect:particles{particle=reddust;amount=25;hS=0.4;vS=1;speed=0;repeat=25;repeatinterval=1} @self
+  - skill{s=Blade_Dance_TP} @EIR{r=20;limit=1;sort=RANDOM}
+  - effect:sound{s=assassin_sounds:samus.blade_dance_teleport;volume=1;pitch=1} @self
+  - delay 1
+  - summon{type=Blade_Dance;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - skill{s=Blade_Dance_Slash;repeat=3;repeatinterval=1}
+  - skill{s=Blade_Dance_Slash_CRIT;delay=4}
+  - delay 5
+  - skill{s=Blade_Dance_TP} @EIR{r=20;limit=1;sort=RANDOM}
+  - effect:sound{s=assassin_sounds:samus.blade_dance_teleport;volume=1;pitch=1} @self
+  - delay 1
+  - summon{type=Blade_Dance;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - skill{s=Blade_Dance_Slash;repeat=3;repeatinterval=1}
+  - skill{s=Blade_Dance_Slash_CRIT;delay=4}
+  - delay 5
+  - skill{s=Blade_Dance_TP} @EIR{r=20;limit=1;sort=RANDOM}
+  - effect:sound{s=assassin_sounds:samus.blade_dance_teleport;volume=1;pitch=1} @self
+  - delay 1
+  - summon{type=Blade_Dance;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - skill{s=Blade_Dance_Slash;repeat=3;repeatinterval=1}
+  - skill{s=Blade_Dance_Slash_CRIT;delay=4}
+  - delay 5
+  - skill{s=Blade_Dance_TP} @EIR{r=20;limit=1;sort=RANDOM}
+  - effect:sound{s=assassin_sounds:samus.blade_dance_teleport;volume=1;pitch=1} @self
+  - delay 1
+  - summon{type=Blade_Dance;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - skill{s=Blade_Dance_Slash;repeat=3;repeatinterval=1}
+  - skill{s=Blade_Dance_Slash_CRIT;delay=4}
+  - delay 5
+  - skill{s=Blade_Dance_TP} @EIR{r=20;limit=1;sort=RANDOM}
+  - effect:sound{s=assassin_sounds:samus.blade_dance_teleport;volume=1;pitch=1} @self
+  - delay 1
+  - summon{type=Blade_Dance;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - skill{s=Blade_Dance_Slash;repeat=3;repeatinterval=1}
+  - skill{s=Blade_Dance_Slash_CRIT;delay=4}
+  
+Blade_Dance_TP:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Blade_Dance} false
+  - mythicmobtype{t=Razor_Spin} false
+  - mythicmobtype{t=Dagger_Throw} false
+  - mythicmobtype{t=Shadow_Walk} false
+  - mythicmobtype{t=Assassin_Dash} false
+  - mythicmobtype{t=Assassin_Slash_1} false
+  - mythicmobtype{t=Assassin_Slash_2} false
+  - mythicmobtype{t=Assassin_Slash_3} false
+  - mythicmobtype{t=Assassin_Slash_4} false
+  Skills:
+  - lunge{velocity=2;velocityY=0.05;repeat=2;repeatinterval=1}
+  - delay 5
+  - skill{s=Blade_DanceCRIT_DAMAGE}
+
+Blade_Dance_Slash:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Blade_Dance_Slash_1,Blade_Dance_Slash_2,Blade_Dance_Slash_3,Blade_Dance_Slash_4}
+
+Blade_Dance_Slash_1:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  #- totem{md=2;c=1;oH=Blade_Dance_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3}
+  
+Blade_Dance_Slash_2:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  #- totem{md=2;c=1;oH=Blade_Dance_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5}
+  
+Blade_Dance_Slash_3:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  #- totem{md=2;c=1;oH=Blade_Dance_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3;so=-0.5}
+  
+Blade_Dance_Slash_4:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_slash;volume=0.8;pitch=1} @self
+  #- totem{md=2;c=1;oH=Blade_Dance_Slash_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5;so=-0.5}
+  
+Blade_Dance_Slash_CRIT:
+  Skills:
+  - effect:sound{s=assassin_sounds:samus.blade_critical;volume=0.9;pitch=1} @self
+  #- totem{md=2;c=1;oH=Blade_Dance_Slash_CRIT_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=1}
+  - summon{type=Assassin_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.3;so=-0.5}
+  - summon{type=Assassin_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.5;so=-0.5}
+
+Blade_DanceCRIT_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - skill{s=BLEED_FX_80}

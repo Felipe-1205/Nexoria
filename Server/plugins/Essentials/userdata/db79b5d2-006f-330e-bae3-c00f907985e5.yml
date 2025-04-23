@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.150.170.243
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740616828003
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1741462607058
+  login: 1741462530483
+money: '0'
+last-account-name: NivlekNot
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 55.110059784427456
+  y: 86.0
+  z: 112.94147345597841
+  yaw: -132.4539031982422
+  pitch: -0.6177766919136047
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -566.8770373018773
+  y: 111.0
+  z: -633.3612971394621
+  yaw: -34.64890670776367
+  pitch: 57.63974380493164
+nickname: Divergente

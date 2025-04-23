@@ -1,0 +1,55 @@
+npcs:
+  '339': "Branquia"
+
+conversations:
+  Branquia: 
+    quester: "&6Branquia" 
+    first: "Cooldown,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Eh, forastero/a! ¿Te animas a pescar un rato o prefieres quedarte mirando el agua?"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7Fácil: atrapa 20 peces del lago. No importa cuáles, pero que estén bien frescos."
+        pointer: "Perfecto" 
+      SiRechazan:
+        text: "&7¡Bah! Con este clima, los peces están saltando solos. Pero bueno, el lago no se va a ninguna parte."
+      Cooldown:
+        text: "&7El mar tiene paciencia, igual que yo. Ya hiciste tu faena de hoy, vuelve mañana si quieres seguir pescando."
+        conditions: "pescaenpausa"  
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7¡Claro! Me encanta la pesca. ¿Qué necesitas?"
+        event: misionaceptadapesca,iniciopesca
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7Lo siento, hoy no puedo."
+        pointer: "SiRechazan" 
+      Perfecto:
+        text: "&7Entendido, ¡manos a la caña!"
+
+items:
+  cod: "COD" 
+
+conditions:
+  pescaenpausa: "tag pesca_en_pausa"
+
+schedules:
+  pescamis: 
+    type: realtime-cron 
+    time: '0 0 * * *' 
+    events: pescacontinuar
+
+events: 
+  misionaceptadapesca: "notify &5¡Misión Aceptada, a pescar!"
+  iniciopesca: "objective start pescapeces"
+  pescamisioncumplida: "notify &6Pesca: ¡Misión Cumplida!"
+  premiopesca: "mmoprofessionexperience fishing 750"
+  recompensapesca: "mmoitemgive MATERIAL MONEDA_1 10"
+  pescapausa: "tag add pesca_en_pausa"
+  pescacontinuar: "tag delete pesca_en_pausa"
+
+objectives: 
+  pescapeces:  "pickup cod amount:20 events:pescamisioncumplida,premiopesca,recompensapesca,pescapausa" 

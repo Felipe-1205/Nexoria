@@ -1,0 +1,36 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: leonard_pascal
+  UUID: 4bc0d176-770c-3cca-98d7-948c8e09c042
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739850269061
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 3.0
+      y: 80.0
+      z: -7.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739850269061
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739850887701
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -1.0
+      y: 68.0
+      z: -110.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739850887700
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739850923573
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 12.0
+      y: 79.0
+      z: -134.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739850923573
+Finished: true

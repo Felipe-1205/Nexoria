@@ -1,0 +1,52 @@
+npcs:
+  '338': "Marla"
+
+conversations:
+  Marla: 
+    quester: "&6Marla" 
+    first: "Cooldown,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Ah, qué bueno verte! Hoy necesito recolectar muchas plantas y no tengo suficientes manos. ¿Puedes ayudarme?"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7Necesito que reúnas 250 flores de Aciano. Algunas son delicadas, así que ten cuidado al recogerlas. Son ingredientes valiosos para nuestras pociones."
+        pointer: "Perfecto" 
+      SiRechazan:
+        text: "&Oh, qué pena… Bueno, la naturaleza sigue creciendo. Cuando tengas un rato, vuelve por aquí."
+      Cooldown:
+        text: "&7La naturaleza necesita tiempo para regenerarse, y tú también. Vuelve mañana y veremos qué más podemos recolectar."
+        conditions: "botanicaenpausa"  
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7Por supuesto, ¿qué necesitas?"
+        event: misionaceptadabotanica,iniciobotanica
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7Hoy no tengo tiempo, lo siento."
+        pointer: "SiRechazan" 
+      Perfecto:
+        text: "&7¡Lo haré con cuidado! Voy a por ello."
+
+conditions:
+  botanicaenpausa: "tag botanica_en_pausa"
+
+schedules:
+  botanicamis: 
+    type: realtime-cron 
+    time: '0 0 * * *' 
+    events: botanicacontinuar
+
+events: 
+  misionaceptadabotanica: "notify &5¡Misión Aceptada, a Recolectar!"
+  iniciobotanica: "objective start recogehierba"
+  botanicamisioncumplida: "notify &6Botanica: ¡Misión Cumplida!"
+  premiobotanica: "mmoprofessionexperience farming 750"
+  recompensabotanica: "mmoitemgive MATERIAL MONEDA_1 10"
+  botanicapausa: "tag add botanica_en_pausa"
+  botanicacontinuar: "tag delete botanica_en_pausa"
+
+objectives: 
+  recogehierba:  "mmocorebreakblock 250 block:CORNFLOWER events:botanicamisioncumplida,premiobotanica,recompensabotanica,botanicapausa" 

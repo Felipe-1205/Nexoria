@@ -1,0 +1,65 @@
+######## created by samus2002 #########
+
+easter_egg_blue:
+  Id: paper
+  Display: "&6"
+  Model: 2655
+  Hide:
+  - ATTRIBUTES
+ 
+easter_egg_pink:
+  Id: paper
+  Display: "&6"
+  Model: 2656
+  Hide:
+  - ATTRIBUTES
+
+easter_egg_yellow:
+  Id: paper
+  Display: "&6"
+  Model: 2657
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_1:
+  Id: paper
+  Display: "&6"
+  Model: 2658
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_2:
+  Id: paper
+  Display: "&6"
+  Model: 2659
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_3:
+  Id: paper
+  Display: "&6"
+  Model: 2660
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_4:
+  Id: paper
+  Display: "&6"
+  Model: 2661
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_5:
+  Id: paper
+  Display: "&6"
+  Model: 2662
+  Hide:
+  - ATTRIBUTES
+  
+easter_slam_6:
+  Id: paper
+  Display: "&6"
+  Model: 2663
+  Hide:
+  - ATTRIBUTES
+  

@@ -1,0 +1,79 @@
+npcs:
+  '359': "Juan"
+
+conversations:
+  Juan: 
+    quester: "&6Juan"  
+    first: "saludo" 
+    NPC_options: 
+      #Inicio conversación
+      saludo:
+        text: "&7Hey, pareces algo perdido ¿Necesitas ubicarte?"
+        pointer: "Vaca,Conejo,Cerdo,Pollo,Gato,Armadillo,Camello,Loro,Ajolote,Burro,Tortuga,Ovejas,Calamares" 
+      RespuestaVacas:
+        text: "&7¿Vacas? Puedes encontrarlas en los alredeores de &5X:-997 Z:550"
+      RespuestaConejos:
+        text: "&7¿Conejos? Puedes encontrarlos en los alredeores de &5X:-1306 Z:-145"
+      RespuestaCerdos:
+        text: "&7¿Cerdos? Puedes encontrarlos en los alredeores de &5X:22 Z:250"
+      RespuestaPollos:
+        text: "&7¿Pollos? Puedes encontrarlos en los alredeores de &5X:-943 Z:1256"
+      RespuestaGato:
+        text: "&7¿Gatos? Puedes encontrarlos en los alredeores de &5X:-1842 Z:1451"
+      RespuestaArmadillo:
+        text: "&7¿Armadillos? Puedes encontrarlos en los alredeores de &5X:54 Z:1912"
+      RespuestaCamello:
+        text: "&7¿Camellos? Puedes encontrarlos en los alredeores de &5X:266 Z:2795"
+      RespuestaLoros:
+        text: "&7¿Loros? Puedes encontrarlos en los alredeores de &5X:1588 Z:1355"
+      RespuestaAjolote:
+        text: "&7¿Ajolotes? Puedes encontrarlos en los alredeores de &5X:-1917 Z:-556"
+      RespuestaBurros:
+        text: "&7¿Burros? Puedes encontrarlos en los alredeores de &5X:-1273 Z:-1150"
+      RespuestaTortuga:
+        text: "&7¿Tortugas? Puedes encontrarlas en las orillas de &5X:-491 Z:-934"
+      RespuestaOvejas:
+        text: "&7¿Ovejas? Puedes encontrarlas en los alredeores de &5X:-129 Z:-3099 &7o en menor cantidad alrededor de &5X:391 Z:-2445"
+      RespuestaCalamares:
+        text: "&7¿Calamares? Puedes encontrarlos en los alredeores de la isla de los dioses en &5X:2 Z:-202"
+    #Respuestas Jugador
+    player_options: 
+      Vaca:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aVacas&7?"
+        pointer: "RespuestaVacas" 
+      Conejo:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aConejos&7?"
+        pointer: "RespuestaConejos" 
+      Cerdo:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aCerdos&7?"
+        pointer: "RespuestaCerdos" 
+      Pollo:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aPollos&7?"
+        pointer: "RespuestaPollos" 
+      Gato:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aGatos Salvajes&7?"
+        pointer: "RespuestaGato" 
+      Armadillo:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aArmadillos&7?"
+        pointer: "RespuestaArmadillo"
+      Camello:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aCamellos&7?"
+        pointer: "RespuestaCamello" 
+      Loro:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aLoros&7?"
+        pointer: "RespuestaLoros"
+      Ajolote:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aAjolote&7?"
+        pointer: "RespuestaAjolote"
+      Burro:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aBurros&7?"
+        pointer: "RespuestaBurros"
+      Tortuga:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aTortuga&7?"
+        pointer: "RespuestaTortuga"
+      Ovejas:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aOvejas&7?"
+        pointer: "RespuestaOvejas"
+      Calamares:
+        text: "&7La verdad que necesito ayuda ¿Dónde puedo encontrar &aCalamares&7?"
+        pointer: "RespuestaCalamares"

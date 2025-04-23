@@ -1,0 +1,132 @@
+# !!! IMPORTANT: BreweryX configuration files do NOT support external comments! If you add any comments, they will be overwritten !!!
+# Translations for BreweryX
+
+# Brew
+Brew_-times: -раз
+Brew_BadPotion: Испорченное зелье
+Brew_BarrelRiped: Настоявшееся в бочке
+Brew_DistillUndefined: Мутнодистиллированный
+Brew_Distilled: Дистиллированный
+Brew_LessDistilled: Малодистиллированный
+Brew_HundredsOfYears: вековой
+Brew_Ingredients: Ингредиенты
+Brew_MinutePluralPostfix: ы
+Brew_OneYear: Один год
+Brew_ThickBrew: Мутный напиток
+Brew_Undefined: Котельный напиток
+Brew_Woodtype: тип дерева
+Brew_Years: года
+Brew_fermented: ферментировано
+Brew_minute: минут
+Brew_Alc: Алк &v1мл
+Brew_Alcoholic: (Алкогольное)
+Brew_Brewer: 'Сварил: &v1'
+
+# CMD
+CMD_Copy_Error: '&6&v1 &cЗелья не поместились в инвентарь'
+CMD_Info_Drunk: '&v1 на &6&v2% &fпьян, качество опьянения: &6&v3'
+CMD_Info_NotDrunk: '&v1 не пьян'
+CMD_NonStatic: '&eНапиток больше не настаивается и теперь начнет бродить в бочке.'
+CMD_Player: '&a&v1 теперь пьян на &6&v2% &a, качество опьянения: &6&v3'
+CMD_Player_Error: '&cКачество должно быть от 1 до 10!'
+CMD_Reload: '&aКонфиг успешно перезагружен!'
+CMD_Created: '&aНапиток создан'
+CMD_Configname: '&aНазвание предмета для конфига: &f&v1'
+CMD_Configname_Error: '&cНет предмета в руке.'
+CMD_Static: '&aНапиток закупорен и не будет бродить в бочках.'
+CMD_UnLabel: '&aНекоторые детали описания были скрыты!'
+CMD_Drink: '&aТы выпил одну &v1'
+CMD_DrinkOther: '&a&v1 выпил одну &v2'
+CMD_Set: '&aУровень опьянения &v1 успешно установлен на &v2 с качеством &v3.'
+
+# Error
+Error_ConfigUpdate: 'Неизвестная версия конфига Brewery: v&v1, конфиг не обновлён!'
+Error_ItemNotPotion: '&cПредмет в твоей руке не является зельем!'
+Error_SealingTableDisabled: '&cСтол закупорки отключён.'
+Error_SealedAlwaysStatic: Закупоренные напитки всегда статичны!
+Error_AlreadyUnlabeled: '&cДетали описания напитка в твоей руке уже скрыты!'
+Error_NoBarrelAccess: '&cУ тебя нет прав на доступ к этой бочке!'
+Error_NoBrewName: '&cРецепт с названием: ''&v1&c'' не найден!'
+Error_NoPermissions: '&cУ тебя нет прав на это!'
+Error_PlayerCommand: '&cЭту команду можно использовать только как игрок!'
+Error_Recipeload: '&cНе все рецепты были загружены: проверь консоль!'
+Error_ShowHelp: Используйте &6/brew help &fдля отображения помощи
+Error_UnknownCommand: Неизвестная команда
+Error_YmlRead: не могу прочитать config.yml, пожалуйста, проверь, что там всё верно.
+  (Корректируй пробелы, используя ' ' и др.)
+Error_NoPlayer: 'Игрок не найден: &v1'
+
+# Etc
+Etc_Barrel: Бочка
+Etc_Page: Страница
+Etc_Usage: 'Использование:'
+Etc_SealingTable: Стол закупорки напитков.
+Etc_NewRelease: '&rДоступно новое обновление BreweryX! &2&v1 &r-> &2&v2&r Ссылка&7:
+  &2&v3'
+
+# Help
+Help_Copy: '&6/brew copy [Quantity]&9 Копирует зелье в твоей руке'
+Help_Create: '&6/brew create <Recipe> [Quality] [Player] &9Создаёт напиток с определённым
+  качеством (1-10)'
+Help_Give: '&6/brew give <Recipe> [Quality] [Player] &9Доп. команда для /brew create'
+Help_Delete: '&6/brew delete &9Удаляет зелье в твоей руке'
+Help_Help: '&6/brew help [Page] &9Показывает определённую страницу помощи'
+Help_Info: '&6/brew info&9 Показывает твоё текущее опьянение и качество'
+Help_InfoOther: '&6/brew info [Player]&9 показывает текущее опьянение и качество [Player]'
+Help_Reload: '&6/brew reload &9Перезагружает конфиг'
+Help_Configname: '&6/brew ItemName &9Показывает название предмета в руке для конфига'
+Help_Static: '&6/brew static &9 Сделать напиток статичным -> Не будет стареть, не
+  будет дистиллироваться'
+Help_Set: '&6/brew set <Player> <%Drunkeness> [Quality] &9Даёт опьянение (и качество)
+  игроку'
+Help_UnLabel: '&6/brew unlabel &9Скрывает некоторые детали описания напитка'
+Help_Seal: '&6/brew seal &9Закупоривает напиток для продажи'
+Help_Wakeup: '&6/brew wakeup list <Page>&9 Список всех точек пробуждения'
+Help_WakeupAdd: '&6/brew wakeup add &9Добавляет точку пробуждения'
+Help_WakeupCheck: '&6/brew wakeup check &9Телепортируется на все точки пробуждения'
+Help_WakeupCheckSpecific: '&6/brew wakeup check <id> &9Телепортация в точку пробуждения
+  с айди <id>'
+Help_WakeupList: '&6/brew wakeup list <Page> [World]&9 Список всех точек пробуждения
+  в <world>'
+Help_WakeupRemove: '&6/brew wakeup remove <id> &9Удаление всех точек пробуждения с
+  айди <id>'
+Help_Puke: '&6/brew puke [Player] [Amount] &9Заставляет тебя или [Player] сблевать'
+Help_Drink: '&6/brew drink <Recipe> [Quality] [Player] &9Симулирует, будто [Player]
+  выпил Напиток'
+
+# Perms
+Perms_NoBarrelCreate: '&cУ тебя нет прав на создание бочек!'
+Perms_NoBigBarrelCreate: '&cУ тебя нет прав на создание больших бочек!'
+Perms_NoCauldronFill: '&cУ тебя нет прав на пополнение бутылок из этого котла!'
+Perms_NoCauldronInsert: '&cУ тебя нет прав на добавление ингредиентов в котёл!'
+Perms_NoSmallBarrelCreate: '&cУ тебя нет прав на создание маленьких бочек!'
+
+# Player
+Player_BarrelCreated: Бочка создана
+Player_BarrelFull: '&cВ бочке нет места.'
+Player_CantDrink: Ты не можешь выпить больше.
+Player_CauldronInfo1: Котёл варит уже &v1 минут.
+Player_CauldronInfo2: Котёл только начал варить.
+Player_DrunkPassOut: Ты перепил и вырубился.
+Player_LoginDeny: Твой персонаж выпил слишком много и не может зайти на сервер!
+Player_LoginDenyLong: Твой персонаж перепил и вырубился. Попробуй через 10 минут!
+Player_TriedToSay: '&v1 попытался сказать: &0&v2'
+Player_Wake: Охх! Я не помню, как оказался здесь...
+Player_WakeAlreadyDeleted: '&cТочка пробуждения с айди: &6&v1 &cуже была удалена!'
+Player_WakeCancel: '&6Проверка Точки Пробуждения была отменена'
+Player_WakeCreated: '&aТочка пробуждения под номером: &6&v1 &aуспешно создана!'
+Player_WakeDeleted: '&aТочка Пробуждения под номером: &6&v1 &aбыла удалена!'
+Player_WakeFilled: '&cТочка Пробуждения под номером: &6&v1&c в точку &6&v2 &v3, &v4,
+  &v5&c заполнена блоками!'
+Player_WakeHint1: 'Для следующей точки пробуждения: Ударь кулаком в воздух'
+Player_WakeHint2: 'Для отмены: &9/brew wakeup cancel'
+Player_WakeLast: '&aЭто была последняя точка пробуждения'
+Player_WakeNoCheck: '&cНет активных проверок Точек Пробуждения'
+Player_WakeNoPoints: '&cЗдесь нет Точки Пробуждения!'
+Player_WakeNotExist: '&cТочка Пробуждения под номером: &6&v1 &cне существует!'
+Player_WakeTeleport: 'Телепорт на Точку Пробуждения под номером: &6&v1&f по координатам:
+  &6&v2 &v3, &v4, &v5'
+Player_ShopSealBrew: '&eНапиток должен быть запечатан перед продажей'
+Player_Drunkeness: Пьянство
+Player_Hangover: Твое похмелье
+

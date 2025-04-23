@@ -1,0 +1,333 @@
+######## created by samus2002 #########
+
+shaman_scepter:
+  Id: stone_sword
+  Display: "<gradient:#8df229:#fab712:#8df229>Scepter of Shaman"
+  Model: 2015
+  Lore:
+  - '<gradient:#8df229:#fab712:#8df229>The scepter of a Shaman'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Light_Beam} @self ~onSwing
+  - skill{s=Heal_Beam} @self ~onUse
+  - skill{s=Totem_Form} @self ~onUse
+  - skill{s=Healing_Totem} @self ~onCrouch
+  - skill{s=Ancestral_Power} @self ~onSwing
+  - skill{s=Self_Recovery} @self ~onTimer:10
+  
+shaman_scepter_shiny:
+  Id: stone_sword
+  Display: "<gradient:#8df229:#fffc81:#8df229>Shiny Scepter of Shaman"
+  Model: 2016
+  Lore:
+  - '<gradient:#8df229:#fffc81:#8df229>The scepter of a Shaman'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1
+  Skills:
+  - skill{s=Light_Beam} @self ~onSwing
+  - skill{s=Heal_Beam} @self ~onUse
+  - skill{s=Totem_Form} @self ~onUse
+  - skill{s=Healing_Totem} @self ~onCrouch
+  - skill{s=Ancestral_Power} @self ~onSwing
+  - skill{s=Self_Recovery} @self ~onTimer:10
+  
+ancestral_beam_1:
+  Id: paper
+  Display: "&2"
+  Model: 2135
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_2:
+  Id: paper
+  Display: "&2"
+  Model: 2136
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_3:
+  Id: paper
+  Display: "&2"
+  Model: 2137
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_4:
+  Id: paper
+  Display: "&2"
+  Model: 2138
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_5:
+  Id: paper
+  Display: "&2"
+  Model: 2139
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_6:
+  Id: paper
+  Display: "&2"
+  Model: 2140
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_7:
+  Id: paper
+  Display: "&2"
+  Model: 2141
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_8:
+  Id: paper
+  Display: "&2"
+  Model: 2142
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_9:
+  Id: paper
+  Display: "&2"
+  Model: 2143
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_1:
+  Id: paper
+  Display: "&2"
+  Model: 2144
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_2:
+  Id: paper
+  Display: "&2"
+  Model: 2145
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_3:
+  Id: paper
+  Display: "&2"
+  Model: 2146
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_4:
+  Id: paper
+  Display: "&2"
+  Model: 2147
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_5:
+  Id: paper
+  Display: "&2"
+  Model: 2148
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_6:
+  Id: paper
+  Display: "&2"
+  Model: 2149
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_7:
+  Id: paper
+  Display: "&2"
+  Model: 2150
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_8:
+  Id: paper
+  Display: "&2"
+  Model: 2151
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_circle_9:
+  Id: paper
+  Display: "&2"
+  Model: 2152
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_1:
+  Id: paper
+  Display: "&2"
+  Model: 2153
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_2:
+  Id: paper
+  Display: "&2"
+  Model: 2154
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_3:
+  Id: paper
+  Display: "&2"
+  Model: 2155
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_4:
+  Id: paper
+  Display: "&2"
+  Model: 2156
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_5:
+  Id: paper
+  Display: "&2"
+  Model: 2157
+  Hide:
+  - ATTRIBUTES
+  
+heal_beam_6:
+  Id: paper
+  Display: "&2"
+  Model: 2158
+  Hide:
+  - ATTRIBUTES
+
+light_beam_1:
+  Id: paper
+  Display: "&2"
+  Model: 2159
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_2:
+  Id: paper
+  Display: "&2"
+  Model: 2160
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_3:
+  Id: paper
+  Display: "&2"
+  Model: 2161
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_4:
+  Id: paper
+  Display: "&2"
+  Model: 2162
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_5:
+  Id: paper
+  Display: "&2"
+  Model: 2163
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_6:
+  Id: paper
+  Display: "&2"
+  Model: 2164
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_1:
+  Id: paper
+  Display: "&2"
+  Model: 2165
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_2:
+  Id: paper
+  Display: "&2"
+  Model: 2166
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_3:
+  Id: paper
+  Display: "&2"
+  Model: 2167
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_4:
+  Id: paper
+  Display: "&2"
+  Model: 2168
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_5:
+  Id: paper
+  Display: "&2"
+  Model: 2169
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_6:
+  Id: paper
+  Display: "&2"
+  Model: 2170
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_7:
+  Id: paper
+  Display: "&2"
+  Model: 2171
+  Hide:
+  - ATTRIBUTES
+  
+totem_wind:
+  Id: paper
+  Display: "&2"
+  Model: 2172
+  Hide:
+  - ATTRIBUTES
+  
+totem_fire:
+  Id: paper
+  Display: "&2"
+  Model: 2173
+  Hide:
+  - ATTRIBUTES
+  
+totem_healing:
+  Id: paper
+  Display: "&2"
+  Model: 2174
+  Hide:
+  - ATTRIBUTES
+  
+solar_beam_8:
+  Id: paper
+  Display: "&2"
+  Model: 2175
+  Hide:
+  - ATTRIBUTES
+  
+ancestral_beam_10:
+  Id: paper
+  Display: "&2"
+  Model: 2176
+  Hide:
+  - ATTRIBUTES

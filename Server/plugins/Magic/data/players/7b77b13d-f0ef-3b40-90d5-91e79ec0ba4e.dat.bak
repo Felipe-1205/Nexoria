@@ -1,0 +1,33 @@
+id: 7b77b13d-f0ef-3b40-90d5-91e79ec0ba4e
+name: RIP_DARING
+created: 1739817400560
+updated: 1739823084178
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: -29.38118572366147,63.0,-332.80850943659203,principal,17.381226,-19.049973
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties: {}
+classes:
+  caster: {}
+  mage:
+    effect_color: 428bcd2c87e,a82d68289bbc,205f5932926e
+    mana_timestamp: 1739823084037
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 30.0

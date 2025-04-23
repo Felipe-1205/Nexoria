@@ -1,0 +1,96 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: Endless_Abyss
+  UUID: b7c32ec0-4282-35b2-a76f-163fd7442b2e
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739855726940
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 3.0
+      y: 80.0
+      z: -7.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739855726940
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739855929514
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -23.0
+      y: 82.0
+      z: -75.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739855929514
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856093232
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -1.0
+      y: 68.0
+      z: -110.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856093232
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856129823
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 12.0
+      y: 79.0
+      z: -134.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856129823
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856623539
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -24.0
+      y: 57.0
+      z: -257.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856623539
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856696664
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -31.0
+      y: 79.0
+      z: -199.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856696664
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856799824
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 6.0
+      y: 59.0
+      z: -377.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856799824
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739856939129
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -8.0
+      y: 60.0
+      z: -436.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739856939129
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1739857033875
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 31.0
+      y: 70.0
+      z: -220.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1739857033875
+Finished: true

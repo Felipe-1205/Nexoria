@@ -1,0 +1,223 @@
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                      Mensajes                        | #
+# +------------------------------------------------------+ #
+# ###########################################################
+
+# Prefijo delante de todos los mensajes del plugin. '' para dejarlo en blanco.
+prefix: '&7[&aHaven&bBags&7] &r'
+
+# Mensaje enviado si el comando tiene argumentos faltantes.
+malformed-command: '&cComando desconocido, ¿te faltan algunos parámetros?'
+
+# Mensaje enviado si la función específica del comando está deshabilitada.
+feature-disabled: '&cLo siento, esta función está deshabilitada.'
+
+# ## Jugador ###
+
+# Mensaje enviado al jugador si el contenido de su bolsa no se carga.
+bag-load-error: '&cError al cargar la bolsa.\nPor favor, notifica al personal.'
+
+# Mensaje enviado al jugador cuando se renombra una bolsa.
+bag-rename: '&fBolsa renombrada a %name%.'
+
+# Mensaje enviado al jugador si elimina el nombre personalizado de una bolsa.
+bag-rename-reset: '&fNombre de la bolsa restablecido.'
+
+# Mensaje enviado si intenta renombrar un ítem que no es una bolsa.
+bag-cannot-rename: '&cSolo puedes renombrar bolsas.'
+
+# Mensaje enviado si intenta abrir una bolsa de otro jugador o sin permiso.
+bag-cannot-use: '&cNo puedes usar esta bolsa.'
+
+# Mensaje enviado si la bolsa no existe en el servidor.
+bag-does-not-exist: '&cEsta bolsa no existe.'
+
+# Mensaje enviado si el inventario está lleno al cerrar una bolsa.
+inventory-full: '&cInventario lleno, ¡dejando la bolsa en el suelo!'
+
+# Mensaje enviado si la bolsa ya está abierta.
+bag-already-open: '&c¡Esta bolsa ya está abierta!'
+
+# ## Admin ###
+
+# Mensaje enviado al intentar buscar un jugador que no existe.
+player-no-exist: '&cNo se encontraron bolsas para este jugador.'
+
+# Mensaje enviado si '/bags restore' no encuentra una bolsa con un UUID específico.
+bag-not-found: '&cNo se encontró una bolsa con ese UUID.'
+
+# Si no se da un tamaño.
+bag-ownerless-no-size: '&cUna bolsa sin dueño debe tener un tamaño.'
+
+# Mensaje enviado al jugador al recibir una bolsa.
+bag-given: '&a¡Te han dado una %name%!'
+
+# Si el tamaño contiene algo que no son números.
+number-conversion-error: '&cNo se puede convertir ''%value%'' en un número.'
+
+# Si el jugador buscado con '/bags restore <jugador>' no tiene datos de bolsa.
+player-no-bags: '&cEl jugador ''%player%'' no tiene bolsas.'
+
+# Bolsas encontradas para el jugador usando '/bags restore <jugador>'.
+bags-of: 'Bolsas de %player%:'
+
+# Mensaje enviado al hacer clic en una bolsa dentro de otra bolsa.
+bag-in-bag-error: '&cLas bolsas no pueden ponerse dentro de otras bolsas.'
+
+# Mensaje enviado al hacer clic en una bolsa dentro de una caja de shulker.
+bag-in-shulker-error: '&cLas bolsas no pueden ponerse dentro de cajas de shulker.'
+
+# Mensaje enviado si el objeto está en la lista negra.
+item-blacklisted: '&cLo siento, este objeto no puede ir dentro de las bolsas.'
+
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                    Bag GUI                           | #
+# +------------------------------------------------------+ #
+# ###########################################################
+
+# Dejar en blanco para usar el nombre de la bolsa.
+bag-inventory-title: ''
+
+# ¿El título del inventario de la bolsa debe variar según el tamaño?
+per-size-title: false
+
+bag-inventory-title-9: ''
+bag-inventory-title-18: ''
+bag-inventory-title-27: ''
+bag-inventory-title-36: ''
+bag-inventory-title-45: ''
+bag-inventory-title-54: ''
+
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                    Bag Item                          | #
+# +------------------------------------------------------+ #
+# ###########################################################
+
+# Nombre cuando una bolsa sin dueño se vincula.
+bag-bound-name: '&b&lBolsa de %luckperms_prefix%%essentials_nickname%%luckperms_suffix%'
+
+# Nombre de la bolsa sin vincular.
+bag-unbound-name: '&b&lBolsa sin vincular'
+
+# Nombre de una bolsa sin dueño sin usar.
+bag-ownerless-unused: '&b&lBolsa sin usar'
+
+# Nombre de una bolsa sin dueño ya usada.
+bag-ownerless-used: '&b&lBolsa'
+
+# ## Lore ###
+
+# Descripción de la bolsa.
+bag-lore:
+- '&8ʀɪɢʜᴛ-ᴄʟɪᴄᴋ ᴘᴀʀᴀ ᴀʙʀɪʀ'
+
+# Información adicional de la bolsa.
+bag-lore-add:
+- '%bound-to%'
+- '%bag-size%'
+- '%bag-auto-pickup%'
+- '%bag-weight%'
+
+# A quién está vinculada la bolsa, si está vinculada.
+bound-to: '&7Vinculada a %owner%'
+
+# Tamaño de la bolsa en espacios.
+bag-size: '&7Tamaño: %size%'
+
+# ¿Mostrar el contenido en la descripción?
+show-bag-content: true
+
+# Vista previa de contenido.
+bag-content-title: '&7Contenido:'
+
+# Cuántos objetos se deben mostrar en el tooltip.
+bag-content-preview-size: 5
+
+# Entrada de la vista previa de contenido.
+bag-content-item: '&7%item%'
+
+# Entrada de la vista previa de contenido con cantidad.
+bag-content-item-amount: '&7%item% &7x%amount%'
+
+# Si el contenido supera el número de bag-content-preview-size.
+bag-content-and-more: '  &7Y más...'
+
+# Si la bolsa tiene auto-recolección activada.
+bag-auto-pickup: '&7Auto Recolección: %filter%'
+
+# ###########################################################
+# +------------------------------------------------------+ #
+# |                    Admin GUI                         | #
+# +------------------------------------------------------+ #
+# ###########################################################
+
+# Mensaje cuando el jugador tiene demasiadas bolsas.
+too-many-bags: '&cEste jugador tiene más de 53 bolsas.\nPor favor, restaura sus bolsas
+  a través de &e/bags restore&c!'
+
+# Títulos de páginas
+gui-main: '&aHaven&bBags &rGUI'
+gui-create: '&aHaven&bBags &rCreación GUI'
+gui-restore: '&aHaven&bBags &rRestauración GUI'
+gui-preview: '&aHaven&bBags &rVista previa GUI'
+gui-delete: '&aHaven&bBags &cEliminación GUI'
+gui-confirm: '&aHaven&bBags &4&lBORRAR&r esta bolsa?'
+
+# ## Botones de GUI ###
+main-create: '&aCrear Bolsa'
+main-create-lore:
+- '&7Crea bolsas fácilmente.'
+
+main-restore: '&bRestaurar Bolsa'
+main-restore-lore:
+- '&7Restaura bolsas de jugadores en línea.'
+- ''
+- '&7Solo se restaurará la bolsa básica con su contenido.'
+- '&7Cosas como el peso y el filtro de auto-recolección no se restaurarán.'
+
+main-preview: '&dVista Previa de Bolsa'
+main-preview-lore:
+- '&7Vista previa de bolsas de jugadores en línea.'
+- '&7Puedes tomar objetos de la vista previa,'
+- '&7sin afectar la bolsa real.'
+
+main-delete: '&4Eliminar Bolsa'
+main-delete-lore:
+- '&7Elimina bolsas de jugadores en línea.'
+- '&c&oLas bolsas eliminadas no se pueden restaurar!'
+
+confirm-cancel: '&4Cancelar'
+confirm-cancel-lore:
+- '&7Cancelar la eliminación de esta bolsa.'
+
+confirm-confirm: '&aConfirmar'
+confirm-confirm-lore:
+- '&7Confirma la eliminación de esta bolsa.'
+- '&7Esto no se puede deshacer.'
+
+main-info: '&eInformación'
+main-info-lore:
+- '&7También puedes restaurar bolsas de jugadores fuera de línea,'
+- '&7usando &e/bags gui restore <player-uuid>&7.'
+
+return: '&eRegresar'
+return-lore:
+- '&7Regresar.'
+
+# Indicador de página
+page: '&fPágina: %page%'
+
+# Siguiente página
+next-page: '&aSiguiente Página'
+
+# Página anterior
+prev-page: '&cPágina Anterior'
+bag-trusted: '&7De confianza: %trusted%'
+max-bags: '&cLo siento, no puedes hacer más bolsas.'
+player-trusted: '&aAdded %trusted% as trusted.'
+player-untrusted: '&eRemoved %trusted% as trusted.'
+quiver-no-space: '&cNo space available in inventory, cannot draw arrow!'
+

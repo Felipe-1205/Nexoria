@@ -1,0 +1,186 @@
+#######################################################################################
+##               | ___ \             (_)             |  \/  |                        ##
+##               | |_/ /  ___ __   __ _ __   __  ___ | .  . |  ___                   ##
+##               |    /  / _ \\ \ / /| |\ \ / / / _ \| |\/| | / _ \                  ##
+##               | |\ \ |  __/ \ V / | | \ V / |  __/| |  | ||  __/                  ##
+##               \_| \_| \___|  \_/  |_|  \_/   \___|\_|  |_/ \___|                  ##
+#######################################################################################
+
+victim_messages:
+  downed: '&#ff3333¡Has sido gravemente herido!'
+  downed_for_player: '&#cc0000<enemy> &#ff3333te ha herido gravemente.'
+  start_reliving: '&#00e6e6<reviver> &#b3ffffestá reviviéndote.'
+  stop_reliving: '&#808080<reviver> &#a6a6a6ha dejado de revivirte.'
+  revived: '&#80ff80¡Has sido revivido!'
+  revived_for_player: '&#80ff80Has sido revivido por &#53ff1a<reviver>&#80ff80!'
+
+enemy_messages:
+  downed: '&#ff3333Has herido gravemente a &#cc0000<victim>'
+  
+reviver_messages:
+  start_reliving: '&#b3ffffEstás reviviendo a &#00e6e6<victim>'
+  stop_reliving: '&#a6a6a6Dejaste de revivir a &#808080<victim>'
+  sucess_reliving: '&#80ff80Has revivido exitosamente a &#53ff1a<victim>'
+
+command_messages:
+  downed: '&#ff3333Has herido gravemente a &#cc0000<victim>'
+  revived: '&#80ff80Has revivido exitosamente a &#53ff1a<victim>'
+  kill: '&#ff3333Has matado a &#cc0000<victim>'
+  dont_permission: '&#ff3333No tienes permiso'
+  blocked_command: '&#ff3333¡Estás demasiado herido para usar este comando!'
+  player_no_downed: '&#ff3333¡Este jugador no está herido!'
+  player_no_online: '&#ff3333¡Este jugador no está en línea!'
+
+plugin_messages:
+  config_reloaded: '&#ffbf00¡Configuración recargada exitosamente!'
+
+disable_death_message: false
+
+status_messages:
+  waiting: 'Esperando'
+  reliving: 'Revivir'
+  no_downed: 'No heridos'
+  
+time_messages:
+  second: 'segundo:segundos'
+  minute: 'minuto:minutos'
+  hour: 'hora:horas'
+
+action_bar_messages:
+  enabled: true
+  waiting_text: '&#ffbf00❣: &#ffff99<invulnerability> &8&l┃ &#cccccc&o<status>... &8&l┃ &#cc0000☠:&#ff3333 <death_delay_time>'
+  reliving_text: '&#ffbf00❣: &#ffff99<invulnerability> &8&l┃ &#b3ffff&o<status>... &8&l┃ &#cc0000☠:&#ff3333 <death_delay_time> <bar1>'
+  auto_reviving: '<bar1>'
+  receives: 'downed,reviver,picker'
+  
+suicide_bar_message:
+  enabled: true
+  text: '&#ff3333Muerte en <suicideBar>'
+  
+
+scoreboard_messages:
+  enabled: true
+  receives: 'downed,reviver,picker'
+  #primera línea es el título
+  waiting_score_board:
+    - '&#b3ffff&oEsperando...'
+    - ''
+    - '&#cc0000☠&#ff3333 » <death_delay_time>'
+    - ''
+    - '&#ffbf00❣&#ffff99 » <invulnerability_time>'
+    - ''
+    - '<bar1>'
+      
+  reliving_score_board:
+    - '&#b3ffff&oRevivir...'
+    - ''
+    - '&#cc0000☠&#ff3333 » <death_delay_time>'
+    - ''
+    - '&#ffbf00❣&#ffff99 » <invulnerability_time>'
+    - ''
+    - '<bar1>'
+    - ''
+    - '&#b3ffffRevivido por: &#00e6e6<reviver>'
+
+#Colores válidos para BossBar: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+#Estilos válidos para BossBar: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+boss_bar_messages:
+  enable: false
+  receives: 'downed,reviver,picker'
+  waiting_boss_bar:
+    progress_type: BossBarDeathDelay
+    text: '&#ff3333Esperando revivir...'
+    color: red
+    style: solid
+    
+  reliving_boss_bar:
+    progress_type: BossBarRelivingCount
+    text: '&#b3ffffRevivir para &#00e6e6<reviver>'
+    color: blue
+    style: solid
+
+#Puedes crear barras de carga con los caracteres y símbolos que más te gusten, cambiar su color y más. Usa tantos como desees.
+#Modos: RelivingCount, DeathDelay, SuicideCount
+bar_messages:
+  bar1:
+    first_char: '▌'
+    second_char: '▌'
+    first_color: '&#66ff33'
+    second_color: '&7'
+    amount: 20
+    bar: '&8&l&n|<chars>&8&l&n|'
+    holder: '<bar1>'
+    bar_mode: RelivingCount
+    
+  example_board:
+    first_char: '《'
+    second_char: '》'
+    first_color: '&a'
+    second_color: '&7'
+    amount: 15
+    bar: '&8&l&n『<chars>&8&l&n』'
+    holder: '<bar2>'
+    bar_mode: RelivingCount
+    
+  suicide_bar:
+    first_char: '☠'
+    second_char: '☠'
+    first_color: '&#ff3333'
+    second_color: '&7'
+    amount: 10
+    bar: '&#cc0000&l&n『<chars>&#cc0000&l&n』'
+    holder: '<suicideBar>'
+    bar_mode: SuicideCount
+
+#Mensajes enviados en el título y subtítulo de la pantalla
+title_messages:
+  enabled: false
+  receives: 'downed,reviver,picker'
+  waiting_title: '&#ff3333&oEsperando revivir...'
+  waiting_subtitle: '&#cc0000Muerte en <death_delay_time>'
+  reliving_title: '&#b3ffffRevivir para &#00e6e6<reviver>'
+  reliving_subtitle: '<bar1>'
+  
+price_messages:
+  no_has_pay: '&#ff3333¡Necesitas &#cc0000<amount> <type> &#ff3333para hacer esto!'
+
+zone_messages:
+  arg_error: '&#ff3333[Error] &7Usa &#ff3333/rm zone help &7para obtener ayuda.'
+  help_list_top: '&#ffbf00----Zonas de Revivir----'
+  help_list_format: '&f- &e<name>'
+  help_item: '&#ffbf00/rm zone item &e- &7Obtiene el objeto para marcar la zona.'
+  help_create: '&#ffbf00/rm zone create &#ffd24d<name> &e- &7Crea una zona.'
+  help_list: '&#ffbf00/rm zone list &e- &7Lista de zonas creadas.'
+  help_remove: '&#ffbf00/rm zone remove &#ffd24d<name> &e- &7Elimina una zona.'
+  help_speed: '&#ffbf00/rm zone speed &#ffd24d<name> <value> &e- &7Cambia la velocidad de revivir.'
+  command_item: '&#ffbf00Clic izquierdo: seleccionar pos #1; Clic derecho: seleccionar pos #2'
+  pos1: '&#ff3333Primera posición establecida en &#cc0000<pos>&#ff3333.'
+  pos2: '&#ff3333Segunda posición establecida en &#cc0000<pos>&#ff3333.'
+  no_pos1: '&#ff3333No has establecido la primera posición'
+  no_pos2: '&#ff3333No has establecido la segunda posición'
+  need_mark: '&#ff3333Debes marcar la zona con &#cc0000/rm item'
+  already_exist: '&#ff3333Ya existe una zona con este nombre'
+  no_exist: '&#ff3333No existe ninguna zona con ese nombre'
+  different_world: '&#ff3333Las posiciones están en mundos diferentes'
+  only_player: '&#ff3333Solo los jugadores pueden usar este comando'
+  sucess_created: '&#ff3333La zona ha sido creada con éxito'
+  removed_zone: '&#ff3333La zona ha sido eliminada'
+  no_number: '&#ff3333El valor ingresado no es un número'
+  succes_change_speed: '&#80ff80Velocidad de revivir cambiada con éxito'
+  particle_enable: '&#80ff80¡Las partículas han sido activadas!'
+  particle_disable: '&#ff3333¡Las partículas han sido desactivadas!'
+  particle_changed: '&#80ff80¡El color de las partículas ha sido cambiado!'
+  particle_type_changed: '&#80ff80¡El tipo de partículas ha sido cambiado!'
+
+gps_messages:
+  gui_title: "Jugadores Heridos"
+  
+help_messaages:
+  revive: '&#ffbf00/<label> revive &#ffd24d<player> &e- &7revivir jugador herido.'
+  down: '&#ffbf00/<label> down &#ffd24d<player> &e- &7herir jugador.'
+  kill: '&#ffbf00/<label> kill &#ffd24d<player> &e- &7matar jugador.'
+  reload: '&#ffbf00/<label> reload &e- &7recargar todas las configuraciones.'
+  suicide: '&#ffbf00/<label> suicide &e- &7suicidarte instantáneamente.'
+  setprice: '&#ffbf00/<label> setprice revive &#ffd24d<item/xp/money> <amount> &e- &7precio para revivir.'
+  zone: '&#ffbf00/<label> zone help &e- &7Lista de comandos para zonas de revivir.'
+  verify: '&#ffbf00/<label> verify &e- &7Códigos de verificación premium.'

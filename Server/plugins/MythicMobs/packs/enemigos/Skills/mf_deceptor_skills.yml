@@ -1,0 +1,397 @@
+
+
+mf_deceptor_spawner:
+  Cooldown: 999
+  Skills:
+  - gcd{ticks=1000} @self  
+  - summon{t=mf_deceptor} @self
+  - remove @self
+
+
+mf_deceptor_step:
+  Skills:
+  - sound{s=entity.spider.step;p=<random.float.1.5to1.7>;v=0.8} @self
+
+
+mf_deceptor_bite:
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to6} true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=bite} @self
+  - setspeed{s=0.001} @self
+  - sound{s=entity.evoker_fangs.attack;p=1.8;v=1.4} @self
+  - delay 3
+  - sound{s=entity.spider.ambient;p=1.3;v=1.4} @self
+  - setspeed{s=3.4} @self
+  - delay 3
+  - skill{s=mf_deceptor_bite-1} @forward{a=2}
+  - setAI{ai=false} @self
+  - delay 7
+  - setAI{ai=true} @self
+  - setspeed{s=1.38} @self
+
+mf_deceptor_bite-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#e29a55;amount=20;hs=2.7;vs=0.3;y=1.2;size=1} 
+  - totem{ch=1;onStart=mf_deceptor_bite-1-2;int=1;hR=3;md=1} 
+  
+mf_deceptor_bite-1-2:
+  Skills: 
+  - damage{a=8;pi=true;pk=true} @PlayersNearOrigin{r=3}  
+  - throw{velocity=2;velocityY=1.4} @PlayersNearOrigin{r=3} 
+  
+
+
+mf_deceptor_leg_attack:
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to6} true
+  Skills:
+  - gcd{ticks=23} @self
+  - state{s=leg_attack} @self
+  - setspeed{s=0.001} @self
+  - delay 3
+  - sound{s=entity.spider.ambient;p=1.3;v=1.4} @self
+  - setspeed{s=3.4} @self
+  - delay 3
+  - skill{s=mf_deceptor_leg_attack-1} @forward{a=2}
+  - sound{s=entity.player.attack.sweep;p=1.4;v=1.3} @self
+  - sound{s=entity.spider.ambient;p=2.3;v=1.4} @self
+  - setAI{ai=false} @self
+  - delay 12
+  - setAI{ai=true} @self
+  - setspeed{s=1.38} @self
+
+mf_deceptor_leg_attack-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#4c2e4a;amount=27;hs=1.7;vs=0.2;y=0.2;size=1} 
+  - totem{ch=1;onStart=mf_deceptor_leg_attack-1-2;int=1;hR=3;md=1} 
+  
+mf_deceptor_leg_attack-1-2:
+  Skills: 
+  - damage{a=8;pi=true;pk=true} @PlayersNearOrigin{r=3}  
+  - throw{velocity=2;velocityY=1.4} @PlayersNearOrigin{r=3} 
+  
+  
+mf_deceptor_web:
+  Cooldown: 20
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=6to16} true
+  Skills:
+  - gcd{ticks=50} @self
+  - state{s=web} @self
+  - setspeed{s=0.001} @self
+  - sound{s=block.sculk_shrieker.shriek;p=1.5;v=1.1} @self
+  - sound{s=entity.wither.ambient;p=2.5;v=1.3} @self
+  - delay 14
+  - setspeed{s=3.4} @self
+  - delay 3
+  - sound{s=entity.evoker.cast_spell;p=0.5;v=2} @self
+  - setAI{ai=false} @self
+  - delay 5
+  - skill{s=mf_deceptor_web-1} @selflocation{forwardoffset=-6}
+  - skill{s=mf_deceptor_web-1} @selflocation{forwardoffset=-10}
+  - skill{s=mf_deceptor_web_pull;repeat=9;repeatinterval=2} @PIR{r=200}
+  - delay 19
+  - delay 6
+  - setAI{ai=true} @self
+  - setspeed{s=1.38} @self
+  
+mf_deceptor_web-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#aea394;amount=27;hs=3.7;vs=0.2;y=0.2;size=1} 
+  - totem{ch=1;onStart=mf_deceptor_web-1-2;int=1;hR=3;md=1} 
+  
+mf_deceptor_web-1-2:
+  Skills: 
+  - Aura{auraName=mf_deceptor_web;duration=40;i=5} @PlayersNearOrigin{r=6}  
+  - potion{type=slow;duration=50;level=0;p=false;i=false} @PlayersNearOrigin{r=6}  
+  
+mf_deceptor_web_pull:
+  TargetConditions:
+  - hasaura{auraName=mf_deceptor_web} true
+  - hasaura{auraName=mf_deceptor_cantpull} false
+  Skills:
+  - pull{v=4.4} 
+  
+  
+mf_deceptor_shoot:
+  Cooldown: 20
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=4to30} true
+  Skills:
+  - gcd{ticks=50} @self
+  - state{s=shoot} @self
+  - setspeed{s=0.001} @self
+  - sound{s=block.sculk_shrieker.shriek;p=1.5;v=1.1} @self
+  - delay 9
+  - sound{s=entity.bat.takeoff;v=2;p=1.2} @self
+  - delay 13
+  - setspeed{s=1.38} @self
+  - projectile{ot=mf_deceptor_shoot_ot;oh=mf_deceptor_shoot_oh;i=1;v=34;sB=false;hp=true;hnp=false;syo=3.2} @target
+  - lunge{velocity=3.2;velocityY=0.2} @Forward{a=-20}
+  - delay 20
+  - setAI{ai=false} @self
+  - delay 4
+  - sound{s=entity.player.big_fall;p=0.6;v=3.4} @self
+  - delay 26
+  - setAI{ai=true} @self
+  - setspeed{s=1.38} @self
+
+  
+mf_deceptor_shoot_ot:
+  Skills:
+  - effect:particles{particle=reddust;color=#aea394;amount=8;hs=0.3;vs=0.3} @origin
+
+mf_deceptor_shoot_oh:
+  Skills:
+  - Aura{auraName=mf_deceptor_shoot_vfx;duration=20;i=5}
+  - stun{d=60;f=true} 
+  - potion{type=slow;duration=160;level=1;p=false;i=false}
+  - damage{a=6;pi=true;pk=true} 
+  - effect:particles{particle=reddust;color=#aea394;amount=20;hs=0.5;vs=0.5;s=0;y=0.4} @origin
+  - effect:particles{particle=block_crack;material=web;amount=8;hs=0.4;vs=0.4} @origin
+  - sound{s=entity.camel.saddle;v=2;p=0.7} @origin
+  
+  
+mf_deceptor_shoot_vfxsummon:
+  Cooldown: 5
+  TargetConditions:
+  - hasaura{auraName=mf_deceptor_shoot_vfx} true
+  Skills:
+  - summon{t=mf_deceptor_shoot_vfx} 
+  
+mf_deceptor_shoot_vfx_fire:
+  Cooldown: 0.5
+  Conditions:
+  - chance{chance=0.7} orElseCast mf_deceptor_egg_fire_fail
+  TriggerConditions:
+  - holding{m=flint_and_steel} true
+  Skills:
+  - summon{t=mf_deceptor_egg_fire} @self
+  - effect:particles{particle=reddust;color=#aea394;amount=50;hs=0.5;vs=0.5;s=0;y=1.4;size=1} @self
+  - effect:sound{s=item.firecharge.use;v=0.5;p=1} @self 
+  - delay 5
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @self 
+  - effect:sound{s=entity.turtle.egg_break;v=2;p=1.2} @self 
+  - remove @self
+  
+
+mf_deceptor_egg:
+  Cooldown: 34
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=5to30} true
+  - mobsInRadius{types=mf_deceptor_egg;amount=0to1;radius=300} true
+  Skills:
+  - gcd{ticks=45} @self
+  - state{s=egg} @self
+  - setspeed{s=0.001} @self
+  - sound{s=block.sculk_shrieker.shriek;p=1.2;v=1.1} @self
+  - delay 4
+  - summon{t=mf_deceptor_egg;a=1} @self
+  - delay 31
+  - setAI{ai=true} @self
+  - setspeed{s=1.38} @self
+
+
+mf_deceptor_egg_summon:
+  Cooldown: 44
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=40} @self
+  - state{s=summon} @self
+  - delay 14
+  - summon{t=mf_deceptor_minion;a="<random.2to4>";r=2} @self
+  
+  
+mf_deceptor_egg_poison:
+  Cooldown: 2
+  Conditions:
+  - offgcd
+  TriggerConditions:
+  - isPlayer true
+  Skills:
+  - effect:particles{particle=reddust;color=#5c8142;amount=90;hs=4.5;vs=2.5;s=0;y=1.4;size=2} @self
+  - potion{type=poison;duration=100;level=0;p=false;i=false} @PIR{r=6}
+  - damage{a=3;pi=true;pk=true} @PIR{r=6}
+  - sound{s=entity.squid.ambient;p=1.6;v=2.4} @self
+  
+mf_deceptor_egg_fire_fail:
+  Skills:
+  - effect:sound{s=item.shield.break;v=1;p=1.3} @self 
+  
+
+mf_deceptor_egg_fire:
+  Conditions:
+  - hastag{t=a1} false
+  - hastag{t=end} false
+  - chance{chance=0.9} orElseCast mf_deceptor_egg_fire_fail
+  TriggerConditions:
+  - holding{m=flint_and_steel} true
+  Skills:
+  - sound{s=entity.spider.hurt;p=1.;v=2.5} @self 
+  - state{s=damaged} @self
+  - summon{t=mf_deceptor_egg_fire} @self
+  - effect:particles{particle=reddust;color=#aea394;amount=40;hs=1.5;vs=2.5;s=0;y=1.4;size=1} @self
+  - effect:sound{s=item.firecharge.use;v=0.5;p=1} @self 
+  - delay 5
+  - changepart{m=mf_deceptor_egg;pid=egg;nm=mf_deceptor_egg_vfx;npid=a1} @self
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @self 
+  - effect:sound{s=entity.turtle.egg_break;v=2;p=0} @self 
+  - addtag{t=a1} @self
+  - addtag{t=end} @self
+  
+mf_deceptor_egg_fire_a1:
+  Cooldown: 1
+  Conditions:
+  - hastag{t=a1} true
+  - chance{chance=0.9} orElseCast mf_deceptor_egg_fire_fail
+  TriggerConditions:
+  - holding{m=flint_and_steel} true
+  Skills:
+  - sound{s=entity.spider.hurt;p=1.;v=2.5} @self 
+  - state{s=damaged} @self
+  - summon{t=mf_deceptor_egg_fire} @self
+  - effect:particles{particle=reddust;color=#aea394;amount=40;hs=1.5;vs=2.5;s=0;y=1.4;size=1} @self
+  - effect:sound{s=item.firecharge.use;v=0.5;p=1} @self 
+  - delay 5
+  - changepart{m=mf_deceptor_egg;pid=egg;nm=mf_deceptor_egg_vfx;npid=a1} @self
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @self 
+  - effect:sound{s=entity.turtle.egg_break;v=2;p=0} @self 
+  - addtag{t=a2} @self
+  - removetag{t=a1} @self
+
+mf_deceptor_egg_fire_a2:
+  Cooldown: 1
+  Conditions:
+  - hastag{t=a2} true
+  - chance{chance=0.9} orElseCast mf_deceptor_egg_fire_fail
+  TriggerConditions:
+  - holding{m=flint_and_steel} true
+  Skills:
+  - sound{s=entity.spider.hurt;p=1.;v=2.5} @self 
+  - state{s=damaged} @self
+  - summon{t=mf_deceptor_egg_fire} @self
+  - effect:particles{particle=reddust;color=#aea394;amount=40;hs=1.5;vs=2.5;s=0;y=1.4;size=1} @self
+  - effect:sound{s=item.firecharge.use;v=0.5;p=1} @self 
+  - delay 5
+  - changepart{m=mf_deceptor_egg;pid=egg;nm=mf_deceptor_egg_vfx;npid=a2} @self
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @self 
+  - effect:sound{s=entity.turtle.egg_break;v=2;p=0} @self 
+  - addtag{t=a3} @self
+  - removetag{t=a2} @self
+  
+
+mf_deceptor_egg_fire_a3:
+  Cooldown: 1
+  Conditions:
+  - hastag{t=a3} true
+  - chance{chance=0.8} orElseCast mf_deceptor_egg_fire_fail
+  TriggerConditions:
+  - holding{m=flint_and_steel} true
+  Skills:
+  - state{s=damaged} @self
+  - sound{s=entity.spider.death;p=1;v=3} @self 
+  - summon{t=mf_deceptor_egg_fire} @self
+  - effect:particles{particle=reddust;color=#aea394;amount=40;hs=1.5;vs=2.5;s=0;y=1.4;size=1} @self
+  - effect:sound{s=item.firecharge.use;v=0.5;p=1} @self 
+  - delay 5
+  - changepart{m=mf_deceptor_egg;pid=egg;nm=mf_deceptor_egg_vfx;npid=a3} @self
+  - effect:sound{s=block.fire.extinguish;v=1;p=0} @self 
+  - effect:sound{s=entity.turtle.egg_break;v=2;p=0} @self 
+  - suicide @self
+  
+mf_deceptor_minion_attack:
+  Cooldown: 0.5
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to6} true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=attack} @self
+  - delay 3  
+  - basedamage{m=1} @target 
+
+
+mf_deceptor_death_human_hide:
+  Skills:
+  - changepart{m=mf_deceptor;pid=waist;nm=mf_deceptor_death_vfx;npid=waist} @self
+  - changepart{m=mf_deceptor;pid=chest;nm=mf_deceptor_death_vfx;npid=chest} @self
+  - changepart{m=mf_deceptor;pid=head;nm=mf_deceptor_death_vfx;npid=head} @self
+  - changepart{m=mf_deceptor;pid=right_hand;nm=mf_deceptor_death_vfx;npid=right_hand} @self
+  - changepart{m=mf_deceptor;pid=left_hand;nm=mf_deceptor_death_vfx;npid=left_hand} @self
+  - changepart{m=mf_deceptor;pid=hair;nm=mf_deceptor_death_vfx;npid=hair} @self
+  
+mf_deceptor_death_human_show:
+  Skills:
+  - changepart{m=mf_deceptor;pid=waist;nm=mf_deceptor;npid=waist} @self
+  - changepart{m=mf_deceptor;pid=chest;nm=mf_deceptor;npid=chest} @self
+  - changepart{m=mf_deceptor;pid=head;nm=mf_deceptor;npid=head} @self
+  - changepart{m=mf_deceptor;pid=right_hand;nm=mf_deceptor;npid=right_hand} @self
+  - changepart{m=mf_deceptor;pid=left_hand;nm=mf_deceptor;npid=left_hand} @self
+  - changepart{m=mf_deceptor;pid=hair;nm=mf_deceptor;npid=hair} @self
+  
+mf_deceptor_death_human_hide_all:
+  Skills:
+  - partvisibility{m=mf_deceptor;p=waist;v=false} @self
+  - partvisibility{m=mf_deceptor;p=chest;v=false} @self
+  - partvisibility{m=mf_deceptor;p=head;v=false} @self
+  - partvisibility{m=mf_deceptor;p=right_hand;v=false} @self
+  - partvisibility{m=mf_deceptor;p=left_hand;v=false} @self
+  - partvisibility{m=mf_deceptor;p=hair;v=false} @self
+  - effect:sound{s=block.fire.extinguish;v=2;p=0} @ModelPart{m=mf_deceptor;p=chest}
+  - effect:particles{particle=cloud;a=40;hs=1.4;vs=1.4;s=0.2} @ModelPart{m=mf_deceptor;p=chest}
+  - changepart{m=mf_deceptor;pid=main;nm=mf_deceptor_death_vfx;npid=main} @self
+  - changepart{m=mf_deceptor;pid=spi_wist;nm=mf_deceptor_death_vfx;npid=spi_wist} @self
+  - changepart{m=mf_deceptor;pid=spi_chest;nm=mf_deceptor_death_vfx;npid=spi_chest} @self
+  - changepart{m=mf_deceptor;pid=spi_head;nm=mf_deceptor_death_vfx;npid=spi_head} @self
+  - changepart{m=mf_deceptor;pid=right_fang;nm=mf_deceptor_death_vfx;npid=right_fang} @self
+  - changepart{m=mf_deceptor;pid=left_fang;nm=mf_deceptor_death_vfx;npid=left_fang} @self
+  - changepart{m=mf_deceptor;pid=right_leg;nm=mf_deceptor_death_vfx;npid=right_leg} @self
+  - changepart{m=mf_deceptor;pid=right_leg2;nm=mf_deceptor_death_vfx;npid=right_leg2} @self
+  - changepart{m=mf_deceptor;pid=right_leg3;nm=mf_deceptor_death_vfx;npid=right_leg3} @self
+  - changepart{m=mf_deceptor;pid=left_leg;nm=mf_deceptor_death_vfx;npid=left_leg} @self
+  - changepart{m=mf_deceptor;pid=left_leg2;nm=mf_deceptor_death_vfx;npid=left_leg2} @self
+  - changepart{m=mf_deceptor;pid=left_leg3;nm=mf_deceptor_death_vfx;npid=left_leg3} @self
+  
+mf_deceptor_death_death_end:
+  Skills:
+  - effect:particles{particle=block_crack;material=stone;amount=200;hs=3.7;vs=3.6;y=2.4} @ModelPart{m=mf_deceptor;p=spi_wist}
+  - effect:particles{particle=block_crack;material=stone;amount=30;hs=0.4;vs=0.4;y=0.1} @ModelPart{m=mf_deceptor;p=spi_head}
+  - sound{s=block.stone.break;p="1";v=5.5} @ModelPart{m=mf_deceptor;p=spi_wist}
+  
+  
+mf_deceptor_death_headfall:
+  Skills:
+  - sound{s=entity.player.big_fall;p=0.9;v=1.4} @ModelPart{m=mf_deceptor;p=spi_head}
+  
+mf_deceptor_spawn_sound:
+  Skills:
+  - effect:sound{s=item.armor.equip_leather;v=2;p=0.7} @self
+  
+  
+
+mf_deceptor_spawn_sound_1:
+  Skills:
+  - effect:sound{s=item.crossbow.loading_middle;v=2;p=1.1} @self
+  
+
+mf_deceptor_spawn_sound_2:
+  Skills:
+  - effect:sound{s=item.crossbow.loading_start;v=2.4;p=1.1} @self
+
+# 2454WYEJA

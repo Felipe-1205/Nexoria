@@ -1,16 +1,3 @@
 # Ignorar archivos .jar y .zip
 *.jar
 *.zip
-
-# Reportes de errores
-Server/crash-reports/
-
-# Configs sensibles
-Server/whitelist.json
-Server/ops.json
-Server/banned-ips.json
-Server/banned-players.json
-
-# Libs
-Server/libraries/
-Server/bundler/libraries/

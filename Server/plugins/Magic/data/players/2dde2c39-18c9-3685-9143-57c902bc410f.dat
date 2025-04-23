@@ -1,0 +1,34 @@
+id: 2dde2c39-18c9-3685-9143-57c902bc410f
+name: m00nless_
+created: 1739652486247
+updated: 1740003932335
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: -2751.3180373722435,61.0,516.9521345030564,principal,-94.10889,25.395615
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 22b7f9624af8,32a6aa4625c9,3c2e285651dc
+    mana_timestamp: 1740003931887
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 15.478676795959473

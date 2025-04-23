@@ -1,0 +1,253 @@
+######## created by samus2002 #########
+  
+clef_1:
+  Id: paper
+  Display: "&6"
+  Model: 2461
+  Hide:
+  - ATTRIBUTES
+
+clef_2:
+  Id: paper
+  Display: "&6"
+  Model: 2462
+  Hide:
+  - ATTRIBUTES
+ 
+clef_3:
+  Id: paper
+  Display: "&6"
+  Model: 2463
+  Hide:
+  - ATTRIBUTES
+  
+clef_4:
+  Id: paper
+  Display: "&6"
+  Model: 2464
+  Hide:
+  - ATTRIBUTES
+  
+clef_5:
+  Id: paper
+  Display: "&6"
+  Model: 2465
+  Hide:
+  - ATTRIBUTES
+  
+clef_6:
+  Id: paper
+  Display: "&6"
+  Model: 2466
+  Hide:
+  - ATTRIBUTES
+  
+clef_7:
+  Id: paper
+  Display: "&6"
+  Model: 2467
+  Hide:
+  - ATTRIBUTES
+  
+clef_8:
+  Id: paper
+  Display: "&6"
+  Model: 2468
+  Hide:
+  - ATTRIBUTES
+  
+clef_9:
+  Id: paper
+  Display: "&6"
+  Model: 2469
+  Hide:
+  - ATTRIBUTES
+  
+clef_10:
+  Id: paper
+  Display: "&6"
+  Model: 2470
+  Hide:
+  - ATTRIBUTES
+  
+clef_11:
+  Id: paper
+  Display: "&6"
+  Model: 2471
+  Hide:
+  - ATTRIBUTES
+  
+clef_12:
+  Id: paper
+  Display: "&6"
+  Model: 2472
+  Hide:
+  - ATTRIBUTES
+  
+clef_13:
+  Id: paper
+  Display: "&6"
+  Model: 2473
+  Hide:
+  - ATTRIBUTES
+  
+musical_note:
+  Id: paper
+  Display: "&6"
+  Model: 2474
+  Hide:
+  - ATTRIBUTES
+  
+rhapsody:
+  Id: paper
+  Display: "&6"
+  Model: 2475
+  Hide:
+  - ATTRIBUTES
+  
+symphony_explosion_1:
+  Id: paper
+  Display: "&6"
+  Model: 2476
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_2:
+  Id: paper
+  Display: "&6"
+  Model: 2477
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_3:
+  Id: paper
+  Display: "&6"
+  Model: 2478
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_4:
+  Id: paper
+  Display: "&6"
+  Model: 2479
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_5:
+  Id: paper
+  Display: "&6"
+  Model: 2480
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_6:
+  Id: paper
+  Display: "&6"
+  Model: 2481
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_7:
+  Id: paper
+  Display: "&6"
+  Model: 2482
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_8:
+  Id: paper
+  Display: "&6"
+  Model: 2483
+  Hide:
+  - ATTRIBUTES
+symphony_explosion_9:
+  Id: paper
+  Display: "&6"
+  Model: 2484
+  Hide:
+  - ATTRIBUTES
+  
+symphony_light_1:
+  Id: paper
+  Display: "&6"
+  Model: 2485
+  Hide:
+  - ATTRIBUTES
+symphony_light_2:
+  Id: paper
+  Display: "&6"
+  Model: 2486
+  Hide:
+  - ATTRIBUTES
+symphony_light_3:
+  Id: paper
+  Display: "&6"
+  Model: 2487
+  Hide:
+  - ATTRIBUTES
+symphony_light_4:
+  Id: paper
+  Display: "&6"
+  Model: 2488
+  Hide:
+  - ATTRIBUTES
+symphony_light_5:
+  Id: paper
+  Display: "&6"
+  Model: 2489
+  Hide:
+  - ATTRIBUTES
+symphony_light_6:
+  Id: paper
+  Display: "&6"
+  Model: 2490
+  Hide:
+  - ATTRIBUTES
+symphony_light_7:
+  Id: paper
+  Display: "&6"
+  Model: 2491
+  Hide:
+  - ATTRIBUTES
+symphony_light_8:
+  Id: paper
+  Display: "&6"
+  Model: 2492
+  Hide:
+  - ATTRIBUTES
+symphony_light_9:
+  Id: paper
+  Display: "&6"
+  Model: 2493
+  Hide:
+  - ATTRIBUTES
+  
+vibration_1:
+  Id: paper
+  Display: "&6"
+  Model: 2494
+  Hide:
+  - ATTRIBUTES
+vibration_2:
+  Id: paper
+  Display: "&6"
+  Model: 2495
+  Hide:
+  - ATTRIBUTES
+vibration_3:
+  Id: paper
+  Display: "&6"
+  Model: 2496
+  Hide:
+  - ATTRIBUTES
+vibration_4:
+  Id: paper
+  Display: "&6"
+  Model: 2497
+  Hide:
+  - ATTRIBUTES
+vibration_5:
+  Id: paper
+  Display: "&6"
+  Model: 2498
+  Hide:
+  - ATTRIBUTES
+vibration_6:
+  Id: paper
+  Display: "&6"
+  Model: 2499
+  Hide:
+  - ATTRIBUTES

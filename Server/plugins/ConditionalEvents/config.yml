@@ -1,0 +1,132 @@
+Config:
+  update_notification: true
+  data_save_time: 5
+  debug_actions: true
+  register_commands:
+  - hello
+  to_condition_groups:
+    group1:
+    - '%player_has_permission_conditionalevents.somepermission% == yes'
+  experimental:
+    variable_replacement: false
+Messages:
+  prefix: '&4[&bConditionalEvents&4] '
+  commandReload: '&aConfig Reloaded.'
+  commandNoPermissions: '&cYou don''t have permissions to use this command.'
+  commandResetError: '&cUse &7/ce reset <player> <event>/all'
+  eventDoesNotExists: '&cThat event doesn''t exists on the config.'
+  eventDataReset: '&aData reset for player &e%player% &aon event &e%event%&a!'
+  eventDataResetAll: '&aAll data reset for player &e%player%&a!'
+  eventDataResetForAllPlayers: '&aData reset for &eall players &aon event &e%event%&a!'
+  eventDataResetAllForAllPlayers: '&aAll player data reset.'
+  eventEnableError: '&cUse &7/ce enable <event>'
+  eventDisableError: '&cUse &7/ce disable <event>'
+  eventEnabled: '&aEvent &7%event% &aenabled.'
+  eventDisabled: '&aEvent &7%event% &adisabled.'
+  commandDebugError: '&cUse &7/ce debug <event>'
+  debugEnabled: '&aDebug now enabled for event &7%event%&a!'
+  debugDisabled: '&aDebug disabled for event &7%event%&a!'
+  debugEnabledPlayer: '&aDebug now enabled for event &7%event% &aand player &7%player%&a!'
+  debugDisabledPlayer: '&aDebug disabled for event &7%event% &aand player &7%player%&a!'
+  onlyPlayerCommand: '&cThis command can be only used by a player.'
+  playerDoesNotExists: '&cThat player doesn''t have any data.'
+  seconds: s
+  minutes: m
+  hours: h
+  days: d
+  placeholderAPICooldownReady: Ready!
+  placeholderAPICooldownNameError: No event with that name!
+  commandCallError: '&cUse &7/ce call <event> (optional)%variable1%=<value1>;%variableN%=<valueN>
+    (optional)player:<player>'
+  commandCallInvalidEvent: '&cYou can only execute a CALL event.'
+  commandCallCorrect: '&aEvent &7%event% &asuccessfully executed.'
+  commandCallCorrectPlayer: '&aEvent &7%event% &asuccessfully executed for player
+    &7%player%&a.'
+  commandCallFailed: '&cEvent &7%event% &ccould not be executed. Maybe a format error?'
+  playerNotOnline: '&cThat player is not online.'
+  commandItemError: '&cUse &7/ce item <save/remove> <name>'
+  savedItemDoesNotExists: '&cThat saved item doesn''t exists.'
+  savedItemRemoved: '&aItem &7%name% &aremoved.'
+  mustHaveItemInHand: '&cYou must have an item on your hand.'
+  savedItemAlreadyExists: '&cA saved item with that name already exists.'
+  savedItemAdded: '&aItem &7%name% &asaved.'
+Events:
+  event1:
+    type: player_join
+    conditions:
+    - '%player% == Ajneb'
+    actions:
+      default:
+      - 'to_all: message: &e&l[ALERT] &f&lAjneb joined the game!'
+  event2:
+    type: block_interact
+    one_time: true
+    conditions:
+    - '%block_x% == 20'
+    - '%block_y% == 60'
+    - '%block_z% == 20'
+    - '%block_world% == lobby'
+    - '%block% == STONE_BUTTON'
+    - '%action_type% == RIGHT_CLICK'
+    - '%player_has_permission_conditionalevents.event.event2% == no execute actions2'
+    actions:
+      default:
+      - 'message: &aYou''ve received $500!'
+      - 'console_command: eco give %player% 500'
+      - 'playsound: ENTITY_PLAYER_LEVELUP;10;2'
+      actions2:
+      - 'message: &cYou need to have a rank to use this button.'
+      one_time:
+      - 'message: &cYou can claim this reward just once!'
+  event3:
+    type: player_attack
+    conditions:
+    - '%victim% == PLAYER'
+    - '%item% == DIAMOND_SWORD'
+    - '%item_name% == Super Sword'
+    - '%random_1_10% >= 8'
+    actions:
+      default:
+      - 'message: &aYour diamond sword poison effect was activated! &6%target:player_name%
+        &ais now poisoned!'
+      - 'to_target: give_potion_effect: POISON;120;1'
+      - 'to_target: message: &cYou were poisoned by &e%player%&c!'
+  event4:
+    type: block_break
+    ignore_with_permission: conditionalevents.ignore.event4
+    conditions:
+    - '%block_world% == spawn'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &cYou can''t break blocks on this world.'
+      - 'playsound: BLOCK_NOTE_BLOCK_PLING;10;0.1'
+  event5:
+    type: player_command
+    ignore_with_permission: conditionalevents.ignore.event5
+    conditions:
+    - '%main_command% equalsIgnoreCase //calc or %main_command% equalsIgnoreCase //solve
+      or %main_command% equalsIgnoreCase //eval'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'kick: &cWhat are you trying to do?'
+  event6:
+    type: repetitive
+    repetitive_time: 10
+    conditions:
+    - '%player_world% == plotworld'
+    - '%player_gamemode% != CREATIVE'
+    actions:
+      default:
+      - 'gamemode: CREATIVE'
+      - 'actionbar: &6Changing gamemode to creative.;100'
+  event7:
+    type: player_command
+    conditions:
+    - '%main_command% == /hello'
+    actions:
+      default:
+      - 'cancel_event: true'
+      - 'message: &7You said hello to nearby players!'
+      - 'to_range: 10;false: message: &e%player% &7says you hello!'

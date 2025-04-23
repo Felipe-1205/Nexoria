@@ -1,0 +1,348 @@
+######## created by samus2002 #########
+
+# Spirit Guardian #
+
+Spirit_Guardian_BUFF:
+  Cooldown: 0
+  Conditions:
+  - mobsInRadius{types=Spirit_Guardian;amount=1to10;radius=2} false
+  - hasaurastacks{auraName=Spirit_Guardian_STOP} false
+  Skills:
+  - orbital{bulletType=MOB;mob=Spirit_Guardian;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=0;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+Spirit_Guardian:
+  Cooldown: 0
+  Skills:
+  - skill{s=Spirit_Guardian_ACTIVATE} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  - skill{s=Spirit_Guardian_BUFF} @self
+  
+Spirit_Guardian_REMOVE:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Spirit_Guardian} false
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#33ffdd;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self
+  - effect:particles{particle=redstone;color=#cff0ff;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self
+
+Spirit_Guardian_REMOVE_BUFF:
+  Cooldown: 0
+  TargetConditions:
+  - hasaurastacks{auraName=Spirit_Guardian_STOP} true
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#33ffdd;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self
+  - effect:particles{particle=redstone;color=#cff0ff;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self
+
+Spirit_Guardian_ACTIVATE:
+  Conditions:
+  - hasaurastacks{auraName=Spirit_Guardian_STOP} false
+  Skills:
+  - SudoSkill{s=Spirit_Guardian_SKILL1;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  
+Spirit_Guardian_SKILL1:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Spirit_Guardian;interval=1;duration=40} @self
+  
+# Soul Strike #
+
+Soul_Strike:
+  Conditions:
+  - hasaurastacks{auraName=Guardians_Defense_Start} false
+  - hasaurastacks{auraName=Spirit_Guardian_STOP} false
+  Skills:
+  - skill{s=Soul_Strike_Start}
+  - delay 1
+  - skill{s=Soul_Strike1}
+  - skill{s=Soul_Strike2}
+  - skill{s=Soul_Strike3}
+  
+Soul_Strike_Start:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Strike_1} false
+  - hasaurastacks{auraName=Soul_Strike_2} false
+  Skills:
+  - Aura{auraName=Soul_Strike_Start;interval=1;duration=15} @self
+  
+Soul_Strike1:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Strike_1} false
+  - hasaurastacks{auraName=Soul_Strike_2} false
+  - hasaurastacks{auraName=Soul_Strike_3} false
+  - hasaurastacks{auraName=Soul_Strike_Start} true
+  Skills:
+  - SudoSkill{s=Soul_Strike_1;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  - Aura{auraName=Soul_Strike_1;interval=1;duration=25} @self
+  - totem{md=2;c=1;oH=Soul_Strike_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;delay=13} @forward{f=1}
+
+Soul_Strike_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true}
+  
+Soul_Strike2:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Strike_2} false
+  - hasaurastacks{auraName=Soul_Strike_3} false
+  - hasaurastacks{auraName=Soul_Strike_Start} false
+  Skills:
+  - SudoSkill{s=Soul_Strike_2;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  - Aura{auraName=Soul_Strike_2;interval=1;duration=25} @self
+  - totem{md=2;c=1;oH=Soul_Strike_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;delay=10} @forward{f=1}
+  
+Soul_Strike3:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Strike_1} false
+  - hasaurastacks{auraName=Soul_Strike_3} false
+  - hasaurastacks{auraName=Soul_Strike_Start} false
+  Skills:
+  - SudoSkill{s=Soul_Strike_3;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  - Aura{auraName=Soul_Strike_3;interval=1;duration=25} @self
+  - totem{md=2;c=1;oH=Soul_Strike_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;delay=13} @forward{f=1}
+  
+Soul_Strike_1:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=attack1;lo=7} @self
+  - Aura{auraName=Soul_Strike_1;interval=1;duration=25} @self
+  - partvisibility{p=big_slash;v=true;delay=10} @self
+  - partvisibility{p=big_slash;v=false;delay=15} @self
+  - effect:sound{s=summoner_sounds:samus.soul_strike_1;volume=0.8;pitch=1} @self
+  
+Soul_Strike_2:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=attack2;lo=7} @self
+  - Aura{auraName=Soul_Strike_2;interval=1;duration=25} @self
+  - partvisibility{p=big_slash;v=true;delay=10} @self
+  - partvisibility{p=big_slash;v=false;delay=15} @self
+  - effect:sound{s=summoner_sounds:samus.soul_strike_2;volume=0.8;pitch=1;delay=7} @self
+  
+Soul_Strike_3:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=attack3;lo=7} @self
+  - Aura{auraName=Soul_Strike_3;interval=1;duration=45} @self
+  - effect:sound{s=summoner_sounds:samus.soul_strike_pierce;volume=0.8;pitch=1;delay=7} @self
+  
+# Guardians Defense #
+  
+Guardians_Defense:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Guardians_Defense_Start} castinstead Guardians_Defense_SHIELD_1
+  - hasaurastacks{auraName=Spirit_Guardian_STOP} false
+  Skills:
+  - potion{type=SLOW;duration=20;level=4;hasParticles=false} @self
+  - Aura{auraName=Guardians_Defense_Start;interval=1;duration=15} @self
+  - SudoSkill{s=Guardians_Defense_1;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+  - effect:sound{s=summoner_sounds:samus.guardian_defense;volume=0.8;pitch=1} @self
+  
+Guardians_Defense_1:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  #- state{s=shield_ready;lo=7} @self
+  - setstance{stance=block} @self
+  - state{s=shield_loop;li=7;lo=7} @self
+  - Aura{auraName=Guardians_Defense_Start;interval=1;duration=15} @self
+  - bindhitbox{m=spirit_guardian;p=ob_shield;t=Spirit_Guardian_Shield} @self
+  
+Guardians_Defense_DIE:
+  TargetConditions:
+  - stance block false
+  Skills:
+  - remove @self
+  
+Guardians_Defense_BLOCK:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  Skills:
+  - effect:sound{s=summoner_sounds:samus.guardian_block;volume=1;pitch=1} @self
+  
+Guardians_Defense_BLOCK_PRO:
+  Conditions:
+  - damagecause{cause=PROJECTILE} true
+  Skills:
+  - effect:sound{s=summoner_sounds:samus.guardian_block;volume=1;pitch=1} @self
+  
+Guardians_Defense_SHIELD_1:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - potion{type=SLOW;duration=10;level=4;hasParticles=false} @self
+  - Aura{auraName=Guardians_Defense_Start;interval=1;duration=15} @self
+  - SudoSkill{s=Guardians_Defense_SHIELD;setcasterastrigger=true} @MIR{r=2;t=Spirit_Guardian;target=armorstands}
+
+Guardians_Defense_SHIELD:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  #- state{s=shield_loop;lo=7} @self
+  - Aura{auraName=Guardians_Defense_Start;interval=1;duration=15} @self
+  
+Guardians_Defense_SHIELD_REMOVE:
+  Conditions:
+  - hasaurastacks{auraName=Guardians_Defense_Start} false
+  Skills:
+  - remove @Child
+  - setstance{stance=combat} @self
+  - state{s=shield_loop;remove=true;lo=7} @self
+  
+# Magical Blades #
+
+Magical_Blades:
+  Skills:
+  - Aura{auraName=Spirit_Guardian_STOP;interval=1;duration=80} @self
+  - effect:sound{s=summoner_sounds:samus.magical_blades_summon;volume=1;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Magical_Blades;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=-1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 60
+  - projectile{bulletType=MOB;mob=Magical_Blade;onStart=Magical_Blades_Tick;onHit=Magical_Blades_HIT;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.3;tyo=1.3;sso=1.3} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.magical_blades_shoot;volume=1;pitch=1} @self
+  - effect:sound{s=summoner_sounds:samus.magical_blade_shoot_single;volume=0.8;pitch=1} @self
+  - delay 5
+  - projectile{bulletType=MOB;mob=Magical_Blade;onStart=Magical_Blades_Tick;onHit=Magical_Blades_HIT;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.3;tyo=1.3;sso=-1.3} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.magical_blade_shoot_single;volume=0.8;pitch=1} @self
+  - delay 5
+  - projectile{bulletType=MOB;mob=Magical_Blade;onStart=Magical_Blades_Tick;onHit=Magical_Blades_HIT;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2.2;tyo=1.5;sso=1} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.magical_blade_shoot_single;volume=0.8;pitch=1} @self
+  - delay 5
+  - projectile{bulletType=MOB;mob=Magical_Blade;onStart=Magical_Blades_Tick;onHit=Magical_Blades_HIT;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2.2;tyo=1.5;sso=-1} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.magical_blade_shoot_single;volume=0.8;pitch=1} @self
+  - delay 5
+  - projectile{bulletType=MOB;mob=Magical_Blade;onStart=Magical_Blades_Tick;onHit=Magical_Blades_HIT;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2.9;tyo=1.5;sso=0} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.magical_blade_shoot_single;volume=0.8;pitch=1} @self
+  
+Magical_Blades_Tick:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1}
+  
+Magical_Blades_HIT:
+  Skills:
+  - skill{s=Magical_Blades_HIT_SKILL} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Magical_Blades_HIT_SKILL:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=5;velocityY=1}
+  
+# Summon Horse #
+
+Summon_Horse:
+  Skills:
+  - skill{s=Summon_Horse_Skill}
+  - skill{s=Spirit_Charge}
+  
+Summon_Horse_Skill:
+  Conditions:
+  - isSprinting{} false
+  Skills:
+  - Aura{auraName=Spirit_Guardian_STOP;interval=1;duration=40} @self
+  - projectile{bulletType=MOB;mob=Summon_Horse;onHit=Summon_Horse_HIT;v=17;i=1;hR=1;vR=1;mr=30;hnp=true;hO=3;sE=false;sB=false;hs=true;hfs=0.6;sso=1.1} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Summon_Horse;onHit=Summon_Horse_HIT;v=17;i=1;hR=1;vR=1;mr=30;hnp=true;hO=-3;sE=false;sB=false;hs=true;hfs=0.6;sso=-1.1} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.summon_sound;volume=1;pitch=1} @self
+  - effect:sound{s=summoner_sounds:samus.horse_summon;volume=1;pitch=1;delay=10} @self
+  - effect:sound{s=summoner_sounds:samus.horse_neigh;volume=1;pitch=1;delay=15} @self
+  
+Summon_Horse_HIT:
+  Skills:
+  - skill{s=Summon_Horse_HIT_SKILL} @EntitiesNearOrigin{r=3}
+  
+Summon_Horse_HIT_SKILL:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=5;velocityY=6}
+  
+# Spirit Charge #
+
+Spirit_Charge:
+  Conditions:
+  - isSprinting{} true
+  Skills:
+  - Aura{auraName=Spirit_Guardian_STOP;interval=1;duration=80} @self
+  - summon{type=Spirit_Charge;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  #- projectile{bulletType=MOB;mob=Spirit_Charge;onHit=Spirit_Charge_HIT;v=16;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0.6} @Forward{f=20;y=0}
+  - effect:sound{s=summoner_sounds:samus.summon_sound;volume=1;pitch=1} @self
+  - effect:sound{s=summoner_sounds:samus.horse_summon;volume=1;pitch=1;delay=10} @self
+  - effect:sound{s=summoner_sounds:samus.horse_neigh;volume=1;pitch=1;delay=15} @self
+  
+Spirit_Charge_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - skill{s=Spirit_Charge_HIT_SKILL} @EntitiesNearOrigin{r=3}
+  
+Spirit_Charge_HIT_SKILL:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a=5}
+  - throw{velocity=8;velocityY=2}
+  
+Spirit_Charge_NOMOUNT:
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - remove @self
+
+# Summon Phoenix #
+
+Summon_Phoenix:
+  Skills:
+  - Aura{auraName=Spirit_Guardian_STOP;interval=1;duration=40} @self
+  - Aura{auraName=Summon_Phoenix_NO;interval=1;duration=25} @self
+  - summon{type=Summon_Phoenix;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - projectile{onTick=Summon_Phoenix_TickT;onStart=Summon_Phoenix_Tick;onHit=Summon_Phoenix_HIT;v=1;i=1;hR=1;vR=1;mr=23;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=0;tyo=0;sfo=-1.5} @Forward{f=20;y=0;lockpitch=true}
+  - effect:sound{s=summoner_sounds:samus.summon_sound;volume=1;pitch=1} @self
+  - effect:sound{s=summoner_sounds:samus.phoenix_summon;volume=1;pitch=1;delay=10} @self
+  - effect:sound{s=summoner_sounds:samus.phoenix_screech;volume=1;pitch=1;delay=15} @self
+  
+Summon_Phoenix_Tick:
+  Skills:
+  - delay 25
+  - modifyProjectile{trait=VELOCITY;action=SET;value=12}
+  
+Summon_Phoenix_TickT:
+  Conditions:
+  - hasaurastacks{auraName=Summon_Phoenix_NO} false
+  Skills:
+  - totem{md=60;oT=Summon_Phoenix_BURNFX;oH=Summon_Phoenix_BURN;hnp=true;hp=true;hR=2;vR=1;i=10} @origin
+  
+Summon_Phoenix_BURNFX:
+  Skills:
+  - effect:particles{particle=flame;amount=15;hS=1;vS=0.1;y=-0.5;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Summon_Phoenix_BURN:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=armorstands} false
+  Skills:
+  - ignite{ticks="<modifier.duration> * 20"}
+  - damage{a="<modifier.damage> * 0.3"}
+  
+Summon_Phoenix_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - skill{s=Summon_Phoenix_HIT_SKILL} @EntitiesNearOrigin{r=5}
+  
+Summon_Phoenix_HIT_SKILL:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - ignite{ticks="<modifier.duration> * 20"}

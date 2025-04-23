@@ -1,0 +1,351 @@
+######## created by samus2002 #########
+
+Changetarget:  
+  Cooldown: 0
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+# Scorpion King #
+
+Scorpion_King_Skill-1:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Grab_and_Eat,Poison_Puddle,Poison_Path}
+
+Scorpion_King_Skill-2:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Grab_and_Eat,Underground_Movement,Scorpion_Babies,Poison_Puddle,Poison_Path}
+  
+Melee_Attack:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Poison_Sting,Poison_Punch}
+  
+Scorpion_King_Dash:
+  Conditions:
+  - offgcd
+  - targetnotwithin{d=5} true
+  Skills:
+  - Aura{auraName=Run_Aura;duration=40} @self
+  - defaultstate{m=scorpion_king;t=walk;s=run} @self
+  - setspeed{speed=2;type=walking} @self
+  - delay 40
+  - defaultstate{m=scorpion_king;t=walk;s=walk} @self
+  - setspeed{speed=1;type=walking} @self
+
+# Scorpion Baby #
+
+Baby_Melee_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - potion{type=SLOW;duration=40;level=99;hasParticles=false} @self
+  - state{s=sting;li=8;lo=8} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=0.8;pitch=2;delay=5} @self
+  - delay 13
+  - effect:sound{s=scorpion_sounds:samus.scorpion_sting;volume=1.5;pitch=1} @self
+  - totem{md=2;c=1;oH=Baby_Melee_Attack_DAMAGE;hnp=false;hp=true;hR=1;vR=1;i=1} @forward{f=3}
+  
+Baby_Melee_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=2;pkb=false;hnp=false;hp=true}
+  - potion{type=POISON;duration=40;level=0;hasParticles=false}
+  - effect:particles{particle=slime;amount=15;hS=0.15;vS=0.15;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  
+# Poison Sting #
+
+Poison_Sting:
+  Conditions:
+  - offgcd
+  - targetwithin{d=6} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - potion{type=SLOW;duration=40;level=99;hasParticles=false} @self
+  - state{s=sting;li=8;lo=8} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=1;pitch=1;delay=5} @self
+  - delay 13
+  - effect:sound{s=scorpion_sounds:samus.scorpion_sting;volume=1.7;pitch=1} @self
+  - totem{md=2;c=1;oH=Poison_Sting_DAMAGE;hnp=false;hp=true;hR=3;vR=2;i=1} @forward{f=5}
+
+Poison_Punch:
+  Conditions:
+  - offgcd
+  - targetwithin{d=6} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - potion{type=SLOW;duration=40;level=99;hasParticles=false} @self
+  - state{s=double_punch;li=8;lo=8} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=1;pitch=1;delay=5} @self
+  - delay 13
+  - effect:sound{s=scorpion_sounds:samus.scorpion_punch;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Poison_Punch_DAMAGE;hnp=false;hp=true;hR=3;vR=2;i=1} @forward{f=5}
+  
+Poison_Sting_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=5;pkb=false;hnp=false;hp=true}
+  - potion{type=POISON;duration=60;level=0;hasParticles=false}
+  - effect:particles{particle=slime;amount=15;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  
+Poison_Punch_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=5;pkb=false;hnp=false;hp=true}
+  - potion{type=POISON;duration=60;level=0;hasParticles=false}
+  - effect:particles{particle=slime;amount=15;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  
+# Grab and Eat #
+
+Grab_and_Eat:
+  Cooldown: 30
+  Conditions:
+  - offgcd
+  - targetwithin{d=6} true
+  Skills:
+  - gcd{ticks=75}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=75} @self
+  - potion{type=SLOW;duration=75;level=99;hasParticles=false} @self
+  - state{s=grab;li=6;lo=7} @self
+  - skill{s=Grab_and_Eat_TARGET;delay=5} @target
+  - delay 15
+  - state{s=eat;li=6;lo=7} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_eat;volume=1.6;pitch=1;repeatinterval=10;repeat=5} @self
+  - heal{a=10;repeatinterval=10;repeat=5} @self
+  - effect:particles{particle=reddust;amount=20;hS=1.8;vS=2;y=1;speed=0;forwardOffset=0;sideOffset=0;repeatinterval=10;repeat=5} @self
+  - delay 60
+  - state{s=eat;li=6;lo=7;remove=true} @self
+  - dismountmodel{p=mount} @self
+
+Grab_and_Eat_TARGET:
+  Skills:
+  - mountmodel{driver=true;mode=force;pbone=mount;dmg=true;delay=5}
+  - delay 10
+  - damage{a=3;pkb=false;hnp=false;hp=true;repeatinterval=10;repeat=5}
+
+# Underground Movement #
+
+Underground_Movement:
+  Cooldown: 15
+  Conditions:
+  - offgcd
+  - targetwithin{d=20} true
+  Skills:
+  - gcd{ticks=100}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=32} @self
+  - potion{type=SLOW;duration=32;level=99;hasParticles=false} @self
+  - state{s=jump_into_ground;li=7;lo=7} @self
+  - effect:particles{delay=22;particle=block_crack;m=DIRT;amount=35;hS=2;vS=0.7;y=0.15;speed=0;forwardOffset=0;sideOffset=0;repeatinterval=2;repeat=4} @self
+  - effect:sound{s=scorpion_sounds:samus.jump_into_ground;volume=1;pitch=1;delay=15} @self
+  - delay 32
+  - onDamaged{auraName=godmode;cE=true;d=20} @self
+  - partvisibility{m=scorpion_king;p=body;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=head;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_arm;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_claw;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_small_claw;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_wrist;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail2;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail3;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail4;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail5;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_arm;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_claw;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_small_claw;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_ankle;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_foot;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_leg;v=false;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_wrist;v=false;delay=1} @self
+  - delay 20
+  - teleport{spreadh=5;spreadv=0} @PIR{r=50;limit=1}
+  - delay 2
+  - effect:particles{particle=block_crack;m=DIRT;amount=35;hS=2;vS=0.7;y=0.15;speed=0;forwardOffset=0;sideOffset=0;repeatinterval=5;repeat=4} @self
+  - partvisibility{m=scorpion_king;p=body;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=head;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_arm;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_claw;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_first_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_second_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_small_claw;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_third_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=left_wrist;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail2;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail3;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail4;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=tail5;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_arm;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_claw;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_first_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_second_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_small_claw;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_ankle;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_foot;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_third_leg;v=true;delay=1} @self
+  - partvisibility{m=scorpion_king;p=right_wrist;v=true;delay=1} @self
+  - setAI{ai=false;delay=5} @self
+  - setAI{ai=true;delay=42} @self
+  - potion{type=SLOW;duration=42;level=99;hasParticles=false} @self
+  - state{s=emerge_from_ground;lo=7} @self
+  - effect:sound{s=scorpion_sounds:samus.emerge_from_ground;volume=1;pitch=1} @self
+  - damage{a=6;pkb=false;hnp=false;hp=true} @PIR{r=7}
+  - throw{velocity=2;velocityY=9;delay=3} @PIR{r=7}
+  - delay 42
+  
+# Scorpion Babies #
+
+Scorpion_Babies:
+  Cooldown: 40
+  Conditions:
+  - offgcd
+  - targetwithin{d=17} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=28} @self
+  - potion{type=SLOW;duration=28;level=99;hasParticles=false} @self
+  - state{s=throw_babies;li=8;lo=7} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_throw;volume=1;pitch=1;delay=8} @self
+  - delay 13
+  - projectile{bulletType=MOB;bulletSpin=30;mob=Scorpion_Baby;onEnd=Scorpion_Babies_SUMMON;v=10;i=1;hR=1;vR=1;mr=35;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=5;g=0.3} @target
+  - projectile{bulletType=MOB;bulletSpin=30;mob=Scorpion_Baby;onEnd=Scorpion_Babies_SUMMON;v=10;i=1;hR=1;vR=1;mr=35;hnp=false;hp=false;hO=30;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=5;g=0.3} @target
+  - projectile{bulletType=MOB;bulletSpin=30;mob=Scorpion_Baby;onEnd=Scorpion_Babies_SUMMON;v=10;i=1;hR=1;vR=1;mr=35;hnp=false;hp=false;hO=-30;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=5;g=0.3} @target
+  
+Scorpion_Babies_SUMMON:
+  Skills:
+  - summon{type=Scorpion_Baby;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+# Poison Puddle #
+
+Poison_Puddle:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  - targetwithin{d=17} true
+  Skills:
+  - gcd{ticks=30}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=30} @self
+  - potion{type=SLOW;duration=30;level=99;hasParticles=false} @self
+  - state{s=spit_venom;li=8;lo=7} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=scorpion_sounds:samus.spit_venom;volume=1.5;pitch=1} @self
+  - delay 13
+  - projectile{onTick=Poison_Puddle_TICK;onEnd=Poison_Puddle_SUMMON;v=16;i=1;hR=1;vR=1;mr=45;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=5;g=0.6;delay=1} @target
+  - projectile{onTick=Poison_Puddle_TICK;onEnd=Poison_Puddle_SUMMON;v=13;i=1;hR=1;vR=1;mr=45;hnp=false;hp=false;hO=40;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=4;g=0.4;delay=3} @target
+  - projectile{onTick=Poison_Puddle_TICK;onEnd=Poison_Puddle_SUMMON;v=14;i=1;hR=1;vR=1;mr=45;hnp=false;hp=false;hO=-15;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=7;g=0.6;delay=4} @target
+  - projectile{onTick=Poison_Puddle_TICK;onEnd=Poison_Puddle_SUMMON;v=9;i=1;hR=1;vR=1;mr=45;hnp=false;hp=false;hO=25;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=4;g=0.7;delay=6} @target
+  - projectile{onTick=Poison_Puddle_TICK;onEnd=Poison_Puddle_SUMMON;v=17;i=1;hR=1;vR=1;mr=45;hnp=false;hp=false;hO=-35;sE=false;sB=true;hs=false;hfs=0;syo=3;tyo=5;g=0.5;delay=7} @target
+  
+Poison_Puddle_LOOP:
+  Skills:
+  - state{s=bubble} @self
+  - partvisibility{p=bubble1;v=false;delay=21} @self
+  - partvisibility{p=bubble2;v=false;delay=25} @self
+  - partvisibility{p=bubble3;v=false;delay=35} @self
+  - effect:particles{delay=22;particle=slime;amount=3;hS=0;vS=0;y=0.5;speed=0;forwardOffset=0;sideOffset=0;delay=21} @modelpart{p=bubble1}
+  - effect:particles{delay=22;particle=slime;amount=3;hS=0;vS=0;y=0.5;speed=0;forwardOffset=0;sideOffset=0;delay=25} @modelpart{p=bubble2}
+  - effect:particles{delay=22;particle=slime;amount=3;hS=0;vS=0;y=0.5;speed=0;forwardOffset=0;sideOffset=0;delay=35} @modelpart{p=bubble3}
+  - delay 40
+  - partvisibility{p=bubble1;v=true} @self
+  - partvisibility{p=bubble2;v=true} @self
+  - partvisibility{p=bubble3;v=true} @self
+  
+Poison_Puddle_SUMMON:
+  Skills:
+  - summon{type=Poison_Puddle;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Poison_Puddle_TICK:
+  Skills:
+  - effect:particlesphere{particle=redstone;color=#24d91a;radius=0.6;amount=15}
+  - effect:particlesphere{particle=redstone;color=#033d0e;radius=0.6;amount=15}
+
+# Poison Path #
+
+Poison_Path:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  - targetwithin{d=17} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - potion{type=SLOW;duration=40;level=99;hasParticles=false} @self
+  - state{s=sting;li=8;lo=8} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=scorpion_sounds:samus.spit_venom;volume=1.5;pitch=1} @self
+  - delay 13
+  - projectile{onTick=Poison_Puddle_SUMMON;v=20;i=4;hR=1;vR=1;mr=20;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=true;hfs=0.1} @target
+  
+# Scorpion Baby Pet #
+
+Baby_Melee_Attack_Pet:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - potion{type=SLOW;duration=40;level=99;hasParticles=false} @self
+  - state{s=sting;li=8;lo=8} @self
+  - effect:sound{s=scorpion_sounds:samus.scorpion_attack;volume=0.8;pitch=2;delay=5} @self
+  - delay 13
+  - effect:sound{s=scorpion_sounds:samus.scorpion_sting;volume=1.5;pitch=1} @self
+  - totem{md=2;c=1;oH=Baby_Melee_Attack_DAMAGE_Pet;hnp=true;hp=true;hR=1;vR=1;i=1} @target
+  
+Baby_Melee_Attack_DAMAGE_Pet:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=2;pkb=false;hnp=true;hp=true}
+  - potion{type=POISON;duration=40;level=0;hasParticles=false}
+  - effect:particles{particle=slime;amount=15;hS=0.15;vS=0.15;y=0.7;speed=0;forwardOffset=0;sideOffset=0}
+  

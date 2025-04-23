@@ -1,0 +1,184 @@
+######## created by samus2002 #########
+
+# Easter Eggs #
+
+easter_egg_blue:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=easter_egg_blue;n=false} @self ~onSpawn
+  - skill{s=Easter_Eggs_Summon_REMOVE} @PIR{r=1.5} ~onTimer:1
+  - remove{delay=100} @self ~onSpawn
+  
+easter_egg_pink:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=easter_egg_pink;n=false} @self ~onSpawn
+  - skill{s=Easter_Eggs_Summon_REMOVE} @PIR{r=1.5} ~onTimer:5
+  - remove{delay=100} @self ~onSpawn
+  
+easter_egg_yellow:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=easter_egg_yellow;n=false} @self ~onSpawn
+  - skill{s=Easter_Eggs_Summon_REMOVE} @PIR{r=1.5} ~onTimer:5
+  - remove{delay=100} @self ~onSpawn
+  
+# Easter Slam #
+
+easter_slam:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: easter_slam_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=easter_slam_1:4;delay=2} ~onSpawn
+  - equip{item=easter_slam_2:4;delay=3} ~onSpawn
+  - equip{item=easter_slam_3:4;delay=4} ~onSpawn
+  - equip{item=easter_slam_4:4;delay=5} ~onSpawn
+  - equip{item=easter_slam_5:4;delay=6} ~onSpawn
+  - equip{item=easter_slam_6:4;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+# Carrot Rush #
+
+rabbit_carrot:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.8;pitch=1.4} @self ~onSpawn
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.7;pitch=1.35;delay=15} @self ~onSpawn
+  - model{mid=rabbit_carrot;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - effect:particles{particle=explosion_large;amount=5;hS=0.35;vS=0.35;y=1;speed=0;forwardOffset=0;sideOffset=0;delay=15} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+ 
+# Easter Onslaught #
+
+easter_bunny:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=crimson_spore;amount=10;hS=0.25;vS=0.25;y=0.3;speed=0;forwardOffset=0;sideOffset=0} @self ~onSpawn
+  - effect:particles{particle=crimson_spore;amount=10;hS=0.25;vS=0.25;y=0.3;speed=0;forwardOffset=0;sideOffset=0;delay=24} @forward{f=2.5;y=0} ~onSpawn
+  - model{mid=easter_bunny;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+
+rabbit_tooth:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=rabbit_tooth;n=false;delay=11} @self ~onSpawn
+  - effect:sound{s=entity.phantom.bite;volume=0.9;pitch=1.2;delay=19} @self ~onSpawn
+  - state{s=skill;delay=11} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+  
+# Rain of Easter Eggs #
+
+easter_chick:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=crimson_spore;amount=10;hS=0.25;vS=0.25;y=0.3;speed=0;forwardOffset=0;sideOffset=0} @self ~onSpawn
+  - effect:particles{particle=crimson_spore;amount=10;hS=0.25;vS=0.25;y=0.3;speed=0;forwardOffset=0;sideOffset=0;delay=100} @forward{f=2.5;y=0} ~onSpawn
+  - model{mid=easter_chick;n=false} @self ~onSpawn
+  
+easter_egg_blue_PRO:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: easter_egg_blue
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=easter_egg_blue:4;delay=1} ~onSpawn
+  
+easter_egg_pink_PRO:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: easter_egg_blue
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=easter_egg_pink:4;delay=1} ~onSpawn
+  
+easter_egg_yellow_PRO:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: easter_egg_blue
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=easter_egg_yellow:4;delay=1} ~onSpawn

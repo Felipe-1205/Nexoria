@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 84.124.225.197
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740626010403
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740626255235
+  login: 1740625513566
+money: '0'
+last-account-name: josetodo
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2988.6663204251768
+  y: 80.0
+  z: 459.46852515099755
+  yaw: 49.5001220703125
+  pitch: 7.800090312957764
+nickname: Augusto
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 23.494541417545296
+  y: 74.0
+  z: -59.01215309502437
+  yaw: 92.6575927734375
+  pitch: 20.910823822021484

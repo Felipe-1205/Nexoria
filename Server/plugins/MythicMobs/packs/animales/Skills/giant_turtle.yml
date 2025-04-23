@@ -1,0 +1,51 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+GiantTurtlePet_PetSpawn:
+  Skills:
+  - delay 1
+  - effect:particles{particle=poof;amount=50;hS=.45;vS=.25} @self
+  
+GiantTurtlePet_Despawn:
+  Skills:
+  - effect:particles{particle=poof;amount=50;hS=.45;vS=.25} @self
+  - model{mid=pet_giantturtle;r=true} @self
+  - model{mid=pet_giantturtle_royal;r=true} @self
+  - remove @self
+  
+   
+GiantTurtlePet_INTERACT:
+  Skills:  
+  - skill{s=GiantTurtlePet_SIT} @trigger
+  - skill{s=GiantTurtlePet_FEED} @trigger
+  
+GiantTurtlePet_SIT:
+  TriggerConditions:
+  - holding{m=kelp} false
+  - owner true
+  Skills:
+  - mountmodel{mode=Walking}
+  
+GiantTurtlePet_FEED:
+  Cooldown: 10
+  TriggerConditions:
+  - holding{m=kelp} true
+  Skills:
+  - setAI{ai=false}
+  - state{s=feed} @self
+  - delay 10
+  - takeitem{i=kelp} @trigger
+  - changepart{m=pet_giantturtle;pid=jaw;nm=pet_giantturtle_parts;npid=jaw} @self
+  - changepart{m=pet_giantturtle_royal;pid=jaw;nm=pet_giantturtle_parts;npid=jaw} @self
+  - delay 10
+  - sound{s=entity.generic.eat;repeat=2;repeatInterval=5} @self
+  - effect:particles{particle=block;material=grass;repeat=2;repeatInterval=4} @modelpart{m=pet_giantturtle;p=head;offset=LOCAL;z=.5}
+  - delay 10
+  - effect:particles{particle=heart} @modelpart{m=pet_giantturtle;p=head;offset=GLOBAL;y=1}
+  - effect:particles{particle=heart} @modelpart{m=pet_giantturtle_royal;p=head;offset=GLOBAL;y=1}
+  - changepart{m=pet_giantturtle;pid=jaw;nm=pet_giantturtle;npid=jaw} @self
+  - changepart{m=pet_giantturtle_royal;pid=jaw;nm=pet_giantturtle_royal;npid=jaw} @self
+  - delay 20
+  - setAI{ai=true}

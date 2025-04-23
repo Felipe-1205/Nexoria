@@ -1,0 +1,1108 @@
+######## created by samus2002 #########
+
+Bloodbending_Blades_REMOVETAGS:
+  Skills:
+  - removetag{t=GRIMOIRE} @self
+  - removetag{t=NEEDLES} @self
+  - removetag{t=SCYTHE} @self
+  - removetag{t=BLADES} @self
+  
+# Bloodbending #
+
+Bloodbending:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=BLADES_Surge_REALHEAL} cast BLADES_Surge_REALHEAL
+  - hasaura{n=GRIMOIRE_Surge_REALHEAL} cast GRIMOIRE_Surge_REALHEAL
+  - hasaura{n=NEEDLES_Surge1_REALHEAL} cast NEEDLES_Surge1_REALHEAL
+  - hasaura{n=NEEDLES_Surge2_REALHEAL} cast NEEDLES_Surge2_REALHEAL
+  - hasaura{n=NEEDLES_Surge3_REALHEAL} cast NEEDLES_Surge3_REALHEAL
+  - hasaura{n=NEEDLES_Surge4_REALHEAL} cast NEEDLES_Surge4_REALHEAL
+  - hasaura{n=NEEDLES_Surge5_REALHEAL} cast NEEDLES_Surge5_REALHEAL
+  - hasaura{n=SCYTHE_Surge_REALHEAL} cast SCYTHE_Surge_REALHEAL
+  Skills:
+  - Aura{auraName=Bloodbending;duration=20} @self
+  - skill{s=Bloodbending_Blades_ADDTAG}
+  - skill{s=Bloodbending_WEAPONS}
+  - orbital{auraName=BLOODBENDING_FX;oS=Bloodbending_FX_REMOVE;onTick=Bloodbending_FX;r=0.6;points=45;i=1;duration=90;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @self ?!hasaura{n=DOWNFX}
+  - orbital{startingpoint=15;auraName=BLOODBENDING_FX2;onTick=Bloodbending_FX;r=0.6;points=45;i=1;duration=90;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @self ?!hasaura{n=DOWNFX}
+  - orbital{startingpoint=30;auraName=BLOODBENDING_FX3;onTick=Bloodbending_FX;r=0.6;points=45;i=1;duration=90;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=0} @self ?!hasaura{n=DOWNFX}
+
+Bloodbending_FX:
+  Conditions:
+  - hasaura{n=DOWNFX} castinstead Bloodbending_FX_DOWN
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;size=0.3;amount=1;hS=0;vS=0;speed=0;repeat=15;repeati=1} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=0.03}
+Bloodbending_FX_DOWN:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;size=0.3;amount=1;hS=0;vS=0;speed=0;repeat=15;repeati=1} @origin
+  - modifyProjectile{trait=YOFFSET;action=ADD;value=-0.03}
+
+Bloodbending_FX_REMOVE:
+  Skills:
+  - Aura{auraName=DOWNFX;duration=45;delay=45} @self
+  - delay 90
+  - auraremove{aura=BLOODBENDING_FX} @self
+  - auraremove{aura=BLOODBENDING_FX2} @self
+  - auraremove{aura=BLOODBENDING_FX3} @self
+
+Bloodbending_WEAPONS:
+  Conditions:
+  - hastag{t=BLADES} castinstead Bloodbending_Blades
+  - hastag{t=GRIMOIRE} castinstead Bloodbending_Grimoire
+  - hastag{t=NEEDLES} castinstead Bloodbending_Needles
+  - hastag{t=SCYTHE} castinstead Bloodbending_Scythe
+  Skills:
+  - delay 1
+  
+Bloodbending_Blades:
+  Skills:
+  - auraremove{aura=Bloodbending_Blades} @self ?!mobsInRadius{types=VFX_Bloodborne_Blades;amount=1;radius=5}
+  - orbital{auraName=Bloodbending_Blades;bulletType=MOB;mob=VFX_Bloodborne_Blades;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Bloodbending_Blades_REMOVE_AS_CHILD:
+  TargetConditions:
+  - (hasaura{n=Bloodbending} false || hastag{t=BLADES} false) true
+  Skills:
+  - state{s=despawn;speed=1} @self
+  - delay 5
+  - auraremove{aura=Bloodbending_Blades} @owner
+  
+Bloodbending_Grimoire:
+  Skills:
+  - auraremove{aura=Bloodbending_Grimoire} @self ?!mobsInRadius{types=VFX_Bloodborne_Grimoire;amount=1;radius=5}
+  - orbital{auraName=Bloodbending_Grimoire;bulletType=MOB;mob=VFX_Bloodborne_Grimoire;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Bloodbending_Grimoire_REMOVE_AS_CHILD:
+  TargetConditions:
+  - (hasaura{n=Bloodbending} false || hastag{t=GRIMOIRE} false) true
+  Skills:
+  - state{s=despawn;speed=1} @self
+  - delay 5
+  - auraremove{aura=Bloodbending_Grimoire} @owner
+  
+Bloodbending_Needles:
+  Skills:
+  - auraremove{aura=Bloodbending_Needles} @self ?!mobsInRadius{types=VFX_Bloodborne_Needles;amount=1;radius=5}
+  - orbital{auraName=Bloodbending_Needles;bulletType=MOB;mob=VFX_Bloodborne_Needles;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Bloodbending_Needles_REMOVE_AS_CHILD:
+  TargetConditions:
+  - (hasaura{n=Bloodbending} false || hastag{t=NEEDLES} false) true
+  Skills:
+  - state{s=despawn;speed=1} @self
+  - delay 5
+  - auraremove{aura=Bloodbending_Needles} @owner
+  
+Bloodbending_Scythe:
+  Skills:
+  - auraremove{aura=Bloodbending_Scythe} @self ?!mobsInRadius{types=VFX_Bloodborne_Scythe;amount=1;radius=5}
+  - orbital{auraName=Bloodbending_Scythe;bulletType=MOB;mob=VFX_Bloodborne_Scythe;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Bloodbending_Scythe_REMOVE_AS_CHILD:
+  TargetConditions:
+  - (hasaura{n=Bloodbending} false || hastag{t=SCYTHE} false) true
+  Skills:
+  - state{s=despawn;speed=1} @self
+  - delay 5
+  - auraremove{aura=Bloodbending_Scythe} @owner
+  
+Bloodbending_Blades_ADDTAG:
+  Cooldown: 0.5
+  Conditions:
+  - hastag{t=GRIMOIRE} false
+  - hastag{t=NEEDLES} false
+  - hastag{t=SCYTHE} false
+  - hastag{t=BLADES} false
+  Skills:
+  - addtag{t=BLADES} @self
+  
+# Bloodmoon Combo #
+
+Bloodmoon_Combo:
+  Skills:
+  - skill{s=BLADES_Combo}
+  - skill{s=GRIMOIRE_Combo}
+  - skill{s=NEEDLES_Combo}
+  - skill{s=SCYTHE_Combo}
+
+
+BLADES_Combo:
+  Cooldown: "<modifier.bladescooldown>"
+  Conditions:
+  - hastag{t=BLADES} true
+  - hasaura{n=INCOMBO} false
+  Skills:
+  - skill{s=BLADES_Combo_Stack_1}
+  - skill{s=BLADES_Combo_Stack_2}
+  - skill{s=BLADES_Combo_Stack_3}
+  
+BLADES_Combo_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - Aura{auraName=BLADES_Combo_Stack;duration=200;maxStacks=2;delay=1} @self
+  - sudoskill{s=Blood_Blades_Action1;cat=true} @MIR{r=5;t=VFX_Bloodborne_Blades;target=armorstands;sort=NEAREST}
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.5;pitch=0.5;delay=2} @self
+  
+  - delay 5
+  
+  - totem{md=2;c=1;oH=BLADES_Combo_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_Slash_DIAG1;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.3;sideOffset=0;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_Slash_DIAG2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.3;sideOffset=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.6;pitch=1.4} @self
+  - effect:sound{s=item.trident.return;volume=0.8;pitch=1.4} @self
+Blood_Blades_Action1:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill1;speed=1} @self
+  
+BLADES_Combo_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=1} true
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - Aura{auraName=BLADES_Combo_Stack;duration=200;maxStacks=2;delay=1} @self
+  - sudoskill{s=Blood_Blades_Action2;cat=true} @MIR{r=5;t=VFX_Bloodborne_Blades;target=armorstands;sort=NEAREST}
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.5;pitch=0.5;delay=2} @self
+  
+  - delay 5
+  
+  - totem{md=2;c=1;oH=BLADES_Combo_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_THRUST;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1;sideOffset=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.iron_golem.hurt;volume=0.7;pitch=1.4} @self
+Blood_Blades_Action2:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill2;speed=1} @self
+  
+BLADES_Combo_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=BLADES_Combo_Stack;stacks=2} true
+  Skills:
+  - Aura{auraName=INCOMBO;duration=30} @self
+  - auraremove{aura=BLADES_Combo_Stack} @self
+  - sudoskill{s=Blood_Blades_Action3;cat=true} @MIR{r=5;t=VFX_Bloodborne_Blades;target=armorstands;sort=NEAREST}
+  #lunge back
+  - lunge{velocity=0.6;velocityY=-0.05;repeat=1;repeati=1} @forward{f=-5;y=-0.1;lockpitch=true;sideOffset=0}
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=1.3} @self
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.4;pitch=0.6;repeat=1;repeati=2;delay=3} @self
+  
+  - delay 8
+  
+  #lunge forward
+  - lunge{velocity=0.6;velocityY=-0.05;repeat=1;repeati=1} @forward{f=5;y=-0.1;lockpitch=true;sideOffset=0}
+  - sound{sound=entity.ender_dragon.flap;volume=0.8;pitch=1.1} @self
+  
+  - delay 3
+  
+  #THRUST
+  - totem{md=2;c=1;oH=BLADES_Combo_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_THRUST;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=1;sideOffset=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=item.trident.hit;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.iron_golem.hurt;volume=0.7;pitch=1.4} @self
+  
+  - delay 5
+  
+  #SLASH
+  - totem{md=2;c=1;oH=BLADES_Combo_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_Slash_HORIZ1;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=-0.2;y=0.9;sideOffset=-2.2;lockpitch=true}
+  - summon{type=VFX_Bloodmoon_Slash_HORIZ2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=-0.2;y=0.9;sideOffset=2.2;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=0.7} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.6;pitch=1.4} @self
+  - effect:sound{s=item.trident.return;volume=0.8;pitch=1.4} @self
+  
+  - effect:sound{s=entity.player.attack.sweep;volume=0.4;pitch=0.6;repeat=2;repeati=2;delay=9} @self
+Blood_Blades_Action3:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill3;speed=1} @self
+
+
+BLADES_Combo_DAMAGE_D:
+  Skills:
+  - skill{s=BLADES_Combo_DAMAGE} @EntitiesNearOrigin{r=4;limit=3}
+BLADES_Combo_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1.5";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+
+
+
+GRIMOIRE_Combo:
+  Cooldown: "<modifier.grimoirecooldown>"
+  Conditions:
+  - hastag{t=GRIMOIRE} true
+  - hasaura{n=INCOMBO} false
+  Skills:
+  - skill{s=GRIMOIRE_Combo_Stack_1}
+  - skill{s=GRIMOIRE_Combo_Stack_2}
+  - skill{s=GRIMOIRE_Combo_Stack_3}
+  
+GRIMOIRE_Combo_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=15} @self
+  - Aura{auraName=GRIMOIRE_Combo_Stack;duration=200;maxStacks=2;delay=1} @self
+  
+  - projectile{onTick=BLOODSPIKES_TICK;v=15;i=3;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+
+BLOODSPIKES_TICK:
+  Skills:
+  - skill{s=BLOODSPIKES_SMALL_TICK}
+  - skill{s=BLOODSPIKES_MEDIUM_TICK}
+  - skill{s=BLOODSPIKES_BIG_TICK}
+  
+  #SFX
+  - effect:sound{s=entity.silverfish.hurt;volume=0.8;pitch=0.5} @self
+BLOODSPIKES_SMALL_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=2} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=3} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=4} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=5} false
+  Skills:
+  - Aura{auraName=SPIKE_Stack_1;duration=100;maxStacks=5;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_SMALL;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=2;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+BLOODSPIKES_MEDIUM_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=1} false
+  - (hasaurastacks{auraName=SPIKE_Stack_1;stacks=2} true || hasaurastacks{auraName=SPIKE_Stack_1;stacks=3} true) true
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=4} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=5} false
+  Skills:
+  - Aura{auraName=SPIKE_Stack_1;duration=100;maxStacks=5;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_MEDIUM;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+BLOODSPIKES_BIG_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=1} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=2} false
+  - hasaurastacks{auraName=SPIKE_Stack_1;stacks=3} false
+  - (hasaurastacks{auraName=SPIKE_Stack_1;stacks=4} true || hasaurastacks{auraName=SPIKE_Stack_1;stacks=5} true) true
+  Skills:
+  - auraremove{aura=SPIKE_Stack_1;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_BIG;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=3;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+  
+GRIMOIRE_Combo_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=1} true
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=15} @self
+  - Aura{auraName=GRIMOIRE_Combo_Stack;duration=200;maxStacks=2;delay=1} @self
+  
+  - projectile{onTick=BLOODSPIKES_TICK;v=15;i=3;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+
+BLOODSPIKES_TICK:
+  Skills:
+  - skill{s=BLOODSPIKES_SMALL_TICK}
+  - skill{s=BLOODSPIKES_MEDIUM_TICK}
+  - skill{s=BLOODSPIKES_BIG_TICK}
+  
+  #SFX
+  - effect:sound{s=entity.silverfish.hurt;volume=0.8;pitch=0.5} @self
+BLOODSPIKES_SMALL_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=2} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=3} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=4} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=5} false
+  Skills:
+  - Aura{auraName=SPIKE_Stack_2;duration=100;maxStacks=5;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_SMALL;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=2;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+BLOODSPIKES_MEDIUM_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=1} false
+  - (hasaurastacks{auraName=SPIKE_Stack_2;stacks=2} true || hasaurastacks{auraName=SPIKE_Stack_2;stacks=3} true) true
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=4} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=5} false
+  Skills:
+  - Aura{auraName=SPIKE_Stack_2;duration=100;maxStacks=5;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_MEDIUM;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=2.5;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+BLOODSPIKES_BIG_TICK:
+  Conditions:
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=1} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=2} false
+  - hasaurastacks{auraName=SPIKE_Stack_2;stacks=3} false
+  - (hasaurastacks{auraName=SPIKE_Stack_2;stacks=4} true || hasaurastacks{auraName=SPIKE_Stack_2;stacks=5} true) true
+  Skills:
+  - auraremove{aura=SPIKE_Stack_2;delay=1} @self
+  - summon{type=VFX_BLOODSPIKES_BIG;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE} @EntitiesNearOrigin{r=3;limit=3;conditions=[  - hasaura{aura=GRIMOIRE_SPIKES_AURA} false ]}
+  
+  
+GRIMOIRE_Combo_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=GRIMOIRE_Combo_Stack;stacks=2} true
+  Skills:
+  - Aura{auraName=INCOMBO;duration=30} @self
+  - auraremove{aura=GRIMOIRE_Combo_Stack} @self
+  - sudoskill{s=Blood_GRIMOIRE_Action;cat=true} @MIR{r=5;t=VFX_Bloodborne_Grimoire;target=armorstands;sort=NEAREST}
+  
+  #SHOOT METEOR
+  - projectile{type=METEOR;bulletType=MOB;mob=VFX_BLOOD_METEOR;onEnd=GRIMOIRE_Combo_DAMAGE_D;v=35;i=1;hR=1;vR=1;mr=20;hnp=true;hO=0;sE=false;sB=true;hs=true;hfs=6;sfo=0;g=9;vO=0} @targetblock{y=0.8}
+
+  #SFX
+  - sound{sound=entity.warden.dig;volume=0.8;pitch=2} @self
+Blood_GRIMOIRE_Action:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill;speed=1} @self
+
+
+GRIMOIRE_Combo_DAMAGE_D:
+  Skills:
+  - skill{s=GRIMOIRE_RING} @origin
+  - summon{type=VFX_BLOOD_METEOR_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=GRIMOIRE_Combo_DAMAGE;repeat=2;repeati=20} @EntitiesNearOrigin{r=6;limit=5}
+  - sound{sound=entity.generic.explode;volume=1.5;pitch=0.7} @origin
+GRIMOIRE_Combo_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - aura{auraName=GRIMOIRE_SPIKES_AURA;duration=10}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+GRIMOIRE_RING:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=2;points=20;amount=1;hS=0;vS=0;y=0.1;delay=1;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=3;points=30;amount=1;hS=0;vS=0;y=0.1;delay=2;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=4;points=40;amount=1;hS=0;vS=0;y=0.1;delay=3;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=4.5;points=60;amount=1;hS=0;vS=0;y=0.1;delay=4;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=5;points=70;amount=1;hS=0;vS=0;y=0.1;delay=5;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=5.3;points=80;amount=1;hS=0;vS=0;y=0.1;delay=6;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=5.5;points=90;amount=1;hS=0;vS=0;y=0.1;delay=7;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=5.6;points=100;amount=1;hS=0;vS=0;y=0.1;delay=8;size=0.6}
+  - effect:particlering{p=dust_color_transition;color1=#FF0000;color2=#330101;radius=5.7;points=110;amount=1;hS=0;vS=0;y=0.1;delay=9;size=0.6}
+
+
+NEEDLES_Combo:
+  Cooldown: "<modifier.needlescooldown>"
+  Conditions:
+  - hastag{t=NEEDLES} true
+  - hasaura{n=INCOMBO} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - projectile{bulletmatchdirection=true;bulletForwardOffset=1;bulletType=MOB;mob=VFX_Bloodborne_Needles_PRO;onHit=NEEDLES_Combo_DAMAGE_D;drawHitbox=false;v=23;i=1;hR=0.4;vR=0.4;mr=15;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0.5;syo=1.5;tyo=1.5;bulletYOffset=0} @Forward{f=15;y=0}
+
+  #SFX
+  - effect:sound{s=entity.player.attack.sweep;volume=0.5;pitch=0.5;delay=2} @self
+
+NEEDLES_Combo_DAMAGE_D:
+  Skills:
+  - skill{s=NEEDLES_Combo_DAMAGE} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+NEEDLES_Combo_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 0.75";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  - Aura{auraName=NEEDLES_STACK;duration=200;maxStacks=5;delay=1}
+  - orbital{auraName=VFX_Bloodborne_Needles_STUCK1;bulletType=MOB;mob=VFX_Bloodborne_Needles_STUCK1;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=200;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=2} @TargetedTarget{conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=1} true ]}
+  - orbital{auraName=VFX_Bloodborne_Needles_STUCK2;bulletType=MOB;mob=VFX_Bloodborne_Needles_STUCK2;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=200;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=2} @TargetedTarget{conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=2} true ]}
+  - orbital{auraName=VFX_Bloodborne_Needles_STUCK3;bulletType=MOB;mob=VFX_Bloodborne_Needles_STUCK3;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=200;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=2} @TargetedTarget{conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=3} true ]}
+  - orbital{auraName=VFX_Bloodborne_Needles_STUCK4;bulletType=MOB;mob=VFX_Bloodborne_Needles_STUCK4;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=200;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=2} @TargetedTarget{conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=4} true ]}
+  - orbital{auraName=VFX_Bloodborne_Needles_STUCK5;bulletType=MOB;mob=VFX_Bloodborne_Needles_STUCK5;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=200;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;delay=2} @TargetedTarget{conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=5} true ]}
+
+
+
+SCYTHE_Combo:
+  Cooldown: "<modifier.scythecooldown>"
+  Conditions:
+  - hastag{t=SCYTHE} true
+  - hasaura{n=INCOMBO} false
+  - hasaura{n=SCYTHE_GONE} false
+  Skills:
+  - skill{s=SCYTHE_Combo_Stack_1}
+  - skill{s=SCYTHE_Combo_Stack_2}
+  - skill{s=SCYTHE_Combo_Stack_3}
+  - skill{s=SCYTHE_Combo_Stack_4}
+  
+SCYTHE_Combo_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=3} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - Aura{auraName=SCYTHE_Combo_Stack;duration=200;maxStacks=3;delay=1} @self
+  - sudoskill{s=Blood_SCYTHE_Action1;cat=true} @MIR{r=5;t=VFX_Bloodborne_Scythe;target=armorstands;sort=NEAREST}
+  - lunge{velocity=0.28;velocityY=0;repeat=10;repeati=1} @forward{f=5;y=-1;lockpitch=true}
+  
+  - totem{md=2;c=1;oH=SCYTHE_Combo_DAMAGE_D1;hnp=true;hp=true;hR=5;vR=2;i=1;repeat=2;repeati=4} @forward{f=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.wither.ambient;volume=0.5;pitch=1.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2;delay=4} @self
+  - effect:sound{s=entity.breeze.shoot;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2} @self
+Blood_SCYTHE_Action1:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill1;speed=0.8} @self
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe_spin;np=bone}
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe;np=bone;delay=10}
+
+SCYTHE_Combo_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=1} true
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=3} false
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - Aura{auraName=SCYTHE_Combo_Stack;duration=200;maxStacks=3;delay=1} @self
+  - sudoskill{s=Blood_SCYTHE_Action2;cat=true} @MIR{r=5;t=VFX_Bloodborne_Scythe;target=armorstands;sort=NEAREST}
+  - lunge{velocity=0.28;velocityY=0;repeat=10;repeati=1} @forward{f=5;y=-1;lockpitch=true}
+  
+  - totem{md=2;c=1;oH=SCYTHE_Combo_DAMAGE_D2;hnp=true;hp=true;hR=5;vR=2;i=1;repeat=2;repeati=4} @forward{f=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.wither.ambient;volume=0.5;pitch=1.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2;delay=4} @self
+  - effect:sound{s=entity.breeze.shoot;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2} @self
+Blood_SCYTHE_Action2:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill2;speed=0.8} @self
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe_spin;np=bone}
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe;np=bone;delay=10}
+  
+SCYTHE_Combo_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=2} true
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=3} false
+  Skills:
+  - potion{type=LEVITATION;duration=20;level=-1;hasParticles=false} @self
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - Aura{auraName=SCYTHE_Combo_Stack;duration=200;maxStacks=3;delay=1} @self
+  - sudoskill{s=Blood_SCYTHE_Action3;cat=true} @MIR{r=5;t=VFX_Bloodborne_Scythe;target=armorstands;sort=NEAREST}
+  - lunge{velocity=0.4;velocityY=0.5;repeat=5;repeati=1} @forward{f=4;y=3;lockpitch=true}
+  
+  - totem{md=2;c=1;oH=SCYTHE_Combo_DAMAGE_UP_D;hnp=true;hp=true;hR=5;vR=2;i=1;repeat=2;repeati=4} @forward{f=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.wither.ambient;volume=0.5;pitch=1.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2;delay=4} @self
+  - effect:sound{s=entity.breeze.shoot;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2} @self
+Blood_SCYTHE_Action3:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill3;speed=0.8} @self
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe_spin;np=bone}
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe;np=bone;delay=10}
+  
+SCYTHE_Combo_Stack_4:
+  Conditions:
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=1} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=2} false
+  - hasaurastacks{auraName=SCYTHE_Combo_Stack;stacks=3} true
+  Skills:
+  - Aura{auraName=INCOMBO;duration=10} @self
+  - auraremove{aura=SCYTHE_Combo_Stack;delay=1} @self
+  - sudoskill{s=Blood_SCYTHE_Action4;cat=true} @MIR{r=5;t=VFX_Bloodborne_Scythe;target=armorstands;sort=NEAREST}
+  - lunge{velocity=0.6;velocityY=-0.8;repeat=2;repeati=1} @forward{f=5;y=-3;lockpitch=true}
+  - onDamaged{auraName=damageResist;d=20;cE=true;deflectProjectiles=false} @self
+  
+  - totem{md=2;c=1;oH=SCYTHE_Combo_DAMAGE_DOWN_D;hnp=true;hp=true;hR=5;vR=2;i=1;repeat=2;repeati=4} @forward{f=0;lockpitch=true}
+  
+  #SFX
+  - effect:sound{s=entity.wither.ambient;volume=0.5;pitch=1.6} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2;delay=4} @self
+  - effect:sound{s=entity.breeze.shoot;volume=0.7;pitch=1.4;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.4;pitch=1.2} @self
+Blood_SCYTHE_Action4:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=skill4;speed=0.8} @self
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe_spin;np=bone}
+  - changepart{m=vfx_bloodborne_scythe;p=bone;nm=vfx_bloodborne_scythe;np=bone;delay=10}
+  
+  
+  
+SCYTHE_Combo_DAMAGE_D1:
+  Skills:
+  - skill{s=SCYTHE_Combo_DAMAGE1} @EntitiesNearOrigin{r=5;limit=6;conditions=[  - hasaura{aura=SCYTHE_Combo_DAMAGE1} false ]}
+SCYTHE_Combo_DAMAGE1:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - aura{auraName=SCYTHE_Combo_DAMAGE1;duration=20}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - throw{velocity=5;velocityY=0;repeat=2;repeati=1}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+SCYTHE_Combo_DAMAGE_D2:
+  Skills:
+  - skill{s=SCYTHE_Combo_DAMAGE2} @EntitiesNearOrigin{r=5;limit=6;conditions=[  - hasaura{aura=SCYTHE_Combo_DAMAGE2} false ]}
+SCYTHE_Combo_DAMAGE2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - aura{auraName=SCYTHE_Combo_DAMAGE2;duration=20}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - throw{velocity=5;velocityY=0;repeat=2;repeati=1}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+SCYTHE_Combo_DAMAGE_UP_D:
+  Skills:
+  - skill{s=SCYTHE_Combo_DAMAGE_UP} @EntitiesNearOrigin{r=5;limit=6;conditions=[  - hasaura{aura=SCYTHE_Combo_DAMAGE3} false ]}
+SCYTHE_Combo_DAMAGE_UP:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - potion{type=LEVITATION;duration=20;level=-1;hasParticles=false}
+  - aura{auraName=SCYTHE_Combo_DAMAGE3;duration=20}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=9;velocityY=10}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+SCYTHE_Combo_DAMAGE_DOWN_D:
+  Skills:
+  - skill{s=SCYTHE_Combo_DAMAGE_DOWN} @EntitiesNearOrigin{r=5;limit=6;conditions=[  - hasaura{aura=SCYTHE_Combo_DAMAGE4} false ]}
+SCYTHE_Combo_DAMAGE_DOWN:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - aura{auraName=SCYTHE_Combo_DAMAGE4;duration=20}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=12;velocityY=-15}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  
+# Vampiric Surge #
+
+Vampiric_Surge:
+  Skills:
+  - skill{s=BLADES_Surge}
+  - skill{s=GRIMOIRE_Surge}
+  - skill{s=NEEDLES_Surge}
+  - skill{s=SCYTHE_Surge}
+  
+BLADES_Surge:
+  Cooldown: "<modifier.bladescooldown>"
+  Conditions:
+  - onground true
+  - hastag{t=BLADES} true
+  Skills:
+  - Aura{auraName=BLADES_Surge;duration=40} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.6} @self
+  - effect:sound{s=entity.generic.explode;volume=0.8;pitch=0.8} @self
+  - effect:sound{s=entity.breeze.shoot;volume=0.6;pitch=0.7} @self
+  - summon{type=VFX_BLADES_Surge;amount=1;radius=0;yRadius=0;onSurface=true;delay=1} @forward{f=5;y=0;lockpitch=true}
+  - onDamaged{auraName=landresist;d=12;cE=true} @self
+  - lunge{velocity=1;velocityY=-0.05;repeat=5;repeatinterval=1} @forward{f=12;y=-0.05;lockpitch=true}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0;repeat=5;repeati=1} @self
+  - delay 2
+  - totem{md=2;c=1;oH=BLADES_Surge_DAMAGE_D;hnp=true;hp=true;hR=2;vR=1;i=1;repeat=3;repeatinterval=2} @forward{f=0;y=0}
+BLADES_Surge_DAMAGE_D:
+  Skills:
+  - skill{s=BLADES_Surge_DAMAGE} @EntitiesNearOrigin{r=3;limit=3}
+BLADES_Surge_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=BLADES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=BLADES_Surge_DAMAGE;duration=10}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=BLADES_Surge_HEAL_FX;cat=true}
+  
+BLADES_Surge_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=BLADES_Surge_PROFX;oH=BLADES_Surge_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+BLADES_Surge_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+BLADES_Surge_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=BLADES_Surge_REALHEAL;duration=10} @trigger
+BLADES_Surge_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal>"} @self
+  - auraremove{aura=BLADES_Surge_REALHEAL} @self
+  
+  
+  
+
+GRIMOIRE_Surge:
+  Cooldown: "<modifier.grimoirecooldown>"
+  Conditions:
+  - hastag{t=GRIMOIRE} true
+  Skills:
+  - projectile{bulletType=MOB;mob=VFX_BLOOD_BAT;oS=GRIMOIRE_Surge_onTick;onHit=GRIMOIRE_Surge_HIT_D;v=11;i=1;hR=1;vR=1;mr=13;hn=25;vn=3;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0;syo=2.8;tyo=1.5;repeat=6;repeati=1} @Forward{f=15;y=0}
+  - sound{sound=entity.bat.loop;volume=0.8;pitch=1} @self
+  - sound{sound=entity.bat.ambient;volume=0.7;pitch=1} @self
+  - sound{sound=entity.bat.ambient;volume=0.7;pitch=1;delay=3} @self
+  - sound{sound=entity.bat.ambient;volume=0.7;pitch=1;delay=6} @self
+
+GRIMOIRE_Surge_onTick:
+  Skills:
+  - delay 5
+  - setprojectiledirection{repeat=4;repeati=1} @ProjectileForward{f=5;rot=5}
+  - delay 5
+  - setprojectiledirection{repeat=4;repeati=1} @ProjectileForward{f=5;rot=-10}
+  - delay 5
+  - setprojectiledirection{repeat=4;repeati=1} @ProjectileForward{f=5;rot=10}
+  - delay 5
+  - setprojectiledirection{repeat=4;repeati=1} @ProjectileForward{f=5;rot=-5}
+  - delay 5
+  
+GRIMOIRE_Surge_HIT_D:
+  Skills:
+  - skill{s=GRIMOIRE_Surge_HIT} @EntitiesNearOrigin{r=3;limit=2}
+GRIMOIRE_Surge_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=GRIMOIRE_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=GRIMOIRE_Surge_DAMAGE;duration=10}
+  - damage{a="<modifier.damage> * 1.5";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=GRIMOIRE_Surge_HEAL_FX;cat=true}
+  
+GRIMOIRE_Surge_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=GRIMOIRE_Surge_PROFX;oH=GRIMOIRE_Surge_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+GRIMOIRE_Surge_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+GRIMOIRE_Surge_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=GRIMOIRE_Surge_REALHEAL;duration=10} @trigger
+GRIMOIRE_Surge_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 1.5"} @self
+  - auraremove{aura=GRIMOIRE_Surge_REALHEAL} @self
+
+
+
+
+NEEDLES_Surge:
+  Cooldown: "<modifier.needlescooldown>"
+  Conditions:
+  - hastag{t=NEEDLES} true
+  Skills:
+  - skill{s=NEEDLES_Surge_EXPLODE_1} @EIR{r=15;conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=1} true ]}
+  - skill{s=NEEDLES_Surge_EXPLODE_2} @EIR{r=15;conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=2} true ]}
+  - skill{s=NEEDLES_Surge_EXPLODE_3} @EIR{r=15;conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=3} true ]}
+  - skill{s=NEEDLES_Surge_EXPLODE_4} @EIR{r=15;conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=4} true ]}
+  - skill{s=NEEDLES_Surge_EXPLODE_5} @EIR{r=15;conditions=[  - hasaurastacks{n=NEEDLES_STACK;stacks=5} true ]}
+
+NEEDLES_Surge_EXPLODE_1:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=NEEDLES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 0.5";pkb=true;hnp=true;hp=true}
+  - skill{s=NEEDLES_REMOVEAURA}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=NEEDLES_Surge1_HEAL_FX;cat=true}
+NEEDLES_Surge1_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=NEEDLES_Surge1_PROFX;oH=NEEDLES_Surge1_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+NEEDLES_Surge1_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+NEEDLES_Surge1_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=NEEDLES_Surge1_REALHEAL;duration=10} @trigger
+NEEDLES_Surge1_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 0.5"} @self
+  - auraremove{aura=NEEDLES_Surge1_REALHEAL} @self
+  
+  
+  
+NEEDLES_Surge_EXPLODE_2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=NEEDLES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1";pkb=true;hnp=true;hp=true}
+  - skill{s=NEEDLES_REMOVEAURA}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=NEEDLES_Surge2_HEAL_FX;cat=true}
+NEEDLES_Surge2_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=NEEDLES_Surge2_PROFX;oH=NEEDLES_Surge2_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+NEEDLES_Surge2_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+NEEDLES_Surge2_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=NEEDLES_Surge2_REALHEAL;duration=10} @trigger
+NEEDLES_Surge2_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 1"} @self
+  - auraremove{aura=NEEDLES_Surge2_REALHEAL} @self
+  
+  
+NEEDLES_Surge_EXPLODE_3:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=NEEDLES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1.5";pkb=true;hnp=true;hp=true}
+  - skill{s=NEEDLES_REMOVEAURA}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=NEEDLES_Surge3_HEAL_FX;cat=true}
+NEEDLES_Surge3_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=NEEDLES_Surge3_PROFX;oH=NEEDLES_Surge3_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+NEEDLES_Surge3_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+NEEDLES_Surge3_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=NEEDLES_Surge3_REALHEAL;duration=10} @trigger
+NEEDLES_Surge3_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 1.5"} @self
+  - auraremove{aura=NEEDLES_Surge3_REALHEAL} @self
+  
+  
+NEEDLES_Surge_EXPLODE_4:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=NEEDLES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 2";pkb=true;hnp=true;hp=true}
+  - skill{s=NEEDLES_REMOVEAURA}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=NEEDLES_Surge4_HEAL_FX;cat=true}
+NEEDLES_Surge4_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=NEEDLES_Surge4_PROFX;oH=NEEDLES_Surge4_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+NEEDLES_Surge4_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+NEEDLES_Surge4_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=NEEDLES_Surge4_REALHEAL;duration=10} @trigger
+NEEDLES_Surge4_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 2"} @self
+  - auraremove{aura=NEEDLES_Surge4_REALHEAL} @self
+  
+  
+NEEDLES_Surge_EXPLODE_5:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=NEEDLES_Surge_DAMAGE} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 2.5";pkb=true;hnp=true;hp=true}
+  - skill{s=NEEDLES_REMOVEAURA}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=NEEDLES_Surge5_HEAL_FX;cat=true}
+NEEDLES_Surge5_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=NEEDLES_Surge5_PROFX;oH=NEEDLES_Surge5_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+NEEDLES_Surge5_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+NEEDLES_Surge5_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=NEEDLES_Surge5_REALHEAL;duration=10} @trigger
+NEEDLES_Surge5_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 2.5"} @self
+  - auraremove{aura=NEEDLES_Surge5_REALHEAL} @self
+  
+  
+
+NEEDLES_REMOVEAURA:
+  Skills:
+  - auraremove{aura=NEEDLES_STACK}
+  - auraremove{aura=VFX_Bloodborne_Needles_STUCK1}
+  - auraremove{aura=VFX_Bloodborne_Needles_STUCK2}
+  - auraremove{aura=VFX_Bloodborne_Needles_STUCK3}
+  - auraremove{aura=VFX_Bloodborne_Needles_STUCK4}
+  - auraremove{aura=VFX_Bloodborne_Needles_STUCK5}
+  
+  - sudoskill{s=NEEDLES_EXPLODE_PRO;cat=true}
+  
+  - Aura{auraName=NEEDLES_Surge_DAMAGE;duration=10}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - sound{sound=entity.phantom.bite;volume=0.8;pitch=0.5}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+NEEDLES_EXPLODE_TICK:
+  Skills:
+  - particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=1;hS=0;vS=0;y=0;size=0.5;speed=0} @origin
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.9}
+NEEDLES_EXPLODE_PRO:
+  Skills:
+  - projectile{oT=NEEDLES_EXPLODE_TICK;v=5;md=30;i=1;hR=1;vR=1;mr=6;hnp=false;hO=<random.0to360>;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=<random.float.-1.5to3>;repeat=6;repeati=0} @forward
+  
+  
+SCYTHE_Surge:
+  Cooldown: "<modifier.scythecooldown>"
+  Conditions:
+  - hastag{t=SCYTHE} true
+  - hasaura{n=SCYTHE_GONE} false
+  Skills:
+  - Aura{auraName=SCYTHE_GONE;duration=50;delay=1} @self
+  - projectile{oT=SCYTHE_Surge_SHOOT_T;md=20;DeathDelay=6;onEnd=SCYTHE_Surge_MISSILE_MISSILE_SUDO;bulletmatchdirection=true;bulletForwardOffset=1;bulletType=MOB;mob=VFX_Bloodborne_Scythe_SPIN;onHit=SCYTHE_Surge_SHOOT_DAMAGE_D;drawHitbox=false;v=28;i=1;hR=1;vR=4;mr=20;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=2;sfo=0.5;syo=1.5;tyo=1.5;bulletYOffset=0} @Forward{f=15;y=0}
+  - projectile{oT=SCYTHE_Surge_SHOOT_T;md=20;onHit=SCYTHE_Surge_SHOOT_DAMAGE_D;drawHitbox=false;v=28;i=1;hR=1;vR=4;mr=20;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=2;sfo=-1.5;syo=1.5;tyo=1.5;bulletYOffset=0} @Forward{f=15;y=0}
+
+  #SFX
+  - effect:sound{s=item.trident.riptide_1;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.7;pitch=0.6} @self
+  - sudoskill{s=SCYTHE_Surge_Action1;cat=true} @MIR{r=5;t=VFX_Bloodborne_Scythe;target=armorstands;sort=NEAREST}
+SCYTHE_Surge_Action1:
+  TriggerConditions:
+  - owner true
+  Skills:
+  - state{s=spawndespawn;speed=1} @self
+  
+SCYTHE_Surge_SHOOT_T:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.9}
+SCYTHE_Surge_SHOOT_DAMAGE_D:
+  Skills:
+  - skill{s=SCYTHE_Surge_SHOOT_DAMAGE} @EntitiesNearOrigin{r=6;limit=6;sort=NEAREST}
+SCYTHE_Surge_SHOOT_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=SCYTHE_Surge_HIT} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - aura{auraName=SCYTHE_Surge_HIT;duration=5}
+  - throw{velocity=10;velocityY=0}
+  - damage{a="<modifier.damage> * 0.5";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=SCYTHE_Surge_HEAL_FX;cat=true}
+SCYTHE_Surge_HEAL_FX:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - missile{oT=SCYTHE_Surge_PROFX;oH=SCYTHE_Surge_PROFXST;in=2;v=17;i=1;hR=1;vR=1;md=100;mr=30;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;syo=1.3;tyo=1.5;HitTargetOnly=true;stopconditions=[- hasaura{n=<trigger.name>LS} true]} @trigger
+SCYTHE_Surge_PROFX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=8;hS=0.01;vS=0.01;y=0;size=0.4;speed=0} @origin
+SCYTHE_Surge_PROFXST:
+  Skills:
+  - effect:sound{s=entity.witch.drink;volume=0.8;pitch=0.7} @trigger
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=60;hS=0.3;vS=0.7;y=0.9;size=0.45;speed=0} @trigger
+  - Aura{auraName=SCYTHE_Surge_REALHEAL;duration=10} @trigger
+SCYTHE_Surge_REALHEAL:
+  Skills:
+  - heal{a="<modifier.heal> * 0.5"} @self
+  
+
+SCYTHE_Surge_MISSILE_MISSILE_SUDO:
+  Skills:
+  - missile{fO=true;bulletType=MOB;mob=VFX_Bloodborne_Scythe_SPIN_BACK;onHit=SCYTHE_Surge_MISSILE_hit_Back;oT=SCYTHE_Surge_MISSILE_MISSILE_SUDO_T;drawHitbox=false;md=100;mr=400;v=2;i=1;hR=1;vR=4;in=2;sE=false;sB=false;hs=true;hfs=2;bulletYOffset=0} @self
+  - missile{fO=true;onHit=SCYTHE_Surge_MISSILE_hit_Back;oT=SCYTHE_Surge_MISSILE_MISSILE_SUDO_T;drawHitbox=false;md=100;mr=400;v=2;i=1;hR=1;vR=4;in=2;sE=false;sfo=-1;sB=false;hs=true;hfs=2;bulletYOffset=0} @self
+SCYTHE_Surge_MISSILE_MISSILE_SUDO_T:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.15}
+SCYTHE_Surge_MISSILE_hit_Back:
+  TargetConditions:
+  - isCaster castinstead SCYTHE_Surge_MISSILE_End_Back_REMOVE
+  Skills:
+  - skill{s=SCYTHE_Surge_MISSILE_hit_Target2} @EntitiesNearOrigin{r=6;limit=6;sort=NEAREST}
+
+SCYTHE_Surge_MISSILE_hit_Target2:
+  TargetConditions:
+  - hasaura{n=SCYTHE_Surge_HIT2} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - aura{auraName=SCYTHE_Surge_HIT2;duration=5}
+  - damage{a="<modifier.damage> * 0.5";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Blood_Impact;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.zombie.attack_iron_door;volume=0.6;pitch=1.6}
+  - effect:sound{s=entity.generic.explode;volume=0.4;pitch=1.4}
+  - effect:particles{p=dust_color_transition;color1=#FF0000;color2=#330101;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  - pull{velocity=4.5}
+  
+  - Aura{auraName=<caster.name>LS;duration=20} @self
+  - sudoskill{s=SCYTHE_Surge_HEAL_FX;cat=true}
+  
+SCYTHE_Surge_MISSILE_End_Back_REMOVE:
+  TargetConditions:
+  - owner true
+  Skills:
+  - remove @self
+  
+# Bloodborne Blades #
+
+Bloodborne_Blades:
+  Conditions:
+  #if already BLADES then false
+  - hastag{t=BLADES} false
+  Skills:
+  #change state to BLADES
+  - removetag{t=GRIMOIRE} @self
+  - removetag{t=NEEDLES} @self
+  - removetag{t=SCYTHE} @self
+  - addtag{t=BLADES} @self
+  - sound{sound=block.bubble_column.upwards_inside;volume=0.8;pitch=1.3} @self
+  - sound{sound=entity.phantom.ambient;volume=0.8;pitch=0.7} @self
+
+# Bloodborne Grimoire #
+
+Bloodborne_Grimoire:
+  Conditions:
+  #if already GRIMOIRE then false
+  - hastag{t=GRIMOIRE} false
+  Skills:
+  #change state to GRIMOIRE
+  - removetag{t=BLADES} @self
+  - removetag{t=NEEDLES} @self
+  - removetag{t=SCYTHE} @self
+  - addtag{t=GRIMOIRE} @self
+  - sound{sound=block.bubble_column.upwards_inside;volume=0.8;pitch=1.3} @self
+  - sound{sound=entity.phantom.ambient;volume=0.8;pitch=0.7} @self
+  
+# Bloodborne Needles #
+
+Bloodborne_Needles:
+  Conditions:
+  #if already NEEDLES then false
+  - hastag{t=NEEDLES} false
+  Skills:
+  #change state to NEEDLES
+  - removetag{t=BLADES} @self
+  - removetag{t=GRIMOIRE} @self
+  - removetag{t=SCYTHE} @self
+  - addtag{t=NEEDLES} @self
+  - sound{sound=block.bubble_column.upwards_inside;volume=0.8;pitch=1.3} @self
+  - sound{sound=entity.phantom.ambient;volume=0.8;pitch=0.7} @self
+  
+# Bloodborne Scythe #
+
+Bloodborne_Scythe:
+  Conditions:
+  #if already SCYTHE then false
+  - hastag{t=SCYTHE} false
+  Skills:
+  #change state to SCYTHE
+  - removetag{t=BLADES} @self
+  - removetag{t=GRIMOIRE} @self
+  - removetag{t=NEEDLES} @self
+  - addtag{t=SCYTHE} @self
+  - sound{sound=block.bubble_column.upwards_inside;volume=0.8;pitch=1.3} @self
+  - sound{sound=entity.phantom.ambient;volume=0.8;pitch=0.7} @self

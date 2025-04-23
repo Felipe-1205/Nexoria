@@ -1,0 +1,1445 @@
+
+Changetarget:  
+  Cooldown: 0
+  Skills:
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=players}
+  
+Cancelattack:
+  Skills:
+  - CancelEvent
+  
+  
+Beast_Aura:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} false
+  - hasaura{n=Panther_Aura} cast Panther_Beast_Aura
+  - hasaura{n=Owl_Aura} cast Owl_Beast_Aura
+  - hasaura{n=Turtle_Aura} cast Turtle_Beast_Aura
+  - hasaura{n=Panther_Sync} cast Panther_SYNC
+  - hasaura{n=Owl_Sync} cast Owl_SYNC
+  - hasaura{n=Turtle_Sync} cast Turtle_SYNC
+  Skills:
+  - Aura{auraName=Beast_Aura;duration=15} @self
+  
+Panther_Beast_Aura:
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=11;level=0;hasParticles=false} @self
+  - potion{type=SPEED;duration=11;level=0;hasParticles=false} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=11;level=0;hasParticles=false} @self
+  
+  - skill{s=Panther_ACTIVATE} @EIR{r=70}
+  
+Owl_Beast_Aura:
+  Skills:
+  - potion{type=NIGHT_VISION;duration=220;level=0;hasParticles=false} @self
+  - potion{type=SLOW_FALLING;duration=11;level=0;hasParticles=false} @self
+  - potion{type=JUMP;duration=11;level=0;hasParticles=false} @self
+
+  - skill{s=Owl_ACTIVATE} @EIR{r=70}
+  
+Turtle_Beast_Aura:
+  Skills:
+  - skill{s=Turtle_Beast_Aura2} @self
+  - potion{type=WATER_BREATHING;duration=11;level=0;hasParticles=false} @self
+  - potion{type=CONDUIT_POWER;duration=11;level=0;hasParticles=false} @self
+  - potion{type=DOLPHINS_GRACE;duration=11;level=0;hasParticles=false} @self
+  
+  - skill{s=Turtle_ACTIVATE} @EIR{r=70}
+  
+Turtle_Beast_Aura2:
+  Conditions:
+  - haspotioneffect{type=NIGHT_VISION;duration=5to300} true
+  Skills:
+  - potion{type=NIGHT_VISION;duration=1;level=0;hasParticles=false;force=true} @self
+  
+  
+Panther_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Panther_Mount_Normal_Mode;seconds=0} @self
+  - setspeed{speed=1.15;type=walking} @self
+  
+Panther_Mount_Normal_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Panther_Mount_Mode;seconds=0} @self
+  - setspeed{speed=1.8;type=walking} @self
+  
+  
+  
+  
+Owl_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Owl_Mount_Normal_Mode;seconds=0} @self
+  - setspeed{speed=1.1;type=walking} @self
+  
+Owl_Mount_Normal_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Owl_Mount_Mode;seconds=0} @self
+  - setspeed{speed=1.85;type=walking} @self
+  
+  
+  
+  
+Turtle_Mount_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver true
+  Skills:
+  - setSkillCooldown{skill=Turtle_Mount_Normal_Mode;seconds=0} @self
+  - setspeed{speed=0.65;type=walking} @self
+  
+Turtle_Mount_Normal_Mode:
+  Cooldown: 99999
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - setSkillCooldown{skill=Turtle_Mount_Mode;seconds=0} @self
+  - setspeed{speed=1.2;type=walking} @self
+  
+  
+  
+Beast_Mount:
+  Conditions:
+  - ModelHasDriver false
+  TriggerConditions:
+  - owner true
+  Cooldown: 2
+  Skills:
+  - mountmodel{driver=true;mode=walking}
+  
+Beast_Mount_Owl:
+  Conditions:
+  - ModelHasDriver false
+  TriggerConditions:
+  - owner true
+  Cooldown: 2
+  Skills:
+  - mountmodel{driver=true;mode=flying}
+  
+Beast_Panther_Attack:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} false
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Panther_SIGNAL_LEFT,Panther_SIGNAL_RIGHT}
+
+Panther_SIGNAL_SOUND:
+  Cooldown: 5
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.panther_skill;volume=0.5;pitch="random(0.9, 1.1)"}
+  
+Panther_SIGNAL_LEFT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_left;speed=1} @self
+  - skill{s=Panther_SIGNAL_SOUND} @self 0.5
+  - delay 6
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0;lockpitch=true}
+  
+  - skill{s=Panther_SKILL_TO_MINION2} @owner
+  
+Panther_SIGNAL_RIGHT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_right;speed=1} @self
+  - skill{s=Panther_SIGNAL_SOUND} @self 0.5
+  - delay 6
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.5;sideOffset=0;lockpitch=true}
+  
+  - skill{s=Panther_SKILL_TO_MINION2} @owner
+  
+Panther_SKILL_TO_MINION2:
+  TargetConditions:
+  - hasaura{n=Panther_Sync} false
+  Skills:
+  - sudoskill{s=Panther_SKILL_TO_MINION;cat=true}
+  
+Panther_SKILL_TO_MINION:
+  Skills:
+  - Aura{auraName=<caster.uuid>panther;duration=9} @trigger
+  
+Panther_ACTIVATE:
+  Conditions:
+  - hasaura{aura=Panther_SYNC} false
+  - hasaura{aura=Owl_SYNC} false
+  - hasaura{aura=Turtle_SYNC} false
+  TargetConditions:
+  - hasaura{n=<caster.uuid>panther} true
+  Skills:
+  - totem{md=2;c=1;oT=Panther_SKILL_TO_MINIOND;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Panther_SKILL_TO_MINIOND:
+  Skills:
+  - skill{s=Panther_SKILL_TO_MINION22;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Panther_SKILL_TO_MINION22:
+  Skills:
+  - projectile{fromorigin=true;onHit=Panther_DAMAGE_DAMAGE;sfo=1;v=20;i=1;hR=1;vR=1;mr=3;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4.5;limit=1;sort=NEAREST}
+
+Panther_DAMAGE_DAMAGE:
+  Skills:
+  - skill{s=Panther_DAMAGE_DAMAGED} @EntitiesNearOrigin{r=4;limit=3}
+
+Panther_DAMAGE_DAMAGED:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>panther} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Panther_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+
+
+
+
+
+
+Beast_Owl_Attack:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} false
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Owl_SIGNAL_LEFT,Owl_SIGNAL_RIGHT}
+
+
+Owl_SIGNAL_SOUND:
+  Cooldown: 5
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.owl_skill;volume=0.6;pitch="random(0.9, 1.1)"}
+  
+Owl_SIGNAL_LEFT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_left;speed=1} @self
+  - skill{s=Owl_SIGNAL_SOUND} @self 0.5
+  - delay 7
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.3;pitch="random(1.2, 1.4)"} @self
+  - effect:sound{s=beastmaster_sounds:samus.owl_slash;volume=0.15;pitch="random(1.4, 1.6)"} @self
+  
+  - skill{s=Owl_SKILL_TO_MINION2} @owner
+  
+Owl_SIGNAL_RIGHT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_right;speed=1} @self
+  - skill{s=Owl_SIGNAL_SOUND} @self 0.5
+  - delay 7
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.3;pitch="random(1.2, 1.4)"} @self
+  - effect:sound{s=beastmaster_sounds:samus.owl_slash;volume=0.15;pitch="random(1.4, 1.6)"} @self
+  
+  - skill{s=Owl_SKILL_TO_MINION2} @owner
+  
+Owl_SKILL_TO_MINION2:
+  TargetConditions:
+  - hasaura{n=Owl_Sync} false
+  Skills:
+  - sudoskill{s=Owl_SKILL_TO_MINION;cat=true}
+  
+Owl_SKILL_TO_MINION:
+  Skills:
+  - Aura{auraName=<caster.uuid>owl;duration=9} @trigger
+  
+Owl_ACTIVATE:
+  Conditions:
+  - hasaura{aura=Panther_SYNC} false
+  - hasaura{aura=Owl_SYNC} false
+  - hasaura{aura=Turtle_SYNC} false
+  TargetConditions:
+  - hasaura{n=<caster.uuid>owl} true
+  Skills:
+  - totem{md=2;c=1;oT=Owl_SKILL_TO_MINIOND;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Owl_SKILL_TO_MINIOND:
+  Skills:
+  - skill{s=Owl_SKILL_TO_MINION22;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Owl_SKILL_TO_MINION22:
+  Skills:
+  - projectile{fromorigin=true;onHit=Owl_DAMAGE_DAMAGE;sfo=0;v=20;i=1;hR=1;vR=1;mr=2.5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4;limit=1;sort=NEAREST}
+
+Owl_DAMAGE_DAMAGE:
+  Skills:
+  - skill{s=Owl_DAMAGE_DAMAGED} @EntitiesNearOrigin{r=4;limit=2}
+
+Owl_DAMAGE_DAMAGED:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>owl} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Owl_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+  
+  
+  
+Beast_Turtle_Attack:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} false
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Turtle_SIGNAL_LEFT,Turtle_SIGNAL_RIGHT}
+
+
+Turtle_SIGNAL_SOUND:
+  Cooldown: 5
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.turtle_skill;volume=0.75;pitch="random(0.9, 1.1)"}
+  
+Turtle_SIGNAL_LEFT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_left;speed=1} @self
+  - skill{s=Turtle_SIGNAL_SOUND} @self 0.5
+  - effect:sound{s=beastmaster_sounds:samus.turtle_strike;volume=0.5;pitch="random(0.9, 1.1)";delay=5} @self
+  - delay 6
+  
+  - skill{s=Turtle_SKILL_TO_MINION2} @owner
+  
+Turtle_SIGNAL_RIGHT:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_right;speed=1} @self
+  - skill{s=Turtle_SIGNAL_SOUND} @self 0.5
+  - effect:sound{s=beastmaster_sounds:samus.turtle_strike;volume=0.5;pitch="random(0.9, 1.1)";delay=5} @self
+  - delay 6
+  
+  - skill{s=Turtle_SKILL_TO_MINION2} @owner
+  
+Turtle_SKILL_TO_MINION2:
+  TargetConditions:
+  - hasaura{n=Turtle_Sync} false
+  Skills:
+  - sudoskill{s=Turtle_SKILL_TO_MINION;cat=true}
+  
+Turtle_SKILL_TO_MINION:
+  Skills:
+  - Aura{auraName=<caster.uuid>turtle;duration=9} @trigger
+  
+Turtle_ACTIVATE:
+  Conditions:
+  - hasaura{aura=Panther_SYNC} false
+  - hasaura{aura=Owl_SYNC} false
+  - hasaura{aura=Turtle_SYNC} false
+  TargetConditions:
+  - hasaura{n=<caster.uuid>turtle} true
+  Skills:
+  - totem{md=2;c=1;oT=Turtle_SKILL_TO_MINIOND;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Turtle_SKILL_TO_MINIOND:
+  Skills:
+  - skill{s=Turtle_SKILL_TO_MINION22;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Turtle_SKILL_TO_MINION22:
+  Skills:
+  - projectile{fromorigin=true;onHit=Turtle_DAMAGE_DAMAGE;sfo=1;v=20;i=1;hR=1;vR=1;mr=3;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4.5;limit=1;sort=NEAREST}
+
+Turtle_DAMAGE_DAMAGE:
+  Skills:
+  - skill{s=Turtle_DAMAGE_DAMAGED} @EntitiesNearOrigin{r=4;limit=4}
+
+Turtle_DAMAGE_DAMAGED:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Turtle_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+Hunt:
+  Cooldown: 0.5
+  Skills:
+  - skill{s=Hunt_Panther}
+  - skill{s=Hunt_Owl}
+  - skill{s=Hunt_Turtle}
+  - skill{s=Hunt_Panther_SYNC}
+  - skill{s=Hunt_Owl_SYNC}
+  - skill{s=Hunt_Turtle_SYNC}
+  - skill{s=Fenrir_SlashAura}
+  
+Fenrir_SlashAura:
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  Skills:
+  - Aura{auraName=Awakening_Of_Fenrir_Slash_aura;duration=5} @self
+  - setSkillCooldown{skill=Hunt;seconds=0} @self
+  
+Remove_Beast_Panther:
+  TargetConditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#b53026;amount=15;hS=0.8;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Remove_Beast_Owl:
+  TargetConditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#85e05a;amount=15;hS=0.8;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Remove_Beast_Turtle:
+  TargetConditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#83e7d5;amount=15;hS=0.8;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Hunt_Panther:
+  Conditions:
+  - hasaura{n=Panther_Aura} true
+  - hasaura{n=Panther_Sync} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Hunt_Panther;onHit=Hunt_Panther_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Panther_HIT:
+  Skills:
+  - skill{s=Hunt_Panther_HIT_D} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Panther_HIT_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1.75"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - potion{type=GLOWING;duration=80;level=1;hasParticles=false}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Panther_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Target_Change:
+  TargetConditions:
+  - hasaura{aura=arrow_mark} true
+  Skills:
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=ownertarget} @self
+  - runaitargetselector{target=ownerattacker} @self
+  - runaitargetselector{target=nearestConditionalTarget{conditions=[
+    - hasaura{aura=arrow_mark} true
+    ]}} @self
+
+
+
+
+
+Hunt_Panther_SYNC:
+  Conditions:
+  - hasaura{n=Panther_Aura} true
+  - hasaura{n=Panther_Sync} true
+  Skills:
+  - effect:sound{repeat=2;repeati=3;s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{repeat=2;repeati=3;bulletType=MOB;mob=Hunt_Panther;onHit=Hunt_Panther_HIT_SYNC;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Panther_HIT_SYNC:
+  Skills:
+  - skill{s=Hunt_Panther_HIT_D_SYNC} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Panther_HIT_D_SYNC:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1.75"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - potion{type=GLOWING;duration=80;level=1;hasParticles=false}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Panther_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+
+
+Hunt_Owl:
+  Conditions:
+  - hasaura{n=Owl_Aura} true
+  - hasaura{n=Owl_Sync} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Hunt_Owl;onHit=Hunt_Owl_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Owl_HIT:
+  Skills:
+  - skill{s=Hunt_Owl_HIT_D} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Owl_HIT_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - throw{velocity=12;velocityY=1}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Owl_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+
+    
+    
+    
+    
+Hunt_Owl_SYNC:
+  Conditions:
+  - hasaura{n=Owl_Aura} true
+  - hasaura{n=Owl_Sync} true
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Hunt_Owl;onHit=Hunt_Owl_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Hunt_Owl_45;onHit=Hunt_Owl_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=-7;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  - projectile{bulletType=MOB;mob=Hunt_Owl_-45;onHit=Hunt_Owl_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=7;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Owl_HIT_Sync:
+  Skills:
+  - skill{s=Hunt_Owl_HIT_D_Sync} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Owl_HIT_D_Sync:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - throw{velocity=12;velocityY=1}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Owl_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+  
+    
+Hunt_Turtle:
+  Conditions:
+  - hasaura{n=Turtle_Aura} true
+  - hasaura{n=Turtle_Sync} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Hunt_Turtle;onHit=Hunt_Turtle_HIT;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Turtle_HIT:
+  Skills:
+  - skill{s=Hunt_Turtle_HIT_D} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Turtle_HIT_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - potion{type=SLOW;duration=80;level=1;hasParticles=false}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Turtle_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  - orbital{r=0.65;onTick=Hunt_Turtle_HIT_TICK;points=16;interval=1;duration=80;oy=0.1}
+
+Hunt_Turtle_HIT_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#99dfff;amount=2;speed=0;hS=0;vS=0} @origin
+
+    
+    
+    
+Hunt_Turtle_SYNC:
+  Conditions:
+  - hasaura{n=Turtle_Aura} true
+  - hasaura{n=Turtle_Sync} true
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{sfo=-3;bulletType=MOB;mob=Hunt_Turtle_DIAGONAL;onHit=Hunt_Turtle_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=4;tyo=-4;g=0.2} @Forward{f=20;y=0}
+  - delay 3
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{sfo=-1;bulletType=MOB;mob=Hunt_Turtle_DIAGONAL;onHit=Hunt_Turtle_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=4;tyo=-2.5;g=0.2} @Forward{f=20;y=0}
+  - delay 3
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.4;pitch="random(0.9, 1.1)"} @self
+  - projectile{sfo=1;bulletType=MOB;mob=Hunt_Turtle_DIAGONAL;onHit=Hunt_Turtle_HIT_Sync;v=35;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=4;tyo=-1;g=0.2} @Forward{f=20;y=0}
+  
+Hunt_Turtle_HIT_Sync:
+  Skills:
+  - skill{s=Hunt_Turtle_HIT_D_Sync} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Hunt_Turtle_HIT_D_Sync:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - Aura{auraName=arrow_mark;duration=15}
+  - potion{type=SLOW;duration=80;level=1;hasParticles=false}
+  - effect:sound{s=item.trident.hit_ground;volume=1;pitch="random(1.3, 1.5)"} @self
+  - summon{type=Turtle_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  - orbital{r=0.65;onTick=Hunt_Turtle_HIT_TICK_Sync;points=16;interval=1;duration=80;oy=0.1}
+
+Hunt_Turtle_HIT_TICK_Sync:
+  Skills:
+  - effect:particles{p=redstone;color=#99dfff;amount=2;speed=0;hS=0;vS=0} @origin
+  
+  
+  
+  
+Quick_Dash:
+  Skills:
+  - skill{s=Quick_Dash_Skill}
+  - skill{s=Wild_Dash_Panther}
+  - skill{s=Wild_Dash_Owl}
+  - skill{s=Wild_Dash_Turtle}
+  - skill{s=Fenrir_DashAura}
+  
+Fenrir_DashAura:
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  Skills:
+  - Aura{auraName=Awakening_Of_Fenrir_Dash_aura;duration=5} @self
+  
+Quick_Dash_Skill:
+  Conditions:
+  - DrivingModel false
+  Skills:
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch=1;delay=2} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=1} @self
+  - summon{type=Quick_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=-0.15}
+  - summon{type=Quick_Dash;amount=1;radius=0;yRadius=0;onSurface=true;delay=2} @forward{f=0;y=-0.15}
+  - summon{type=Quick_Dash;amount=1;radius=0;yRadius=0;onSurface=true;delay=4} @forward{f=0;y=-0.15}
+  - lunge{velocity=0.8;velocityY=0;repeat=3;repeati=1} @forward{f=5;y=-2}
+
+Wild_Dash_Panther:
+  Conditions:
+  - hasaura{aura=Panther_Aura} true
+  - hasaura{aura=Owl_Aura} false
+  - hasaura{aura=Turtle_Aura} false
+  - DrivingModel true
+  Skills:
+  - sudoskill{s=Wild_Dash_Panther_LUNGE;cat=true} @MountedModel
+  - delay 5
+  - effect:sound{s=beastmaster_sounds:samus.panther_skill;volume=0.35;pitch=1} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch=1;delay=2} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=1} @self
+  
+Wild_Dash_Panther_LUNGE:
+  Skills:
+  - state{s=dash} @self
+  - delay 5
+  - summon{type=Back_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=-0.15}
+  - summon{type=Back_Dash;amount=1;radius=0;yRadius=0;onSurface=true;delay=2} @forward{f=0;y=-0.15}
+  - summon{type=Back_Dash;amount=1;radius=0;yRadius=0;onSurface=true;delay=4} @forward{f=0;y=-0.15}
+  - lunge{velocity=1;velocityY=0;repeat=3;repeati=1} @forward{f=-5;y=-2}
+
+
+
+
+
+Wild_Dash_Owl:
+  Conditions:
+  - hasaura{aura=Panther_Aura} false
+  - hasaura{aura=Owl_Aura} true
+  - hasaura{aura=Turtle_Aura} false
+  - DrivingModel true
+  Skills:
+  - sudoskill{s=Wild_Dash_Owl_LUNGE;cat=true} @MountedModel
+  - delay 2
+  - effect:sound{s=beastmaster_sounds:samus.owl_skill;volume=0.4;pitch=1} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch=1;delay=2} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.3} @self
+  
+Wild_Dash_Owl_LUNGE:
+  Skills:
+  - state{s=dash} @self
+  - state{s=dash;remove=true;delay=22} @self
+  - effect:particles{particle=redstone;color=#85e05a;amount=2;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=left_point}
+  - effect:particles{particle=redstone;color=#85e05a;amount=2;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=right_point}
+  - delay 2
+  - lunge{velocity=0.9;velocityY=0;repeat=20;repeati=1} @forward{f=5;y=0}
+  
+  
+  
+  
+  
+Wild_Dash_Turtle:
+  Conditions:
+  - hasaura{aura=Panther_Aura} false
+  - hasaura{aura=Owl_Aura} false
+  - hasaura{aura=Turtle_Aura} true
+  - DrivingModel true
+  Skills:
+  - sudoskill{s=Wild_Dash_Turtle_LUNGE;cat=true} @MountedModel
+  - delay 7
+  - effect:sound{s=beastmaster_sounds:samus.turtle_skill;volume=0.5;pitch=1;delay=10} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch=1;delay=2} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=1} @self
+  - delay 18
+  - skill{s=Wild_Dash_Turtle_DAMAGE} @EIR{r=6}
+  
+Wild_Dash_Turtle_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=3;velocityY=9}
+  
+Wild_Dash_Turtle_LUNGE:
+  Skills:
+  - state{s=dash} @self
+  - delay 7
+  - lunge{velocity=1.5;velocityY=0.5} @forward{f=5;y=3}
+  - delay 12
+  - lunge{velocity=1.5;velocityY=0.2} @forward{f=3.5;y=-3}
+  - effect:sound{s=beastmaster_sounds:samus.turtle_smash;volume=0.7;pitch=1} @self
+  - delay 6
+  - summon{type=Turtle_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - summon{type=Stone_Pieces;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  
+  
+  
+
+Vicious_Sync_SKILL:
+  Skills:
+  - skill{s=Panther_SYNC_SKILL}
+  - skill{s=Owl_SYNC_SKILL}
+  - skill{s=Turtle_SYNC_SKILL}
+  
+  
+Panther_SYNC_SKILL:
+  Conditions:
+  - hasaura{aura=Panther_Aura} true
+  - hasaura{aura=Owl_Aura} false
+  - hasaura{aura=Turtle_Aura} false
+  Skills:
+  - Aura{auraName=Panther_Sync;duration=140} @self
+  - effect:sound{s=item.trident.thunder;volume=0.7;pitch=1} @self
+  - effect:sound{s=entity.lightning_bolt.thunder;volume=0.3;pitch=1} @self
+  
+Beast_ENCHANT:
+  Cooldown: 8
+  TargetConditions:
+  - hasaura{n=Panther_Sync} true
+  Skills:
+  - potion{type=SPEED;duration=140;level=0;hasParticles=false} @self
+  - enchant{en=true;em=false} @self
+  - delay 140
+  - enchant{en=false;em=false} @self
+  
+Panther_SYNC:
+  Skills:
+  - skill{s=Panther_ACTIVATE_SYNC} @EIR{r=70}
+  
+Beast_Panther_Attack_SYNC:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} true
+  Cooldown: 0
+  Skills:
+  - skill{s=Panther_SIGNAL_LEFT_SYNC}
+  - delay 10
+  - skill{s=Panther_SIGNAL_RIGHT_SYNC}
+  
+Panther_SIGNAL_LEFT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_double_left;speed=1.5} @self
+  - skill{s=Panther_SIGNAL_SOUND} @self 0.5
+  - delay 4
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.5;sideOffset=0;lockpitch=true}
+  
+  - skill{s=Panther_SKILL_TO_MINION_SYNC2} @owner
+
+Panther_SIGNAL_RIGHT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_double_right;speed=1.5} @self
+  - skill{s=Panther_SIGNAL_SOUND} @self 0.5
+  - delay 4
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0;lockpitch=true}
+  - delay 4
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - summon{type=Panther_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.5;sideOffset=0;lockpitch=true}
+  
+  - skill{s=Panther_SKILL_TO_MINION_SYNC2} @owner
+  
+Panther_SKILL_TO_MINION_SYNC2:
+  TargetConditions:
+  - hasaura{n=Panther_Sync} true
+  Skills:
+  - sudoskill{s=Panther_SKILL_TO_MINION_SYNC;cat=true}
+  
+Panther_SKILL_TO_MINION_SYNC:
+  Skills:
+  - Aura{auraName=<caster.uuid>panthersync;duration=9} @trigger
+  
+Panther_ACTIVATE_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>panthersync} true
+  Skills:
+  - totem{md=2;c=1;oT=Panther_SKILL_TO_MINIOND_SYNC;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Panther_SKILL_TO_MINIOND_SYNC:
+  Skills:
+  - skill{s=Panther_SKILL_TO_MINION22_SYNC;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Panther_SKILL_TO_MINION22_SYNC:
+  Skills:
+  - projectile{fromorigin=true;onHit=Panther_DAMAGE_DAMAGE_SYNC;sfo=1;v=20;i=1;hR=1;vR=1;mr=3;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4.5;limit=1;sort=NEAREST}
+
+Panther_DAMAGE_DAMAGE_SYNC:
+  Skills:
+  - skill{s=Panther_DAMAGE_DAMAGED_SYNC} @EntitiesNearOrigin{r=4;limit=3}
+
+Panther_DAMAGE_DAMAGED_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>panthersync} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Panther_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  - delay 10
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Panther_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+  
+  
+  
+Owl_SYNC_SKILL:
+  Conditions:
+  - hasaura{aura=Panther_Aura} false
+  - hasaura{aura=Owl_Aura} true
+  - hasaura{aura=Turtle_Aura} false
+  Skills:
+  - Aura{auraName=Owl_Sync;duration=140} @self
+  - effect:sound{s=item.trident.thunder;volume=0.7;pitch=1} @self
+  - effect:sound{s=beastmaster_sounds:samus.wind_sync;volume=0.7;pitch=1} @self
+  
+Beast_ENCHANT_Owl:
+  Cooldown: 8
+  TargetConditions:
+  - hasaura{n=Owl_Sync} true
+  Skills:
+  - potion{type=SPEED;duration=140;level=0;hasParticles=false} @self
+  - enchant{en=true;em=false} @self
+  - delay 140
+  - enchant{en=false;em=false} @self
+  
+Owl_SYNC:
+  Skills:
+  - skill{s=Owl_ACTIVATE_SYNC} @EIR{r=70}
+  
+Beast_Owl_Attack_SYNC:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} true
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Owl_SIGNAL_LEFT_SYNC,Owl_SIGNAL_RIGHT_SYNC}
+
+  
+Owl_SIGNAL_LEFT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_left;speed=1} @self
+  - skill{s=Owl_SIGNAL_SOUND} @self 0.5
+  - delay 7
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.3;pitch="random(1.2, 1.4)"} @self
+  - effect:sound{s=beastmaster_sounds:samus.owl_slash;volume=0.15;pitch="random(1.4, 1.6)"} @self
+  - projectile{bulletType=MOB;mob=Wind_Pulse;v=20;i=1;hR=1;vR=1;mr=5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.2;tyo=0.5} @Forward{f=20;y=0;lockpitch=true}
+  
+  - skill{s=Owl_SKILL_TO_MINION_SYNC2} @owner
+
+Owl_SIGNAL_RIGHT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_right;speed=1} @self
+  - skill{s=Owl_SIGNAL_SOUND} @self 0.5
+  - delay 7
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.3;pitch="random(1.2, 1.4)"} @self
+  - effect:sound{s=beastmaster_sounds:samus.owl_slash;volume=0.15;pitch="random(1.4, 1.6)"} @self
+  - projectile{bulletType=MOB;mob=Wind_Pulse;v=20;i=1;hR=1;vR=1;mr=5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.2;tyo=0.5} @Forward{f=20;y=0;lockpitch=true}
+  
+  - skill{s=Owl_SKILL_TO_MINION_SYNC2} @owner
+  
+Owl_SKILL_TO_MINION_SYNC2:
+  TargetConditions:
+  - hasaura{n=Owl_Sync} true
+  Skills:
+  - sudoskill{s=Owl_SKILL_TO_MINION_SYNC;cat=true}
+  
+Owl_SKILL_TO_MINION_SYNC:
+  Skills:
+  - Aura{auraName=<caster.uuid>owlsync;duration=9} @trigger
+  
+Owl_ACTIVATE_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>owlsync} true
+  Skills:
+  - totem{md=2;c=1;oT=Owl_SKILL_TO_MINIOND_SYNC;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Owl_SKILL_TO_MINIOND_SYNC:
+  Skills:
+  - skill{s=Owl_SKILL_TO_MINION22_SYNC;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Owl_SKILL_TO_MINION22_SYNC:
+  Skills:
+  - projectile{fromorigin=true;onHit=Owl_DAMAGE_DAMAGE_SYNC;sfo=1;v=20;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4.5;limit=1;sort=NEAREST}
+
+Owl_DAMAGE_DAMAGE_SYNC:
+  Skills:
+  - skill{s=Owl_DAMAGE_DAMAGED_SYNC} @EntitiesNearOrigin{r=4;limit=3}
+
+Owl_DAMAGE_DAMAGED_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>owlsync} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Owl_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  - throw{velocity=12;velocityY=1}
+
+  
+  
+  
+  
+  
+  
+Turtle_SYNC_SKILL:
+  Conditions:
+  - hasaura{aura=Panther_Aura} false
+  - hasaura{aura=Owl_Aura} false
+  - hasaura{aura=Turtle_Aura} true
+  Skills:
+  - Aura{auraName=Turtle_Sync;duration=140} @self
+  - effect:sound{s=item.trident.thunder;volume=0.7;pitch=1} @self
+  - effect:sound{s=beastmaster_sounds:samus.water_sync;volume=0.5;pitch=1} @self
+  
+Beast_ENCHANT_Turtle:
+  Cooldown: 8
+  TargetConditions:
+  - hasaura{n=Turtle_Sync} true
+  Skills:
+  - potion{type=SPEED;duration=140;level=0;hasParticles=false} @self
+  - enchant{en=true;em=false} @self
+  - delay 140
+  - enchant{en=false;em=false} @self
+  
+Turtle_SYNC:
+  Skills:
+  - skill{s=Turtle_ACTIVATE_SYNC} @EIR{r=70}
+  
+Beast_Turtle_Attack_SYNC:
+  Conditions:
+  - ModelHasDriver false
+  - haspotioneffect{t=SPEED} true
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Turtle_SIGNAL_LEFT_SYNC,Turtle_SIGNAL_RIGHT_SYNC}
+
+Turtle_SIGNAL_LEFT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_left;speed=1} @self
+  - skill{s=Turtle_SIGNAL_SOUND} @self 0.5
+  - effect:sound{s=beastmaster_sounds:samus.turtle_strike;volume=0.5;pitch="random(0.9, 1.1)";delay=5} @self
+  - delay 6
+  
+  - skill{s=Turtle_SKILL_TO_MINION_SYNC2} @owner
+  
+Turtle_SIGNAL_RIGHT_SYNC:
+  Conditions:
+  - targetwithin{d=5} true
+  Skills:
+  - state{s=attack_right;speed=1} @self
+  - skill{s=Turtle_SIGNAL_SOUND} @self 0.5
+  - effect:sound{s=beastmaster_sounds:samus.turtle_strike;volume=0.5;pitch="random(0.9, 1.1)";delay=5} @self
+  - delay 6
+  
+  - skill{s=Turtle_SKILL_TO_MINION_SYNC2} @owner
+  
+Turtle_SKILL_TO_MINION_SYNC2:
+  TargetConditions:
+  - hasaura{n=Turtle_Sync} true
+  Skills:
+  - sudoskill{s=Turtle_SKILL_TO_MINION_SYNC;cat=true}
+  
+Turtle_SKILL_TO_MINION_SYNC:
+  Skills:
+  - Aura{auraName=<caster.uuid>turtlesync;duration=9} @trigger
+  
+Turtle_ACTIVATE_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>turtlesync} true
+  Skills:
+  - totem{md=2;c=1;oT=Turtle_SKILL_TO_MINIOND_SYNC;hnp=true;hp=true;hR=1;vR=1;i=1}
+  
+  
+Turtle_SKILL_TO_MINIOND_SYNC:
+  Skills:
+  - skill{s=Turtle_SKILL_TO_MINION22_SYNC;targetisorigin=true} @EIR{r=50;limit=1}
+  
+  
+Turtle_SKILL_TO_MINION22_SYNC:
+  Skills:
+  - projectile{fromorigin=true;onHit=Turtle_DAMAGE_DAMAGE_SYNC;sfo=1;v=20;i=1;hR=1;vR=1;mr=3;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @EntitiesNearOrigin{r=4.5;limit=1;sort=NEAREST}
+
+Turtle_DAMAGE_DAMAGE_SYNC:
+  Skills:
+  - skill{s=Turtle_DAMAGE_DAMAGED_SYNC} @EntitiesNearOrigin{r=4;limit=3}
+
+Turtle_DAMAGE_DAMAGED_SYNC:
+  TargetConditions:
+  - hasaura{n=<caster.uuid>turtlesync} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Turtle_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  - potion{type=SLOW;duration=80;level=1;hasParticles=false}
+  - orbital{r=0.65;onTick=Hunt_Turtle_HIT_TICK;points=16;interval=1;duration=80;oy=0.1}
+  
+
+Owl_Flap:
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1} @self
+  
+Panther_Step:
+  Skills:
+  - effect:sound{s=entity.sheep.step;volume=0.7;pitch=1} @self
+  
+Turtle_Step:
+  Skills:
+  - effect:sound{s=entity.cow.step;volume=0.7;pitch=1} @self
+  
+Turtle_Stomp:
+  Skills:
+  - effect:sound{s=entity.cow.step;volume=0.95;pitch=0.8} @self
+  
+Summon_Beast:
+  Cooldown: 2
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} castinstead Fenrir_DashAura
+  Skills:
+  - skill{s=Summon_Panther}
+  - skill{s=Summon_Owl}
+  - skill{s=Summon_Turtle}
+  - skill{s=Summon_None}
+  
+Summon_Panther:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Panther_Aura} false
+  - hasaura{n=Owl_Aura} false
+  - hasaura{n=Turtle_Aura} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.beast_summon;volume=0.8;pitch=1} @self
+  - summon{type=Beast_Panther;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;sideOffset=2;lockpitch=true}
+  
+Remove_Panther:
+  TargetConditions:
+  - hasaura{n=Owl_Aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#b53026;amount=15;hS=0.8;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+
+Beast_Panther_Spawn:
+  Skills:
+  - effect:particles{particle=redstone;color=#b53026;amount=15;hS=0.8;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  - state{s=sync} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=25} @self
+  - delay 13
+  - effect:sound{s=beastmaster_sounds:samus.panther_skill;volume=1;pitch=1} @self
+  
+  
+  
+  
+Summon_Owl:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Panther_Aura} true
+  - hasaura{n=Owl_Aura} false
+  - hasaura{n=Turtle_Aura} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.beast_summon;volume=0.8;pitch=1} @self
+  - summon{type=Beast_Owl;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;sideOffset=2;lockpitch=true}
+
+Remove_Owl:
+  TargetConditions:
+  - hasaura{n=Turtle_Aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#85e05a;amount=15;hS=0.6;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Beast_Owl_Spawn:
+  Skills:
+  - effect:particles{particle=redstone;color=#85e05a;amount=15;hS=0.6;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  - state{s=sync;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=30} @self
+  - delay 12
+  - effect:sound{s=beastmaster_sounds:samus.owl_skill;volume=1;pitch=1} @self
+  
+  
+  
+Summon_Turtle:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Panther_Aura} false
+  - hasaura{n=Owl_Aura} true
+  - hasaura{n=Turtle_Aura} false
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.beast_summon;volume=1;pitch=1} @self
+  - summon{type=Beast_Turtle;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;sideOffset=2;lockpitch=true}
+
+Remove_Turtle:
+  TargetConditions:
+  - hasaura{n=None_Aura} true
+  Skills:
+  - remove @self
+  - effect:particles{particle=redstone;color=#83e7d5;amount=15;hS=1;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Beast_Turtle_Spawn:
+  Skills:
+  - effect:particles{particle=redstone;color=#83e7d5;amount=15;hS=1;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  - state{s=sync} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=30} @self
+  - delay 12
+  - effect:sound{s=beastmaster_sounds:samus.turtle_skill;volume=1;pitch=1} @self
+  
+Summon_None:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Panther_Aura} false
+  - hasaura{n=Owl_Aura} false
+  - hasaura{n=Turtle_Aura} true
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.beast_summon;volume=1;pitch=1} @self
+  - Aura{auraName=None_Aura;duration=10} @self
+
+
+Hunters_Trap:
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} false
+  Skills:
+  - skill{s=Hunters_Trap_Panther}
+  - skill{s=Hunters_Trap_Owl}
+  - skill{s=Hunters_Trap_Turtle}
+  
+  
+  
+Hunters_Trap_Panther:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Panther_Aura} true
+  - hasaura{n=Owl_Aura} false
+  - hasaura{n=Turtle_Aura} false
+  Skills:
+  - projectile{onEnd=Hunters_Trap_Panther_SUMMON;v=30;i=1;hR=1;vR=1;mr=3;hnp=false;hp=false;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1} @forward{f=5;y=0}
+  - setSkillCooldown{skill=Hunters_Trap_Panther_SUMMON_HITD2;seconds=0} @self
+  
+Hunters_Trap_Panther_SUMMON:
+  Skills:
+  - effect:sound{s=entity.illusioner.mirror_move;volume=0.8;pitch=1.5} @self
+  - summon{type=X_Panther;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=200;oH=Hunters_Trap_Panther_SUMMON_HIT;hnp=true;hp=true;hR=1;vR=1;i=1} @origin
+
+Hunters_Trap_Panther_SUMMON_HIT:
+  Skills:
+  - skill{s=Hunters_Trap_Panther_SUMMON_HITD} @EntitiesNearOrigin{r=2}
+  
+Hunters_Trap_Panther_SUMMON_HITD:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Hunters_Trap_Panther_SUMMON_HITD2}
+  
+Hunters_Trap_Panther_SUMMON_HITD2:
+  Cooldown: 10
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.trap_chain;volume=0.45;pitch=1}
+  - effect:sound{s=beastmaster_sounds:samus.trap_chain;volume=0.45;pitch=1;delay=52}
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - stun{d=60;f=false}
+  - summon{type=Trap_Chain;amount=1;radius=0;yRadius=0;onSurface=true}
+  - skill{s=Hunters_Trap_Panther_SUMMON_HIT_REMOVE} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST;target=armorstands}
+  
+Hunters_Trap_Panther_SUMMON_HIT_REMOVE:
+  TargetConditions:
+  - mythicmobtype{t=X_Panther} true
+  Skills:
+  - remove
+  
+  
+  
+Hunters_Trap_Owl:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Panther_Aura} false
+  - hasaura{n=Owl_Aura} true
+  - hasaura{n=Turtle_Aura} false
+  Skills:
+  - projectile{onEnd=Hunters_Trap_Owl_SUMMON;v=30;i=1;hR=1;vR=1;mr=3;hnp=false;hp=false;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1} @forward{f=5;y=0}
+  - setSkillCooldown{skill=Hunters_Trap_Owl_SUMMON_HITD2;seconds=0} @self
+  
+Hunters_Trap_Owl_SUMMON:
+  Skills:
+  - effect:sound{s=entity.illusioner.mirror_move;volume=0.8;pitch=1.5} @self
+  - summon{type=X_Owl;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=200;oH=Hunters_Trap_Owl_SUMMON_HIT;hnp=true;hp=true;hR=1;vR=1;i=1} @origin
+
+Hunters_Trap_Owl_SUMMON_HIT:
+  Skills:
+  - skill{s=Hunters_Trap_Owl_SUMMON_HITD} @EntitiesNearOrigin{r=2}
+  
+Hunters_Trap_Owl_SUMMON_HITD:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - skill{s=Hunters_Trap_Owl_SUMMON_HITD2}
+  
+Hunters_Trap_Owl_SUMMON_HITD2:
+  Cooldown: 10
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.hunt_arrow;volume=0.3;pitch="random(0.9, 1.1)";repeat=4;repeati=2}
+  - totem{md=15;oT=Hunters_Trap_Owl_SUMMON_HITD2_TOTEM;hnp=true;hp=true;hR=1;vR=1;i=5} @origin
+  - summon{type=Arrow_Volley;amount=1;radius=0;yRadius=0;onSurface=true}
+  - skill{s=Hunters_Trap_Owl_SUMMON_HIT_REMOVE} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST;target=armorstands}
+  
+Hunters_Trap_Owl_SUMMON_HITD2_TOTEM:
+  Skills:
+  - skill{s=Hunters_Trap_Owl_SUMMON_HITD2_TOTEMD} @EntitiesNearOrigin{r=3}
+  
+Hunters_Trap_Owl_SUMMON_HITD2_TOTEMD:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+Hunters_Trap_Owl_SUMMON_HIT_REMOVE:
+  TargetConditions:
+  - mythicmobtype{t=X_Owl} true
+  Skills:
+  - remove
+  
+  
+  
+  
+Hunters_Trap_Turtle:
+  Cooldown: 5
+  Conditions:
+  - hasaura{n=Panther_Aura} false
+  - hasaura{n=Owl_Aura} false
+  - hasaura{n=Turtle_Aura} true
+  Skills:
+  - projectile{onEnd=Hunters_Trap_Turtle_SUMMON;v=30;i=1;hR=1;vR=1;mr=3;hnp=false;hp=false;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1} @forward{f=5;y=0}
+  - setSkillCooldown{skill=Hunters_Trap_Turtle_SUMMON_HITD2;seconds=0} @self
+  
+Hunters_Trap_Turtle_SUMMON:
+  Skills:
+  - effect:sound{s=entity.illusioner.mirror_move;volume=0.8;pitch=1.5} @self
+  - summon{type=X_Turtle;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=200;oT=Hunters_Trap_Turtle_SUMMON_HIT;hnp=false;hp=true;hR=1;vR=1;i=1} @origin
+
+Hunters_Trap_Turtle_SUMMON_HIT:
+  Skills:
+  - skill{s=Hunters_Trap_Turtle_SUMMON_HITD} @PlayersNearOrigin{r=2;target=self,players}
+  - skill{s=Hunters_Trap_Turtle_SUMMON_HITD23} @PlayersNearOrigin{r=2;target=self,players}
+  
+Hunters_Trap_Turtle_SUMMON_HITD:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - skill{s=Hunters_Trap_Turtle_SUMMON_HITD2}
+  
+Hunters_Trap_Turtle_SUMMON_HITD23:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Panther,Beast_Owl,Beast_Turtle} false
+  - mmoCanTarget{interaction=SUPPORT_ACTION} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} false
+  Skills:
+  - skill{s=Hunters_Trap_Turtle_SUMMON_HITD2}
+  
+Hunters_Trap_Turtle_SUMMON_HITD2:
+  Cooldown: 10
+  Skills:
+  - effect:sound{s=entity.illusioner.prepare_blindness;volume=0.6;pitch=1}
+  - potion{type=REGENERATION;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - potion{type=DAMAGE_RESISTANCE;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - skill{s=Hunters_Trap_Turtle_SUMMON_HIT_REMOVE} @EntitiesNearOrigin{r=2;limit=1;sort=NEAREST;target=armorstands}
+  - orbital{r=0.8;onTick=Hunters_Trap_Turtle_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=1}
+
+Hunters_Trap_Turtle_TICK:
+  Skills:
+  - effect:particles{p=soul_fire_flame;amount=2;speed=0;hS=0;vS=0} @origin
+  
+Hunters_Trap_Turtle_SUMMON_HIT_REMOVE:
+  TargetConditions:
+  - mythicmobtype{t=X_Turtle} true
+  Skills:
+  - remove
+  
+  
+
+Awakening_Of_Fenrir:
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} castinstead Fenrir_SlashAura
+  Skills:
+  - Aura{auraName=Awakening_Of_Fenrir_aura;duration="<modifier.duration> * 20"} @self
+  - effect:sound{s=beastmaster_sounds:samus.beast_summon;volume=1;pitch=1} @self
+  - summon{type=Beast_Fenrir;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation
+  - skill{s=Awakening_Of_Fenrir_Slash;repeat="<modifier.duration> * 20";repeatinterval=1}
+  - skill{s=Awakening_Of_Fenrir_DASH;repeat="<modifier.duration> * 20";repeatinterval=1}
+  - remove{delay="<modifier.duration> * 20"} @MountedModel
+  - effect:particles{particle=redstone;color=#FFFFFF;amount=15;hS=1;vS=0.5;y=0.7;speed=0;forwardOffset=0;sideOffset=0;delay="<modifier.duration> * 20"} @MountedModel
+  
+Awakening_Of_Fenrir_NOMOUNT:
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - auraremove{aura=Awakening_Of_Fenrir_aura} @Owner
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#FFFFFF;amount=15;hS=1;vS=0.5;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Beast_Fenrir_Spawn:
+  Skills:
+  - effect:particles{particle=redstone;color=#FFFFFF;amount=15;hS=1;vS=0.5;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  - state{s=sync;speed=1.5} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - delay 13
+  - effect:sound{s=beastmaster_sounds:samus.fenrir_howl;volume=0.8;pitch=1} @self
+  
+Awakening_Of_Fenrir_Slash:
+  Cooldown: 0.3
+  Conditions:
+  - hasaura{n=Awakening_Of_Fenrir_aura} true
+  - hasaura{n=Awakening_Of_Fenrir_Slash_aura} true
+  Skills:
+  - randomskill{skills=Awakening_Of_Fenrir_Slash_LEFT,Awakening_Of_Fenrir_Slash_RIGHT}
+
+  
+
+Awakening_Of_Fenrir_Slash_SOUND:
+  Cooldown: 5
+  Skills:
+  - effect:sound{s=beastmaster_sounds:samus.fenrir_skill_1;volume=0.5;pitch="random(0.9, 1.1)"}
+  
+Awakening_Of_Fenrir_Slash_LEFT:
+  Skills:
+  - state{s=attack_left;speed=1.8;li=2;lo=2} @MountedModel
+  - skill{s=Awakening_Of_Fenrir_Slash_SOUND} @self 0.5
+  - delay 6
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Fenrir_Slash_1;onHit=Awakening_Of_Fenrir_Slash_DAMAGE_DAMAGE;v=10;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=2;syo=0.7;tyo=0.7} @forward{f=15;y=0;sideOffset=0;lockpitch=true}
+
+Awakening_Of_Fenrir_Slash_RIGHT:
+  Skills:
+  - state{s=attack_right;speed=1.8;li=2;lo=2} @MountedModel
+  - skill{s=Awakening_Of_Fenrir_Slash_SOUND} @self 0.5
+  - delay 6
+  - effect:sound{s=beastmaster_sounds:samus.claw_slash;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - projectile{bulletType=MOB;mob=Fenrir_Slash_2;onHit=Awakening_Of_Fenrir_Slash_DAMAGE_DAMAGE;v=10;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=2;syo=0.2;tyo=0.2} @forward{f=15;y=0;sideOffset=0;lockpitch=true}
+
+Awakening_Of_Fenrir_Slash_DAMAGE_DAMAGE:
+  Skills:
+  - skill{s=Awakening_Of_Fenrir_Slash_DAMAGE_DAMAGED} @EntitiesNearOrigin{r=4;limit=4}
+
+Awakening_Of_Fenrir_Slash_DAMAGE_DAMAGED:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Fenrir} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - summon{type=Fenrir_Strike;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+  
+  
+Awakening_Of_Fenrir_DASH:
+  Cooldown: 1
+  Conditions:
+  - hasaura{aura=Awakening_Of_Fenrir_aura} true
+  - hasaura{aura=Awakening_Of_Fenrir_Dash_aura} true
+  Skills:
+  - sudoskill{s=Awakening_Of_Fenrir_DASH_Skill;cat=true} @MountedModel
+  - delay 5
+  - effect:sound{s=beastmaster_sounds:samus.fenrir_skill_2;volume=0.4;pitch=1} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.6;pitch=1;delay=2} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.6;pitch=1} @self
+  
+  - skill{s=Fenrir_Bash;repeat=5;repeati=5} @EIR{r=4.5}
+  
+Fenrir_Bash:
+  TargetConditions:
+  - mythicmobtype{t=Beast_Fenrir} false
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - throw{velocity=14;velocityY=1}
+  - delay 13
+  - stun{d=60;f=false}
+  - orbital{r=0.5;onTick=Fenrir_Bash_TICK;points=16;interval=1;duration=60;oy=2.5}
+
+Fenrir_Bash_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin
+  
+Awakening_Of_Fenrir_DASH_Skill:
+  Cooldown: 1
+  Skills:
+  - state{s=run;speed=1.7} @self
+  - state{s=run;remove=true;delay=20} @self
+  - effect:particles{size=0.6;particle=redstone;color=#FFFFFF;amount=4;hS=0.05;vS=0.05;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=left_hand}
+  - effect:particles{size=0.6;particle=redstone;color=#FFFFFF;amount=4;hS=0.05;vS=0.05;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=right_hand}
+  - effect:particles{size=0.6;particle=redstone;color=#FFFFFF;amount=4;hS=0.05;vS=0.05;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=left_foot}
+  - effect:particles{size=0.6;particle=redstone;color=#FFFFFF;amount=4;hS=0.05;vS=0.05;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=20;repeati=1} @modelpart{p=right_foot}
+  - delay 2
+  - lunge{velocity=1.2;velocityY=0;repeat=20;repeati=1} @forward{f=5;y=-2}

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 38.253.145.37
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740271552117
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740271977329
+  login: 1740270875082
+money: '0'
+last-account-name: TheEnderpro42
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2988.513086011322
+  y: 80.0
+  z: 461.3710272154447
+  yaw: 114.48341369628906
+  pitch: 15.505114555358887
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 35.381633142746296
+  y: 74.0
+  z: -30.82169072572836
+  yaw: 151.00244140625
+  pitch: 11.310873985290527
+nickname: Ender

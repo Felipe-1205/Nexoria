@@ -1,0 +1,453 @@
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#              Kingdom Cats                #
+#                  ---                    #
+#               by Nocsy                   #
+#=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+############################################
+#                  Cats                    #
+############################################
+
+#----------- Spawn -----------#
+
+Nocsy_KingdomCat_Spawn:
+  Skills:
+  - skill{s=Nocsy_KingdomCat_SubModel}
+  - skill{s=Nocsy_KingdomCat_Sound_Ambient}
+
+Nocsy_KingdomCat_SubModel:
+  Conditions:
+  - hastag{t=munchkin} castInstead Nocsy_KingdomCat_SubModel-Munchkin
+  - hastag{t=bombay} castInstead Nocsy_KingdomCat_SubModel-Bombay
+  - hastag{t=siamese} castInstead Nocsy_KingdomCat_SubModel-Siamese
+  - hastag{t=scottish} castInstead Nocsy_KingdomCat_SubModel-ScottishFold
+  - hastag{t=mainecoon} castInstead Nocsy_KingdomCat_SubModel-MaineCoon
+  - hastag{t=european} castInstead Nocsy_KingdomCat_SubModel-European
+  - hastag{t=fallen} castInstead Nocsy_KingdomCat_SubModel-Fallen
+  Skills: []
+
+Nocsy_KingdomCat_SubModel-Munchkin:
+  Skills:
+  - submodel{mid=nocsy_cat1;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-Bombay:
+  Skills:
+  - submodel{mid=nocsy_cat2;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-Siamese:
+  Skills:
+  - submodel{mid=nocsy_cat3;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-ScottishFold:
+  Skills:
+  - submodel{mid=nocsy_cat4;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-MaineCoon:
+  Skills:
+  - submodel{mid=nocsy_cat5;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-European:
+  Skills:
+  - submodel{mid=nocsy_cat6;subpart=head_eyes_closed;remove=true} @self
+Nocsy_KingdomCat_SubModel-Fallen:
+  Skills:
+  - submodel{mid=nocsy_cat_fallen;subpart=head_eyes_closed;remove=true} @self
+
+#----------- Attack -----------#
+
+Nocsy_KingdomCat_Attack:
+  Conditions:
+  - hastag{t=attack} false
+  Skills:
+  - addtag{t=attack} @self
+  - state{s=attack;li=0;lo=0;speed=1} @self
+  - delay 15
+  - potion{type=SLOW;duration=20;lvl=126;hasParticles=false;force=true} @self
+  - damage{a=1} @target
+  - removetag{t=attack} @self
+
+Nocsy_KingdomCat_PrepareAttack:
+  Conditions:
+  - hastag{t=animating} false
+  - hastag{t=attacking} false
+  - hastag{t=sit} castInstead Nocsy_KingdomCat_Attack-Sit-Stand
+  - hastag{t=sleepy} castInstead Nocsy_KingdomCat_Attack-Sleep-Stand
+  Skills:
+  - addtag{t=animating} @self
+  - addtag{t=attacking} @self
+  - potion{type=SLOW;duration=40;lvl=126;hasParticles=false;force=true} @self
+  - state{s=prepare_attack;li=0;lo=0;speed=1} @self
+  - delay 42
+  - petfollow{follow=false} @self
+  - removetag{t=animating} @self
+
+Nocsy_KingdomCat_PrepareAttack-Sit-Stand:
+  Skills:
+  - skill{s=Nocsy_KingdomCat_Interact-Sit-Stand}
+  - delay 7
+  - skill{s=Nocsy_KingdomCat_PrepareAttack}
+
+Nocsy_KingdomCat_PrepareAttack-Sleep-Stand:
+  Skills:
+  - skill{s=Nocsy_KingdomCat_Interact-Sleep-Stand}
+  - delay 54
+  - skill{s=Nocsy_KingdomCat_PrepareAttack}
+
+#----------- Stretch -----------#
+
+Nocsy_KingdomCat_Stretch:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=animating} false
+  - hastag{t=sleep} false
+  - hastag{t=sit} false
+  - hastag{t=stretch} false
+  Skills:
+  - addtag{t=animating} @self
+  - addtag{t=stretch} @self
+  - state{s=stretch;li=0;lo=0;speed=1} @self
+  - setAI{ai=false} @self
+  - potion{type=SLOW;duration=44;lvl=126;hasParticles=false;force=true} @self
+  - delay 20
+  - skill{s=Nocsy_KingdomCat_Sound_Purr}
+  - skill{s=Nocsy_KingdomCat_EyesOpened}
+  - delay 24
+  - skill{s=Nocsy_KingdomCat_EyesOpened}
+  - setAI{ai=true} @self
+  - removetag{t=animating} @self
+  - delay 600
+  - removetag{t=stretch} @self
+
+#----------- Follow back -----------#
+
+Nocsy_KingdomCat_FollowBack:
+  Skills:
+  - removetag{t=attacking} @self
+  - petfollow{follow=true} @self
+
+#----------- Sit/Sleep -----------#
+
+Nocsy_KingdomCat_Interact:
+  Conditions:
+  - hastag{t=animating} false
+  - hastag{t=sleep} castInstead Nocsy_KingdomCat_Interact-Sleep-Stand
+  - hastag{t=sit} castInstead Nocsy_KingdomCat_Interact-Sit-Stand
+  - night{} castInstead Nocsy_KingdomCat_Sleep
+  Skills:
+  - addtag{t=animating} @self
+  - addtag{t=sit} @self
+  - skill{s=Nocsy_KingdomCat_Sound_Ambient}
+  - potion{type=SLOW;duration=2147483646;lvl=126;hasParticles=false;force=true} @self
+  - state{s=sit_start;li=0;lo=0;speed=1} @self
+  - delay 7
+  - state{s=sit_loop;li=0;lo=0;speed=1} @self
+  - removetag{t=animating} @self
+  
+
+Nocsy_KingdomCat_Interact-Sleep-Stand:
+  Skills:
+  - setAI{ai=true} @self
+  - addtag{t=animating} @self
+  - state{s=sleep_loop;remove=true} @self
+  - state{s=sleep_end;li=0;lo=0;speed=1} @self
+  - potion{type=SLOW;duration=8;lvl=126;hasParticles=false;force=true} @self
+  - skill{s=Nocsy_KingdomCat_EyesOpened}
+  - delay 10
+  - removetag{t=animating} @self
+  - removetag{t=sleep} @self
+  - skill{s=Nocsy_KingdomCat_Stretch}
+
+Nocsy_KingdomCat_Interact-Sit-Stand:
+  Skills:
+  - addtag{t=animating} @self
+  - state{s=sit_loop;remove=true} @self
+  - state{s=sit_end;li=0;lo=0;speed=1} @self
+  - potion{type=SLOW;duration=5;lvl=126;hasParticles=false;force=true} @self
+  - delay 7
+  - removetag{t=animating} @self
+  - removetag{t=sit} @self
+
+Nocsy_KingdomCat_Sleep:
+  Skills:
+  - addtag{t=animating} @self
+  - addtag{t=sleep} @self
+  - setAI{ai=false} @self
+  - potion{type=SLOW;duration=2147483646;lvl=126;hasParticles=false;force=true} @self
+  - state{s=sleep_start;li=0;lo=0;speed=1} @self
+  - delay 5
+  - skill{s=Nocsy_KingdomCat_EyesClosed}
+  - delay 5
+  - state{s=sleep_loop;li=0;lo=0;speed=1} @self
+  - removetag{t=animating} @self
+  
+#----------- Despawn -----------#
+
+Nocsy_KingdomCat_Despawn:
+  Skills:
+  - defaultstate{t=death;s=null} @self
+  - skill{s=Nocsy_KingdomCat_SubModel-Body}
+  - delay 1
+  - remove @self
+Nocsy_KingdomCat_SubModel-Body:
+  Conditions:
+  - hastag{t=munchkin} castInstead Nocsy_KingdomCat_SubModel-Body-Munchkin
+  - hastag{t=bombay} castInstead Nocsy_KingdomCat_SubModel-Body-Bombay
+  - hastag{t=siamese} castInstead Nocsy_KingdomCat_SubModel-Body-Siamese
+  - hastag{t=scottish} castInstead Nocsy_KingdomCat_SubModel-Body-ScottishFold
+  - hastag{t=mainecoon} castInstead Nocsy_KingdomCat_SubModel-Body-MaineCoon
+  - hastag{t=european} castInstead Nocsy_KingdomCat_SubModel-Body-European
+  - hastag{t=fallen} castInstead Nocsy_KingdomCat_SubModel-Body-Fallen
+  Skills: []
+  
+Nocsy_KingdomCat_SubModel-Body-Munchkin:
+  Skills:
+  - submodel{mid=nocsy_cat1;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-Bombay:
+  Skills:
+  - submodel{mid=nocsy_cat2;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-Siamese:
+  Skills:
+  - submodel{mid=nocsy_cat3;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-ScottishFold:
+  Skills:
+  - submodel{mid=nocsy_cat4;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-MaineCoon:
+  Skills:
+  - submodel{mid=nocsy_cat5;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-European:
+  Skills:
+  - submodel{mid=nocsy_cat6;subpart=body;remove=true} @self
+Nocsy_KingdomCat_SubModel-Body-Fallen:
+  Skills:
+  - submodel{mid=nocsy_cat_fallen;subpart=body;remove=true} @self
+
+#----------- Change face -------------#
+Nocsy_KingdomCat_EyesClosed:
+  Skills:
+  - changepart{m=nocsy_cat1;pid=head;nm=nocsy_cat1;npid=head_eyes_closed} @self
+  
+Nocsy_KingdomCat_EyesClosed:
+  Conditions:
+  - hastag{t=munchkin} castInstead Nocsy_KingdomCat_EyesClosed-Munchkin
+  - hastag{t=bombay} castInstead Nocsy_KingdomCat_EyesClosed-Bombay
+  - hastag{t=siamese} castInstead Nocsy_KingdomCat_EyesClosed-Siamese
+  - hastag{t=scottish} castInstead Nocsy_KingdomCat_EyesClosed-ScottishFold
+  - hastag{t=mainecoon} castInstead Nocsy_KingdomCat_EyesClosed-MaineCoon
+  - hastag{t=european} castInstead Nocsy_KingdomCat_EyesClosed-European
+  - hastag{t=fallen} castInstead Nocsy_KingdomCat_EyesClosed-Fallen
+  Skills: []
+
+Nocsy_KingdomCat_EyesClosed-Munchkin:
+  Skills:
+  - changepart{m=nocsy_cat1;pid=head;nm=nocsy_cat1;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-Bombay:
+  Skills:
+  - changepart{m=nocsy_cat2;pid=head;nm=nocsy_cat2;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-Siamese:
+  Skills:
+  - changepart{m=nocsy_cat3;pid=head;nm=nocsy_cat3;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-ScottishFold:
+  Skills:
+  - changepart{m=nocsy_cat4;pid=head;nm=nocsy_cat4;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-MaineCoon:
+  Skills:
+  - changepart{m=nocsy_cat5;pid=head;nm=nocsy_cat5;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-European:
+  Skills:
+  - changepart{m=nocsy_cat6;pid=head;nm=nocsy_cat6;npid=head_eyes_closed} @self
+Nocsy_KingdomCat_EyesClosed-Fallen:
+  Skills:
+  - changepart{m=nocsy_cat_fallen;pid=head;nm=nocsy_cat_fallen;npid=head_eyes_closed} @self
+
+
+Nocsy_KingdomCat_EyesOpened:
+  Conditions:
+  - hastag{t=munchkin} castInstead Nocsy_KingdomCat_EyesOpened-Munchkin
+  - hastag{t=bombay} castInstead Nocsy_KingdomCat_EyesOpened-Bombay
+  - hastag{t=siamese} castInstead Nocsy_KingdomCat_EyesOpened-Siamese
+  - hastag{t=scottish} castInstead Nocsy_KingdomCat_EyesOpened-ScottishFold
+  - hastag{t=mainecoon} castInstead Nocsy_KingdomCat_EyesOpened-MaineCoon
+  - hastag{t=european} castInstead Nocsy_KingdomCat_EyesOpened-European
+  - hastag{t=fallen} castInstead Nocsy_KingdomCat_EyesOpened-Fallen
+  Skills: []
+
+Nocsy_KingdomCat_EyesOpened-Munchkin:
+  Skills:
+  - changepart{m=nocsy_cat1;pid=head;nm=nocsy_cat1;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-Bombay:
+  Skills:
+  - changepart{m=nocsy_cat2;pid=head;nm=nocsy_cat2;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-Siamese:
+  Skills:
+  - changepart{m=nocsy_cat3;pid=head;nm=nocsy_cat3;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-ScottishFold:
+  Skills:
+  - changepart{m=nocsy_cat4;pid=head;nm=nocsy_cat4;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-MaineCoon:
+  Skills:
+  - changepart{m=nocsy_cat5;pid=head;nm=nocsy_cat5;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-European:
+  Skills:
+  - changepart{m=nocsy_cat6;pid=head;nm=nocsy_cat6;npid=head} @self
+Nocsy_KingdomCat_EyesOpened-Fallen:
+  Skills:
+  - changepart{m=nocsy_cat_fallen;pid=head;nm=nocsy_cat_fallen;npid=head} @self
+
+#----------- Sounds -----------#
+Nocsy_KingdomCat_Sound_Ambient:
+  Conditions:
+  - hastag{t=sound} false
+  - hastag{t=ambient_sound} false
+  Skills:
+  - addtag{t=ambient_sound} @self
+  - sound{s=entity.cat.stray_ambient;v=1;p=1.3} @self
+  - delay 300
+  - removetag{t=ambient_sound} @self
+
+Nocsy_KingdomCat_Sound_Purr:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.cat.purr;v=1;p=1} @self
+  - delay 40
+  - removetag{t=sound} @self
+
+Nocsy_KingdomCat_Sound_Hurt:
+  Conditions:
+  - hastag{t=sound} false
+  Skills:
+  - addtag{t=sound} @self
+  - sound{s=entity.cat.hurt;v=1;p=1.3} @self
+  - delay 40
+  - removetag{t=sound} @self
+
+############################################
+#              Thread ball                 #
+############################################
+
+#----------- Attacked -----------#
+Nocsy_KingdomCat_Thread_Roll:
+  Conditions:
+  - hastag{t=move} false
+  - moving{} true
+  Skills:
+  - addtag{t=move} @self
+  - state{s=move;li=0;lo=0;speed=1} @self
+  - delay 23
+  - removetag{t=move} @self
+  
+#----------- Throw ball -----------#
+Nocsy_KingdomCat_Thread_Signal:
+  Conditions:
+  - hastag{t=lag} false
+  - hastag{t=attacking} castInstead Nocsy_KingdomCat_Thread_Throw-Already
+  Skills:
+  - addtag{t=lag} @self
+  - sudoskill{s=Nocsy_KingdomCat_Thread_Projectile} @owner
+  - delay 80
+  - removetag{t=lag} @self
+
+Nocsy_KingdomCat_Thread_Projectile:
+  Skills:
+  - sound{s=entity.arrow.shoot;v=1;p=0.6} @self
+  - projectile{
+                bulletType=MOB;
+                mob=Nocsy_Cat-ThreadBall;
+                onTick=[
+                        - effect:particles{particle=reddust;
+                                             amount=3;
+                                             hS=0.2;
+                                             vS=0.2;
+                                             speed=0.8;
+                                             color=#F42525
+                                            }
+                        ];
+                onHit=[];
+                onEnd=[
+                        - summon{type=Nocsy_Cat-ThreadBall;amount=1;radius=0;onSurface=true;inheritFaction=true} 
+                      ];
+                i=1;
+                hRadius=1.0;
+                vRadius=4.5;
+                v=8;
+                g=1;
+                syo=1.6;
+                hO=-20;
+                hp=false;
+                hnp=false;
+                sE=false;
+            } @Forward{f=20;y=1;sideOffset=0.0}
+ 
+Nocsy_KingdomCat_Thread_Throw-Already:
+  Conditions:
+  - hastag{t=lag} false
+  Skills:
+  - addtag{t=lag} @self
+  - delay 20
+  - removetag{t=lag} @self
+ 
+#----------- Remove ball -----------#
+
+Nocsy_KingdomCat_Thread_Remove-Force:
+  Skills:
+  - effect:particlesphere{particle=reddust;
+                     amount=40;
+                     r=0.4;
+                     color=#F42525
+                    } @self
+  - remove @self
+
+Nocsy_KingdomCat_Thread_Remove:
+  Conditions:
+  - varEquals{var=caster.count_attacks;value=10} true
+  Skills:
+  - skill{s=Nocsy_KingdomCat_Thread_Remove-Force}
+
+#----------- VFX -----------#
+
+Nocsy_KingdomCat_Thread_Effect:
+  Skills:
+  - effect:particles{particle=reddust;
+                     amount=3;
+                     hS=0.2;
+                     vS=0.2;
+                     speed=0.8;
+                     color=#F42525
+                    } @self
+
+
+#----------- Damaged move -----------#
+
+Nocsy_KingdomCat_Thread_Damaged:
+  Conditions:
+  - hastag{t=damaged} false
+  Skills:
+  - addtag{t=damaged} @self
+  - randomskill{skills=[
+                        - lunge{velocity=0.7;velocityY=0.4} @Forward{f=10;y=4;sideOffset=1}
+                        ],
+                        [
+                        - lunge{velocity=0.6;velocityY=0.4} @Forward{f=-12;y=4;sideOffset=6}
+                        ],
+                        [
+                        - lunge{velocity=0.5;velocityY=0.4} @Forward{f=-8;y=4;sideOffset=-4}
+                        ],
+                        [
+                        - lunge{velocity=0.7;velocityY=0.3} @Forward{f=4;y=4;sideOffset=6}
+                        ],
+                        [
+                        - lunge{velocity=0.7;velocityY=0.3} @Forward{f=-2;y=4;sideOffset=1}
+                        ],
+                        [
+                        - lunge{velocity=0.6;velocityY=0.3} @Forward{f=8;y=4;sideOffset=9}
+                        ],
+                        [
+                        - lunge{velocity=0.7;velocityY=0.3} @Forward{f=-9;y=4;sideOffset=-7}
+                        ]
+                }
+  - variableadd{var=caster.count_attacks;amount=1} @self
+  - skill{s=Nocsy_KingdomCat_Thread_Remove} @self
+  - delay 20
+  - removetag{t=damaged} @self
+
+#----------- Cancel attack -----------#
+
+Nocsy_KingdomCat_CancelAttack:
+  Skills:
+  - CancelEvent

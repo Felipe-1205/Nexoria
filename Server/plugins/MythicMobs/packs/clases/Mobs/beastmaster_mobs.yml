@@ -1,0 +1,623 @@
+
+
+Panther_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-25
+  ItemHand: slash_panther_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=slash_panther_1:0;delay=3} ~onSpawn
+  - equip{item=slash_panther_2:0;delay=4} ~onSpawn
+  - equip{item=slash_panther_3:0;delay=5} ~onSpawn
+  - equip{item=slash_panther_4:0;delay=6} ~onSpawn
+  - equip{item=slash_panther_5:0;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+Panther_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-155
+  ItemHand: slash_panther_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=slash_panther_1:0;delay=3} ~onSpawn
+  - equip{item=slash_panther_2:0;delay=4} ~onSpawn
+  - equip{item=slash_panther_3:0;delay=5} ~onSpawn
+  - equip{item=slash_panther_4:0;delay=6} ~onSpawn
+  - equip{item=slash_panther_5:0;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+  
+Panther_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: impact_panther_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=impact_panther_1:0;delay=2} ~onSpawn
+  - equip{item=impact_panther_2:0;delay=3} ~onSpawn
+  - equip{item=impact_panther_3:0;delay=4} ~onSpawn
+  - equip{item=impact_panther_4:0;delay=5} ~onSpawn
+  - equip{item=impact_panther_5:0;delay=6} ~onSpawn
+  - equip{item=impact_panther_6:0;delay=7} ~onSpawn
+  - equip{item=impact_panther_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Owl_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: impact_owl_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=impact_owl_1:0;delay=2} ~onSpawn
+  - equip{item=impact_owl_2:0;delay=3} ~onSpawn
+  - equip{item=impact_owl_3:0;delay=4} ~onSpawn
+  - equip{item=impact_owl_4:0;delay=5} ~onSpawn
+  - equip{item=impact_owl_5:0;delay=6} ~onSpawn
+  - equip{item=impact_owl_6:0;delay=7} ~onSpawn
+  - equip{item=impact_owl_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+Turtle_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: impact_turtle_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=impact_turtle_1:0;delay=2} ~onSpawn
+  - equip{item=impact_turtle_2:0;delay=3} ~onSpawn
+  - equip{item=impact_turtle_3:0;delay=4} ~onSpawn
+  - equip{item=impact_turtle_4:0;delay=5} ~onSpawn
+  - equip{item=impact_turtle_5:0;delay=6} ~onSpawn
+  - equip{item=impact_turtle_6:0;delay=7} ~onSpawn
+  - equip{item=impact_turtle_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+
+Hunt_Panther:
+  Type: ARMOR_STAND
+  ItemHead: arrow_panther
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_panther:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=10;y=1.5} ~onSpawn
+
+Hunt_Owl:
+  Type: ARMOR_STAND
+  ItemHead: arrow_owl
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_owl:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=10;y=1.5} ~onSpawn
+  
+Hunt_Turtle:
+  Type: ARMOR_STAND
+  ItemHead: arrow_turtle
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_turtle:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=10;y=1.5} ~onSpawn
+  
+  
+Quick_Dash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: quick_dash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=quick_dash_1:0;delay=2} ~onSpawn
+  - equip{item=quick_dash_2:0;delay=3} ~onSpawn
+  - equip{item=quick_dash_3:0;delay=4} ~onSpawn
+  - equip{item=quick_dash_1:0;delay=5} ~onSpawn
+  - equip{item=quick_dash_2:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Back_Dash:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: back_dash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=back_dash_1:0;delay=2} ~onSpawn
+  - equip{item=back_dash_2:0;delay=3} ~onSpawn
+  - equip{item=back_dash_3:0;delay=4} ~onSpawn
+  - equip{item=back_dash_1:0;delay=5} ~onSpawn
+  - equip{item=back_dash_2:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Turtle_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: turtle_rupture_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=turtle_rupture_1:0;delay=2} ~onSpawn
+  - equip{item=turtle_rupture_2:0;delay=19} ~onSpawn
+  - equip{item=turtle_rupture_3:0;delay=20} ~onSpawn
+  - equip{item=turtle_rupture_4:0;delay=21} ~onSpawn
+  - equip{item=turtle_rupture_5:0;delay=22} ~onSpawn
+  - equip{item=turtle_rupture_6:0;delay=23} ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+Stone_Pieces:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=stone_pieces;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=23} @self ~onSpawn
+  
+
+Wind_Pulse:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: wind_pulse_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=wind_pulse_1:0;delay=2} ~onSpawn
+  - equip{item=wind_pulse_2:0;delay=3} ~onSpawn
+  - equip{item=wind_pulse_3:0;delay=4} ~onSpawn
+  - equip{item=wind_pulse_4:0;delay=5} ~onSpawn
+  - equip{item=wind_pulse_5:0;delay=6} ~onSpawn
+  - equip{item=wind_pulse_6:0;delay=7} ~onSpawn
+  - equip{item=wind_pulse_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn
+  
+
+Hunt_Owl_45:
+  Type: ARMOR_STAND
+  ItemHead: arrow_owl_1
+  Pose:
+    Head: 0,8,0
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_owl_1:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=10;y=1.5} ~onSpawn
+  
+Hunt_Owl_-45:
+  Type: ARMOR_STAND
+  ItemHead: arrow_owl_2
+  Pose:
+    Head: 0,-8,0
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_owl_2:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=10;y=1.5} ~onSpawn
+  
+Hunt_Turtle_DIAGONAL:
+  Type: ARMOR_STAND
+  ItemHead: arrow_turtle
+  Pose:
+    Head: 35,0,0
+  Options:
+    Marker: true
+    Small: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=arrow_turtle:4;delay=2} ~onSpawn
+  
+  
+
+Beast_Panther:
+  Type: WOLF
+  Display: '&cPanther'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.35
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Invincible: true
+    Persistent: false
+    Collidable: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 gotoowner 7
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 nearestConditionalTarget{conditions=[
+    - hasaura{aura=arrow_mark} true
+    ]}
+  Skills:
+  - model{mid=beast_panther;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Beast_Panther_Spawn} ~onSpawn
+  - Aura{auraName=Panther_Aura;duration=6} @Owner ~onTimer:5
+  - skill{s=Remove_Panther} @Owner ~onTimer:2
+  - skill{s=Remove_Beast_Panther} @Owner ~onTimer:2
+  
+  - skill{s=Beast_Panther_Attack} ~onTimer:30
+  - skill{s=Beast_Panther_Attack_SYNC} ~onTimer:20
+  
+  - skill{s=Beast_Mount} @trigger ~onInteract
+  
+  - skill{s=Panther_Mount_Mode} ~onTimer:40
+  - skill{s=Panther_Mount_Normal_Mode} ~onTimer:40
+  
+  - skill{s=Target_Change} @EIR{r=20} ~onTimer:10
+  
+  - skill{s=Beast_ENCHANT} @owner ~onTimer:10
+  
+Beast_Owl:
+  Type: WOLF
+  Display: '&aOwl'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.38
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Invincible: true
+    Persistent: false
+    Collidable: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 gotoowner 7
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 nearestConditionalTarget{conditions=[
+    - hasaura{aura=arrow_mark} true
+    ]}
+  Skills:
+  - model{mid=beast_owl;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Beast_Owl_Spawn} ~onSpawn
+  - Aura{auraName=Owl_Aura;duration=6} @Owner ~onTimer:5
+  - skill{s=Remove_Owl} @Owner ~onTimer:2
+  - skill{s=Remove_Beast_Owl} @Owner ~onTimer:2
+  
+  - skill{s=Beast_Owl_Attack} ~onTimer:20
+  - skill{s=Beast_Owl_Attack_SYNC} ~onTimer:12
+  
+  - skill{s=Beast_Mount_Owl} @trigger ~onInteract
+  
+  - skill{s=Owl_Mount_Mode} ~onTimer:40
+  - skill{s=Owl_Mount_Normal_Mode} ~onTimer:40
+  
+  - skill{s=Target_Change} @EIR{r=20} ~onTimer:10
+  
+  - skill{s=Beast_ENCHANT_Owl} @owner ~onTimer:10
+  
+Beast_Turtle:
+  Type: WOLF
+  Display: '&4Turtle'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.27
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Collidable: false
+    Invincible: true
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 gotoowner 7
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - 3 nearestConditionalTarget{conditions=[
+    - hasaura{aura=arrow_mark} true
+    ]}
+  Skills:
+  - model{mid=beast_turtle;n=false;step=1;drive=true} @self ~onSpawn
+  - effect:sound{s=necromancer_sounds:samus.skeletal_minion_idle;volume=1;pitch=1} @self ~onSpawn
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Beast_Turtle_Spawn} ~onSpawn
+  - Aura{auraName=Turtle_Aura;duration=6} @Owner ~onTimer:5
+  - skill{s=Remove_Turtle} @Owner ~onTimer:2
+  - skill{s=Remove_Beast_Turtle} @Owner ~onTimer:2
+  
+  - skill{s=Beast_Turtle_Attack} ~onTimer:40
+  - skill{s=Beast_Turtle_Attack_SYNC} ~onTimer:30
+  
+  - skill{s=Beast_Mount} @trigger ~onInteract
+  
+  - skill{s=Turtle_Mount_Mode} ~onTimer:40
+  - skill{s=Turtle_Mount_Normal_Mode} ~onTimer:40
+  
+  - skill{s=Target_Change} @EIR{r=20} ~onTimer:10
+  
+  - skill{s=Beast_ENCHANT_Turtle} @owner ~onTimer:10
+  
+
+X_Panther:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: x_panther_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=x_panther_1:0;delay=2} ~onSpawn
+  - equip{item=x_panther_2:0;delay=3} ~onSpawn
+  - equip{item=x_panther_3:0;delay=4} ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  
+X_Owl:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: x_owl_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=x_owl_1:0;delay=2} ~onSpawn
+  - equip{item=x_owl_2:0;delay=3} ~onSpawn
+  - equip{item=x_owl_3:0;delay=4} ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  
+X_Turtle:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: x_turtle_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=x_turtle_1:0;delay=2} ~onSpawn
+  - equip{item=x_turtle_2:0;delay=3} ~onSpawn
+  - equip{item=x_turtle_3:0;delay=4} ~onSpawn
+  - remove{delay=200} @self ~onSpawn
+  
+Trap_Chain:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=trap_chain;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=59} @self ~onSpawn
+  
+Arrow_Volley:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=arrow_volley;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=35} @self ~onSpawn
+  
+
+Beast_Fenrir:
+  Type: WOLF
+  Display: '&cFenrir'
+  Health: 40
+  Damage: 6
+  Options:
+    MovementSpeed: 0.35
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Invincible: true
+    Persistent: false
+    Collidable: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=beast_fenrir;n=false;step=1;drive=true} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Beast_Fenrir_Spawn} ~onSpawn
+  - Aura{auraName=Fenrir_Aura;duration=6} @Owner ~onTimer:5
+  
+  - mountmodel{mode=walking;delay=2} @Owner ~onSpawn
+  - mountmodel{mode=walking;delay=3} @Owner ~onSpawn
+  - mountmodel{mode=walking;delay=4} @Owner ~onSpawn
+  - skill{s=Awakening_Of_Fenrir_NOMOUNT;delay=5} ~onTimer:1
+  
+  
+Fenrir_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-25
+  ItemHand: slash_fenrir_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=slash_fenrir_1:0;delay=2} ~onSpawn
+  - equip{item=slash_fenrir_2:0;delay=3} ~onSpawn
+  - equip{item=slash_fenrir_3:0;delay=4} ~onSpawn
+  - equip{item=slash_fenrir_4:0;delay=5} ~onSpawn
+  - equip{item=slash_fenrir_5:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Fenrir_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-155
+  ItemHand: slash_fenrir_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=slash_fenrir_1:0;delay=2} ~onSpawn
+  - equip{item=slash_fenrir_2:0;delay=3} ~onSpawn
+  - equip{item=slash_fenrir_3:0;delay=4} ~onSpawn
+  - equip{item=slash_fenrir_4:0;delay=5} ~onSpawn
+  - equip{item=slash_fenrir_5:0;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Fenrir_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: impact_fenrir_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=impact_fenrir_1:0;delay=2} ~onSpawn
+  - equip{item=impact_fenrir_2:0;delay=3} ~onSpawn
+  - equip{item=impact_fenrir_3:0;delay=4} ~onSpawn
+  - equip{item=impact_fenrir_4:0;delay=5} ~onSpawn
+  - equip{item=impact_fenrir_5:0;delay=6} ~onSpawn
+  - equip{item=impact_fenrir_6:0;delay=7} ~onSpawn
+  - equip{item=impact_fenrir_7:0;delay=8} ~onSpawn
+  - remove{delay=9} @self ~onSpawn

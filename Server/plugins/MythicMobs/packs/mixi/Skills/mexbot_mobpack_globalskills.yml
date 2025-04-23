@@ -1,0 +1,46 @@
+eat:
+  TargetConditions:
+  - hasowner false
+  Skills:
+  - state{s=eat;li=0;lo=0;delay=10} @self
+  - setowner @trigger
+  - setmaxhealth{amount=1000;mode=SCALE} @self
+  - effect:particles{p=heart;amount=50;speed=0;hS=1;vS=1} @self
+  - delay 30
+  - message{m="<mob.name> is now your Pet"} @owner
+  - effect:sound{s=entity.generic.eat;v=1;p=0;repeat=3;repeatInterval=5} @EIR{r=10}
+  - runaitargetselector{target=clear}
+  - runaitargetselector{target=ownerhurttarget}
+  - runaitargetselector{target=ownertarget}
+  - runaitargetselector{target=attacker}
+  - runaitargetselector{target=monsters}
+  - runaigoalselector{goal=clear}
+  - runaigoalselector{goal=leapattarget}
+  - runaigoalselector{goal=meleeattack}
+  - runaigoalselector{goal=gotoowner 5}
+  - runaigoalselector{goal=swim}
+  
+mount_event:
+  TargetConditions:
+  - hasowner true
+  Skills:
+  - skill{s=mount_event_nocrouch} @trigger
+mount_event_nocrouch:
+  TargetConditions:
+  - crouching false
+  - mounted false
+  - owner true
+  Skills:
+  - mountmodel
+ 
+babyattack:
+  TargetConditions:
+  - hasowner false
+  Skills:
+  - runaitargetselector{target=clear} @self
+  - runaitargetselector{target=monsters} @self
+  - runaitargetselector{target=specificfaction predator} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=movetowardstarget} @self
+  - effect:particles{p=angry_villager;amount=10;speed=0;hS=1;vS=1} @Self

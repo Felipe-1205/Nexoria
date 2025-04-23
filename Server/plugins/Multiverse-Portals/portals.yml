@@ -1,0 +1,687 @@
+portals:
+  tala1-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -231.0,78.0,-327.0:-231.0,80.0,-323.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  tala1-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -235.0,78.0,-327.0:-235.0,80.0,-323.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  botanica1-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -897.0,204.0,640.0:-893.0,207.0,640.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  botanica1-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -897.0,204.0,638.0:-893.0,207.0,638.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  botanica2-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -355.0,94.0,504.0:-355.0,100.0,511.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  botanica2-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -353.0,94.0,505.0:-353.0,99.0,510.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  botanica3-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 120.0,52.0,668.0:126.0,57.0,668.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  botanica3-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 119.0,52.0,666.0:126.0,58.0,666.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  tala2-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 42.0,92.0,-305.0:46.0,95.0,-305.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  tala2-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 42.0,92.0,-301.0:46.0,95.0,-301.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  tala3-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -844.0,46.0,-319.0:-844.0,52.0,-314.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  tala3-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -846.0,46.0,-318.0:-846.0,52.0,-313.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  mina1-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 94.0,152.0,165.0:100.0,156.0,165.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  mina1-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 69.0,154.0,159.0:75.0,158.0,159.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  mina2-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -313.0,134.0,100.0:-308.0,139.0,100.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  mina2-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -302.0,135.0,116.0:-302.0,140.0,121.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  mina3-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1040.0,64.0,190.0:-1040.0,68.0,196.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  mina3-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1053.0,65.0,173.0:-1048.0,69.0,173.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  pesca1-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -891.0,43.0,-835.0:-891.0,45.0,-831.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  pesca1-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -887.0,43.0,-835.0:-887.0,45.0,-831.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  pesca2-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -333.0,135.0,-870.0:-333.0,138.0,-866.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  pesca2-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -337.0,135.0,-870.0:-337.0,138.0,-866.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  pesca3-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 131.0,88.0,-764.0:135.0,91.0,-764.0
+    world: pasatiempos
+    destination: e:eutonia:-1615.0,67.0,185.0:0.0:0.0
+  pesca3-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 131.0,88.0,-762.0:135.0,91.0,-762.0
+    world: pasatiempos
+    destination: e:principal:-2954.0,75.0,464.0:0.0:0.0
+  muerte-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 1018.0,68.0,-167.0:1024.0,72.0,-167.0
+    world: pasatiempos
+    destination: e:principal:-74.0,138.0,-368.0:0.0:0.0
+  aeloria-muerte:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -98.0,1.0,-392.0:-53.0,1.0,-347.0
+    world: principal
+    destination: e:pasatiempos:1022.0,64.0,-158.0:0.0:0.0
+  muerte-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 1018.0,8.0,-159.0:1024.0,12.0,-159.0
+    world: pasatiempos
+    destination: e:eutonia:-16.0,138.0,-107.0:0.0:0.0
+  nexoth-muerte:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -21.0,45.0,-113.0:-16.0,45.0,-106.0
+    world: eutonia
+    destination: e:pasatiempos:1023.0,6.0,-165.0:0.0:0.0
+  aeloria-alma:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 3676.0,133.0,-1171.0:3681.0,133.0,-1168.0
+    world: principal
+    destination: e:pasatiempos:1988.0,16.0,-98.0:0.0:0.0
+  alma-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 1971.0,1.0,-126.0:1974.0,5.0,-126.0
+    world: pasatiempos
+    destination: e:principal:3661.0,135.0,-1151.0:0.0:0.0
+  nexoth-alma:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 1897.0,126.0,-536.0:1902.0,126.0,-531.0
+    world: eutonia
+    destination: e:pasatiempos:2168.0,15.0,-88.0:0.0:0.0
+  alma-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 2212.0,29.0,-77.0:2212.0,31.0,-74.0
+    world: pasatiempos
+    destination: e:eutonia:1902.0,128.0,-542.0:0.0:0.0
+  spawn-nexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1178.0,8.0,654.0:-1178.0,12.0,658.0
+    world: spawn
+    destination: e:eutonia:-16.0,138.0,-107.0:0.0:0.0
+  spawn-aeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1054.0,8.0,654.0:-1054.0,12.0,658.0
+    world: spawn
+    destination: e:principal:-74.0,138.0,-368.0:0.0:0.0
+  borde1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -970.0,1.0,-974.0:-662.0,1.0,-703.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde2:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -453.0,1.0,-988.0:-200.0,1.0,-700.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde3:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -9.0,1.0,-954.0:376.0,1.0,-619.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde4:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -465.0,1.0,-482.0:-180.0,1.0,-212.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde5:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -7.0,1.0,-494.0:293.0,1.0,-217.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde6:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -995.0,1.0,-466.0:-679.0,1.0,-180.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde7:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -20.0,1.0,112.0:259.0,1.0,338.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde8:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -560.0,1.0,-32.0:-276.0,1.0,190.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde9:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1179.0,1.0,114.0:-877.0,1.0,357.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde10:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1074.0,1.0,436.0:-719.0,1.0,766.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde11:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -504.0,1.0,391.0:-124.0,1.0,769.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  borde12:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: 48.0,1.0,486.0:434.0,1.0,823.0
+    world: pasatiempos
+    destination: e:spawn:-1115.5,10.0,656.5:0.0:0.0
+  spawn-tutorial:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -1118.0,8.0,718.0:-1114.0,13.0,718.0
+    world: spawn
+    destination: e:world:-777.0,-56.0,-776.0:0.0:0.0
+  tutorial-spawn:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: Felipe1205
+    location: -786.0,-57.0,-674.0:-770.0,-34.0,-674.0
+    world: world
+    destination: e:spawn:-1115.0,10.0,656.0:0.0:0.0
+  isladiosesaeloria:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -77.0,138.0,-366.0:-73.0,141.0,-366.0
+    world: principal
+    destination: p:portalaeloriadioses
+  portalaeloriadioses:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 36.0,86.0,137.0:40.0,89.0,137.0
+    world: principal
+    destination: p:isladiosesaeloria
+  portalnexothdioses:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -699.0,75.0,339.0:-695.0,78.0,339.0
+    world: eutonia
+    destination: p:isladiosesnexoth
+  isladiosesnexoth:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -19.0,138.0,-105.0:-15.0,141.0,-105.0
+    world: eutonia
+    destination: p:portalnexothdioses
+  nexothtierra:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 1716.0,64.0,-517.0:1716.0,67.0,-515.0
+    world: eutonia
+    destination: p:nexothislacisnes
+  nexothislacisnes:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 1854.0,136.0,-525.0:1854.0,139.0,-523.0
+    world: eutonia
+    destination: p:nexothtierra
+  entradalababandonado:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -890.0,75.0,1426.0:-888.0,78.0,1426.0
+    world: principal
+    destination: p:salidalababandonado
+  salidalababandonado:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 684.0,178.0,145.0:685.0,180.0,145.0
+    world: pasatiempos
+    destination: p:entradalababandonado
+  entradadungeonjungla:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -416.0,52.0,83.0:-410.0,68.0,83.0
+    world: principal
+    destination: p:entradadungeonjungla1
+  entradadungeonjungla1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -1.0,39.0,4.0:1.0,43.0,4.0
+    world: dungeons
+  dungeonjungla1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -2.0,32.0,-136.0:3.0,37.0,-136.0
+    world: dungeons
+    destination: p:dungeonjungla2
+  dungeonjungla2:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -9.0,17.0,-312.0:-3.0,25.0,-312.0
+    world: dungeons
+  dungeonjungla3:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -8.0,11.0,-343.0:-5.0,16.0,-343.0
+    world: dungeons
+    destination: p:dungeonjungla4
+  dungeonjungla4:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 0.0,24.0,-152.0:2.0,28.0,-152.0
+    world: dungeons
+  dungeonjungla5:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 25.0,11.0,-235.0:27.0,11.0,-231.0
+    world: dungeons
+    destination: p:dungeonjungla6
+  dungeonjungla6:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -10.0,12.0,-410.0:-6.0,16.0,-410.0
+    world: dungeons
+  dungeonjungla7:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: -9.0,12.0,-437.0:-7.0,16.0,-437.0
+    world: dungeons
+    destination: p:entradadungeonjungla
+  Orzath1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 1521.0,166.0,-696.0:1525.0,168.0,-692.0
+    world: principal
+    destination: p:ozarth2
+  ozarth2:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 285.0,-53.0,-316.0:285.0,-49.0,-310.0
+    world: dungeons
+    destination: p:Orzath1
+  ElSusurrado1:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 121.0,78.0,3555.0:127.0,84.0,3555.0
+    world: principal
+    destination: p:ElSusurrado2
+  ElSusurrado2:
+    entryfee:
+      amount: 0.0
+    safeteleport: true
+    teleportnonplayers: false
+    handlerscript: ''
+    owner: APHNYX
+    location: 416.0,-53.0,-90.0:416.0,-50.0,-87.0
+    world: dungeons
+    destination: p:ElSusurrado1

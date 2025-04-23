@@ -1,0 +1,340 @@
+######## created by samus2002 #########
+  
+warrior_sword:
+  Id: stone_sword
+  Display: "<gradient:#e8a01a:#faee70:#e8a01a>Sword of Warrior"
+  Model: 2017
+  Lore:
+  - '<gradient:#e8a01a:#faee70:#e8a01a>The sword of an Warrior'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Brutal_Strike} @self ~onSwing
+  - skill{s=Charge} @self ~onUse
+  - skill{s=Chain_Hook} @self ~onUse
+  - skill{s=Shield_Barrier} @self ~onCrouch
+  - skill{s=Judgement} @self ~onSwing
+  - skill{s=Rampage} @self ~onDamaged
+  
+warrior_sword_shiny:
+  Id: stone_sword
+  Display: "<gradient:#e8a01a:#fff5de:#e8a01a>Shiny Sword of Warrior"
+  Model: 2018
+  Lore:
+  - '<gradient:#e8a01a:#fff5de:#e8a01a>The sword of an Warrior'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Brutal_Strike} @self ~onSwing
+  - skill{s=Charge} @self ~onUse
+  - skill{s=Chain_Hook} @self ~onUse
+  - skill{s=Shield_Barrier} @self ~onCrouch
+  - skill{s=Judgement} @self ~onSwing
+  - skill{s=Rampage} @self ~onDamaged
+  
+chain_hook_1:
+  Id: paper
+  Display: "&6"
+  Model: 2177
+  Hide:
+  - ATTRIBUTES
+
+chain_hook_2:
+  Id: paper
+  Display: "&6"
+  Model: 2178
+  Hide:
+  - ATTRIBUTES
+ 
+chain_hook_3:
+  Id: paper
+  Display: "&6"
+  Model: 2179
+  Hide:
+  - ATTRIBUTES
+  
+chain_hook_4:
+  Id: paper
+  Display: "&6"
+  Model: 2180
+  Hide:
+  - ATTRIBUTES
+  
+chain_hook_5:
+  Id: paper
+  Display: "&6"
+  Model: 2181
+  Hide:
+  - ATTRIBUTES
+  
+charge_1:
+  Id: paper
+  Display: "&6"
+  Model: 2182
+  Hide:
+  - ATTRIBUTES
+  
+charge_2:
+  Id: paper
+  Display: "&6"
+  Model: 2183
+  Hide:
+  - ATTRIBUTES
+  
+charge_3:
+  Id: paper
+  Display: "&6"
+  Model: 2184
+  Hide:
+  - ATTRIBUTES
+  
+charge_4:
+  Id: paper
+  Display: "&6"
+  Model: 2185
+  Hide:
+  - ATTRIBUTES
+  
+charge_5:
+  Id: paper
+  Display: "&6"
+  Model: 2186
+  Hide:
+  - ATTRIBUTES
+  
+judgement_sword_1:
+  Id: paper
+  Display: "&6"
+  Model: 2187
+  Hide:
+  - ATTRIBUTES
+  
+judgement_sword_2:
+  Id: paper
+  Display: "&6"
+  Model: 2188
+  Hide:
+  - ATTRIBUTES
+  
+judgement_sword_3:
+  Id: paper
+  Display: "&6"
+  Model: 2189
+  Hide:
+  - ATTRIBUTES
+  
+judgement_sword_4:
+  Id: paper
+  Display: "&6"
+  Model: 2190
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_1:
+  Id: paper
+  Display: "&6"
+  Model: 2191
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_2:
+  Id: paper
+  Display: "&6"
+  Model: 2192
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_3:
+  Id: paper
+  Display: "&6"
+  Model: 2193
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_4:
+  Id: paper
+  Display: "&6"
+  Model: 2194
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_1:
+  Id: paper
+  Display: "&6"
+  Model: 2195
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_2:
+  Id: paper
+  Display: "&6"
+  Model: 2196
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_3:
+  Id: paper
+  Display: "&6"
+  Model: 2197
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_4:
+  Id: paper
+  Display: "&6"
+  Model: 2198
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_5:
+  Id: paper
+  Display: "&6"
+  Model: 2199
+  Hide:
+  - ATTRIBUTES
+  
+warrior_pierce_6:
+  Id: paper
+  Display: "&6"
+  Model: 2200
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2201
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2202
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2203
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2204
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2205
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2206
+  Hide:
+  - ATTRIBUTES
+  
+warrior_slash_7:
+  Id: paper
+  Display: "&6"
+  Model: 2207
+  Hide:
+  - ATTRIBUTES
+  
+whirlwind_1:
+  Id: paper
+  Display: "&6"
+  Model: 2208
+  Hide:
+  - ATTRIBUTES
+  
+whirlwind_2:
+  Id: paper
+  Display: "&6"
+  Model: 2209
+  Hide:
+  - ATTRIBUTES
+  
+whirlwind_3:
+  Id: paper
+  Display: "&6"
+  Model: 2210
+  Hide:
+  - ATTRIBUTES
+  
+whirlwind_4:
+  Id: paper
+  Display: "&6"
+  Model: 2211
+  Hide:
+  - ATTRIBUTES
+  
+whirlwind_5:
+  Id: paper
+  Display: "&6"
+  Model: 2212
+  Hide:
+  - ATTRIBUTES
+  
+judgement_shield_1:
+  Id: paper
+  Display: "&6"
+  Model: 2213
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_1_broken:
+  Id: paper
+  Display: "&6"
+  Model: 2214
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_2_broken:
+  Id: paper
+  Display: "&6"
+  Model: 2215
+  Hide:
+  - ATTRIBUTES
+  
+shield_barrier_3_broken:
+  Id: paper
+  Display: "&6"
+  Model: 2216
+  Hide:
+  - ATTRIBUTES
+ 
+judgement_shield_2:
+  Id: paper
+  Display: "&6"
+  Model: 2217
+  Hide:
+  - ATTRIBUTES
+  
+judgement_shield_3:
+  Id: paper
+  Display: "&6"
+  Model: 2218
+  Hide:
+  - ATTRIBUTES
+  
+judgement_shield_4:
+  Id: paper
+  Display: "&6"
+  Model: 2219
+  Hide:
+  - ATTRIBUTES

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.94.154.14
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739824454058
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739984963033
+  login: 1739984936063
+money: '0'
+last-account-name: ElMilanesa2009
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2987.3800510319206
+  y: 80.5625
+  z: 459.59127835102356
+  yaw: 68.39987182617188
+  pitch: 27.000001907348633
+nickname: Stone
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -216.53193503010755
+  y: 74.0
+  z: 273.70044170970664
+  yaw: -166.01718139648438
+  pitch: 6.7499542236328125

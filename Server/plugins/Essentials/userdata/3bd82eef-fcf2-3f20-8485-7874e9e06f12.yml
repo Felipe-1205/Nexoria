@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 179.6.14.211
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739833573287
+  login: 1739833042560
+money: '0'
+last-account-name: Fakenciano
+lastlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: 0.0
+  y: -60.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: -777.2467800052201
+  y: -57.0
+  z: -773.4642707696582
+  yaw: 1.514007568359375
+  pitch: 3.2212114334106445

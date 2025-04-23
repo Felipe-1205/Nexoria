@@ -1,0 +1,43 @@
+Id: dragonagua
+MythicMob: Nocsy_Drakonin-Water-Adult
+Permission: mcpets.dragon.agua
+Mountable: true
+AutoRide: false
+MountType: flying
+DespawnSkill: Nocsy_Drakonin_Despawn
+DespawnOnDismount: false
+Distance: 10
+SpawnRange: 1
+InventorySize: 18
+ComingBackRange: 10
+Signals:
+  Values:
+  - SPELL
+  Item:
+    Name: §5Baston De Comando
+    Material: BLAZE_ROD
+    CustomModelData: 95501
+    Description:
+    - §7Click derecho para castear un hechizo
+Icon:
+  Name: §5§lDragon De Agua
+  TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2U3ZDIzNDlmZGM3YzI0NDVjNDViMmY0YTA0MzYwYTUzZTc5ZDEwZTFhZDVjOGM3ZDhjMGI2MmU2YTk2ZWUxNyJ9fX0=
+  Description:
+  - §4§lFuerza §76
+  - §2§lDestreza §76
+  - §6§lConstitucion §78
+  - §5§lSabiduria §76
+  - §1§lInteligencia §710
+  - §d§lCarisma §76
+Levels:
+  Lvl_Beginner:
+    Name: Unico
+    ExperienceThreshold: 0
+    MaxHealth: 60
+    Regeneration: 0.8
+    ResistanceModifier: 1
+    DamageModifier: 1
+    Power: 1
+    Cooldowns:
+      Respawn: 60
+      Revoke: 0

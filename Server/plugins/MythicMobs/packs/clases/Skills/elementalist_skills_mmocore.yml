@@ -1,0 +1,247 @@
+######## created by samus2002 #########
+
+# Air Burst #
+
+Air_Burst:
+  Cooldown: 0
+  Skills:
+  - skill{s=Air_Burst_SKILL}
+
+Air_Burst_SKILL:
+  Cooldown: 10
+  Conditions:
+  - sprinting{} true
+  Skills:
+  - orbital{bulletType=MOB;mob=Air_Burst;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=100;oy=-0.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=entity.warden.sonic_charge;volume=0.8;pitch=0.5;delay=5} @self
+  - delay 29
+  - effect:sound{s=entity.glow_squid.hurt;volume=0.8;pitch=0.5} @self
+  - skill{s=Air_Burst_SKILL2} @EIR{r=7}
+
+Air_Burst_SKILL2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - throw{velocity=15;velocityY=5}
+  
+# Earth Toss #
+  
+Earth_Toss:
+  Skills:
+  - randomskill{skills=Earth_Toss_Left,Earth_Toss_Right}
+
+Earth_Toss_Left:
+  Cooldown: 1.5
+  Skills:
+  - effect:sound{s=elementalist_sounds:samus.stone_summon;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - orbital{bulletType=MOB;mob=Earth_Toss_Left;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=100;oy=-0.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 20
+  - effect:sound{s=entity.shulker.shoot;volume=0.6;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Earth_Toss_Pro;onHit=Earth_Toss_HIT_D;bulletmatchdirection=true;onEnd=Earth_Toss_END;v=15;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;sso=-1} @Forward{f=15;y=0}
+
+Earth_Toss_Right:
+  Cooldown: 1.5
+  Skills:
+  - effect:sound{s=elementalist_sounds:samus.stone_summon;volume=0.7;pitch="random(0.9, 1.1)"} @self
+  - orbital{bulletType=MOB;mob=Earth_Toss_Right;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=100;oy=-0.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - delay 20
+  - effect:sound{s=entity.shulker.shoot;volume=0.6;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Earth_Toss_Pro;onHit=Earth_Toss_HIT_D;bulletmatchdirection=true;onEnd=Earth_Toss_END;v=15;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5;sso=1} @Forward{f=15;y=0}
+
+Earth_Toss_HIT_D:
+  Skills:
+  - skill{s=Earth_Toss_HIT} @EntitiesNearOrigin{r=2.5;limit=1;sort=NEAREST}
+  
+Earth_Toss_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=2;velocityY=0}
+  
+Earth_Toss_END:
+  Skills:
+  - effect:particles{particle=block_crack;m=granite;amount=15;hS=0.2;vS=0.2;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=elementalist_sounds:samus.stone_break;volume=0.6;pitch=1} @self
+  
+# Aqua Whip #
+
+Aqua_Whip:
+  Skills:
+  - effect:sound{s=ambient.underwater.exit;volume=1;pitch=1} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=0.7;delay=10} @self
+  - effect:sound{s=entity.elder_guardian.hurt;volume=1;pitch=1.4;delay=13} @self
+  - effect:sound{s=entity.player.attack.crit;volume=1;pitch=0.7;delay=13} @self
+  - orbital{bulletType=MOB;mob=Aqua_Whip;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=100;oy=-0.7;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+  - delay 14
+  - skill{s=Aqua_Whip_HIT}
+  
+Aqua_Whip_HIT:
+  Skills:
+  - totem{md=2;c=1;oH=Aqua_Whip_DAMAGE;hnp=true;hp=true;hR=4.5;vR=2;i=1} @forward{f=2;lockpitch=true}
+  
+Aqua_Whip_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=7;velocityY=4}
+  - effect:particles{particle=splash;amount=15;hS=0.3;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0}
+  
+# Underworld Beast #
+
+Underworld_Beast:
+  Conditions:
+  - hasaura{n=Overheat_Aura} false
+  Skills:
+  - Aura{auraName=Underworld_Beast_Aura;duration=62} @self
+  - effect:sound{s=elementalist_sounds:samus.beast_emerge;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.phantom.bite;volume=1;pitch=0.6;delay=10} @self
+  - projectile{onEnd=Underworld_Beast_END;v=25;i=1;hR=1;vR=1;mr=30;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1} @forward{f=30;y=0}
+  
+Underworld_Beast_END:
+  Skills:
+  - summon{type=Underworld_Beast;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Underworld_Beast_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=2;c=1;oT=Underworld_Beast_HIT_D;hnp=true;hp=true;hR=1;vR=1;i=1;delay=6} @origin
+  
+  
+Underworld_Beast_HIT_D:
+  Skills:
+  - skill{s=Underworld_Beast_HIT} @EntitiesNearOrigin{r=5}
+  - effect:particles{particle=lava;amount=10;hS=0.7;vS=0.4;y=-0.2;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Underworld_Beast_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  #- damage{a=5}
+  - ignite{ticks=100}
+  - damage{a="<modifier.damage>";repeat=4;repeati=20;pkb=true}
+  - throw{velocity=0;velocityY=8}
+  
+# Extreme Wind #
+  
+Extreme_Wind:
+  Skills:
+  - effect:sound{s=elementalist_sounds:samus.hawk_screech;volume=0.65;pitch=1} @self
+  - projectile{onEnd=Extreme_Wind_END;v=25;i=1;hR=1;vR=1;mr=30;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1} @forward{f=30;y=0}
+  
+Extreme_Wind_FLAP:
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=1.15} @self
+  
+Extreme_Wind_END:
+  Skills:
+  - summon{type=Extreme_Wind_Hawk;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Extreme_Wind_Whirlwind;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=100;oT=Extreme_Wind_HIT_D;hnp=true;hp=true;hR=3;vR=5;i=5;delay=20} @origin
+  - effect:sound{s=entity.wither.ambient;volume=0.6;pitch=0.7;repeat=1;repeati=40} @origin
+  
+Extreme_Wind_HIT_D:
+  Skills:
+  - skill{s=Extreme_Wind_HIT} @EntitiesNearOrigin{r=2}
+  
+Extreme_Wind_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - throw{velocity=0;velocityY=6}
+  
+# Terra Barricade #
+
+Terra_Barricade:
+  Skills:
+  - effect:sound{s=elementalist_sounds:samus.beast_emerge;volume=1;pitch=0.85} @self
+  - effect:sound{s=elementalist_sounds:samus.ground_smash;volume=1;pitch=1;delay=17} @self
+  - effect:sound{s=elementalist_sounds:samus.terra_wall_emerge;volume=1;pitch=1;delay=19} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=1;pitch=0.6;delay=34} @self
+  
+  - summon{type=Earth_Golem;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0}
+  #- summon{type=Terra_Wall;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=5;y=0}
+  - projectile{bulletType=MOB;mob=Terra_Wall_Pro;oS=Terra_Barricade_Start;onHit=Terra_Barricade_HIT_D;bulletmatchdirection=true;onEnd=Terra_Barricade_END;v=1;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=false;sB=true;hs=true;hfs=0.2;sfo=5} @Forward{f=15;y=0}
+
+Terra_Barricade_Start:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=SET;value=18;delay=34}
+  
+Terra_Barricade_HIT_D:
+  Skills:
+  - skill{s=Terra_Barricade_HIT} @EntitiesNearOrigin{r=5}
+  
+Terra_Barricade_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - throw{velocity=7;velocityY=3}
+  
+Terra_Barricade_END:
+  Skills:
+  - effect:particles{particle=block_crack;m=granite;amount=25;hS=1.5;vS=2;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=elementalist_sounds:samus.stone_break;volume=0.6;pitch=1} @self
+  
+# Overheat #
+
+Overheat:
+  Conditions:
+  - hasaura{n=Underworld_Beast_Aura} false
+  Skills:
+  - Aura{auraName=Overheat_Aura;duration=137} @self
+  - effect:sound{s=elementalist_sounds:samus.beast_emerge;volume=0.8;pitch=1} @self
+  - effect:sound{s=block.end_portal.spawn;volume=0.8;pitch=0.6;delay=28} @self
+  - effect:sound{s=entity.blaze.shoot;volume=0.25;pitch=0.6;delay=28;repeat=27;repeati=2} @self
+  - projectile{onEnd=Overheat_END;v=25;i=1;hR=1;vR=1;mr=30;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1} @forward{f=30;y=0}
+  
+  - delay 30
+  #- skill{s=Overheat_SKILL;repeat=14;repeati=7} @MIR{r=30;t=Overheat;target=armorstands}
+  
+Overheat_END:
+  Skills:
+  - summon{type=Overheat;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Overheat_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=Overheat_SKILL;repeat=14;repeati=4;delay=30} @origin
+  
+Overheat_LOOK:
+  Skills:
+  - look{headOnly=true;immediately=true} @forward{f=20;y=0;ofowner=true}
+  
+Overheat_SKILL:
+  Skills:
+  - skill{s=Overheat_PRO;targetisorigin=true}
+  
+Overheat_PRO:
+  Skills:
+  - projectile{origin=@origin;fromorigin=true;onTick=Overheat_TICK;onHit=Overheat_HIT_D;onEnd=Overheat_END2;v=35;i=1;hR=1;vR=1;mr=11;hnp=true;hO=0;sE=false;sB=false;sfo=0;hs=false;hfs=0;syo=0.5;tyo=0.6} @forward{f=20;y=0;lockpitch=true}
+  
+Overheat_TICK:
+  Skills:
+  - effect:particles{particle=flame;amount=5;hS=0.2;vS=0.2;y=0.1;speed=0.05;forwardOffset=0;sideOffset=0} @origin
+
+Overheat_HIT_D:
+  Skills:
+  - skill{s=Overheat_HIT} @EntitiesNearOrigin{r=3}
+  
+Overheat_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - ignite{ticks=140}
+  - damage{a="<modifier.damage>";repeat=6;repeati=20;pkb=true}
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0;forwardOffset=0;vS=0;speed=0}
+  - effect:sound{s=entity.generic.explode;volume=0.9;pitch=0.8}
+  
+Overheat_END2:
+  Skills:
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0;forwardOffset=0;vS=0;speed=0} @origin
+  - effect:sound{s=entity.generic.explode;volume=0.9;pitch=0.8} @origin
+  

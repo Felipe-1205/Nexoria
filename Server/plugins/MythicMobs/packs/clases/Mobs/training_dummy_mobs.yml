@@ -1,0 +1,60 @@
+######## created by samus2002 #########
+
+Training_Dummy_Fixed:
+  Type: ZOMBIE
+  Health: 99999
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    NoDamageTicks: 1
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - effect:sound{s=entity.player.hurt;volume=1;pitch=1.2} @self ~onDamaged
+  - state{s=hit} @self ~onDamaged
+  - heal{a=99999} @self ~onDamaged
+  
+Training_Dummy:
+  Type: ZOMBIE
+  Health: 99999
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    Collidable: false
+    ShowHealth: false
+    NoDamageTicks: 1
+    Invincible: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - model{mid=dummy;n=false} @self ~onSpawn
+  - effect:sound{s=entity.player.hurt;volume=1;pitch=1.2} @self ~onDamaged
+  - state{s=hit} @self ~onDamaged
+  - skill{s=Training_Dummy_Look} @trigger ~onInteract
+  - heal{a=99999} @self ~onDamaged

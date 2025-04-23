@@ -1,0 +1,3011 @@
+Version: 1
+Functions:
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Scorpion_King
+  delay: 100
+  levelString: '0'
+  interval: 0
+  targetType: &id002
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: NONE
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 59.0
+    z: -330.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: &id001
+    ==: net.playavalon.mythicdungeons.api.parents.FunctionTargetType
+    value: PARTY
+  location:
+    ==: org.bukkit.Location
+    x: -7.0
+    y: 61.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: &id003
+    ==: org.bukkit.Location
+    x: -7.519546069822411
+    y: 60.0625
+    z: -434.4173909246001
+    pitch: -2.4169683E-5
+    yaw: 0.14501953
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+  savePoint: false
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 73.0
+    z: -159.0
+    pitch: 0.0
+    yaw: 0.0
+  pitch: 1.9500452280044556
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  yaw: 179.70045471191406
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 92.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 68.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 68.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Snail
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -30.0
+    y: 53.0
+    z: -207.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 80.0
+    z: -137.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget:
+    ==: org.bukkit.Location
+    x: -5.569665402444033
+    y: 64.0
+    z: -314.71917909949457
+    pitch: -1.5000117
+    yaw: -179.6995
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 59.0
+    z: -342.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget:
+    ==: org.bukkit.Location
+    x: 1.25773282311659
+    y: 72.0
+    z: -153.70987269897634
+    pitch: -0.14997488
+    yaw: -178.79958
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerKeyItem
+    item:
+      ==: org.bukkit.inventory.ItemStack
+      v: 3839
+      type: TRIPWIRE_HOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Llave de Salida","italic":false,"color":"dark_purple"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Llave","italic":false,"color":"gold"}]}'
+        attribute-modifiers:
+          minecraft:generic.attack_speed:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: mmoitems:decoy
+            uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+            operation: 0
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        max-stack-size: 1
+        custom: H4sIAAAAAAAA/22QzUrDQBSFb3ThUBFsQfxdlFl05VYX3Y3JmAzOTMLMIMYQhmArCAWhBkFKnydrXyG+mPmR2JJuBoZz7jnfvQMABCdChMxQoa0XSyKYa3moKIwSXBavZfFSFrd8kX3OcYrguPPWr2UeHHJOHqkmnHnEgav/LKbJHaeWSUMVcQ0LpYPgqNOrJgrDyU0TPZ7NxzpbvM0yBMPOQqUbEGk07CWpA5e96D+dSb9KPt2UI05i6lkTRxQOJi0+gkGgjYrbZn+FdZ7leIrrL77Goa/z9+UXniYrvAVpf74/8mVl7LHidbp24LzH5Spy31DtErVgJmjFi56oaESYahcabZ+62QWFqkaSZncy5U3t/sYxBHmy2hD3wWr2TAGg6j3rjXoqjOpJ+AUmLc8hEQIAAA==
+    useAnywhere: false
+    allowRetrigger: false
+    consumeItem: true
+    conditions: []
+    clickType: RIGHT
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 81.0
+    z: -122.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDungeonStart
+    allowRetrigger: true
+    conditions: []
+  message: §7Parece que falta activar algo. \n§7Quizá sea buena idea §6explorar.
+  radius: 100
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 58.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 68.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 69.0
+    z: -106.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 5.0
+    conditions: []
+  message: §bParece que hay algo \ndetrás de las hojas
+  radius: 20
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -23.0
+    y: 79.0
+    z: -90.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 89.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 89.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 89.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 60.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 20.0
+    y: 71.0
+    z: -220.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: mf_deceptor_egg
+  delay: 20
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -14.0
+    y: 60.0
+    z: -434.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Stone_Golem
+  delay: 0
+  levelString: '0'
+  interval: 60
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 79.0
+    z: -114.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: -23.0
+    y: 82.0
+    z: -75.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: &id004 []
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Snail
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -28.0
+    y: 53.0
+    z: -190.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 61.0
+    z: -342.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 3.0
+    conditions: []
+  message: §bPara continuar\n§bArroja la §5Llave
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 59.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc:
+    ==: org.bukkit.Location
+    x: -1.699999988079071
+    y: 90.75
+    z: -3.504138807786974
+    pitch: 15.150028
+    yaw: -91.199615
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 89.0
+    z: -4.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 5.0
+    conditions: []
+  message: §6§l¡Click para iniciar!
+  radius: 10
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 62.0
+    z: -412.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions: []
+  message: §6§l¡CHECKPOINT!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: -24.0
+    y: 57.0
+    z: -257.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id004
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: 31.0
+    y: 70.0
+    z: -220.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id004
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 69.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: AIR
+    targetType: *id002
+    location: &id005
+      ==: org.bukkit.Location
+      x: 28.0
+      y: 71.0
+      z: -222.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    remove: false
+    direction: NORTH
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: Mimic
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id002
+    location: *id005
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  targetType: *id001
+  location: *id005
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Salamander
+  delay: 20
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 63.0
+    z: -102.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 86.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 86.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: AIR
+    targetType: *id002
+    location: &id006
+      ==: org.bukkit.Location
+      x: 0.0
+      y: 80.0
+      z: -123.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    remove: true
+    direction: NORTH
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: parte1
+    range: 0.0
+    targetType: *id002
+    location: *id006
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: AIR
+    targetType: *id002
+    location: *id006
+    trigger: null
+    remove: false
+    direction: NORTH
+  targetType: *id001
+  location: *id006
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertasala1
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+  savePoint: false
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -5.0
+    y: 60.0
+    z: -382.0
+    pitch: 0.0
+    yaw: 0.0
+  pitch: -1.271883249282837
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  yaw: 179.468994140625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 61.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 10.0
+    y: 79.0
+    z: -70.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 89.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 89.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 20.0
+    y: 80.0
+    z: -105.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 86.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 86.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 86.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Warrior
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 69.0
+    z: -219.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Warrior
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -49.0
+    y: 69.0
+    z: -217.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: mf_deceptor_spawner
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: 58.0
+    z: -426.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionDoorControl
+  lockedByDefault: true
+  openOnUnlock: true
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 26.0
+    y: 71.0
+    z: -240.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puerta1-2
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -59.0
+    y: 69.0
+    z: -181.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 10.0
+    conditions: []
+  message: §7Hay un §4botón §7bajo el atril.
+  radius: 15
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: AIR
+    targetType: *id002
+    location: &id007
+      ==: org.bukkit.Location
+      x: 1.0
+      y: 79.0
+      z: -71.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    remove: false
+    direction: NORTH
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: Mimic
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id002
+    location: *id007
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  targetType: *id001
+  location: *id007
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Warrior
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -59.0
+    y: 68.0
+    z: -184.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+    blockType: AIR
+    targetType: *id002
+    location: &id008
+      ==: org.bukkit.Location
+      x: -38.0
+      y: 56.0
+      z: -185.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+    remove: false
+    direction: NORTH
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+    mob: Mimic
+    delay: 0
+    levelString: '0'
+    interval: 0
+    targetType: *id002
+    location: *id008
+    trigger: null
+    maxCount: 1
+    yaw: 0.0
+  targetType: *id001
+  location: *id008
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 79.0
+    z: -32.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -7.0
+    y: 60.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 74.0
+    z: -159.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions: []
+  message: §6§l¡CHECKPOINT!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 69.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 69.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 66.0
+    z: -345.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 4.0
+    conditions: []
+  message: §bArroja la §5Llave\n§bpara §4Salir
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 68.0
+    z: -110.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id004
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 59.0
+    z: -424.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions: []
+  message: §4§l¡Escape! \n§4§l¡Necesitas una llave!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 62.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 26.0
+    y: 61.0
+    z: -234.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget:
+    ==: org.bukkit.Location
+    x: -6.374349645674869
+    y: 90.86328699785834
+    z: -376.71043150781964
+    pitch: 90.0
+    yaw: 179.1012
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Warrior
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 23.0
+    y: 70.0
+    z: -250.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: mf_deceptor_egg
+  delay: 20
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 60.0
+    z: -413.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Archer
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -49.0
+    y: 70.0
+    z: -217.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-Final
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: 12.0
+    y: 79.0
+    z: -134.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: &id010 []
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 90.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 90.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 84.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 84.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 84.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 59.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: -31.0
+    y: 79.0
+    z: -199.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id004
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 87.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 87.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 87.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 20.0
+    y: 72.0
+    z: -220.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+  savePoint: false
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 61.0
+    z: -412.0
+    pitch: 0.0
+    yaw: 0.0
+  pitch: -2.4719080924987793
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  yaw: -179.9310302734375
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 90.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 79.0
+    z: -46.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 79.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Warrior
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -9.0
+    y: 70.0
+    z: -270.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 2
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Stone_Minion
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 80.0
+    z: -114.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 3
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -7.0
+    y: 62.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionCheckpoint
+  savePoint: false
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 65.0
+    z: -316.0
+    pitch: 0.0
+    yaw: 0.0
+  pitch: -1.271883249282837
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  yaw: 179.468994140625
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 70.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 70.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 83.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 60.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Archer
+  delay: 0
+  levelString: '0'
+  interval: 20
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 23.0
+    y: 71.0
+    z: -250.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+  triggerName: puertasala1
+  range: 0.0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 69.0
+    z: -110.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 84.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 84.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 70.0
+    z: -108.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerBlockDetector
+    onBreak: false
+    material: ANY
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 81.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 87.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 87.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.meta.FunctionMulti
+  functions:
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+    triggerName: puertadungeon1
+    range: 0.0
+    targetType: *id002
+    location: &id009
+      ==: org.bukkit.Location
+      x: -2.0
+      y: 88.0
+      z: -4.0
+      pitch: 0.0
+      yaw: 0.0
+    trigger: null
+  - ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionStartDungeon
+    targetType: *id001
+    location: *id009
+    trigger: null
+  targetType: *id001
+  location: *id009
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 80.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 91.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 61.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Plant_Monster
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 21.0
+    y: 79.0
+    z: -91.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 85.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Kobold_Archer
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -59.0
+    y: 69.0
+    z: -184.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+  leave: true
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 64.0
+    z: -345.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerKeyItem
+    item: &id011
+      ==: org.bukkit.inventory.ItemStack
+      v: 3839
+      type: TRIPWIRE_HOOK
+      meta:
+        ==: ItemMeta
+        meta-type: UNSPECIFIC
+        display-name: '{"text":"","extra":[{"text":"Llave de Salida","italic":false,"color":"dark_purple"}]}'
+        lore:
+        - '{"text":"","extra":[{"text":"Llave","italic":false,"color":"gold"}]}'
+        attribute-modifiers:
+          minecraft:generic.attack_speed:
+          - ==: org.bukkit.attribute.AttributeModifier
+            amount: 0.0
+            name: mmoitems:decoy
+            uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+            operation: 0
+        ItemFlags:
+        - HIDE_ATTRIBUTES
+        max-stack-size: 1
+        custom: H4sIAAAAAAAA/22QzUrDQBSFb3ThUBFsQfxdlFl05VYX3Y3JmAzOTMLMIMYQhmArCAWhBkFKnydrXyG+mPmR2JJuBoZz7jnfvQMABCdChMxQoa0XSyKYa3moKIwSXBavZfFSFrd8kX3OcYrguPPWr2UeHHJOHqkmnHnEgav/LKbJHaeWSUMVcQ0LpYPgqNOrJgrDyU0TPZ7NxzpbvM0yBMPOQqUbEGk07CWpA5e96D+dSb9KPt2UI05i6lkTRxQOJi0+gkGgjYrbZn+FdZ7leIrrL77Goa/z9+UXniYrvAVpf74/8mVl7LHidbp24LzH5Spy31DtErVgJmjFi56oaESYahcabZ+62QWFqkaSZncy5U3t/sYxBHmy2hD3wWr2TAGg6j3rjXoqjOpJ+AUmLc8hEQIAAA==
+    useAnywhere: false
+    allowRetrigger: true
+    consumeItem: true
+    conditions: []
+    clickType: RIGHT
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-Final
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerMythicMobDeath
+    mob: mf_deceptor
+    count: 1
+    allowRetrigger: false
+    radius: 0.0
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: -8.0
+    y: 60.0
+    z: -436.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id010
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionFinishDungeon
+  leave: true
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 58.0
+    z: -424.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerKeyItem
+    item: *id011
+    useAnywhere: false
+    allowRetrigger: true
+    consumeItem: true
+    conditions: []
+    clickType: RIGHT
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -6.0
+    y: 62.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-1
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: 3.0
+    y: 80.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id004
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionRemoteTrigger
+  triggerName: puerta1-2
+  range: 0.0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -59.0
+    y: 68.0
+    z: -181.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -3.0
+    y: 66.0
+    z: -316.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions: []
+  message: §6§l¡CHECKPOINT!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 88.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 88.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 82.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -5.0
+    y: 61.0
+    z: -382.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 2.0
+    conditions: []
+  message: §6§l¡CHECKPOINT!
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: Snail
+  delay: 0
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -18.0
+    y: 53.0
+    z: -241.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 3.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionHologram
+  visibleByDefault: true
+  hologramLoc: null
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 26.0
+    y: 73.0
+    z: -240.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: true
+    count: 1
+    allowRetrigger: true
+    radius: 5.0
+    conditions: []
+  message: §7Parece que no se abre,\n§7quizá debas §4buscar §7algo más...
+  radius: 25
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionSpawnMythicMob
+  mob: mf_deceptor_egg
+  delay: 20
+  levelString: '0'
+  interval: 0
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -4.0
+    y: 58.0
+    z: -422.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 5.0
+    conditions: []
+  maxCount: 1
+  yaw: 0.0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 91.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 91.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionTeleport
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -7.0
+    y: 59.0
+    z: -386.0
+    pitch: 0.0
+    yaw: 0.0
+  teleportTarget: *id003
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerDistance
+    forEachPlayer: false
+    count: 1
+    allowRetrigger: false
+    radius: 1.0
+    conditions: []
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: -1.0
+    y: 85.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id001
+  location:
+    ==: org.bukkit.Location
+    x: 1.0
+    y: 85.0
+    z: -123.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: parte1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.rewards.FunctionMythicLootTableRewards
+  period: 0
+  loottableName: Dungeon1-Final
+  isMythic: false
+  targetType: *id001
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerInteract
+    allowRetrigger: false
+    conditions: []
+  cooldownDisabled: false
+  resetDay: 1
+  overrideCooldown: false
+  xp: 0
+  location:
+    ==: org.bukkit.Location
+    x: 6.0
+    y: 59.0
+    z: -377.0
+    pitch: 0.0
+    yaw: 0.0
+  cooldownTime: 0
+  rewards: *id010
+  levels: 0
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 0.0
+    y: 88.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: -2.0
+    y: 88.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH
+- ==: net.playavalon.mythicdungeons.dungeons.functions.FunctionBlockEditor
+  blockType: AIR
+  targetType: *id002
+  location:
+    ==: org.bukkit.Location
+    x: 2.0
+    y: 88.0
+    z: -7.0
+    pitch: 0.0
+    yaw: 0.0
+  trigger:
+    ==: net.playavalon.mythicdungeons.dungeons.triggers.TriggerRemote
+    triggerName: puertadungeon1
+    allowRetrigger: false
+    conditions: []
+  remove: false
+  direction: NORTH

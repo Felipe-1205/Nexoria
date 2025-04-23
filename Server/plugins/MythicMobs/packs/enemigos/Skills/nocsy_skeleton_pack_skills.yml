@@ -1,0 +1,899 @@
+############################################
+#              Flying Skull                #
+############################################
+
+#---------------------  
+# Auras
+#---------------------
+
+SkPack_FlyingSkullAura:
+  Skills:
+  - Aura{auraName=SkPack_FlyingSkullAura-Aura;onTick=SkPack_FlyingSkullAura-Tick;interval=2;d=916000}               @self
+  - Aura{auraName=SkPack_FlyingSkullAuraDamage-Aura;onTick=SkPack_FlyingSkullAuraDamage-Tick;interval=2;d=916000}   @self
+  - Aura{auraName=SkPack_FlyingSkullAuraAttack-Aura;onTick=SkPack_FlyingSkullAuraAttack-Tick;interval=80;d=916000}   @self
+  
+SkPack_FlyingSkullAura-Tick:
+  Skills:
+  - effect:particles{p=reddust;color=#6EF9BB;amount=5;hS=0.3;vS=0.3} @self
+  - effect:particles{p=reddust;color=#2FDE90;amount=5;hS=0.2;vS=0.2} @self
+
+SkPack_FlyingSkullAuraDamage-Tick:
+  Conditions:
+  - targetwithin{d=2} true
+  - hastag{t=attacked} false
+  Skills:
+  - sound{s=entity.fox.bite;v=1;p=0.8} @self
+  - damage{a=4;ia=true} @target
+  - addtag{t=attacked} @self
+  - delay 40
+  - removetag{t=attacked} @self  
+
+SkPack_FlyingSkullAuraAttack-Tick:
+  Skills:
+  - lunge{velocity=0.3;velocityY=0.3} @target 0.5
+
+
+############################################
+#                Warrior                   #
+############################################
+
+#---------------------  
+# Battle
+#---------------------
+
+SkPack_WarriorMelee:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=attack;li=3;lo=3;speed=1.5} @self
+  - setAI{ai=false} @self
+  - delay 20
+  - sound{s=entity.player.attack.weak;v=2;p=0.5} @self
+  - damage{a=8} @LivingInCone{a=30.0;r=2;rot=0.0;target=players}
+  - delay 10
+  - setAI{ai=true} @self
+  - removetag{t=attacking} @self
+
+#---------------------  
+# Blocking
+#---------------------
+  
+SkPack_WarriorBlock:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=recentlyblocked} false
+  Skills:
+  - CancelEvent
+  - sound{s=item.shield.block;v=1;p=0.5} @self
+  - state{s=parade;li=3;lo=3} @self
+  - addtag{t=attacking} @self
+  - addtag{t=recentlyblocked} @self
+  - throw{velocity=-1;velocityY=0.8} @trigger
+  - throw{velocity=-1;velocityY=0.3} @self
+  - setAI{ai=false} @self
+  - delay 40
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+  - delay 60
+  - removetag{t=recentlyblocked} @self
+
+
+############################################
+#                Archer                    #
+############################################
+
+#---------------------  
+# Aura Battle
+#---------------------
+
+SkPack_Archer_arrow_aura:
+  Skills:
+  - Aura{auraName=SkPack_Archer_arrow_aura-Aura;onTick=SkPack_Archer_arrow_aura-Tick;interval=10;d=916000} @self
+  - Aura{auraName=SkPack_Archer_arrow_aura_flee-Aura;onTick=SkPack_Archer_arrow_aura_flee-Tick;interval=1;d=916000} @self
+  - Aura{auraName=SkPack_Archer_arrow_aura_stopflee-Aura;onTick=SkPack_Archer_arrow_aura_stopflee-Tick;interval=1;d=916000} @self
+  - Aura{auraName=SkPack_Archer_arrow_aura_comenearby-Aura;onTick=SkPack_Archer_arrow_aura_comenearby-Tick;interval=1;d=916000} @self
+  - Aura{auraName=SkPack_Archer_arrow_aura_comenearby-Aura;onTick=SkPack_Archer_arrow_aura_stopcomenearby-Tick;interval=1;d=916000} @self
+
+#---------------------  
+# Shoot
+#---------------------
+
+SkPack_Archer_arrow_aura_look-Tick:
+  Skills:
+  - look{headOnly=true;immediately=true} @NearestPlayer{r=40}
+
+SkPack_Archer_arrow_aura-Tick:
+  Conditions:
+  - playerwithin{d=15} true
+  - playernotwithin{d=3} true
+  - hastag{t=attacking} false
+  - hastag{t=flee} false
+  - hastag{t=shooted} false
+  Skills:
+  - addtag{t=attacking} @self
+  - Aura{auraName=SkPack_Archer_arrow_aura_look-Aura;onTick=SkPack_Archer_arrow_aura_look-Tick;interval=2;d=155} @self
+  - delay 40
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=float} @self
+  - delay 10
+  - skill{s=SkPack_Archer_arrow_aura_shoot}
+  - delay 95
+  - removetag{t=attacking} @self
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=lookatplayers} @self
+  - runaigoalselector{goal=float} @self
+  - delay 80
+  - removetag{t=shooted} @self
+
+SkPack_Archer_arrow_aura_shoot:
+  Conditions:
+  - incombat{} true
+  Skills:
+  - addtag{t=shooted} @self
+  - state{s=arrow;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - delay 75
+  - sound{s=entity.skeleton.shoot;v=1;p=0.1} @self
+  - shoot{type=arrow;velocity=0.5;damage=12;oh=SkPack_Archer_arrow_arrow-Hit;ontickskill=SkPack_Archer_arrow_arrow-Effect;i=2;hspread=1;vspread=1} @target
+  - delay 15
+  - setAI{ai=true} @self
+
+  
+
+
+SkPack_Archer_arrow_arrow-Effect:
+  Skills:
+  - effect:particles{p=cloud;amount=2;speed=0.01;hS=0.01;vS=0.01} @origin
+
+SkPack_Archer_arrow_aura_flee-Tick:
+  Conditions:
+  - playerwithin{d=5} true
+  - hastag{t=flee} false
+  Skills:
+  - addtag{t=flee} @self
+  - skill{s=SkPack_Archer_arrow_aura_stopcomenearby-Tick}
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=fleeplayers} @self
+  - runaigoalselector{goal=float} @self
+
+SkPack_Archer_arrow_aura_stopflee-Tick:
+  Conditions:
+  - playernotwithin{d=5} true
+  - hastag{t=flee} true
+  Skills:
+  - removetag{t=flee} @self
+  - skill{s=SkPack_Archer_arrow_aura_stopcomenearby-Tick}
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=lookatplayers} @self
+  - runaigoalselector{goal=float} @self
+
+SkPack_Archer_arrow_aura_comenearby-Tick:
+  Conditions:
+  - playernotwithin{d=15} true
+  - hastag{t=comenearby} false
+  Skills:
+  - addtag{t=comenearby} @self
+  - skill{s=SkPack_Archer_arrow_aura_stopflee-Tick}
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=meleeattack} @self
+  - runaigoalselector{goal=float} @self
+  - threat{amount=10000} @NearestPlayer{r=60}
+
+SkPack_Archer_arrow_aura_stopcomenearby-Tick:
+  Conditions:
+  - playerwithin{d=13} true
+  - hastag{t=comenearby} true
+  Skills:
+  - removetag{t=comenearby} @self
+  - skill{s=SkPack_Archer_arrow_aura_stopflee-Tick}
+  - runaigoalselector{goal=clear} @self
+  - runaigoalselector{goal=lookatplayers} @self
+  - runaigoalselector{goal=float} @self
+
+############################################
+#               Axe brute                  #
+############################################
+
+#---------------------  
+# Attack skills
+#---------------------
+
+SkPack_AxeBrute_battle:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - randomskill{skills=SkPack_AxeBrute_smash,SkPack_AxeBrute_manche,SkPack_AxeBrute_axe,SkPack_AxeBrute_circular}
+
+#---------------------  
+# Smash ground
+#---------------------
+
+SkPack_AxeBrute_smash:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=smashed} false
+  Skills:
+  - addtag{t=attacking} @self
+  - addtag{t=smashed} @self
+  - state{s=smash;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - delay 43
+  - sound{s=entity.skeleton.converted_to_stray;v=2;p=0.1} @self
+  - delay 5
+  - damage{a=15;ia=true} @PIR{r=5.5}
+  - throw{velocity=5;velocityY=3} @PIR{r=5.5}
+  - effect:particlering{particle=poof;radius=5;points=20;amount=2;hS=0.2;vS=0} @self
+  - effect:particlering{particle=poof;radius=3;points=10;amount=2;hS=0.2;vS=0} @self
+  - delay 35
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+  - delay 200
+  - removetag{t=smashed} @self
+
+#---------------------  
+# Circular movement
+#---------------------
+
+SkPack_AxeBrute_circular:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=circular;li=3;lo=3;sp=1.5} @self
+  - setAI{ai=false} @self
+  - delay 12
+  - skill{s=SkPack_AxeBrute_CircularEffect}
+  - delay 7
+  - skill{s=SkPack_AxeBrute_CircularEffect}
+  - delay 7
+  - skill{s=SkPack_AxeBrute_CircularEffect}
+  - delay 7
+  - skill{s=SkPack_AxeBrute_CircularEffect}
+  - delay 5
+  - skill{s=SkPack_AxeBrute_CircularEffect}
+  - delay 45
+  - setAI{ai=true} @self
+  - removetag{t=attacking} @self
+
+SkPack_AxeBrute_CircularEffect:
+  Skills:
+  - sound{s=entity.player.attack.weak;v=2;p=0.1} @self
+  - damage{a=12} @PIR{r=4}
+  - throw{velocity=-2;velocityY=0.5} @PIR{r=5}
+#---------------------  
+# Stick attack
+#---------------------
+
+SkPack_AxeBrute_manche:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=manche;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - delay 8
+  - sound{s=entity.player.attack.weak;v=2;p=1} @self
+  - damage{a=12} @LivingInCone{a=30.0;r=3.5;rot=0.0;target=players}
+  - potion{type=CONFUSION;duration=100;lvl=2} @LivingInCone{a=30.0;r=3.5;rot=0.0;target=players}
+  - potion{type=SLOW;duration=200;lvl=1} @LivingInCone{a=30.0;r=3.5;rot=0.0;target=players}
+  - setAI{ai=true} @self
+  - delay 10
+  - removetag{t=attacking} @self
+
+#---------------------  
+# Axe attack
+#---------------------
+
+SkPack_AxeBrute_axe:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=axe;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - delay 12
+  - sound{s=entity.player.attack.knockback;v=2;p=0.5} @self
+  - delay 4
+  - damage{a=12;ia=true} @LivingInCone{a=30.0;r=4.5;rot=0.0;target=players}
+  - delay 15
+  - setAI{ai=true} @self
+  - removetag{t=attacking} @self
+
+############################################
+#              Sword brute                 #
+############################################
+
+#---------------------  
+# Attack skills
+#---------------------
+
+SkPack_SwordBrute_battle:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - randomskill{skills=SkPack_SwordBrute_circular,SkPack_SwordBrute_handattack,SkPack_SwordBrute_swordattack}
+
+#---------------------  
+# Circular sword
+#---------------------
+
+SkPack_SwordBrute_circular:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=circular} false
+  Skills:
+  - addtag{t=attacking} @self
+  - addtag{t=circular} @self
+  - state{s=circular;li=0;lo=0} @self
+  - setAI{ai=false} @self
+  - delay 13
+  - skill{s=SkPack_SwordBrute_CircularEffect}
+  - delay 8
+  - skill{s=SkPack_SwordBrute_CircularEffect}
+  - delay 8
+  - skill{s=SkPack_SwordBrute_CircularEffect}
+  - delay 5
+  - skill{s=SkPack_SwordBrute_CircularEffect}
+  - delay 15
+  - setAI{ai=true} @self
+  - removetag{t=attacking} @self
+  - delay 100
+  - removetag{t=circular} @self
+
+SkPack_SwordBrute_CircularEffect:
+  Skills:
+  - sound{s=entity.player.attack.weak;v=2;p=0.1} @self
+  - damage{a=5;ia=true} @PIR{r=5}
+  - potion{type=WITHER;duration=100;lvl=1} @PIR{r=5}
+  - throw{velocity=5;velocityY=2} @PIR{r=5}
+
+#---------------------  
+# Hand attack
+#---------------------
+
+SkPack_SwordBrute_handattack:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=handattack;li=0;lo=0} @self
+  - setAI{ai=false} @self
+  - delay 22
+  - sound{s=entity.player.attack.knockback;v=2;p=0.5} @self
+  - damage{a=12} @LivingInCone{a=30.0;r=3.5;rot=0.0;target=players}
+  - potion{type=SLOW;duration=200;lvl=1} @LivingInCone{a=60.0;r=3.5;rot=0.0;target=players}
+  - throw{velocity=-2;velocityY=0.3} @LivingInCone{a=60.0;r=3.5;rot=0.0;target=players}
+  - delay 8
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+
+#---------------------  
+# Sword attack
+#---------------------
+
+SkPack_SwordBrute_swordattack:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=sword;li=0;lo=0} @self
+  - setAI{ai=false} @self
+  - delay 16
+  - damage{a=16} @LivingInCone{a=60.0;r=5;rot=60.0;target=players}
+  - sound{s=entity.player.attack.nodamage;v=2;p=0.1} @self
+  - delay 2
+  - damage{a=16} @LivingInCone{a=60.0;r=5;rot=0.0;target=players}
+  - throw{velocity=5;velocityY=2} @LivingInCone{a=60.0;r=5;rot=0.0;target=players}
+  - delay 25
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+
+############################################
+#              Necromancer                 #
+############################################
+
+#---------------------  
+# Attack skills
+#---------------------
+
+SkPack_Necromancer_battle:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - randomskill{skills=SkPack_Necromancer_lanternattack,SkPack_Necromancer_scepterattack,SkPack_Necromancer_rush,SkPack_Necromancer_projectile}
+
+#---------------------  
+# Lantern attack
+#---------------------
+
+SkPack_Necromancer_lanternattack:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=lantern_attack;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - sound{s=entity.ravager.attack;v=1;p=0.1} @self
+  - delay 24
+  - sound{s=entity.player.attack.crit;v=2;p=0.1} @self
+  - damage{a=15} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - ignite{ticks=100} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - throw{velocity=5;velocityY=3} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - delay 20
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+  
+#---------------------  
+# Scepter attack
+#---------------------
+
+SkPack_Necromancer_scepterattack:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - state{s=scepter_attack;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - delay 24
+  - damage{a=18} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - sound{s=entity.player.attack.weak;v=2;p=0.1} @self
+  - potion{type=SLOW;duration=200;lvl=1} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - potion{type=CONFUSION;duration=200;lvl=2} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - throw{velocity=3;velocityY=3} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - delay 20
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+
+#---------------------  
+# Rush attack
+#---------------------
+
+SkPack_Necromancer_rush:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=rushed} false
+  Skills:
+  - addtag{t=attacking} @self 
+  - addtag{t=rushed} @self 
+  - state{s=rush;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - sound{s=entity.ravager.attack;v=1;p=0.1} @self
+  - delay 48
+  - Aura{auraName=SkPack_Necromancer_rush_aura-Aura;onTick=SkPack_Necromancer_rush_aura-Tick;interval=1;d=20} @self
+  - Aura{auraName=SkPack_Necromancer_rush_aura-Sound-Aura;onTick=SkPack_Necromancer_rush_aura-Sound-Tick;interval=5;d=20} @self
+  - sound{s=entity.player.attack.weak;v=2;p=0.1} @self
+  - potion{type=SLOW;duration=200;lvl=1} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - potion{type=CONFUSION;duration=200;lvl=2} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - throw{velocity=4;velocityY=2} @LivingInCone{a=30.0;r=4;rot=0.0;target=players}
+  - delay 40
+  - Aura{auraName=SkPack_Necromancer_rush_aura-Sound-Aura;onTick=SkPack_Necromancer_rush_aura-Sound-Tick;interval=6;d=20} @self
+  - delay 10
+  - sound{s=entity.ravager.attack;v=1;p=0.1} @self
+  - delay 33
+  - effect:particles{p=explosion_huge;amount=2;speed=0.1;hS=0.2;vS=0.2} @self
+  - sound{s=entity.generic.explode;v=1;p=0.1} @self
+  - damage{a=6;ia=true} @PIR{r=5}
+  - sound{s=entity.player.attack.weak;v=2;p=0.1} @self
+  - skill{s=SkPack_Necromancer_ground_projectile}
+  - ignite{ticks=100} @PIR{r=5}
+  - throw{velocity=4;velocityY=2} @PIR{r=5}
+  - delay 20
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+  - delay 200
+  - removetag{t=rushed} @self
+
+SkPack_Necromancer_rush_aura-Tick:
+  Skills:
+  - damage{a=18} @PIR{r=4}
+  - throw{velocity=4;velocityY=2} @PIR{r=4}
+SkPack_Necromancer_rush_aura-Sound-Tick:
+  Skills:
+  - sound{s=entity.ender_dragon.flap;v=1;p=0.1} @ModelPart{m=nocsy_skeleton_necromancer;p=lantern;offset=LOCAL;y=0}
+
+#---------------------
+# Ground projectile
+#---------------------
+
+SkPack_Necromancer_ground_projectile:
+  Skills:
+  - randomskill{skills=SkPack_Necromancer_ground_projectile_shoot2,SkPack_Necromancer_ground_projectile_shoot1,SkPack_Necromancer_ground_projectile_shoot3}
+
+SkPack_Necromancer_ground_projectile_shoot1:
+  Skills:
+  - projectile{onTick=SkPack_Necromancer_ground_projectile-Tick;onHit=SkPack_Necromancer_ground_projectile-Hit;v=6;i=1;hR=1;vR=1;hs=true;d=100} @Ring{radius=3;points=8}
+
+SkPack_Necromancer_ground_projectile_shoot2:
+  Skills:
+  - skill{s=SkPack_Necromancer_blind_projectile} @Ring{radius=3;points=8}
+
+SkPack_Necromancer_ground_projectile_shoot3:
+  Skills:
+  - skill{s=SkPack_Necromancer_wither_projectile} @Ring{radius=3;points=8}
+
+SkPack_Necromancer_ground_projectile-Tick:
+  Skills:
+  - effect:particles{p=flame;amount=3;speed=0.1;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=smoke_large;amount=5;speed=0.1;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=reddust;color=#DA2D12;amount=7;hS=0.3;vS=0.3} @origin
+  - effect:particles{p=reddust;color=#F7150A;amount=7;hS=0.3;vS=0.3} @origin
+SkPack_Necromancer_ground_projectile-Hit:
+  Skills:
+  - damage{a=15} @PlayersNearOrigin{r=2}
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=100;lvl=1} @PIR{r=2}
+  - effect:particlesphere{p=reddust;color=#DA2D12;amount=200;radius=1.2} @self
+  - effect:particlesphere{p=reddust;color=#F7150A;amount=200;radius=1.2} @self
+
+#---------------------  
+# Projectile attack
+#---------------------
+
+SkPack_Necromancer_projectile_aura:
+  Skills:
+  - Aura{auraName=SkPack_Necromancer_projectile-Aura;onTick=SkPack_Necromancer_projectile;interval=300;d=916000}  
+
+SkPack_Necromancer_projectile:
+  Conditions:
+  - incombat{} true
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - setAI{ai=false} @self
+  - state{s=projectile;li=3;lo=3} @self
+  - delay 17
+  - sound{s=entity.ravager.attack;v=1;p=0.1} @self
+  - delay 10
+  - sound{s=entity.evoker.cast_spell;v=3;p=0.1} @self
+  - sound{s=entity.ender_dragon.shoot;v=1;p=0.1} @self
+  - randomskill{skills=SkPack_Necromancer_blind_projectile,SkPack_Necromancer_fireball_projectile,SkPack_Necromancer_wither_projectile} @PIR{r=60;limit=1;sort=RANDOM}
+  - delay 25
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+
+# Blind projectile
+SkPack_Necromancer_blind_projectile:
+  Skills:
+  - projectile{onTick=SkPack_Necromancer_blind_projectile-Tick;onEnd=SkPack_Necromancer_blind_projectile-End;v=6;i=1;hR=1;vR=1;hs=true;d=80;hp=true}
+SkPack_Necromancer_blind_projectile-Tick:
+  Skills:
+  - effect:particles{p=smoke_large;amount=3;speed=0.1;hS=0.2;vS=0.5} @origin
+  - effect:particles{p=campfire_cosy_smoke;amount=3;speed=0.1;hS=0.1;vS=0.1} @origin
+  - effect:particles{p=spell_instant;amount=2;hS=0.3;vS=0.5} @origin
+SkPack_Necromancer_blind_projectile-End:
+  Skills:
+  - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
+  - throw{velocity=3;velocityY=3} @PlayersNearOrigin{r=2}
+  - potion{type=BLINDNESS;duration=120;lvl=1} @PlayersNearOrigin{r=2}
+  - potion{type=SLOW;duration=120;lvl=1} @PlayersNearOrigin{r=2}
+  - effect:particlesphere{p=smoke_large;amount=30;radius=1.2} @origin
+  - effect:particlesphere{p=campfire_cosy_smoke;amount=5;radius=1.2} @origin
+  - effect:particlesphere{p=spell_instant;amount=50;radius=1} @origin
+
+# Wither projectile
+SkPack_Necromancer_wither_projectile:
+  Skills:
+  - projectile{onTick=SkPack_Necromancer_wither_projectile-Tick;onEnd=SkPack_Necromancer_wither_projectile-End;v=6;i=1;hR=1;vR=1;hs=true;d=80;hp=true}
+SkPack_Necromancer_wither_projectile-Tick:
+  Skills:
+  - effect:particles{p=soul;amount=3;speed=0.1;hS=0.2;vS=0.5} @origin
+  - effect:particles{p=campfire_cosy_smoke;amount=3;speed=0.01;hS=0.01;vS=0.01} @origin
+  - effect:particles{p=soul_fire_flame;amount=2;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=smoke_large;amount=2;hS=0.01;vS=0.01} @origin
+SkPack_Necromancer_wither_projectile-End:
+  Skills:
+  - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
+  - throw{velocity=3;velocityY=3} @PlayersNearOrigin{r=2}
+  - potion{type=WITHER;duration=80;lvl=1} @PlayersNearOrigin{r=2}
+  - effect:particlesphere{p=smoke_large;amount=30;radius=1.2} @origin
+  - effect:particlesphere{p=campfire_cosy_smoke;amount=5;radius=1.2} @origin
+  - effect:particlesphere{p=soul;amount=5;radius=1.2} @origin
+  - effect:particlesphere{p=soul_fire_flame;amount=50;radius=1} @origin
+
+# Fireball projectile
+SkPack_Necromancer_fireball_projectile:
+  Skills:
+  - projectile{onTick=SkPack_Necromancer_fireball_projectile-Tick;onEnd=SkPack_Necromancer_fireball_projectile-End;v=6;i=1;hR=1;vR=1;hs=true;d=80;hp=true}
+SkPack_Necromancer_fireball_projectile-Tick:
+  Skills:
+  - effect:particles{p=flame;amount=3;speed=0.1;hS=0.2;vS=0.5} @origin
+  - effect:particles{p=lava;amount=1;speed=0.1;hS=0.2;vS=0.5} @origin
+  - effect:particles{p=smoke_large;amount=8;speed=0.1;hS=0.1;vS=0.1} @origin
+  - effect:particles{p=reddust;color=#DA2D12;amount=7;hS=0.3;vS=0.5} @origin
+  - effect:particles{p=reddust;color=#F7150A;amount=7;hS=0.3;vS=0.4} @origin
+SkPack_Necromancer_fireball_projectile-End:
+  Skills:
+  - damage{a=6;ia=true} @PlayersNearOrigin{r=2}
+  - ignite{ticks=100} @PlayersNearOrigin{r=2}
+  - throw{velocity=4;velocityY=3} @PlayersNearOrigin{r=2}
+  - effect:particlesphere{p=reddust;color=#DA2D12;amount=200;radius=1.2} @origin
+  - effect:particlesphere{p=reddust;color=#F7150A;amount=200;radius=1} @origin
+
+#---------------------  
+# Lantern summoning
+#---------------------
+
+SkPack_Necromancer_lantern_summoning_trigger:
+  Skills:
+  - addtag{t=lantern_summoning} @self
+  - Aura{auraName=SkPack_Necromancer_lantern_summoning-Aura;onTick=SkPack_Necromancer_lantern_summoning;interval=1;d=916000} @self
+
+SkPack_Necromancer_lantern_summoning:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=lantern_summoning} true
+  Skills:
+  - skill{s=SkPack_Necromancer_lantern_summoning_effect}
+  - addtag{t=attacking} @self
+  - removetag{t=lantern_summoning} @self
+  - state{s=lantern_summoning;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - skill{s=SkPack_MakeInvincibility}
+  - delay 20
+  - skill{s=SkPack_Necromancer_lantern_summoning_projectile} @Forward{f=4;y=2;sideOffset=1}
+  - sound{s=entity.evoker.prepare_summon;v=1;p=0.1} @self
+  - delay 15
+  - skill{s=SkPack_Necromancer_lantern_summoning_projectile} @Forward{f=5;y=2.8;sideOffset=-1.3}
+  - delay 15
+  - skill{s=SkPack_Necromancer_lantern_summoning_projectile} @Forward{f=6;y=2;sideOffset=2}
+  - delay 20
+  - sound{s=entity.evoker.cast_spell;v=3;p=0.1} @self
+  - skill{s=SkPack_Necromancer_lantern_summoning_projectile} @Forward{f=5;y=2.6;sideOffset=-0.3}
+  - delay 10
+  - skill{s=SkPack_Necromancer_lantern_summoning_projectile} @Forward{f=4;y=2.1;sideOffset=0.3}
+  - delay 30
+  - removetag{t=attacking} @self 
+  - setAI{ai=true} @self
+  - skill{s=SkPack_RemoveInvincibility}
+
+SkPack_Necromancer_lantern_summoning_projectile:
+  Skills:
+  - missile{ot=SkPack_Necromancer_lantern_summoning-Tick;oE=SkPack_Necromancer_lantern_summoning-End;in=2;hs=true;v=6.5;mr=10;md=80;int=2;vr=1;hR=1;syo=2.7;hfs=2;HitTargetOnly=true;tyo=1}
+SkPack_Necromancer_lantern_summoning-Tick:
+  Skills:
+  - effect:particles{p=soul_fire_flame;amount=3;speed=0.1;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=reddust;color=#6EF9BB;amount=7;hS=0.2;vS=0.2} @origin
+  - effect:particles{p=reddust;color=#2FDE90;amount=7;hS=0.2;vS=0.2} @origin
+SkPack_Necromancer_lantern_summoning-End:
+  Skills:
+  - skill{s=SkPack_SummonSkull}
+  
+SkPack_SummonSkull:
+  Skills:
+  - summon{type=SkPack_FlyingSkull;amount=1;radius=0;os=false;yRadiusUpOnly=true;yRadius=2;inheritFaction=true} @origin
+
+SkPack_Necromancer_lantern_summoning_effect:
+  Skills:
+  - Aura{auraName=SkPack_Necromancer_lantern_summoning_effect-Aura;onTick=SkPack_Necromancer_lantern_summoning_effect-Tick;interval=2;duration=90} @self
+SkPack_Necromancer_lantern_summoning_effect-Tick:
+  Skills:
+  - effect:particles{p=soul_fire_flame;amount=3;speed=0.1;hS=0.2;vS=0.5} @ModelPart{m=nocsy_skeleton_necromancer;p=lantern;offset=GLOBAL;y=-0.5}
+  - effect:particles{p=reddust;color=#6EF9BB;amount=7;hS=0.3;vS=0.5} @ModelPart{m=nocsy_skeleton_necromancer;p=lantern;offset=GLOBAL;y=-0.5}
+  - effect:particles{p=reddust;color=#2FDE90;amount=7;hS=0.3;vS=0.4} @ModelPart{m=nocsy_skeleton_necromancer;p=lantern;offset=GLOBAL;y=-0.5}
+
+
+#---------------------  
+# Soul breath
+#---------------------
+
+SkPack_Necromancer_soul_breath_trigger:
+  Skills:
+  - addtag{t=soul_breath} @self
+  - Aura{auraName=SkPack_Necromancer_soul_breath-Aura;onTick=SkPack_Necromancer_soul_breath;interval=1;d=916000} @self
+
+SkPack_Necromancer_soul_breath:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=soul_breath} true
+  Skills:
+  - addtag{t=attacking} @self
+  - removetag{t=soul_breath} @self
+  - state{s=soul_breath;li=3;lo=3} @self
+  - setAI{ai=false} @self
+  - skill{s=SkPack_MakeInvincibility}
+  - sound{s=entity.ender_dragon.ambient;v=1;p=0.1} @self
+  - delay 26
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 5
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 9
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 5
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 15
+  - sound{s=entity.ender_dragon.growl;v=1;p=0.1} @self
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 5
+  - skill{s=SkPack_Necromancer_soul_breath_projectile}
+  - delay 55
+  - removetag{t=attacking} @self 
+  - setAI{ai=true} @self
+  - skill{s=SkPack_RemoveInvincibility}
+
+SkPack_Necromancer_soul_breath_projectile:
+  Skills:
+  - summon{type=SkPack_DummySpawnerNecromancer;amount=1;radius=0;os=true} @RLNTE{a=1;r=8;s=3;minr=3}
+
+SkPack_Necromancer_soul_breath_projectile_dummy:
+  Skills:
+  - sound{s=entity.generic.burn;v=1;p=2} @self
+  - Aura{auraName=SkPack_Necromancer_soul_breath_projectile-Aura;onTick=SkPack_Necromancer_soul_breath_projectile-Tick;oE=SkPack_Necromancer_soul_breath_projectile-End;interval=1;d=80} @RLNTE{a=1;r=8;s=3;minr=3}
+  - delay 80
+  - remove @self
+  
+SkPack_Necromancer_soul_breath_projectile-Tick:
+  Skills:
+  - effect:particles{p=smoke_large;amount=3;speed=0.1;hS=0.2;vS=0.5} @origin
+  - effect:particles{p=campfire_cosy_smoke;amount=1;speed=0.01;hS=0.01;vS=0.01} @origin
+  - effect:particles{p=lava;amount=2;hS=0.3;vS=0.5} @origin
+  - effect:particles{p=soul;amount=3;speed=0.1;hS=0.2;vS=0.5} @origin
+SkPack_Necromancer_soul_breath_projectile-End:
+  Skills:
+  - sound{s=entity.generic.extinguish_fire;v=1;p=0.1} @self
+  - randomskill{skills=SkPack_SummonArcher,SkPack_SummonWarrior,SkPack_SummonWarrior,SkPack_SummonWarrior,SkPack_SummonBrute1,SkPack_SummonBrute2}
+
+SkPack_SummonArcher:
+  Skills:
+  - summon{type=SkPack_Archer;amount=1;radius=0;os=true} @origin
+SkPack_SummonWarrior:
+  Skills:
+  - summon{type=SkPack_Warrior;amount=1;radius=0;os=true} @origin
+SkPack_SummonBrute1:
+  Conditions:
+  - hastag{t=brute} false
+  Skills:
+  - addtag{t=brute} @self
+  - summon{type=SkPack_AxeBrute;amount=1;radius=0;os=true} @origin
+  - delay 40
+  - removetag{t=brute} @self
+SkPack_SummonBrute2:
+  Conditions:
+  - hastag{t=brute} false
+  Skills:
+  - addtag{t=brute} @self
+  - summon{type=SkPack_SwordBrute;amount=1;radius=0;os=true} @origin
+  - delay 40
+  - removetag{t=brute} @self
+
+#---------------------  
+# Teleport
+#---------------------
+
+SkPack_Necromancer_teleport:
+  Skills:
+  - Aura{auraName=SkPack_Necromancer_teleport-Aura;onTick=SkPack_Necromancer_teleport-Tick;interval=1;d=916000} @self
+  - Aura{auraName=SkPack_Necromancer_teleport_force-Aura;onTick=SkPack_Necromancer_teleport_force-Tick;interval=1200;d=916000} @self
+
+SkPack_Necromancer_teleport-Tick:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=teleported} false
+  - targetnotwithin{d=20} true
+  Skills:
+  - skill{s=SkPack_Necromancer_teleport_force}
+
+SkPack_Necromancer_teleport_force:
+  Conditions:
+  - hastag{t=attacking} false
+  Skills:
+  - addtag{t=attacking} @self
+  - addtag{t=teleported} @self
+  - skill{s=SkPack_MakeInvincibility}
+  - sound{s=entity.illusioner.prepare_mirror;v=3;p=0.1} @self
+  - state{s=teleport;li=3;lo=3} @self
+  - effect:particletornado{p=smoke_large;cp=smoke_large;mr=1.25;h=1.2;i=1;d=40;rs=0.25;sh=1;cs=0.25;ca=1;chs=0.4;cvs=0.1;cps=1;cyo=-0.2} @SelfLocation
+  - setAI{ai=false} @self
+  - delay 35
+  - teleport{spreadh=3;spreadv=1} @target
+  - sound{s=entity.illusioner.prepare_mirror;v=3;p=0.1} @self
+  - effect:particletornado{p=smoke_large;cp=smoke_large;mr=1.25;h=1.2;i=1;d=20;rs=0.25;sh=1;cs=0.25;ca=1;chs=0.4;cvs=0.1;cps=1;cyo=-0.2} @self
+  - delay 20
+  - removetag{t=attacking} @self
+  - setAI{ai=true} @self
+  - skill{s=SkPack_RemoveInvincibility}
+  - delay 200
+  - removetag{t=teleported} @self
+
+#---------------------  
+# Repulsion
+#---------------------
+
+SkPack_Necromancer_repulse:
+  Conditions:
+  - hastag{t=attacking} false
+  - hastag{t=repulsed} false
+  Skills:
+  - addtag{t=attacking} @self
+  - addtag{t=repulsed} @self
+  - state{s=repulsion;li=3;lo=3} @self 
+  - setAI{ai=false} @self
+  - sound{s=entity.ravager.attack;v=1;p=0.1} @self
+  - delay 50
+  - effect:particlesphere{p=reddust;color=#DA2D12;amount=200;radius=3} @self
+  - effect:particlesphere{p=reddust;color=#F7150A;amount=200;radius=3} @self
+  - effect:particlesphere{p=smoke_large;amount=200;radius=3} @self
+  - effect:particlesphere{p=flame;amount=100;radius=3} @self
+  - effect:particlesphere{p=lava;amount=50;radius=3} @self
+  - effect:particles{p=explosion_huge;amount=2;speed=0.1;hS=0.2;vS=0.2} @self
+  - damage{a=14} @PIR{r=4}
+  - sound{s=entity.generic.explode;v=1;p=0.1} @self
+  - skill{s=SkPack_Necromancer_ground_projectile}
+  - ignite{ticks=100} @PIR{r=4}
+  - throw{velocity=-1.5;velocityY=1.5} @PIR{r=4}
+  - delay 20
+  - setAI{ai=true} @self
+  - removetag{t=attacking} @self
+  - delay 400
+  - removetag{t=repulsed} @self
+  
+############################################
+#                 General                  #
+############################################
+
+SkPackCancelMelee:
+  Skills:
+  - CancelEvent
+
+SkPack_Invincibility:
+  Conditions:
+  - hastag{t=invincible} true
+  Skills:
+  - CancelEvent
+
+SkPack_MakeInvincibility:
+  Conditions:
+  - hastag{t=invincible} false
+  Skills:
+  - addtag{t=invincible} @self
+
+SkPack_RemoveInvincibility:
+  Conditions:
+  - hastag{t=invincible} true
+  Skills:
+  - removetag{t=invincible} @self 
+
+SkPack_Skeleton_Ambient_Sound_Aura:
+  Skills:
+  - Aura{auraName=SkPack_Skeleton_Ambient_Sound-Aura;onTick=SkPack_Skeleton_Ambient_Sound;interval=200;d=916000} @self
+
+SkPack_Skeleton_Ambient_Sound:
+  Skills:
+  - randomskill{s=SkPack_Skeleton_Ambient_Sound1,SkPack_Skeleton_Ambient_Sound2}
+
+SkPack_Skeleton_Ambient_Sound1:
+  Skills:
+  - sound{s=entity.skeleton.step;v=0.5;p=0.1} @self
+SkPack_Skeleton_Ambient_Sound2:
+  Skills:
+  - sound{s=entity.skeleton.ambient;v=0.5;p=0.1} @self
+
+SkPack_Skeleton_Damaged_Sound:
+  Skills:
+  - randomskill{s=SkPack_Skeleton_Damaged_Sound1,SkPack_Skeleton_Damaged_Sound2,SkPack_Skeleton_Damaged_Sound4,SkPack_Skeleton_Damaged_Sound5}
+SkPack_Skeleton_Damaged_Sound_Boss:
+  Skills:
+  - randomskill{s=SkPack_Skeleton_Damaged_Sound1,SkPack_Skeleton_Damaged_Sound2,SkPack_Skeleton_Damaged_Sound3,SkPack_Skeleton_Damaged_Sound4,SkPack_Skeleton_Damaged_Sound5}
+
+SkPack_Skeleton_Damaged_Sound1:
+  Skills:
+  - sound{s=entity.skeleton.hurt;v=0.5;p=0.1} @self
+SkPack_Skeleton_Damaged_Sound2:
+  Skills:
+  - sound{s=entity.skeleton.death;v=0.5;p=0.1} @self
+SkPack_Skeleton_Damaged_Sound3:
+  Skills:
+  - sound{s=entity.ravager.hurt;v=0.5;p=0.8} @self
+SkPack_Skeleton_Damaged_Sound4:
+  Skills:
+  - sound{s=entity.wither_skeleton.hurt;v=0.5;p=0.8} @self
+SkPack_Skeleton_Damaged_Sound5:
+  Skills:
+  - sound{s=entity.wither_skeleton.step;v=0.5;p=0.8} @self
+  
+SkPack_Skeleton_Skull_Damaged_Sound:
+  Skills:
+  - sound{s=entity.skeleton_horse.hurt;v=0.5;p=0.5} @self
+
+# 70888UA5X9HFBW

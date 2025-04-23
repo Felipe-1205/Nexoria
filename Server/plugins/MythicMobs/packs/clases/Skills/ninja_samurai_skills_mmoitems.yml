@@ -1,0 +1,540 @@
+######## created by samus2002 #########
+
+# Flow State #
+
+Flow_State:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Flow_State_Stack;stacks=1} cast Flow_State_SPEED_1
+  - hasaurastacks{auraName=Flow_State_Stack;stacks=2} cast Flow_State_SPEED_2
+  - hasaurastacks{auraName=Flow_State_Stack;stacks=3} cast Flow_State_SPEED_3
+  Skills:
+  - Aura{auraName=Flow_State;duration=20} @self
+  - onDamaged{auraName=Flow_State_END;d=20;onHit=Flow_State_END} @self
+  
+Flow_State_OWNERCHECK:
+  Cooldown: 0
+  TargetConditions:
+  - hasaurastacks{auraName=Flow_State} false
+  Skills:
+  - auraremove{aura=Flow_State_Stack} @owner
+  - auraremove{aura=Flow_State_3} @owner
+  - remove{delay=5} @self
+  
+Flow_State_STACK:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Flow_State_3} false
+  - hasaurastacks{auraName=Flow_State} true
+  - hasaurastacks{auraName=Flow_State_Stack;stacks=1} castinstead Flow_State_STACK_2
+  - hasaurastacks{auraName=Flow_State_Stack;stacks=2} castinstead Flow_State_STACK_3
+  Skills:
+  - Aura{auraName=Flow_State_Stack;duration=99999;maxStacks=3} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.flow_state_stack;volume=1;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Flow_State;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+Flow_State_SPEED_1:
+  Skills:
+  - potion{type=SPEED;duration=10;level=0;hasParticles=false} @self
+
+Flow_State_SPEED_2:
+  Skills:
+  - potion{type=SPEED;duration=10;level=1;hasParticles=false} @self
+  
+Flow_State_SPEED_3:
+  Skills:
+  - potion{type=SPEED;duration=10;level=2;hasParticles=false} @self
+  
+Flow_State_STACK_2:
+  Skills:
+  - Aura{auraName=Flow_State_Stack;duration=99999;maxStacks=3} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.flow_state_stack;volume=1;pitch=1.2} @self
+  - signal{s=FLOWSTATE2} @MIR{r=2;t=Flow_State;target=armorstands;sort=NEAREST;limit=1}
+
+Flow_State_STACK_3:
+  Skills:
+  - Aura{auraName=Flow_State_3;duration=99999} @self
+  - Aura{auraName=Flow_State_Stack;duration=99999;maxStacks=3} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.flow_state_stack;volume=1;pitch=1.4} @self
+  - signal{s=FLOWSTATE3} @MIR{r=2;t=Flow_State;target=armorstands;sort=NEAREST;limit=1}
+
+Flow_State_END:
+  Skills:
+  - auraremove{aura=Flow_State_Stack} @self
+  - auraremove{aura=Flow_State_3} @self
+  - remove @MIR{r=2;t=Flow_State;target=armorstands;sort=NEAREST;limit=1}
+  
+# Blood Slash #
+  
+Blood_Slash:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Forbidden_Art} false
+  Skills:
+  - skill{s=Flow_State_STACK}
+  - skill{s=Blood_Slash_Stack_1}
+  - skill{s=Blood_Slash_Stack_2}
+  - skill{s=Blood_Slash_Stack_3}
+  
+Blood_Slash_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=1} false
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=Blood_Slash_Stack;duration=120;maxStacks=2;delay=1} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_1;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Blood_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Blood_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0}
+  
+Blood_Slash_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=1} true
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=2} false
+  Skills:
+  - Aura{auraName=Blood_Slash_Stack;duration=120;maxStacks=2;delay=1} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_2;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Blood_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Blood_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.6;sideOffset=-0.2}
+
+Blood_Slash_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=1} false
+  - hasaurastacks{auraName=Blood_Slash_Stack;stacks=2} true
+  Skills:
+  - auraremove{aura=Blood_Slash_Stack;delay=1} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_pierce;volume=0.7;pitch="random(0.8, 1.1)";repeat=2;repeatinterval=5} @self
+  - totem{md=2;c=1;oH=Blood_Slash_3_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=2;repeatinterval=5} @forward{f=1}
+  - summon{type=Blood_Pierce;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=-0.5;sideOffset=0.5}
+  - summon{type=Blood_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=5} @forward{f=3;y=0;sideOffset=-0.2}
+  - summon{type=Blood_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=10} @forward{f=2.5;y=-0.5;sideOffset=0}
+
+Blood_Slash_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+Blood_Slash_3_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage> * 0.4";pkb=false;hnp=true;hp=true}
+  - throw{velocity=0;velocityY=1.5}
+  
+# Laceration #
+  
+Laceration:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Forbidden_Art} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.laceration;volume=0.8;pitch=1;delay=5} @self
+  - Aura{auraName=Laceration;duration=25} @self
+  - onDamaged{auraName=resist;d=12;cE=true} @self
+  - lunge{velocity=1.15;velocityY=0.05;repeat=3;repeatinterval=1} @forward{f=12;y=0.05}
+  - delay 4
+  - skill{s=Laceration_DAMAGE} @EIR{r=4;sort=NEAREST;limit=1}
+  - delay 5
+  - summon{type=Laceration_Dash;amount=1;radius=0;yRadius=0} @self
+  - summon{type=Laceration_Slash;amount=1;radius=0;yRadius=0} @forward{f=2;y=0.5}
+  
+Laceration_DAMAGE:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;repeat=4;repeatinterval=5;delay=20}
+  - throw{velocity=0;velocityY=1.5;delay=20}
+  - summon{type=Blood_Cut1;amount=1;radius=0;yRadius=0;onSurface=true;delay=20}
+  - summon{type=Blood_Cut2;amount=1;radius=0;yRadius=0;onSurface=true;delay=25}
+  - summon{type=Blood_Cut3;amount=1;radius=0;yRadius=0;onSurface=true;delay=30}
+  - summon{type=Blood_Cut1;amount=1;radius=0;yRadius=0;onSurface=true;delay=35}
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_cut;volume=0.8;pitch="random(0.8, 1.1)";repeat=4;repeatinterval=5;delay=20} @self
+  
+# Smoke Bomb #
+
+Smoke_Bomb:
+  Conditions:
+  - hasaurastacks{auraName=Smoke_Bomb_aura} castinstead Smoke_Bomb_SKILL
+  Skills:
+  - Aura{auraName=Smoke_Bomb_aura;interval=1;duration=5} @self
+  
+Smoke_Bomb_SKILL:
+  Cooldown: 5
+  Conditions:
+  - hasaurastacks{auraName=Laceration} false
+  - hasaurastacks{auraName=Forbidden_Art} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.smoke_bomb_throw;volume=0.8;pitch=1} @self
+  - projectile{bulletSpin=12;g=1;bulletType=MOB;mob=Smoke_Bomb;onEnd=Smoke_Bomb_END;v=10;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+
+Smoke_Bomb_END:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.smoke_bomb_explode;volume=0.8;pitch=1} @self
+  - totem{md=120;oT=Smoke_Bomb_SMOKE;hnp=true;hp=true;hR=1;vR=1;i=10} @origin
+  - totem{md=120;oT=Smoke_Bomb_TOTAL;hnp=true;hp=true;hR=1;vR=1;i=25} @origin
+  - summon{type=Smoke_Bomb_Totem_Dummy;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Smoke_Bomb_TOTAL:
+  Skills:
+  - skill{s=Smoke_Bomb_BLIND} @EntitiesNearOrigin{r=5}
+  - skill{s=Smoke_Bomb_INVISIBLE_OWNER} @self
+  
+Smoke_Bomb_Totem_Dummy_AURA:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Smoke_Bomb_SELF;interval=1;duration=20}
+
+Smoke_Bomb_INVISIBLE_OWNER:
+  TargetConditions:
+  - hasaurastacks{auraName=Smoke_Bomb_SELF} true
+  Skills:
+  - potion{type=INVISIBILITY;duration=20;level=50;hasParticles=false}
+  - potion{type=JUMP;duration=20;level=1;hasParticles=false}
+  - hidefromplayers{d=20} @PIR{r=100}
+  
+Smoke_Bomb_SMOKE:
+  Skills:
+  - summon{type=Smoke_Bomb_Smoke;amount=1;radius=5;yRadius=2;onSurface=false} @origin{yoffset=-2}
+  - summon{type=Smoke_Bomb_Smoke_Small;amount=3;radius=5;yRadius=2;onSurface=false} @origin{yoffset=-2}
+  - effect:particlering{particle=redstone;color=#052529;radius=5;points=90;amount=1;hS=0;vS=0;y=-0.5}
+  
+Smoke_Bomb_BLIND:
+  Skills:
+  - potion{type=BLINDNESS;duration=40;level=1;hasParticles=false}
+  - potion{type=SLOW;duration=40;level=1;hasParticles=false}
+
+# Piercing Shuriken #
+
+Piercing_Shuriken:
+  Conditions:
+  - hasaurastacks{auraName=Laceration} false
+  - hasaurastacks{auraName=Forbidden_Art} false
+  Skills:
+  - lunge{velocity=1;velocityY=0.1} @forward{f=-3;y=0}
+  - effect:sound{s=ninja_samurai_sounds:samus.piercing_shuriken_throw;volume=0.8;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Piercing_Shuriken;onHit=Piercing_Shuriken_DAMAGE;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+  
+Piercing_Shuriken_DAMAGE:
+  Skills:
+  - skill{s=Piercing_Shuriken_DAMAGE_D}
+  
+Piercing_Shuriken_DAMAGE_D:
+  TargetConditions:
+  - hasaurastacks{auraName=Shuriken_Mark} false
+  - entitytype{t=armorstands} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.shuriken_hit;volume=0.8;pitch=1} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - Aura{auraName=Shuriken_Mark;interval=1;duration=80}
+  - orbital{bulletType=MOB;mob=Shuriken_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - skill{s=Piercing_Shuriken_DAMAGE_PRO} @EntitiesNearOrigin{r=20;limit=1;sort=NEAREST;conditions=[- hasaurastacks{auraName=Shuriken_Mark} false]}
+  
+Piercing_Shuriken_DAMAGE_PRO:
+  Skills:
+  - projectile{hitConditions=[- hasaurastacks{auraName=Shuriken_Mark} false];fromorigin=true;bulletType=MOB;mob=Piercing_Shuriken;onHit=Piercing_Shuriken_DAMAGE_2;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1;tyo=1}
+
+
+
+
+
+
+Piercing_Shuriken_DAMAGE_2:
+  Skills:
+  - skill{s=Piercing_Shuriken_DAMAGE_2_D}
+  
+Piercing_Shuriken_DAMAGE_2_D:
+  TargetConditions:
+  - hasaurastacks{auraName=Shuriken_Mark} false
+  - entitytype{t=armorstands} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.shuriken_hit;volume=0.8;pitch=1} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - Aura{auraName=Shuriken_Mark;interval=1;duration=80}
+  - orbital{bulletType=MOB;mob=Shuriken_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - skill{s=Piercing_Shuriken_DAMAGE_2_PRO} @EntitiesNearOrigin{r=20;limit=1;sort=NEAREST;conditions=[- hasaurastacks{auraName=Shuriken_Mark} false]}
+  
+Piercing_Shuriken_DAMAGE_2_PRO:
+  Skills:
+  - projectile{hitConditions=[- hasaurastacks{auraName=Shuriken_Mark} false];fromorigin=true;bulletType=MOB;mob=Piercing_Shuriken;onHit=Piercing_Shuriken_DAMAGE_3;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1;tyo=1}
+
+
+
+
+
+
+
+
+Piercing_Shuriken_DAMAGE_3:
+  Skills:
+  - skill{s=Piercing_Shuriken_DAMAGE_3_D}
+  
+Piercing_Shuriken_DAMAGE_3_D:
+  TargetConditions:
+  - hasaurastacks{auraName=Shuriken_Mark} false
+  - entitytype{t=armorstands} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.shuriken_hit;volume=0.8;pitch=1} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - Aura{auraName=Shuriken_Mark;interval=1;duration=80}
+  - orbital{bulletType=MOB;mob=Shuriken_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  - skill{s=Piercing_Shuriken_DAMAGE_3_PRO} @EntitiesNearOrigin{r=20;limit=1;sort=NEAREST;conditions=[- hasaurastacks{auraName=Shuriken_Mark} false]}
+  
+Piercing_Shuriken_DAMAGE_3_PRO:
+  Skills:
+  - projectile{hitConditions=[- hasaurastacks{auraName=Shuriken_Mark} false];fromorigin=true;bulletType=MOB;mob=Piercing_Shuriken;onHit=Piercing_Shuriken_DAMAGE_4;v=25;i=1;hR=1;vR=1;mr=35;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1;tyo=1}
+
+
+
+
+
+
+
+Piercing_Shuriken_DAMAGE_4:
+  Skills:
+  - skill{s=Piercing_Shuriken_DAMAGE_4_D}
+  
+Piercing_Shuriken_DAMAGE_4_D:
+  TargetConditions:
+  - hasaurastacks{auraName=Shuriken_Mark} false
+  - entitytype{t=armorstands} false
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.shuriken_hit;volume=0.8;pitch=1} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - Aura{auraName=Shuriken_Mark;interval=1;duration=80}
+  - orbital{bulletType=MOB;mob=Shuriken_Mark;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  
+# Death Charge #
+
+Death_Charge:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Death_Charge_STACK
+  Skills:
+  - auraremove{aura=Death_Charge_STACK} @self
+  
+Death_Charge_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Death_Charge_STACK;stacks=2} castinstead Death_Charge_Skill
+  Skills:
+  - Aura{auraName=Death_Charge_STACK;duration=120;maxStacks=2} @self
+  
+Death_Charge_Skill:
+  Cooldown: 2
+  Conditions:
+  - hasaurastacks{auraName=Laceration} false
+  - hasaurastacks{auraName=Forbidden_Art} false
+  Skills:
+  - auraremove{aura=Death_Charge_STACK} @self
+  - skill{s=Death_Charge_Skill_SPIN}
+  - delay 5
+  - skill{s=Death_Charge_Skill_SPIN}
+  - delay 5
+  - skill{s=Death_Charge_Skill_SPIN}
+  - delay 5
+  - skill{s=Death_Charge_Skill_SPIN_END}
+  
+Death_Charge_Skill_SPIN:
+  Conditions:
+  - mobsInRadius{types=Shuriken_Mark;amount=1to10;radius=10} true
+  Skills:
+  - Aura{auraName=Death_Charge;duration=10} @self
+  - onDamaged{auraName=resist;d=12;cE=true} @self
+  - summon{type=Death_Charge;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{y=-5}
+  - effect:sound{s=ninja_samurai_sounds:samus.death_charge_spin_2;volume=0.8;pitch="random(0.8, 1.1)"} @self
+  - lunge{velocity=1.15;velocityY=0.05;repeat=3;repeatinterval=1} @EntitiesNearOrigin{r=30;limit=1;sort=NEAREST;conditions=[- hasaurastacks{auraName=Shuriken_Mark} true]}
+  - delay 1
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  
+Death_Charge_Skill_SPIN_END:
+  Conditions:
+  - mobsInRadius{types=Shuriken_Mark;amount=1to10;radius=10} true
+  Skills:
+  - Aura{auraName=Death_Charge;duration=10} @self
+  - onDamaged{auraName=resist;d=12;cE=true} @self
+  - summon{type=Death_Charge_Longer;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{y=-5}
+  - effect:sound{s=ninja_samurai_sounds:samus.death_charge_spin_2;volume=0.8;pitch="random(0.8, 1.1)"} @self
+  - lunge{velocity=1.15;velocityY=0.05;repeat=3;repeatinterval=1} @EntitiesNearOrigin{r=30;limit=1;sort=NEAREST;conditions=[- hasaurastacks{auraName=Shuriken_Mark} true]}
+  - delay 1
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  - delay 2
+  - skill{s=Death_Charge_DAMAGE} @EIR{r=5}
+  
+Death_Charge_DAMAGE:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - skill{s=Death_Charge_DAMAGE2}
+  
+Death_Charge_DAMAGE2:
+  TargetConditions:
+  - hasaurastacks{auraName=Shuriken_Mark}
+  Skills:
+  - auraremove{aura=Shuriken_Mark}
+  - sudoskill{s=Shuriken_Mark_Remove;cat=true}
+  - summon{type=Blood_Cut1;amount=1;radius=0;yRadius=0;onSurface=true}
+  - summon{type=Blood_Cut2;amount=1;radius=0;yRadius=0;onSurface=true;delay=2}
+  - summon{type=Blood_Cut3;amount=1;radius=0;yRadius=0;onSurface=true;delay=4}
+  
+Shuriken_Mark_Remove:
+  Skills:
+  - remove @MIR{t=Shuriken_Mark;r=2;limit=1;sort=NEAREST;target=armorstands}
+  
+# Forbidden Art #
+
+Forbidden_Art:
+  Conditions:
+  - hasaurastacks{auraName=Laceration} false
+  - hasaurastacks{auraName=Death_Charge} false
+  Skills:
+  - Aura{auraName=Forbidden_Art;duration=80} @self
+  - effect:particles{particle=redstone;color=#052529;amount=15;hS=0.4;vS=0.8;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=40;repeatinterval=2} @self
+  - onDamaged{auraName=resist;d=90;cE=true} @self
+  - summon{type=Death_Mark;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:sound{s=ninja_samurai_sounds:samus.death_symbol;volume=0.8;pitch=1} @self
+  - delay 20
+  - lunge{velocity=0.7;velocityY=0.05;repeat=2;repeatinterval=1} @forward{f=5;y=0}
+  - delay 10
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_pierce;volume=0.7;pitch="random(0.8, 1.1)";repeat=4;repeatinterval=4} @self
+  - totem{md=2;c=1;oH=Shadow_Pierce_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1;repeat=4;repeatinterval=4} @forward{f=1}
+  - summon{type=Ninja_Shadow_4;amount=1;radius=0;yRadius=0;onSurface=true;delay=5} @self
+  - summon{type=Ninja_Shadow_4;amount=1;radius=0;yRadius=0;onSurface=true;delay=12} @self
+  - summon{type=Shadow_Pierce;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=-0.5;sideOffset=0.5}
+  - summon{type=Shadow_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=4} @forward{f=3;y=0;sideOffset=-0.2}
+  - summon{type=Shadow_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=8} @forward{f=2.5;y=-0.5;sideOffset=0}
+  - summon{type=Shadow_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=12} @forward{f=2.7;y=0;sideOffset=-0.3}
+  - summon{type=Shadow_Pierce;amount=1;radius=0;yRadius=0;onSurface=true;delay=16} @forward{f=3;y=-0.5;sideOffset=0.3}
+  - delay 18
+  - effect:sound{s=ninja_samurai_sounds:samus.death_charge_spin_2;volume=0.7;pitch="random(0.8, 1.1)";repeat=4;repeatinterval=4} @self
+  - summon{type=Ninja_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=2} @self
+  - summon{type=Shadow_Spin;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{y=-5}
+  - skill{s=Shadow_Spin_DAMAGE} @EIR{r=6}
+  - lunge{velocity=0.5;velocityY=2} @forward{f=0;y=7}
+  - delay 10
+  - stun{d=20;f=true} @self
+  - skill{s=Shadow_Slash_0}
+  - summon{type=Ninja_Shadow_3;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - delay 5
+  - skill{s=Shadow_Slash_1}
+  - summon{type=Ninja_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - delay 5
+  - skill{s=Shadow_Slash_2}
+  - summon{type=Ninja_Shadow_4;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - delay 5
+  - skill{s=Shadow_Slash_3}
+  - summon{type=Ninja_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - delay 5
+  - onDamaged{auraName=resist;d=20;cE=true} @self
+  - lunge{velocity=0.5;velocityY=-2} @forward{f=0;y=-7}
+  - skill{s=Shadow_Slash_Down}
+  - summon{type=Ninja_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - delay 10
+  - summon{type=Shadow_Ground_Pound;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  
+Shadow_Cut:
+  Cooldown: 0
+  Skills:
+  - randomskill{skills=Shadow_Cut1,Shadow_Cut2,Shadow_Cut3}
+  
+Shadow_Cut1:
+  Skills:
+  - equip{item=shadow_cut_1:0;delay=2}
+  - equip{item=shadow_cut_2:0;delay=3}
+  - equip{item=shadow_cut_3:0;delay=4}
+  - equip{item=shadow_cut_4:0;delay=5}
+  - equip{item=shadow_cut_5:0;delay=6}
+  - equip{item=shadow_cut_6:0;delay=7}
+  - equip{item=shadow_cut_7:0;delay=8}
+  - equip{item=shadow_cut_8:0;delay=9}
+  
+Shadow_Cut2:
+  Skills:
+  - equip{item=shadow_cut_1:5;delay=2}
+  - equip{item=shadow_cut_2:5;delay=3}
+  - equip{item=shadow_cut_3:5;delay=4}
+  - equip{item=shadow_cut_4:5;delay=5}
+  - equip{item=shadow_cut_5:5;delay=6}
+  - equip{item=shadow_cut_6:5;delay=7}
+  - equip{item=shadow_cut_7:5;delay=8}
+  - equip{item=shadow_cut_8:5;delay=9}
+  
+Shadow_Cut3:
+  Skills:
+  - equip{item=shadow_cut_1:4;delay=2}
+  - equip{item=shadow_cut_2:4;delay=3}
+  - equip{item=shadow_cut_3:4;delay=4}
+  - equip{item=shadow_cut_4:4;delay=5}
+  - equip{item=shadow_cut_5:4;delay=6}
+  - equip{item=shadow_cut_6:4;delay=7}
+  - equip{item=shadow_cut_7:4;delay=8}
+  - equip{item=shadow_cut_8:4;delay=9}
+  
+Shadow_Slash_0:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_1;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Shadow_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Shadow_Slash_0;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0}
+  
+Shadow_Slash_1:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_2;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Shadow_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Shadow_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0}
+  
+Shadow_Slash_2:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_1;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Shadow_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Shadow_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.6;sideOffset=-0.2}
+
+Shadow_Slash_3:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_slash_2;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Shadow_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1}
+  - summon{type=Shadow_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0;sideOffset=0}
+
+Shadow_Slash_Down:
+  Skills:
+  - effect:sound{s=ninja_samurai_sounds:samus.laceration;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - skill{s=Shadow_Slash_Down_DAMAGE} @EIR{r=5}
+  - summon{type=Shadow_Slash_Down;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0;sideOffset=0}
+
+Shadow_Pierce_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage> * 0.3";pkb=false;hnp=true;hp=true}
+  - throw{velocity=0;velocityY=1.5}
+  
+Shadow_Pierce_SHADOWCUT:
+  Cooldown: 0.5
+  Skills:
+  - summon{type=Shadow_Cut;amount=1;radius=0;yRadius=0;onSurface=true}
+
+Shadow_Spin_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - throw{velocity=0;velocityY=10}
+  
+Shadow_Slash_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage> * 0.5";pkb=false;hnp=true;hp=true}
+  - throw{velocity=0;velocityY=1.5}
+
+Shadow_Slash_Down_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - throw{velocity=0;velocityY=-9}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=4;repeatinterval=5;delay=40}
+  - throw{velocity=0;velocityY=1.5;delay=40}
+  - summon{type=Shadow_Cut;amount=1;radius=0;yRadius=0;onSurface=true;delay=40}
+  - summon{type=Shadow_Cut;amount=1;radius=0;yRadius=0;onSurface=true;delay=45}
+  - summon{type=Shadow_Cut;amount=1;radius=0;yRadius=0;onSurface=true;delay=50}
+  - summon{type=Shadow_Cut;amount=1;radius=0;yRadius=0;onSurface=true;delay=55}
+  - effect:sound{s=ninja_samurai_sounds:samus.blood_cut;volume=0.4;pitch="random(0.8, 1.1)";repeat=4;repeatinterval=5;delay=40}
+  

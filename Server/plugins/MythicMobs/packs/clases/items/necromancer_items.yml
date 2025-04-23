@@ -1,0 +1,46 @@
+######## created by samus2002 #########
+
+necromancer_staff:
+  Id: stone_sword
+  Display: "<gradient:#2fccb2:#0fa2db:#2fccb2>Staff of Necromancer"
+  Model: 2013
+  Lore:
+  - '<gradient:#2fccb2:#0fa2db:#2fccb2>The staff of a Necromancer'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Eternal_Flame_P} @self ~onSwing
+  - skill{s=Wheel_of_Eternal_Flame_P} @self ~onUse
+  - skill{s=Will_O_Wisps_P} @self ~onUse
+  - skill{s=Empower_Minions} @self ~onCrouch
+  - skill{s=Skeletal_Minion_P} @self ~onSwing
+  - skill{s=Incarnation_P} @self ~onTimer:10
+  
+necromancer_staff_shiny:
+  Id: stone_sword
+  Display: "<gradient:#2fccb2:#ffce5c:#2fccb2>Shiny Staff of Necromancer"
+  Model: 2014
+  Lore:
+  - '<gradient:#2fccb2:#ffce5c:#2fccb2>The staff of a Necromancer'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1
+  Skills:
+  - skill{s=Eternal_Flame_P} @self ~onSwing
+  - skill{s=Wheel_of_Eternal_Flame_P} @self ~onUse
+  - skill{s=Will_O_Wisps_P} @self ~onUse
+  - skill{s=Empower_Minions} @self ~onCrouch
+  - skill{s=Skeletal_Minion_P} @self ~onSwing
+  - skill{s=Incarnation_P} @self ~onTimer:10
+  
+eternal_flame:
+  Id: paper
+  Display: "&2"
+  Model: 2134
+  Hide:
+  - ATTRIBUTES

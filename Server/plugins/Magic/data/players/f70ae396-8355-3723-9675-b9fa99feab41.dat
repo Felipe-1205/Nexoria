@@ -1,0 +1,34 @@
+id: f70ae396-8355-3723-9675-b9fa99feab41
+name: RKurai_
+created: 1736781593970
+updated: 1740694431751
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: -619.9965650804896,119.0,-717.4407844069492,principal,50.450886,-37.649998
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: d9c1bf9c4433,14a39a0ec306,6973e52e805
+    mana_timestamp: 1740694431619
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 51.45827865600586

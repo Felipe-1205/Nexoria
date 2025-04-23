@@ -1,0 +1,45 @@
+Toffy_Fall_Dragon_Adult:
+  Type: WOLF
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Modules:
+    ThreatTable: true
+  Skills:
+  - model{mid=fall_dragon;n=false;drive=true} @self ~onSpawn
+  - addtag{t=falldragon} @self ~onSpawn
+  - skill{s=Toffy_Fall_Dragon_Mount} ~onInteract
+  - skill{s=Toffy_Fall_Dragon_Owner} ~onInteract
+  - skill{s=Toffy_Fall_Dragon_Spell} ~onSignal:SPELL
+  - skill{s=Toffy_Fall_Dragon_FlyLoop} @self ~onSpawn
+  - skill{s=Toffy_Fall_Dragon_Sound_Death} @self ~onDeath
+  - skill{s=Toffy_Fall_Dragon_Sound_Hurt} @self ~onDamaged
+  - skill{s=Toffy_Fall_Dragon_Sound_Ambient} @self ~onSpawn
+  Display: "ยง6Fall Dragon"
+  Health: 250
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.5
+    MaxCombatDistance: 5
+    AttackSpeed: 1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+# 42417XJ94YBLC3TJ

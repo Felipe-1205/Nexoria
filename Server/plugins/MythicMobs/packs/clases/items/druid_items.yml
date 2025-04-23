@@ -1,0 +1,92 @@
+######## created by samus2002 #########
+  
+crack_1:
+  Id: paper
+  Display: "&6"
+  Model: 2366
+  Hide:
+  - ATTRIBUTES
+
+crack_2:
+  Id: paper
+  Display: "&6"
+  Model: 2367
+  Hide:
+  - ATTRIBUTES
+ 
+crack_3:
+  Id: paper
+  Display: "&6"
+  Model: 2368
+  Hide:
+  - ATTRIBUTES
+  
+crack_4:
+  Id: paper
+  Display: "&6"
+  Model: 2369
+  Hide:
+  - ATTRIBUTES
+  
+crack_5:
+  Id: paper
+  Display: "&6"
+  Model: 2370
+  Hide:
+  - ATTRIBUTES
+  
+crack_6:
+  Id: paper
+  Display: "&6"
+  Model: 2371
+  Hide:
+  - ATTRIBUTES
+  
+scratch_1:
+  Id: paper
+  Display: "&6"
+  Model: 2372
+  Hide:
+  - ATTRIBUTES
+  
+scratch_2:
+  Id: paper
+  Display: "&6"
+  Model: 2373
+  Hide:
+  - ATTRIBUTES
+  
+scratch_3:
+  Id: paper
+  Display: "&6"
+  Model: 2374
+  Hide:
+  - ATTRIBUTES
+  
+scratch_4:
+  Id: paper
+  Display: "&6"
+  Model: 2375
+  Hide:
+  - ATTRIBUTES
+  
+scratch_5:
+  Id: paper
+  Display: "&6"
+  Model: 2376
+  Hide:
+  - ATTRIBUTES
+  
+scratch_6:
+  Id: paper
+  Display: "&6"
+  Model: 2377
+  Hide:
+  - ATTRIBUTES
+  
+scratch_7:
+  Id: paper
+  Display: "&6"
+  Model: 2378
+  Hide:
+  - ATTRIBUTES

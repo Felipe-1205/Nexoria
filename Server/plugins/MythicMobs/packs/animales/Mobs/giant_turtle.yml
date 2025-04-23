@@ -1,0 +1,77 @@
+﻿#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+GiantTurtlePet:
+  Type: wolf
+  Faction: Mascotas
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=pet_giantturtle;n=false;drive=true} @self ~onSpawn
+  - skill{s=GiantTurtlePet_INTERACT} @trigger ~onInteract
+  - skill{s=GiantTurtlePet_PetSpawn} @self ~onSpawn
+  - bodyclamp{m=pet_giantturtle;c=10} @self ~onSpawn
+  Display: "§bTortus"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+GiantTurtleRoyalPet:
+  Type: wolf
+  Faction: Mascotas
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+  - model{mid=pet_giantturtle_royal;n=false;drive=true} @self ~onSpawn
+  - skill{s=GiantTurtlePet_INTERACT} @trigger ~onInteract
+  - skill{s=GiantTurtlePet_PetSpawn} @self ~onSpawn
+  - bodyclamp{m=pet_giantturtle_royal;c=10} @self ~onSpawn
+  Display: "§bTortus"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false

@@ -1,0 +1,434 @@
+######## created by samus2002 #########
+  
+gunner_pistol:
+  Id: stone_sword
+  Display: "<gradient:#383333:#8c140b:#383333>Pistol of Gunner"
+  Model: 2023
+  Lore:
+  - '<gradient:#383333:#8c140b:#383333>The pistol of a Gunner'
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Hide:
+  - ATTRIBUTES
+  Skills:
+  - skill{s=Deadeye} @self ~onTimer:10
+  - skill{s=Pistol_Shot} @self ~onSwing
+  - skill{s=Shotgun_Blast} @self ~onUse
+  - skill{s=Deathfire} @self ~onUse
+  - skill{s=Sniper_Backup} @self ~onCrouch
+  - skill{s=Air_Strike} @self ~onSwing
+  
+gunner_pistol_shiny:
+  Id: stone_sword
+  Display: "<gradient:#383333:#fffd9c:#383333>Shiny Pistol of Gunner"
+  Model: 2024
+  Lore:
+  - '<gradient:#383333:#fffd9c:#383333>The pistol of a Gunner'
+  Hide:
+  - ATTRIBUTES
+  Unbreakable: true
+  NBT:
+    Unbreakable: int/1 
+  Skills:
+  - skill{s=Deadeye} @self ~onTimer:10
+  - skill{s=Pistol_Shot} @self ~onSwing
+  - skill{s=Shotgun_Blast} @self ~onUse
+  - skill{s=Deathfire} @self ~onUse
+  - skill{s=Sniper_Backup} @self ~onCrouch
+  - skill{s=Air_Strike} @self ~onSwing
+  
+aim_1:
+  Id: paper
+  Display: "&6"
+  Model: 2275
+  Hide:
+  - ATTRIBUTES
+
+aim_2:
+  Id: paper
+  Display: "&6"
+  Model: 2276
+  Hide:
+  - ATTRIBUTES
+ 
+aim_3:
+  Id: paper
+  Display: "&6"
+  Model: 2277
+  Hide:
+  - ATTRIBUTES
+  
+aim_4:
+  Id: paper
+  Display: "&6"
+  Model: 2278
+  Hide:
+  - ATTRIBUTES
+  
+aim_5:
+  Id: paper
+  Display: "&6"
+  Model: 2279
+  Hide:
+  - ATTRIBUTES
+  
+aim_6:
+  Id: paper
+  Display: "&6"
+  Model: 2280
+  Hide:
+  - ATTRIBUTES
+  
+aim_7:
+  Id: paper
+  Display: "&6"
+  Model: 2281
+  Hide:
+  - ATTRIBUTES
+  
+bullet:
+  Id: paper
+  Display: "&6"
+  Model: 2282
+  Hide:
+  - ATTRIBUTES
+  
+bullet_red:
+  Id: paper
+  Display: "&6"
+  Model: 2283
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_1_1:
+  Id: paper
+  Display: "&6"
+  Model: 2284
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_1_2:
+  Id: paper
+  Display: "&6"
+  Model: 2285
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_1_3:
+  Id: paper
+  Display: "&6"
+  Model: 2286
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_1_4:
+  Id: paper
+  Display: "&6"
+  Model: 2287
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_2_1:
+  Id: paper
+  Display: "&6"
+  Model: 2288
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_2_2:
+  Id: paper
+  Display: "&6"
+  Model: 2289
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_2_3:
+  Id: paper
+  Display: "&6"
+  Model: 2290
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_2_4:
+  Id: paper
+  Display: "&6"
+  Model: 2291
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_3_1:
+  Id: paper
+  Display: "&6"
+  Model: 2292
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_3_2:
+  Id: paper
+  Display: "&6"
+  Model: 2293
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_3_3:
+  Id: paper
+  Display: "&6"
+  Model: 2294
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_3_4:
+  Id: paper
+  Display: "&6"
+  Model: 2295
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_4_1:
+  Id: paper
+  Display: "&6"
+  Model: 2296
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_4_2:
+  Id: paper
+  Display: "&6"
+  Model: 2297
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_4_3:
+  Id: paper
+  Display: "&6"
+  Model: 2298
+  Hide:
+  - ATTRIBUTES
+  
+deathfire_shadow_4_4:
+  Id: paper
+  Display: "&6"
+  Model: 2299
+  Hide:
+  - ATTRIBUTES
+  
+explosion_1:
+  Id: paper
+  Display: "&6"
+  Model: 2300
+  Hide:
+  - ATTRIBUTES
+  
+explosion_2:
+  Id: paper
+  Display: "&6"
+  Model: 2301
+  Hide:
+  - ATTRIBUTES
+  
+explosion_3:
+  Id: paper
+  Display: "&6"
+  Model: 2302
+  Hide:
+  - ATTRIBUTES
+  
+explosion_4:
+  Id: paper
+  Display: "&6"
+  Model: 2303
+  Hide:
+  - ATTRIBUTES
+  
+explosion_5:
+  Id: paper
+  Display: "&6"
+  Model: 2304
+  Hide:
+  - ATTRIBUTES
+  
+focus_shot_1:
+  Id: paper
+  Display: "&6"
+  Model: 2305
+  Hide:
+  - ATTRIBUTES
+  
+focus_shot_2:
+  Id: paper
+  Display: "&6"
+  Model: 2306
+  Hide:
+  - ATTRIBUTES
+  
+focus_shot_3:
+  Id: paper
+  Display: "&6"
+  Model: 2307
+  Hide:
+  - ATTRIBUTES
+  
+focus_shot_4:
+  Id: paper
+  Display: "&6"
+  Model: 2308
+  Hide:
+  - ATTRIBUTES
+  
+focus_shot_5:
+  Id: paper
+  Display: "&6"
+  Model: 2309
+  Hide:
+  - ATTRIBUTES
+  
+muzzle_1:
+  Id: paper
+  Display: "&6"
+  Model: 2310
+  Hide:
+  - ATTRIBUTES
+  
+muzzle_2:
+  Id: paper
+  Display: "&6"
+  Model: 2311
+  Hide:
+  - ATTRIBUTES
+  
+muzzle_3:
+  Id: paper
+  Display: "&6"
+  Model: 2312
+  Hide:
+  - ATTRIBUTES
+  
+muzzle_4:
+  Id: paper
+  Display: "&6"
+  Model: 2313
+  Hide:
+  - ATTRIBUTES
+  
+muzzle_5:
+  Id: paper
+  Display: "&6"
+  Model: 2314
+  Hide:
+  - ATTRIBUTES
+  
+rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 2315
+  Hide:
+  - ATTRIBUTES
+  
+rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 2316
+  Hide:
+  - ATTRIBUTES
+  
+rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 2317
+  Hide:
+  - ATTRIBUTES
+  
+rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 2318
+  Hide:
+  - ATTRIBUTES
+  
+rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 2319
+  Hide:
+  - ATTRIBUTES
+  
+rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 2320
+  Hide:
+  - ATTRIBUTES
+  
+rupture_fire_1:
+  Id: paper
+  Display: "&6"
+  Model: 2321
+  Hide:
+  - ATTRIBUTES
+  
+rupture_fire_2:
+  Id: paper
+  Display: "&6"
+  Model: 2322
+  Hide:
+  - ATTRIBUTES
+  
+rupture_fire_3:
+  Id: paper
+  Display: "&6"
+  Model: 2323
+  Hide:
+  - ATTRIBUTES
+  
+shotgun_muzzle_1:
+  Id: paper
+  Display: "&6"
+  Model: 2324
+  Hide:
+  - ATTRIBUTES
+  
+shotgun_muzzle_2:
+  Id: paper
+  Display: "&6"
+  Model: 2325
+  Hide:
+  - ATTRIBUTES
+  
+shotgun_muzzle_3:
+  Id: paper
+  Display: "&6"
+  Model: 2326
+  Hide:
+  - ATTRIBUTES
+  
+shotgun_muzzle_4:
+  Id: paper
+  Display: "&6"
+  Model: 2327
+  Hide:
+  - ATTRIBUTES
+  
+shotgun_muzzle_5:
+  Id: paper
+  Display: "&6"
+  Model: 2328
+  Hide:
+  - ATTRIBUTES
+  
+sniper_soldier:
+  Id: paper
+  Display: "&6"
+  Model: 2329
+  Hide:
+  - ATTRIBUTES
+  
+sniper_soldier_shoot:
+  Id: paper
+  Display: "&6"
+  Model: 2330
+  Hide:
+  - ATTRIBUTES
+  
+
+# 2BrNUwG4VUYP4jVff2AWCa3tspXVa+/E9MrCjOFPgiDoXaReQfd7PD9jYMw/4y0MJsVvQyuATpsQ2QkAIAAIM4CiZZexrctpO4s7eHDW64c=

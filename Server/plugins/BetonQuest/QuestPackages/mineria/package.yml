@@ -1,0 +1,52 @@
+npcs:
+  '336': "Grum"
+
+conversations:
+  Grum: 
+    quester: "&6Grum" 
+    first: "Cooldown,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Vaya, justo a tiempo! Necesito un par de manos fuertes. Hoy hay que extraer muchos minerales, ¿te animas?"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7Necesito que rompas 64 bloques de Hierro. La veta es rica, pero el trabajo es duro. Si sacas buen material, quizás te enseñe un truco o dos sobre fundición."
+        pointer: "Perfecto" 
+      SiRechazan:
+        text: "&7Bah, qué lástima… pero la mina no se irá a ninguna parte. Si cambias de opinión, vuelve cuando quieras."
+      Cooldown:
+        text: "&7Ya trabajaste bastante hoy. La mina no se va a ningún lado, vuelve mañana y te daré más trabajo."
+        conditions: "mineriaenpausa"  
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7Claro, ¿qué necesitas exactamente?"
+        event: misionaceptadamineria,iniciomineria
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7Hoy no, tengo otros asuntos que atender."
+        pointer: "SiRechazan" 
+      Perfecto:
+        text: "&7Suena bien, ¡voy a por ello!"
+
+conditions:
+  mineriaenpausa: "tag mineria_en_pausa"
+
+schedules:
+  mineriamis: 
+    type: realtime-cron 
+    time: '0 0 * * *' 
+    events: mineriacontinuar
+
+events: 
+  misionaceptadamineria: "notify &5¡Misión Aceptada, a minar!"
+  iniciomineria: "objective start romperbloques"
+  mineriamisioncumplida: "notify &6Minería: ¡Misión Cumplida!"
+  premiomineria: "mmoprofessionexperience mining 750"
+  recompensamineria: "mmoitemgive MATERIAL MONEDA_1 10"
+  mineriapausa: "tag add mineria_en_pausa"
+  mineriacontinuar: "tag delete mineria_en_pausa"
+
+objectives: 
+  romperbloques:  "mmocorebreakblock 64 block:IRON_ORE events:mineriamisioncumplida,premiomineria,recompensamineria,mineriapausa" 

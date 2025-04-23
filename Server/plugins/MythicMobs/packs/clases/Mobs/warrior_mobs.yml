@@ -1,0 +1,232 @@
+######## created by samus2002 #########
+
+# Brutal Strike #
+
+Brutal_Strike_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: warrior_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=warrior_slash_1:0;delay=2} ~onSpawn
+  - equip{item=warrior_slash_2:0;delay=4} ~onSpawn
+  - equip{item=warrior_slash_3:0;delay=6} ~onSpawn
+  - equip{item=warrior_slash_4:0;delay=8} ~onSpawn
+  - equip{item=warrior_slash_5:0;delay=10} ~onSpawn
+  - equip{item=warrior_slash_6:0;delay=12} ~onSpawn
+  - equip{item=warrior_slash_7:0;delay=14} ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+Brutal_Strike_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,180
+  ItemHand: warrior_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=warrior_slash_1:0;delay=2} ~onSpawn
+  - equip{item=warrior_slash_2:0;delay=4} ~onSpawn
+  - equip{item=warrior_slash_3:0;delay=6} ~onSpawn
+  - equip{item=warrior_slash_4:0;delay=8} ~onSpawn
+  - equip{item=warrior_slash_5:0;delay=10} ~onSpawn
+  - equip{item=warrior_slash_6:0;delay=12} ~onSpawn
+  - equip{item=warrior_slash_7:0;delay=14} ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+Brutal_Strike_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,90
+  ItemHand: warrior_slash_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=warrior_slash_1:0;delay=2} ~onSpawn
+  - equip{item=warrior_slash_2:0;delay=4} ~onSpawn
+  - equip{item=warrior_slash_3:0;delay=6} ~onSpawn
+  - equip{item=warrior_slash_4:0;delay=8} ~onSpawn
+  - equip{item=warrior_slash_5:0;delay=10} ~onSpawn
+  - equip{item=warrior_slash_6:0;delay=12} ~onSpawn
+  - equip{item=warrior_slash_7:0;delay=14} ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+Brutal_Pierce:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: warrior_pierce_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=warrior_pierce_1:0;delay=2} ~onSpawn
+  - equip{item=warrior_pierce_2:0;delay=4} ~onSpawn
+  - equip{item=warrior_pierce_3:0;delay=6} ~onSpawn
+  - equip{item=warrior_pierce_4:0;delay=8} ~onSpawn
+  - equip{item=warrior_pierce_5:0;delay=10} ~onSpawn
+  - equip{item=warrior_pierce_6:0;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+# Charge #
+
+Charge:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: charge_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=charge_1:0;delay=2} ~onSpawn
+  - equip{item=charge_2:0;delay=4} ~onSpawn
+  - equip{item=charge_3:0;delay=6} ~onSpawn
+  - equip{item=charge_4:0;delay=8} ~onSpawn
+  - equip{item=charge_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+# Shield Barrier #
+
+Shield_Barrier:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,180,0
+  Options:
+    Marker: true
+    Small: false
+    LockPitch: true
+    Collidable: false
+    KnockbackResistance: 1
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @Owner ~onSpawn
+  - effect:sound{s=warrior_sounds:samus.shield_summon;volume=1;pitch=1} @self ~onSpawn
+  - equip{item=shield_barrier_1:4;delay=2} ~onSpawn
+  - equip{item=shield_barrier_2:4;delay=4} ~onSpawn
+  - equip{item=shield_barrier_3:4;delay=6} ~onSpawn
+  - equip{item=shield_barrier_4:4;delay=8} ~onSpawn
+  - skill{s=BROKE1} @trigger ~onSignal:BROKE1
+  - skill{s=BROKE2} @trigger ~onSignal:BROKE2
+  - skill{s=BROKE3} @trigger ~onSignal:BROKE3
+  - skill{s=BROKE4} @trigger ~onSignal:BROKE4
+  - animatearmorstand{d=200;head=0,-360,0;ignoreempty=false} @self ~onSpawn
+  - remove{delay=120} @self ~onSpawn
+
+# Chain Hook #
+
+Chain_Hook:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: chain_hook_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=chain_hook_1:4;delay=1} ~onSpawn
+  - equip{item=chain_hook_2:4;delay=2} ~onSpawn
+  - equip{item=chain_hook_3:4;delay=3} ~onSpawn
+  - equip{item=chain_hook_4:4;delay=4} ~onSpawn
+  - equip{item=chain_hook_5:4;delay=5} ~onSpawn
+  - equip{item=chain_hook_4:4;delay=6} ~onSpawn
+  - equip{item=chain_hook_3:4;delay=7} ~onSpawn
+  - equip{item=chain_hook_2:4;delay=8} ~onSpawn
+  - equip{item=chain_hook_1:4;delay=9} ~onSpawn
+  - look @forward{f=5;y=1.2} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+# Whirlwind #
+
+Whirlwind:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: whirlwind_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=whirlwind_1:0;delay=2} ~onSpawn
+  - equip{item=whirlwind_2:0;delay=4} ~onSpawn
+  - equip{item=whirlwind_3:0;delay=6} ~onSpawn
+  - equip{item=whirlwind_4:0;delay=8} ~onSpawn
+  - equip{item=whirlwind_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+# Judgement #
+
+Judgement_Shield:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: judgement_shield_1
+  Options:
+    Marker: false
+    Interactable: false
+    Small: false
+    HasArms: true
+    LockPitch: true
+    Collidable: false
+    KnockbackResistance: 1
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=warrior_sounds:samus.judgement_shield_summon;volume=1;pitch=1} @self ~onSpawn
+  - equip{item=judgement_shield_1:0;delay=2} ~onSpawn
+  - equip{item=judgement_shield_2:0;delay=4} ~onSpawn
+  - equip{item=judgement_shield_3:0;delay=6} ~onSpawn
+  - equip{item=judgement_shield_4:0;delay=8} ~onSpawn
+  - remove{delay=40} @self ~onSpawn
+  
+Judgement_Sword:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: judgement_sword_1
+  Options:
+    Marker: false
+    Interactable: false
+    HasArms: true
+    Collidable: false
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - stun{d=12;f=false;CancelOnTakeDamage=false;CancelOnDeath=true} @self ~onSpawn
+  - velocity{m=set;x=0;y=-3;z=0;delay=13} @self ~onSpawn
+  - skill{s=Judgement_FX;delay=18} @self ~onSpawn
+  - skill{s=Judgement_FX;delay=58;repeat=3;repeatinterval=40} @self ~onSpawn
+  - effect:sound{s=warrior_sounds:samus.shield_summon;volume=1;pitch=1} @self ~onSpawn
+  - equip{item=judgement_sword_1:0;delay=2} ~onSpawn
+  - equip{item=judgement_sword_2:0;delay=4} ~onSpawn
+  - equip{item=judgement_sword_3:0;delay=6} ~onSpawn
+  - equip{item=judgement_sword_4:0;delay=8} ~onSpawn
+  - remove{delay=160} @self ~onSpawn
+  

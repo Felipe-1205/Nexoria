@@ -1,0 +1,34 @@
+id: c9890b3c-1b73-321e-b09f-9ca3facf5666
+name: buykl
+created: 1740088267003
+updated: 1741174839391
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: c54fe0270950,26a0a150f2da,92ea01536186
+    mana_timestamp: 1741174839228
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 22.25

@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 177.231.201.89
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1741030978875
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1741230312771
+  login: 1741228827287
+money: '0'
+last-account-name: luiguiwar
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2988.268597071025
+  y: 80.0
+  z: 459.8532540816033
+  yaw: 68.40003204345703
+  pitch: 17.250009536743164
+nickname: Amikael
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -522.9081216635656
+  y: 70.0
+  z: -73.3670754036565
+  yaw: -63.78857421875
+  pitch: 24.54744529724121

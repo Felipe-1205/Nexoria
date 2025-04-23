@@ -1,0 +1,1396 @@
+######## created by samus2002 #########
+
+# Dawnbringer Angel #
+  
+Dawnbringer_Angel:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Dawnbringer_Angel_ACTUAL} cast Dawnbringer_Angel_ACTUALSKILL
+  Skills:
+  - skill{s=Dawnbringer_Angel_ACTIVATE} @MIR{r=2;t=Dawnbringer_Angel;target=armorstands;sort=NEAREST;limit=1}
+  - skill{s=Dawnbringer_Angel_BUFF} @self
+  
+Dawnbringer_Angel_BUFF:
+  Cooldown: 0
+  Conditions:
+  - mobsInRadius{types=Dawnbringer_Angel;amount=1to10;radius=2.5} false
+  - hasaura{n=Dawnbringer_Angel_STOP} false
+  Skills:
+  - orbital{bulletType=MOB;mob=Dawnbringer_Angel;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+
+Dawnbringer_Angel_ACTIVATE:
+  Conditions:
+  - hasaura{n=Dawnbringer_Angel_STOP} false
+  Skills:
+  - SudoSkill{s=Dawnbringer_Angel_SKILL1;setcasterastrigger=true} @MIR{r=2.5;t=Dawnbringer_Angel;target=armorstands;sort=NEAREST;limit=1}
+  
+Dawnbringer_Angel_SKILL1:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Dawnbringer_Angel;interval=1;duration=40} @self
+  
+Dawnbringer_Angel_REMOVE:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Dawnbringer_Angel} false
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#fffea8;amount=10;hS=0.2;vS=0.2;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body} ~onSpawn
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.6;pitch=1.1} @self
+  
+Dawnbringer_Angel_REMOVE_BUFF:
+  Cooldown: 0
+  TargetConditions:
+  - hasaura{n=Dawnbringer_Angel_STOP} true
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#fffea8;amount=10;hS=0.2;vS=0.2;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body} ~onSpawn
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.6;pitch=1.1} @self
+  
+Dawnbringer_Angel_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Divine_Immolation_Aura;stacks=4} castinstead Dawnbringer_Angel_RESET
+  Skills:
+  - Aura{auraName=Divine_Immolation_Aura;duration=200;maxStacks=4} @self
+  
+Dawnbringer_Angel_RESET:
+  Cooldown: 2
+  Skills:
+  - auraremove{aura=Divine_Immolation_Aura} @self
+  - Aura{auraName=Dawnbringer_Angel_ACTUAL;duration=40} @self
+  
+Dawnbringer_Angel_ACTUALSKILL:
+  Cooldown: 2
+  Skills:
+  - signal{s=SHINE} @MIR{r=2.5;t=Dawnbringer_Angel;target=armorstands;sort=NEAREST;limit=1}
+  - heal{a="<modifier.heal>";repeat=3;repeatinterval=10} @self
+  - skill{s=Dawnbringer_Angel_ACTUALSKILL_D;repeat=3;repeatinterval=10} @PIR{r=4}
+  - skill{s=Dawnbringer_Angel_ACTUALSKILL_A;repeat=7;repeatinterval=5} @EIR{r=2}
+  
+Dawnbringer_Angel_ACTUALSKILL_D:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - heal{a="<modifier.heal>"}
+  - effect:particles{particle=glow;amount=7;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0}
+  
+Dawnbringer_Angel_ACTUALSKILL_A:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - throw{velocity=5;velocityY=0}
+
+Dawnbringer_Angel_SHINE:
+  Cooldown: 2
+  Skills:
+  - state{s=skill;li=10;lo=10} @self
+  - state{s=skill;li=10;lo=10;remove=true;delay=50} @self
+  - effect:particles{particle=redstone;color=#fffea8;amount=12;hS=0.2;vS=0.2;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=7;repeatinterval=5} @ModelPart{p=body}
+  - effect:sound{s=cleric_sounds:samus.angel_shine;volume=1;pitch=1;repeat=1;repeatinterval=20} @self
+  
+Dawnbringer_Angel_BRIGHTNESS:
+  TargetConditions:
+  - hasaurastacks{auraName=Divine_Immolation_Aura;stacks=1} castinstead Dawnbringer_Angel_BRIGHTNESS2
+  - hasaurastacks{auraName=Divine_Immolation_Aura;stacks=2} castinstead Dawnbringer_Angel_BRIGHTNESS2
+  - hasaurastacks{auraName=Divine_Immolation_Aura;stacks=3} castinstead Dawnbringer_Angel_BRIGHTNESS3
+  - hasaurastacks{auraName=Divine_Immolation_Aura;stacks=4} castinstead Dawnbringer_Angel_BRIGHTNESS3
+  Skills:
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;hS=0.15;vS=0.15;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body}
+  
+Dawnbringer_Angel_BRIGHTNESS2:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffea8;amount=3;hS=0.15;vS=0.15;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body}
+  
+Dawnbringer_Angel_BRIGHTNESS3:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffea8;amount=7;hS=0.15;vS=0.15;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body}
+  
+# Divine Immolation #
+  
+Divine_Immolation:
+  Cooldown: 0.5
+  Conditions:
+  - crouching false
+  - hasaura{n=ATTACK_CD} false
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - skill{s=Divine_Immolation_1}
+  - skill{s=Divine_Immolation_2}
+  - skill{s=Dawnbringer_Angel_STACK} @self
+
+Divine_Immolation_1:
+  Cooldown: 0.3
+  Conditions:
+  - hasaura{n=Divine_Steps} false
+  - hasaura{n=ATTACK_CD} false
+  Skills:
+  - Aura{auraName=Divine_Steps;duration=40;delay=1} @self
+  - effect:sound{s=cleric_sounds:samus.mace_swing;volume=1;pitch="random(0.9, 1.1)"} @self
+  - totem{md=2;c=1;oH=Divine_Immolation_HIT_D;hnp=true;hp=true;hR=1.5;vR=1.5;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Divine_Immolation_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0;lockpitch=true}
+  
+Divine_Immolation_2:
+  Cooldown: 0.3
+  Conditions:
+  - hasaura{n=Divine_Steps} true
+  - hasaura{n=ATTACK_CD} false
+  Skills:
+  - auraremove{aura=Divine_Steps;delay=1} @self
+  - effect:sound{s=cleric_sounds:samus.mace_swing;volume=1;pitch="random(0.9, 1.1)"} @self
+  - totem{md=2;c=1;oH=Divine_Immolation_HIT_D2;hnp=true;hp=true;hR=1.5;vR=1.5;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Divine_Immolation_2;amount=2;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.6;sideOffset=-0.2;lockpitch=true}
+  
+Divine_Immolation_HIT_D:
+  Skills:
+  - skill{s=Divine_Immolation_HIT} @EntitiesNearOrigin{r=2.5}
+  - effect:sound{s=cleric_sounds:samus.mace_impact;volume=1;pitch=1} @self
+  
+Divine_Immolation_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - sudoskill{s=Force_Lunge_Right;cat=true}
+  - summon{type=Divine_Immolation_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  - Aura{auraName=ATTACK_CD;duration=2} @self
+  
+Force_Lunge_Right:
+  Skills:
+  - lunge{velocity=0.35;velocityY=0.01;repeat=2;repeati=1} @forward{f=-0.5;sideOffset=-1}
+  
+Divine_Immolation_HIT_D2:
+  Skills:
+  - skill{s=Divine_Immolation_HIT2} @EntitiesNearOrigin{r=2.5}
+  - effect:sound{s=cleric_sounds:samus.mace_impact;volume=1;pitch=1} @self
+  
+Divine_Immolation_HIT2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - sudoskill{s=Force_Lunge_Left;cat=true}
+  - summon{type=Divine_Immolation_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  - Aura{auraName=ATTACK_CD;duration=2} @self
+  
+Force_Lunge_Left:
+  Skills:
+  - lunge{velocity=0.35;velocityY=0.01;repeat=2;repeati=1} @forward{f=-0.5;sideOffset=1}
+  
+# Luminous Wave #
+  
+Luminous_Wave:
+  Conditions:
+  - crouching false
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - effect:sound{s=cleric_sounds:samus.light_wave;volume=0.6;pitch="random(0.9, 1.1)"} @self
+  - projectile{onHit=Luminous_Wave_HIT_D;v=15;i=1;hR=1;vR=1;mr=4;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0;lockpitch=true}
+  - summon{type=Luminous_Wave;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=3;y=0;sideOffset=0;lockpitch=true}
+  
+Luminous_Wave_HIT_D:
+  Skills:
+  - skill{s=Luminous_Wave_HIT} @EntitiesNearOrigin{r=2.5}
+  
+Luminous_Wave_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=2} @self
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=10;velocityY=0}
+  
+# Blessing Of The White Lantern #
+
+Blessing_Of_The_White_Lantern:
+  Conditions:
+  - hasaurastacks{auraName=Blessing_Of_The_White_Lantern_aura} castinstead Blessing_Of_The_White_Lantern_SKILL
+  Skills:
+  - Aura{auraName=Blessing_Of_The_White_Lantern_aura;interval=1;duration=5} @self
+  
+Blessing_Of_The_White_Lantern_T:
+  Skills:
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-2.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-2.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-2.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-2.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-1.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-1.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-1.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-1.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-1}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-0.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-0.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-0.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=-0.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=0.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=0.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=0.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=0.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=1}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=1.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=1.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=1.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=1.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=2.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=2.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=2.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6;y=0.1;sideOffset=2.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.4;y=0.1;sideOffset=-3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.4;y=0.1;sideOffset=3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.2;y=0.1;sideOffset=-3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.2;y=0.1;sideOffset=3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4;y=0.1;sideOffset=-3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4;y=0.1;sideOffset=3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.8;y=0.1;sideOffset=-3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.8;y=0.1;sideOffset=3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.6;y=0.1;sideOffset=-3.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.6;y=0.1;sideOffset=3.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4;y=0.1;sideOffset=-3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4;y=0.1;sideOffset=3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.2;y=0.1;sideOffset=-3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.2;y=0.1;sideOffset=3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3;y=0.1;sideOffset=-3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3;y=0.1;sideOffset=3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8;y=0.1;sideOffset=-3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8;y=0.1;sideOffset=3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.6;y=0.1;sideOffset=-4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.6;y=0.1;sideOffset=4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.4;y=0.1;sideOffset=-4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.4;y=0.1;sideOffset=4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.2;y=0.1;sideOffset=-4.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.2;y=0.1;sideOffset=4.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2;y=0.1;sideOffset=-4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2;y=0.1;sideOffset=4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.8;y=0.1;sideOffset=-4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.8;y=0.1;sideOffset=4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.6;y=0.1;sideOffset=-4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.6;y=0.1;sideOffset=4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.4;y=0.1;sideOffset=-4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.4;y=0.1;sideOffset=4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.2;y=0.1;sideOffset=-4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.2;y=0.1;sideOffset=4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1;y=0.1;sideOffset=-4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1;y=0.1;sideOffset=4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.8;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.8;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.6;y=0.1;sideOffset=-5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.6;y=0.1;sideOffset=5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.4;y=0.1;sideOffset=-5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.4;y=0.1;sideOffset=5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.2;y=0.1;sideOffset=-5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.2;y=0.1;sideOffset=5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.2;y=0.1;sideOffset=-5.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.2;y=0.1;sideOffset=5.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.4;y=0.1;sideOffset=-5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.4;y=0.1;sideOffset=5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.6;y=0.1;sideOffset=-5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.6;y=0.1;sideOffset=5.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.8;y=0.1;sideOffset=-5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.8;y=0.1;sideOffset=5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1;y=0.1;sideOffset=-5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1;y=0.1;sideOffset=5.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.2;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.2;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.4;y=0.1;sideOffset=-4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.4;y=0.1;sideOffset=4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.6;y=0.1;sideOffset=-4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.6;y=0.1;sideOffset=4.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.8;y=0.1;sideOffset=-4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.8;y=0.1;sideOffset=4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2;y=0.1;sideOffset=-4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2;y=0.1;sideOffset=4.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.2;y=0.1;sideOffset=-4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.2;y=0.1;sideOffset=4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.4;y=0.1;sideOffset=-4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.4;y=0.1;sideOffset=4.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.6;y=0.1;sideOffset=-4.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.6;y=0.1;sideOffset=4.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8;y=0.1;sideOffset=-4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8;y=0.1;sideOffset=4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3;y=0.1;sideOffset=-4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3;y=0.1;sideOffset=4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.2;y=0.1;sideOffset=-3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.2;y=0.1;sideOffset=3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4;y=0.1;sideOffset=-3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4;y=0.1;sideOffset=3.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.6;y=0.1;sideOffset=-3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.6;y=0.1;sideOffset=3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.8;y=0.1;sideOffset=-3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.8;y=0.1;sideOffset=3.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4;y=0.1;sideOffset=-3.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4;y=0.1;sideOffset=3.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.2;y=0.1;sideOffset=-3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.2;y=0.1;sideOffset=3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.4;y=0.1;sideOffset=-3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.4;y=0.1;sideOffset=3.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6;y=0.1;sideOffset=-3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6;y=0.1;sideOffset=3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.8;y=0.1;sideOffset=-3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.8;y=0.1;sideOffset=3}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-1.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-1.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-1.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-1.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-1}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-0.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-0.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-0.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-0.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=1}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=1.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=1.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=1.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=1.8}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2.2}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2.4}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2.6}
+  - effect:particles{particle=redstone;color=#ffffff;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2.8}
+
+Blessing_Of_The_White_Lantern_SKILL:
+  Cooldown: 9
+  Conditions:
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - effect:sound{s=cleric_sounds:samus.summon_lantern;volume=0.7;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Blessing_Of_The_White_Lantern;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Blessing_Of_The_White_Lantern_D;repeat="<modifier.duration>";repeatinterval=20} @PIR{r=6}
+  - skill{s=Blessing_Of_The_White_Lantern_A;repeat="<modifier.duration>";repeatinterval=20} @EIR{r=6}
+  - potion{type=DAMAGE_RESISTANCE;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - potion{type=FIRE_RESISTANCE;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  
+  - skill{s=Blessing_Of_The_White_Lantern_T;repeat="<modifier.duration> * 4";repeati=5} @Forward{f=0;y=0;sideOffset=0;lockpitch=true}
+  
+  - delay 20
+  
+  - effect:sound{s=cleric_sounds:samus.lantern_aura;volume=0.4;pitch=1;repeat="<modifier.duration> * 0.3";repeatinterval=40} @self
+  
+
+Blessing_Of_The_White_Lantern_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - potion{type=DAMAGE_RESISTANCE;duration=40;level=1;hasParticles=false}
+  - potion{type=FIRE_RESISTANCE;duration=40;level=1;hasParticles=false}
+  
+Blessing_Of_The_White_Lantern_A:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1;hasParticles=false}
+  
+# Divine Cross #
+
+Divine_Cross:
+  Cooldown: 10
+  Conditions:
+  - crouching true
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - effect:sound{s=cleric_sounds:samus.summon_cross;volume=0.85;pitch=1} @self
+  - summon{type=Divine_Cross;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  - totem{md=2;c=1;oT=Divine_Cross_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @forward{f=2}
+  - totem{md=100;oT=Divine_Cross_BUFF;hnp=false;hp=true;hR=1;vR=1;i=20} @forward{f=2}
+  
+  - delay 17
+  - effect:sound{s=cleric_sounds:samus.cross_land;volume=0.85;pitch=1} @self
+  
+Divine_Cross_DAMAGE:
+  Skills:
+  - skill{s=Divine_Cross_DAMAGE_D;delay=17} @EntitiesNearOrigin{r=12}
+  
+Divine_Cross_DAMAGE_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=2} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - throw{velocity=18;velocityY=0}
+  
+Divine_Cross_BUFF:
+  Skills:
+  - skill{s=Divine_Cross_BUFF_D;delay=17} @PlayersNearOrigin{r=12}
+  - skill{s=Divine_Cross_BUFF_D2;delay=17} @PlayersNearOrigin{r=12;target=self,players}
+  
+Divine_Cross_BUFF_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - heal{a="<modifier.heal>"}
+  - potion{type=SPEED;duration=30;level=2;hasParticles=false}
+  - effect:particles{particle=glow;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0}
+  - effect:particlering{particle=redstone;color=#8ef7ff;radius=1.4;points=20;amount=1;hS=0;vS=0;y=0.1;repeat=1;repeati=10}
+
+Divine_Cross_BUFF_D2:
+  TargetConditions:
+  - mmoCanTarget{interaction=SUPPORT_ACTION} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} false
+  Skills:
+  - heal{a="<modifier.heal>"}
+  - potion{type=SPEED;duration=30;level=2;hasParticles=false}
+  - effect:particles{particle=glow;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0}
+  - effect:particlering{particle=redstone;color=#8ef7ff;radius=1.4;points=20;amount=1;hS=0;vS=0;y=0.1;repeat=1;repeati=10}
+
+Divine_Cross_SPREAD:
+  Skills:
+  - effect:particlering{particle=redstone;color=#fffea8;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1} @self
+  
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=2;points=20;amount=1;hS=0;vS=0;y=0.1} @self
+  
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=3;points=40;amount=1;hS=0;vS=0;y=0.1} @self
+  
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=4;points=60;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=5;points=80;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=6;points=100;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=7;points=120;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=8;points=140;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=9;points=160;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=10;points=180;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=11;points=200;amount=1;hS=0;vS=0;y=0.1} @self
+
+  - delay 1
+  - effect:particlering{particle=redstone;color=#fffea8;radius=12;points=220;amount=1;hS=0;vS=0;y=0.1;repeat=19;repeati=5} @self
+
+# Tears Of God #
+
+Tears_Of_God:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Tears_Of_God_STACK
+  Skills:
+  - auraremove{aura=Tears_Of_God_STACK} @self
+  
+Tears_Of_God_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Tears_Of_God_STACK;stacks=4} castinstead Tears_Of_God_Skill
+  Skills:
+  - Aura{auraName=Tears_Of_God_STACK;duration=120;maxStacks=4} @self
+  - skill{s=Tears_Of_God_STACKFX}
+  
+Tears_Of_God_STACKFX:
+  Conditions:
+  - hasaurastacks{auraName=Tears_Of_God_STACK;stacks=>2} true
+  Skills:
+  - effect:particles{particle=drip_lava;amount=15;hS=0.2;vS=0.4;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Tears_Of_God_Skill:
+  Cooldown: 5
+  Conditions:
+  - health{h=<5} false
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - Aura{auraName=Tears_Of_God_Aura;duration=60} @self
+  - auraremove{aura=Tears_Of_God_STACK} @self
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false} @self
+  - heal{a="-<modifier.heal>"} @self
+  - projectile{v=25;oH=Tears_Of_God_HIT;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=true;sB=false;hs=false;hfs=0;sfo=0;syo=1.5;tyo=1.5} @Forward{f=10;y=0}
+
+  - effect:sound{s=cleric_sounds:samus.blood_drain;volume=0.8;pitch=1} @self
+  - projectile{vO=5;bulletType=MOB;mob=Blood_Vortex;v=1.5;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1;tyo=5} @Forward{f=0;y=5}
+  - projectile{vO=5;bulletType=MOB;mob=Blood_Vortex2;v=2;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1;tyo=5} @Forward{f=0;y=5}
+  - delay 20
+  - projectile{vO=5;bulletType=MOB;mob=Blood_Vortex;v=1.5;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1;tyo=5} @Forward{f=0;y=5}
+  - projectile{vO=5;bulletType=MOB;mob=Blood_Vortex2;v=2;i=1;hR=1;vR=1;mr=7;hnp=false;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=0;syo=1;tyo=5} @Forward{f=0;y=5}
+
+Tears_Of_God_HIT:
+  Skills:
+  - skill{s=Tears_Of_God_DROP} @PlayersNearOrigin{r=3;sort=NEAREST;limit=1}
+  
+Tears_Of_God_DROP:
+  TargetConditions:
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - delay 60
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false}
+  - summon{type=Tear_Drop;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:sound{s=cleric_sounds:samus.tear_drop;volume=0.8;pitch=1} @self
+  - delay 40
+  - heal{a="<modifier.heal>"}
+  - effect:sound{s=cleric_sounds:samus.god_embodiment_aura;volume=0.45;pitch=1;repeat="<modifier.duration> * 2";repeati=10}
+  - potion{type=REGENERATION;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - effect:particles{particle=glow;amount=10;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0;repeat="<modifier.duration>";repeati=20}
+  
+Tears_Of_God_ORBIT:
+  Skills:
+  - orbital{r=1.2;onTick=Tears_Of_God_ORBIT_TICK;points=25;interval=1;duration=80;oy=1}
+  
+Tears_Of_God_ORBIT2:
+  Skills:
+  - orbital{r=0.5;onTick=Tears_Of_God_ORBIT_TICK2;points=16;interval=1;duration=80;oy=1;rx=3.14;ry=0;rz=3.14}
+
+Tears_Of_God_ORBIT_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#490000;amount=2;speed=0;hS=0;vS=0} @origin
+
+Tears_Of_God_ORBIT_TICK2:
+  Skills:
+  - effect:particles{p=redstone;color=#a40000;amount=2;speed=0;hS=0;vS=0} @origin
+
+# Divine Punishment #
+
+Divine_Punishment:
+  Cooldown: 12
+  Conditions:
+  - crouching true
+  - hasaura{n=Divine_Punishment_ACTIVATED} false
+  Skills:
+  - onDamaged{auraName=Divine_Punishment_God;cancelEvent=true;d="<modifier.duration> * 20"} @self
+  - Aura{auraName=Divine_Punishment_ACTIVATED;duration="<modifier.duration> * 20"} @self
+  - effect:sound{s=cleric_sounds:samus.heavenly_choir;volume=0.9;pitch=1} @self
+  - effect:sound{s=cleric_sounds:samus.god_embodiment_start;volume=0.7;pitch=1;delay=10} @self
+  - orbital{bulletType=MOB;mob=Divine_Punishment;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Divine_Punishment_D;repeat="<modifier.duration>";repeatinterval=20} @PIR{r=8.5}
+  - skill{s=Divine_Punishment_A;repeat="<modifier.duration>";repeatinterval=20} @EIR{r=8.5}
+  - potion{type=INCREASE_DAMAGE;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - potion{type=INVISIBILITY;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - hide{d="<modifier.duration> * 20"} @Server
+  - skill{s=Divine_Punishment_T;repeat="<modifier.duration> * 4";repeati=5} @Forward{f=0;y=0;sideOffset=0;lockpitch=true}
+  - delay 20
+  
+  - effect:sound{s=cleric_sounds:samus.god_embodiment_aura;volume=0.4;pitch=1;repeat="<modifier.duration> * 1.5";repeati=15} @self
+  
+Divine_Punishment_T:
+  Skills:
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.4375;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.4375;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.4375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.4375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.4375;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.28125;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.125;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.125;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.125;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=8.125;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.96875;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.96875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.8125;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.8125;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.8125;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.8125;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.65625;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.65625;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.5;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.5;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=-1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=-1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.34375;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.1875;y=0.1;sideOffset=1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=-2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=-2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=-2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=7.03125;y=0.1;sideOffset=2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=-2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=-2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.875;y=0.1;sideOffset=2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.71875;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.5625;y=0.1;sideOffset=3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=-3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=-1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.40625;y=0.1;sideOffset=3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=-1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.25;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=6.09375;y=0.1;sideOffset=4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.9375;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.9375;y=0.1;sideOffset=-1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.9375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.9375;y=0.1;sideOffset=1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.9375;y=0.1;sideOffset=4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=-1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.78125;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=-2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.625;y=0.1;sideOffset=4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.46875;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.46875;y=0.1;sideOffset=-2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.46875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.46875;y=0.1;sideOffset=1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.46875;y=0.1;sideOffset=4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.3125;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.3125;y=0.1;sideOffset=-2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.3125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.3125;y=0.1;sideOffset=2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.3125;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=-2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5.15625;y=0.1;sideOffset=5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5;y=0.1;sideOffset=-2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5;y=0.1;sideOffset=2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=5;y=0.1;sideOffset=5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.84375;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.84375;y=0.1;sideOffset=-2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.84375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.84375;y=0.1;sideOffset=2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.84375;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=-2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.6875;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.53125;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.53125;y=0.1;sideOffset=-3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.53125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.53125;y=0.1;sideOffset=2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.53125;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.375;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.375;y=0.1;sideOffset=-3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.375;y=0.1;sideOffset=2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.375;y=0.1;sideOffset=5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.21875;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.21875;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.21875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.21875;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.21875;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=-3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=4.0625;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.90625;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.90625;y=0.1;sideOffset=-3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.90625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.90625;y=0.1;sideOffset=3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.90625;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.75;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.75;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.75;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.75;y=0.1;sideOffset=3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.75;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.59375;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.4375;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.28125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=3.125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.96875;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.8125;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.65625;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.5;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.34375;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.1875;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=2.03125;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.875;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.71875;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.5625;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.40625;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.25;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=1.09375;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-7.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.9375;y=0.1;sideOffset=7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=7.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.78125;y=0.1;sideOffset=7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=-8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.625;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.46875;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.46875;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.46875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.46875;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.46875;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=-8.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.3125;y=0.1;sideOffset=8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.15625;y=0.1;sideOffset=-8.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.15625;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.15625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.15625;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0.15625;y=0.1;sideOffset=8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-8.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=0;y=0.1;sideOffset=8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.15625;y=0.1;sideOffset=-8.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.15625;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.15625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.15625;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.15625;y=0.1;sideOffset=8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=-8.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.3125;y=0.1;sideOffset=8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.46875;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.46875;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.46875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.46875;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.46875;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=-8.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=-8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.625;y=0.1;sideOffset=8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-8.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-8.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=7.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.78125;y=0.1;sideOffset=7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-7.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-7.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-0.9375;y=0.1;sideOffset=7.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.09375;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.09375;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.09375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.09375;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.09375;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.25;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.25;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.25;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.25;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.25;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=-7.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.40625;y=0.1;sideOffset=7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.5625;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.5625;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.5625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.5625;y=0.1;sideOffset=5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.5625;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.71875;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.71875;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.71875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.71875;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.71875;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.875;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.875;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.875;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-1.875;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=-7.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.03125;y=0.1;sideOffset=7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.1875;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.1875;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.1875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.1875;y=0.1;sideOffset=5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.1875;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.34375;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.34375;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.34375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.34375;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.34375;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.5;y=0.1;sideOffset=-7.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.5;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.5;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.5;y=0.1;sideOffset=4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.5;y=0.1;sideOffset=6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.65625;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.65625;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.65625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.65625;y=0.1;sideOffset=4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.65625;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8125;y=0.1;sideOffset=-7.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8125;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8125;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.8125;y=0.1;sideOffset=6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.96875;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.96875;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.96875;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.96875;y=0.1;sideOffset=4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-2.96875;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.125;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.125;y=0.1;sideOffset=4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=-6.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.28125;y=0.1;sideOffset=6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4375;y=0.1;sideOffset=-6.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4375;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4375;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.4375;y=0.1;sideOffset=6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.59375;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.59375;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.59375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.59375;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.59375;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.75;y=0.1;sideOffset=-6.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.75;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.75;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.75;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.75;y=0.1;sideOffset=6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.90625;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.90625;y=0.1;sideOffset=-3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.90625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.90625;y=0.1;sideOffset=3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-3.90625;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=-6.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=-3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.0625;y=0.1;sideOffset=6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.21875;y=0.1;sideOffset=-6.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.21875;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.21875;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.21875;y=0.1;sideOffset=3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.21875;y=0.1;sideOffset=5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.375;y=0.1;sideOffset=-6.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.375;y=0.1;sideOffset=-3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.375;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.375;y=0.1;sideOffset=5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.53125;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.53125;y=0.1;sideOffset=-3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.53125;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.53125;y=0.1;sideOffset=2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.53125;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=-5.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=-2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.6875;y=0.1;sideOffset=5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.84375;y=0.1;sideOffset=-5.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.84375;y=0.1;sideOffset=-2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.84375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.84375;y=0.1;sideOffset=2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-4.84375;y=0.1;sideOffset=5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-5.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=-2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5;y=0.1;sideOffset=5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=-5.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=-2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.15625;y=0.1;sideOffset=5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.3125;y=0.1;sideOffset=-5.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.3125;y=0.1;sideOffset=-2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.3125;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.3125;y=0.1;sideOffset=2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.3125;y=0.1;sideOffset=5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.46875;y=0.1;sideOffset=-5.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.46875;y=0.1;sideOffset=-2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.46875;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.46875;y=0.1;sideOffset=2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.46875;y=0.1;sideOffset=4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=-5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=-2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=-1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.625;y=0.1;sideOffset=4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=-4.84375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=-4.6875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=-1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.78125;y=0.1;sideOffset=4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.9375;y=0.1;sideOffset=-4.53125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.9375;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.9375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.9375;y=0.1;sideOffset=1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-5.9375;y=0.1;sideOffset=4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=-4.375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=-1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.09375;y=0.1;sideOffset=4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=-4.21875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=-4.0625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=-1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.25;y=0.1;sideOffset=3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=-3.90625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=-3.75}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.40625;y=0.1;sideOffset=3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=-3.59375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.5625;y=0.1;sideOffset=3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-3.4375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-3.28125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.71875;y=0.1;sideOffset=3.125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=-2.96875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=-2.8125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-6.875;y=0.1;sideOffset=2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=-2.65625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=-2.5}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=-2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.03125;y=0.1;sideOffset=2.34375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-2.1875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-2.03125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=1.71875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.1875;y=0.1;sideOffset=1.875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=-1.5625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=-1.40625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=-1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=-1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=1.09375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.34375;y=0.1;sideOffset=1.25}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.5;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.5;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.65625;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.65625;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.8125;y=0.1;sideOffset=-0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.8125;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.8125;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.8125;y=0.1;sideOffset=0.9375}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.96875;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-7.96875;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.125;y=0.1;sideOffset=-0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.125;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.125;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.125;y=0.1;sideOffset=0.78125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=-0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=-0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=0.46875}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.28125;y=0.1;sideOffset=0.625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.4375;y=0.1;sideOffset=-0.3125}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.4375;y=0.1;sideOffset=-0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.4375;y=0.1;sideOffset=0}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.4375;y=0.1;sideOffset=0.15625}
+  - effect:particles{particle=redstone;color=#fffea8;amount=1;size=0.75;hS=0;vS=0;speed=0;forwardOffset=-8.4375;y=0.1;sideOffset=0.3125}
+
+  
+Divine_Punishment_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=SUPPORT_ACTION} true
+  Skills:
+  - potion{type=INCREASE_DAMAGE;duration=40;level=1;hasParticles=false}
+  - heal{a="<modifier.heal>"}
+  - effect:particles{particle=glow;amount=10;hS=0.3;vS=0.7;y=0.8;speed=0;forwardOffset=0;sideOffset=0}
+  
+Divine_Punishment_A:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - potion{type=WEAKNESS;duration=40;level=1;hasParticles=false}
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false}
+  - potion{type=BLINDNESS;duration=40;level=1;hasParticles=false}
+  - damage{a="<modifier.damage>";delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self

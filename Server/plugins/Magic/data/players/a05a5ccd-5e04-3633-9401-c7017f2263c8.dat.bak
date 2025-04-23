@@ -1,0 +1,34 @@
+id: a05a5ccd-5e04-3633-9401-c7017f2263c8
+name: Satoru_G
+created: 1739652260833
+updated: 1739662219347
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 84de96e64424,65585e7cb1f4,50502995c61
+    mana_timestamp: 1739662219230
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 20.200000762939453

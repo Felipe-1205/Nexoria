@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.102.124.27
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739757552143
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739831824339
+  login: 1739831584911
+money: '0'
+last-account-name: SafiroBarabaja22
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2989.187572219324
+  y: 80.0
+  z: 459.7131399840731
+  yaw: 36.60002136230469
+  pitch: 15.899998664855957
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 36.578813644127216
+  y: 80.0
+  z: 36.41089403639206
+  yaw: -9.092987060546875
+  pitch: -1.4332716464996338
+nickname: Selly

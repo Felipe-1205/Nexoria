@@ -1,0 +1,52 @@
+
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+bulbPETPET:
+  Cooldown: 6
+  Skills:
+  - randomskill{skills=bulbPET1,bulbPET2,bulbPET3} @self
+  
+  
+bulbPET1:
+  Skills:
+  - effect:particles{particle=note;amount=1;hS=0;vS=0;speed=0} @origin{y=1.25}
+  - sound{s=littleroom_bulb:littleroom.bulb.idle1;v=1;sc=HOSTILE} @self 
+  
+bulbPET2:
+  Skills:
+  - effect:particles{particle=note;amount=1;hS=0;vS=0;speed=0} @origin{y=1.25}
+  - sound{s=littleroom_bulb:littleroom.bulb.idle2;v=1;sc=HOSTILE} @self 
+  
+bulbPET3:
+  Skills:
+  - effect:particles{particle=note;amount=1;hS=0;vS=0;speed=0} @origin{y=1.25}
+  - sound{s=littleroom_bulb:littleroom.bulb.idle3;v=1;sc=HOSTILE} @self 
+  
+  
+bulbPETSPAWN:
+  Skills:
+  - DefaultState{mid=bulb;t=IDLE;s=outidle} @self
+  - DefaultState{mid=bulbcacti;t=IDLE;s=outidle} @self
+  - DefaultState{mid=bulbshroom;t=IDLE;s=outidle} @self
+  - DefaultState{mid=bulbwitherrose;t=IDLE;s=outidle} @self
+  - DefaultState{mid=bulbfungi;t=IDLE;s=outidle} @self
+  - DefaultState{mid=bulb_sunflower;t=IDLE;s=outidle} @self
+  - delay 1
+  - sound{s=littleroom_bulb:littleroom.bulb.surprise;v=1;sc=HOSTILE} @self 
+  - state{s=surprise} @self
+  - delay 15
+  - effect:particles{particle=block;m=dirt;amount=200;hS=0.5;vS=0.5} @self
+  - effect:particles{particle=heart;amount=1;hS=0;vS=0;speed=0} @origin{y=2}
+  - delay 100 
+  
+  
+bulbPETDESPAWN:
+  Skills:
+  - sound{s=littleroom_bulb:littleroom.bulb.poof;v=1;sc=HOSTILE} @self 
+  - effect:particles{particle=firework;amount=5;speed=0} @self
+  - effect:particles{particle=campfire_cosy_smoke;amount=5;hS=.5;vS=.5;speed=0} @self
+  - effect:particles{particle=cloud;amount=100;hS=.5;vS=.5;speed=0} @self
+  - remove @self

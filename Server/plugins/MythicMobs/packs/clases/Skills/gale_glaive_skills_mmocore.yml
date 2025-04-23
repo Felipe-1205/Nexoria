@@ -1,0 +1,612 @@
+######## created by samus2002 #########
+
+
+# Windrune Blade #
+
+Windrune_Blade:
+  Skills:
+  - Aura{auraName=Windrune_Blade;duration=20} @self
+  - potion{type=JUMP_BOOST;duration=10;level=0;hasParticles=false} @self
+  - orbital{onTick=Windrune_Blade_FX;r=0.8;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=15;onTick=Windrune_Blade_FX;r=0.8;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+  - orbital{startingpoint=30;onTick=Windrune_Blade_FX;r=0.8;points=45;i=1;duration=45;oy=0.2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0;cooldown=1.5} @self
+
+Windrune_Blade_FX:
+  Skills:
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;size=0.45;amount=5;hS=0.02;vS=0.02;speed=0} @origin
+  
+# Gale Slash #
+
+Gale_Slash:
+  Skills:
+  - skill{s=Gale_Slash_Stack_1}
+  - skill{s=Gale_Slash_Stack_2}
+  - skill{s=Gale_Slash_Stack_3}
+  - skill{s=Zephyr_Strike}
+
+
+
+Gale_Slash_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=1} false
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=2} false
+  - haspotioneffect{t=SLOW_FALLING} false
+  Skills:
+  - Aura{auraName=Gale_Slash_Stack;duration=200;maxStacks=2;delay=1} @self
+  - totem{md=2;c=1;oH=Gale_Slash_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Gale_Slash_Up_Down;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.1;sideOffset=0;lockpitch=true}
+  - effect:sound{s=entity.player.attack.sweep;volume=0.4;pitch=0.6} @self
+  - effect:sound{s=item.trident.hit;volume=0.3;pitch=1} @self
+  - effect:sound{s=entity.breeze.slide;volume=0.8;pitch=1.1} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.4;pitch=0.7} @self
+  - effect:sound{s=block.ancient_debris.hit;volume=0.2;pitch=1.6} @self
+  - effect:sound{s=entity.player.attack.weak;volume=0.6;pitch=0.8} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.8} @self
+  
+Gale_Slash_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=1} true
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=2} false
+  - haspotioneffect{t=SLOW_FALLING} false
+  Skills:
+  - Aura{auraName=Gale_Slash_Stack;duration=200;maxStacks=2;delay=1} @self
+  - totem{md=2;c=1;oH=Gale_Slash_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Gale_Slash_Down_Up;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.1;sideOffset=0;lockpitch=true}
+  - effect:sound{s=entity.player.attack.sweep;volume=0.4;pitch=0.6} @self
+  - effect:sound{s=item.trident.hit;volume=0.3;pitch=1} @self
+  - effect:sound{s=entity.breeze.slide;volume=0.8;pitch=1.1} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.4;pitch=0.7} @self
+  - effect:sound{s=block.ancient_debris.hit;volume=0.2;pitch=1.6} @self
+  - effect:sound{s=entity.player.attack.weak;volume=0.6;pitch=0.8} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.8} @self
+  
+Gale_Slash_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=1} false
+  - hasaurastacks{auraName=Gale_Slash_Stack;stacks=2} true
+  - onground true
+  - haspotioneffect{t=SLOW_FALLING} false
+  Skills:
+  - auraremove{aura=Gale_Slash_Stack} @self
+  - totem{md=2;c=1;oH=Gale_Slash_DAMAGE2_D;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1.7;lockpitch=true}
+  - summon{type=VFX_Gale_Thrust;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=0.3;sideOffset=0;lockpitch=true}
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.4;pitch=1.8} @self
+  - effect:sound{s=entity.shulker.shoot;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.4;pitch=1.9} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.8} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.8;pitch=0.7} @self
+
+
+Gale_Slash_DAMAGE_D:
+  Skills:
+  - skill{s=Gale_Slash_DAMAGE} @EntitiesNearOrigin{r=4;limit=5}
+  
+Gale_Slash_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - skill{s=Gale_Slash_LEVITATE}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+Gale_Slash_LEVITATE:
+  Conditions:
+  - hasaura{n=Windrune_Blade} true
+  Skills:
+  - potion{type=LEVITATION;duration=8;level=2;hasParticles=false}
+  
+  
+Gale_Slash_DAMAGE2_D:
+  Skills:
+  - skill{s=Gale_Slash_DAMAGE2} @EntitiesNearOrigin{r=4;limit=5}
+  
+Gale_Slash_DAMAGE2:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - skill{s=Gale_Slash_LEVITATE}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - pull{velocity=7;to=true}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+
+
+
+
+Minus_Slowfalling:
+  Skills:
+  - skill{s=Minus_Slowfalling_1}
+  - skill{s=Minus_Slowfalling_2}
+  - skill{s=Minus_Slowfalling_3}
+  - skill{s=Minus_Slowfalling_4}
+  
+Minus_Slowfalling_1:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=0} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+Minus_Slowfalling_2:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=1} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=0;hasParticles=false} @self
+Minus_Slowfalling_3:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=2} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=1;hasParticles=false} @self
+Minus_Slowfalling_4:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=3} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=2;hasParticles=false} @self
+  
+  
+  
+  
+  
+Add_Slowfalling:
+  Skills:
+  - skill{s=Add_Slowfalling_4}
+  - skill{s=Add_Slowfalling_3}
+  - skill{s=Add_Slowfalling_2}
+  - skill{s=Add_Slowfalling_1}
+  
+Add_Slowfalling_1:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING} false
+  Skills:
+  - potion{type=SLOW_FALLING;duration=999999;level=0;hasParticles=false} @self
+Add_Slowfalling_2:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=0} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=1;hasParticles=false} @self
+Add_Slowfalling_3:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=1} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=2;hasParticles=false} @self
+Add_Slowfalling_4:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING;l=2} true
+  Skills:
+  - potionclear{type=SLOW_FALLING}
+  - potion{type=SLOW_FALLING;duration=999999;level=3;hasParticles=false} @self
+  
+  
+  
+Zephyr_Strike:
+  Conditions:
+  - haspotioneffect{t=SLOW_FALLING} true
+  Skills:
+  - skill{s=Minus_Slowfalling} @self
+  
+  #- lunge{velocity=1;velocityY=0.2;repeat=5;repeatinterval=1} @forward{f=1;y=0}
+  - propel{v=2.2;delay=1} @forward{f=3;y=0.2}
+  - potion{type=LEVITATION;duration=10;level=-1;hasParticles=false;delay=5} @self
+  - totem{delay=3;md=2;c=1;oH=Zephyr_Strike_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=1;repeat=2;repeatinterval=3} @forward{f=1}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0;repeat=5;repeati=1} @self
+  
+  - delay 5
+  
+  - summon{type=VFX_Gale_Thrust;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=0.3;sideOffset=0}
+  
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.4;pitch=1.8} @self
+  - effect:sound{s=entity.shulker.shoot;volume=0.8;pitch=1.2} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.4;pitch=1.9} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.8} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.8;pitch=0.7} @self
+  
+Zephyr_Strike_DAMAGE_D:
+  Skills:
+  - skill{s=Zephyr_Strike_DAMAGE} @EntitiesNearOrigin{r=4;limit=5}
+  
+Zephyr_Strike_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Zephyr_Strike_DAMAGE} false
+  Skills:
+  - skill{s=Gale_Slash_LEVITATE}
+  - Aura{auraName=Zephyr_Strike_DAMAGE;duration=10}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  
+  
+# Vault #
+
+Vault:
+  Skills:
+  - Aura{auraName=Vault;duration=30} @self
+  - potion{type=SLOW_FALLING;duration=999999;level=2;hasParticles=false} @self
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0;repeat=6;repeati=1} @self
+  - lunge{velocity=0.3;velocityY=1.1} @forward{f=2;y=7;lockpitch=true}
+  - summon{type=VFX_Vault;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;lockpitch=true}
+  - effect:sound{s=entity.breeze.shoot;volume=0.8;pitch=1.1} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.6;pitch=1.5} @self
+  - effect:sound{s=item.armor.equip_leather;volume=0.8;pitch=1.4} @self
+
+# Dancing Blade #
+
+Dancing_Blade:
+  Skills:
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=0.5;size=0.45;amount=20;y=0.6;delay=9} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=1;size=0.45;y=0.6;amount=40;delay=8} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=1.5;size=0.45;y=0.6;amount=60;delay=7} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=2;size=0.45;y=0.6;amount=80;delay=6} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=2.5;size=0.45;y=0.6;amount=100;delay=5} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=3;size=0.45;y=0.6;amount=120;delay=4} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=3.5;size=0.45;y=0.6;amount=140;delay=3} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4;size=0.45;y=0.6;amount=170;delay=2} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4.5;size=0.45;y=0.6;amount=200;delay=1} @self
+  - effect:particlesphere{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=5;size=0.45;y=0.6;amount=230} @self
+  - effect:sound{s=entity.breeze.idle_air;volume=0.8;pitch=0.9} @self
+  
+  - potion{type=SLOW;duration=14;level=50;hasParticles=false} @self
+  
+  - delay 15
+  
+  - summon{type=VFX_Dancing_Blade_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0;lockpitch=true}
+  - propel{v=3;delay=1} @forward{f=3;y=0.2}
+  - totem{delay=3;md=2;c=1;oH=Dancing_Blade_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=1;repeat=2;repeatinterval=2} @forward{f=1}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0;repeat=6;repeati=1} @self
+  
+  - delay 5
+  
+  - summon{type=VFX_Dancing_Blade_Thrust;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=2;y=0.3;sideOffset=0}
+  
+  - effect:sound{s=entity.warden.attack_impact;volume=0.7;pitch=0.9} @self
+  - effect:sound{s=entity.ender_dragon.growl;volume=0.3;pitch=1.7} @self
+  - effect:sound{s=entity.bat.takeoff;volume=0.5;pitch=0.75} @self
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.75} @self
+  - effect:sound{s=entity.breeze.idle_ground;volume=0.8;pitch=1.7} @self
+  
+Dancing_Blade_DAMAGE_D:
+  Skills:
+  - skill{s=Dancing_Blade_DAMAGE} @EntitiesNearOrigin{r=4;limit=3}
+  
+Dancing_Blade_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Dancing_Blade_DAMAGE} false
+  Skills:
+  #- skill{s=Gale_Slash_LEVITATE}
+  - potion{type=SLOW_FALLING;duration=40;level=0;hasParticles=false;delay=7}
+  - Aura{auraName=Dancing_Blade_DAMAGE;duration=10}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=12;delay=1}
+  - lunge{velocity=0.4;velocityY=1.2;delay=1} @forward{f=0;y=7;lockpitch=true}
+  - skill{s=Add_Slowfalling} @self
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+# Torrent #
+
+Torrent:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Torrent_STACK
+  - hasaura{n=Torrent_COOLDOWN} false
+  Skills:
+  - skill{s=Torrent_SLASH}
+  - auraremove{aura=Torrent_STACK} @self
+  - auraremove{aura=TorrentORBITAL} @self
+  - auraremove{aura=Torrent_SPIN} @self
+  
+  
+Torrent_STACK:
+  Conditions:
+  - hasaura{n=Torrent_COOLDOWN} false
+  - hasaurastacks{auraName=Torrent_STACK;stacks=2} castinstead Torrent_DOUBLE
+  Skills:
+  - Aura{auraName=Torrent_STACK;duration=99999;maxStacks=2} @self
+  
+Torrent_DOUBLE:
+  Conditions:
+  - hasaurastacks{auraName=Torrent_SPIN;stacks=10} castinstead Torrent_SLASH_FINISH
+  Skills:
+  - skill{s=Torrent_Spin_Skill}
+  - skill{s=Torrent_Spin_Skill2}
+Torrent_Spin_Skill:
+  Conditions:
+  - hasaura{n=TorrentORBITAL} false
+  Skills:
+  - orbital{auraName=TorrentORBITAL;bulletType=MOB;mob=VFX_Torrent_Twirl;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=99999;oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+Torrent_Spin_Skill2:
+  Skills:
+  - Aura{auraName=Torrent_SPIN;duration=99999;maxStacks=10} @self
+  - skill{s=Torrent_RING} @self
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;size=0.45;radius=7;points=250;amount=1;hS=0;vS=0;y=0.1;repeat=1;repeati=4} @self
+  - effect:sound{s=item.trident.return;volume=0.8;pitch=0.8;repeat=1;repeati=5} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.1;pitch=1.4;repeat=1;repeati=5} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.8;pitch=1;repeat=1;repeati=5} @self
+  - skill{s=Torrent_Spin_PULL_D;repeat=2;repeati=3} @EIR{r=7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0;repeat=1;repeati=4} @self
+  
+Torrent_Spin_PULL_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  #- pull{velocity=2;to=true}
+  - throw{velocity=-1;velocityY=1}
+  
+Torrent_RING:
+  Cooldown: 1
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1;delay=9}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=2;points=20;amount=1;hS=0;vS=0;y=0.1;delay=8}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=3;points=30;amount=1;hS=0;vS=0;y=0.1;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4;points=40;amount=1;hS=0;vS=0;y=0.1;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4.5;points=60;amount=1;hS=0;vS=0;y=0.1;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=5;points=70;amount=1;hS=0;vS=0;y=0.1;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=5.5;points=80;amount=1;hS=0;vS=0;y=0.1;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=6;points=90;amount=1;hS=0;vS=0;y=0.1;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=6.5;points=100;amount=1;hS=0;vS=0;y=0.1;delay=1}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=7;points=110;amount=1;hS=0;vS=0;y=0.1}
+  
+  
+  
+  
+
+Torrent_SLASH_FINISH:
+  Skills:
+  - skill{s=Torrent_SLASH}
+  - auraremove{aura=Torrent_STACK} @self
+  - auraremove{aura=TorrentORBITAL} @self
+  - auraremove{aura=Torrent_SPIN} @self
+  
+Torrent_SLASH:
+  Cooldown: 1
+  Conditions:
+  - hasaura{n=Torrent_SPIN} true
+  - hasaura{n=Torrent_COOLDOWN} false
+  Skills:
+  - Aura{auraName=Torrent_COOLDOWN;duration="<modifier.skillcooldown> * 20"} @self
+  - totem{md=2;c=1;oH=Torrent_SLASH_DAMAGE_D;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=0.3;lockpitch=true}
+  - summon{type=VFX_Torrent_Slash_1;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.1;sideOffset=0;lockpitch=true}
+  - summon{type=VFX_Torrent_Slash_2;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0.2;y=0.1;sideOffset=0;lockpitch=true}
+  - effect:sound{s=entity.allay.item_taken;volume=0.3;pitch=1} @self
+  - effect:sound{s=block.amethyst_block.place;volume=0.8;pitch=2} @self
+  - effect:sound{s=entity.warden.sonic_boom;volume=0.8;pitch=1.6} @self
+  - effect:sound{s=block.copper.step;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.phantom.flap;volume=0.8;pitch=1.3} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.7;pitch=0.9} @self
+  - effect:sound{s=item.trident.hit;volume=0.3;pitch=1.6} @self
+  - effect:sound{s=entity.player.attack.crit;volume=0.3;pitch=1.3} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.5;pitch=1.2} @self
+  
+Torrent_SLASH_DAMAGE_D:
+  Skills:
+  - skill{s=Torrent_SLASH_DAMAGE} @EntitiesNearOrigin{r=6}
+  
+Torrent_SLASH_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - throw{velocity=23;velocityY=2;delay=4}
+  #- skill{s=Gale_Slash_LEVITATE;delay=1}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+# Cloudpiercer #
+
+Cloudpiercer:
+  Skills:
+  - potion{type=SLOW;duration=15;level=4;hasParticles=false} @self
+  - effect:sound{s=entity.breeze.idle_air;volume=0.8;pitch=0.9} @self
+  - summon{type=VFX_Cloudpiercer_Charge;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.5}
+  
+  - delay 15
+  
+  - summon{type=VFX_Cloudpiercer_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.5}
+  - projectile{bulletmatchdirection=true;g=0.1;bulletType=MOB;mob=VFX_Cloudpiercer_Spear;onHit=Cloudpiercer_HIT_D;onHitBlockSkill=Cloudpiercer_SUMMON_TORNADO;v=25;i=1;hR=1;vR=1;mr=50;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=0.3;syo=2.2;tyo=1.9;sso=0;hitConditions=[- entitytype{t=ARMOR_STAND} false]} @Forward{f=25;y=0}
+  - effect:sound{s=item.trident.riptide_2;volume=0.3;pitch=1.2} @self
+  - effect:sound{s=item.armor.equip_netherite;volume=0.8;pitch=2} @self
+  - effect:sound{s=entity.player.attack.weak;volume=0.8;pitch=1} @self
+  - effect:sound{s=item.crossbow.loading_end;volume=0.8;pitch=1.5} @self
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.fishing_bobber.throw;volume=0.3;pitch=1.2} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.7;pitch=1.5} @self
+  
+Cloudpiercer_HIT_D:
+  Skills:
+  - skill{s=Cloudpiercer_HIT} @EntitiesNearOrigin{r=3}
+  
+Cloudpiercer_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Cloudpiercer_HIT} false
+  Skills:
+  - skill{s=Gale_Slash_LEVITATE}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - Aura{auraName=Cloudpiercer_HIT;duration=10}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+Cloudpiercer_SUMMON_TORNADO:
+  Skills:
+  - summon{type=VFX_Cloudpiercer_Tornado;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - effect:sound{s=block.enchantment_table.use;volume=0.6;pitch=0.6} @self
+  - effect:sound{s=entity.wind_charge.wind_burst;volume=0.6;pitch=0.5} @self
+  - effect:sound{s=entity.phantom.flap;volume=0.8;pitch=1.7} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.3;pitch=2} @self
+  - effect:sound{s=item.elytra.flying;volume=0.2;pitch=2} @self
+  - effect:sound{s=entity.warden.step;volume=0.5;pitch=0.5} @self
+  
+  - totem{md=140;oT=Cloudpiercer_Aura_Pull_D;hnp=true;hp=true;hR=2;vR=1;i=5} @origin
+  - totem{md=140;oT=Cloudpiercer_Aura_Damage_D;hnp=true;hp=true;hR=2;vR=1;i=20} @origin
+
+Cloudpiercer_Aura_Pull_D:
+  Skills:
+  - skill{s=Cloudpiercer_Aura_Pull} @EntitiesNearOrigin{r=5}
+  
+Cloudpiercer_Aura_Pull:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - pull{velocity=4;to=true}
+  
+Cloudpiercer_Aura_Damage_D:
+  Skills:
+  - skill{s=Cloudpiercer_Aura_Damage} @EntitiesNearOrigin{r=5}
+  
+Cloudpiercer_Aura_Damage:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - skill{s=Gale_Slash_LEVITATE}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+
+  
+# Windbound Fury #
+
+Windbound_Fury:
+  Skills:
+  - summon{type=VFX_Windbound_Fury_Tornado;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - onDamaged{auraName=Windbound_Fury;d=100;cE=true;deflectProjectiles=true} @self
+  - potion{type=LEVITATION;duration=80;level=1;hasParticles=false} @self
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;size=0.45;radius=15;points=350;amount=1;hS=0;vS=0;y=0.1;repeat=19;repeati=4} @self
+  - effect:sound{s=entity.wither.ambient;volume=0.8;pitch=0.8} @self
+  - effect:sound{s=entity.evoker.cast_spell;volume=0.1;pitch=1.4} @self
+  - effect:sound{s=entity.wither.ambient;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.blaze.ambient;volume=0.8;pitch=1} @self
+  - effect:sound{s=entity.warden.heartbeat;volume=0.8;pitch=1} @self
+  - skill{s=Windbound_Fury_PULL_D;repeat=80;repeati=1} @EIR{r=15}
+  
+  - delay 80
+  
+  #SLASHDOWN
+  - skill{s=Windbound_Fury_Slash_DAMAGE} @EIR{r=7}
+  - orbital{auraName=VFX_Windbound_Fury_SpinSlash_Vert;bulletType=MOB;mob=VFX_Windbound_Fury_SpinSlash_Vert;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=15;oy=1.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=entity.player.attack.sweep;volume=0.4;pitch=0.6;repeat=3;repeati=3} @self
+  - effect:sound{s=item.trident.hit;volume=0.3;pitch=1;repeat=3;repeati=3} @self
+  - effect:sound{s=entity.breeze.slide;volume=0.8;pitch=1.1;repeat=3;repeati=3} @self
+  - effect:sound{s=entity.breeze.wind_burst;volume=0.4;pitch=0.7;repeat=3;repeati=3} @self
+  - effect:sound{s=block.ancient_debris.hit;volume=0.2;pitch=1.6;repeat=3;repeati=3} @self
+  - effect:sound{s=entity.player.attack.weak;volume=0.6;pitch=0.8;repeat=3;repeati=3} @self
+  - effect:sound{s=entity.wither.shoot;volume=0.3;pitch=1.8;repeat=3;repeati=3} @self
+  
+  - delay 5
+  
+  - leap{velocity=400} @forward{f=0.1;y=-5;lockpitch=true}
+  - delay 5
+  
+  - effect:sound{s=entity.zombie.break_wooden_door;volume=0.7;pitch=1.2} @self
+  - effect:sound{s=block.glass.break;volume=0.7;pitch=0.4} @self
+  - effect:sound{s=entity.warden.attack_impact;volume=0.75;pitch=0.4} @self
+  - effect:sound{s=entity.dragon_fireball.explode;volume=0.5;pitch=0.7} @self
+  - effect:sound{s=entity.warden.death;volume=0.6;pitch=0.65} @self
+  - summon{type=VFX_Ground_Crack_Windbound_Fury;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0;y=0.1}
+  - summon{type=VFX_Windbound_Fury_Ground_Crack_Debris;amount=1;radius=0;yRadius=0;onSurface=false} @forward{f=0;y=0}
+  - skill{s=Windbound_Fury_HIT} @EIR{r=10}
+
+
+
+Windbound_Fury_Slash_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  #- skill{s=Gale_Slash_LEVITATE}
+  - throw{velocity=0;velocityY=-9}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  
+  
+Windbound_Fury_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  #- skill{s=Gale_Slash_LEVITATE}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - summon{type=VFX_Gale_IMPACT;amount=1;radius=0;yRadius=0;onSurface=false}
+  - effect:sound{s=entity.breeze.death;volume=0.6;pitch=1.7}
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=30;hS=0.3;vS=0.7;y=0.9;size=0.4;speed=0}
+  - potion{type=SLOW;duration=60;level=50;hasParticles=false}
+  - orbital{onTick=Windbound_Fury_FX;r=0.5;points=20;i=1;duration=60;oy=2.4;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  
+Windbound_Fury_FX:
+  Skills:
+  - effect:particles{particle=crit;amount=2;hS=0;vS=0;speed=0;y=0} @origin
+  
+
+  
+  
+  
+Windbound_Fury_PULL_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  #- pull{velocity=2}
+  - throw{velocity=-0.5;velocityY=0.7}
+  
+  
+Windbound_Fury_RING:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1;delay=15}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=2;points=20;amount=1;hS=0;vS=0;y=0.1;delay=14}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=3;points=30;amount=1;hS=0;vS=0;y=0.1;delay=13}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4;points=40;amount=1;hS=0;vS=0;y=0.1;delay=12}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=5;points=60;amount=1;hS=0;vS=0;y=0.1;delay=11}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=6;points=70;amount=1;hS=0;vS=0;y=0.1;delay=10}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=7;points=80;amount=1;hS=0;vS=0;y=0.1;delay=9}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=8;points=90;amount=1;hS=0;vS=0;y=0.1;delay=8}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=9;points=100;amount=1;hS=0;vS=0;y=0.1;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=10;points=110;amount=1;hS=0;vS=0;y=0.1;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=11;points=140;amount=1;hS=0;vS=0;y=0.1;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=12;points=180;amount=1;hS=0;vS=0;y=0.1;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=13;points=210;amount=1;hS=0;vS=0;y=0.1;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=14;points=260;amount=1;hS=0;vS=0;y=0.1;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=15;points=300;amount=1;hS=0;vS=0;y=0.1;delay=1}
+  
+Windbound_Fury_RING_OPP:
+  Skills:
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=1;points=10;amount=1;hS=0;vS=0;y=0.1;delay=1}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=2;points=20;amount=1;hS=0;vS=0;y=0.1;delay=2}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=3;points=30;amount=1;hS=0;vS=0;y=0.1;delay=3}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=4;points=40;amount=1;hS=0;vS=0;y=0.1;delay=4}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=5;points=60;amount=1;hS=0;vS=0;y=0.1;delay=5}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=6;points=70;amount=1;hS=0;vS=0;y=0.1;delay=6}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=7;points=80;amount=1;hS=0;vS=0;y=0.1;delay=7}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=8;points=90;amount=1;hS=0;vS=0;y=0.1;delay=8}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=9;points=100;amount=1;hS=0;vS=0;y=0.1;delay=9}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=10;points=110;amount=1;hS=0;vS=0;y=0.1;delay=10}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=11;points=140;amount=1;hS=0;vS=0;y=0.1;delay=11}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=12;points=180;amount=1;hS=0;vS=0;y=0.1;delay=12}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=13;points=210;amount=1;hS=0;vS=0;y=0.1;delay=13}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=14;points=260;amount=1;hS=0;vS=0;y=0.1;delay=14}
+  - effect:particlering{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;radius=15;points=300;amount=1;hS=0;vS=0;y=0.1;delay=15}
+  
+  

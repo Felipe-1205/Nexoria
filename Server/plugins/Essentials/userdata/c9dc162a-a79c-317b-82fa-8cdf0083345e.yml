@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 45.225.227.90
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740706130457
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740706200784
+  login: 1740692799270
+money: '0'
+last-account-name: _Etriox_
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2988.5093344742822
+  y: 80.0
+  z: 459.2090347359543
+  yaw: 47.03927993774414
+  pitch: 15.292619705200195
+nickname: Drave
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: 33.154610431578114
+  y: 86.0
+  z: 113.88377145424677
+  yaw: 104.2195816040039
+  pitch: 43.14059066772461

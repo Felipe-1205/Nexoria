@@ -1,0 +1,365 @@
+
+arcane_bolt_1:
+  Id: paper
+  Display: "&6"
+  Model: 2686
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_bolt_2:
+  Id: paper
+  Display: "&6"
+  Model: 2687
+  Hide:
+  - ATTRIBUTES
+  
+arcane_bolt_3:
+  Id: paper
+  Display: "&6"
+  Model: 2688
+  Hide:
+  - ATTRIBUTES
+  
+arcane_bolt_4:
+  Id: paper
+  Display: "&6"
+  Model: 2689
+  Hide:
+  - ATTRIBUTES
+  
+arcane_bolt_5:
+  Id: paper
+  Display: "&6"
+  Model: 2690
+  Hide:
+  - ATTRIBUTES
+
+arcane_bolt_6:
+  Id: paper
+  Display: "&6"
+  Model: 2691
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_bolt_7:
+  Id: paper
+  Display: "&6"
+  Model: 2692
+  Hide:
+  - ATTRIBUTES
+  
+arcane_bolt_8:
+  Id: paper
+  Display: "&6"
+  Model: 2693
+  Hide:
+  - ATTRIBUTES
+  
+arcane_bolt_9:
+  Id: paper
+  Display: "&6"
+  Model: 2694
+  Hide:
+  - ATTRIBUTES
+  
+arcane_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2695
+  Hide:
+  - ATTRIBUTES
+
+arcane_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2696
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2697
+  Hide:
+  - ATTRIBUTES
+  
+arcane_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2698
+  Hide:
+  - ATTRIBUTES
+  
+arcane_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2699
+  Hide:
+  - ATTRIBUTES
+  
+arcane_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2700
+  Hide:
+  - ATTRIBUTES
+
+arcane_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2701
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2702
+  Hide:
+  - ATTRIBUTES
+  
+arcane_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2703
+  Hide:
+  - ATTRIBUTES
+  
+arcane_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2704
+  Hide:
+  - ATTRIBUTES
+  
+arcane_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2705
+  Hide:
+  - ATTRIBUTES
+
+arcane_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2706
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2707
+  Hide:
+  - ATTRIBUTES
+  
+arcane_slash_7:
+  Id: paper
+  Display: "&6"
+  Model: 2708
+  Hide:
+  - ATTRIBUTES
+
+arcane_thunder_1:
+  Id: paper
+  Display: "&6"
+  Model: 2709
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_thunder_2:
+  Id: paper
+  Display: "&6"
+  Model: 2710
+  Hide:
+  - ATTRIBUTES
+  
+arcane_thunder_3:
+  Id: paper
+  Display: "&6"
+  Model: 2711
+  Hide:
+  - ATTRIBUTES
+  
+arcane_thunder_4:
+  Id: paper
+  Display: "&6"
+  Model: 2712
+  Hide:
+  - ATTRIBUTES
+  
+arcane_thunder_5:
+  Id: paper
+  Display: "&6"
+  Model: 2713
+  Hide:
+  - ATTRIBUTES
+
+arcane_thunder_6:
+  Id: paper
+  Display: "&6"
+  Model: 2714
+  Hide:
+  - ATTRIBUTES
+ 
+arcane_thunder_7:
+  Id: paper
+  Display: "&6"
+  Model: 2715
+  Hide:
+  - ATTRIBUTES
+  
+arcane_thunder_8:
+  Id: paper
+  Display: "&6"
+  Model: 2716
+  Hide:
+  - ATTRIBUTES
+  
+arcane_thunder_9:
+  Id: paper
+  Display: "&6"
+  Model: 2717
+  Hide:
+  - ATTRIBUTES
+  
+blizzard_icicle:
+  Id: paper
+  Display: "&6"
+  Model: 2718
+  Hide:
+  - ATTRIBUTES
+
+blizzard_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2719
+  Hide:
+  - ATTRIBUTES
+ 
+blizzard_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2720
+  Hide:
+  - ATTRIBUTES
+  
+blizzard_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2721
+  Hide:
+  - ATTRIBUTES
+
+blizzard_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2722
+  Hide:
+  - ATTRIBUTES
+ 
+blizzard_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2723
+  Hide:
+  - ATTRIBUTES
+  
+blizzard_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2724
+  Hide:
+  - ATTRIBUTES
+  
+blizzard_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2725
+  Hide:
+  - ATTRIBUTES
+  
+meteor_storm_explosion_1:
+  Id: paper
+  Display: "&6"
+  Model: 2726
+  Hide:
+  - ATTRIBUTES
+
+meteor_storm_explosion_2:
+  Id: paper
+  Display: "&6"
+  Model: 2727
+  Hide:
+  - ATTRIBUTES
+ 
+meteor_storm_explosion_3:
+  Id: paper
+  Display: "&6"
+  Model: 2728
+  Hide:
+  - ATTRIBUTES
+  
+meteor_storm_explosion_4:
+  Id: paper
+  Display: "&6"
+  Model: 2729
+  Hide:
+  - ATTRIBUTES
+  
+meteor_storm_explosion_5:
+  Id: paper
+  Display: "&6"
+  Model: 2730
+  Hide:
+  - ATTRIBUTES
+  
+meteor_storm_explosion_6:
+  Id: paper
+  Display: "&6"
+  Model: 2731
+  Hide:
+  - ATTRIBUTES
+
+void_rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 2732
+  Hide:
+  - ATTRIBUTES
+ 
+void_rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 2733
+  Hide:
+  - ATTRIBUTES
+  
+void_rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 2734
+  Hide:
+  - ATTRIBUTES
+
+void_rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 2735
+  Hide:
+  - ATTRIBUTES
+ 
+void_rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 2736
+  Hide:
+  - ATTRIBUTES
+  
+void_rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 2737
+  Hide:
+  - ATTRIBUTES
+  

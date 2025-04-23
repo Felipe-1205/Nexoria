@@ -1,0 +1,34 @@
+id: 3371cc31-e263-3cf8-a836-7806f42cff8c
+name: IsJustEpicButter
+created: 1739651982246
+updated: 1740009085699
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 1f678a7b6b63,87860e727fcb,ea5cd6d738dd
+    mana_timestamp: 1740009085410
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 1.0

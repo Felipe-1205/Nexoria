@@ -1,0 +1,203 @@
+# Downloaded from https://nullforums.net/resources/rpg-class-series-dragon-warrior.4653/
+######## created by samus2002 #########
+
+# Dragon Skin #
+
+Dragon_Skin:
+  Cooldown: 0
+  Skills:
+  - skill{s=Dragon_Skin_Pulse} 0.25
+  
+Dragon_Skin_Pulse:
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_pulse;volume=1;pitch=1} @self
+  - summon{type=Dragon_Skin;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.5}
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true} @EIR{r=3}
+  
+# Dragon Slash #
+
+Dragon_Slash:
+  Cooldown: 0
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Dragon_Dash} castinstead Dragon_Wheel
+  - hasaurastacks{auraName=Dragonborn} false
+  Skills:
+  - randomskill{skills=Dragon_Slash_1,Dragon_Slash_2,Dragon_Slash_3,Dragon_Slash_4}
+
+Dragon_Slash_1:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Dragon_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=0.3;sideOffset=0}
+  
+Dragon_Slash_2:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Dragon_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=-0.8;sideOffset=0.1}
+  
+Dragon_Slash_3:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Dragon_Slash_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=0.5;sideOffset=0}
+  
+Dragon_Slash_4:
+  Cooldown: 1
+  Skills:
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_slash;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Dragon_Slash_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Dragon_Slash_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=-0.5;sideOffset=-0.5}
+
+Dragon_Slash_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+# Dragon Dash #
+
+Dragon_Dash:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Dragonborn} false
+  Skills:
+  - Aura{auraName=Dragon_Dash;interval=1;duration=30} @self
+  - potion{type=SLOW;duration=8;level=55;hasParticles=false} @self
+  - summon{type=Dragon_Dash_Charge;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_aura;volume=1;pitch=1} @self
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_pierce;volume=1;pitch=1;delay=2} @self
+  - delay 10
+  - onDamaged{auraName=landresist;d=12;cE=true} @self
+  - lunge{velocity=1;velocityY=0.05;repeat=5;repeatinterval=1} @forward{f=12;y=0.05}
+  - delay 5
+  - summon{type=Dragon_Dash_Pierce;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7;y=0}
+  - totem{md=2;c=1;oH=Dragon_Dash_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1;repeat=3;repeatinterval=2} @forward{f=2}
+  
+Dragon_Dash_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+# Dragon Wheel #
+
+Dragon_Wheel:
+  Cooldown: 2
+  Skills:
+  - lunge{velocity=0.7;velocityY=0.05;repeat=8;repeatinterval=1} @forward{f=12;y=0.05}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_wheel;volume=1;pitch=1;delay=2} @self
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_wheel_aura;volume=1;pitch=1} @self
+  - delay 5
+  - summon{type=Dragon_Wheel;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true;repeat=3;repeatinterval=4} @EIR{r=5}
+  
+# Dragon Zone #
+
+Dragon_Zone:
+  Conditions:
+  - hasaurastacks{auraName=Dragon_Zone_aura} castinstead Dragon_Zone_SKILL
+  - hasaurastacks{auraName=Dragonborn} false
+  Skills:
+  - Aura{auraName=Dragon_Zone_aura;interval=1;duration=5} @self
+  
+Dragon_Zone_SKILL:
+  Cooldown: 12
+  Skills:
+  - summon{type=Dragon_Zone_Spear;amount=1;radius=0;yRadius=0;onSurface=true} @Ring{radius=12;points=3;yOffset=8}
+  - summon{type=Dragon_Zone;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - skill{s=Dragon_Zone_REMOVE} @MIR{r=500;t=Dragon_Zone_Spear;target=armorstands}
+  - skill{s=Dragon_Zone_REMOVE;delay=1} @MIR{r=500;t=Dragon_Zone;target=armorstands}
+  
+Dragon_Zone_Buff:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - potion{type=SPEED;duration=20;level=2;hasParticles=false}
+  - potion{type=DAMAGE_RESISTANCE;duration=20;level=1;hasParticles=false}
+  
+Dragon_Zone_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay="<modifier.duration> * 20"}
+  
+# Dragon Breath #
+
+Dragon_Breath:
+  Conditions:
+  - hasaurastacks{auraName=Dragonborn} false
+  Skills:
+  - lunge{velocity=0.5;velocityY=0.1} @forward{f=-5;y=0.3}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_breath;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Dragon_Breath_1;onTick=Dragon_Breath_TICK;onHit=Dragon_Breath_HIT;v=15;i=1;hR=1;vR=1;mr=13;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - delay 2
+  - lunge{velocity=0.5;velocityY=0.1} @forward{f=-5;y=0.3}
+  - projectile{bulletType=MOB;mob=Dragon_Breath_2;onTick=Dragon_Breath_TICK;onHit=Dragon_Breath_HIT;v=15;i=1;hR=1;vR=1;mr=13;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - delay 2
+  - lunge{velocity=0.5;velocityY=0.1} @forward{f=-5;y=0.3}
+  - projectile{bulletType=MOB;mob=Dragon_Breath_1;onTick=Dragon_Breath_TICK;onHit=Dragon_Breath_HIT;v=15;i=1;hR=1;vR=1;mr=13;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - delay 2
+  - lunge{velocity=0.5;velocityY=0.1} @forward{f=-5;y=0.3}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_roar_2;volume=1;pitch=1;delay=8} @self
+  - projectile{bulletType=MOB;mob=Dragon_Breath_2;onTick=Dragon_Breath_TICK;onHit=Dragon_Breath_HIT;v=15;i=1;hR=1;vR=1;mr=13;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - delay 20
+  - lunge{velocity=1.2;velocityY=0.1} @forward{f=-5;y=0.3}
+  - projectile{bulletType=MOB;mob=Dragon_Breath_1;onTick=Dragon_Breath_TICK;onHit=Dragon_Breath_HIT_LAST;v=15;i=1;hR=1;vR=1;mr=23;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - projectile{bulletType=MOB;mob=Dragon_Breath_2;onTick=Dragon_Breath_TICK;v=15;i=1;hR=1;vR=1;mr=23;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  
+Dragon_Breath_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.25}
+  
+Dragon_Breath_HIT:
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=4}
+  - throw{velocity=7;velocityY=0} @EntitiesNearOrigin{r=4}
+  
+Dragon_Breath_HIT_LAST:
+  Skills:
+  - damage{a="<modifier.damage> * 2"} @EntitiesNearOrigin{r=4}
+  - throw{velocity=12;velocityY=0} @EntitiesNearOrigin{r=4}
+  
+# Dragonborn #
+
+Dragonborn:
+  Skills:
+  - Aura{auraName=Dragonborn;interval=1;duration=60} @self
+  - lunge{velocity=0.3;velocityY=0.5} @forward{f=1;y=1.5}
+  - potion{type=SLOW;duration=8;level=55;hasParticles=false} @self
+  - summon{type=Dragonborn_Wings;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_aura;volume=1;pitch=1} @self
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_wings_spread;volume=1;pitch=1;delay=10} @self
+  - delay 15
+  - lunge{velocity=0.5;velocityY=-0.1;repeat=15;repeatinterval=1} @forward{f=2;y=-0.1}
+  - effect:particles{particle=redstone;color=#4d1ae8;amount=15;hS=0.6;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0;repeat=18;repeatinterval=2} @self
+  - pull{velocity=12;repeat=37;repeatinterval=1} @EIR{r=5}
+  - damage{a="<modifier.damage> * 0.2";pkb=false;hnp=true;hp=true;repeat=4;repeatinterval=3} @EIR{r=5}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_roar_1;volume=1;pitch=1} @self
+  - onDamaged{auraName=resist;d=40;cE=true} @self
+  - delay 15
+  - lunge{velocity=1.15;velocityY=0.8} @forward{f=1.15;y=0.8}
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_leap_up;volume=1;pitch=1} @self
+  - effect:sound{s=dragon_warrior_sounds:samus.dragon_smash_ground;volume=1.2;pitch=1;delay=8} @self
+  - delay 15
+  - lunge{velocity=1.15;velocityY=-1} @forward{f=1.15;y=-0.8}
+  - onDamaged{auraName=landresist;d=30;cE=true;damageMods="FALL 0"} @self
+  - delay 7
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true} @EIR{r=8}
+  - summon{type=Dragon_Smash_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - projectile{bulletType=MOB;mob=Dragon_Ground_Slash;onTick=Dragonborn_TICK;onHit=Dragonborn_HIT;v=6;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - projectile{bulletType=MOB;mob=Dragon_Ground_Slash90;onTick=Dragonborn_TICK;onHit=Dragonborn_HIT;v=6;i=1;hR=1;vR=1;mr=30;hnp=true;hO=90;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - projectile{bulletType=MOB;mob=Dragon_Ground_Slash180;onTick=Dragonborn_TICK;onHit=Dragonborn_HIT;v=6;i=1;hR=1;vR=1;mr=30;hnp=true;hO=180;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - projectile{bulletType=MOB;mob=Dragon_Ground_Slash270;onTick=Dragonborn_TICK;onHit=Dragonborn_HIT;v=6;i=1;hR=1;vR=1;mr=30;hnp=true;hO=270;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  
+Dragonborn_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.25}
+  
+Dragonborn_HIT:
+  Skills:
+  - damage{a="<modifier.damage> * 0.6"} @EntitiesNearOrigin{r=5}
+# eb49b8be573ffb25aa51af71342947063b35db0c . 45353

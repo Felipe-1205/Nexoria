@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.24.212.206
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739819758255
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739823346794
+  login: 1739817400568
+money: '0'
+last-account-name: RIP_DARING
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2953.345560087648
+  y: 81.0
+  z: 463.1934881971064
+  yaw: 33.89971923828125
+  pitch: 26.70000648498535
+nickname: Dgoth
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: 53.33600002527237
+  y: 138.0
+  z: 182.66399997472763
+  yaw: -119.77835083007812
+  pitch: 10.94998836517334

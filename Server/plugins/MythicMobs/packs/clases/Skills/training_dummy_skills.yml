@@ -1,0 +1,12 @@
+######## created by samus2002 #########
+
+Training_Dummy_Look:
+  TriggerConditions:
+  - crouching true
+  - haspermission{p=*} true
+  Skills:
+  - look{headOnly=false;immediately=false;repeat=5;repeatinterval=2}
+
+
+# 804RAZZ9UL63F25MDF21EX8JL17P
+# 9THwQxPOh5rDr+j4i6+u1n5qutlnCHswAuaF3BkYSFIRkXgZsoCq9TmENM+4nTNE5JtuDgLIkBhvZuN003ZGvTC63Qb8z7pruxb25teUO10=

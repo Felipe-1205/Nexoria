@@ -1,0 +1,481 @@
+######## created by samus2002 #########
+
+# Pistol Shot #
+
+Bullet:
+  Type: ARMOR_STAND
+  ItemHead: bullet
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - effect:particles{particle=smoke;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Bullet5:
+  Type: ARMOR_STAND
+  ItemHead: bullet
+  Pose:
+      Head: 0,5,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet:4} ~onSpawn
+  - effect:particles{particle=smoke;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Bullet-5:
+  Type: ARMOR_STAND
+  ItemHead: bullet
+  Pose:
+      Head: 0,-5,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet:4} ~onSpawn
+  - effect:particles{particle=smoke;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Bullet10:
+  Type: ARMOR_STAND
+  ItemHead: bullet
+  Pose:
+      Head: 0,10,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet:4} ~onSpawn
+  - effect:particles{particle=smoke;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Bullet-10:
+  Type: ARMOR_STAND
+  ItemHead: bullet
+  Pose:
+      Head: 0,-10,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet:4} ~onSpawn
+  - effect:particles{particle=smoke;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+Pistol_Shot:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+ 
+# Shotgun Blast #
+
+Shotgun_Blast:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shotgun_muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=shotgun_muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=shotgun_muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=shotgun_muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=shotgun_muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+# Sniper Backup #
+
+Sniper_Backup:
+  Type: ZOMBIE
+  Display: '&2'
+  Health: 350
+  Damage: 6
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: false
+    LockPitch: true
+    ApplyInvisibility: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - sniper_soldier:HEAD
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - equip{item=sniper_soldier:4;delay=1} ~onSpawn
+  - skill{s=Sniper_Backup_Shot_LOOK} @EIR{r=30;sort=HIGHEST_THREAT} ~onTimer:1
+  - remove{delay=220} @self ~onSpawn
+  
+# Deathfire #
+
+Deathfire_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=deathfire_shadow_1_1:4;delay=3} ~onSpawn
+  - equip{item=deathfire_shadow_1_2:4;delay=6} ~onSpawn
+  - equip{item=deathfire_shadow_1_3:4;delay=9} ~onSpawn
+  - equip{item=deathfire_shadow_1_4:4;delay=12} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Deathfire_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=deathfire_shadow_2_1:4;delay=3} ~onSpawn
+  - equip{item=deathfire_shadow_2_2:4;delay=6} ~onSpawn
+  - equip{item=deathfire_shadow_2_3:4;delay=9} ~onSpawn
+  - equip{item=deathfire_shadow_2_4:4;delay=12} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Deathfire_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=deathfire_shadow_3_1:4;delay=3} ~onSpawn
+  - equip{item=deathfire_shadow_3_2:4;delay=6} ~onSpawn
+  - equip{item=deathfire_shadow_3_3:4;delay=9} ~onSpawn
+  - equip{item=deathfire_shadow_3_4:4;delay=12} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Deathfire_4:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=deathfire_shadow_4_1:4;delay=3} ~onSpawn
+  - equip{item=deathfire_shadow_4_2:4;delay=6} ~onSpawn
+  - equip{item=deathfire_shadow_4_3:4;delay=9} ~onSpawn
+  - equip{item=deathfire_shadow_4_4:4;delay=12} ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+Deathfire_Shot20:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,20,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot-30:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,-30,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot70:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,70,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot-2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,-2,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot125:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,125,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot-87:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,-87,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot175:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,175,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Deathfire_Shot-45:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,-45,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=muzzle_1:4;delay=2} ~onSpawn
+  - equip{item=muzzle_2:4;delay=4} ~onSpawn
+  - equip{item=muzzle_3:4;delay=6} ~onSpawn
+  - equip{item=muzzle_4:4;delay=8} ~onSpawn
+  - equip{item=muzzle_5:4;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+# Focus Shot #
+
+Focus_Shot:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: false
+    Interactable: false
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=focus_shot_1:0;delay=3} ~onSpawn
+  - equip{item=focus_shot_2:0;delay=6} ~onSpawn
+  - equip{item=focus_shot_3:0;delay=9} ~onSpawn
+  - equip{item=focus_shot_4:0;delay=12} ~onSpawn
+  - equip{item=focus_shot_5:0;delay=15} ~onSpawn
+  - remove{delay=18} @self ~onSpawn
+  
+Bullet_Red:
+  Type: ARMOR_STAND
+  ItemHead: bullet_red
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=bullet_red:4} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  - effect:particles{particle=lava;amount=3;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  #- effect:particles{particle=explosion_large;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  
+  
+# Air Strike #
+
+Air_Strike_Aim:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=aim_1:4;delay=2} ~onSpawn
+  - equip{item=aim_2:4;delay=4} ~onSpawn
+  - equip{item=aim_3:4;delay=6} ~onSpawn
+  - equip{item=aim_4:4;delay=8} ~onSpawn
+  - equip{item=aim_5:4;delay=10} ~onSpawn
+  - equip{item=aim_6:4;delay=12} ~onSpawn
+  - equip{item=aim_7:4;delay=14} ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+Air_Strike_EXPLOSION:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=explosion_1:0;delay=2} ~onSpawn
+  - equip{item=explosion_2:0;delay=4} ~onSpawn
+  - equip{item=explosion_3:0;delay=6} ~onSpawn
+  - equip{item=explosion_4:0;delay=8} ~onSpawn
+  - equip{item=explosion_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+Air_Strike_Rupture:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Interactable: false
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=rupture_fire_3:0;delay=2} ~onSpawn
+  - equip{item=rupture_fire_2:0;delay=42} ~onSpawn
+  - equip{item=rupture_fire_1:0;delay=44} ~onSpawn
+  - equip{item=rupture_1:0;delay=46} ~onSpawn
+  - equip{item=rupture_2:0;delay=48} ~onSpawn
+  - equip{item=rupture_3:0;delay=50} ~onSpawn
+  - equip{item=rupture_4:0;delay=52} ~onSpawn
+  - equip{item=rupture_5:0;delay=54} ~onSpawn
+  - equip{item=rupture_6:0;delay=56} ~onSpawn
+  #- skill{s=Air_Strike_REMOVE} ~onSpawn
+  #- skill{s=Air_Strike_REMOVE} ~onTimer:1
+  - remove{delay=58} @self ~onSpawn
+  
+Air_Strike_Bomb:
+  Type: ARMOR_STAND
+  ItemHead: bullet_red
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=gunner_sounds:samus.bullet_drop;volume=2;pitch=1;delay=10} @self ~onSpawn
+  - equip{item=bullet_red:0} ~onSpawn
+  - effect:particles{particle=lava;amount=3;hS=0;vS=0;y=1;speed=0;sideOffset=0} @self ~onTimer:1
+  #- effect:particles{particle=explosion_large;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=-1;sideOffset=0} @self ~onTimer:1
+  

@@ -1,0 +1,153 @@
+######## created by samus2002 #########
+
+# Light Beam #
+  
+Light_Beam:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  ItemHead: light_beam_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=light_beam_1:4;delay=1} ~onSpawn
+  - equip{item=light_beam_2:4;delay=2} ~onSpawn
+  - equip{item=light_beam_3:4;delay=3} ~onSpawn
+  - equip{item=light_beam_4:4;delay=4} ~onSpawn
+  - equip{item=light_beam_5:4;delay=5} ~onSpawn
+  - equip{item=light_beam_6:4;delay=6} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=1;y=1.4} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+# Heal Beam #
+  
+Heal_Beam:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  ItemHead: heal_beam_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=heal_beam_1:4;delay=1} ~onSpawn
+  - equip{item=heal_beam_2:4;delay=2} ~onSpawn
+  - equip{item=heal_beam_3:4;delay=3} ~onSpawn
+  - equip{item=heal_beam_4:4;delay=4} ~onSpawn
+  - equip{item=heal_beam_5:4;delay=5} ~onSpawn
+  - equip{item=heal_beam_6:4;delay=6} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=1;y=1.4} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+# Healing Totem #
+  
+Healing_Totem:
+  Type: ZOMBIE
+  Display: '&b'
+  Health: 350
+  Damage: 6
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Collidable: false
+    Persistent: false
+    Invincible: true
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 1
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - totem_healing:HEAD
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - signal{s=HEAL} @self ~onSpawn
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0.15;forwardOffset=0;vS=0;speed=0} @self ~onSpawn
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0.15;forwardOffset=0;vS=0;speed=0} @self ~onSignal:FIRE
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0.15;forwardOffset=0;vS=0;speed=0} @self ~onSignal:WIND
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0.15;forwardOffset=0;vS=0;speed=0} @self ~onSignal:HEAL
+  - equip{item=totem_healing:4} ~onSpawn
+  - potion{type=INVISIBILITY;duration=9999;level=3;hasParticles=false} @self ~onSpawn
+  - skill{s=Healing_Totem_SKILL5} @trigger ~onSignal:HEAL
+  - skill{s=Healing_Totem_SKILL1} ~onTimer:20
+  - skill{s=Healing_Totem_SKILL2} ~onTimer:10
+  - skill{s=Healing_Totem_SKILL3} ~onTimer:40
+  - skill{s=Healing_Totem_SKILL4} ~onTimer:5
+  - effect:particles{particle=explosion_large;amount=1;hS=0;y=0.15;forwardOffset=0;vS=0;speed=0;delay=199} @self ~onSpawn
+  - skill{s=Fire_Totem_SKILL1} ~onTimer:10
+  - skill{s=Fire_Totem_SKILL2} @EIR{r=25;limit=1;sort=RANDOM} ~onTimer:20
+  - skill{s=Fire_Totem_SKILL5} @trigger ~onSignal:FIRE
+  - skill{s=Wind_Totem_SKILL1} @EIR{r=13} ~onTimer:30
+  - skill{s=Wind_Totem_SKILL5} @trigger ~onSignal:WIND
+  - remove{delay=200} @self ~onSpawn
+  
+# Solar Beam #
+  
+Solar_Beam:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  ItemHead: solar_beam_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=solar_beam_1:4;delay=1} ~onSpawn
+  - skill{s=Solar_Beam_LOOP;repeat=19;repeatinterval=2;delay=2} ~onSpawn
+  - equip{item=solar_beam_3:4;delay=43} ~onSpawn
+  - equip{item=solar_beam_4:4;delay=44} ~onSpawn
+  - equip{item=solar_beam_5:4;delay=45} ~onSpawn
+  - equip{item=solar_beam_6:4;delay=46} ~onSpawn
+  - equip{item=solar_beam_7:4;delay=47} ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=1;y=1.4} ~onSpawn
+  - remove{delay=48} @self ~onSpawn
+  
+# Ancestral Power #
+  
+Ancestral_Power:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: ancestral_beam_circle_1
+  Options:
+    Marker: true
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Ancestral_Circle_FX} ~onTimer:9
+  - effect:particles{particle=redstone;color=#fffc78;amount=30;hS=2.3;y=0.5;forwardOffset=0;vS=0.1;speed=0} @self ~onTimer:10
+  - projectile{onTick=Ancestral_Beam_TICK;onHit=Ancestral_Beam_HIT;v=40;i=1;hR=2;vR=1;mr=30;hnp=true;vO=-1;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=-10;repeat=9;repeatinterval=2} @Forward{f=0;y=-5} ~onTimer:40
+  
+Ancestral_Beam:
+  Type: ARMOR_STAND
+  Pose:
+    RightArm: 0,0,0
+  ItemHand: ancestral_beam_1
+  Options:
+    Marker: false
+    HasArms: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - skill{s=Ancestral_Beam_FX} ~onTimer:40

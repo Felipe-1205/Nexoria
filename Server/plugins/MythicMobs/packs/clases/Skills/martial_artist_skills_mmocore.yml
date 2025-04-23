@@ -1,0 +1,259 @@
+######## created by samus2002 #########
+
+# Evasion #
+
+Evasion:
+  Cooldown: 0
+  Skills:
+  - skill{s=Evasion_Avoid} 0.3
+  
+Evasion_Avoid:
+  Cooldown: 0
+  Skills:
+  - onDamaged{auraName=evasion;c=1;oH=Evasion_Avoid_Skill;cE=true} @self
+  
+Evasion_Avoid_Skill:
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=martial_artist_sounds:samus.evasion;volume=1;pitch=1} @self
+  - summon{type=Evasion;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  
+# Double Strike #
+
+Double_Strike:
+  Conditions:
+  - hasaurastacks{auraName=Uppercut_Combo_aura} castinstead Diving_Strike
+  Skills:
+  - effect:sound{s=martial_artist_sounds:samus.small_swing;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Double_Strike_DAMAGE_RED;hnp=true;hp=true;hR=2;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Double_Strike_Red_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=3}
+  - effect:sound{s=martial_artist_sounds:samus.small_punch;volume=1;pitch=1;delay=3} @self
+  - summon{type=Double_Strike_Red;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=5;y=0.2;sideOffset=0.3}
+  - delay 5
+  - effect:sound{s=martial_artist_sounds:samus.small_swing;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Double_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=2;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Double_Strike_Blue_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=3}
+  - effect:sound{s=martial_artist_sounds:samus.small_punch;volume=1;pitch=1;delay=3} @self
+  - summon{type=Double_Strike_Blue;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=5;y=-0.2;sideOffset=-0.7}
+
+Double_Strike_DAMAGE_RED:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  
+Double_Strike_DAMAGE_BLUE:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  
+# Agile Strike #
+
+Agile_Strike:
+  Skills:
+  - lunge{velocity=2.5;velocityY=0} @forward{f=5;y=0}
+  - effect:sound{s=martial_artist_sounds:samus.agile_strike_dash;volume=1;pitch=1} @self
+  - delay 4
+  - summon{type=Agile_Strike_Dash;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - delay 1
+  - effect:sound{s=martial_artist_sounds:samus.big_punch;volume=1;pitch=1} @self
+  - totem{md=2;c=1;oH=Agile_Strike_DAMAGE;hnp=true;hp=true;hR=2;vR=3;i=1} @forward{f=2.5}
+  - summon{type=Agile_Strike_Hit;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0}
+  
+Agile_Strike_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=8;velocityY=3;delay=1}
+  
+# Uppercut #
+
+Uppercut:
+  Skills:
+  - Aura{auraName=Uppercut_Combo_aura;interval=1;duration=40} @self
+  - lunge{velocity=0.2;velocityY=4} @forward{f=1;y=2}
+  - effect:sound{s=martial_artist_sounds:samus.uppercut_swing;volume=1;pitch=1} @self
+  - summon{type=Uppercut;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - onDamaged{auraName=Uppercut_Fall;d=40;cE=true;damageMods="FALL 0"} @self
+  - delay 4
+  - effect:sound{s=martial_artist_sounds:samus.small_punch;volume=1;pitch=1} @self
+  - effect:sound{s=martial_artist_sounds:samus.uppercut_punch;volume=1.5;pitch=1} @self
+  - totem{md=2;c=1;oH=Uppercut_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=2}
+  - summon{type=Uppercut_Hit;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=2}
+  
+Uppercut_DAMAGE:
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - throw{velocity=0;velocityY=8;delay=1}
+  
+# Diving Strike #
+
+Diving_Strike:
+  Cooldown: 2
+  Skills:
+  - lunge{velocity=1;velocityY=-3} @forward{f=10;y=-2}
+  - delay 2
+  - throw{velocity=0;velocityY=-4} @EIR{r=4}
+  - effect:sound{s=martial_artist_sounds:samus.diving_strike_swing;volume=1;pitch=1} @self
+  - summon{type=Diving_Strike;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - onDamaged{auraName=Uppercut_Fall;d=40;cE=true;damageMods="FALL 0"} @self
+  - delay 4
+  - effect:sound{s=martial_artist_sounds:samus.diving_strike_smash;volume=1.5;pitch=1} @self
+  - damage{a="<modifier.damage>"} @EIR{r=4}
+  - summon{type=Diving_Strike_Hit;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  - summon{type=Diving_Strike_Rupture;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0}
+  
+# Deadly Squash #
+
+Deadly_Squash:
+  Skills:
+  - effect:sound{s=martial_artist_sounds:samus.deadly_squash_swing;volume=1;pitch=1;delay=10} @self
+  - projectile{onEnd=Deadly_Squash_SUMMON;v=30;i=1;hR=1;vR=1;mr=50;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2;tyo=1} @forward{f=5;y=0}
+  - effect:sound{s=martial_artist_sounds:samus.deadly_squash_punch;volume=1;pitch=1;delay=20} @self
+  - effect:sound{s=martial_artist_sounds:samus.deadly_squash_smash;volume=1;pitch=1;delay=22} @self
+
+Deadly_Squash_SUMMON:
+  Skills:
+  - summon{type=Deadly_Squash_Palm;amount=1;radius=0;yRadius=0;onSurface=true} @origin{yoffset=5}
+  - totem{md=2;c=1;oH=Deadly_Squash_HIT;hnp=true;hp=true;hR=1;vR=1;i=1;delay=15} @origin
+  
+Deadly_Squash_HIT:
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=5;ignore=armorstands}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false} @EntitiesNearOrigin{r=5;ignore=armorstands}
+  - orbital{r=0.5;onTick=Deadly_Squash_HIT_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2.5} @EntitiesNearOrigin{r=5;ignore=armorstands}
+
+Deadly_Squash_HIT_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin
+  
+# Multi Strike #
+
+Multi_Strike:
+  Skills:
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - potion{type=SLOW;duration=70;level=50;hasParticles=false} @self
+  - hidefromplayers{d=70} @PIR{r=100}
+  #- potion{type=INVISIBILITY;duration=70;level=50;hasParticles=false} @self
+  #- effect:sound{s=martial_artist_sounds:samus.multi_strike_swing;volume=1;pitch=1} @self
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 4
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 4
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 4
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 3
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 2
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 2
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 2
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_RED;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_1;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  - delay 2
+  - lunge{velocity=0.15;velocityY=0} @forward{f=5;y=-1}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_BLUE;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_2;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_small;volume=0.8;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - delay 10
+  - lunge{velocity=1.5;velocityY=0} @forward{f=-5;y=-1}
+  - summon{type=Multi_Strike_Shadow_3;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.big_swing;volume=0.8;pitch=1;delay=3} @self
+  - delay 10
+  - lunge{velocity=1.5;velocityY=0} @forward{f=5;y=-1}
+  - summon{type=Multi_Strike_BLUE_Hit;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=5}
+  - summon{type=Multi_Strike_Shadow_4;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=1.2}
+  - effect:sound{s=martial_artist_sounds:samus.multi_strike_final_punch;volume=1;pitch=1;delay=3} @self
+  - summon{type=Multi_Strike_BLUE;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=-0.2;sideOffset=-0.7}
+  - totem{md=2;c=1;oH=Multi_Strike_DAMAGE_FINAL;hnp=true;hp=true;hR=3;vR=3;i=1;delay=3} @forward{f=3}
+  - summon{type=Multi_Strike_RED_HIT;amount=1;radius=0;yRadius=0;onSurface=true;delay=3} @forward{f=6}
+  - summon{type=Multi_Strike_RED;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=4;y=0.2;sideOffset=0.3}
+  
+Multi_Strike_DAMAGE_RED:
+  Skills:
+  - damage{a="<modifier.damage> * 0.3";pkb=true;hnp=true;hp=true}
+  - throw{velocity=2;velocityY=0}
+
+Multi_Strike_DAMAGE_BLUE:
+  Skills:
+  - damage{a="<modifier.damage> * 0.3";pkb=true;hnp=true;hp=true}
+  - throw{velocity=2;velocityY=0}
+  
+Multi_Strike_DAMAGE_FINAL:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - throw{velocity=10;velocityY=1}

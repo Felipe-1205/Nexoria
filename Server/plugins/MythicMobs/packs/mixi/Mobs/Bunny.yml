@@ -1,0 +1,170 @@
+bunny-black:
+  Type: wolf
+  Health: 100
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - state{s=lookaround;li=0;lo=0;delay=20} @self ~onTimer:100
+  - state{s=idle2;li=0;lo=0} @self @self ~onTimer:100
+  - state{s=eat;li=0;lo=0} @self @self ~onTimer:250
+  - state{s=eat;li=0;lo=0} @self @self ~onSignal:EAT
+  - model{mid=hollandlopblack;n=false} @self ~onSpawn
+bunny-brown:
+  Type: wolf
+  Health: 100
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=hollandlopbrown;n=false} @self ~onSpawn
+  - state{s=lookaround;li=0;lo=0;delay=20} @self ~onTimer:100
+  - state{s=idle2;li=0;lo=0} @self @self ~onTimer:100
+  - state{s=eat;li=0;lo=0} @self @self ~onTimer:250
+  - state{s=eat;li=0;lo=0} @self @self ~onSignal:EAT
+bunny-gray:
+  Type: wolf
+  Health: 100
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=hollandlopgray;n=false} @self ~onSpawn
+  - state{s=lookaround;li=0;lo=0;delay=20} @self ~onTimer:100
+  - state{s=idle2;li=0;lo=0} @self @self ~onTimer:100
+  - state{s=eat;li=0;lo=0} @self @self ~onTimer:250
+  - state{s=eat;li=0;lo=0} @self @self ~onSignal:EAT
+bunny-whitebrown:
+  Type: wolf
+  Health: 100
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=hollandloppet;n=false} @self ~onSpawn
+  - state{s=lookaround;li=0;lo=0;delay=20} @self ~onTimer:100
+  - state{s=idle2;li=0;lo=0} @self @self ~onTimer:100
+  - state{s=eat;li=0;lo=0} @self @self ~onTimer:250
+  - state{s=eat;li=0;lo=0} @self @self ~onSignal:EAT
+bunny-white:
+  Type: wolf
+  Health: 100
+  Damage: 3
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.3
+    MaxCombatDistance: 5
+    AttackSpeed: 2.5
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=hollandlopwhite;n=false} @self ~onSpawn
+  - state{s=lookaround;li=0;lo=0;delay=20} @self ~onTimer:100
+  - state{s=idle2;li=0;lo=0} @self @self ~onTimer:100
+  - state{s=eat;li=0;lo=0} @self @self ~onTimer:250
+  - state{s=eat;li=0;lo=0} @self @self ~onSignal:EAT

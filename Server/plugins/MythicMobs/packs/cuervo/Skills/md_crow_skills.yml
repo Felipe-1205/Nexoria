@@ -1,0 +1,12 @@
+md_crow_call_feed:
+  Skills:
+  - CancelEvent
+  - skill{s=md_crow_feed}
+
+md_crow_feed:
+  Condition:
+  - offgcd
+  Skills:
+  - gcd{ticks=15}  
+  - potion{type=SLOW;duration=40;level=100;p=false;force-true} @Self  
+  - state{state=feed;li=2;lo=4;n=false;speed=1} @Self

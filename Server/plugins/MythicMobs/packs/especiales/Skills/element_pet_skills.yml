@@ -1,0 +1,196 @@
+# =============================== Curse Doll ===============================  
+
+dark_element_pet_attack:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to4} true
+  Skills:
+  - gcd{ticks=51} @self
+  - setspeed{s=1.2} @self
+  - state{s=attack} @self
+  - delay 25
+  - setspeed{s=1.8} @self
+  - summon{t=dark_element_pet_attack} @forward{a=0.8}
+  - sound{s=entity.player.attack.sweep;p=1.2;v=1} @self
+  - delay 3
+  - skill{s=dark_element_pet_attack-1} @forward{a=2}
+  - setspeed{s=0.001} @self
+  - LockModel{l=true} @self
+  - delay 21
+  - setspeed{s=1.2} @self
+  - LockModel{l=false} @self
+
+dark_element_pet_attack-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#b4355c;amount=5;hs=0.5;vs=1;y=0.4} 
+  - totem{ch=1;onStart=dark_element_pet_attack-1-2;int=1;hR=3;md=1}
+   
+dark_element_pet_attack-1-2:
+  Skills:
+  - damage{a=4;pk=true} @ENO{r=2.8}
+  - throw{velocity=2;velocityY=1} @ENO{r=2.8;ignore=owner}
+  
+dark_element_pet_skill:
+  Cooldown: 14
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=1to7} true
+  Skills:
+  - gcd{ticks=85} @self
+  - state{s=skill1} @self
+  - LockModel{l=true} @self
+  - effect:spin{duration=20;velocity=0} @self 
+  - lunge{velocity=0.5;repeat=8;repeatInterval=2} @forward
+  - delay 18
+  - effect:sound{s=entity.generic.explode;v=0.6;p=3} @self
+  - totem{onTick=dark_element_pet_skill-1;int=20;hR=3;md=200} @self
+  - setspeed{s=0.001} @self
+  - summon{t=dark_element_pet_skill} @self
+  - sound{s=ambient.nether_wastes.mood;p=1;v=1.4} @self
+  - delay 62
+  - LockModel{l=false} @self
+  - setspeed{s=1.2} @self
+  
+dark_element_pet_skill-1:
+  Skills:
+  - damage{a=4;pk=true} @ENO{r=6}
+  - potion{t=slow;d=20;l=2;i=false;p=false} @ENO{r=6;ignore=owner}
+  - pull{v=4} @ENO{r=6;ignore=owner}
+  
+# =============================== Forzen Cat ===============================  
+  
+forzen_element_pet_attack:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to4} true
+  Skills:
+  - gcd{ticks=63} @self
+  - setspeed{s=0.001} @self
+  - state{s=attack} @self
+  - delay 13
+  - setspeed{s=1.8} @self
+  - summon{t=forzen_element_pet_attack} @forward{a=1.4}
+  - sound{s=entity.player.attack.sweep;p=1;v=1} @self
+  - delay 3
+  - skill{s=forzen_element_pet_attack-1;delay=1} @forward{a=1.4}
+  - setspeed{s=0.001} @self
+  - LockModel{l=true} @self
+  - delay 42
+  - setspeed{s=1.25} @self
+  - LockModel{l=false} @self
+
+forzen_element_pet_attack-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#8cf2e0;amount=5;hs=0.5;vs=1;y=0.4} 
+  - totem{ch=1;onStart=forzen_element_pet_attack-1-2;int=1;hR=3;md=1}
+   
+forzen_element_pet_attack-1-2:
+  Skills:
+  - damage{a=5;pk=true} @ENO{r=2.8}
+  - throw{velocity=5;velocityY=2} @ENO{r=2.6;ignore=owner}
+  
+forzen_element_pet_skill:
+  Cooldown: 13
+  TargetConditions:
+  - distance{d=0to14} true
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=55} @self
+  - state{s=skill} @self
+  - setspeed{s=0.001} @self
+  - delay 20
+  - projectile{bulletType=MOB;mob=forzen_element_pet_skill;oe=forzen_element_pet_skill-1;i=1;v=10;mr=25;sB=true;sE=true;hnp=true} @target
+  - sound{s=entity.evoker.cast_spell;p=1.2;v=2} @self
+  - delay 5
+  - setspeed{s=0.001} @self
+  - LockModel{l=true} @self
+  - delay 25
+  - setspeed{s=1.25} @self
+  - LockModel{l=false} @self
+  
+forzen_element_pet_skill-1:
+  Skills:
+  - projectile{onEnd=forzen_element_pet_skill-2;v=1;i=1;md=1;hR=1;vR=1;syo=0;hs=true;hfs=-0;hp=false;FromOrigin=true} @origin
+  
+forzen_element_pet_skill-2:
+  Skills:
+  - sound{s=entity.lightning_bolt.impact;v=1;p=1.2} @origin
+  - summon{t=forzen_element_pet_skill2;os=true} @origin
+  - summon{t=forzen_element_pet_skill2;delay=6;os=true} @RingAroundOrigin{yoffset=0;points=4;radius=4} 
+  - summon{t=forzen_element_pet_skill2;delay=12;os=true} @RingAroundOrigin{yoffset=0;points=8;radius=8} 
+  - totem{onStart=forzen_element_pet_skill-3;int=1;hR=3;md=1} @origin
+  - totem{onStart=forzen_element_pet_skill-3;int=1;hR=3;md=1;delay=6} @RingAroundOrigin{yoffset=0;points=4;radius=4} 
+  - totem{onStart=forzen_element_pet_skill-3;int=1;hR=3;md=1;delay=12} @RingAroundOrigin{yoffset=0;points=8;radius=8} 
+
+forzen_element_pet_skill-3:
+  Skills:
+  - damage{a=5;pk=true} @ENO{r=3}
+  - stun{d=40;f=true} @ENO{r=3;ignore=owner}
+  - freeze{ticks=40} @ENO{r=3;ignore=owner}
+  
+# =============================== Forest Owl =============================== 
+
+forest_element_pet_attack:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to5} true
+  Skills:
+  - gcd{ticks=37} @self
+  - setspeed{s=0.001} @self
+  - state{s=attack} @self
+  - delay 16
+  - setspeed{s=1.8} @self
+  - summon{t=forest_element_pet_attack} @forward{a=1.1}
+  - sound{s=entity.player.attack.sweep;p=1.7;v=1.2} @self
+  - delay 3
+  - skill{s=forzen_element_pet_attack-1} @forward{a=2.2}
+  - setspeed{s=0.001} @self
+  - LockModel{l=true} @self
+  - delay 13
+  - setspeed{s=1.21} @self
+  - LockModel{l=false} @self
+
+forest_element_pet_attack-1:
+  Skills:
+  - effect:particles{particle=reddust;color=#aaf4cd;amount=5;hs=0.5;vs=1;y=0.4} 
+  - totem{ch=1;onStart=forest_element_pet_attack-1-2;int=1;hR=3;md=1}
+   
+forest_element_pet_attack-1-2:
+  Skills:
+  - damage{a=4;pk=true} @ENO{r=3}
+  - throw{velocity=5;velocityY=2} @ENO{r=3;ignore=owner}
+  
+forest_element_pet_skill:
+  Cooldown: 10
+  TargetConditions:
+  - distance{d=0to14} true
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=71} @self
+  - state{s=skill} @self
+  - setspeed{s=0.001} @self
+  - delay 14
+  - projectile{bulletType=MOB;mob=forest_element_pet_skill;ontick=forest_element_pet_skill-1;i=1;v=14;mr=30;sE=false} @target
+  - sound{s=entity.evoker.cast_spell;p=1.7;v=2} @self
+  - delay 17
+  - projectile{bulletType=MOB;mob=forest_element_pet_skill;ontick=forest_element_pet_skill-1;i=1;v=14;mr=30;sE=false} @target
+  - sound{s=entity.evoker.cast_spell;p=1.8;v=2} @self
+  - setspeed{s=0.001} @self
+  - LockModel{l=true} @self
+  - delay 35
+  - setspeed{s=1.21} @self
+  - LockModel{l=false} @self
+  
+forest_element_pet_skill-1:
+  Skills:
+  - damage{a=4;pk=true} @ENO{r=2.5}
+  - throw{velocity=2;velocityY=0} @ENO{r=2.5;ignore=owner}

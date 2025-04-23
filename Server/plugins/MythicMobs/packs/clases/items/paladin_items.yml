@@ -1,0 +1,442 @@
+######## created by samus2002 #########
+  
+holy_chains:
+  Id: paper
+  Display: "&6"
+  Model: 2500
+  Hide:
+  - ATTRIBUTES
+ 
+holy_mark_1:
+  Id: paper
+  Display: "&6"
+  Model: 2501
+  Hide:
+  - ATTRIBUTES
+  
+holy_mark_2:
+  Id: paper
+  Display: "&6"
+  Model: 2502
+  Hide:
+  - ATTRIBUTES
+  
+holy_mark_3:
+  Id: paper
+  Display: "&6"
+  Model: 2503
+  Hide:
+  - ATTRIBUTES
+  
+holy_mark_4:
+  Id: paper
+  Display: "&6"
+  Model: 2504
+  Hide:
+  - ATTRIBUTES
+
+holy_ring_1:
+  Id: paper
+  Display: "&6"
+  Model: 2505
+  Hide:
+  - ATTRIBUTES
+ 
+holy_ring_2:
+  Id: paper
+  Display: "&6"
+  Model: 2506
+  Hide:
+  - ATTRIBUTES
+  
+holy_ring_3:
+  Id: paper
+  Display: "&6"
+  Model: 2507
+  Hide:
+  - ATTRIBUTES
+  
+holy_smash_rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 2508
+  Hide:
+  - ATTRIBUTES
+  
+holy_smash_rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 2509
+  Hide:
+  - ATTRIBUTES
+
+holy_smash_rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 2510
+  Hide:
+  - ATTRIBUTES
+ 
+holy_smash_rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 2511
+  Hide:
+  - ATTRIBUTES
+  
+holy_smash_rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 2512
+  Hide:
+  - ATTRIBUTES
+  
+holy_smash_rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 2513
+  Hide:
+  - ATTRIBUTES
+  
+holy_spear_1:
+  Id: paper
+  Display: "&6"
+  Model: 2514
+  Hide:
+  - ATTRIBUTES
+
+holy_spear_2:
+  Id: paper
+  Display: "&6"
+  Model: 2515
+  Hide:
+  - ATTRIBUTES
+ 
+holy_spear_3:
+  Id: paper
+  Display: "&6"
+  Model: 2516
+  Hide:
+  - ATTRIBUTES
+  
+holy_spear_4:
+  Id: paper
+  Display: "&6"
+  Model: 2517
+  Hide:
+  - ATTRIBUTES
+  
+holy_wings_1:
+  Id: paper
+  Display: "&6"
+  Model: 2518
+  Hide:
+  - ATTRIBUTES
+  
+holy_wings_2:
+  Id: paper
+  Display: "&6"
+  Model: 2519
+  Hide:
+  - ATTRIBUTES
+
+holy_wings_3:
+  Id: paper
+  Display: "&6"
+  Model: 2520
+  Hide:
+  - ATTRIBUTES
+ 
+holy_wings_4:
+  Id: paper
+  Display: "&6"
+  Model: 2521
+  Hide:
+  - ATTRIBUTES
+  
+holy_wings_5:
+  Id: paper
+  Display: "&6"
+  Model: 2522
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_fx_1:
+  Id: paper
+  Display: "&6"
+  Model: 2523
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_fx_2:
+  Id: paper
+  Display: "&6"
+  Model: 2524
+  Hide:
+  - ATTRIBUTES
+
+light_beam_fx_3:
+  Id: paper
+  Display: "&6"
+  Model: 2525
+  Hide:
+  - ATTRIBUTES
+ 
+light_beam_fx_4:
+  Id: paper
+  Display: "&6"
+  Model: 2526
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_fx_5:
+  Id: paper
+  Display: "&6"
+  Model: 2527
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_fx_6:
+  Id: paper
+  Display: "&6"
+  Model: 2528
+  Hide:
+  - ATTRIBUTES
+  
+light_beam_fx_7:
+  Id: paper
+  Display: "&6"
+  Model: 2529
+  Hide:
+  - ATTRIBUTES
+
+light_eruption_1:
+  Id: paper
+  Display: "&6"
+  Model: 2530
+  Hide:
+  - ATTRIBUTES
+ 
+light_eruption_2:
+  Id: paper
+  Display: "&6"
+  Model: 2531
+  Hide:
+  - ATTRIBUTES
+  
+light_eruption_3:
+  Id: paper
+  Display: "&6"
+  Model: 2532
+  Hide:
+  - ATTRIBUTES
+  
+light_eruption_4:
+  Id: paper
+  Display: "&6"
+  Model: 2533
+  Hide:
+  - ATTRIBUTES
+  
+light_eruption_5:
+  Id: paper
+  Display: "&6"
+  Model: 2534
+  Hide:
+  - ATTRIBUTES
+
+light_eruption_6:
+  Id: paper
+  Display: "&6"
+  Model: 2535
+  Hide:
+  - ATTRIBUTES
+ 
+light_eruption_7:
+  Id: paper
+  Display: "&6"
+  Model: 2536
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_1:
+  Id: paper
+  Display: "&6"
+  Model: 2537
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_2:
+  Id: paper
+  Display: "&6"
+  Model: 2538
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_3:
+  Id: paper
+  Display: "&6"
+  Model: 2539
+  Hide:
+  - ATTRIBUTES
+
+paladin_shield_4:
+  Id: paper
+  Display: "&6"
+  Model: 2540
+  Hide:
+  - ATTRIBUTES
+ 
+paladin_shield_5:
+  Id: paper
+  Display: "&6"
+  Model: 2541
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_6:
+  Id: paper
+  Display: "&6"
+  Model: 2542
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_7:
+  Id: paper
+  Display: "&6"
+  Model: 2543
+  Hide:
+  - ATTRIBUTES
+  
+paladin_shield_8:
+  Id: paper
+  Display: "&6"
+  Model: 2544
+  Hide:
+  - ATTRIBUTES
+
+paladin_shield_9:
+  Id: paper
+  Display: "&6"
+  Model: 2545
+  Hide:
+  - ATTRIBUTES
+ 
+paladin_shield_10:
+  Id: paper
+  Display: "&6"
+  Model: 2546
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2547
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2548
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2549
+  Hide:
+  - ATTRIBUTES
+
+paladin_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2550
+  Hide:
+  - ATTRIBUTES
+ 
+paladin_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2551
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2552
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_7:
+  Id: paper
+  Display: "&6"
+  Model: 2553
+  Hide:
+  - ATTRIBUTES
+  
+paladin_slash_8:
+  Id: paper
+  Display: "&6"
+  Model: 2554
+  Hide:
+  - ATTRIBUTES
+
+paladin_slash_9:
+  Id: paper
+  Display: "&6"
+  Model: 2555
+  Hide:
+  - ATTRIBUTES
+ 
+paladin_spin_slash:
+  Id: paper
+  Display: "&6"
+  Model: 2556
+  Hide:
+  - ATTRIBUTES
+
+holy_shield_aura:
+  Id: paper
+  Display: "&6"
+  Model: 2557
+  Hide:
+  - ATTRIBUTES
+  
+holy_wings_clean_1:
+  Id: paper
+  Display: "&6"
+  Model: 2558
+  Hide:
+  - ATTRIBUTES
+  
+holy_wings_clean_2:
+  Id: paper
+  Display: "&6"
+  Model: 2559
+  Hide:
+  - ATTRIBUTES
+
+holy_wings_clean_3:
+  Id: paper
+  Display: "&6"
+  Model: 2560
+  Hide:
+  - ATTRIBUTES
+ 
+holy_wings_clean_4:
+  Id: paper
+  Display: "&6"
+  Model: 2561
+  Hide:
+  - ATTRIBUTES
+
+holy_wings_clean_5:
+  Id: paper
+  Display: "&6"
+  Model: 2562
+  Hide:
+  - ATTRIBUTES

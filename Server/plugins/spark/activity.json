@@ -1,0 +1,15 @@
+[
+  {
+    "user": {
+      "type": "player",
+      "name": "Felipe1205",
+      "uniqueId": "29fd8388-8ad2-3557-a4b8-906cbc75df5e"
+    },
+    "time": 1739503090816,
+    "type": "Profiler (live)",
+    "data": {
+      "type": "url",
+      "value": "https://spark.lucko.me/sCfuHw4DGA"
+    }
+  }
+]

@@ -1,0 +1,201 @@
+
+###############################################
+##     Developed by Elo106 and Pashjn        ##
+##VOXEL SPAWNS https://discord.gg/BypTbqTk   ##
+###############################################
+
+vs_h_black:
+  Type: wolf
+  Display: 'Black Horse'
+  Health: 10
+  Damage: 5
+  Despawn: False
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - SUFFOCATION 0.0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 3 randomstroll
+  - 4 lookatplayers
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:
+  - model{mid=vs_h_black;drive=true;damagetint=true} @self ~onSpawn
+  - skill{s=HORSE_run} @Self ~onTimer:10
+  - sound{s=entity.horse.ambient} @self ~onTimer:200 0.5
+  - sound{s=entity.horse.hurt} @self ~onDamage
+  - sound{s=entity.horse.death} @self ~onDeath
+
+vs_h_brown:
+  Type: wolf
+  Display: 'Brown Horse'
+  Health: 10
+  Damage: 5
+  Despawn: False
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - SUFFOCATION 0.0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:
+  - model{mid=vs_h_brown;drive=true;damagetint=true} @self ~onSpawn
+  - skill{s=HORSE_run} @Self ~onTimer:10
+  - sound{s=entity.horse.ambient} @self ~onTimer:200 0.5
+  - sound{s=entity.horse.hurt} @self ~onDamage
+  - sound{s=entity.horse.death} @self ~onDeath
+
+vs_h_white:
+  Type: wolf
+  Display: 'White Horse'
+  Health: 10
+  Damage: 5
+  Despawn: False
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - SUFFOCATION 0.0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:
+  - model{mid=vs_h_white;drive=true;damagetint=true} @self ~onSpawn
+  - skill{s=HORSE_run} @Self ~onTimer:10
+  - sound{s=entity.horse.ambient} @self ~onTimer:200 0.5
+  - sound{s=entity.horse.hurt} @self ~onDamage
+  - sound{s=entity.horse.death} @self ~onDeath
+
+vs_h_brown_spots:
+  Type: wolf
+  Display: 'Spotted Horse'
+  Health: 10
+  Damage: 5
+  Despawn: False
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - SUFFOCATION 0.0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:
+  - model{mid=vs_h_brown_spots;drive=true;damagetint=true} @self ~onSpawn
+  - skill{s=HORSE_run} @Self ~onTimer:10
+  - sound{s=entity.horse.ambient} @self ~onTimer:200 0.5
+  - sound{s=entity.horse.hurt} @self ~onDamage
+  - sound{s=entity.horse.death} @self ~onDeath
+
+vs_h_luckyluke:
+  Type: wolf
+  Display: 'Jolly Jumper'
+  Health: 10
+  Damage: 5
+  Despawn: False
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  DamageModifiers:
+  - SUFFOCATION 0.0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:
+  - model{mid=vs_h_luckyluke;drive=true;damagetint=true} @self ~onSpawn
+  - skill{s=HORSE_run} @Self ~onTimer:10
+  - sound{s=entity.horse.ambient} @self ~onTimer:200 0.5
+  - sound{s=entity.horse.hurt} @self ~onDamage
+  - sound{s=entity.horse.death} @self ~onDeath

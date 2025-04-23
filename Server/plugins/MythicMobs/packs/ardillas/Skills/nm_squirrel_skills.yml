@@ -1,0 +1,70 @@
+### Jump Interaction
+
+nm_squirrel_jump_parse:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - CancelEvent
+  - skill{s=nm_squirrel_jump_activate}
+  
+nm_squirrel_jump_activate:
+  Condition:
+  - offgcd
+  Skills:
+  - gcd{ticks=60}
+  - sound{s=entity.rabbit.jump;p=1.9;v=1} @self
+  - state{state=jump;li=1;n=false;speed=1} @self
+  
+### Tail Wiggle Interaction
+
+nm_squirrel_tail_wiggle_parse:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - CancelEvent
+  - skill{s=nm_squirrel_tail_wiggle_activate}
+  
+nm_squirrel_tail_wiggle_activate:
+  Condition:
+  - offgcd
+  Skills:
+  - gcd{ticks=60}
+  - sound{s=entity.rabbit.ambient;p=1.9;v=1} @self
+  - state{state=tail_wiggle;li=1;n=false;speed=1} @self
+  
+### Sniff Interaction
+
+nm_squirrel_sniff_parse:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - CancelEvent
+  - skill{s=nm_squirrel_sniff_activate}
+  
+nm_squirrel_sniff_activate:
+  Condition:
+  - offgcd
+  Skills:
+  - gcd{ticks=60}
+  - sound{s=entity.rabbit.ambient;p=1.2;v=0.4} @self
+  - state{state=sniff;li=1;n=false;speed=1} @self
+  
+### Hurt Events
+
+nm_squirrel_hurt_1:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - state{state=hurt_1;li=1;n=false;speed=1} @self
+
+nm_squirrel_hurt_2:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - state{state=hurt_2;li=1;n=false;speed=1} @self
+
+nm_squirrel_hurt_3:
+  Conditions:
+  - onground{} true cancel
+  Skills:
+  - state{state=hurt_3;li=1;n=false;speed=1} @self

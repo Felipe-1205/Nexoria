@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 185.165.254.22
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739659054810
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739662214892
+  login: 1739659032299
+money: '0'
+last-account-name: loler923
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.369367850542
+  y: 81.0
+  z: 463.71734602085684
+  yaw: 66.00009155273438
+  pitch: 3.7500030994415283
+nickname: Abyss
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -209.82989789465861
+  y: 83.0
+  z: -355.5287349056262
+  yaw: 86.9429931640625
+  pitch: 3.1504769325256348

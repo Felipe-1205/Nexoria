@@ -1,0 +1,38 @@
+# !!! IMPORTANT: BreweryX configuration files do NOT support external comments! If you add any comments, they will be overwritten !!!
+# -- Define objetos personalizados --
+# El ID definido puede usarse en recetas
+
+# matchAny: Establece si con que solo una de las condiciones coincida es suficiente
+# material: El tipo de objeto que se usa
+# name: El nombre que el objeto debe tener (Códigos de formato posibles, como &6 o hexadecimal como &#<hex>)
+# lore: Que debe estar en el lore del objeto
+# customModelData: El modelo personalizado que el objeto debe de tener, en formato de lista
+customItems:
+  ex-item:
+    material: Barrier
+    name: Wall
+    lore:
+    - '&7Very well protected'
+  ex-item2:
+    matchAny: true
+    material:
+    - Acacia_Door
+    - Oak_Door
+    - Spruce_Door
+    name:
+    - Beechwood Door
+    lore:
+    - A door
+  rasp:
+    name: '&cRaspberry'
+  modelitem:
+    material: paper
+    customModelData:
+    - 10234
+    - 30334
+  blue-flowers:
+    matchAny: true
+    material:
+    - cornflower
+    - blue_orchid
+

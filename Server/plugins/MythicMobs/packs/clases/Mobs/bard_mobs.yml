@@ -1,0 +1,248 @@
+######## created by samus2002 #########
+
+# Shield of Harmony #
+
+Musical_Note:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=musical_note:4} ~onSpawn
+  - skill{s=Shield_of_Harmony_REMOVE;delay=50} @self ~onTimer:10
+  #- effect:particles{particle=note;color=#d907b2;amount=1;hS=0;vS=0;y=1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:10
+
+# Sound Wave #
+
+Sound_Wave:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=strings;n=false} @self ~onSpawn
+  - remove{delay=40} @self ~onSpawn
+  
+# Memento Mori #
+
+Memento_Mori:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=black_strings;n=false} @self ~onSpawn
+  
+# Vibrative Strike #
+
+Vibrative_Strike:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=vibration_1:4;delay=2} ~onSpawn
+  - equip{item=vibration_2:4;delay=4} ~onSpawn
+  - equip{item=vibration_3:4;delay=6} ~onSpawn
+  - equip{item=vibration_4:4;delay=8} ~onSpawn
+  - equip{item=vibration_5:4;delay=10} ~onSpawn
+  - equip{item=vibration_6:4;delay=12} ~onSpawn
+  - remove{delay=14} @self ~onSpawn
+  
+# Angelic Serenade #
+
+Angel:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=cupid;n=false} @self ~onSpawn
+  - effect:sound{s=bard_sounds:samus.harp_angel;volume=1;pitch=1;delay=20} @self ~onSpawn
+  - effect:particles{particle=falling_spore_blossom;amount=15;hS=0.9;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0;delay=20;repeat=7;repeatinterval=5} @forward{f=0.6;y=-0.8} ~onSpawn
+  
+Healing_Aura:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=healing_aura;n=false;delay=40} @self ~onSpawn
+  - effect:sound{s=bard_sounds:samus.healing_aura;volume=1;pitch=1;delay=40} @self ~onSpawn
+  
+# Rhapsody #
+
+Blue_Bird:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=blue_bird;n=false} @self ~onSpawn
+  - effect:sound{s=bard_sounds:samus.bird_chirp;volume=1;pitch=1} @self ~onTimer:10 0.2
+  - effect:sound{s=bard_sounds:samus.bird_chirp_chain;volume=1;pitch=1;delay=10} @self ~onSpawn
+  #- remove{delay=80} @self ~onSpawn
+  
+Rhapsody:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - mounttarget{delay=1} @Owner ~onSpawn
+  - equip{item=rhapsody:0;delay=0} ~onSpawn
+  #- remove{delay=80} @self ~onSpawn
+  
+# Symphony of Destruction #
+
+ult_strings_1:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=ult_strings_1;n=false} @self ~onSpawn
+  - state{s=spin;speed=0.3} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+ult_strings_2:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=ult_strings_2;n=false} @self ~onSpawn
+  - state{s=spin;speed=0.3} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+ult_strings_3:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=ult_strings_3;n=false} @self ~onSpawn
+  - state{s=spin;speed=0.3} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+ult_strings_4:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=ult_strings_4;n=false} @self ~onSpawn
+  - state{s=spin;speed=0.3} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+Clef:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=clef_1:0;delay=2} ~onSpawn
+  - equip{item=clef_2:0;delay=4} ~onSpawn
+  - equip{item=clef_3:0;delay=6} ~onSpawn
+  - equip{item=clef_4:0;delay=8} ~onSpawn
+  - equip{item=clef_5:0;delay=10} ~onSpawn
+  - equip{item=clef_6:0;delay=12} ~onSpawn
+  - equip{item=clef_7:0;delay=14} ~onSpawn
+  - equip{item=clef_8:0;delay=16} ~onSpawn
+  - equip{item=clef_9:0;delay=18} ~onSpawn
+  - equip{item=clef_10:0;delay=20} ~onSpawn
+  - equip{item=clef_11:0;delay=22} ~onSpawn
+  - equip{item=clef_12:0;delay=24} ~onSpawn
+  - equip{item=clef_13:0;delay=26} ~onSpawn
+  - remove{delay=60} @self ~onSpawn
+  
+Symphony_Light:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=symphony_light_1:0;delay=2} ~onSpawn
+  - equip{item=symphony_light_2:0;delay=4} ~onSpawn
+  - equip{item=symphony_light_3:0;delay=6} ~onSpawn
+  - equip{item=symphony_light_4:0;delay=8} ~onSpawn
+  - equip{item=symphony_light_5:0;delay=10} ~onSpawn
+  - equip{item=symphony_light_6:0;delay=12} ~onSpawn
+  - equip{item=symphony_light_7:0;delay=14} ~onSpawn
+  - equip{item=symphony_light_8:0;delay=16} ~onSpawn
+  - equip{item=symphony_light_9:0;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+Symphony_Explosion:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=symphony_explosion_1:0;delay=2} ~onSpawn
+  - equip{item=symphony_explosion_2:0;delay=4} ~onSpawn
+  - equip{item=symphony_explosion_3:0;delay=6} ~onSpawn
+  - equip{item=symphony_explosion_4:0;delay=8} ~onSpawn
+  - equip{item=symphony_explosion_5:0;delay=10} ~onSpawn
+  - equip{item=symphony_explosion_6:0;delay=12} ~onSpawn
+  - equip{item=symphony_explosion_7:0;delay=14} ~onSpawn
+  - equip{item=symphony_explosion_8:0;delay=16} ~onSpawn
+  - equip{item=symphony_explosion_9:0;delay=18} ~onSpawn
+  - remove{delay=20} @self ~onSpawn

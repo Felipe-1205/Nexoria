@@ -1,0 +1,416 @@
+
+  
+Arcane_Shield_ACT:
+  Skills:
+  - CancelEvent
+
+Arcane_Shield_Damaged:
+  Cooldown: 0
+  Skills:
+  - skill{s=Arcane_Shield_Damaged_PURPLE} @self
+  - delay 1
+  - skill{s=Arcane_Shield_Damaged_BLUE} @self
+  
+Arcane_Shield_Damaged_BLUE:
+  Cooldown: 7
+  Conditions:
+  - hasaura{n=Arcane_Shield_Blue_Aura_STOP} false
+  Skills:
+  - Aura{auraName=Arcane_Shield_Blue_Aura_STOP;duration=140} @self
+  - effect:sound{s=archmage_sounds:samus.shield_form;volume=1;pitch=1;delay=140} @self
+  - effect:sound{s=archmage_sounds:samus.shield_block;volume=1;pitch=1} @self
+  
+Arcane_Shield_Damaged_PURPLE:
+  Cooldown: 7
+  Conditions:
+  - hasaura{n=Arcane_Shield_Blue_Aura_STOP} true
+  - hasaura{n=Arcane_Shield_Purple_Aura_STOP} false
+  Skills:
+  - Aura{auraName=Arcane_Shield_Purple_Aura_STOP;duration=140} @self
+  - effect:sound{s=archmage_sounds:samus.shield_form;volume=1;pitch=1.2;delay=140} @self
+  - effect:sound{s=archmage_sounds:samus.shield_block;volume=1;pitch=1.2} @self
+  
+Arcane_Shield:
+  Cooldown: 0
+  Skills:
+  - skill{s=Arcane_Shield_Purple} @self
+  - skill{s=Arcane_Shield_Blue} @self
+  
+  
+  
+  
+Arcane_Shield_Purple:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Arcane_Shield_Purple_Aura_STOP} false
+  Skills:
+  - onDamaged{onHit=Arcane_Shield_Damaged;auraName=purpleshield;cancelEvent=true;d=20} @self
+  - orbital{r=1;onTick=Arcane_Shield_Purple_TICK;points=20;interval=1;duration=20;oy=0.4;rx=3.14}
+
+Arcane_Shield_Purple_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#b43eff;amount=2;speed=0;hS=0;vS=0} @origin
+  
+  
+  
+  
+Arcane_Shield_Blue:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Arcane_Shield_Blue_Aura_STOP} false
+  Skills:
+  - onDamaged{onHit=Arcane_Shield_Damaged;auraName=blueshield;cancelEvent=true;d=20} @self
+  - orbital{r=1;onTick=Arcane_Shield_Blue_TICK;points=20;interval=1;duration=20;oy=1.2}
+
+Arcane_Shield_Blue_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#94fff1;amount=2;speed=0;hS=0;vS=0} @origin
+  
+  
+  
+Arcane_Slash:
+  Conditions:
+  - hasaura{n=Meteor_Storm_Aura} false
+  - hasaura{n=Arcane_Devastation_Aura} false
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.arcane_slash;volume=1;pitch=1} @self
+  - randomskill{skills=Arcane_Slash_1,Arcane_Slash_2,Arcane_Slash_3}
+
+Arcane_Slash_1:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Arcane_Slash_1;onHit=Arcane_Slash_HIT_D;v=18;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Arcane_Slash_2:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Arcane_Slash_2;onHit=Arcane_Slash_HIT_D;v=18;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Arcane_Slash_3:
+  Conditions:
+  - crouching false
+  Skills:
+  - projectile{bulletType=MOB;mob=Arcane_Slash_3;onHit=Arcane_Slash_HIT_D;v=18;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+
+Arcane_Slash_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.3}
+  
+Arcane_Slash_HIT_D:
+  Skills:
+  - skill{s=Arcane_Slash_HIT} @EntitiesNearOrigin{r=2.5}
+  - effect:sound{s=archmage_sounds:samus.arcane_hit;volume=0.4;pitch=1} @self
+  
+Arcane_Slash_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Arcane_Hit;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+  
+Blizzard:
+  Conditions:
+  - hasaura{n=Meteor_Storm_Aura} false
+  - hasaura{n=Arcane_Devastation_Aura} false
+  Cooldown: 0
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.blizzard;volume=1;pitch=1} @self
+  - projectile{onEnd=Blizzard_PRO;v=35;i=1;hR=1;vR=1;mr=35;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @targetblock
+  
+Blizzard_PRO:
+  Skills:
+  - randomskill{skills=Blizzard_PRO1,Blizzard_PRO2,Blizzard_PRO3,Blizzard_PRO4,Blizzard_PRO5;repeat=10;repeatinterval=5}
+  - effect:particlering{particle=snowflake;radius=3.5;points=50;amount=1;hS=0;vS=0;y=5;repeat=10;repeatinterval=5}
+  
+Blizzard_PRO1:
+  Cooldown: 1
+  Skills:
+  - projectile{fromorigin=true;origin=@origin;bulletType=MOB;mob=Blizzard_Icicle;vO=-5;onEnd=Blizzard_END1;onHit=Blizzard_HIT_D;v=20;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=9;tyo=0} @Forward{f=0;y=0}
+  
+Blizzard_PRO2:
+  Cooldown: 1
+  Skills:
+  - projectile{fromorigin=true;origin=@origin;bulletType=MOB;mob=Blizzard_Icicle;vO=-5;onEnd=Blizzard_END1;onHit=Blizzard_HIT_D;v=20;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=9;tyo=0;sfo=3} @Forward{f=0;y=0}
+  
+Blizzard_PRO3:
+  Cooldown: 1
+  Skills:
+  - projectile{fromorigin=true;origin=@origin;bulletType=MOB;mob=Blizzard_Icicle;vO=-5;onEnd=Blizzard_END1;onHit=Blizzard_HIT_D;v=20;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=9;tyo=0;sfo=-3} @Forward{f=0;y=0}
+  
+Blizzard_PRO4:
+  Cooldown: 1
+  Skills:
+  - projectile{fromorigin=true;origin=@origin;bulletType=MOB;mob=Blizzard_Icicle;vO=-5;onEnd=Blizzard_END2;onHit=Blizzard_HIT_D;v=20;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=9;tyo=0;sso=3} @Forward{f=0;y=0}
+  
+Blizzard_PRO5:
+  Cooldown: 1
+  Skills:
+  - projectile{fromorigin=true;origin=@origin;bulletType=MOB;mob=Blizzard_Icicle;vO=-5;onEnd=Blizzard_END3;onHit=Blizzard_HIT_D;v=20;i=1;hR=1;vR=1;mr=25;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=9;tyo=0;sso=-3} @Forward{f=0;y=0}
+  
+Blizzard_HIT_D:
+  Skills:
+  - skill{s=Blizzard_HIT} @EntitiesNearOrigin{r=4}
+  
+Blizzard_HIT:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=2;hasParticles=false}
+  - orbital{r=0.65;onTick=Blizzard_HIT_TICK;points=16;interval=1;duration=80;oy=0.1}
+
+Blizzard_HIT_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#99dfff;amount=2;speed=0;hS=0;vS=0} @origin
+  
+Blizzard_END1:
+  Skills:
+  - summon{type=Blizzard_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  
+Blizzard_END2:
+  Skills:
+  - summon{type=Blizzard_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  
+Blizzard_END3:
+  Skills:
+  - summon{type=Blizzard_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=0}
+  
+
+Cloak_Of_Hastur:
+  Conditions:
+  - hasaura{n=Meteor_Storm_Aura} false
+  - hasaura{n=Arcane_Devastation_Aura} false
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.hastur_summon;volume=1;pitch=1} @self
+  - summon{type=Cloak_Of_Hastur;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  
+  - projectile{onEnd=Cloak_Of_Hastur_PRO;v=3;i=1;hR=1;vR=1;mr=3;hnp=false;hO=0;sE=false;sB=false;hs=true;hfs=1;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+
+Cloak_Of_Hastur_PRO:
+  Skills:
+  - effect:sound{s=entity.wither.ambient;volume=0.6;pitch=0.5} @self
+  - projectile{fromorigin=true;onTick=Cloak_Of_Hastur_FX;onHit=Cloak_Of_Hastur_DAMAGE;v=8;i=1;hR=1;vR=1;mr=9;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=0.5} @Forward{f=20;y=0}
+  - projectile{fromorigin=true;onTick=Cloak_Of_Hastur_FX;onHit=Cloak_Of_Hastur_DAMAGE;v=8;i=1;hR=1;vR=1;mr=9;hnp=true;hO=15;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=0.5} @Forward{f=20;y=0}
+  - projectile{fromorigin=true;onTick=Cloak_Of_Hastur_FX;onHit=Cloak_Of_Hastur_DAMAGE;v=8;i=1;hR=1;vR=1;mr=9;hnp=true;hO=-15;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=0.5} @Forward{f=20;y=0}
+  - projectile{fromorigin=true;onTick=Cloak_Of_Hastur_FX;onHit=Cloak_Of_Hastur_DAMAGE;v=8;i=1;hR=1;vR=1;mr=9;hnp=true;hO=30;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=0.5} @Forward{f=20;y=0}
+  - projectile{fromorigin=true;onTick=Cloak_Of_Hastur_FX;onHit=Cloak_Of_Hastur_DAMAGE;v=8;i=1;hR=1;vR=1;mr=9;hnp=true;hO=-30;sE=false;sB=false;hs=false;hfs=0;syo=0;tyo=0.5} @Forward{f=20;y=0}
+
+Cloak_Of_Hastur_FX:
+  Skills:
+  - effect:particles{particle=redstone;color=#141a27;amount=5;hS=0.35;vS=0.1;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#2c5252;amount=5;hS=0.35;vS=0.1;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+
+Cloak_Of_Hastur_DAMAGE:
+  Skills:
+  - skill{s=Cloak_Of_Hastur_DAMAGE_D}
+  
+Cloak_Of_Hastur_DAMAGE_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - potion{type=BLINDNESS;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - throw{velocity=1.4;velocityY=0;repeat="<modifier.duration> * 20";repeatinterval=1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;speed=0;hS=0.3;vS=1;y=0.5;repeat="<modifier.duration> * 2";repeatinterval=10}
+  - effect:particles{particle=redstone;color=#2c5252;amount=5;speed=0;hS=0.3;vS=1;y=0.5;repeat="<modifier.duration> * 2";repeatinterval=10}
+
+
+Chains_Of_Void:
+  Conditions:
+  - hasaura{n=Meteor_Storm_Aura} false
+  - hasaura{n=Arcane_Devastation_Aura} false
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.void_portal;volume=1;pitch=1} @self
+  - effect:sound{s=archmage_sounds:samus.void_chain;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=archmage_sounds:samus.void_portal;volume=1;pitch=1;delay=20} @self
+  - effect:sound{s=archmage_sounds:samus.void_chain;volume=1;pitch=1;delay=25} @self
+  - effect:sound{s=archmage_sounds:samus.void_chain_hit;volume=1;pitch=1;delay=27} @self
+  - effect:sound{s=archmage_sounds:samus.void_portal;volume=1;pitch=1;delay=60} @self
+  - effect:sound{s=archmage_sounds:samus.void_chain;volume=1;pitch=0.8;delay=55} @self
+  - effect:sound{s=archmage_sounds:samus.void_chain;volume=1;pitch=0.6;delay=75} @self
+  
+  - summon{type=Chains_of_Void_Portal_1;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  - summon{type=Chains_of_Void_Portal_2;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-5;y=0.1}
+  - summon{type=Chains_of_Void_Portal_3;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-9}
+  - summon{type=Chains_of_Void;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  - summon{type=Chains_of_Void_DamageChain;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-9}
+  
+  - totem{md=2;c=1;oH=Chains_Of_Void_DAMAGE;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=5}
+  - totem{md=2;c=1;oH=Chains_Of_Void_DAMAGE2;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=9}
+  
+Chains_Of_Void_DAMAGE:
+  Skills:
+  - skill{s=Chains_Of_Void_DAMAGE_D;delay=23}
+  
+Chains_Of_Void_DAMAGE_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - Aura{auraName=Chains_Of_Void_DAMAGED;duration=20}
+  - pull{velocity=10;toOrigin=true;repeat=3;repeatinterval=1}
+  
+Chains_Of_Void_DAMAGE2:
+  Skills:
+  - skill{s=Chains_Of_Void_DAMAGE_D2;delay=30}
+  
+Chains_Of_Void_DAMAGE_D2:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - hasaura{n=Chains_Of_Void_DAMAGED} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - pull{velocity=10;toOrigin=true;repeat=3;repeatinterval=1}
+
+  
+
+Meteor_Storm:
+  Skills:
+  - Aura{auraName=Meteor_Storm_Aura;duration=80} @self
+  - summon{type=Meteor_Storm_Circle;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - stun{d=80;f=false} @self
+  - effect:sound{s=archmage_sounds:samus.archmage_magic_circle;volume=1;pitch=1} @self
+  - effect:sound{s=archmage_sounds:samus.meteor_fall;volume=1;pitch="random(0.8, 1.1)";repeat=4;repeatinterval=7} @self
+  - randomskill{skills=Meteor_Storm_M1,Meteor_Storm_M2,Meteor_Storm_M3,Meteor_Storm_M4,Meteor_Storm_M5,Meteor_Storm_M6;delay=20;repeat=7;repeatinterval=4}
+
+Meteor_Storm_M1:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=25;sE=false;sB=true;hs=false;hfs=0;sfo=-7;syo=8;tyo=-2;sso=5} @Forward{f=5;y=0}
+  
+Meteor_Storm_M2:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=5;sE=false;sB=true;hs=false;hfs=0;sfo=-5;syo=8;tyo=2;sso=1} @Forward{f=5;y=0}
+  
+Meteor_Storm_M3:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=-15;sE=false;sB=true;hs=false;hfs=0;sfo=-7;syo=7;tyo=3;sso=-3} @Forward{f=5;y=0}
+  
+Meteor_Storm_M4:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=-20;sE=false;sB=true;hs=false;hfs=0;sfo=-5;syo=6;tyo=-2;sso=-4} @Forward{f=5;y=0}
+  
+Meteor_Storm_M5:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=-25;sE=false;sB=true;hs=false;hfs=0;sfo=-8;syo=7;tyo=1;sso=-5} @Forward{f=5;y=0}
+  
+Meteor_Storm_M6:
+  Cooldown: 1
+  Skills:
+  - projectile{bulletType=MOB;mob=Meteor_Storm_Meteor;onEnd=Meteor_Storm_Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=20;sE=false;sB=true;hs=false;hfs=0;sfo=-7;syo=8;tyo=-2;sso=4} @Forward{f=5;y=0}
+  
+Meteor_Storm_Tick:
+  Skills:
+  - effect:particles{particle=flame;amount=4;hS=0.25;vS=0.25;y=1;speed=0.01;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=1;hS=0.25;vS=0.25;y=1;speed=0.01;forwardOffset=0;sideOffset=0} @origin
+
+Meteor_Storm_Meteor_HIT:
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.meteor_explosion;volume=1;pitch="random(0.8, 1.1)"} @self
+  - effect:sound{s=entity.generic.explode;volume=0.7;pitch=0.4} @self
+  - summon{type=Meteor_Storm_Explosion;amount=1;radius=0;yRadius=0;onSurface=true} @origin{y=-0.7}
+  - skill{s=Meteor_Storm_Meteor_HIT_D} @EntitiesNearOrigin{r=6}
+  
+Meteor_Storm_Meteor_HIT_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+
+Arcane_Devastation:
+  Conditions:
+  - hasaura{n=Meteor_Storm_Aura} false
+  Skills:
+  - Aura{auraName=Arcane_Devastation_Aura;duration=100} @self
+  - effect:sound{s=archmage_sounds:samus.thunder_sky;volume=1;pitch=1} @self
+  - effect:sound{s=archmage_sounds:samus.archmage_magic_circle;volume=1;pitch=1} @self
+  - orbital{bulletType=MOB;mob=Arcane_Devastation_Circle;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=-0.6;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - potion{type=LEVITATION;duration=60;level=0;hasParticles=false;delay=20} @self
+  - projectile{onEnd=Arcane_Devastation_PRO;v=35;i=1;hR=1;vR=1;mr=35;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @targetblock
+  - delay 80
+  - leap{velocity=300} @forward{f=2;y=-5}
+  - effect:sound{s=entity.ender_dragon.shoot;volume=1;pitch=0.6} @self
+  - onDamaged{auraName=landresist;d=20;cE=true} @self
+  - effect:sound{s=archmage_sounds:samus.meteor_explosion;volume=0.8;pitch=1} @self
+  - delay 3
+  - stun{d=20;f=false} @self
+  - effect:sound{s=archmage_sounds:samus.arcane_thunder;volume=1;pitch=1;delay=3} @self
+  - skill{s=Arcane_Thunder_SKILL} @Ring{radius=6;points=5}
+  
+Arcane_Thunder_SKILL:
+  Skills:
+  - summon{type=Arcane_Thunder;amount=1;radius=0;yRadius=0;onSurface=true}
+  - totem{md=2;c=1;oH=Arcane_Thunder_DAMAGE;hnp=true;hp=true;hR=3.5;vR=2;i=1;repeat=3;repeatinterval=10}
+  
+Arcane_Thunder_DAMAGE:
+  Skills:
+  - skill{s=Arcane_Thunder_DAMAGE_D;delay=4}
+  
+Arcane_Thunder_DAMAGE_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage> * 1.5";pkb=false;hnp=true;hp=true}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false}
+  - orbital{r=0.5;onTick=Arcane_Thunder_DAMAGE_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2.5}
+
+Arcane_Thunder_DAMAGE_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin
+  
+  
+  
+Arcane_Devastation_PRO:
+  Skills:
+  - effect:particlering{particle=redstone;color=#94fff1;radius=10;points=120;amount=1;hS=0;vS=0;y=3.5;repeat=16;repeatinterval=5} @origin
+  - effect:particlering{particle=redstone;color=#b43eff;radius=8;points=100;amount=1;hS=0;vS=0;y=4;repeat=16;repeatinterval=5} @origin
+  - effect:particlering{particle=redstone;color=#b43eff;radius=10;points=120;amount=1;hS=0;vS=0;y=3.5;repeat=16;repeatinterval=5} @origin
+  - effect:particlering{particle=redstone;color=#94fff1;radius=8;points=100;amount=1;hS=0;vS=0;y=4;repeat=16;repeatinterval=5} @origin
+  - skill{s=Arcane_Bolt_SKILL;repeat=20;repeatinterval=4} @RandomLocationsNearOrigin{a=2;r=9;s=3;minr=0}
+  
+Arcane_Bolt_SKILL:
+  Skills:
+  - effect:sound{s=archmage_sounds:samus.arcane_bolt;volume=0.3;pitch="random(0.8, 1.1)";delay=3}
+  - randomskill{skills=Arcane_Bolt_SUMMON_1,Arcane_Bolt_SUMMON_2,Arcane_Bolt_SUMMON_3}
+  - totem{md=2;c=1;oH=Arcane_Bolt_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1}
+  
+Arcane_Bolt_SUMMON_1:
+  Skills:
+  - summon{type=Arcane_Bolt_1;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Arcane_Bolt_SUMMON_2:
+  Skills:
+  - summon{type=Arcane_Bolt_2;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Arcane_Bolt_SUMMON_3:
+  Skills:
+  - summon{type=Arcane_Bolt_3;amount=1;radius=0;yRadius=0;onSurface=true}
+  
+Arcane_Bolt_DAMAGE:
+  Skills:
+  - skill{s=Arcane_Bolt_DAMAGE_D;delay=4}
+  
+Arcane_Bolt_DAMAGE_D:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true}
+  - potion{type=SLOW;duration=15;level=50;hasParticles=false}
+  - orbital{r=0.5;onTick=Arcane_Bolt_DAMAGE_TICK;points=16;interval=1;duration=15;oy=2.5}
+
+Arcane_Bolt_DAMAGE_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin

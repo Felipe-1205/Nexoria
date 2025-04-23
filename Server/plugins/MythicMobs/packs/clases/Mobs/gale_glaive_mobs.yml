@@ -1,0 +1,483 @@
+######## created by samus2002 #########
+
+# VFX #
+  
+VFX_Gale_Slash_Up_Down:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_slash_1;lockpitch=true} @self ~onSpawn
+  #- tint{m=vfx_gale_slash_1;c=B8EAFC} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=up-down-vert;speed=0.6} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_8;np=body;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_9;np=body;delay=16} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_10;np=body;delay=18} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_11;np=body;delay=20} @self ~onSpawn
+  - partvis{m=vfx_gale_slash_1;p=body;v=false;em=true;child=true;delay=22} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+VFX_Gale_Slash_Down_Up:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_slash_1;lockpitch=true} @self ~onSpawn
+  #- tint{m=vfx_gale_slash_1;c=B8EAFC} @self ~onSpawn
+  - bodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=down-up-vert;speed=0.6} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=16;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_8;np=body;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_9;np=body;delay=16} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_10;np=body;delay=18} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_11;np=body;delay=20} @self ~onSpawn
+  - partvis{m=vfx_gale_slash_1;p=body;v=false;em=true;child=true;delay=22} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+VFX_Gale_Thrust:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_thrust_1} @self ~onSpawn
+  #- tint{m=vfx_gale_thrust_1;c=B8EAFC} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2;speed=0.7} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=14;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point1;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=14;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=14;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=14;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point4;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_7;np=bone;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_8;np=bone;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_9;np=bone;delay=16} @self ~onSpawn
+  
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_7;np=bone2;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_8;np=bone2;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_9;np=bone2;delay=16} @self ~onSpawn
+  
+  - partvis{m=vfx_gale_thrust_1;p=bone;v=false;em=true;child=true;delay=18} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+VFX_Gale_IMPACT:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_impact} @self ~onSpawn
+  - tint{m=vfx_gale_impact;c=8ff8e2} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+VFX_Vault:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_vault_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_7;np=bone;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_1;p=bone;nm=vfx_gale_vault_8;np=bone;delay=14} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+VFX_Dancing_Blade_CHARGE:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_vault_8;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_1;np=bone;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_2;np=bone;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_3;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_4;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_5;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_6;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_vault_8;p=bone;nm=vfx_gale_vault_7;np=bone;delay=2} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn
+  
+VFX_Dancing_Blade_Dash:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_dash_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill;speed=1} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_7;np=bone;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_8;np=bone;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_9;np=bone;delay=16} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_10;np=bone;delay=18} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_11;np=bone;delay=20} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_12;np=bone;delay=22} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_13;np=bone;delay=24} @self ~onSpawn
+  - changepart{m=vfx_gale_dash_1;p=bone;nm=vfx_gale_dash_14;np=bone;delay=26} @self ~onSpawn
+  - remove{delay=28} @self ~onSpawn
+  
+VFX_Dancing_Blade_Thrust:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_thrust_1;lockpitch=true} @self ~onSpawn
+  #- tint{m=vfx_gale_thrust_1;c=B8EAFC} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill3;speed=0.7} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point1;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_thrust_1;pid=point4;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_2;np=bone;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_3;np=bone;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_4;np=bone;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_5;np=bone;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_6;np=bone;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_7;np=bone;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_8;np=bone;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone;nm=vfx_gale_thrust_9;np=bone;delay=16} @self ~onSpawn
+  
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_2;np=bone2;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_3;np=bone2;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_4;np=bone2;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_5;np=bone2;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_6;np=bone2;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_7;np=bone2;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_8;np=bone2;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_thrust_1;p=bone2;nm=vfx_gale_thrust_9;np=bone2;delay=16} @self ~onSpawn
+  
+  - partvis{m=vfx_gale_thrust_1;p=bone;v=false;em=true;child=true;delay=18} @self ~onSpawn
+  - remove{delay=20} @self ~onSpawn
+  
+VFX_Torrent_Twirl:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_spin;lockpitch=true} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=15;repeati=1} @modelpart{mid=vfx_gale_spin;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=15;repeati=1} @modelpart{mid=vfx_gale_spin;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=15;repeati=1} @modelpart{mid=vfx_gale_spin;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  
+VFX_Torrent_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_slash_1;lockpitch=true} @self ~onSpawn
+  #- tint{m=vfx_gale_slash_1;c=B8EAFC} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=bigslash1;speed=0.7} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_8;np=body;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_9;np=body;delay=16} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_10;np=body;delay=18} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_11;np=body;delay=20} @self ~onSpawn
+  - partvis{m=vfx_gale_slash_1;p=body;v=false;em=true;child=true;delay=22} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+VFX_Torrent_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_slash_1;lockpitch=true} @self ~onSpawn
+  #- tint{m=vfx_gale_slash_1;c=B8EAFC} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=bigslash2;speed=0.7} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0;repeat=24;repeati=1} @modelpart{mid=vfx_gale_slash_1;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onSpawn
+  
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_6;np=body;delay=10} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_7;np=body;delay=12} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_8;np=body;delay=14} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_9;np=body;delay=16} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_10;np=body;delay=18} @self ~onSpawn
+  - changepart{m=vfx_gale_slash_1;p=body;nm=vfx_gale_slash_11;np=body;delay=20} @self ~onSpawn
+  - partvis{m=vfx_gale_slash_1;p=body;v=false;em=true;child=true;delay=22} @self ~onSpawn
+  - remove{delay=24} @self ~onSpawn
+  
+VFX_Cloudpiercer_Charge:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_ground_impact;scale=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=charge;speed=1} @self ~onSpawn
+  - tint{m=vfx_gale_ground_impact;c=0eaf9b} @self ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+VFX_Cloudpiercer_Impact:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_ground_impact;scale=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=impact;speed=1} @self ~onSpawn
+  - tint{m=vfx_gale_ground_impact;c=0eaf9b} @self ~onSpawn
+  - remove{delay=15} @self ~onSpawn
+  
+VFX_Cloudpiercer_Spear:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_spear} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=10;hS=0.02;vS=0.02;y=0;size=0.5;speed=0} @modelpart{p=trail} ~onTimer:1
+  - partvis{m=vfx_gale_spear;p=trail;v=false;em=true;child=true} @self ~onSpawn
+  - state{s=shoot;p=1;speed=0.8} @self ~onSpawn
+  - state{s=shoot_end;delay=60;p=2} @self ~onSpawn
+  
+VFX_Cloudpiercer_Tornado:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_tornado;lockpitch=true} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point7;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point8;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point9;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point13;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point14;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point15;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  
+  - effect:sound{s=entity.breeze.idle_air;volume=1.4;pitch=0.5} @self ~onTimer:7
+  - effect:sound{s=entity.breeze.idle_ground;volume=1.4;pitch=0.6} @self ~onTimer:7
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spawn2} @self ~onSpawn
+  - state{s=small;delay=9} @self ~onSpawn
+  - state{s=despawn2;delay=131} @self ~onSpawn
+  - remove{delay=140} @self ~onSpawn
+  
+VFX_Windbound_Fury_Tornado:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_tornado;lockpitch=true} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point4;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point5;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point6;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point7;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point8;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point9;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point10;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point11;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point12;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point13;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point14;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_tornado;pid=point15;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  
+  - effect:sound{s=entity.breeze.idle_air;volume=2;pitch=0.5} @self ~onTimer:7
+  - effect:sound{s=entity.breeze.idle_ground;volume=2;pitch=0.6} @self ~onTimer:7
+  
+  - skill{s=Windbound_Fury_RING} @selflocation ~onTimer:25
+  #- skill{s=Windbound_Fury_RING} @selflocation{y=2.5} ~onTimer:25
+  - skill{s=Windbound_Fury_RING} @selflocation{y=8.5} ~onTimer:25
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  - state{s=big;delay=30} @self ~onSpawn
+  - state{s=despawn;delay=85} @self ~onSpawn
+  - remove{delay=100} @self ~onSpawn
+  
+VFX_Windbound_Fury_Ground_Crack_Debris:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_ground_crack_debris;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=45} @self ~onSpawn
+
+VFX_Ground_Crack_Windbound_Fury:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_ground_crack;lockpitch=true;lockyaw=true;scale=1} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - state{s=death;delay=80} @self ~onSpawn
+  
+  - tint{m=vfx_ground_crack;c=7effe4} @self ~onSpawn
+  - skill{s=Windbound_Fury_RING_OPP} @self ~onSpawn
+  
+  - remove{delay=87} @self ~onSpawn
+
+VFX_Windbound_Fury_SpinSlash_Vert:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_gale_spin;lockpitch=true} @self ~onSpawn
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_spin;pid=point;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_spin;pid=point2;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  - effect:particles{p=dust_color_transition;color1=#cbfee9;color2=#0eaf9b;amount=3;hS=0.2;size=0.45;vS=0.04;speed=0} @modelpart{mid=vfx_gale_spin;pid=point3;location=0,0,0;em=true;offset=LOCAL} ~onTimer:1
+  
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=up-down} @self ~onSpawn

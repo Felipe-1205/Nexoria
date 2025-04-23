@@ -1,0 +1,26 @@
+RewardsInfo:
+  ==: net.playavalon.mythicdungeons.dungeons.rewards.PlayerLootData
+  Player: YudaxNot
+  UUID: 5c149992-9e1b-358f-b473-26d2bb400775
+  Loot:
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740106460057
+    LootLocation:
+      ==: org.bukkit.Location
+      x: -1.0
+      y: 68.0
+      z: -110.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740106460057
+  - ==: net.playavalon.mythicdungeons.dungeons.rewards.LootCooldown
+    LootedTime: 1740106568016
+    LootLocation:
+      ==: org.bukkit.Location
+      x: 12.0
+      y: 79.0
+      z: -134.0
+      pitch: 0.0
+      yaw: 0.0
+    ResetTime: 1740106568016
+Finished: true

@@ -1,0 +1,40 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.27.143.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739747059276
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739747051858
+  login: 1739745386444
+money: '0'
+last-account-name: Felipe1205
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -160.93649416280147
+  y: 70.0
+  z: -51.57664726756117
+  yaw: -55.84418869018555
+  pitch: 11.100066184997559
+nickname: Felipe
+lastlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -222.74320722588848
+  y: 83.0
+  z: -341.0195360581
+  yaw: 133.37109375
+  pitch: 18.656558990478516
+last-message-reply-recipient: true

@@ -1,0 +1,34 @@
+id: 98da0f18-4622-3daf-9c2b-f8025683b219
+name: zeta4401
+created: 1739658166048
+updated: 1740283390389
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: -355.001434366924,67.0,566.659358130397,pasatiempos,-109.37262,-0.35019016
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: fc3aaf87c239,25ccc57692be,ac9555da0e5b
+    mana_timestamp: 1740283390207
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 46.724998474121094

@@ -1,0 +1,75 @@
+wolfsprint:
+  TargetConditions:
+  - altitude{h=2} true
+  - hasaura{n=wolfsprint} false
+  Skills:
+  - effect:particles{p=cloud;amount=50;speed=0;hS=0.5;vS=0.5} @Self
+  - Aura{auraName=wolfsprint;oS=wolfsprint_start_anim;onTick=wolfsprint_anim;interval=10;duration=200} @Self
+wolfsprint_start_anim:
+  Skills:
+  - lunge{velocity=3;velocityY=0.1} @Self
+  - effect:sound{s=entity.witch.throw;v=1;p=0} @EIR{r=5}
+  - potion{type=SPEED;duration=200;lvl=10} @Self
+wolfsprint_anim:
+  TargetConditions:
+  - hasaura{n=wolfsprint} true
+  - moving true
+  Skills:
+  - effect:particles{particle=block_crack;m=dirt;amount=20;hS=0.1;vS=0.1} @self
+  - effect:particles{p=cloud;amount=1;hS=0;vS=0.1;y=1} @self
+  - effect:sound{s=entity.horse.gallop;v=2;p=0} @owner
+  
+wolfjump_anim:
+  TargetConditions:
+  - altitude{h=2} true
+  Skills:
+  - effect:sound{s=entity.witch.throw;v=1;p=0} @EIR{r=5}
+  - state{s=jump;li=0;lo=2} @self
+
+wolf-ghost:
+  Skills:
+  - effect:particlering{p=magicCrit;a=10;vs=0.0;hs=0.1;s=0;y=1;points=20;radius=0.1} @Self
+  - delay 2
+  - effect:particlering{p=magicCrit;a=10;vs=0.0;hs=0.1;s=0;y=1;points=20;radius=0.5} @Self
+  - delay 2
+  - effect:particlering{p=magicCrit;a=10;vs=0.0;hs=0.1;s=0;y=1;points=20;radius=1} @Self
+  - delay 2 
+  - effect:particlering{p=magicCrit;a=10;vs=0.0;hs=0.1;s=0;y=1;points=20;radius=1.5} @Self
+  - effect:sound{s=block.beacon.power_select;v=1;p=1} @EIR{r=5}
+  - delay 10
+  - effect:sound{s=block.beacon.power_select;v=1;p=1} @EIR{r=5}
+  - delay 10
+  - effect:sound{s=block.beacon.power_select;v=1;p=1} @EIR{r=5}
+  - delay 10
+  - effect:particles{p=cloud;amount=50;speed=0;hS=0.5;vS=0.5} @Self
+  - summon{t=wolf-spectral;amount=1;radius=1;delay=10} @Self
+
+spawn-bunny-black:
+  Skills:
+  - summon{t=bunny-black;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-bunny-brown:
+  Skills:
+  - summon{t=bunny-brown;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-bunny-gray:
+  Skills:
+  - summon{t=bunny-gray;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-bunny-white:
+  Skills:
+  - summon{t=bunny-white;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-bunny-whitebrown:
+  Skills:
+  - summon{t=bunny-whitebrown;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-wolfpack:
+  Skills:
+  - summon{t=wolf-gray;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+  - summon{t=wolf-bluegray;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+  - summon{t=wolf-black;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+  - summon{t=wolf-brown;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+  - summon{t=wolf-darkbrown;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+  - summon{t=wolf-red;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-wolf-evil:
+  Skills:
+  - summon{t=wolf-evil;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}
+spawn-wolf-white:
+  Skills:
+  - summon{t=wolf-white;amount=1;radius=1;onSurface=true;delay=10} @origin{yoffset=1}

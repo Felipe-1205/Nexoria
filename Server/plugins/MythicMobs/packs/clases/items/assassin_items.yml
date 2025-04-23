@@ -1,0 +1,183 @@
+######## created by samus2002 #########
+
+assassin_dagger_a:
+  Id: paper
+  Display: "&6"
+  Model: 2108
+  Hide:
+  - ATTRIBUTES
+
+assassin_dash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2109
+  Hide:
+  - ATTRIBUTES
+ 
+assassin_dash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2110
+  Hide:
+  - ATTRIBUTES
+  
+assassin_dash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2111
+  Hide:
+  - ATTRIBUTES
+  
+assassin_dash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2112
+  Hide:
+  - ATTRIBUTES
+  
+assassin_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2113
+  Hide:
+  - ATTRIBUTES
+  
+assassin_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2114
+  Hide:
+  - ATTRIBUTES
+  
+assassin_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2115
+  Hide:
+  - ATTRIBUTES
+  
+assassin_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2116
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2117
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2118
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2119
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2120
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2121
+  Hide:
+  - ATTRIBUTES
+  
+assassin_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2122
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_1:
+  Id: paper
+  Display: "&6"
+  Model: 2123
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_2:
+  Id: paper
+  Display: "&6"
+  Model: 2124
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_3:
+  Id: paper
+  Display: "&6"
+  Model: 2125
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_4:
+  Id: paper
+  Display: "&6"
+  Model: 2126
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_5:
+  Id: paper
+  Display: "&6"
+  Model: 2127
+  Hide:
+  - ATTRIBUTES
+  
+assassin_spin_6:
+  Id: paper
+  Display: "&6"
+  Model: 2128
+  Hide:
+  - ATTRIBUTES
+  
+assassin_x_1:
+  Id: paper
+  Display: "&6"
+  Model: 2129
+  Hide:
+  - ATTRIBUTES
+  
+assassin_x_2:
+  Id: paper
+  Display: "&6"
+  Model: 2130
+  Hide:
+  - ATTRIBUTES
+  
+assassin_x_3:
+  Id: paper
+  Display: "&6"
+  Model: 2131
+  Hide:
+  - ATTRIBUTES
+  
+assassin_x_4:
+  Id: paper
+  Display: "&6"
+  Model: 2132
+  Hide:
+  - ATTRIBUTES
+  
+assassin_x_5:
+  Id: paper
+  Display: "&6"
+  Model: 2133
+  Hide:
+  - ATTRIBUTES

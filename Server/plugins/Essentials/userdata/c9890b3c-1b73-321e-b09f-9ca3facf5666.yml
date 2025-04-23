@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.28.151.247
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740658999109
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1741174839267
+  login: 1741173989436
+money: '0'
+last-account-name: buykl
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2953.079688154784
+  y: 81.0
+  z: 464.4957794847019
+  yaw: 89.17446899414062
+  pitch: 12.683353424072266
+nickname: August
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -335.00467271704684
+  y: 67.0
+  z: 578.9702494930123
+  yaw: -115.04530334472656
+  pitch: 7.958722114562988

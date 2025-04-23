@@ -1,0 +1,364 @@
+krokmouKRSpawn:
+  Skills:
+  - setstance{s=krokmouKRFlyToLandOFF} @Self
+  - setvariable{var=caster.krokmouKRUnderWater;t=STRING;val="no"} @Self 
+  - setvariable{var=caster.krokmouKRTamedSet;t=STRING;val="no"} @Self 
+  - setvariable{var=caster.krokmouKRFly;t=STRING;val="no"} @Self 
+  - model{m=krokmou;invis=false;rad=45;n=false;ride=true;drive=true;step=1} @Self 
+  - setspeed{speed=0.8;type=walking} @Self
+  - delay 1 
+  - partvis{m=krokmou;p=saddle_body;v=false} @Self
+  - partvis{m=krokmou;p=saddle_head;v=false} @Self
+
+krokmouKRDamaged:
+  Skills:
+  - sound{s=entity.phantom.hurt;p=0.8;v=2} @Self 
+  - sound{s=entity.parrot.hurt;p=0.1;v=2} @Self 
+  - skill:krokmouKRFly
+krokmouKRMount:
+  Conditions:
+  - modelhasdriver false 
+  - variableEquals{var=caster.krokmouKRSaddled;value="yes"} true
+  - variableEquals{var=caster.krokmouKRUnderWater;value="no"} true
+  TriggerConditions:
+  - (holding{m=CARROT} || holding{m=lead}) false
+  - crouching false 
+  Skills:
+  - sound{s=entity.horse.saddle;p=1;v=1}
+  - setspeed{speed=0.4;type=walking} @Self
+  - mountmodel{
+      m=[
+        - move{front=<skill.var.meg:front>;side=<skill.var.meg:side>}
+        - dismountmodel @Trigger ?variableEquals{var=skill.meg:sneak;value=1} ?variableEquals{var=skill.meg:on_ground;value=1}
+        - skill:krokmouKRMountFlyDown ?variableEquals{var=skill.meg:sneak;value=1} ?variableEquals{var=skill.meg:on_ground;value=0}
+        - skill:krokmouKRMountFlyUp ?variableEquals{var=skill.meg:jump;value=1} ?variableEquals{var=skill.meg:on_ground;value=0}
+        - skill:krokmouKRMountFlyJumpTrigger ?variableEquals{var=skill.meg:jump;value=1} ?variableEquals{var=skill.meg:on_ground;value=1}
+      ]} 
+krokmouKRToTame:
+  TriggerConditions:
+  - holding{m=CARROT} true
+  Conditions:
+  - (hasaura{n=krokmouKRFlyAura} || hasaura{n=krokmouKRFlyAuraEndAura}) false 
+  - variableEquals{var=caster.krokmouKRTamedSet;value="no"} true
+  - chance{chance=0.7} castinstead krokmouKRToTameCancel
+  Skills:
+  - gcd{t=5}
+  - sound{s=entity.phantom.ambient;p=0.7;v=1} @Self 
+  - sound{s=entity.donkey.eat;p=1;v=1} @Self 
+  - setvariable{var=caster.krokmouKRTamedSet;t=STRING;val="yes"} @Self 
+  - setowner
+  - takeitem{i=CARROT;a=1}
+  - e:p{particle=heart;a=2;hS=0.1;vS=0.1;s=0;y=0.7} @ModelPart{p=head;offset=MODEL;y=0.5} 
+krokmouKRToTameCancel:
+  Skills: 
+  - sound{s=entity.polar_bear.warning;p=1.2;v=1} @Self 
+  - sound{s=entity.phantom.ambient;p=0.8;v=1} @Self 
+  - takeitem{i=CARROT;a=1}
+  - e:p{particle=angry_villager;a=2;hS=0.1;vS=0.1;s=0;y=0.7} @ModelPart{p=head;offset=MODEL;y=0.5} 
+  - skill:krokmouKRFly
+krokmouKRHeal:
+  TriggerConditions:
+  - holding{m=CARROT} true
+  Conditions:
+  - offgcd true 
+  - variableEquals{var=caster.krokmouKRTamedSet;value="yes"} true
+  Skills:
+  - sound{s=entity.donkey.eat;p=1.2;v=1} @Self 
+  - takeitem{i=CARROT;a=1}
+  - healpercent{m=0.1} @Self
+  - e:p{particle=heart;a=2;hS=0.1;vS=0.1;s=0;y=0.7} @ModelPart{p=head;offset=MODEL;y=0.5} 
+krokmouKRTamedSaddledSet:
+  Conditions:
+  - modelhasdriver false 
+  - variableEquals{var=caster.krokmouKRSaddled;value="yes"} false
+  - variableEquals{var=caster.krokmouKRTamedSet;value="yes"} true
+  TriggerConditions:
+  - owner true
+  - holding{m=CARROT} false
+  - crouching castinstead krokmouKRTamedSaddledUnSet
+  - holding{m=SADDLE} true
+  Skills: 
+  - sound{s=entity.horse.armor;p=1;v=1} @Self 
+  - setvariable{var=caster.krokmouKRSaddled;t=STRING;val="yes"} @Self 
+  - takeitem{i=SADDLE;a=1}
+  - partvis{m=krokmou;p=saddle_body;v=true} @Self
+  - partvis{m=krokmou;p=saddle_head;v=true} @Self
+krokmouKRTamedSaddledUnSet:
+  Conditions:
+  - modelhasdriver false 
+  - variableEquals{var=caster.krokmouKRSaddled;value="yes"} true
+  Skills:
+  - sound{s=entity.horse.armor;p=1;v=1} @Self 
+  - setvariable{var=caster.krokmouKRSaddled;t=STRING;val="no"} @Self 
+  - giveitem{i=SADDLE}
+  - partvis{m=krokmou;p=saddle_body;v=false} @Self
+  - partvis{m=krokmou;p=saddle_head;v=false} @Self
+krokmouKRUnderWater:
+  Conditions:
+  - variableEquals{var=caster.krokmouKRUnderWater;value="yes"} castinstead krokmouKRUnderWaterReset
+  - inblock{b=WATER,LAVA} true
+  Skills: 
+  - sound{s=entity.polar_bear.ambient_baby;p=0.6;v=2} @Self 
+  - sound{s=entity.player.splash;v=2;p=1.5} @Self
+  - setstance{s=krokmouKRFlyToLandOFF} @Self
+  - setvariable{var=caster.krokmouKRUnderWater;t=STRING;val="yes"} @Self 
+  - auraremove{aura=krokmouKRFlyAura} @Self
+  - auraremove{aura=krokmouKRFlyAuraEndAura} @Self
+  - defaultstate{type=DEATH;state=death} @Self
+  - state{s=fly;r=true} @Self  
+  - state{s=start_fly;r=true} @Self  
+  - state{s=fly_down;r=true} @Self  
+  - potion{t=SLOW_FALLING;d=1;l=15;p=false;force=true} @Self
+  - dismountmodel{m=krokmou;seat=mount} @Self 
+krokmouKRUnderWaterReset:
+  Cooldown: 2.0 
+  Conditions:
+  - inblock{b=WATER,LAVA} false 
+  Skills:
+  - delay 40  
+  - setvariable{var=caster.krokmouKRUnderWater;t=STRING;val="no"} @Self 
+krokmouKRFly:
+  Cooldown: 10.0
+  Conditions:
+  - offgcd true 
+  - outside true
+  - modelhasdriver false 
+  - (hasaura{n=krokmouKRFlyAura} || hasaura{n=krokmouKRFlyAuraEndAura}) false 
+  - variableEquals{var=caster.krokmouKRUnderWater;value="yes"} false 
+  - variableEquals{var=caster.krokmouKRTamedSet;value="yes"} false
+  Skills:
+  - sound{s=entity.polar_bear.ambient;p=0.8;v=2} @Self 
+  - aura{
+      auraName=krokmouKRFlyAura;
+      oS=krokmouKRFlyAuraStart;
+      oT=krokmouKRFlyAuraTick;
+      oE=krokmouKRFlyAuraEnd;d=1000000;i=2} @Self 
+krokmouKRFlyAuraStart:
+  Skills:
+  - gcd{t=73}
+  - sound{s=entity.phantom.ambient;p=0.8;v=2} @Self 
+  - setvariable{var=caster.krokmouKRFly;t=STRING;val="yes"} @Self 
+  - potion{t=SLOW;d=30;l=25;p=false} @Self
+  - state{s=start_fly} @Self
+  - delay 15
+  - cancelSkill ?variableEquals{var=caster.krokmouKRUnderWater;value="yes"}
+  - sound{s=entity.phantom.flap;p=0.8;v=2} @Self 
+  - potion{t=LEVITATION;d=4;l=25;p=false} @Self
+  - potion{t=SLOW_FALLING;d=1000000;l=15;p=false} @Self
+  - potion{t=LEVITATION;d=1000000;l=1;p=false} @Self
+  - defaultstate{type=DEATH;state=death_fly} @Self
+  - skill{s=[
+      - sound{s=entity.leash_knot.break;p=1;v=1} @Self 
+      - dropitem{i=lead} @Self
+      - setleashholder{r=true} @Self
+    ]} ?isLeashed ?variableEquals{var=caster.krokmouKRTamedSet;value="no"}
+  - throw{v=8;vy=4} @EntitiesNearOrigin{r=5}
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+  - delay 20
+  - cancelSkill ?variableEquals{var=caster.krokmouKRUnderWater;value="yes"}
+  - sound{s=entity.phantom.flap;p=0.8;v=2} @Self 
+  - potion{t=LEVITATION;d=7;l=25;p=false} @Self
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+  - delay 15
+  - state{s=fly;li=3;lo=7} @Self  
+krokmouKRFlyAuraTick:
+  Conditions:
+  - offgcd true 
+  Skills:
+  - sound{s=entity.phantom.ambient;p=0.8;v=2;cd=5} @Self 0.1
+  - velocity{m=set;x=0;y=0;z=0} @Self
+  - lunge{velocity=0.35;velocityY=-0.06} @Forward{f=0.5} 
+  - skill:krokmouKRFlyUp
+  - skill:krokmouKRFlyRotation @ForwardWall{f=11;y=0;width=1;height=1}   
+  - randomskill{s=krokmouKRFlyPathI,krokmouKRFlyPathII} 0.01 
+  - auraremove{aura=krokmouKRFlyAura} @Self ?altitude{h=<4}
+krokmouKRFlyPathI:
+  Cooldown: 10.0
+  Skills:
+  - effect:spin{duration=10;velocity=8.25} @Self 
+  - setSkillCooldown{skill=krokmouKRFlyPathII;seconds=10} @Self
+krokmouKRFlyPathII:
+  Cooldown: 10.0
+  Skills:
+  - effect:spin{duration=10;velocity=-8.25} @Self 
+  - setSkillCooldown{skill=krokmouKRFlyPathI;seconds=10} @Self
+krokmouKRFlyUp:
+  Cooldown: 5.0
+  Conditions:
+  - outside true
+  - altitude{h=>7} true 
+  - stance{s=krokmouKRFlyToLandON;str=true} false
+  Skills:
+  - state{s=fly_up;li=3;lo=3} @Self  
+  - delay 25 
+  - sound{s=entity.phantom.flap;p=0.8;v=2} @Self 
+  - teleportin{vector=0.45,0.4,0;repeat=15;repeatInterval=1} @Self ?height{h=<120}
+  - teleportin{vector=0.35,0.2,0;repeat=15;repeatInterval=1} @Self ?height{h=>120}
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+  - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+krokmouKRFlyReturn:
+  Cooldown: 5.0 
+  Conditions:
+  - biome{b=minecraft:JAGGED_PEAKS} false
+  - hasaura{n=krokmouKRFlyAura} true
+  - variableEquals{var=caster.krokmouKRTamedSet;value="yes"} false
+  Skills:
+  - setSkillCooldown{skill=krokmouKRFlyPathI;seconds=10} @Self
+  - setSkillCooldown{skill=krokmouKRFlyPathII;seconds=10} @Self
+  - effect:spin{duration=10;velocity=-8.25} @Self 
+  - delay 5 
+  - effect:spin{duration=10;velocity=-8.25} @Self 
+  - delay 5 
+  - effect:spin{duration=10;velocity=-8.25} @Self
+krokmouKRFlyRotation:
+  Cooldown: 2.0
+  TargetConditions:
+  - blocktype{type=air,water} false
+  Conditions:
+  - onground false
+  Skills:
+  - effect:spin{duration=10;velocity=8.25} @Self 
+  - skill:krokmouKRFlyUp 
+krokmouKRFlyAuraEnd:
+  Skills:
+  - aura{
+      auraName=krokmouKRFlyAuraEndAura;
+      oT=[
+        - velocity{m=set;x=0;y=0;z=0} @Self
+        - lunge{velocity=0.35;velocityY=-0.1} @Forward{f=0.5} 
+        - skill:krokmouKRFlyRotation @ForwardWall{f=11;y=0;width=2;height=2}  
+        - skill:krokmouKRFlyToLand ?altitude{h=<4}
+      ];d=1000000;i=2} @Self 
+  - setspeed{speed=0.8;type=walking} @Self
+krokmouKRFlyToLand:
+  Conditions:
+  - stance{s=krokmouKRFlyToLandON;str=true} false
+  Skills:
+  - gcd{t=60}
+  - sound{s=entity.polar_bear.ambient;p=0.8;v=2} @Self 
+  - setstance{s=krokmouKRFlyToLandON} @Self
+  - setvariable{var=caster.krokmouKRFly;t=STRING;val="no"} @Self 
+  - potion{t=SLOW;d=40;l=25;p=false;force=true} @Self 
+  - state{s=end_fly;li=3;lo=3} @Self  
+  - state{s=fly;r=true} @Self
+  - state{s=fly_down;r=true} @Self    
+  - auraremove{aura=krokmouKRFlyAuraEndAura} @Self
+  - potion{t=SLOW_FALLING;d=1;l=15;p=false;force=true} @Self
+  - defaultstate{type=DEATH;state=death} @Self
+  - delay 1
+  - setstance{s=krokmouKRFlyToLandOFF} @Self
+  - delay 11 
+  - sound{s=entity.iron_golem.damage;p=0.2;v=2} @Self 
+  - throw{v=8;vy=4} @EntitiesNearOrigin{r=5}
+  - effect:particlering{particle=smoke_large;radius=1;points=4;amount=2;hS=0.1;vS=0.15;s=0.15} @Self
+krokmouKRMountFlyJumpTrigger:
+  Cooldown: 5.0
+  Conditions:
+  - modelhasdriver true
+  Skills:
+  - sound{s=entity.polar_bear.ambient;p=0.8;v=2} @Self 
+  - aura{
+      auraName=krokmouKRFlyAura;
+      oS=krokmouKRFlyAuraStart;
+      oT=krokmouKRMountFlyAuraTick;
+      oE=krokmouKRMountFlyAuraEnd;d=1000000;i=2} @Self 
+krokmouKRMountFlyAuraTick:
+  Conditions:
+  - offgcd true 
+  Skills:
+  - sound{s=entity.phantom.ambient;p=0.8;v=2;cd=5} @Self 0.1
+  - velocity{m=set;x=0;y=0;z=0} @Self
+  - lunge{velocity=0.45;velocityY=-0.05} @Forward{f=0.5} 
+  - auraremove{aura=krokmouKRFlyAura} @Self ?altitude{h=<3}
+krokmouKRMountFlyUp:
+  Cooldown: 2.0  
+  Conditions:
+  - offgcd true 
+  - variableEquals{var=caster.krokmouKRMountFlyDown;value=0} castinstead krokmouKRMountFlyUpControl
+  - hasaura{n=krokmouKRMountFlyDownTickAura} false
+  - variableEquals{var=caster.krokmouKRFly;value="yes"} true
+  - stance{s=krokmouKRFlyToLandON;str=true} false
+  Skills:
+  - aura{
+      auraName=krokmouKRMountFlyUpAura;
+      oS=[
+        - state{s=fly_up;li=3;lo=3} @Self  
+        - delay 25 
+        - sound{s=entity.phantom.flap;p=0.8;v=2} @Self 
+        - teleportin{vector=0.35,0.3,0;repeat=20;repeatInterval=1} @Self
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+      ];i=39;d=40} @Self 
+krokmouKRMountFlyUpControl:
+  Skills:
+  - setSkillCooldown{skill=krokmouKRMountFlyDown;seconds=1} @Self
+  - setSkillCooldown{skill=krokmouKRMountFlyUp;seconds=1} @Self
+  - auraremove{aura=krokmouKRMountFlyDownTickAura} @Self 
+  - state{s=fly_down;r=true} @Self 
+  - aura{
+      auraName=krokmouKRMountFlyUpAura;
+      oS=[
+        - state{s=fly_up;li=3;lo=3} @Self  
+        - delay 25 
+        - sound{s=entity.phantom.flap;p=0.8;v=2} @Self 
+        - teleportin{vector=0.35,0.3,0;repeat=20;repeatInterval=1} @Self
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1;repeat=6;repeatInterval=1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+      ];i=39;d=40} @Self 
+krokmouKRMountFlyDown:
+  Cooldown: 0.2
+  Conditions:
+  - hasaura{n=krokmouKRMountFlyUpAura} false
+  - variableEquals{var=caster.krokmouKRMountFlyDown;value=0} castinstead krokmouKRMountFlyDownRemove
+  - variableEquals{var=caster.krokmouKRMountFlyDown;value=0} false 
+  Skills:
+  - aura{
+      auraName=krokmouKRMountFlyDownTickAura;
+      oS=[
+        - setvariable{var=caster.krokmouKRMountFlyDown;val=0} @Self 
+        - state{s=fly_down;li=3;lo=7} @Self  
+        - sound{s=entity.phantom.flap;p=0.1;v=2} @Self 
+      ];
+      oT=[
+        - lunge{velocity=0=;velocityY=-0.4} @Self
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1} @ModelPart{m=krokmou;p=right_art_wing;offset=LOCAL}
+        - effect:particles{p=cloud;amount=1;speed=0.1;hS=0.1;vS=0.1} @ModelPart{m=krokmou;p=left_art_wing;offset=LOCAL}
+      ];oE=[
+        - setvariable{var=caster.krokmouKRMountFlyDown;val=1} @Self 
+      ];i=2;d=1000000} @Self 
+krokmouKRMountFlyDownRemove:
+  Cooldown: 0.2
+  Skills:
+  - setSkillCooldown{skill=krokmouKRMountFlyDown;seconds=1} @Self
+  - setSkillCooldown{skill=krokmouKRMountFlyUp;seconds=1} @Self
+  - auraremove{aura=krokmouKRMountFlyDownTickAura} @Self 
+  - state{s=fly_down;r=true} @Self 
+krokmouKRMountFlyAuraEnd:
+  Skills:
+  - auraremove{aura=krokmouKRMountFlyDownTickAura} @Self 
+  - potion{t=SLOW;d=1000000;l=25;p=false;force=true} @Self 
+  - aura{
+      auraName=krokmouKRFlyAuraEndAura;
+      oT=[
+        - velocity{m=set;x=0;y=0;z=0} @Self
+        - lunge{velocity=0.35;velocityY=-0.1} @Forward{f=0.5} ?!altitude{h=<2}
+        - skill:krokmouKRFlyToLand ?altitude{h=<4}
+      ];d=1000000;i=1} @Self 
+krokmouKRDeath:
+  Conditions:
+  - variableEquals{var=caster.krokmouKRSaddled;value="yes"} castinstead krokmouKRDeathSaddle
+  Skills:
+  - sound{s=entity.polar_bear.death;p=1.2;v=1} @Self 
+  - sound{s=entity.phantom.death;p=1.5;v=1} @Self 
+  - effect:particles{p=cloud;amount=3;speed=0.1;hS=0.25;vS=0.25} @Self
+  - partvis{m=krokmou;p=saddle_body;v=false} @Self
+  - partvis{m=krokmou;p=saddle_head;v=false} @Self
+krokmouKRDeathSaddle:
+  Skills:
+  - sound{s=entity.polar_bear.death;p=1.2;v=1} @Self 
+  - sound{s=entity.phantom.death;p=1.5;v=1} @Self 
+  - effect:particles{p=cloud;amount=3;speed=0.1;hS=0.25;vS=0.25} @Self
+  - dropitem{i=SADDLE} @Self
+#UkZNZFT0d2duBjU5JWezdEVJNDV3dGRPVTQq1EejRUTwUkVO1kTWNXUxtUTmZlWxwWOOVEO

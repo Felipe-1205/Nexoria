@@ -1,0 +1,270 @@
+######## created by samus2002 #########
+
+# VFX #
+
+VFX_Focus_Chi_Heal:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_heal;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+VFX_Swift_Strikes_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_swift_strikes_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill1} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_6;np=body;delay=6} @self ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+VFX_Swift_Strikes_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_swift_strikes_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_6;np=body;delay=6} @self ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+
+VFX_Swift_Strikes_IMPACT:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_monk_impact_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_3;np=body;delay=3} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_4;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_5;np=body;delay=5} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_6;np=body;delay=6} @self ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+VFX_Chi_Blast:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_blast} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Chi_Blast_Hit:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_hit} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+VFX_Zen_Throw:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_swift_strikes_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill3} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_swift_strikes_1;p=body;nm=vfx_swift_strikes_6;np=body;delay=10} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+VFX_Zen_Throw_IMPACT:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_monk_impact_1;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_2;np=body;delay=2} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_3;np=body;delay=4} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_4;np=body;delay=6} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_5;np=body;delay=8} @self ~onSpawn
+  - changepart{m=vfx_monk_impact_1;p=body;nm=vfx_monk_impact_6;np=body;delay=10} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+VFX_Beads_Of_Karma:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_meditation_beads;lockpitch=true} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - effect:particles{particle=end_rod;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=front_bead} ~onTimer:1
+  - effect:particles{particle=end_rod;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=right_back_bead} ~onTimer:1
+  - effect:particles{particle=end_rod;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=left_back_bead} ~onTimer:1
+  - effect:particles{particle=end_rod;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=right_bead} ~onTimer:1
+  - effect:particles{particle=end_rod;amount=1;hS=0;vS=0;y=0;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=left_bead} ~onTimer:1
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=87} @self ~onSpawn
+  
+VFX_Absorb_Shield:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_absorb_shield;lockpitch=true} @self ~onSpawn
+  - state{s=hit} @self ~onSignal:HIT
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Chi_Wave_LVL_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_wave} @self ~onSpawn
+  - defaultstate{t=idle;s=idle3;delay=1} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Chi_Wave_LVL_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_wave} @self ~onSpawn
+  - defaultstate{t=idle;s=idle2;delay=1} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Chi_Wave_LVL_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_wave} @self ~onSpawn
+  - defaultstate{t=idle;s=idle;delay=1} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  
+VFX_Dragon_Fists:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_monk_dragon_fists;lockpitch=true} @self ~onSpawn
+  - effect:particles{particle=end_rod;amount=7;hS=0.35;vS=0.35;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=3} @modelpart{mid=vfx_monk_dragon_fists;pid=right_fist} ~onSpawn
+  - effect:particles{particle=end_rod;amount=7;hS=0.35;vS=0.35;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=3} @modelpart{mid=vfx_monk_dragon_fists;pid=left_fist} ~onSpawn
+  - effect:particles{particle=end_rod;amount=7;hS=0.35;vS=0.35;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=114} @modelpart{mid=vfx_monk_dragon_fists;pid=right_fist} ~onSpawn
+  - effect:particles{particle=end_rod;amount=7;hS=0.35;vS=0.35;y=0;speed=0;forwardOffset=0;sideOffset=0;delay=114} @modelpart{mid=vfx_monk_dragon_fists;pid=left_fist} ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - BodyRotation{playermode=false;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - remove{delay=115} @self ~onSpawn
+  
+VFX_Focus_Chi_Heal2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{usestatemachine=true;mid=vfx_chi_heal;lockpitch=true;lockyaw=true} @self ~onSpawn
+  - BodyRotation{playermode=true;stable=0;rdelay=0;rduration=0} @self ~onSpawn
+  - state{s=skill2} @self ~onSpawn
+  - remove{delay=16} @self ~onSpawn

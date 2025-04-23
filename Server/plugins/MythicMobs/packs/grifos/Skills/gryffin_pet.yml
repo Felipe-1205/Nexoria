@@ -1,0 +1,419 @@
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+lr_gryffin_DESPAWN:
+  Skills:
+  - delay 5
+  - effect:particles{particle=poof;amount=200;hS=1;vS=1;speed=5} @self
+  - model{m=lr_gryffin;r=true} @self
+  - model{m=lr_gryffin_corvid;r=true} @self
+  - remove @self
+  
+  
+lr_gryffin_mount:
+  TriggerConditions:
+  - holding{m=warped_fungus} false
+  Skills:
+  - mountmodel{mode=flying_v16} @trigger
+  
+  
+  
+  
+  
+lr_gryffin_AIR:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{type=air} true
+  Conditions:
+  - stance{s=ground}
+  - onground false
+  Skills:
+  - setstance{stance=inair} @self
+  - setspeed{speed=1.5;type=walking} @self
+  - defaultstate{m=lr_gryffin;t=idle;s=flying_idle} @self
+  - defaultstate{m=lr_gryffin;t=walk;s=flying_walk} @self
+  - defaultstate{m=lr_gryffin_corvid;t=idle;s=flying_idle} @self
+  - defaultstate{m=lr_gryffin_corvid;t=walk;s=flying_walk} @self
+  
+
+lr_gryffin_LAND:
+  Cooldown: 1
+  TargetConditions:
+  - blocktype{type=air} false
+  Conditions:
+  - stance{s=inair}
+  - onground true
+  Skills:
+  - setstance{stance=ground} @self
+  - setspeed{speed=.5;type=walking} @self
+  - velocity{m=set;x=0;y=0;z=0} @self
+  - state{s=land} @self
+  - defaultstate{m=lr_gryffin;t=walk;s=walk} @self
+  - defaultstate{m=lr_gryffin_corvid;t=walk;s=walk} @self
+  - delay 10
+  - defaultstate{m=lr_gryffin;t=idle;s=idle} @self
+  - defaultstate{m=lr_gryffin_corvid;t=idle;s=idle} @self
+  
+  
+lr_gryffin_dropfeather:
+  Conditions:
+  - onground false
+  Skills:
+  - summon{t=LR_GRYFFIN_feather;r=2}
+
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+###
+debug2:
+  Skills:
+  - effect:particles{particle=flame;amount=15;hS=.25;vS=.25}
+###
+  
+LR_GRYFFIN_spawn:
+  Skills:
+  - delay 1
+  - summon{t=LR_GRYFFIN_nest} @self
+  
+### PASSIVE ###
+
+LR_GRYFFIN_bloodeffect:
+  Conditions:
+  - damagecause{cause=ENTITY_ATTACK} true
+  Skills:
+  - effect:particles{particle=block;m=nether_wart_block;amount=20;hS=.1;vS=.1} @forward{f=1.25;y=1.6}
+  
+#### BOSS BAR ####
+
+LR_GRYFFIN_bossbar_damage:
+  Skills: 
+  - barSet{name="GRYFFIN";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=WHITE;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="GRYFFIN";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=RED;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="GRYFFIN";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=WHITE;style=SEGMENTED_6} @self
+  - delay 2
+  - barSet{name="GRYFFIN";display="<caster.name>";value="<caster.hp>/<caster.mhp>";color=RED;style=SEGMENTED_6} @self
+  
+  
+### MELEE COMBAT ###
+
+LR_GRYFFIN_damage:
+  #Cooldown: 1
+  Skills:
+  - skill{s=LR_GRYFFIN_random_hit} @self
+  - throw{v=4;vy=1}
+  - damage{a=1}
+  
+LR_GRYFFIN_melee_1_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=LR_GRYFFIN_melee_1} @self
+  
+LR_GRYFFIN_melee_1:
+  Conditions:
+  - offgcd true
+  - targetwithin{d=5} true
+  Cooldown: 2
+  Skills:
+  - setspeed{t=walking;s=0} @self
+  - gcd{ticks=40}
+  - state{s=attack_1} @self
+  - bodyclamp{mh=0;mb=0;m=lr_gryffin} @self
+  - delay 10
+  - skill{s=LR_GRYFFIN_random_swing} @self
+  - totem{ch=1;md=2;oH=LR_GRYFFIN_damage;hS=1;vS=1;hnp=true;repeat=5;repeatInterval=1} @modelpart{mid=lr_gryffin;pid=left_front_toes}
+  - delay 20
+  - bodyclamp{mh=5;mb=5;m=lr_gryffin} @self
+  - setspeed{t=walking;s=1.5} @self
+  
+LR_GRYFFIN_melee_2_sync:
+  Skills:
+  - CancelEvent
+  - skill{s=LR_GRYFFIN_melee_2} @self
+  
+LR_GRYFFIN_melee_2:
+  Conditions:
+  - offgcd true
+  - targetwithin{d=5} true
+  Cooldown: 2
+  Skills:
+  - setspeed{t=walking;s=0} @self
+  - gcd{ticks=40}
+  - state{s=attack_2} @self
+  - bodyclamp{mh=0;mb=0;m=lr_gryffin} @self
+  - delay 10
+  - skill{s=LR_GRYFFIN_random_swing} @self
+  - totem{ch=1;md=2;oH=LR_GRYFFIN_damage;hS=1;vS=1;hnp=true;repeat=5;repeatInterval=1} @modelpart{mid=lr_gryffin;pid=right_front_toes}
+  - delay 20
+  - bodyclamp{mh=5;mb=5;m=lr_gryffin} @self
+  - setspeed{t=walking;s=1.5} @self
+  
+LR_GRYFFIN_air_bomb:
+  Conditions:
+  - onground true
+  - offgcd true
+  - targetnotwithin{d=9} true
+  - targetwithin{d=12} true
+  Cooldown: 2
+  Skills:
+  - setspeed{t=walking;s=0} @self
+  - gcd{ticks=40}
+  - state{s=attack_3} @self
+  - lockmodel{l=true} @self
+  - delay 20
+  - skill{s=LR_GRYFFIN_random_swing} @self
+  - lunge{v=1;vy=.1;repeat=5;repeatInterval=1} @target
+  - totem{ch=1;md=2;oH=LR_GRYFFIN_damage;hS=2;vS=2;hnp=true;repeat=10;repeatInterval=1} @modelpart{mid=lr_gryffin;pid=left_front_toes}
+  - delay 5
+  - setspeed{t=walking;s=0} @self
+  - delay 20
+  - setspeed{t=walking;s=1} @self
+  - lockmodel{l=false} @self
+  - setspeed{t=walking;s=1.5} @self
+  
+  
+  
+  
+### FLIGHT ###
+
+LR_GRYFFIN_fly_start:
+  Cooldown: 25
+  Conditions:
+  - incombat true
+  - offgcd true
+  - onground true
+  Skills:
+  - gcd{ticks=220} @self
+  - setspeed{t=walking;s=0} @self
+  - state{s=take_off} @self
+  - delay 20
+  - effect:particles{particle=campfire_cosy_smoke;amount=5;hS=.5;vS=.5;speed=0;repeat=20;repeatInterval=1} @self
+  - potion{type=SLOW_FALLING;duration=220;level=4}
+  - jump{velocity=1.5}
+  - summon{t=LR_GRYFFIN_whirlwind} @ring{r=5;p=6}
+  - delay 10
+  - setstance{stance=flying} @self
+  - state{s=flying_idle} @self
+  - skill{s=LR_GRYFFIN_fly_idle} @self
+  - delay 200
+  - potion{type=SLOW_FALLING;duration=60;level=2}
+  - message{m="<mob.name>&f<&co> LANDING!"} @PlayersInRadius{r=30}
+  - delay 20
+  - setstance{stance=landing} @self
+  
+LR_GRYFFIN_fly_idle:
+  Cooldown: 1
+  Conditions:
+  - stance{s=flying} true
+  Skills:
+  - skill{s=LR_GRYFFIN_random_wingflap} @self
+  - message{m="<mob.name>&f<&co> FLAP!"} @PlayersInRadius{r=30}
+  - state{s=flying_idle} @self
+  - look{headOnly=false;immediately=true;repeat=20;repeatInterval=1} @Target
+  - delay 3
+  - summon{t=LR_GRYFFIN_feather;r=2} @self .5
+  - jump{velocity=.15;repeat=4;repeatInterval=1}
+  
+  
+LR_GRYFFIN_land:
+  Conditions:
+  - onground true
+  - stance{s=landing} true
+  Skills:
+  - message{m="<mob.name>&f<&co> LAND!"} @PlayersInRadius{r=30}
+  - state{s=flying_idle;r=true} @self
+  - state{s=land} @self
+  - setstance{stance=land} @self
+  - lockmodel{l=false} @self
+  - state{s=flying_idle;r=true} @self
+  - delay 2
+  - setspeed{t=walking;s=1} @self
+
+
+LR_GRYFFIN_whirlwind_spawn:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.tornado} @self
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self .5
+  - skill{s=LR_GRYFFIN_whirlwind_pull;repeat=240;repeatInterval=1} @self
+  - damage{a=1;repeat=240;repeatInterval=1} @pir{r=2}
+  - effect:particles{particle=poof;amount=5;hS=.15;vS=0;speed=0;repeat=240;repeatInterval=1} @self
+  - lunge{v=.65;vy=-1;repeat=240;repeatInterval=1} @forward{f=3}
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self 
+  - delay 40
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self
+  - delay 40
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self
+  - delay 40
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self
+  - delay 40
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self
+  - delay 40
+  - randomskill{skills=LR_GRYFFIN_whirlwind_left,LR_GRYFFIN_whirlwind_right} @self 
+  - delay 40
+  - effect:particles{particle=poof;amount=175;hS=1;vS=2;speed=0;d=true;dir=0,1,0;speed=.1} @self
+  - throw{v=5;vy=12} @pir{r=2}
+  - remove @self
+  
+LR_GRYFFIN_whirlwind_left:
+  Skills:
+  - effect:spin{duration=20;velocity=10} @self
+  
+LR_GRYFFIN_whirlwind_right:
+  Skills:
+  - effect:spin{duration=20;velocity=-10} @self
+  
+LR_GRYFFIN_whirlwind_pull:
+  Skills:
+  - effect:blockmask{m=dirt;r=2;d=20}
+  - pull{v=4} @PIR{r=5}
+  - throw{v=1;vy=25} @PIR{r=2}
+  - pull{v=10} @PIR{r=2}
+  
+  
+  
+### NEST ###
+  
+LR_GRYFFIN_grab_egg:
+  Conditions:
+  - hasparent orElseCast LR_GRYFFIN_grab_egg_success
+  Skills:
+  - message{m="&cYou must defeat the parent Gryffin first!"} @trigger
+
+LR_GRYFFIN_grab_egg_success:
+  Skills:
+  - state{s=grab} @self
+  - effect:particles{particle=sweep_attack;amount=1;y=1} @self
+  - submodel{mid=lr_gryffin_nest;pid=egg;spid=egg;r=true} @self
+  - givePet{id=lr_gryffin} @trigger
+  - delay 120
+  - sound{s=littleroom_gryffin:littleroom.gryffin.poof} @self
+  - effect:particles{particle=poof;amount=150;hS=1;vS=1} @self
+  - remove @self
+  
+  
+### feather ###
+
+LR_GRYFFIN_feather:
+  Skills:
+  - effect:spin{duration=1;velocity=70} @self .5
+  - potion{type=SLOW_FALLING;duration=200;level=4}
+  - delay 60
+  - remove @self
+  
+  
+#### DEATH AIR #####
+
+LR_GRYFFIN_DEATH:
+  Conditions:
+  - onground true
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.death} @self
+  - delay 60
+  - sound{s=littleroom_gryffin:littleroom.gryffin.poof} @self
+  - effect:particles{particle=poof;amount=250;hS=2;vS=1} @self
+
+
+LR_GRYFFIN_DEATH_air:
+  Conditions:
+  - onground false
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.death_air} @self
+  - summon{t=LR_GRYFFIN_falling_death} @self
+  - remove @self
+  - model{mid=lr_gryffin;r=true} @self
+  
+  
+LR_GRYFFIN_falling_death_spawn:
+  Skills:
+  - delay 1
+  - state{s=flying_death} @self
+  - delay 20
+  - state{s=flying_death_fall} @self
+  
+LR_GRYFFIN_falling_death_ground:
+  Cooldown: 10
+  Conditions:
+  - onground true
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.death_air_land} @self
+  - effect:particles{particle=campfire_cosy_smoke;amount=75;hS=2;vS=.25} @self
+  - state{s=flying_death_fall;r=true} @self
+  - state{s=flying_death_land} @self
+  - delay 40
+  - sound{s=littleroom_gryffin:littleroom.gryffin.poof} @self
+  - effect:particles{particle=poof;amount=250;hS=2;vS=1} @self
+  - model{mid=lr_gryffin;r=true} @self
+  - remove @self
+  
+  
+  
+### RANDOMSOUNDS ###
+
+LR_GRYFFIN_random_call:
+  Skills:
+  - randomskill{skills=LR_GRYFFIN_random_call1,LR_GRYFFIN_random_call2} @self
+  
+LR_GRYFFIN_random_call1:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.call1} @self
+  
+LR_GRYFFIN_random_call2:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.call2} @self
+  
+  
+
+LR_GRYFFIN_random_swing:
+  Skills:
+  - randomskill{skills=LR_GRYFFIN_random_swing1,LR_GRYFFIN_random_swing2,LR_GRYFFIN_random_swing3} @self
+  
+LR_GRYFFIN_random_swing1:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.swing1} @self
+  
+LR_GRYFFIN_random_swing2:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.swing2} @self
+  
+LR_GRYFFIN_random_swing3:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.swing3} @self
+  
+  
+
+LR_GRYFFIN_random_hit:
+  Skills:
+  - randomskill{skills=LR_GRYFFIN_random_hit1,LR_GRYFFIN_random_hit2,LR_GRYFFIN_random_hit3} @self
+  
+LR_GRYFFIN_random_hit1:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.hit1} @self
+  
+LR_GRYFFIN_random_hit2:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.hit2} @self
+  
+LR_GRYFFIN_random_hit3:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.hit3} @self
+  
+  
+
+LR_GRYFFIN_random_wingflap:
+  Skills:
+  - randomskill{skills=LR_GRYFFIN_random_wingflap1,LR_GRYFFIN_random_wingflap2,LR_GRYFFIN_random_wingflap3} @self
+  
+LR_GRYFFIN_random_wingflap1:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.wingflap1} @self
+  
+LR_GRYFFIN_random_wingflap2:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.wingflap2} @self
+  
+LR_GRYFFIN_random_wingflap3:
+  Skills:
+  - sound{s=littleroom_gryffin:littleroom.gryffin.wingflap3} @self

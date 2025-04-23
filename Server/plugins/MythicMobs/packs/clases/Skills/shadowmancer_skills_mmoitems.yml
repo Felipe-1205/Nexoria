@@ -1,0 +1,381 @@
+
+
+Dark_Monarch_BUFF:
+  Cooldown: 0
+  Conditions:
+  - mobsInRadius{types=Dark_Monarch;amount=1to10;radius=2.5} false
+  - hasaurastacks{auraName=Dark_Monarch_STOP} false
+  Skills:
+  - orbital{bulletType=MOB;mob=Dark_Monarch;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40000;oy=-0.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+
+Dark_Monarch:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Skills:
+  - skill{s=Dark_Monarch_ACTIVATE} @MIR{r=2;t=Dark_Monarch;target=armorstands}
+  - skill{s=Dark_Monarch_BUFF} @self
+
+
+
+
+  
+Dark_Monarch_FRIGHTEN:
+  Skills:
+  - skill{s=Dark_Monarch_FX_HIT} @EIR{r=4}
+  - effect:sound{s=entity.wither.death;volume=0.6;pitch=1.9} @self
+  
+Dark_Monarch_FX_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - hasaurastacks{auraName=Dark_Monarch_HIT} false
+  Skills:
+  - Aura{auraName=Dark_Monarch_HIT;duration=40}
+  - throw{velocity=1.4;velocityY=0;repeat=39;repeatinterval=1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;speed=0;hS=0.3;vS=1;y=0.5;repeat=4;repeatinterval=8}
+  - effect:particles{particle=redstone;color=#2c5252;amount=5;speed=0;hS=0.3;vS=1;y=0.5;repeat=4;repeatinterval=8}
+  - orbital{bulletType=MOB;mob=Dark_Monarch_EN;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=40;oy=-0.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+
+Dark_Monarch_FX_TICK:
+  Skills:
+  - effect:particlering{particle=redstone;color=#19191c;radius=0.9;points=10;amount=1;hS=0;vS=0;y=0.1} @origin
+  - effect:particlering{particle=redstone;color=#2c5252;radius=0.7;points=10;amount=1;hS=0;vS=0;y=0.1} @origin
+
+  
+Dark_Monarch_REMOVE:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Dark_Monarch} false
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=0.6;pitch=1.1} @self
+  
+Dark_Monarch_REMOVE_BUFF:
+  Cooldown: 0
+  TargetConditions:
+  - hasaurastacks{auraName=Dark_Monarch_STOP} true
+  Skills:
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=0.6;pitch=1.1} @self
+  
+Dark_Monarch_ACTIVATE:
+  Conditions:
+  - hasaurastacks{auraName=Dark_Monarch_STOP} false
+  Skills:
+  - SudoSkill{s=Dark_Monarch_SKILL1;setcasterastrigger=true} @MIR{r=2;t=Dark_Monarch;target=armorstands}
+  
+Dark_Monarch_SKILL1:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Dark_Monarch;interval=1;duration=40} @self
+  
+  
+Shadow_Burst:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Skills:
+  - projectile{onEnd=Shadow_Burst_END;v=30;i=1;hR=1;vR=1;mr=25;hnp=false;hp=false;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1.5;tyo=1} @TargetBlock
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_burst;volume=0.8;pitch=1;delay=1} @self
+
+Shadow_Burst_HIT_D:
+  Skills:
+  - skill{s=Shadow_Burst_HIT} @EntitiesNearOrigin{r=2.5}
+  
+Shadow_Burst_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  
+Shadow_Burst_END:
+  Skills:
+  - summon{type=Shadow_Burst;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=5;c=1;oH=Shadow_Burst_HIT_D;hnp=true;hp=true;hR=1;vR=1;i=1;delay=3} @origin
+
+  
+Shadow_Teleport:
+  Skills:
+  - skill{s=Shadow_Teleport_Skill}
+  - Aura{auraName=Shadow_Dragon_ON;duration=10} @self
+  
+Shadow_RIGHTBREATH:
+  Skills:
+  - Aura{auraName=Shadow_Dragon_ON;duration=10;delay=1} @self
+  
+Shadow_Teleport_Skill:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Cooldown: 0
+  Skills:
+  - skill{s=Shadow_Teleport_1;delay=1}
+  - skill{s=Shadow_Teleport_2}
+  
+Shadow_Teleport_1:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Teleport} false
+  - hasaurastacks{auraName=Shadow_Teleport_CD} false
+  Skills:
+  - Aura{auraName=Shadow_Teleport_CD;duration=80} @self #set cooldown here
+  - Aura{auraName=Shadow_Teleport;duration=60} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_teleport;volume=0.85;pitch=1} @self
+  - summon{type=Shadow_Print;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - summon{type=Shadow_Teleport;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=0.3;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
+  - delay 1
+  - projectile{onEnd=Shadow_Teleport_END;v=40;i=1;hR=1;vR=1;mr=9;hnp=false;hO=0;sE=false;sB=true;hs=false;syo=1;tyo=1;sfo=-1} @Forward{f=5}
+  - delay 5
+  - summon{type=Shadow_Teleport;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=0.3;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Shadow_Teleport_END: 
+  Skills:
+  - teleport{spreadh=0;spreadv=0} @origin
+  
+Shadow_Teleport_2:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Teleport} true
+  Skills:
+  - Aura{auraName=Shadow_Teleport_Back_Aura;duration=5} @self
+  
+Shadow_Teleport_PET:
+  TargetConditions:
+  - hasaurastacks{auraName=Shadow_Teleport_Back_Aura} true
+  Skills:
+  - SudoSkill{s=Shadow_Teleport_Back;setcasterastrigger=true}
+  - remove{delay=1} @self
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=0.3;y=0.5;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+Shadow_Teleport_Back:
+  Skills:
+  - teleport{spreadh=0;spreadv=0} @trigger{target=armorstands}
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_teleport;volume=0.85;pitch=0.85} @self
+  - delay 2
+  - summon{type=Shadow_Teleport;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  
+
+Shadow_Knight:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Knight_aura} castinstead Shadow_Knight_SKILL
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Skills:
+  - Aura{auraName=Shadow_Knight_aura;interval=1;duration=5} @self
+  
+Shadow_Knight_SKILL:
+  Cooldown: 4
+  Skills:
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_summon;volume=1;pitch=1} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_knight_slash;volume=1;pitch=1;delay=8} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_knight_slash_sharp;volume=1;pitch=1;delay=10} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_knight_slash_sharp;volume=1;pitch=1;delay=19} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_knight_spin;volume=1;pitch=1.3;delay=10} @self
+  - summon{type=Shadow_Knight;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  - totem{md=2;c=1;oH=Shadow_Knight_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=2.5}
+  - totem{md=2;c=1;oH=Shadow_Knight_DAMAGE2;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=4.5}
+  - totem{md=2;c=1;oH=Shadow_Knight_DAMAGE3;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=5}
+  - totem{md=2;c=1;oH=Shadow_Knight_DAMAGE4;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=6}
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=1;pitch=1;delay=45} @self
+  
+Shadow_Knight_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true;delay=10}
+  - throw{velocity=5;velocityY=1;delay=10}
+  
+Shadow_Knight_DAMAGE2:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true;delay=19}
+  - throw{velocity=5;velocityY=1;delay=19}
+  
+Shadow_Knight_DAMAGE3:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true;delay=29}
+  - throw{velocity=0;velocityY=7;delay=29}
+  
+Shadow_Knight_DAMAGE4:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true;delay=32}
+  - throw{velocity=0;velocityY=7;delay=32}
+  
+
+Shadow_Archer:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Dragon_aura} castinstead Shadow_RIGHTBREATH
+  Skills:
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_summon;volume=1;pitch=1} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_archer_shoot;volume=1;pitch=0.85;delay=16} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_archer_shoot;volume=1;pitch=1;delay=23} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_archer_shoot;volume=1;pitch=1.15;delay=29} @self
+  - summon{type=Shadow_Archer;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation{ForwardOffset=-2}
+  - projectile{onStart=Shadow_Archer_Tick;bulletType=MOB;mob=Shadow_Arrow1;onEnd=Shadow_Archer_END;onHit=Shadow_Archer_HIT_D;v=0.1;i=1;hR=1;vR=1;mr=40;hnp=true;hO=30;sE=false;sB=true;hs=false;hfs=0;syo=2;tyo=0;sfo=2} @Forward{f=20;y=0}
+  - projectile{onStart=Shadow_Archer_Tick2;bulletType=MOB;mob=Shadow_Arrow2;onEnd=Shadow_Archer_END;onHit=Shadow_Archer_HIT_D;v=0.1;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2;tyo=0;sfo=2} @Forward{f=20;y=0}
+  - projectile{onStart=Shadow_Archer_Tick3;bulletType=MOB;mob=Shadow_Arrow3;onEnd=Shadow_Archer_END;onHit=Shadow_Archer_HIT_D;v=0.1;i=1;hR=1;vR=1;mr=40;hnp=true;hO=-30;sE=false;sB=true;hs=false;hfs=0;syo=2;tyo=0;sfo=2} @Forward{f=20;y=0}
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=1;pitch=1;delay=36} @self
+  
+Shadow_Archer_Tick:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=SET;value=18;delay=16}
+  
+Shadow_Archer_Tick2:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=SET;value=18;delay=23}
+  
+Shadow_Archer_Tick3:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=SET;value=18;delay=29}
+  
+Shadow_Archer_HIT_D:
+  Skills:
+  - skill{s=Shadow_Archer_HIT} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  
+Shadow_Archer_HIT:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"} 
+
+Shadow_Archer_END_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - orbital{r=0.65;onTick=Blades_Of_Shadow_FX_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=0.1}
+
+Shadow_Archer_END:
+  Skills:
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_blade_impact;volume=1;pitch=1} @self
+  - summon{type=Shadow_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=Shadow_Archer_END_D} @EntitiesNearOrigin{r=4}
+  
+Blades_Of_Shadow_FX_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#19191c;amount=2;speed=0;hS=0;vS=0} @origin
+  
+
+Blades_Of_Shadow:
+  Cooldown: 0
+  Conditions:
+  - crouching castinstead Blades_Of_Shadow_STACK
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Skills:
+  - auraremove{aura=Blades_Of_Shadow_STACK} @self
+  
+Blades_Of_Shadow_STACK:
+  Conditions:
+  - hasaurastacks{auraName=Blades_Of_Shadow_STACK;stacks=3} castinstead Blades_Of_Shadow_Skill
+  - hasaurastacks{auraName=Shadow_Dragon_aura} false
+  Skills:
+  - Aura{auraName=Blades_Of_Shadow_STACK;duration=120;maxStacks=3} @self
+  
+Blades_Of_Shadow_Skill:
+  Cooldown: 5
+  Skills:
+  - auraremove{aura=Blades_Of_Shadow_STACK} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_summon;volume=1;pitch=1} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_blade_fall;volume=1;pitch=1;delay=10} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_blade_impact;volume=1;pitch=1;delay=15} @self
+  - summon{type=Blades_Of_Shadow;amount=1;radius=0;yRadius=0;onSurface=true} @Ring{radius=5;points=5}
+  - summon{type=Blades_Of_Shadow_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @Ring{radius=5;points=5}
+  - totem{md=2;c=1;oT=Blades_Of_Shadow_DAMAGE;hnp=true;hp=true;hR=1;vR=1;i=1} @Ring{radius=5;points=5}
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=1;pitch=1;delay=44} @self
+  
+Blades_Of_Shadow_DAMAGE:
+  Skills:
+  - skill{s=Blades_Of_Shadow_DAMAGE_D;delay=15} @EntitiesNearOrigin{r=4}
+  
+Blades_Of_Shadow_DAMAGE_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=1;hasParticles=false}
+  - orbital{r=0.65;onTick=Blades_Of_Shadow_FX_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=0.1}
+
+Blades_Of_Shadow_FX_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#19191c;amount=2;speed=0;hS=0;vS=0} @origin
+  
+
+Shadow_Dragon:
+  Skills:
+  - Aura{auraName=Shadow_Dragon_aura;duration="<modifier.duration> * 20"} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_summon;volume=1;pitch=1} @self
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_dragon_growl;volume=1;pitch=1;delay=10} @self
+  - summon{type=Shadow_Dragon;amount=1;radius=0;yRadius=0;onSurface=true} @selflocation
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_disappear;volume=1;pitch=1;delay=140} @self
+  - skill{s=Shadow_Dragon_Breathe_Fire;repeat="<modifier.duration> * 2";repeatinterval=10}
+  - remove{delay="<modifier.duration> * 20"} @MountedModel
+  - signal{s=END;delay="<modifier.duration> * 20"} @MountedModel
+  
+Shadow_Dragon_NOMOUNT:
+  Conditions:
+  - ModelHasDriver false
+  Skills:
+  - auraremove{aura=Shadow_Dragon_aura} @Owner
+  - remove{delay=1} @self
+  
+Shadow_Dragon_Flap:
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.7;pitch=1.1} @self
+  
+  
+  
+Shadow_Dragon_Breathe_Fire:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Dragon_aura} true
+  - hasaurastacks{auraName=Shadow_Dragon_ON} true
+  Skills:
+  - state{s=breath} @MountedModel
+  - Aura{auraName=Shadow_Dragon_OPEN;duration=15} @MountedModel
+  - totem{md=2;c=1;oH=Shadow_Dragon_Breathe_Fire_HIT;hnp=true;hp=true;hR=1;vR=1;i=1;repeat=1;repeatinterval=10} @forward{f=4;y=-1.5}
+  - totem{md=2;c=1;oH=Shadow_Dragon_Breathe_Fire_HIT;hnp=true;hp=true;hR=1;vR=1;i=1;repeat=1;repeatinterval=10} @forward{f=6.5;y=-1.5}
+  
+  - delay 20
+  - state{s=breath;remove=true} @MountedModel
+
+  
+Shadow_Dragon_Breathe_Fire_TICK:
+  Skills:
+  - effect:particles{particle=redstone;color=#19191c;amount=23;hS=1;vS=0.5;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=redstone;color=#2c5252;amount=7;hS=1;vS=0.5;speed=0;forwardOffset=0;sideOffset=0} @origin
+  
+Shadow_Dragon_Breathe_Fire_HIT:
+  Skills:
+   - skill{s=Shadow_Dragon_Breathe_Fire_HIT_D} @EntitiesNearOrigin{r=4}
+   
+Shadow_Dragon_Breathe_Fire_HIT_D:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - damage{a="<modifier.damage>"}
+  
+  
+Shadow_Dragon_Breathe_Fire_SKILLCAST:
+  Conditions:
+  - hasaurastacks{auraName=Shadow_Dragon_OPEN} true
+  Skills:
+  - skill{s=Shadow_Dragon_Breathe_Fire_SKILL} @ModelPart{p=head}
+  
+Shadow_Dragon_Breathe_Fire_SKILL:
+  Skills:
+  - projectile{sfo=2;fromorigin=true;onTick=Shadow_Dragon_Breathe_Fire_TICK;v=30;i=1;hR=1;vR=1;mr=5;hnp=true;hO=0;sE=false;sB=false;hs=false;hfs=0;syo=1;tyo=1} @Forward{f=10;y=0}
+  - skill{s=Shadow_Dragon_Breathe_Fire_SKILLS}
+  
+Shadow_Dragon_Breathe_Fire_SKILLS:
+  Cooldown: 0.7
+  Skills:
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_dragon_fire;volume=0.7;pitch=1} @self

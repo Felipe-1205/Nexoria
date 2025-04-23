@@ -1,0 +1,116 @@
+inventory_pets_menu: §0☀ §4Mascotas §0☀
+inventory_pets_menu_interactions: §0☀ §4Interacciones de Mascota §0☀
+mount_item_name: §6Montura
+mount_item_description: §7Haz clic para montar a tu mascota
+rename_item_name: §6Renombrar
+rename_item_description: §7Haz clic para renombrar a tu mascota
+back_to_petmenu_item_name: §cVolver al menú
+back_to_petmenu_item_description: §7Haz clic para regresar al menú
+inventory_item_name: §6Inventario
+inventory_item_description: §7Haz clic para abrir el inventario de tu mascota
+skins_item_name: §6Aspectos
+skins_item_description: §7Haz clic para cambiar el aspecto de tu mascota
+equipment_item_name: §6Equipamiento
+equipment_description: §7Haz clic para abrir el equipamiento de tu mascota
+turnpage_item_name: §6Siguiente página §7(§e%currentPage%§8/§7%maxPage%)
+turnpage_item_description: "§eHaz clic derecho§7 para avanzar \n§aHaz clic izquierdo§\
+  7 para retroceder"
+nickname: '§9Apodo: §7%nickname%'
+nickname_item_lore: §cHaz clic aquí para revocar tu mascota
+summoned: §7¡Se ha invocado una mascota!
+revoked: §7Tu mascota ha sido revocada.
+revoked_for_new_one: §7Tu mascota anterior fue revocada para invocar la nueva.
+revoked_unknown: |-
+  §cNo se pudo invocar la mascota por una de las siguientes razones:
+  §7- El §cMythicMob configurado para la mascota no existe§7 (intenta invocarlo con /mm m spawn)§7.
+  §7- El mundo está en modo §cPacífico o Fácil§7.
+  §7- Una región §cimpide el aparecimiento del mob§7 (es probable que el ancla sea un mob agresivo).
+  §7- Tienes un plugin de §cprotección de aparición§7, intenta invocar al mob en otro mundo o lejos del spawn.
+  §7- Existen otras mascotas con el §cmismo id§7. Asegúrate de tener ids únicos.
+mythicmob_null: §cEsta mascota no pudo ser invocada. La entidad o archivo asociado
+  con MythicMob es nulo o fue eliminado.
+no_mob_match: §cEsta mascota no pudo ser invocada. El MythicMob asociado no está registrado
+  en MythicMobs.
+not_allowed: §cNo tienes permiso para invocar esta mascota.
+owner_not_found: §cEsta mascota no pudo ser invocada. No se encontró al invocador.
+revoked_before_changes: §cTu mascota fue revocada antes de que se pudieran aplicar
+  los cambios.
+not_mountable: §cEsta mascota no tiene un punto de montura.
+already_mounting: §cYa estás montando algo. Desmonta antes de intentar de nuevo.
+not_mountable_here: §cNo puedes montar una mascota en esta área.
+cant_mount_pet_yet: §cNo tienes permiso para montar esa mascota.
+cant_follow_here: §cTu mascota no puede seguirte en esta área.
+type_name_in_chat: §aEscribe en el chat el nombre de tu mascota.
+if_wish_to_remove_name: §aSi deseas quitarlo, escribe §c%tag%§a en el chat.
+nickname_changed_successfuly: §a¡Apodo cambiado con éxito!
+nickname_not_changed: §cEl apodo no pudo ser cambiado porque es una cadena vacía.
+  Inténtalo de nuevo.
+tag_to_remove_name: Ninguno
+already_inside_vehicule: §7Ya estás montando algo. Desmonta tu montura actual para
+  usar esta función.
+pet_doesnt_exist: §cEsta mascota no existe. Verifica el id.
+player_not_connected: §cEl jugador §6%player%§c no está conectado.
+blacklisted_word: §cLa operación de renombrar fue cancelada. La palabra %word% no
+  está permitida en el nombre de una mascota.
+no_active_pet: §cNo tienes una mascota activa.
+signal_stick_given: §aHas recibido un bastón de órdenes. Haz clic derecho para emitir
+  una orden, clic izquierdo para cambiar de orden.
+signal_stick_signal: '§6Orden activa: §e%signal%'
+loop_spawn: §cTu mascota fue revocada porque parece estar teniendo problemas con numerosas
+  teletransportaciones.
+requires_item_in_hand: §cDebes tener un objeto en tu mano para actualizarlo en la
+  configuración.
+item_updated: '§aObjeto actualizado con éxito con la clave: §e%key%'
+item_doesnt_exist: §aEl objeto con la clave §e%key%§c no existe. Si deseas agregarlo,
+  puedes usar el argumento §eadd§c.
+key_doesnt_exist: §cLa clave especificada no está registrada.
+key_removed: §aLa clave del objeto fue eliminada con éxito.
+key_already_exists: §cEsta clave ya está registrada. Úsala para reemplazar el objeto
+  actual.
+key_added: §aClave agregada con éxito junto con el objeto correspondiente.
+key_list: '§aClaves disponibles:'
+reload_success: §aRecargado con éxito.
+how_many_pets_loaded: §a%numberofpets% fueron registradas con éxito.
+requires_modelengine: §cEste plugin requiere ModelEngine r2.3.1. Parece que este requisito
+  no está cumplido.
+usage: "§cEste comando no existe. \n§7Consulta la wiki: §nhttps://alexandre-chaussard.gitbook.io/mcpets/tutorials/plugin-features/commands"
+no_perm: §cNo tienes permiso para usar este comando.
+blacklisted_world: §cMCPets está deshabilitado en este mundo.
+category_menu_title: §0☀ §4Mascotas §8- Elige una categoría §0☀
+category_doesnt_exist: §cEsta categoría no existe.
+pet_inventory_title: §0☀ §4%pet% §8- §0Inventario §0☀§
+pet_inventory_couldnot_open: §cEste inventario no se puede abrir ya que puede no existir.
+pet_skins_title: §0☀ §4%pet% §8- §0Aspectos §0☀§
+skin_could_not_apply: §cEl aspecto no pudo ser aplicado a la mascota.
+skin_applied: §a¡Aspecto cambiado con éxito!
+global_respawn_timer_running: §cEsta mascota no pudo ser invocada. Debes esperar %timeLeft%s/%cooldown%s.
+respawn_timer_running: §cEsta mascota no pudo ser invocada. Aún se está recuperando
+  de sus heridas. Debes esperar %timeLeft%s/%cooldown%s.
+revoke_timer_running: §cEsta mascota no pudo ser invocada. Aún se está recuperando
+  de sus heridas. Debes esperar %timeLeft%s/%cooldown%s.
+player_or_pet_doesnt_exist: §cEsta mascota no existe, o este jugador nunca ha jugado
+  en tu servidor.
+stats_cleared: §a¡Todas las estadísticas se han borrado con éxito!
+stats_cleared_for_pet_for_player: §aTodas las estadísticas se han borrado con éxito
+  para la mascota %petId% del jugador %player%.
+stats_cleared_for_pet: §aTodas las estadísticas se han borrado con éxito para la mascota
+  %petId%.
+pet_taming_progress: §7Progreso de domesticación §a%progress%% §7- %progressbar%
+pet_could_not_evolve: §7Tu mascota no pudo evolucionar porque §cya posees la evolución§7.
+petfood_doesnt_exist: §cEste alimento para mascotas no existe.
+petunlock_noperm: §cNo tienes permiso para usar este objeto para desbloquear la mascota.
+petunlocked: §a¡Has desbloqueado la mascota %petName%, felicidades!
+petunlocked_already: §cYa posees la mascota §6%petName%§c.
+pet_already_tamed: §cEsta mascota ya está domesticada.
+pet_doesnt_eat: §cEsta mascota no puede comer ese alimento.
+pet_status_alive: §aDisponible
+pet_status_revoked: §cNo disponible §7(%timeleft%s restantes)
+pet_status_dead: §cMuerto §7(%timeleft%s restantes)
+pet_stats: "§6✦ Información de la Mascota ✦\n§7Estado: %status%\n§6Nivel §7- §6%levelname%\n\
+  \ \n§f%health%§7/§f%maxhealth% §c❤\n§7Regeneración: %regeneration% ❤/s\n§7Modificador\
+  \ de Daño: §f%damagemodifier%%\n§7Modificador de Resistencia: §f%resistancemodifier%%\n\
+  §7Poder: §f%power%%\n \n§7Experiencia: §a%experience%/%threshold% xp\n%progressbar%"
+pet_stats_evolution_already_owned: §cEvolución ya poseída.
+pet_stats_max_level: §7Nivel máximo alcanzado.
+debugger_joining: §aEl depurador está habilitado. Ahora estás escuchándolo.
+debugger_leave: §aEl depurador está §7deshabilitado§a. Ya no lo escucharás.

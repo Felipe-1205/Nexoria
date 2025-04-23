@@ -1,0 +1,70 @@
+npcs:
+  '346': "Bob"
+
+conversations:
+  Bob: 
+    quester: "&6Bob"  
+    first: "Cooldown,material,1PrimerSaludo" 
+    NPC_options: 
+      #Inicio conversación
+      1PrimerSaludo:
+        text: "&7¡Ah, hola, viajero! Me alegra verte por aquí. Gracias al apoyo de la gente, logramos reunir fondos para construir una iglesia digna… pero como ves, aún nos falta mucho trabajo. Si tienes algo de tiempo, podrías ayudarme a traer materiales. Necesito 64 troncos de roble y 64 bloques de Roca para seguir con la construcción. ¡Sería de gran ayuda!"
+        pointer: "1Aceptar,1Negar" 
+      SiAceptan:
+        text: "&7¡Eso es espíritu de comunidad! La iglesia será un lugar de refugio y esperanza, y con tu ayuda, cada día estamos más cerca de verla terminada. ¡Te lo agradeceré siempre!"
+      SiRechazan:
+        text: "&7Lo entiendo, todos tenemos cosas que hacer. Pero si cambias de opinión, siempre estaré por aquí. La construcción no se va a levantar sola..."
+      Cooldown:
+        text: "&7Ya has trabajado bastante por hoy, amigo. Descansa, que mañana seguro habrá más por hacer. ¡Gracias por tu ayuda!"
+        conditions: "enpausa"  
+      material:
+        text: "&7¡Oh! ¡Has vuelto! A ver…"
+        conditions: "trayendo"  
+        pointer: "materiales" 
+      entregar:
+        text: "&7Sí, esto es justo lo que necesitaba. ¡Muchas gracias, amigo!"
+        conditions: "materiesinvpie,materiesinvmade" 
+        event: diairaenpausa,diariacterminar,recompensadiaria,quitarmatmade,quitarmatpie
+    #Respuestas Jugador
+    player_options: 
+      1Aceptar:
+        text: "&7¡Claro, Bob! Te traeré los materiales."
+        event: misionaceptada,iniciodiaria,diairacontinuacion
+        pointer: "SiAceptan" 
+      1Negar:
+        text: "&7Ahora estoy ocupado, tal vez luego."
+        pointer: "SiRechazan" 
+      materiales:
+        text: "&k&7le muestra los materiales"
+        pointer: "entregar" 
+
+conditions:
+  trayendo: "tag trayendo_material"
+  enpausa: "tag en_pausa"
+  materiesinvpie: "mmoitem MATERIAL PIEDRATIER1 64"
+  materiesinvmade: "mmoitem MATERIAL ROBLETIER1 64"
+
+items:
+  piedra: "COBBLESTONE" 
+  madera: "OAK_LOG" 
+
+schedules:
+  mineriamis: 
+    type: realtime-cron 
+    time: '0 0 * * *' 
+    events: diariacontinuar
+
+events: 
+  misionaceptada: "notify &5¡Misión Aceptada, a chambear!"
+  iniciodiaria: "objective start consiguematerial"
+  misioncumplida: "notify &6Diaria: ¡Misión Cumplida!"
+  recompensadiaria: "mmoitemgive CONSUMABLE PUNTOSATRIBUTOS 1"
+  diairaenpausa: "tag add en_pausa"
+  diariacontinuar: "tag delete en_pausa"
+  diairacontinuacion: "tag add trayendo_material"
+  diariacterminar: "tag delete trayendo_material"
+  quitarmatpie: "mmoitemtake MATERIAL PIEDRATIER1 amount:64 notify"
+  quitarmatmade: "mmoitemtake MATERIAL ROBLETIER1 amount:64 notify"
+
+objectives: 
+  consiguematerial:  "pickup piedra,madera amount:64 events:misioncumplida" 

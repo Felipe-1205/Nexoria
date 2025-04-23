@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 190.212.216.129
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740436049720
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740694431647
+  login: 1740693167022
+money: '0'
+last-account-name: RKurai_
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -611.8776576505395
+  y: 129.0
+  z: -675.2625877972557
+  yaw: -14.644966125488281
+  pitch: 23.095983505249023
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -610.5091210507061
+  y: 123.0
+  z: -671.2400000095367
+  yaw: 57.898685455322266
+  pitch: -89.6184310913086
+nickname: Salem

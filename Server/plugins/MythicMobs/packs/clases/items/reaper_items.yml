@@ -1,0 +1,233 @@
+######## created by samus2002 #########
+  
+death_slice_1:
+  Id: paper
+  Display: "&6"
+  Model: 2840
+  Hide:
+  - ATTRIBUTES
+ 
+death_slice_2:
+  Id: paper
+  Display: "&6"
+  Model: 2841
+  Hide:
+  - ATTRIBUTES
+
+death_slice_3:
+  Id: paper
+  Display: "&6"
+  Model: 2842
+  Hide:
+  - ATTRIBUTES
+  
+death_slice_4:
+  Id: paper
+  Display: "&6"
+  Model: 2843
+  Hide:
+  - ATTRIBUTES
+  
+death_slice_5:
+  Id: paper
+  Display: "&6"
+  Model: 2844
+  Hide:
+  - ATTRIBUTES
+  
+death_slice_6:
+  Id: paper
+  Display: "&6"
+  Model: 2845
+  Hide:
+  - ATTRIBUTES
+  
+death_slice_7:
+  Id: paper
+  Display: "&6"
+  Model: 2846
+  Hide:
+  - ATTRIBUTES
+  
+death_slice_8:
+  Id: paper
+  Display: "&6"
+  Model: 2847
+  Hide:
+  - ATTRIBUTES
+  
+death_spin:
+  Id: paper
+  Display: "&6"
+  Model: 2848
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_1:
+  Id: paper
+  Display: "&6"
+  Model: 2849
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_2:
+  Id: paper
+  Display: "&6"
+  Model: 2850
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_3:
+  Id: paper
+  Display: "&6"
+  Model: 2851
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_4:
+  Id: paper
+  Display: "&6"
+  Model: 2852
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_5:
+  Id: paper
+  Display: "&6"
+  Model: 2853
+  Hide:
+  - ATTRIBUTES
+ 
+soul_cross_6:
+  Id: paper
+  Display: "&6"
+  Model: 2854
+  Hide:
+  - ATTRIBUTES
+
+soul_cross_7:
+  Id: paper
+  Display: "&6"
+  Model: 2855
+  Hide:
+  - ATTRIBUTES
+  
+soul_cross_8:
+  Id: paper
+  Display: "&6"
+  Model: 2856
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_1:
+  Id: paper
+  Display: "&6"
+  Model: 2857
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_2:
+  Id: paper
+  Display: "&6"
+  Model: 2858
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_3:
+  Id: paper
+  Display: "&6"
+  Model: 2859
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_4:
+  Id: paper
+  Display: "&6"
+  Model: 2860
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_5:
+  Id: paper
+  Display: "&6"
+  Model: 2861
+  Hide:
+  - ATTRIBUTES
+ 
+soul_slice_6:
+  Id: paper
+  Display: "&6"
+  Model: 2862
+  Hide:
+  - ATTRIBUTES
+
+soul_slice_7:
+  Id: paper
+  Display: "&6"
+  Model: 2863
+  Hide:
+  - ATTRIBUTES
+  
+soul_slice_8:
+  Id: paper
+  Display: "&6"
+  Model: 2864
+  Hide:
+  - ATTRIBUTES
+  
+soul_spin:
+  Id: paper
+  Display: "&6"
+  Model: 2865
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_1:
+  Id: paper
+  Display: "&6"
+  Model: 2866
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_2:
+  Id: paper
+  Display: "&6"
+  Model: 2867
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_3:
+  Id: paper
+  Display: "&6"
+  Model: 2868
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_4:
+  Id: paper
+  Display: "&6"
+  Model: 2869
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_5:
+  Id: paper
+  Display: "&6"
+  Model: 2870
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_6:
+  Id: paper
+  Display: "&6"
+  Model: 2871
+  Hide:
+  - ATTRIBUTES
+  
+soul_wave_7:
+  Id: paper
+  Display: "&6"
+  Model: 2872
+  Hide:
+  - ATTRIBUTES
+  

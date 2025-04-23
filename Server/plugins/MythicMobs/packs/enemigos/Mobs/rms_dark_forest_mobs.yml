@@ -1,0 +1,449 @@
+######## created by samus2002 #########
+
+# Snail #
+
+Snail:
+  Type: ZOMBIE
+  Display: '&fSnail'
+  Health: 15
+  Damage: 2
+  Options:
+    MovementSpeed: 0.15
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=snail;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.snail_hit;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Snail_Attack} ~onTimer:10
+  - skill{s=Snail_Hit} ~onDamaged
+  - skill{s=Snail_Death} ~onDeath
+  Drops:
+  - mmoitems{type=material;id=BOLASLIME} 1-2 0.5
+  - MobsComunes
+  
+# Mimic #
+
+Mimic:
+  Type: ZOMBIE
+  Display: '&fMimic'
+  Health: 50
+  Damage: 5
+  Options:
+    MovementSpeed: 0.27
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=mimic;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.mimic_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.mimic_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Mimic_Attack} ~onTimer:10
+  - skill{s=Mimic_Hit} ~onDamaged
+  - skill{s=Mimic_Death} ~onDeath
+  Drops:
+  - Mimicos
+ 
+# Kobold Warrior #
+
+Kobold_Warrior:
+  Type: ZOMBIE
+  Display: '&fKobold Warrior'
+  Health: 40
+  Damage: 4
+  Options:
+    MovementSpeed: 0.22
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=kobold_warrior;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Kobold_Warrior_Attack} ~onTimer:10
+  - skill{s=Kobold_Warrior_Hit} ~onDamaged
+  Drops:
+  - mmoitems{type=material;id=MONEDA_1} 1-2 0.10
+  - MobsComunes
+  
+  
+# Kobold Archer #
+
+Kobold_Archer:
+  Type: SKELETON
+  Display: '&fKobold Archer'
+  Health: 30
+  Damage: 5
+  Options:
+    MovementSpeed: 0.2
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - bow:HAND
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=kobold_archer;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.kobold_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - bodyclamp{c=30} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onShoot
+  - skill{s=Kobold_Archer_Attack} ~onTimer:60 0.7
+  - skill{s=Kobold_Archer_Attack} ~onTimer:40 0.3
+  - skill{s=Kobold_Warrior_Hit} ~onDamaged
+  Drops:
+  - mmoitems{type=material;id=MONEDA_1} 1-2 0.10
+  - MobsComunes
+  
+# Plant Monster #
+
+Plant_Monster:
+  Type: ZOMBIE
+  Display: '&fPlant Monster'
+  Health: 15
+  Damage: 8
+  Options:
+    MovementSpeed: 0.01
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=plant_monster;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.plant_monster_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.plant_monster_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Plant_Monster_Attack} ~onTimer:30
+  - skill{s=Plant_Monster_Hit} ~onDamaged
+  Drops:
+  - mmoitems{type=material;id=ROBLETIER1} 0-2 0.10
+  - mmoitems{type=material;id=ABEDULTIER1} 0-2 0.10
+  - mmoitems{type=material;id=ABETO} 0-2 0.10
+  - MobsComunes
+  
+# Wraith #
+
+Wraith:
+  Type: ZOMBIE
+  Display: '&fWraith'
+  Health: 30
+  Damage: 4
+  Options:
+    MovementSpeed: 0.28
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=wraith;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.wraith_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.wraith_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Wraith_Attack} ~onTimer:30
+  - skill{s=Wraith_Hit} ~onDamaged
+  
+# Salamander #
+
+Salamander:
+  Type: ZOMBIE
+  Display: '&fSalamander'
+  Health: 20
+  Damage: 4
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=salamander;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Salamander_Attack} ~onTimer:40 0.3
+  - skill{s=Salamander_Attack} ~onTimer:80 0.8
+  - skill{s=Salamander_Hit} ~onDamaged
+  Drops:
+  - MobsComunes
+  
+# Lava Salamander #
+
+Lava_Salamander:
+  Type: ZOMBIE
+  Display: '&fLava Salamander'
+  Health: 40
+  Damage: 4
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=lava_salamander;n=false;step=1} @self ~onSpawn
+  - effect:particles{particle=flame;amount=10;hS=0.35;vS=0.15;y=0.55;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:20
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.salamander_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Lava_Salamander_Attack} ~onTimer:40 0.3
+  - skill{s=Lava_Salamander_Attack} ~onTimer:80 0.8
+  - skill{s=Salamander_Hit} ~onDamaged
+  Drops:
+  - MobsComunes
+  
+# Stone Minion #
+
+Stone_Minion:
+  Type: ZOMBIE
+  Display: '&fStone Minion'
+  Health: 30
+  Damage: 3
+  Options:
+    MovementSpeed: 0.23
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Skills:
+  - model{mid=stone_minion;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_minion_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_minion_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Stone_Minion_Roll} ~onTimer:40 0.25
+  - skill{s=Stone_Minion_Hit} ~onDamaged
+  Drops:
+  - MobsComunes
+  
+# Stone Golem #
+
+Stone_Golem:
+  Type: ZOMBIE
+  Display: '&fStone Golem'
+  Health: 60
+  Damage: 3
+  Options:
+    MovementSpeed: 0.2
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: false
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 25
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  BossBar:
+    Enabled: true
+    Title: '&aGolem de Piedra'
+    Range: 40
+    Color: GREEN
+    Style: SEGMENTED_3
+  Skills:
+  - model{mid=stone_golem;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_golem_idle;volume=1;pitch=1} @self ~onTimer:140 0.35
+  - effect:sound{s=rms_dark_forest_sounds:samus.stone_golem_idle;volume=1;pitch=1.2} @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Stone_Golem_Attack} ~onTimer:40
+  - skill{s=Stone_Golem_Hit} ~onDamaged
+  Drops:
+  - mmoitems{type=material;id=PIEDRATIER1} 4-8 0.50
+  - mmoitems{type=material;id=HIERROTIER1} 2-3 0.50
+  - Minibosses
+# 265JCMC

@@ -1,0 +1,155 @@
+  
+shadow_blade_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2664
+  Hide:
+  - ATTRIBUTES
+ 
+shadow_blade_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2665
+  Hide:
+  - ATTRIBUTES
+  
+shadow_blade_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2666
+  Hide:
+  - ATTRIBUTES
+  
+shadow_blade_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2667
+  Hide:
+  - ATTRIBUTES
+  
+shadow_blade_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2668
+  Hide:
+  - ATTRIBUTES
+
+shadow_burst_1:
+  Id: paper
+  Display: "&6"
+  Model: 2669
+  Hide:
+  - ATTRIBUTES
+ 
+shadow_burst_2:
+  Id: paper
+  Display: "&6"
+  Model: 2670
+  Hide:
+  - ATTRIBUTES
+  
+shadow_burst_3:
+  Id: paper
+  Display: "&6"
+  Model: 2671
+  Hide:
+  - ATTRIBUTES
+  
+shadow_burst_4:
+  Id: paper
+  Display: "&6"
+  Model: 2672
+  Hide:
+  - ATTRIBUTES
+  
+shadow_burst_5:
+  Id: paper
+  Display: "&6"
+  Model: 2673
+  Hide:
+  - ATTRIBUTES
+
+shadow_burst_6:
+  Id: paper
+  Display: "&6"
+  Model: 2674
+  Hide:
+  - ATTRIBUTES
+ 
+shadow_burst_7:
+  Id: paper
+  Display: "&6"
+  Model: 2675
+  Hide:
+  - ATTRIBUTES
+  
+shadow_burst_8:
+  Id: paper
+  Display: "&6"
+  Model: 2676
+  Hide:
+  - ATTRIBUTES
+  
+shadow_burst_9:
+  Id: paper
+  Display: "&6"
+  Model: 2677
+  Hide:
+  - ATTRIBUTES
+  
+shadow_print:
+  Id: paper
+  Display: "&6"
+  Model: 2678
+  Hide:
+  - ATTRIBUTES
+
+shadow_teleport_1:
+  Id: paper
+  Display: "&6"
+  Model: 2679
+  Hide:
+  - ATTRIBUTES
+ 
+shadow_teleport_2:
+  Id: paper
+  Display: "&6"
+  Model: 2680
+  Hide:
+  - ATTRIBUTES
+  
+shadow_teleport_3:
+  Id: paper
+  Display: "&6"
+  Model: 2681
+  Hide:
+  - ATTRIBUTES
+  
+shadow_teleport_4:
+  Id: paper
+  Display: "&6"
+  Model: 2682
+  Hide:
+  - ATTRIBUTES
+  
+shadow_teleport_5:
+  Id: paper
+  Display: "&6"
+  Model: 2683
+  Hide:
+  - ATTRIBUTES
+
+shadow_teleport_6:
+  Id: paper
+  Display: "&6"
+  Model: 2684
+  Hide:
+  - ATTRIBUTES
+ 
+shadow_teleport_7:
+  Id: paper
+  Display: "&6"
+  Model: 2685
+  Hide:
+  - ATTRIBUTES
+  

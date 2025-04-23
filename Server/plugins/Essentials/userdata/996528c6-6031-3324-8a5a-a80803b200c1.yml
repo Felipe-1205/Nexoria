@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 45.225.93.202
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740203615660
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740203936770
+  login: 1740201505228
+money: '0'
+last-account-name: LunaAnatema
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2953.276817462776
+  y: 81.0
+  z: 464.9416666590766
+  yaw: 103.349365234375
+  pitch: 44.85001754760742
+nickname: Yidhra
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -895.0400700905095
+  y: 43.0
+  z: -817.020646021707
+  yaw: -57.24024963378906
+  pitch: 35.85029602050781

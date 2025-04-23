@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 186.139.84.17
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1740273056563
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1740273720339
+  login: 1740272418687
+money: '0'
+last-account-name: Endless_Abyss
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2988.2729229965066
+  y: 80.0
+  z: 459.8699240333057
+  yaw: 57.783599853515625
+  pitch: 26.005102157592773
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -1308.4094295223308
+  y: 167.0
+  z: 57.351000010967255
+  yaw: -87.29220581054688
+  pitch: 30.805164337158203
+nickname: Jack

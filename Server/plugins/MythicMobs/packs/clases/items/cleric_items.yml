@@ -1,0 +1,219 @@
+######## created by samus2002 #########
+
+divine_immolation_1:
+  Id: paper
+  Display: "&6"
+  Model: 2738
+  Hide:
+  - ATTRIBUTES
+ 
+divine_immolation_2:
+  Id: paper
+  Display: "&6"
+  Model: 2739
+  Hide:
+  - ATTRIBUTES
+  
+divine_immolation_3:
+  Id: paper
+  Display: "&6"
+  Model: 2740
+  Hide:
+  - ATTRIBUTES
+  
+divine_immolation_4:
+  Id: paper
+  Display: "&6"
+  Model: 2741
+  Hide:
+  - ATTRIBUTES
+  
+divine_immolation_5:
+  Id: paper
+  Display: "&6"
+  Model: 2742
+  Hide:
+  - ATTRIBUTES
+
+divine_immolation_6:
+  Id: paper
+  Display: "&6"
+  Model: 2743
+  Hide:
+  - ATTRIBUTES
+ 
+divine_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2744
+  Hide:
+  - ATTRIBUTES
+  
+divine_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2745
+  Hide:
+  - ATTRIBUTES
+  
+divine_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2746
+  Hide:
+  - ATTRIBUTES
+  
+divine_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2747
+  Hide:
+  - ATTRIBUTES
+
+divine_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2748
+  Hide:
+  - ATTRIBUTES
+ 
+divine_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2749
+  Hide:
+  - ATTRIBUTES
+  
+divine_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2750
+  Hide:
+  - ATTRIBUTES
+  
+divine_impact_8:
+  Id: paper
+  Display: "&6"
+  Model: 2751
+  Hide:
+  - ATTRIBUTES
+  
+luminous_wave_1:
+  Id: paper
+  Display: "&6"
+  Model: 2752
+  Hide:
+  - ATTRIBUTES
+
+luminous_wave_2:
+  Id: paper
+  Display: "&6"
+  Model: 2753
+  Hide:
+  - ATTRIBUTES
+ 
+luminous_wave_3:
+  Id: paper
+  Display: "&6"
+  Model: 2754
+  Hide:
+  - ATTRIBUTES
+  
+luminous_wave_4:
+  Id: paper
+  Display: "&6"
+  Model: 2755
+  Hide:
+  - ATTRIBUTES
+  
+luminous_wave_5:
+  Id: paper
+  Display: "&6"
+  Model: 2756
+  Hide:
+  - ATTRIBUTES
+  
+luminous_wave_6:
+  Id: paper
+  Display: "&6"
+  Model: 2757
+  Hide:
+  - ATTRIBUTES
+
+luminous_wave_7:
+  Id: paper
+  Display: "&6"
+  Model: 2758
+  Hide:
+  - ATTRIBUTES
+ 
+luminous_wave_8:
+  Id: paper
+  Display: "&6"
+  Model: 2759
+  Hide:
+  - ATTRIBUTES
+  
+luminous_wave_9:
+  Id: paper
+  Display: "&6"
+  Model: 2760
+  Hide:
+  - ATTRIBUTES
+
+tear_impact_1:
+  Id: paper
+  Display: "&6"
+  Model: 2761
+  Hide:
+  - ATTRIBUTES
+ 
+tear_impact_2:
+  Id: paper
+  Display: "&6"
+  Model: 2762
+  Hide:
+  - ATTRIBUTES
+  
+tear_impact_3:
+  Id: paper
+  Display: "&6"
+  Model: 2763
+  Hide:
+  - ATTRIBUTES
+  
+tear_impact_4:
+  Id: paper
+  Display: "&6"
+  Model: 2764
+  Hide:
+  - ATTRIBUTES
+  
+tear_impact_5:
+  Id: paper
+  Display: "&6"
+  Model: 2765
+  Hide:
+  - ATTRIBUTES
+
+tear_impact_6:
+  Id: paper
+  Display: "&6"
+  Model: 2766
+  Hide:
+  - ATTRIBUTES
+ 
+tear_impact_7:
+  Id: paper
+  Display: "&6"
+  Model: 2767
+  Hide:
+  - ATTRIBUTES
+  
+tear_impact_8:
+  Id: paper
+  Display: "&6"
+  Model: 2768
+  Hide:
+  - ATTRIBUTES
+  

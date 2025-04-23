@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 79.157.246.126
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739753109937
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739754040879
+  login: 1739747262357
+money: '0'
+last-account-name: AnnaVRobles
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.884428635729
+  y: 81.0
+  z: 465.7814046139542
+  yaw: 126.60006713867188
+  pitch: 8.84996223449707
+nickname: Sthana
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2995.379905884543
+  y: 80.0
+  z: 468.777955422123
+  yaw: -167.8504180908203
+  pitch: 19.349971771240234

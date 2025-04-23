@@ -1,0 +1,226 @@
+######## created by samus2002 #########
+
+# Shield of Harmony #
+
+Shield_of_Harmony_BUFF:
+  Cooldown: 0
+  Conditions:
+  - mobsInRadius{types=Musical_Note;amount=3to10;radius=20} false
+  Skills:
+  - orbital{bulletType=MOB;mob=Musical_Note;hr=1;vr=1;hp=false;hnp=false;r=4;points=90;i=1;duration=40000;oy=1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+Shield_of_Harmony:
+  Cooldown: 0
+  Skills:
+  - skill{s=Shield_of_Harmony_ACTIVATE} @MIR{r=20;t=Musical_Note;target=armorstands}
+  - skill{s=Shield_of_Harmony_BUFF} @self
+  - potion{type=DAMAGE_RESISTANCE;duration=40;level=1;hasParticles=false} @PIR{r=4}
+  - potion{type=DAMAGE_RESISTANCE;duration=40;level=1;hasParticles=false} @self
+  - effect:particlering{particle=redstone;color=#c666fa;radius=4;points=40;amount=1;hS=0;vS=0;y=0.1;repeat=1;repeatinterval=15} @self
+
+Shield_of_Harmony_REMOVE:
+  Cooldown: 0
+  Conditions:
+  - hasaurastacks{auraName=Shield_of_Harmony} false
+  Skills:
+  - remove @self
+
+Shield_of_Harmony_ACTIVATE:
+  Skills:
+  - SudoSkill{s=Shield_of_Harmony_SKILL1;setcasterastrigger=true} @MIR{r=20;t=Musical_Note;target=armorstands}
+  
+Shield_of_Harmony_SKILL1:
+  TriggerConditions:
+  - owner{} true
+  Skills:
+  - Aura{auraName=Shield_of_Harmony;interval=1;duration=40} @self
+  
+# Sound Wave #
+
+Sound_Wave:
+  Skills:
+  - skill{s=Sound_Wave_Skill}
+  - skill{s=Memento_Mori}
+  
+Sound_Wave_Skill:
+  Conditions:
+  - hasaurastacks{auraName=Rhapsody_aura} false
+  Skills:
+  - skill{s=Sound_Wave_Sound} @self
+  - projectile{bulletType=MOB;mob=Sound_Wave;onTick=Sound_Wave_TICK;onHit=Sound_Wave_HIT;v=15;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.2;tyo=1.2} @Forward{f=20;y=0}
+  
+Sound_Wave_Sound:
+  Skills:
+  - randomskill{skills=Sound_Wave_Sound1,Sound_Wave_Sound2,Sound_Wave_Sound3}
+
+Sound_Wave_Sound1:
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_sound_wave;volume=0.3;pitch=1.2} @self
+  
+Sound_Wave_Sound2:
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_sound_wave;volume=0.3;pitch=1} @self
+  
+Sound_Wave_Sound3:
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_sound_wave;volume=0.3;pitch=0.8} @self
+  
+Sound_Wave_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=0.9}
+  
+Sound_Wave_HIT:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=1;hasParticles=false} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+  - effect:sound{s=bard_sounds:samus.slow_down;volume=1;pitch=1} @self
+  #- effect:particlesphere{particle=redstone;color=#ffed91;radius=1;amount=20} @origin
+  - effect:particles{particle=redstone;color=#ffed91;amount=15;hS=0.3;vS=0.05;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat="<modifier.duration> * 2";repeatinterval=10} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+
+# Memento Mori #
+
+Memento_Mori:
+  Conditions:
+  - hasaurastacks{auraName=Rhapsody_aura} true
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_memento_mori;volume=0.5;pitch=1} @self
+  - missile{bulletType=MOB;mob=Memento_Mori;onHit=Memento_Mori_HIT;in=15;v=12;i=1;hR=1;vR=1;md=100;mr=20;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=2;tyo=3.5} @EIR{r=15;limit=3;ignore=armorstands}
+  
+Memento_Mori_HIT:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  Skills:
+  - damage{a="<modifier.damage> * 2"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+  - potion{type=BLINDNESS;duration="<modifier.duration> * 20";level=1;hasParticles=false} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+  - effect:sound{s=bard_sounds:samus.blind;volume=1;pitch=1} @self
+  #- effect:particlesphere{particle=redstone;color=#ffed91;radius=1;amount=20} @origin
+  - effect:particles{particle=redstone;color=#05031a;amount=15;hS=0.3;vS=0.05;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat="<modifier.duration> * 2";repeatinterval=10} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST;ignore=armorstands}
+  
+# Vibrative Strike #
+
+Vibrative_Strike:
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_vibration;volume=0.7;pitch=0.8} @self
+  - effect:sound{s=bard_sounds:samus.vibration;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Vibrative_Strike;onTick=Vibrative_Strike_TICK;onHit=Vibrative_Strike_HIT;v=10;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1;tyo=1} @Forward{f=20;y=0}
+  - delay 5
+  - effect:sound{s=bard_sounds:samus.vibration2;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Vibrative_Strike;onTick=Vibrative_Strike_TICK;onHit=Vibrative_Strike_HIT;v=10;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1;tyo=1} @Forward{f=20;y=0}
+  - delay 5
+  - effect:sound{s=bard_sounds:samus.vibration2;volume=1;pitch=1} @self
+  - projectile{bulletType=MOB;mob=Vibrative_Strike;onTick=Vibrative_Strike_TICK;onHit=Vibrative_Strike_HIT;v=10;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1;tyo=1} @Forward{f=20;y=0}
+  
+Vibrative_Strike_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=1.1}
+  
+Vibrative_Strike_HIT:
+  TargetConditions:
+  - entitytype{t=armorstands} false
+  - hasaurastacks{auraName=Stun_Aura} false
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=4}
+  - Aura{auraName=Stun_Aura;interval=1;duration="<modifier.duration> * 20"} @EntitiesNearOrigin{r=4;ignore=armorstands}
+  - potion{type=SLOW;duration="<modifier.duration> * 20";level=50;hasParticles=false} @EntitiesNearOrigin{r=4;ignore=armorstands}
+  - orbital{r=0.5;onTick=Vibrative_Strike_HIT_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2.5} @EntitiesNearOrigin{r=4;ignore=armorstands}
+
+Vibrative_Strike_HIT_TICK:
+  Skills:
+  - effect:particles{p=crit;amount=2;speed=0;hS=0;vS=0} @origin
+
+# Angelic Serenade #
+
+Angelic_Serenade_S:
+  Skills:
+  - summon{type=Angel;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=3}
+  - summon{type=Healing_Aura;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  
+Healing_Aura_T:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - totem{md="<modifier.duration> * 20";oT=Angelic_Serenade_HEAL;hnp=false;hp=true;hR=1;vR=1;i=10}
+
+Angelic_Serenade:
+  Skills:
+  - skill{s=Angelic_Serenade_S}
+  - effect:sound{s=bard_sounds:samus.angel;volume=1;pitch=1} @self
+  - delay 40
+  - skill{s=Angelic_Serenade_REMOVE} @MIR{r=300;t=Angel;target=armorstands}
+  - skill{s=Healing_Aura_REMOVE;delay=1} @MIR{r=300;t=Healing_Aura;target=armorstands}
+  - SudoSkill{s=Healing_Aura_T;setcasterastrigger=true} @MIR{r=300;t=Healing_Aura;target=armorstands}
+  
+Angelic_Serenade_HEAL:
+  Skills:
+  - heal{a="<modifier.heal>"} @PlayersNearOrigin{r=4.5}
+  - effect:particles{particle=glow;amount=7;hS=0.3;vS=0.8;y=1;speed=0;forwardOffset=0;sideOffset=0} @PlayersNearOrigin{r=4.5}
+  
+Angelic_Serenade_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay="<modifier.duration> * 20"}
+  
+Healing_Aura_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay="<modifier.duration> * 20"}
+  
+# Rhapsody #
+
+Rhapsody:
+  Skills:
+  - Aura{auraName=Rhapsody_aura;interval=1;duration=80} @self
+  - effect:sound{s=bard_sounds:samus.harp_speed;volume=1;pitch=1} @self
+  - effect:sound{s=bard_sounds:samus.speed_aura;volume=0.7;pitch=1.15} @self
+  - summon{type=Rhapsody;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - potion{type=SPEED;duration=10;level=2;hasParticles=false;repeat="<modifier.duration> * 2";repeatinterval=10} @PIR{r=5}
+  - orbital{bulletType=MOB;mob=Blue_Bird;r=0;points=1;i=1;duration="<modifier.duration> * 20";oz=1.5;ox=0;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - orbital{bulletType=MOB;mob=Blue_Bird;r=0;points=1;i=1;duration="<modifier.duration> * 20";oz=-1.5;ox=0;oy=2;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Rhapsody_REMOVE} @MIR{r=300;t=Rhapsody;target=armorstands}
+  
+Rhapsody_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay="<modifier.duration> * 20"}
+  
+# Symphony of Destruction #
+
+Symphony_of_Destruction:
+  Skills:
+  - projectile{onEnd=Symphony_of_Destruction_SUMMON;v=30;i=1;hR=1;vR=1;mr=50;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=2;tyo=1} @forward{f=5;y=0}
+  
+Symphony_of_Destruction_SUMMON:
+  Skills:
+  - effect:sound{s=bard_sounds:samus.harp_symphony;volume=1;pitch=1} @self
+  - summon{type=ult_strings_1;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=ult_strings_2;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=ult_strings_3;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=ult_strings_4;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - totem{md=100;oT=Symphony_of_Destruction_HIT;hnp=true;hp=true;hR=1;vR=1;i=1} @origin
+  - effect:sound{s=bard_sounds:samus.clef;volume=1;pitch=1;delay=20} @origin
+  - summon{type=Clef;amount=1;radius=0;yRadius=0;onSurface=true;delay=20} @origin
+  - effect:sound{s=bard_sounds:samus.symphony_laser;volume=1;pitch=1;delay=60} @origin
+  - summon{type=Symphony_Light;amount=1;radius=0;yRadius=0;onSurface=true;delay=60} @origin
+  - effect:sound{s=bard_sounds:samus.symphony_explosion;volume=1;pitch=1;delay=80} @origin
+  - effect:sound{s=bard_sounds:samus.harp_symphony_explosion;volume=1;pitch=1;delay=82} @origin
+  - summon{type=Symphony_Explosion;amount=1;radius=0;yRadius=0;onSurface=true;delay=80} @origin
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true;delay=80} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  - potion{type=LEVITATION;duration="<modifier.duration> * 20";level=1;hasParticles=false;delay=80} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  - orbital{r=0.8;onTick=Symphony_of_Destruction_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=1;rx=0;ry=0;rz=0;delay=80} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  - orbital{r=0.8;onTick=Symphony_of_Destruction_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=2;rx=0;ry=0;rz=0;delay=80} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  - orbital{r=0.8;onTick=Symphony_of_Destruction_TICK;points=16;interval=1;duration="<modifier.duration> * 20";oy=0;rx=0;ry=0;rz=0;delay=80} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  
+Symphony_of_Destruction_TICK:
+  Skills:
+  - effect:particles{p=redstone;color=#ffd56b;amount=2;speed=0;hS=0;vS=0} @origin
+  
+Symphony_of_Destruction_HIT:
+  Skills:
+  - potion{type=SLOW;duration=40;level=2;hasParticles=false} @EntitiesNearOrigin{r=7;ignore=armorstands}
+  

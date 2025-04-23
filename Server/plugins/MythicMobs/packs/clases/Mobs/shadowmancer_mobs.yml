@@ -1,0 +1,267 @@
+
+
+Dark_Monarch:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Collidable: false
+    Interactable: false
+    Invincible: true
+  Skills:
+  - model{mid=shadow_spirit;n=false} @self ~onSpawn
+  - skill{s=Dark_Monarch_REMOVE;delay=50} @self ~onTimer:10
+  - skill{s=Dark_Monarch_REMOVE_BUFF} @Owner ~onTimer:1
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_summon;volume=0.6;pitch=1} @self ~onSpawn
+    
+Dark_Monarch_EN:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Collidable: false
+    Interactable: false
+    Invincible: true
+  Skills:
+  - model{mid=shadow_spirit;n=false} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=10;hS=0.3;vS=0.3;y=0;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  
+  
+  
+Shadow_Burst:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: shadow_burst_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_burst_1:4;delay=1} ~onSpawn
+  - equip{item=shadow_burst_2:4;delay=2} ~onSpawn
+  - equip{item=shadow_burst_3:4;delay=3} ~onSpawn
+  - equip{item=shadow_burst_4:4;delay=4} ~onSpawn
+  - equip{item=shadow_burst_5:4;delay=5} ~onSpawn
+  - equip{item=shadow_burst_6:4;delay=6} ~onSpawn
+  - equip{item=shadow_burst_7:4;delay=7} ~onSpawn
+  - equip{item=shadow_burst_8:4;delay=8} ~onSpawn
+  - equip{item=shadow_burst_9:4;delay=9} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+
+Shadow_Teleport:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: shadow_teleport_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_teleport_1:4;delay=1} ~onSpawn
+  - equip{item=shadow_teleport_2:4;delay=2} ~onSpawn
+  - equip{item=shadow_teleport_3:4;delay=3} ~onSpawn
+  - equip{item=shadow_teleport_4:4;delay=4} ~onSpawn
+  - equip{item=shadow_teleport_5:4;delay=5} ~onSpawn
+  - equip{item=shadow_teleport_6:4;delay=6} ~onSpawn
+  - equip{item=shadow_teleport_7:4;delay=7} ~onSpawn
+  - remove{delay=8} @self ~onSpawn
+
+Shadow_Print:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_print:4;delay=1} @self ~onTimer:1
+  - skill{s=Shadow_Teleport_PET} @Owner ~onTimer:1
+  - remove{delay=60} @self ~onSpawn
+  
+
+Shadow_Knight:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=shadow_knight;n=false} @self ~onSpawn
+  - state{s=skill;speed=0.8} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0;delay=44} @ModelPart{p=chest} ~onSpawn
+  - remove{delay=45} @self ~onSpawn
+  
+
+Shadow_Archer:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=shadow_archer;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0;delay=45} @ModelPart{p=chest} ~onSpawn
+  - remove{delay=36} @self ~onSpawn
+  
+Shadow_Arrow1:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - partvisibility{p=body;v=false} @self ~onSpawn
+  - partvisibility{p=body;v=false;delay=1} @self ~onSpawn
+  - partvisibility{p=body;v=true;delay=16} @self ~onSpawn
+  - model{mid=shadow_arrow;n=false} @self ~onSpawn
+  - state{s=skill2;delay=16} @self ~onSpawn
+  
+Shadow_Arrow2:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - partvisibility{p=body;v=false} @self ~onSpawn
+  - partvisibility{p=body;v=false;delay=1} @self ~onSpawn
+  - partvisibility{p=body;v=true;delay=23} @self ~onSpawn
+  - model{mid=shadow_arrow;n=false} @self ~onSpawn
+  - state{s=skill;delay=23} @self ~onSpawn
+  
+Shadow_Arrow3:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - partvisibility{p=body;v=false} @self ~onSpawn
+  - partvisibility{p=body;v=false;delay=1} @self ~onSpawn
+  - partvisibility{p=body;v=true;delay=29} @self ~onSpawn
+  - model{mid=shadow_arrow;n=false} @self ~onSpawn
+  - state{s=skill3;delay=29} @self ~onSpawn
+  
+Shadow_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  ItemHand: shadow_blade_impact_1
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_blade_impact_1:0;delay=2} ~onSpawn
+  - equip{item=shadow_blade_impact_2:0;delay=4} ~onSpawn
+  - equip{item=shadow_blade_impact_3:0;delay=6} ~onSpawn
+  - equip{item=shadow_blade_impact_4:0;delay=8} ~onSpawn
+  - equip{item=shadow_blade_impact_5:0;delay=10} ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+  
+
+Blades_Of_Shadow:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=shadow_blade;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=body} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=15;hS=0.4;vS=1.4;y=0.4;speed=0;forwardOffset=0;sideOffset=0;delay=43} @ModelPart{p=body} ~onSpawn
+  - remove{delay=44} @self ~onSpawn
+  
+Blades_Of_Shadow_Impact:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=shadow_blade_impact_1:0;delay=15} ~onSpawn
+  - equip{item=shadow_blade_impact_2:0;delay=17} ~onSpawn
+  - equip{item=shadow_blade_impact_3:0;delay=19} ~onSpawn
+  - equip{item=shadow_blade_impact_4:0;delay=21} ~onSpawn
+  - equip{item=shadow_blade_impact_5:0;delay=23} ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+  
+
+Shadow_Dragon:
+  Type: HORSE
+  Display: '&6'
+  Health: 100
+  Damage: 3
+  Options:
+    MovementSpeed: 0.07
+    PreventRandomEquipment: true
+    Persistent: false
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Invincible: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=shadow_dragon;n=false;drive=true;mount=true;step=1} @self ~onSpawn
+  - skill{s=Shadow_Dragon_Breathe_Fire_SKILLCAST} ~onTimer:3
+  - effect:sound{s=shadowmancer_sounds:samus.shadow_dragon_growl;volume=1;pitch=1} @self ~onTimer:140 0.6
+  - effect:particles{particle=redstone;color=#19191c;amount=25;hS=1;vS=1.4;y=0.8;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSpawn
+  - effect:particles{particle=redstone;color=#19191c;amount=25;hS=1;vS=1.4;y=0.8;speed=0;forwardOffset=0;sideOffset=0} @ModelPart{p=chest} ~onSignal:END
+  - mountmodel{mode=flying;delay=4} @Owner ~onSpawn
+  - skill{s=Shadow_Dragon_NOMOUNT;delay=5} ~onTimer:1
+  

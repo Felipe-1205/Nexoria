@@ -1,0 +1,409 @@
+#######################################################################################################
+###########################################***EliteCreatures***########################################
+##############################################              ###########################################
+##########################################***EliteMounts Vol.4***###################################### 
+########################################***************************#################################### 
+#################################################*******###############################################
+###################################################***#################################################
+#######################################################################################################
+###############################
+#EliteMountVol4Elephant
+############################### 
+EliteMountVol4Elephant:
+  Type: wolf
+  Display: '&5Elephant'
+  Health: 50
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:    
+  - model{mid=mountelephantec;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true} @self ~onSpawn
+  - bodyclamp{m=mountelephantec;c=50} @self ~onSpawn
+  ################################################### 
+  - Aura{auraName=EliteMountVol4ElephantMechanicsAura;onTick=EliteMountVol4ElephantMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol4ElephantAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol4ElephantPetting} @Self ~onInteract
+  ###################################################
+  #Automatic Cooldown
+  #- skill{s=EliteMountVol4ElephantRemove30min} @Self ~onSpawn 1 #put comment #  in front of this line to switch off the remove
+  - summon{type=EliteMountVol4ElephantDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol4ElephantDeath:
+  Type: wolf
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  #Model:
+  #Id: mountelephantec
+  #ViewRadius: 80
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:  
+  - model{mid=mountelephantec;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol4ElephantDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+###############################
+#EliteMountVol4WoollyRhino
+############################### 
+EliteMountVol4WoollyRhino:
+  Type: wolf
+  Display: '&5Woolly Rhino'
+  Health: 50
+  Damage: 8
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:     
+  - model{mid=mountrhinoec;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true} @self ~onSpawn
+  - bodyclamp{m=mountrhinoec;c=50} @self ~onSpawn
+  ################################################### 
+  - Aura{auraName=EliteMountVol4WoollyRhinoMechanicsAura;onTick=EliteMountVol4WoollyRhinoMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol4WoollyRhinoAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol4WoollyRhinoPetting} @Self ~onInteract
+  ###################################################
+  #Automatic Cooldown
+  #- skill{s=EliteMountVol4WoollyRhinoRemove30min} @Self ~onSpawn 1 #put comment #  in front of this line to switch off the remove
+  - summon{type=EliteMountVol4WoollyRhinoDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol4WoollyRhinoDeath:
+  Type: wolf
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  #Model:
+  #Id: mountrhinoec
+  #ViewRadius: 80
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:  
+  - model{mid=mountrhinoec;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol4WoollyRhinoDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+###############################
+#EliteMountVol4MountainYak
+############################### 
+EliteMountVol4MountainYak:
+  Type: wolf
+  Display: '&5Mountain Yak'
+  Health: 50
+  Damage: 6
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:    
+  - model{mid=mountyakec;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true} @self ~onSpawn
+  - bodyclamp{m=mountyakec;c=50} @self ~onSpawn
+  ################################################### 
+  - Aura{auraName=EliteMountVol4MountainYakMechanicsAura;onTick=EliteMountVol4MountainYakMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol4MountainYakAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol4MountainYakPetting} @Self ~onInteract
+  ###################################################
+  #Automatic Cooldown
+  #- skill{s=EliteMountVol4MountainYakRemove30min} @Self ~onSpawn 1 #put comment #  in front of this line to switch off the remove
+  - summon{type=EliteMountVol4MountainYakDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol4MountainYakDeath:
+  Type: wolf
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  #Model:
+  #Id: mountyakec
+  #ViewRadius: 80
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:  
+  - model{mid=mountyakec;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol4MountainYakDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+###############################
+#EliteMountVol4YakBeast
+############################### 
+EliteMountVol4YakBeast:
+  Type: wolf
+  Display: '&5Yak Beast'
+  Health: 50
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:    
+  - model{mid=mountyakbeastec;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true} @self ~onSpawn
+  - bodyclamp{m=mountyakbeastec;c=50} @self ~onSpawn
+  ################################################### 
+  - Aura{auraName=EliteMountVol4YakBeastMechanicsAura;onTick=EliteMountVol4YakBeastMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol4YakBeastAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol4YakBeastPetting} @Self ~onInteract
+  ###################################################
+  #Automatic Cooldown
+  #- skill{s=EliteMountVol4YakBeastRemove30min} @Self ~onSpawn 1 #put comment #  in front of this line to switch off the remove
+  - summon{type=EliteMountVol4YakBeastDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol4YakBeastDeath:
+  Type: wolf
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  #Model:
+  #Id: mountyakbeastec
+  #ViewRadius: 80
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:  
+  - model{mid=mountyakbeastec;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol4YakBeastDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1
+
+############################### 
+#EliteMountVol4BlackBull
+############################### 
+EliteMountVol4BlackBull:
+  Type: wolf
+  Display: '&5Black Bull'
+  Health: 50
+  Damage: 7
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:    
+  - model{mid=mountbullec;n=false;damagetint=false;i=true;mount=true;drive=true;ride=true} @self ~onSpawn
+  - bodyclamp{m=mountbullec;c=50} @self ~onSpawn
+  ################################################### 
+  - Aura{auraName=EliteMountVol4BlackBullMechanicsAura;onTick=EliteMountVol4BlackBullMechanics;interval=1;duration=999999} @self ~onSpawn
+  - skill{s=EliteMountVol4BlackBullAbility} @Self ~onSignal:ABILITY
+  - skill{s=EliteMountVol4BlackBullPetting} @Self ~onInteract
+  ###################################################
+  #Automatic Cooldown
+  #- skill{s=EliteMountVol4BlackBullRemove30min} @Self ~onSpawn 1 #put comment #  in front of this line to switch off the remove
+  - summon{type=EliteMountVol4BlackBullDeath;amount=1;radius=0;summonerIsOwner=true} @SelfLocation ~onDeath 1
+  - sound{s=ecmounts:custom.ecmounts.summon;v=1;p=1;sc=WEATHER} @Self ~onSpawn
+  - remove @self ~onDeath 1
+EliteMountVol4BlackBullDeath:
+  Type: wolf
+  Display: ''
+  Health: 100
+  Damage: 0
+  ShowHealth: true
+  Despawn: true
+  Options:
+    PreventOtherDrops: true
+    ApplyInvisibility: true
+    Silent: true
+    PreventMobKillDrops: true
+    PreventItemPickup: true
+    MovementSpeed: 0.0
+    PreventSunburn: true
+    KnockbackResistance: 1
+  #Model:
+  #Id: mountbullec
+  #ViewRadius: 80
+  Modules:
+    ThreatTable: false
+  AIGoalSelectors:
+  - 0 clear
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Skills:  
+  - model{mid=mountbullec;n=false;damagetint=false;i=true} @self ~onSpawn 
+  - potion{type=SLOW;duration=20;level=5;hasParticles=false} @self ~onSpawn 1 
+  - skill{s=EliteMountVol4BlackBullDeath} @Self ~onSpawn 1 
+  - remove @self ~onDeath 1

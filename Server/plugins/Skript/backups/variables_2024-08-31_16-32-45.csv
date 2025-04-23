@@ -1,0 +1,22 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.9.1
+
+bajo.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 00
+bajo.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 00
+gritar.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 00
+gritar.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 00
+hablar.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 01
+hablar.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 01
+modo.29fd8388-8ad2-3557-a4b8-906cbc75df5e, string, 80066E6F726D616C
+modo.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, string, 80066E6F726D616C
+ooc.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 00
+ooc.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 00
+staffc.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 00
+staffc.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 01
+susurrar.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 00
+susurrar.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 00
+toggle_variable.29fd8388-8ad2-3557-a4b8-906cbc75df5e, boolean, 01
+toggle_variable.bf5bb36e-8118-3c43-a71d-3a2e4a2be5e8, boolean, 01
+

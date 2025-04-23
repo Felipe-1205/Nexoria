@@ -1,0 +1,265 @@
+######## created by samus2002 #########
+
+# Soul Slice #
+  
+Soul_Slice_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-25
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_slice_1:0;delay=3} ~onSpawn
+  - equip{item=soul_slice_2:0;delay=4} ~onSpawn
+  - equip{item=soul_slice_3:0;delay=5} ~onSpawn
+  - equip{item=soul_slice_4:0;delay=6} ~onSpawn
+  - equip{item=soul_slice_5:0;delay=7} ~onSpawn
+  - equip{item=soul_slice_6:0;delay=8} ~onSpawn
+  - equip{item=soul_slice_7:0;delay=9} ~onSpawn
+  - equip{item=soul_slice_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Soul_Slice_2:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-155
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_slice_1:0;delay=3} ~onSpawn
+  - equip{item=soul_slice_2:0;delay=4} ~onSpawn
+  - equip{item=soul_slice_3:0;delay=5} ~onSpawn
+  - equip{item=soul_slice_4:0;delay=6} ~onSpawn
+  - equip{item=soul_slice_5:0;delay=7} ~onSpawn
+  - equip{item=soul_slice_6:0;delay=8} ~onSpawn
+  - equip{item=soul_slice_7:0;delay=9} ~onSpawn
+  - equip{item=soul_slice_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Soul_Slice_3:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-90
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_slice_1:0;delay=3} ~onSpawn
+  - equip{item=soul_slice_2:0;delay=4} ~onSpawn
+  - equip{item=soul_slice_3:0;delay=5} ~onSpawn
+  - equip{item=soul_slice_4:0;delay=6} ~onSpawn
+  - equip{item=soul_slice_5:0;delay=7} ~onSpawn
+  - equip{item=soul_slice_6:0;delay=8} ~onSpawn
+  - equip{item=soul_slice_7:0;delay=9} ~onSpawn
+  - equip{item=soul_slice_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Soul_Slice_4:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,90
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_slice_1:0;delay=3} ~onSpawn
+  - equip{item=soul_slice_2:0;delay=4} ~onSpawn
+  - equip{item=soul_slice_3:0;delay=5} ~onSpawn
+  - equip{item=soul_slice_4:0;delay=6} ~onSpawn
+  - equip{item=soul_slice_5:0;delay=7} ~onSpawn
+  - equip{item=soul_slice_6:0;delay=8} ~onSpawn
+  - equip{item=soul_slice_7:0;delay=9} ~onSpawn
+  - equip{item=soul_slice_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+Soul_Wave:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_wave_1:0;delay=3} ~onSpawn
+  - equip{item=soul_wave_2:0;delay=4} ~onSpawn
+  - equip{item=soul_wave_3:0;delay=5} ~onSpawn
+  - equip{item=soul_wave_4:0;delay=6} ~onSpawn
+  - equip{item=soul_wave_5:0;delay=7} ~onSpawn
+  - equip{item=soul_wave_6:0;delay=8} ~onSpawn
+  - equip{item=soul_wave_7:0;delay=9} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Death Spin #
+
+Death_Spin_1:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_spin:0;delay=3} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+
+Death_Spin_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_spin:4;delay=3} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Death_Spin_3:
+  Type: ARMOR_STAND
+  Pose:
+      LeftArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_spin:5;delay=3} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+# Reaping Claw #
+
+Reaping_Claw:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=redstone;color=#4bb599;amount=15;hS=0.45;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=particle} ~onTimer:3
+  - effect:particles{particle=redstone;color=#afe4a4;amount=15;hS=0.45;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @modelpart{p=particle} ~onTimer:3
+  - model{mid=reaping_claw;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=40} @self ~onSpawn
+  
+# Surge #
+  
+Surge:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=soul_cross_1:0;delay=3} ~onSpawn
+  - equip{item=soul_cross_2:0;delay=4} ~onSpawn
+  - equip{item=soul_cross_3:0;delay=5} ~onSpawn
+  - equip{item=soul_cross_4:0;delay=6} ~onSpawn
+  - equip{item=soul_cross_5:0;delay=7} ~onSpawn
+  - equip{item=soul_cross_6:0;delay=8} ~onSpawn
+  - equip{item=soul_cross_7:0;delay=9} ~onSpawn
+  - equip{item=soul_cross_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+  
+# Soul Scythe #
+
+Soul_Scythe:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=soul_scythe;n=false} @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=25} @self ~onSpawn
+  
+# God Of Death #
+
+God_Of_Death:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Collidable: false
+    Interactable: false
+    Invincible: true
+  Skills:
+  - model{mid=god_of_death;n=false} @self ~onSpawn
+  - state{s=spawn} @self ~onSpawn
+  
+# Death Slice #
+  
+Death_Slice:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,-15
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=death_slice_1:0;delay=3} ~onSpawn
+  - equip{item=death_slice_2:0;delay=4} ~onSpawn
+  - equip{item=death_slice_3:0;delay=5} ~onSpawn
+  - equip{item=death_slice_4:0;delay=6} ~onSpawn
+  - equip{item=death_slice_5:0;delay=7} ~onSpawn
+  - equip{item=death_slice_6:0;delay=8} ~onSpawn
+  - equip{item=death_slice_7:0;delay=9} ~onSpawn
+  - equip{item=death_slice_8:0;delay=10} ~onSpawn
+  - remove{delay=11} @self ~onSpawn
+
+# Death Spin #
+
+Death_Spin:
+  Type: ARMOR_STAND
+  Pose:
+      RightArm: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Invincible: true
+  Skills:
+  - equip{item=death_spin:0;delay=3} ~onSpawn
+  - remove{delay=10} @self ~onSpawn

@@ -1,0 +1,1827 @@
+Tables:
+  Dungeon1-Final:
+    ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTable
+    minItems: 1
+    maxItems: 4
+    namespace: Dungeon1-Final
+    lootItems:
+      9:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, mago, hechicero, clerigo, guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Esquiva: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/51TzW7TQBDegFpZlUAtCCEhDquVyAGi0giiilwqY69cS/4Ja6ciiiJrY29SIycujlOpiiJuPAJcOPTmE4eKN3DepE/AgQNHdpPGJCi94MPY3pn5Zr5vZncAkMAj07R1F5uOp7Ys2dQVz7AJLn1qozzr5ZmfZzU5GdBgnFBohH2WUFQRroXNs1cwzw7t7geWxjBgsEuTIK7AAe1ze8r809BnCf/0I5aE4qw/ZkkyPzoLfSreCR1y2CUeI+zjOGQJg1Z4ziJY3VDu+sslVGgU9jiCH85+DEVlPOJ557TOA3ovqvu1Z+sp3y7hksdNyDowvf76GRI6FDw5msYGFJ5Qf/adFnnrCTXCgrHP4HgI1dciJaCzq3h/Q7tzIqJoN88iV8dkSYr7VI7bDaMwoEEd1g4O4EthUUcCu8VghPV0FewqsqPYShMT29A1TGQJ3CuC+OwweFLuFsPiHSlc6/hmahJ4WMRqHM9xbQs74PkE4cFZeuFEcTpC9TYqyHYqiIswSuMhE47OdBvcLxBkYtrk6CeYP3fB48Jhyu89tUnkt7qhuy0ASr8ksFd4saUcy5brgDttzvBvlqo7DUNuYdVzWw0M9sr/7pwEdo4dl7QWNBsT5KQ0RXUkfrmWtuakcXLB25ygNUW82dUoTXjg7cKgaWe6yoDgd02d8FYMfIINTq8kbfIqhuw44M1/77sEHqwPeM58ay7s9uqttFUNe0R2dUs7+r0QfHXu4raCp21Uvm0fO6vRYvvAlrBV8Ac3iRKK/wMAAA==
+        weight: 1
+      10:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, mago, hechicero, clerigo, guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Esquiva: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/51TzW7TQBDegFpZlUAtCCEhDquVyAGi0gqiilwqY68cS/4Ja6ciiiJrY29SIycujlOpiiJuPAJcOPTmE4eKN3DepE/AgQNHdpPGJCi94MPY3pn5Zr5vZncAkMAj07R1F5uOp7Ys2dQVz7AJLn1qozzr5ZmfZ1U5GdBgnFBohH2WUFQRroXNs1cwz47s7geWxjBgsEuTIK7AAe1ze8r809BnCf/0I5aE4qw/ZkkyPzoLfSreCR1y2CUeI+zjOGQJg1Z4ziJ4uKHc9ZdLqNAo7HEEP5z9GIrKeMTzzmmNB/ReHO5Xn62nfLuESx43IevA9PrrZ0joUPDkaBobUHhC/dl3WuStJ1QJC8Y+g+MhVF+LlIDOruL9De3OiYii3TyLXB2TJSnuUzluN4zCgAY1WD04gC+FRR0J7BaDEdbTVbDbwErdVpqY2IauYSJL4F4RxGeHwZNytxgW70jhWsc3U5PAwyJW43iOa1vYAc8nCA/O0gsnitMRqrVRQbZTQVyEURoPmXB0ptvgfoEgE9Mmxz/B/LkLHhcOU37vqU0iv9UN3W0BUPolgb3Ciy2lLluuA+60OcO/WaruNAy5hVXPbTUw2Cv/u3MS2Kk7LmktaDYmyElpimpI/HItbc1J4+SCtzlBa4p4s6tRmvDA24VB0850lQHB75o64a0Y+AQbnF5J2uRVDNlxwJv/3ncJPFgf8Jz51lzY7dVbaasa9ojs6pZ2/Hsh+OrcxW0FT9uofNs+dlajxfaBLWEPwR8290eH/wMAAA==
+        weight: 1
+      11:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, mago, hechicero, clerigo, guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Esquiva: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/51TzW7TQBDegFpZlUCUCiEhDquVyAGi0giiilwqY69cS/4Ja6ciiiJrY29SIycujlOpiiJuPAJcOPTmE4eKN3DepE/AgQNHdpPGJCi94MPY3pn5Zr5vZncAkMAj07R1F5uOp7Ys2dQVz7AJLn1qozzr5ZmfZzU5GdBgnFBohH2WUFQRroXNs1cwzw7t7geWxjBgsEuTIK7AAe1ze8r809BnCf/0I5aE4qw/ZkkyPzoLfSreCR1y2CUeI+zjOGQJg1Z4ziJY3VDu+sslVGgU9jiCH85+DEVlPOJ557TOA3ovqvu1Z+sp3y7hksdNyDowvf76GRI6FDw5msYGFJ5Qf/adFnnrCTXCgrHP4HgI1dciJaCzq3h/Q7tzIqJoN88iV8dkSYr7VI7bDaMwoEEd1g4O4EthUUcCD4rBCOvpKthryJYrG7alNDGxDV3DRJbAvSKOjw+DJ+VuMS/elMLljm8GJ4G9IlbjkI5rW9gBzycID87SCyeK0xGqt1HBt1NBXIdRGg+ZcHSm2+B+gSAT0yZHP8H8uQseFw5Tfu+pTSK/1Q3dbQFQ+iWB3cKLLeWY03DAnTYn+TdL1Z2GIbew6rmtBga75X/XTgI7x45LWguajQlyUpqiOhK/XE5bc9I4ueBtTtCaIt7sapQmPPB2YdC0M11lQPC7pk54KwY+wQanV5I2eRVDdhzw5r9XXgIP12c8Z741F3Z79WLaqoY9Iru6pR39Xgi+OndxYcHTNirftpKd1WixgGBL2Cr4A5X+W3MCBAAA
+        weight: 1
+      12:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, mago, hechicero, clerigo, guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Esquiva: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/51TzW7TQBDegFpZlUAtCCEhDquVyAGi0ggiRC6Va69cS/4Ja6ciiiJrY29SIycujlOpiiJuPAJcOPTmE4eKN3DepE/AgQNHdpPGJCi94MPY3pn5Zr5vZncAkMAj07R1F5uOp7Ys2dQVz7AJLn1qozzr5ZmfZzU5GdBgnFBohH2WUFQRroXNs1cwz97Y3Q8sjWHAYJcmQVyBA9rn9pT5p6HPEv7pRywJxVl/zJJkfnQW+lS8EzrksEs8RtjHccgSBq3wnEWwuqHc9ZdLqNAo7HEEP5z9GIrKeMTzzmmdB/ReVPdrz9ZTvl3CJY+bkHVgev31MyR0KHhyNI0NKDyh/uw7LfLWE2qEBWOfwfEQqq9FSkBnV/H+hnbnRETRbp5Fro7JkhT3qRy3G0ZhQIM6rB0cwJfCoo4EdovBCOvpKtg9sl3ZUZqY2IauYSJL4F4RxGeHwZNytxgW70jhWsc3U5PAwyJW43iOa1vYAc8nCA/O0gsnitMRqrdRQbZTQVyEURoPmXB0ptvgfoEgE9Mmhz/B/LkLHhcOU37vqU0iH+mG7rYAKP2SwF7hxZZyLFuuA+60OcO/WaruNAy5hVXPbTUw2Cv/u3MS2Dl2XNJa0GxMkJPSFNWR+OVa2pqTxskFb3OC1hTxZlejNOGBtwuDpp3pKgOC3zV1wlsx8Ak2OL2StMmrGLLjgLf/ve8SeLA+4Dnzrbmw26u30lY17BHZ1S3t8PdC8NW5i9sKnrZR+bZ97KxGi+0DW8JWwR+zp52L/wMAAA==
+        weight: 1
+      13:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_AXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Hacha de Batalla","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"7","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"0.9","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              A Dos Manos","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un 1d12 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/21UTW/TQBAdU1FZFUhQBBUfh9UecqpKA4oqcoFNvNgWthPWbmkURdYm3kKQG1PHQaqqXPkJcEPccuLQG+f0Cn+iZ478AHYdGvK1h5E9+2b2vdlnbwDocNd1a3ZAXT80Gh5x7Wro1BjVeBOPR0fjUWc8KtVFn0ccb6vMJI5HT9F4tFdrvxdZgiKB3g5Emoo02ZZPPI26vHcFFEycDLoiFcjrfhQxKq7oc/n1BzL4xXneimT8ZCDKMn+0t4Q6EHHS6UY8WkDu7jybx37+hggykj5yeS/pz5/JL798Qoz3BilXbUxxzNEB71x854ikxwtCS/s9VIyKTxQyUhx3VgjIpSki7fEoDmzKrmTKPUMe0+7GinQZlXZ30WMVcUuHW9PRqxjaBtywSNUiJiOeQYvrM3dDgoBUX4V+nVLj+e+fav3S4c5035T1flDzqA+FM0yPP2SnfpxkfVxu4lxTaxtLnf0s6QmVbA11uDmtlvdOYbPQtnjnXT6SCs94HHMdbk8x1JPMvMCHa83WGmxN8y45DI19Riq2YwcNAO2PBg//e8r2ScWhV9W2Z2r6TLHcrjukQY0waNQp6IV/XtNhw/ID1pgws86wn/EMl7F6lYOtmX6WpKdSxxmeExFenPezVAKXteBha6jBgyVmjNaJzRaJMfp632aSV9Uhvg+by/7W4P5SryojL3ONa6taOfSAOiAntKrUd+3AmrDYnLfFZDImoyQgh3R1LXXyY7UZRwRvaqGlfGRo63Bv0UgGcYlJXzyCfM16QbkXrqtYnE2rnwJsNXFhxffQgr+nv7m5SgQAAA==
+        weight: 1
+      14:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Mandoble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"6","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              A Dos Manos","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un 2d6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/21Uy24TMRS9Q0U1REKCIsprY3mRVVUaUFspG+rGJh0xj2BPC1EUDU7HRUFphk4mSFXVLZ8AggVilxWL7linf9I/QOIDsKc0zcuLq5n7POf6yAUAG+57XuCEzBMRrfvEcyqRG3BmvWvg4eBgONgfDtZrqidjiVeM59IOB8/RcLAZtD6oLEGxQu/7Kk1VmqzoL5nGbdm9SlRcHfXbKlXIb39SHVSa0+fix29E5flZ3opk8qivytp/sDGTtac6yX47lvFUZmm1NJn75SciiCY95Mlu0pucKS++fkZcdvupNG2q6lCiPbl//ksikh5OEV3f7aJn8YZJjA3E1Tn4c2YGR2s46IQO42iEZpPqKa12x2Auo/W1NfTUWNy04c5o88ZGDoVbHvFpsO2y0uLYvZAwJJVXkagxRl/8+WbOdxvujeJVXSzCwGcCiieYHX7MjkUnyXq43MA5n+YK1hx7WdJVxtk8teH2qFrfOYNCsaX3FCetjrLh7ijG/MoO8UMBNxrNBXgw8nvkbUR3Odl2XCesA1h/LXhyrSNHEM3hqtrxq5Y9VqzDNZfUGY3Ceo2BXfyvLxsKOyLk9UtEWydYZDLDZWx+9TaDqsiS9FjjP8ET4KPzs16W6sRrDvi0eWrB4xlEnNWIw6cBcfZ61+EaT8UlQsDSrJYteDTTq8LJy5zbwrxWLttjLujNzCsVnhPuXKJYmtRAvpFClTMSijcBp/OrmZsPtsY0EL4JIr1syqi1CMvT0qHEI1W29RDyM377Rqxw09jSuNs8AbDcwMVZ9TfhH4OgZdg3BAAA
+        weight: 1
+      15:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Lanza","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"De Asta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, monje, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/4VUTW/TQBCdgBpMJSQ+VCrgst1DTlFpVAWkSKhs4iW1sJ2w61aEKLI2ybZKldjUcZBK1Ct/gRvXnDj0xjn9I6i/gQNHdl2S5gvhw0ieNzP73uyz1wEM2HCciuVRh/tmzSWOVfLtCqMpXsfj0dF41BqP8qZEpB8LnNWp6zge7aLx6GWleSLjELUlOh7IKJJRmEW9MDiRWZUQUbsjgiyKRHAso0mfZPJ00JGRRG7nk+yi3IqxV99+IFNcXiSTSSxOB7Kg8ke7S1WHshu2Om3RXqjMbefn54qrr18QE8EgErq0LHsCHYrW5XeBSNRb0JY/CFD7ha5raxbbKygm5PVRzfGo61mUTYQozFSHNDtdTauA8js76LmOuGHA/emydfQtE9I2cT+QXHrmHojnkdJbn1cpNfd+Q/IY8GiKl1Un9you5ZAZYtr7GJ/xbhj3caGOEy2NLFb6+nEYSJ1snBtwb9qt7pjCnUzRFsFnkYatKUBdz/JqvuV6lJGSZ1VcnxG3TPd+XlNIwbMbq1icFG2qekr7RPW55dRt2JzCDnnvmweMFC1bjVStvwx4MHNQ0sThVl2tZHN2aNUmNWr6Xq1K4W5mYjwD1ve5x2rX3F8NMY9FjAtYv6qlV8o8DqMzpXSI52T6lxf9OFKFf9Xi88Z5Cp4uqWC0SiymRaTgyRLKHcvb/xdYYuTNknxG3x1YTOmw6SG19eqMVWjJJpzD1n+/HAMeztsmWc+a8gdhqwlTO+GUhseLpjKJQ8r0tTFx1Y0vtIdhTcfcbFr/DGCjjjNL30QD/gBOPKyiQAQAAA==
+        weight: 1
+      16:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_AXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Alabarda","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"De Asta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, monje, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              A Dos Manos","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d10 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/4VUvU4bQRCeSxRikCLlh4DyUyxXuLIIFrIiuYG1d2Ofcj/O3kJiWdZpjRdkZPvgfI6EEG0eIemidK5S0KU2bfISPEEKHiC7RzBnTJQtRrr5Zma/b2b2FgAy8NRxPItTxw9I3cWOVQ5sj1HjoGGOR7vj0c54VCAS4UEszJx2XdrxaB2NR6+91r6MQ9SWaG8oo0hGYQ71wv6+zCmHiNod0c+hSPT3ZHSVJ5k8HHZkJJHb+Si7KH9L2fOvPxARZ6dJZRyLw6EsKv9uYSZqW3bDnU5btG9E5lfXp2M/f0MYkXCAHNEPB9N3ivMvnxAT/WEkdJmK7Am0LXbOvguEo94N3YWtPmrn13RgW1NcvYV/okzzaI1HXW5RdqVSYUTd0up0NeciKqytoVfams251CQw57j8NvBrlJKNi5/6/MrAwwmubWARmMc2LmFGcN6Al9dztHxcsmlguZwyXOaW5xoZeDLBKyrZ555Lfcgem7R3EB/53TAemMWGmeht5kzVg0Ec9qV2Nk/mYGWSTV1u8Xq6eMCwW6EbvyE5GXiUii1Xsct9uNNo3oXlid/BHwKyxXDJslUtAOPCgBcz/P9mW25F0V9OwzUb1ykJeL1GYT57tZ8ZWKj6nNUDtcYUNo9NPxaxWTT1p2q/V/HjMDpSgo7NSTGNBWengzhSgdkW7oqWWlthnjRPDHg+Q4nRGraYZmTAsxnUdyxe/RdYZvhNoiXdCEbfbVlMSbHpNrVV96aUTtCyjX0fVv77xjLweHpHkg7dr2K7RBm5nTK1E1ZzsHRz/Qh2cIVuLl7O1UhtEH/vBWo0hBLF98FUM2HhuotpTL8CuKdtPu3W/xpYapjZ2WfVhD8KeX1HoAQAAA==
+        weight: 1
+      17:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Baston del Ermitanio Bermunde","italic":false,"color":"aqua"}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Canalizador de Hechicero","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Objeto
+              de hechicero","italic":false,"color":"gray"}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","italic":false,"color":"yellow"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Daño de Ataque: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Velocidad de Ataque: ","italic":false,"color":"gray"},{"text":"1.8","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Alcance: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Regeneración de Mana: ","italic":false,"color":"gray"},{"text":"+1","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","italic":false,"color":"green"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño de fuego o necrótico.","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+              ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","italic":false,"color":"gray"}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 7a74aeaa-cd50-49f6-a49b-874ff7bdd566
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/41US2/TQBDeUDUKlUA8BBUFiZUPubSCRlUB5VI29jZZ4UfwOhUhiqyNs22NHJu6DlKpeuUnwA1xywmhqhfOyRX+RE8c+QEc2E1o3gh8WMsz38x8882slwDIgFuGYREHG9TVqiYyiOrqlo1TX2pKt7Pb7XjdzqbKQhb4b1kzimGTwxL39n2Px5GyJjGDs9vZgN3OY6vxiieRRO1PorodbvODts9jDk3/DQ9gbk74+cevUGO9034GlLCDNs8L++7GDGqHB5HnN1lzCpl78GQS+/4TRIHHQm9uJuG1+R4Pecw8v3cWymyGaLePXZ2iyM4/vIM2C9sxk7gibzG4w7zeZwZR3GKT4M2KSPZI4poXDe22+V4EIxhyL+6dJb4XPZijQV8dWb/R7QQOwfaFUsKnidINP5B952FufX0dPuy/lHoGXBkOUowRg/vZRoEdJpFsKYA4bvkJC/0IFnjcaodNnh6bPHIcpD5zaRljbevXN/l8T4F7o80gFBV07BLTwTZSHWKZqQy4OfQXseFSxzIxBdljBbdeJ0c0iJJDJV9T+srU1xShlmTDpbF+kgHXh9HYVEvIdCi4VKsvgOWh3UAvXK1iowLRiVMFYOFHCtyd4fQnmphFQWl53F3WURVrrlMtY7CS/esWZ8BSiTp2dSBb5VihCUuUvCI/hfBWkSZRfCRYHysTCru908MkFsB/CK2c1E9SYGWGuI3LiNjTvG38vEJsQVvVEaXg8vAapcCdmRSqjbb7nS/My6DjHawDAFLzQqlBnNKg+I2hU54DvRapg7a35wdifaamHBUd7BB5iWXNNLg9vV4aMlARP82A/pMB1ybrEk0MAqslomLbyqXHFDOQiURbRWyK7ZPLt/XzIsdo6eVNAYvyzI2b5c8MrNaU7H/ex3oaXB1JicwRYfAbO/57ES8FAAA=
+        weight: 1
+      18:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 600 / 600","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/31Ty2rbQBS9SUkRgZYmpRTaLoZZeNGa1KY4BW+KKg2OQI9kRg4xxoixNQkuttSO5UIw3vYXuumiO626yC/If5Kv6LIzDlZt6lSLizTnPs45c7UPYMAzzwuckHgssju+6TlW5AaU7NS6uMgvi3xQ5A1Tjnk8lRx5Ih7yhOOqxu5ikb9DRf4+6H8SWYpiga6mQkoh06p641LnV5HkyZWQqwJBxZfpUEiB/OFXMUL1Lf1uf/xEq7FNdXD5pn7U2Mzjt9+/IcoTTUzNbYkxR+d8sPjFy8rNggYV8XQg0DRB9rEuifniJj3aMn3JS4/tF/kodAhdcVSYrfr2h6NhzOMmOq7V0Fsdcc+AJ6WTOkaODQeWyazAahMaeMR2TN804FGZpdwm8LLSL+1VlCzlXrry2YCnZXJLdWRh4BMGr2eYjD9n12yUZhPc7OJSbq+KlQ2TLE2EBnrzh/C47GBSL6AffsPyeQDPS8AzLyK7Tc2PjuuEHYDdCwMOSpT41onphwx2u0rj3yrbYaeu2SF2FHZOCRxW/lkTA/ZPWEg7d0LPZphlPMNNrD+VnUGLZam8VjxneMOTaHEzyaRK/I81eN6br2ug5KztUEXGJefEVQJ3jG2o5ZqMwYv7d9SAw81bXIrbW3q3fnd6KWBPx/r6sf514FUXV+7btR78AW/OeRp1AwAA
+        weight: 1
+      19:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 600 / 600","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/31Ty2rbQBS9SUkRgZYmpRTaLoZZeNGa1KY4BW+KKg22QA9nRg4xxoixNQkuttWO5UIw3vYXuumiO626yC/If5Kv6LIzDlZt6lSLizTnPs45c3UIYMAzzwuckHgssju+6TlW5AaU7FW6OM8u82yQZzVTjnk8kxx5Ih7yCcdljd3FPHuH8ux90P8k0gTFAl3NhJRCJmX1xqXOLyPJJ1dCrgsEFV9mQyEF8odfxQhVd/S7/fETrcfW1cHlm+pJbTuP337/hiifaGJqbkOMOTrng+UvXlRuF9SoiGcDgWYTZJ/qkpgvb5KTHdNXvPTYfp6NQofQNUeF2apvfzgaxjyuo9NKBb3VEfcMeFI4qWPk2HDUIlYzsNqEBh6xHdM3DXhUZCm3Cbws9Qt7FSVLuZesfTbgaZHcUB1ZGPiEwes5JuPP6TUbJekU17u4kNsrY2XDNE0mQgO9xUN4XHQwqRfQD79h9TyA5wXgmReR3abmR8d1wg7A/oUBRwVKfKtp+iGD/a7S+LfKdljLNTvEjsJOi8Bx6Z81MeCwyULauRN6Nscs5SmuY/2p7AwaLE3kteI5x1ueRMubaSpV4n+swYveYlMDJWdthyoyLjknrhK4Z+xCLddkDF7cv6MGHG/f4krcwcq7zbvTSwEHOlY3j/WvA6+6uHTfrvXgD/M+JSZ1AwAA
+        weight: 1
+      20:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 600 / 600","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/31TTWsTQRh+W6ksBUWrIqiHYQ45aKgJkgq5yJgd0oX9SGc2pSGEZZKdlkiS1clGKCVX/4IXD9725KF/YfNP+is8OpOSNcHUPbzszvN+PM8z7+4DWPDM8wInpB6P7I5PPKcRuQGjO5UuzrPzPBvkWY2osYhnSiBPxkMxEbhssNuYZ+9Qnr0P+p9kmqBYoouZVEqqpKzfhDL5ZaTE5EKqVYFk8stsKJVE/vCrHKHqln43P36i1di6Pjh/Uz2sbeaJm+/fEBMTQ0zPbcqxQKdisPglisrNghqT8Wwg0WyC7CNTEovFdXK4ZfqSlxnbz7NR6FC24qgxW/ftD0fDWMR1dFSpoLcm4p4FjwonTYwcG562iB8SN/AbbcoCj9oO8YkFD4pEbTiFl6V+4bBm1dAGJiurLXhSJDd1Ux4GPuXw+grT8ef0ko+SdIrrXVwo7pWxdmKaJhNpgN78PjwsOhDmBezDb1g+9+B5AXjkLLLbjHx0XCfsAOyeWfC4QKnfONZCOOx2tcy/VbbDWy7pUDsKOy0KB6V/NsWC/WMess6t0JMrzFOR4jo2n9rRoMnTRF1qnld4w5NocT1NlU78jzV43puva2D0pO0wTcalp9TVAnesbWjDJZzDi7vX1IKDzYtcittberd+d2YvYM/E6vqx+XvgVReX7lq3HvwB89D/pXgDAAA=
+        weight: 1
+      21:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Mediana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 600 / 600","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/31Ty2rbQBS9SUkRgZYmpRTaLoZZeNGa1KY4AW/KxBocgR7JjBJijBFjaxJcbKsdy4VgvO0vdNNFd1p1kV+Q/yRf0WVnHKza1KkWF2nOfZxz5moXwIIXnhc4IfV4ZLd84jmNyA0Y3aq0cZ5d5Vkvz2pEDUU8UQJ5Mu6LkcBlg93HPPuA8uwo6H6SaYJiia4nUimpkrJ+E8rkl5ESo2uplgWSyS+TvlQS+f2vcoCqG/rd/fiJlmPr+uDqXfWgtp4n7r5/Q0yMDDE9tymHAl2I3vyXKCrXC2pMxpOeRJMRsg9NSSzmt8nBhukLXmZsN88GoUPZkqPGbN232x/0YxHX0WGlgt6biDsWPCucNDFybNg7DkLCG+eUBR61HeITC54UWdptCq9L3cJeTamh3UuWPlvwvEhu6o48DHzK4e0U0+Hn9IYPknSM621cyO2UsbZhnCYjaYDO7DE8LToQ5gXs429YPI/gZQF45DKyzxk5dlwnbAFsX1qwV6DUb5wQP+Sw3dYa/1bZDj91SYvaUdg6pbBf+mdNLNg94SFr3Qs9m2KeihTXsfnUdgZNnibqRvOc4jVPovntOFU68T/W4FlntqqB0bNzh2kyLr2grha4ZW1CGy7hHF49vKMW7K/f4kLczsK71bszSwE7JlZXj82vA2/auPTQrnXgD7wLLZB1AwAA
+        weight: 1
+      22:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: CROSSBOW
+          meta:
+            ==: ItemMeta
+            meta-type: CROSSBOW
+            display-name: '{"text":"","extra":[{"text":"Ballesta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Distancia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"7","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.2","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Velocidad de Flecha: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d10 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 250 / 250","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTTW/aMBg2q1ZlnSbtQ+0+D5YPnFBXWqFKXFqTuDRaQpgd6BBCkQG3yxSgDWFShbjuJ2y3aTdOO/S2M/yT/oVdpp1mh5aPwnx4o/h5Xr/v8/rxBgAa2LRtx3SJzTyjUsC2qXuWQ0nisopGw9PRsDEaZgy/G/F2w+copTYncTTcg6PhvlP/JKIObAp41hNhKMJOCp77Da6+IW+fifCWLqi46PkiFLDgfxYBTK847fr7L2jw8VV8II74RU9k5f7p/hKrLIJOw2/y5h1ment3kfv1xyL3KBCNj/yGm1nsgV9/+wIpb/dCrqh50eKwzBvjnxzisHVHfqbUhs30jiI2VcvbK/TESlWt+mgYuCaht6olZsgqdT9QfWXhbmYHvlUR1dbnrgS7LtbfeaxIiHHwey9eGng8xVX0TAM8yGHLIszFaQ08mqLyOgnYSNZzPAiEvEINPJtieZnIXKdAGEj2EWmdR5cs6ERdlK2iWGsthaT+btRpC7VZG6yD57O+KHVOvDKxHN10Kwd/QLw08GTKIAX9GBdcBu5Va2tzmTb+4BklinOmJTNl0t8EeD2zoMlwziK32WYhn9DmkiVctHCFGJ5bKRLwMDmzpgY2jplLKxPRh33EIh6hLFK/cuROnkWd8FIK6aOF+Xjjq24USuJsTGhQG8xXpeR9yaSyqG5hxsCL/xl9bVWOReSUpMxEArxckqlTfBSLXAUy23SPJ+CrJZCSIjbpZD5PF+0Qj0bTqcNYzjlZfTKxbmY7M4t69WCripLLvq7N85SLwX0V0+tg665TDWzjPDl8MzEE+AeJA4JIYgQAAA==
+        weight: 1
+      23:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Arco","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Distancia","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 250 / 250","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTy27aQBQdlwZZqSr1ofS5Gc2CFUpLKtQKVWoHPAWrflCPoUXIsgaYRK4AJ8ZUihDb/kJ33XrVRXZdw5/kK6quOmPEI0C9uJbvnHPvuXeODwFQwZFp2rpLTOprLQubesU3bIcoVhvNktNZ0p0lRS0YxWzYDRjKy+QizpJXcJa8tjtfeRzCHodnYx5FPArz8DzoMvmO2PCMR0s4d/jFOOARh1bwjfdhYU+165+/ocbmV2lBHLOLMS+J/OnJcXEH1+T9sBv0WG8LW1hilwx2/eM7dNhwHDEJrfIBg03Wnf9iEEeDraGKjSHsvZG4ntRxvEdkKl+26sySvqsTZzmKONNEk07Ql7JK8KT4Er6QEXkquLfas4y+roED7FTsQnbjBrDr4spHn9YJ0d79Aemjgoer86ogUte2CAW5CSKD8/iS9sN4hEptlI7i5ZEYbxSHQy6T3lQFd1dscbsEZHMdHHVDFdxf5YlVqWHLpeBW28uAx6u8ib/4WsPBZd3Q3ZaQ8lcBz9du0SkuG2TJ1q2qom6QxXHdwC2i+W6rTsCd3NpFKjisUddpLQS9nSAasxiVkPwUi7SrNA6jSyF/gm5o9+dXozgSwMUIaOpNFfBsR5BD6lh3tvU45FNDd4ScioEpBU/+51YFPN2pWHHwh3TAzL6CBmkSQ2xH2Uelpu7WFloe3DRAupZM2f68n0aMtGMWPNp2h4ZNXCXvby/tsb5g6UVwIGNhMy3/Z3DURrkdb3vgH4rIJz0DBAAA
+        weight: 1
+      24:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: SHIELD
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            display-name: '{"text":"","extra":[{"text":"Hechizo Defensivo Basico","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Escudo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, mago, hechicero, clerigo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Parada: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce 2 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            internal: H4sIAAAAAAAA/91Xz28bRRQetyFamxbSogqEBKxWIgdIf6Kokk9s7ZWzkn+x61RYwVrNzo7taXZ33NnZpG5kiRMSJ060iAOCkw+IQ4V6R85/wt/AH8BbO6ydKsGuYiEZH0b2zHsz33vv+2aecwjl0Ibrc7J/k4aSyf5NiTuXUaaPULKUIzzo8RCWoix6K2AhJQK3Zd7ngipgcRV9f6TRJ1JgLb93pLnc97R8G/sR3dIIBystr3lY7Du9WPR8qm1pTGKfkdSIu+04IljSqV8kBdunsit43OmmsxJOgc2MiMQeh33i0KPCB0D/OA5aqZE2QN/OhXXYZXIJgOZCyXyyWIbw4xhfHI56Jp6tcw7uCNy/+Jk19xGVXPWo6mLh8S01wB0Yu5R0GaECvhKfCtZZoGw/zs1Vn/o+P7w4aIs+jhkVVK2yA+qrd1eKUguKbnUp9eezn9UC7NBmBBN2/HuYsKuOBfZw/vXwLKkmn977eJUYgn6dC6UjKA2XUKnn36gWDmOBkxKVaIDVh5gc/4ZVXQTYg/mVytsv/+1zZlEvJlS9l+TOw8cv+K1Vylbm6//7PTR+HObdOFLEMwcvJ9iGaViLPEo/LaDzZSSiCEJ2mc887OXV7Tt31NvJOBdfDn0wbRqxhBPcWFIn4B5c7VREGfR21OWHDgsdybkvWQ9lUTZdzkGLmVHQWogDCu1nwIHXQZT3KOF9BWV5jwosGQ9RFnuec4D9mK6jdRzwOJTo5APust+j6MMpkA4NoR8htwAQJvtO1KPUexOtxTHzwGHt9rOoee154Y+XV756KXa/+yFphG9MvUkcSR44HpZYQTcqlZrZMCq2U2xW9YpZcMo1y8hs72mjYXs0JKPhdtqywsxkHA0/U0fD+6/TN4296BlNy6ub/uvLCWaTh2zGCy90g884bJ95ab2K40Q5o6E7Gvopm8fr988hU0tBG2k6k9Exi+iKYRd2i7WKXjILdxV0NTWAbBvo/U13J0nXU64WaZuGETvg6gMcMcIV9E5qW4K97EatatgIunEj6Mm+7XMZgWq0NEjgLQQPtQ1pstAaXEbvpjtU9C+d4q6lPzDLZqMJrPxLQdfSVaNa2NGrDRtd2oMgpl5F066X9aZRdBrNuoGUzRMyKCi3Yzes5iSI+pFmSzy+buAnZKlWsiUX/bGmT8XrHL8AlYLh+WFrg9ZgfYaWdd2Ccyy9YVZLn59IYjYwy/hi17QAYdl4aJQnejtjtVDWbRt9NIeoCrp+uoDjsNftHdMoF2eLlxACvZGMp2qaaAe9t6dtnsWxVqLlSyDRjakWXRyClOH/6tNJXJknkwj/BoMher3YDgAA
+            custom: H4sIAAAAAAAA/4VT3YrTQBSeKi5hUfAHUbxxGLAXWnS7UoRemU2GdiA/dSZdLKWEaTLdjaSNJunCWnrrI+itd7nyYvEN0jfZZ/ABnNm6sYWKc3GYzPedM98582UfAA08tG2XeNhmvjlwdJsYvuVSXGsNUVlMyiIoixbOgnmYoIY6WceyeA3L4o07/iDyBIYCjnkaJg045ScynorgNApEKrdBLNLoJLnOElR8mkciFdCJzkQMmzuKXn79Dg0eR5Mo4EG0+jlT9Xs85SFvS3zy4vDZdha//PYFUj6bp1xRO2LK4TEPVj841NMpD+X5dkKLinAeCHio6CFfXSQvd+i4UqhuHJdF7BFMr9VKzJQ1x1EchTxsw9bBAXylIhpp4G41ThV9YoLbmBl907X1DjGaGnhQEToSZ57rYAaeLxCefszPWZzkGWoPUSV81ECyoSxPZkIBo6UG7lQV5Hth8KQ+7qqBf06gKSZilkVnCTziWRQkN8Gjimvr732zT/UjYhFvAEDtlwbuVSh2jK7ueAzcGMom/maZhPUsfYBN3xv0MNDqf8yggf0u8+hgLaG3QCznOWoj9Smn5HZYnqTnUvACban1VxdZnkriv0Wj5Wi5t2HLnk7lPVT3iNN5C9ZrszGK3/UJlQotfIwtCda0Xahh6YyBp/8xqgbubz/gVdt7rEuwZW6OXv0k4PEQ1XeZabTJVNYBt1Rsgt/ETmAvcgMAAA==
+            blockMaterial: SHIELD
+        weight: 1
+      25:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: SHIELD
+          meta:
+            ==: ItemMeta
+            meta-type: TILE_ENTITY
+            display-name: '{"text":"","extra":[{"text":"Escudo de Madera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Escudo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, monje","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Calificación de Parada: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce 2 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            internal: H4sIAAAAAAAA/91Xz28bRRQetyFdG0rTogqEBFqt1Bwg/YmiSj6x2KtkJf8Iu06FFazVeOfZ2WZ3x52dbWoiS5yQOHGiRRwQnHxAHCrUO3L+E/4G/gDe2mHtBLc2ioXk5jBS9r038733vm/mOUdIjqw1fe4e3IRQerJ7U9L2RZLpEpKYci4POjxEU5QlbwdeCK6gLZn3uQAFPS6T7480eCIF1fJ7R1qT+0zLt6gfwYbmcvTS8hqj4sDpxKLjg7aheZL6nps68WYrjlwqYRwXSeEdgNwXPG7vp18lnoKbGZEbM477xCED4SOgfwJ7jdRJ65FvZ8I63PfkAgDNhJJ5f74K0UcxPT8cdSqejZcc3Ba0e/4zq82HILnKQG3HIAQIvqEGPHwIs9v048zadMH3+eH5QVrwKPZAgFrxHoOv3l0qCs0psuWl0J9Pf1YLuEPLc6nrHf8eJmzaoYIymv9veBbUk4/v3VgmhpBfZ0JpC4BwAZ169o1q0TAWNGnRFgRUfUDd49+oqouAMvy+VHX75f99vixgsQvqvaR2jB4/57eWqVqZr1/3e2j4OMy6caSIJw5eTLI107DmeZR+mkPniyhEEYXc9HyPUZZXN+/cUW8n60x8OfLBeEikEk9oxhKcgDO82kFEGXIl2ueHjhc6knNfeh2SJdnUnMORMqOQlZAGgONmwJHXQZRn4PKuQrK8A4JKj4ckSxlzHlM/hlWySgMeh5Kc/GG47HaAfDgG0oYQhOfeQkDUPXCiDgB7k6zEsccwYOX206h+9VnhjxdvfflC7H73QzL4Xh9Hu3EkeeAwKqlCrpfLVbNmlG2nWK/oZbPglKqWkbmxpw36rUHfHfQ30xEVv4zWQf8TddC//6o5aegFU4aUs5u88qVEt9HDNRFF57qxJwI2p15SZ3GcKGXQbw76fsreof3+S8jTUMhaWr5kdcwiuWTYhd1i9a5CLqc2LKxBrq03R5VMYJQpsg7L/07qs4Xhdq1aMWzy0ZFmBB3ZtX0uIxSGluaF1MR8sX0hJIZG7yJ5N92hrH/hFHct/TOzZNbqSLy/FHI1tRqVwrZeqdnkwh7iHkcVTXunpNeNolOr7xhEWT/pt0Jy23bNqo/Abx9ptqTDGwX/xcJUt2zJRXco21N5OsfPUYjo+O90tV6jtzrBuB3dwv0tvWZWtj49YftkQpbx+a5pIbKS8cAojaQ0xVoo6bZNrpzhoEKune7NML1Ve9s0SsXJ5iS9Jm8k66meJTIg7+1p69Po00hkeQHVtjaWVZOGqEr8qfnVKI/Mk1FGfwM5BtAckw4AAA==
+            custom: H4sIAAAAAAAA/21S3YrTQBj9qriGBVFXRC+Hge2FFt2uFKFXxmZoA/mpM+liKCVMk6lkSRtNU2EpvfUR9Na7XHmx+Abpm+wz+ADObN3Yaufig5lzvjPn+zkE0OCxbbumR2wWGL6j22YnsFxKasdDXBaTsgjLokXm4SJKcUO9bGJZvEJl8dodn4s8RZFAHxYiy0SWNtA0nZ2LG5ag4tMiFplATvxZJKi5R+Tq63fU4Uk8iUMexuufM6XX5xmPeFvik+enx7tZ/OrbF0T5bJFxRe2KKUdnPFz/4EjPpjyS77sJLSqiRSjQqaJHfH2Zvtjj49qh+nFcFolnEnrjVmKG1BzHSRzxqI1aJyfopYp4pMGDqn0qBqYBdwnrDAy3qcGjCutKiHmuQxg8W2Iy/ZhfsCTN57g9xJXnUQPLWuZ5OhMKGK00uFcpyNEQOKqPN7NQhdg8Ehm/DU8qjq2/D4wB1d+alun5ALVfGjysUOJ0errjMbg1lL7/Zhkm61u6T4zA8/sEtPqfeWtw2GMe9Tdf95aY5TzHbayusjFul+VpdiGNLvGOy2B9Oc8zSfzfLF6NVgdbG9fXqdSnumc63TewOdsFUfJuYFLpzCJnxJJgTduHdiydMbj/zw5qcLQ7m+vyDljPJJax3Vq17/B0iOv79mS0zVRbAXdUbMJvnLHs8z0DAAA=
+            blockMaterial: SHIELD
+        weight: 1
+      26:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BOW
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Baston de Olwen","italic":false,"color":"aqua"}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Canalizador de Clérigo","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Objeto
+              de clerigo","italic":false,"color":"gray"}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","italic":false,"color":"yellow"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Daño de Ataque: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Velocidad de Ataque: ","italic":false,"color":"gray"},{"text":"1.8","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Alcance: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","italic":false,"color":"green"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño de radiante.","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+              ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","italic":false,"color":"gray"}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 7a74aeaa-cd50-49f6-a49b-874ff7bdd566
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/31UPW/TQBh+TdXWqgSioFIVGIyHTFVpVBVQFrjY1/SEYwefWxGiyLrEV2Tk2tR1QKXqyk+ADbFZDAzdmJ0V/kQnfgQDPrfNRxO44Sy/7/Pc+7wfdwsAMizV6xZxcJ26etNEdaK5hmVjqddSs3QvS7tZuqmxkAX+B+ZFseJxRQv632L/daSuCsj5nqUbSpY+tjpveBIJUDfgQ0yWcpsf9Hwec8X03/FAKU8hn335oeisf1rwUcIOeryS2/c2JlC7PIi6vse8K8jy2pNx7KevCgq6LOyOnXSJYWefPyo2C3sxEwfV+D5Tdlm3/50pKN5n4+DNnVDxHgmcd6kxZp7PwoSvTUmmSFME7WRp4BBsX6ac+/Q8YMcPRAIVpby+vq48LD5qW4brg3bkzcCwWOpU2WEShSKeFbznoQw3BxCxu0SH+SqijmWWJbg/7CahqGpgl5gOtpHmEMuUZLg98NdyqiBhCqVjFe+/TY5oECWHaqWlFtm3V9W8IiI2F8b2iQyLAzY2tW1kOhSutdozsDyw19FLV9+xUZUYxGkCzPyW4N6Epgs2MWu5pOVRd8NATay7TrOBYaX0r8mTYWGbOnbzvEa1Y5UmLFErqvjNq2zVaBLFR7noY3WsnG7/9DCJc+BEVdWT9okEdyeU2riBiH1VqI1f7BA716kZiFKYvxh2CVYmDtBstFUkOjONb+BdbACANI1K68TZPg99a7zlRXlmqYO2tqYTsTERU3QmZ2jPXUpeYRFzDu4MvMgpXDqqoxp+JkOx5kYehwsAbWCsP/3zU6xfo9MqRhxmxV4eNYu3BB601NJ/r097Dm4Mi4PMoQT4C/apMvakBAAA
+        weight: 1
+      27:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_HELMET
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Velocidad de Movimiento: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"-1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 800 / 800","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTy27TQBSdUlpZlUBtASEhFqNZZAGhtEURVVYM9ii15BczTkQURdYkniKjJAbHqVSi7BCfABsW3XkFUr8AyfkS+iXMpMQkJfXiysk593HOvd4CQAMPbNs1fWKzwGg62Db1wHIpWWu0UJ6d5Fk3zyo46fNwlHDoiSEPOSor6Crm2QuYZy/dznuRxjAU8N1IJIlI4rJ840kY8cGcKKj4OIpEIqATnYoePFhR5/L7OZx3q8o/Tp4e7lWWGV/PYUP04m4U8lA1tOPTqB+JQRrPEp5dK8svv32BlA/U+JJdE30OG7w7/cGLRssJFSrCUVfA0QAaRyol5NOLeG/FsDMZqmknz3q+SehcksQMWbcT9dSQVXi0vw+fq4jaGtgu/FYxMA2wrWOmu3qdUNcjDBtYA3cKklwJAY9KnWIHciJdehz/XYYG7hXcmqzHfNchDDwZI9L/kJ6xXpwOUbWFCrHtMpImDNN4IBTQnmyCu0UFTG2XvroNZs8meFgAttsgNnH8gHmEGL8+f/pd+3l/vL7IwG8Do07xa9My/SYA61ADOwVKHP0YOz4Dt1rSg39Zhsk8CzeJEfhNj4Cd0vVj08DWMfNp88oIb4xYylNUReqndNutsTROzqSQMVryLJheDNNEEm+2Dk3ak0UFlLypm1SOYpEGsaQBa9oqVLcwY2D3/0PXwO7ybmeSNmaeLq5UfV/gcQuVbjq19iJbHRbYUPEA/AFHbiSGsQMAAA==
+        weight: 1
+      28:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_CHESTPLATE
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Velocidad de Movimiento: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"-1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 800 / 800","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTy27TQBS9pbSyKoHaAkJCLEazyAJCaYsiqqww9iix5BceJyKKImsST5FREoPjVCpRdohPgA2L7rwCqV+A5HwJ/RJmUmKS0npx5eSc+zjnXm8BKPDAshzDJxYN9JatWoYWmI5H1pptnGfHedbLs4qaDFg4Thhy+YiFDJcldBnz7AXKs5dO9z1PYxRy9G7Mk4QncVm8sSSM2HBB5B7/OI54wpEdnfA+OrimzsX3M7ToVhV/HD893KusMr6eoSbvx70oZKFsaMUn0SDiwzSeJzy7UpZdfPuCPDaU4wt2jQ8YarLe7AcrGq0mVDwejnscjYdIP5IpIZudx3vXDDuXIZt286zvG8RbSBKYLup2o74csoqO9vfRcxlxR4Htwm8ZA0OHbZdodUdrEM9xCVV1VYE7BUmshMCjUrfYgZhIEx7Hf5ehwL2CWxP1qO/YhMKTCSaDD+kp7cfpCFfbuBDbKWNhwiiNh1wCnekm3C0qqJ7leK9uw/zZhIcFYDlNYhHbD6hLiP7r86fftZ/3J+vLDPVtoDc89bVhGn4LYB0psFOgxNbqqu1TuNUWHvzL0g3qmmqL6IHfcgnslK4emwJbdep7rUsj3AmmKUtxFcufwm2nRtM4ORVCJnjFs2B2PkoTQbzZOjztTJcVeORNw/DEKCZpElMYsKZch2qmSins/n/oCuyu7nYuaWPu6fJK5fcFj9u4dNOpdZbZ8rBgQ8YD+AMOXKVMsQMAAA==
+        weight: 1
+      29:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_LEGGINGS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Velocidad de Movimiento: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"-1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 800 / 800","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTy27TQBS9pbSyKoFoC0JCLEazyAJCaYsiqqww8Si15BczTkQURdYkniKjJAbHqVSi7BCfABsW3WUFUr8AyfkS+iXMpMQkJfXiysk593HOvd4C0OCBbbumT2wWGA1Ht81KYLmUrNWbOJucZJNONinpSY+Hw4QjTwx4yHFRQVcxm7xA2eSl234v0hiFAr0biiQRSVyUbzwJI96fEwUVH4eRSARyolPRRQcr6lx+P0fzbmX5x8nTw73SMuPrOaqLbtyJQh6qhnZ8GvUi0U/jWcKza2X55bcviPK+Gl+yq6LHUZ13pj943mg5oURFOOwINOwj40ilhHx6Ee+tGHYmQzVtZ5OubxI6lyQxQ9ZtR101ZBkd7e+j5yrilgb3cr9VDEwDdj3d8XXLdSo1Ql2PMN3QNbiT8+RWCDwqtPM1yKEq0ub47z402M25VVmS+a5DGDwZYdL7kJ6xbpwOcLmJc72tIpY+DNK4LxTQGm/C3byCTm2XvroNs2cTHuaA7daJTRw/YB4hxq/Pn35Xf94frS8y9LeBUaP6a9My/QbAOtJgO0eJUzmWQhncakob/mUZJvMsvUGMwG94BLYL1+9Ng61j5tPGlRHeCLOUp7iM1U9puFtlaZycSSEjvORZML0YpIkk3mwdHrfGiwooeVMzqRzFInViSQPWtFVoxdIZg53/b12DneX1ziRtzDxdXKn6xOBxExduurbWIlvdFmyoeAB/AOccE0O0AwAA
+        weight: 1
+      30:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: LEATHER_BOOTS
+          meta:
+            ==: ItemMeta
+            meta-type: COLORABLE_ARMOR
+            display-name: '{"text":"","extra":[{"text":"Armadura de Cuero Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Armadura Pesada","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"✠
+              Armadura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Velocidad de Movimiento: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"-1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Armadura","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Reduce un D8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 800 / 800","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VTy27TQBS9pbSyKoHaAkJCLEazyAJCaUERVVa48Si1FD+YcSKiKLIm8RQZJTE4TqUSZYf4BNiw6M4rkPoFSM6X0C9hJiUmKakXV07OuY9z7vUWgAYPLMsxPWIx32jaumVW/JpDyVqjhbP0JEu7WVrS4z4PRjFHrhjygOOigq5ilr5EWfrK6bwXSYQCgd6NRByLOCrKNx4HIR/MiYKKj6NQxALZ4anooYMVdS6/n6N5t7L84+Tpi73SMuPrOWqIXtQNAx6ohlZ0GvZDMUiiWcKza2X55bcviPKBGl+yq6LPUYN3pz943mg5oURFMOoKNBog41ClBHx6Ee2tGHYmQzXtZGnPMwmdS5KYIet2wp4asowO9/fRcxVxW4Pt3G8VfdOA7SPH01mlTqjjEqYbugZ3cpJcCYFHhU6+AzlRRXoc/V2GBvdyblXWY55jEwZPxpj0PyRnrBclQ1xu4Vxsu4ilCcMkGggFtCebcDevoFPLoa9vw+zZhIc5YDkNYhHb85lLiPHr86ff1Z/3x+uLDP2tb9SpfmTWTK8JsI402MlRYleOddtjcKslPfiXZZjMrelNYvhe0yWwU7h+bBpsHTOPNq+McMeYJTzBZax+SredKkui+EwKGeMlz/zpxTCJJfFm6/CkPVlUQMmbuknlKDXSIDVpwJq2Cq3UdMZg9/9D12B3ebczSRszTxdXqr4veNzChZtOrb3IVocFGyoewB93n66ksQMAAA==
+        weight: 1
+      31:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_PICKAXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Pico de Principiante","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Herramienta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Nivel de Minería: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: ccf8bd19-26dc-41ba-beab-7240cf2f36ee
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/22RzUrDQBDHp1YhFAQ/ULFewh48CTZ4KPSWJttmMV/sRjSUEtI2wkJNJUZBSi++TE4efIX0ZXwM82FTSnvZZef3n53/zDQABDgzDIs42GCe6pqyQRRPtyiGrwFKk+c0GWtBFPkvPAhjH93ksfJMk8DkH8FUnASiwcMgWn77HTHTS5uquyzWLpQ5HaXJ1CGYitKKt9X3yB/xKZ/4k44otVot8ba40FCAo8pbfnpEhYZNFMvLv5AEOKxwZhzD+fXI5uNZ7siOeDjmr9wP40CA40qHTUWTTYfB3mBYh4sqbshPnvpA5S7RieMC1H9rcLUeDGFyV8erbGL2awI0NOZQt6yszxGL/Rh1UP7MWrP6LJ5Fn6gzmKMNk97y5y2OMuFur2gxXNShWaXY1OphxohlegYxs8IAUKvB5ZY1hcq9wtguyAziaCVsbkGKbZnQkp5W9JHoutelWL7PWj3ZXIPj2hj2HcvSdxfD+v+I1vvJFwYHxdrgD/uuErB2AgAA
+        weight: 1
+      32:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_AXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Hacha de Principiante","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Herramienta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Nivel de Tala de Árboles: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: ccf8bd19-26dc-41ba-beab-7240cf2f36ee
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3VRTUvDQBCdWoVQEfxAinow7MGTYIuHQm/bZjWLSbbsbqmllLBtIwZiK2kURDx49Y/07F9o/4w/wyS1KaX1MsPOm7czb14BQINj22ZUElu4RtvBNq27FuMEvjpoOnmYTvqmF4bqyfeGkUKXSW0epxPP8V+9QB94ulSBSvLsM+yNAm9c1WNeebX7Oq5VUkaC9qaTQFLC9fICrxgvoer5gT9Qg6peLpVK+lWaUFeD/WzHJLrUgF0T103sJn+UNdjL8FgBgeJFz1T9x3SnRugP+/6zr4aRp8FB1kicmO9IAVudbh7Os3qDsxsiBGWO22LMqDelpM4tAOTyUMy6bHzvGk2Oa9Sisg2Q/8nB2fKQVOCaRRYzYn5Og4IpJG/PF7TfkYhUhKooecYnYLciGoVvqNp5Ryta3Nn3OArjxn8koY/uRw5O1kbXOb5JB28ChU2lOQdP10BOGpjyOXqUoS1qWW6NE3wXSzlctUO2GwS2JWPW5mHE+jvB0qbEN9hJ3YNfUdw83IYCAAA=
+        weight: 1
+      33:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_HOE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Dalles de Principiante","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Herramienta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Nivel de Agricultura: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: ccf8bd19-26dc-41ba-beab-7240cf2f36ee
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3WRy0rDQBSGT6xCKApeEG+bMAtXgi0uCt1Nm2kzOLkwE9FSypC2UQKxSpoKUrr0WbL2FerL+BgmqcaW6maGOf//n/kOpwygwqFp2tQlppB6x8ImbUpmcwJvXTRP7ufJwPCjyHsM/FHsoYustjjniW8FL36oDX0NP0TBYBLGk8ira2mkumq8Smu13Jyp/XkSupRwrfqj1/Q02A/CYOgN61q1Uqlol/mFeirsFnjZKakO2zpmjAiZNamqsFMYUnoCx+d93QtDf5yBOVEwGgTPgTeKfQXOfielAjcYkcRqGthyqdVWSnBUyCa+k/oNxw3KqNsBKH2qsFeo3yEBG92Ur2wIl3cWf1tTJGIvRnWUPdPx7LaIn6JXVO9O0Qqm/Hgfx1Fq/I8WzXqz0hKxw+0WEYLalmxhbqbEAKAocLI2U5PjVj6RAqdrIicOpnyhrkeFSV1jIR4U4i1lTDY4wdeKCvur23A7DoFN17bZ3+0Iy0mWl5RtDbby3cEXOz/c+YACAAA=
+        weight: 1
+      34:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: FISHING_ROD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Yeti","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Herramienta","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Nivel de Pesca: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false},{"text":"1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"red","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: ccf8bd19-26dc-41ba-beab-7240cf2f36ee
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/22Rz0rDQBDGJ1ZLKAgqiKiXsAdPgg0eCsHLNtk2C/lHdgVDKSFtVwhUhTQKUoqPk7OvEF/GxzDb1tRSL7Ps/L6Z/Wa2BaDCqev6lBOXxVbkYZeaseOHBD4GqCwey2JsiyxLnlLxnCfoWuZWsSyEl76JqTYRWiBm48TQKrG+Lbmtcp2lTNJRWUw5JaGm//KO9Zolo3SaTpKJoentdlu7WR5oqMJRbUzGmFrQDAgzsa7CYY0qxwSaV6NI5KkCl5tZKMNdh8TEM23scer1lQac1djFD7F1H+IudSiPABrfKhzXdF3EYG9Q+WjZjIfR6qW7OWJ5kiMDyWs1ht9n+Uv2jozBHG2Zir8+Z3lWCVfe0GK4UOBix19IAkxDaU+B8x3KXMptCVU42d4GjwIC+9z3nf/riLOeebOSIPR7hDHqe3GPMtkWAJS/y5SfAwcy6vADecKjLhwCAAA=
+        weight: 1
+      35:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BOOK
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"El Codice del Aprendiz","italic":false,"color":"aqua"}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Canalizador de Mago","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Objeto
+              de mago","italic":false,"color":"gray"}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","italic":false,"color":"yellow"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Daño de Ataque: ","italic":false,"color":"gray"},{"text":"3.5","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Velocidad de Ataque: ","italic":false,"color":"gray"},{"text":"1.8","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Alcance: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Mana Máximo: ","italic":false,"color":"gray"},{"text":"+5","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","italic":false,"color":"green"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño de fuego o hielo.","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+              ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","italic":false,"color":"gray"}]}'
+            enchants:
+              minecraft:unbreaking: 1
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 7a74aeaa-cd50-49f6-a49b-874ff7bdd566
+                operation: 0
+            ItemFlags:
+            - HIDE_ENCHANTS
+            - HIDE_ATTRIBUTES
+            max-stack-size: 1
+            custom: H4sIAAAAAAAA/41UTW8SQRgeYktIo039qJ89TObAxaaWNKjhUobdKWy6H7i7oEjJZmC3dXXZbelibJte/QkaL0ZPnDz05hmu+id68ugP8OAMlC0UGt3DEOZ53nm/nvedAyAO5hVFk0yiGJaO1TzJJkD/i4GlCBAlA+dkYkmqSXQsmJKmxhLgZoTniWIZpqYSAySPEGnuhgeGF4T7KFNFuNWkqLaM8k5zPwx8h1/WjmPgwcTrRBUKWDUlNc8evzMKF2VcIaJlVooELCbTAvWp5x5SO2hB24EK3QkSYK5gmHrFUrFCgHqEjJCGKIP4X7SMtLwRBq0D5voIRQ9zzOqd7IctRkzWiQeFwHYbDnvTg3i35fi2e4iOa8ej0ejkWUnSWTCCjA0DzDSZ8yvTcJmUiczrGAP3J1LVSRFLOs80DmCEGlpJFS1NZbYbJnMgCZtWUTLXfw86MupGwS9YxTEjGNJLwt0kwEKE8tOSRDCr4LyWSoBrEWJKRAez/GTXi+dxVVgxJMGSNZ3EPlVRt7Pd7TS6nWmlZuVk8ODsdtZgt/NEq792woATmhGh23F0Z6/tOi0Hqu5bVtLUFMvTz9+hSHsnfWMc0r22k2H322sr6Qle2fGChmtT+wI3tfJ0nPvhC8Reg/qNs7cmUIVlBZXe13duM+hTHqbHY6OnH99DnfrtFuXOmHYpLNNG7xuFfT2PkdMlH9qPOc8eZrLddnYCGMBXLot5ZUre/Ypw1/Vux+PtGFaHYSLzWnc9nmkGplZXV+Gj/g+qxcH1MQUoWMXZWwN1xEfaic2BNIqEiOt/fvDv56gK+kNy9zLJX9SZWNJxTpIls8I0+CsxEsPZxBpgoYrafr3l0Deuv8NSqcXAvQnRCzreMP9H82VNzg6SAomRLTSFCpZyssYsWD5moWLw25LBdpSV0wnenBaEoUhmYbBibozPS3+7zDzHqjjdjshnq2l+sGmi5IvRthleXbZxhni0dapbY3XbQjW+b+Lg9sVWipiNMsleHVblvJd8ZEGyipL/lmEN/AWBXIjL8QUAAA==
+        weight: 1
+      36:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Espada de Vikingo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, picaro, monje","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"4","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.7","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Probabilidad de Crítico: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+2%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"■
+              Poder de Crítico: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"+10%","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un 1d8 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/4VUTW/TQBBdUzWyKiEVKqgACYxFcyEqDaUqyoVu7SVd1Y7DrpsSRZG1ibeVSxK3joNUVb3yE+CGuOVUod44J/+kv4EbF3adJk2aIHwY2TNvPt7bWS8AoIIHtu1gF9nUM8sFaGPDsxyClJ8Vvdc96HXrve6GFRzyiOkZ6RnYXndd63U3ndoRj0PN59phh0cRj8KMeGORH7BWRjsO6kx6mmHriA/zOOEnnYBHXCsEn3lDy84oe/X9l2ay/mVSGcbspMNzwn/wZgpV4o2wHvjMv4XMrm5OYr/+0IpRWGO1oDGEG1H/Ig7qYZLw8vXKdELo82gamV1bmZyZXX37ohHW6kRMovO8ybQSq/cvmAaj5i3dNvZaWtZ/K4G+pLg6g3+ijGxW63UbLkZkqJKImaLLNYmctrG2pr2SVq+qYHF0kNJ62ARqCe/iQt7JpsZOGbouNHY9WkTIfPdnPXlUsDSK50UudZ0CoiB9pqPmcXxKG2Hc1nMVPaFTzeiCYjsOW1w6q+cquDvKFhuEwFK6htrHzE/kKAWfgtZhqIDHN4uGKdy2kEdQEWIiJlRUcG8URQVjBxZcCu5UqnNgeeS34UfP3CNwG1vYLQOg/FbAk6ma19mDosvj4aIFy8j03HIRATV9vdQqWNihLikPBsdnOo1ZrOd0+Sk0d/I0DqNTQfNMn+Do9S/bcSSAM6jq59XzFHg6whsEu9iAlpCV4F3kFZ19RLZegOQZH5KgD3uYiBkNC1IKnv/3Uing0ZQABoHvE/pzsypbqIQs0VaZlUpt7O4MlLs/uUyJaPN03yHm7ERkJT1T4Nk/actzMdDWgDZIgYe3V9KENsyjrcWhMDdbJe8AmJc2O+6WPyrwsKKnpy9VFfwFIkDxWt0EAAA=
+        weight: 1
+      37:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_PICKAXE
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Mazo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Ligera","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de guerrero, guardian, picaro, monje","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"4","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.8","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un 1d4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/4VTz28SQRR+2JRsmphUjTXqZZwDJ1JLLKkhJjplR9i4y+LOQkRCNgNMm22AbZfFpBKu/gvevHLy0JtnuOo/0T/BePTgDBTKr8Q5vOx+874333vzzQ6ABg8tyzZcajFPrxSIZWQ903ZojFXxaHgyGjZGw7Tpn4qQ46RCpnE0fIFGwyO7fiaiADUFOu2JMBRhkJRfPGz6vJNE536DK6QddM7EjCcccdHzRShQwf8kWii1oez1tx9I5+OrSWUS8YueyEj85HAtqyxaQcNv8uZKZmr/5XJdfv31C3J4pxdylZoTbY7KvDH+zhEJ2yu9pUsdlGoeqsSmkrG/QeNEvTqrPhq2XIM6s07kni5PqfstpSuD0gcH6LmKuKbB7nzYKnqGDtsW+Win4gvXQFyXZN95rEip/vrvT7V+afBgvp+TRObaBcog0ce0fR5dslYQdXGmiie91JJY9teNgo5QYG2gwd05W14xhXiibvHPgQb35jgtZPOk4DK4U61twaM5bpEPnl5yyLFhGm4FIPYnBk9vLWMwcmzSGdso5GLaAlluF01SobrnVooUtMSNlTTYyTPXqUzVvOpjFvEIZ7D6lVO0cywKwkupvY+XhHvjq24UysSpfjyoDWLwZE2NQ4vEcFbFOPR9yXCklqxJGINn/7VsDB6vlc465O2kza1NlU1apibIIW2iMstw81NR95dtMBlOPE8sizqbmdS8OfTWBkuX8jsOe6sG0olFcvTNLkzWogeUXWFbxdQirN497FVxYt3/NfgHfZgFJiwEAAA=
+        weight: 1
+      38:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Katana","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Sutil","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, clerigo, guerrero, hechicero, magos, monje, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"3","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"1.8","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/6VUPW/TQBh+Q0VrVULiQwUBy+mGTFFpVJWiDMA1PlKrthN8TkUURdbFuaaunLh1HKQqyspfYGPNxNCNOV3hT/Q3MDJw5yghXxs3vD6/H/c873uPvQ2gwY5llQ2XWszTazaxjKJnlh2auarj8ehsPPLHowPWT4IQ55RjYsejfTQeHZabFyKJUEugJo9bUQ75oYiDtty0+yKORSx358I/D/x02+HtqCcfUfdC5NBl4HPljXm3LeLpucIRV/1AxALZwWcRovwa2LtvP5DOb29SZJLwq74oSP/Z/krWqQgjP2jx1lJmfvfN4rn87usX5PBuP+YqtSQ6HJ1y//Y7RyTu8MXkg2oXtV6rvJZisbuGYkpeQTXHo9A1qDNtRMZ0CdIMQkWrgA729tArZXFDg4ezq1DWM3TYOiEusUl+c+6aiOuS4onHKpTq7/78VOuXBk9m8ZIsZW7ZpgyyA0w7l8k1C6Okhwt1nDbTyGHZYC+JukI5G0MNHsyqpQQoaNmjE57wLtfg0SxC7eIxsV0G9+qNDXg281vkk6dXHXJkmIZbA8j8zsDLf6IyGDky6bTasEsZba5YhismqVHdc2sVClvZidg02D5mrlOb0Hk7wCzhCS5g9SoHWS6xJIqvJfkBXmDu3d70klgmThvAw8YwAy9W6Di0QgxnmY1DP1YNR5IpmoQxIP8t6ww8X4EuOuRDOoeNdcgmPaUmyCmuK2WW4R5PSD9e1Eo6vc2JWtZXUjMF3YSny0rSiUVK9L0G6ZoXg1Iu3Fc2P+9WPwjYqePsypfQgL8guYAIVAQAAA==
+        weight: 1
+      39:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: WOODEN_SWORD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Daga","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Sutil","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Objeto
+              de bardo, clerigo, guerrero, hechicero, magos, monje, picaro, ranger","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"yellow","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Daño de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"➸
+              Velocidad de Ataque: ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"2.5","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"green","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d4 de daño.","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 500 / 500","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2f967359-1197-43c0-b50c-5cb572558f98
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/6VUzW7TQBCeAA1WJSR+VCrgsuwhp6hQIEKKOLCNF9fCdsKuWxFFkbVxtqkrJ24dB6mqeuUVuHHNiUNv3JDSF0F9Bh6AXUdNU5Ke8GG8nplvZ77Zb70KYMCa69Ztn7o8MJsece1a4NQZLQxbeDLem4zDybjCR1kU47J2TO1k/BpNxm/rnQOZJagrUUek3aSMwlimUU8teiOZpjJVq30Z7kdhvuyLXjJUr2RwIMvoMAqF9qZi0JPp5b6SyaNRJFOJvOiLjNHmkrIX338iU5yf5ZVJJo5Gsqr8e682Kgt5uzJOwqgrujflXiLExbeviInBKBU61ZJ9gXZFeP5DIJL2xfXkys4Add/ovK7uY2NJk3n7ulRnMo59m7JLKipmqiKdKNZtVVHl5Uv0QlvcNuD+7DC0DWwTVkxikc3i3DER3ye1jwFvUGq+vwP5Y8CjWdxSQO7XPcqhdIJp/zA75nGSDXG1hXMq7TJW9IZZMpDa2T414N4MrSRAoVjaMkVPFOH5zE893/abge35lJGab9e9gBHPor9+TzsowLMrIdmcbDlUYWrbROE8q3Ab1mdhl3wOzB1GtmxHbamgfwx4MFcoB3G41VIDWZ/ftOGQJjUDv9mgcLc0laUBq9vcZ81p4+9OMM9EhqtYf6qB1y2eJemxonmCr3EMzs+GWaoSp1Txafu0AE8XKDDaIDbTDArwZCHKXdvfvilYY+TDAndGP+3YTJFw6C519NyMZdGaQzgH8t/XyoCH1xWVz66oNGVRtpwRdfKmi/D4X8WZxCUWvZLclWi0vmFF2815t/6RwFoLlxbuSxv+AqE8aWx8BAAA
+        weight: 1
+      40:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: SKULL_BANNER_PATTERN
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Pergamino de XP Mediano","italic":false,"color":"aqua"}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Drop Dungeon","italic":false,"color":"dark_purple"}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/3WRwWrCQBCGx56CYGkLpdhewh48SbEFL7mUNLvVQDa7ZFMwiIS0riJoVmKEFvF5PPcV7It1o1Qr2svA8P8zfP9MGcCAa0qZGxIqYhz5NnWd2GMBgWoXrVeD9ep9vWriTE1NPE+HUqWoZ8DFbqSosYuhwknQ0sM+6/D40YDKzqFX6mW1Ny6zYTIZpcrsS7PDTSr7oyRVBlzurMR32rYfCjjr9kpwt+dyhf3skV/d9VslA27+ytyzI4LjMOIEzmsHvAaU2yIMoi0IWyCRJzmyUNGiOmItkavsE1ndBTpgjr+/Znmmjf+io2VvWYLqEaagbtguIE+JTmC/hFvx9kgMCLfdYJtvfxaHUWr7WMCTZnTUZJKkfc31MR3K3HxoNnQKLMeJztC4b9S1I52psUTWIBnPpE44RVaezeVSP+7q8HGbe5Ud5otXWgCcTkO8DTD8AFw3HaAuAgAA
+        weight: 1
+      44:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 1
+        maxItems: 1
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: SHEARS
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Guitarra Clasica","italic":false,"color":"aqua"}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Canalizador de Bardos","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Objeto
+              de bardo","italic":false,"color":"gray"}]}'
+            - '{"text":"","extra":[{"text":"Requiere Nivel 1","italic":false,"color":"yellow"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Daño de Ataque: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              Peso de Nota: ","italic":false,"color":"gray"},{"text":"3","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"➸
+              Velocidad de Ataque: ","italic":false,"color":"gray"},{"text":"1.8","italic":false,"color":"white"}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+              A Dos Manos","italic":false,"color":"gray"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"◆ Ranura de Gema Vacía Arma","italic":false,"color":"green"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":"Un d6 de daño de trueno.","italic":false,"color":"dark_purple"}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+              ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+            - '{"text":"","extra":[{"text":"Durabilidad: 1000 / 1000","italic":false,"color":"gray"}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            - HIDE_UNBREAKABLE
+            Unbreakable: true
+            custom: H4sIAAAAAAAA/4VUPW/TQBg+A42iIiQoHxVf4vCQqSqNqgLK0l7swznhj2BfWqIoOl0SVwq4MXUcpFJ1ZWaCDbFlYujGnK7wJzox8gMYuHMaJ2mi4uFs3/O8771fzy0CkAF3LMshFFseQ5Qi7SXTkYUMvJUFyZMFN1OCgS3mUcfGHsgdqnjvXXzgBWHcVQs1FUV7XK2vqIa/143Dji8360cKeJBa68RDRRMzYlPsIo0Sx1Yy4HGKe07F1pljM5cYJco0k4hgyoRu/hlF8vBCLlgumo4wsR2K2fDTqBCKXAXcnwkC21oJ2ZTYhpIFy5Nw2URVrDNaLWOwnNvQeIcH7Q+8FUaw5cMij1phNwsWSx51q8xGFgalQ9WLeawWVPmrrqiO4cVhdCAqcKimriXGTo67cSSIuYbRa8c8ijjUAt5tN7l6VD+ajMTFryrEFYFoJvI8sNCQB/+3XNuOuTWsFrg8z5mJt7EpQEUB92Zq4uIyIu6wJNdSlBLsggW55rPg9tioKhIiGjMdFyufauqgvzvoNwf9+QUTRRGE4Tror8NB/5nTeOPHoaQkqY0w3/X3e20/8qHdfu8HMD/H9PTrD6jzk+PEGsV8v+cXxP7u+jTr8zdY9rsJyQ5jPo8iHG37Qdhst3jrnLP86vMZdwjqYRdavHM+I3765SN0eacnGircCBFwuM2bJ985TIQxRd6odGDrqeS1RknEUc/vhKtzck2qIANqDPqB7MKoIgLTxXGNdiCDL8D82toafJK81HoWXE87JVdGdJApIld38pmJJp4p3itjrG/+/SmfX5O9T8Z7aXZYJ2fLQq+ZXnFRkZiEVsXc/c6CGyl6pjMPXKrVFXB3ZuY0F71IVDgP9CxCSxLMgFvjmKS8d7Ac+vEdtTSdbSLeK2aF4vlusXl25tVKpxH5/C1vBL6Y+rEmpG1aHqm0C26X8QVJdxwm0tWxPiUhqRHwqKbmLuh8HfwDdIc0lo4FAAA=
+        weight: 1
+    allowDuplicates: false
+  Dungeon1-1:
+    ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTable
+    minItems: 3
+    maxItems: 6
+    namespace: Dungeon1-1
+    lootItems:
+      9:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: IRON_INGOT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Lingote de Hierro","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/22Py0oDMRSGD4IQKwUviNshi67cFJHC7EInOIG5lCSbYSiD1igDxYE0ClL6PFn7CvHFTBycWnBzSHJO/vN9IwAEV3leMklz0SRVQXI2b7KSU4hr7Oyzsytn77havelNh2/CU1+dvY2cnRXtu1rH/vTo7FoyyqMpXiK4GDJDbWS1oIByIilnJENwdthmCZym/i8vQ8IUwXjoeyAKl5NZ1r6+dEZFTypKW6V1h+B8GKLFPCWFFHBU+93Xex8mFhmpaNIDnEx+RRCMUiF51cezLRbmweAYh6vXK++F6fQHjustPiBpvj43RvvBf4Dwbrn7Sx5U4PhHCL4Bxd2xsGgBAAA=
+        weight: 1
+      10:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COPPER_INGOT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Lingote de cobre","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQdiNeSw05ehsigt9gGG+ifkeRSyiiuRhkMC10UZOzz5OxXiF9sicXq8PLy/uN5nl8AgOAqz0smaS6apCpIzuImKzmFqMbWPFvTWnPHVfvWbzt841dDteY2tGZerN/VJnLdypqNZJSHM7xEMBk1fW1ktaCAciIpZyRDcHF8ZgkEcXnPqReYITgfzy4Phcl0nq1fXzqtwicVtt2qVwguxx9axCkppICT2jlf/9IwschIRZPB/mz6g4EgSIXk1aCe7rDQjxpH2I8OrnwQuus/cFTv8FGQ5utzq3v3+D8P3i/3f3N7EDj9xoEDsB+P22UBAAA=
+        weight: 1
+      11:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: FLINT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Pedernal","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/1WPwUrDQBCGB0FYA4IK4rXMoScvRaSQk0uz2oXsJuzuJYQSao0gBAtpFKT0efbsK6wv1l2Dqb0MM/MP//9NBEDgWoiMGyZ0lRSSCj6r0kwxiEt09tXZlbP3ql59tJs13oZVX529Gzk7lW+fdRP77tnZxnCmRhNcELgaPEOtTJEzIIIapjhNCVwcyzyB6DHl0gSDCYHzQfY8DKLxNK9f6vZ92RC4HDQmZ3MqjYaT0ifeHL7gOk9pwZI+9mz8h08gmmujit71YYu6W3YYYxj9U9mT7tbtF8blFo8Aqp/vTdf6wwMH7ha7/5wBHE5/8WEPQdHqFVUBAAA=
+        weight: 1
+      12:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COAL
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Carbón","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/+NiYOBgEPX19fcMcfUNjneJ9HP09XSO9/EPcmWwilY6tDzt0PLkQ8tNg1KTS4uK85V0QEIQ8tByY4VDy839MstSc6yArKRDy3NCPF2DFAyVYjkYhOBmgsj4kMgAVwYOX8cQ1yBPRx8OBgFUaU8XBm5nxyAnfz+QCYYcDLxweaCDXBk41cydE4uSDm/O42AQhEu5+jl7OPqFBDMwRQNtFEf4wjM4wMcx0tUFYi2nGsz5HAxcHsEhQZEQQ+2rlYJLEkuUrJRAXKCn/N2DS/KLKpWsoquVUOyPP7yxuKQIqBDuDKXa2FpkV4KczcAKdjwDAI5Ul5tUAQAA
+        weight: 1
+      13:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: KELP
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Alga Verde","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/1WPwWrCQBCGB6GwSgutUHoNe/DUi5Qi5LaaQReyiewuQggSrI2lEBBiWiji8+y5r7B9se4SmurlZ2b+Yeb7BwAE7oVIuUahiihLmOCzIk4lQphTa3bWbK15luX2oz7s6aMftWrNU2DNJHn/LKvQVS/WVJqjDMZ0TWDY3fRa6GyJQATTKDmLCdxe2jyCPovnbIUyQgI3netwEK5HE1a9bYJVWb+WBO46F5PZgiVaQS93Lx/+Y3C1jFmGUfu3P/rjJzBYKC2z9u70SFWzaWhIfetSpXPV7OsvGuZHeoFQ/HwfmtotnpPQ0/p0zurDw5XXMfwCDcuJBlgBAAA=
+        weight: 1
+      14:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Reo","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/+NiYOBgEPX19fcMcfUNjneJ9HP09XSO9/EPcmWwilY6tDzt0PLkQ8tNg1KTS4uK85V0QEIQ8tByY4VDy839MstSc6yArKRDy3NCPF2DFAyVYjkYhOBmgsj4kMgAVwYOX8cQ1yBPRx8OBgFUaU8XBuYgV38OBl64ONAhrgysauZBqfkcDIJwYVc/Zw9Hv5BgBqZooC3iCJd7Bgf4OEa6ukCs4lSDOZmDgcsjOCQoEmKgdbVScEliiZKVEogL9Ii/e3BJflGlklV0tRKK3fGHNxaXFAEVgp2gVBtbi+w6kEcZWEGkIQMAeBwd5kQBAAA=
+        weight: 1
+      15:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Lucio Almizclado","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/2VQTUvDQBR8CMIaELQgXsMeevJSihRyW5LFLOwmJbs9xFBCjRUCkUCaClr6e/bsX1j/mLsEo8XL8D6GeTPPA0BwI0TKFBWyjPKECBaWPM0oBAU2+sXoyuj7bFvtu12L79xoQKPnvtGLpH7bNoGtnoxuFKOZP8NrBJNR02Gp8iUFJIiiGSMcwdXpmkXg8VXIUsIFe0RwOa6tHwqT6YLvq7r1SfNaf1TN5rlFcD1yaBLGJFESzgp7+fY3DZNLTnIaDecvpj8xEHixVFk+qMcHLPtNjwPsWhsufZB9273joDjgEyPl1+eu7yzxvx98XB//+nafgHOHM/gGGk+BcWUBAAA=
+        weight: 1
+      16:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Pez Aguja","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/+NiYOBgEPX19fcMcfUNjneJ9HP09XSO9/EPcmWwilY6tDzt0PLkQ8tNg1KTS4uK85V0QEIQ8tByY4VDy839MstSc6yArKRDy3NCPF2DFAyVYjkYhOBmgsj4kMgAVwYOX8cQ1yBPRx8OBgFUaU8XBo4A1yhH91AvRw4GXrgk0DWuDNxq5gGpVQqO6aVZiRwMgnBJVz9nD0e/kGAGpmigheIIT3gGB/g4Rrq6QGzlVIO5noOByyM4JCgSYqxjtVJwSWKJkpUSiAv0k797cEl+UaWSVXS1EooL4g9vLC4pAipEcohSbWwtsktBPmdgBZGGDACVxkG7VQEAAA==
+        weight: 1
+      17:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: COD
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Capitan","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/1VPz2vCMBR+DMaiIGwD2VVy8LSLjCH0IqENM9CkJcmlFCmdKAiio2aDIf49Oe9fiP/YEso6vXy8977H96MPgGDIecY05apKCkE4i6s0kxSiEju7dnbp7KtcLT+bwx4/h1OLzr6MnJ2KzddqG/np3dmtZlSOJniB4LHTDFjpIqeAONFUMpIiuL+mWQJ3McmZJgLBoON8GAq98TSuPzam3iF46Cgq4jkRWsFN6d2e/hswlaekoElr2Rv/RUfQnysti1Z0dsTK1AZHOKy+UPamzL75xlF5xFf+1fnnYBr/2MXAp8XpMmUoDbcBJ/ALPzTTQ1ABAAA=
+        weight: 1
+      18:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BIRCH_LOG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Tronco de Abedul","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/2WPT0vDMBjGX4RB3BB0IF5LDjt5GSKD3uIabKBpRxIPpYziugpCsdB1whj7PDnvK2RfzMRidXh5ef/xPM9vCIDglvOEKcplHqQx4WyeR4mg4GfY6DejC6MfRVlsm02N792qq0Y/eEbP4vfPsvJttzK6UowKb4qXCMa9pqu5ShcUECeKCkYiBNfnZxbAiDzR4CVyClMEV/3dBqIwnsxUU38UtbcuPbIq19sKwU3/Q+N5SGIl4SKz1ne/OEwuIpLSoPO/nPxwIBiGUom0Uw/3WLavLfaxGy1d8izbutlhP9vjsyD56bhpG/v4Pw8+LA9/czsQGHzjwBeln8TNZgEAAA==
+        weight: 1
+      19:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: OAK_LOG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Tronco de Roble","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/2WPT0vDMBjGXwQhFgQnDK8lh512GSKD3rI1bIGmHUkupYziagWhGOiqIGOfJ2e/QvxiJpZVh5eX9x/P8/wCAARjzjOmKJdlnKeEs2WZZIJCVGBrnq2prHkQdfXW7jWe+lVfrbkPrZmnL+91E7luZ02jGBXhDG8R3A6avpYq31BAnCgqGEkQ3JyfWQyByBYJ9QIzBNfD2eWhMJrMVatfKx0+1aHQu6ZGMBpeaLpck1RJuCic8d0vDJObhOQ07t2vJicKBMFaKpH34qsDlt1jhyPsR8eWrWSn2w8cFQd8lqP8+tx3rXv8Fwcft8e/qT0GXP7AwDcvYTBAYwEAAA==
+        weight: 1
+      20:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: SPRUCE_LOG
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Tronco de Abeto","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: 2b595352-bec0-4be6-a5c7-c011057f4e3e
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/2VQXUvDMBS9CIM4EJwgvpY87MmXITLoW7aGLdC0I8lLKaO42oEwDHRRkLHfk2f/QvxjJpR1Dl8O9+Nw7jl3CIDgnvOcKcpllRQZ4WxepbmgEJfY2a2ztbPPoqk/2r3Gj2HUobNPkbPT7O2z2cW+2ji7U4yKaILXCO56zYCVKlYUECeKCkZSBLeXa5bAgMyoyhHc9BtvhcJoPFWtfq919NpEZNMYjWDUU2g2X5JMSbgq/c2Hcw4mVykpaNIdvh6fAiAYLqUSRSe+OGBpXgyOcWh9rHwhjW6/cFwe8IWP6ud7b1pP/GcHH9fHv67DC2AQcAK/EU84KV4BAAA=
+        weight: 1
+      21:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: CARROT
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Zanahoria","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/1WPwUrDQBCGB0HYVgQVxGuZQ09eikght6VZzEJ2U3b3koYSYqlYKAbSKEjp8+zZV9i+mLsEY3v5mZl/mPn+IQCBeyEybpjQZZxLKvisTDPFICrQ2TdnV84+q/Xqs9nV+BhGnTr7NHJ2Kjdf623kq1dnt4YzNZrgksBdfzNoafI5AyKoYYrTlMDNuc1jGCyopEnmbQLXvetxGFyNp4vqo3qvm01F4LY3mZwlVBoNF4X/+PCfgut5SnMWd28H4z98AsNEG5V3Z+kedVu1GGFofajsRbd1841RscczgvL4s2sbv3gCgofl4ZQ0RIfLoBP4BclFjV1WAQAA
+        weight: 1
+      22:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: BAMBOO
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Bambú","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/+NiYOBgEPX19fcMcfUNjneJ9HP09XSO9/EPcmWwilY6tDzt0PLkQ8tNg1KTS4uK85V0QEIQ8tByY4VDy839MstSc6yArKRDy3NCPF2DFAyVYjkYhOBmgsj4kMgAVwYOX8cQ1yBPRx8OBgFUaU8XBlYnR1+nUA4GXrgM0ClAPWrmTom5SYd3cTAIwmVc/Zw9HP1CghmYooFWiSOc7xkc4OMY6eoCsY9TDeZuDgYuj+CQoEiImXbVSsEliSVKVkogLtA3/u7BJflFlUpW0dVKKNbHH95YXFIEVAhzhVJtbC2yG0EeZmAFkYYMABt9ZBtMAQAA
+        weight: 1
+      23:
+        ==: net.playavalon.mythicdungeons.dungeons.rewards.LootTableItem
+        minItems: 0
+        maxItems: 3
+        item:
+          ==: org.bukkit.inventory.ItemStack
+          v: 3839
+          type: POTATO
+          meta:
+            ==: ItemMeta
+            meta-type: UNSPECIFIC
+            display-name: '{"text":"","extra":[{"text":"Maiz","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false}]}'
+            lore:
+            - '{"text":"","extra":[{"text":"Recurso","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_purple","bold":false}]}'
+            - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+            - '{"text":"","extra":[{"text":" ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"dark_aqua","bold":false},{"text":"Nivel:
+              ","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"gray","bold":false},{"text":"TIER
+              1","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"aqua","bold":true}]}'
+            attribute-modifiers:
+              minecraft:generic.attack_speed:
+              - ==: org.bukkit.attribute.AttributeModifier
+                amount: 0.0
+                name: mmoitems:decoy
+                uuid: a4174b7d-461d-426e-adbc-b0473412198f
+                operation: 0
+            ItemFlags:
+            - HIDE_ATTRIBUTES
+            custom: H4sIAAAAAAAA/+NiYOBgEPX19fcMcfUNjneJ9HP09XSO9/EPcmWwilY6tDzt0PLkQ8tNg1KTS4uK85V0QEIQ8tByY4VDy839MstSc6yArKRDy3NCPF2DFAyVYjkYhOBmgsj4kMgAVwYOX8cQ1yBPRx8OBgFUaU8XBhZfR88oDgZeuATQJa4MbGrmvomZVRwMgnBxVz9nD0e/kGAGpmigPeIIt3sGB/g4Rrq6QCzjVIM5moOByyM4JCgSYqJNtVJwSWKJkpUSiAv0ir97cEl+UaWSVXS1Eorl8Yc3FpcUARVC3KBUG1uL7D6QXxlYQaQhAwBbvIvdRwEAAA==
+        weight: 1
+    allowDuplicates: false

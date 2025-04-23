@@ -1,0 +1,192 @@
+######## nulledassets.net #########
+
+# Aqua Slash #
+
+Aqua_Slash_1:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: abyssion_water_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=abyssion_water_slash_1:4} ~onSpawn
+  - equip{item=abyssion_water_slash_2:4;delay=1} ~onSpawn
+  - equip{item=abyssion_water_slash_3:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_slash_4:4;delay=3} ~onSpawn
+  - equip{item=abyssion_water_slash_5:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_slash_6:4;delay=5} ~onSpawn
+  - equip{item=abyssion_water_slash_7:4;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Aqua_Slash_2:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,180
+  ItemHead: abyssion_water_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=abyssion_water_slash_1:4} ~onSpawn
+  - equip{item=abyssion_water_slash_2:4;delay=1} ~onSpawn
+  - equip{item=abyssion_water_slash_3:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_slash_4:4;delay=3} ~onSpawn
+  - equip{item=abyssion_water_slash_5:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_slash_6:4;delay=5} ~onSpawn
+  - equip{item=abyssion_water_slash_7:4;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Aqua_Slash_3:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,45
+  ItemHead: abyssion_water_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=abyssion_water_slash_1:4} ~onSpawn
+  - equip{item=abyssion_water_slash_2:4;delay=1} ~onSpawn
+  - equip{item=abyssion_water_slash_3:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_slash_4:4;delay=3} ~onSpawn
+  - equip{item=abyssion_water_slash_5:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_slash_6:4;delay=5} ~onSpawn
+  - equip{item=abyssion_water_slash_7:4;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+Aqua_Slash_4:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,135
+  ItemHead: abyssion_water_slash_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=1.2;vS=0.1;speed=0} @self ~onSpawn
+  - equip{item=abyssion_water_slash_1:4} ~onSpawn
+  - equip{item=abyssion_water_slash_2:4;delay=1} ~onSpawn
+  - equip{item=abyssion_water_slash_3:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_slash_4:4;delay=3} ~onSpawn
+  - equip{item=abyssion_water_slash_5:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_slash_6:4;delay=5} ~onSpawn
+  - equip{item=abyssion_water_slash_7:4;delay=6} ~onSpawn
+  - remove{delay=7} @self ~onSpawn
+  
+# Tidal Wave #
+
+Tidal_Wave:
+  Type: ARMOR_STAND
+  AITargetSelectors:
+  - players
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=abyssion_wave;n=false} @self ~onSpawn
+  - effect:particles{particle=splash;amount=15;hS=1.2;vS=0.7;speed=0;y=1;forwardOffset=0.6} @self ~onTimer:2
+  - effect:particles{particle=splash;amount=10;hS=1.2;vS=0.7;speed=0;y=0.3} @self ~onTimer:2
+  - effect:particles{particle=cloud;amount=10;hS=1;vS=0.2;speed=0;y=0} @self ~onTimer:2
+  - effect:sound{s=abyssion_sounds:samus.abyssion_wave;volume=1.3;pitch=1} @self ~onSpawn
+
+# Aqua Aura #
+
+Aqua_Aura:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - potion{type=INVISIBILITY;duration=99999;level=99;hasParticles=false} @self ~onSpawn
+  - skill{s=Aqua_Aura_Buff} @PIR{r=12} ~onTimer:10
+  - effect:particlering{particle=redstone;color=#8f84e7;radius=12;points=30;amount=1;hS=0;vS=0;y=0.2} @self ~onTimer:5
+  - effect:particlering{particle=redstone;color=#04a5ff;radius=12;points=45;amount=1;hS=0;vS=0;y=0.2} @self ~onTimer:5
+  - effect:particles{particle=splash;amount=150;hS=5;vS=0.1;speed=0;y=0.2} @self ~onTimer:5
+  - effect:particles{particle=drip_water;amount=70;hS=5;vS=0.1;speed=0;y=0.2} @self ~onTimer:20
+  - effect:sound{s=abyssion_sounds:samus.abyssion_water_ambient;volume=1.2;pitch=1} @self ~onSpawn
+  - remove{delay=140} @self ~onSpawn
+  
+# Abyssal Smash #
+
+Abyssal_Smash_small_rune:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: abyssion_water_rune_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_splash;volume=1.2;pitch=1.1} @self ~onSpawn
+  - effect:particles{particle=splash;amount=20;hS=0.4;vS=0.1;speed=0;y=0.1} @self ~onSpawn
+  - equip{item=abyssion_water_rune_1:4} ~onSpawn
+  - equip{item=abyssion_water_rune_2:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_rune_3:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_rune_2:4;delay=6} ~onSpawn
+  - equip{item=abyssion_water_rune_1:4;delay=8} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Abyssal_Smash_big_rune:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: abyssion_water_rune_big_1
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:sound{s=abyssion_sounds:samus.abyssion_splash_big;volume=1.2;pitch=1} @self ~onSpawn
+  - effect:particles{particle=splash;amount=70;hS=3;vS=0.3;speed=0;y=0.2} @self ~onSpawn
+  - effect:particles{particle=cloud;amount=30;hS=3;vS=0.2;speed=0;y=0.1} @self ~onSpawn
+  - equip{item=abyssion_water_rune_big_1:4} ~onSpawn
+  - equip{item=abyssion_water_rune_big_2:4;delay=2} ~onSpawn
+  - equip{item=abyssion_water_rune_big_3:4;delay=4} ~onSpawn
+  - equip{item=abyssion_water_rune_big_2:4;delay=6} ~onSpawn
+  - equip{item=abyssion_water_rune_big_1:4;delay=8} ~onSpawn
+  - skill{s=Abyssal_Smash_Damage} @EIR{r=5} ~onSpawn
+  - remove{delay=10} @self ~onSpawn
+  
+Abyssion_Bubble:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  ItemHead: abyssion_bubble
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - effect:particles{particle=splash;amount=20;hS=0.7;vS=0.7;speed=0;y=0.5} @self ~onTimer:5
+  - effect:particles{particle=drip_water;amount=15;hS=0.8;vS=0.2;speed=0;y=0.1} @self ~onTimer:5
+  - equip{item=abyssion_bubble:4} ~onSpawn
+  

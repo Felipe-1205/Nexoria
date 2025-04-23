@@ -1,0 +1,11 @@
+
+###############################################
+##     Developed by Elo106 and Pashjn        ##
+##VOXEL SPAWNS https://discord.gg/BypTbqTk   ##
+###############################################
+
+HORSE_run:
+  Conditions:
+  - moving{} true
+  Skills:
+  - sound{s=entity.horse.gallop} @self

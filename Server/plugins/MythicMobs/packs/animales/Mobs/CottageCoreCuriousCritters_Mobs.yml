@@ -1,0 +1,256 @@
+BS_Beaver:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 4              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+  Skills:
+  - model{mid=bs_beaver} @Self ~onSpawn
+BS_Deer_Fawn:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 4              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false  
+  Skills:
+  - model{mid=bs_deer_fawn} @Self ~onSpawn
+BS_Deer_Female:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 4              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false   
+  Skills:
+  - model{mid=bs_deer_female} @Self ~onSpawn
+BS_Deer_Male:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 4              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    MaxCombatDistance: 5
+    AttackSpeed: 2.8
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false  
+  Skills:
+  - model{mid=bs_deer_male} @Self ~onSpawn
+BS_Hedgehog:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 3              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false      
+  Skills:
+  - model{mid=bs_hedgehog} @Self ~onSpawn
+BS_Mallard_Duck_Male:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 3              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false   
+  Skills:
+  - model{mid=bs_mallard_duck_male} @Self ~onSpawn
+BS_Mallard_Duck_Female:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 3              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.22
+    MaxCombatDistance: 5
+    AttackSpeed: 3.1
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false    
+  Skills:
+  - model{mid=bs_mallard_duck_female} @Self ~onSpawn
+BS_Snail:
+  Type: wolf
+  Faction: Mascotas
+  Health: 50             #  Pet's Health adjust in mcpets file
+  Damage: 2              #  Pet's Damage adjust in skills file
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.14
+    MaxCombatDistance: 5
+    AttackSpeed: 3.7
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false    
+  Skills:
+  - model{mid=bs_snail} @Self ~onSpawn                

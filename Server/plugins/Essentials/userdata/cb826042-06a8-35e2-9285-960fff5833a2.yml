@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 201.175.107.37
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739685518467
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739688325978
+  login: 1739682846812
+money: '0'
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2952.024705761717
+  y: 81.0
+  z: 464.2348505612712
+  yaw: 80.24996948242188
+  pitch: 18.450002670288086
+last-account-name: Odkerry
+nickname: Odkerry
+logoutlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -2965.4948838177293
+  y: 75.0
+  z: 460.3167344082323
+  yaw: 47.900115966796875
+  pitch: 14.849974632263184

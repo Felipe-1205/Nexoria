@@ -1,0 +1,158 @@
+######## created by samus2002 #########
+
+# Spirit Guardian #
+
+Spirit_Guardian:
+  Type: ARMOR_STAND
+  Pose:
+      Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    HasArms: true
+    Invisible: true
+    Collidable: false
+    Interactable: false
+    Invincible: true
+  Skills:
+  #- effect:particles{particle=redstone;color=#02f7d6;amount=5;hS=0.1;vS=0.1;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=5;repeatinterval=1} @ModelPart{p=big_slash} ~onTimer:1
+  #- effect:particles{particle=redstone;color=#02f7d6;amount=5;hS=0.1;vS=0.1;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=5;repeatinterval=1} @ModelPart{p=mid_slash} ~onTimer:1
+  #- effect:particles{particle=redstone;color=#02f7d6;amount=5;hS=0.1;vS=0.1;y=0;speed=0;forwardOffset=0;sideOffset=0;repeat=5;repeatinterval=1} @ModelPart{p=small_slash} ~onTimer:1
+  - model{mid=spirit_guardian;n=false} @self ~onSpawn
+  - skill{s=Spirit_Guardian_REMOVE;delay=50} @self ~onTimer:10
+  - skill{s=Spirit_Guardian_REMOVE_BUFF} @Owner ~onTimer:1
+  - skill{s=Guardians_Defense_SHIELD_REMOVE} @self ~onTimer:3
+  - partvisibility{m=spirit_guardian;p=big_slash;v=false;delay=1} @self ~onSpawn
+  - partvisibility{m=spirit_guardian;p=small_slash;v=false;delay=1} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#33ffdd;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#cff0ff;amount=20;hS=1.3;vS=1.2;y=2;speed=0;forwardOffset=-2;sideOffset=0} @self ~onSpawn
+
+Spirit_Guardian_Shield:
+  Type: ZOMBIE
+  Display: '&c'
+  Health: 5
+  Damage: 1
+  Options:
+    MovementSpeed: 0.01
+    PreventRandomEquipment: true
+    Collidable: true
+    PreventOtherDrops: true
+    Interactable: false
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - clear
+  AITargetSelectors:
+  - clear
+  Skills:
+  - skill{s=Cancelattack;sync=true} @self ~onDamaged
+  - setAI{ai=false} @self ~onSpawn
+  - skill{s=Guardians_Defense_BLOCK} ~onDamaged
+  - skill{s=Guardians_Defense_BLOCK_PRO} ~onDamaged
+  - model{mid=guardian_shield;n=false;step=1} @self ~onSpawn
+  - skill{s=Guardians_Defense_DIE} @Parent{target=armorstands} ~onTimer:1
+  
+# Magical Blades #
+
+Magical_Blades:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=magical_blades;n=false} @self ~onSpawn
+  - state{s=shoot_spin;lo=2;delay=40} @self ~onSpawn
+  - partvisibility{p=body;v=false;delay=60} @self ~onSpawn
+  - partvisibility{p=body2;v=false;delay=65} @self ~onSpawn
+  - partvisibility{p=body3;v=false;delay=70} @self ~onSpawn
+  - partvisibility{p=body4;v=false;delay=75} @self ~onSpawn
+  - partvisibility{p=body5;v=false;delay=80} @self ~onSpawn
+  - remove{delay=80} @self ~onSpawn
+  
+Magical_Blade:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=magical_blade;n=false} @self ~onSpawn
+  - look{headOnly=false;immediately=true} @forward{f=5;y=1.5} ~onSpawn
+  
+# Summon Horse #
+
+Summon_Horse:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=spirit_horse;n=false} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#33ffdd;amount=15;hS=0.6;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:2
+  - effect:particles{particle=redstone;color=#cff0ff;amount=15;hS=0.6;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:2
+  - effect:sound{s=entity.horse.gallop;volume=1;pitch=1} @self ~onTimer:15
+  
+# Spirit Charge #
+
+Spirit_Charge:
+  Type: HORSE
+  Display: '&6'
+  Health: 100
+  Damage: 3
+  Options:
+    MovementSpeed: 0.3
+    PreventRandomEquipment: true
+    Persistent: false
+    Despawn: false
+    PreventOtherDrops: true
+    FollowRange: 40
+    Invincible: true
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 float
+  AITargetSelectors:
+  - 0 clear
+  Skills:
+  - model{mid=spirit_horse;n=false;drive=true;mount=true;step=1} @self ~onSpawn
+  - effect:particles{particle=redstone;color=#33ffdd;amount=15;hS=0.6;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:2
+  - effect:particles{particle=redstone;color=#cff0ff;amount=15;hS=0.6;vS=0.1;y=0.1;speed=0;forwardOffset=0;sideOffset=0} @self ~onTimer:2
+  - effect:sound{s=entity.horse.gallop;volume=1;pitch=1} @self ~onTimer:15
+  - mountmodel{mode=Walking;delay=4} @Owner ~onSpawn
+  - lunge{velocity=0.5;velocityY=-1} @forward{f=5;y=-2} ~onTimer:1
+  - skill{s=Spirit_Charge_NOMOUNT;delay=5} ~onTimer:1
+  - remove{delay=80} @self ~onSpawn
+  #- mountmodel{driver=true;mode=Walking;pbone=mount;delay=1} @Owner ~onSpawn
+  
+# Summon Phoenix #
+
+Summon_Phoenix:
+  Type: ARMOR_STAND
+  Options:
+    Marker: true
+    Small: false
+    HasArms: false
+    Interactable: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=phoenix;n=false} @self ~onSpawn
+  - effect:particles{particle=crimson_spore;amount=20;hS=0.8;vS=0.3;y=0.2;speed=0.01;forwardOffset=0;sideOffset=0} @ModelPart{p=body} ~onTimer:5
+  - effect:particles{particle=lava;amount=10;hS=0.8;vS=0.2;y=0;speed=0.01;forwardOffset=0;sideOffset=0;delay=25} @ModelPart{p=body} ~onTimer:5
+  - effect:particles{particle=flame;amount=10;hS=0.8;vS=0.2;y=0;speed=0.05;forwardOffset=0;sideOffset=0;delay=25} @ModelPart{p=body} ~onTimer:5
+  - effect:sound{s=summoner_sounds:samus.phoenix_fire;volume=1;pitch=1} @self ~onTimer:20
+  - remove{delay=53} @self ~onSpawn

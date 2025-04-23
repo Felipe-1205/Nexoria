@@ -1,0 +1,34 @@
+id: a759aa06-8bf8-35f8-8bf0-060a0cbb197c
+name: Bsod2000
+created: 1739652170158
+updated: 1739933838790
+last_cast: 0
+cooldown_expiration: 0
+last_death_location: ''
+fall_protection_count: 0
+fall_protection: 0
+brush:
+  map_id: -1
+  material: dirt
+  data: 0
+  schematic: ''
+  scale: 1.0
+  erase: true
+undo:
+  da277ce7-6011-4a85-ad18-7f0d1c920927: []
+spells: {}
+open_wand: false
+gave_welcome_wand: false
+resource_pack_preference: default
+data: {}
+properties:
+  version: 7
+classes:
+  caster: {}
+  mage:
+    effect_color: 78d0dc8715a9,b87066396f37,22f32fd8d732
+    mana_timestamp: 1739933838609
+    mana: 50.0
+transient_modifiers: {}
+active_class: mage
+health: 21.6299991607666

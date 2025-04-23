@@ -1,0 +1,223 @@
+﻿
+#########################################################
+## Developed by Little Room, patreon.com/littleroomdev ##
+#########################################################
+
+
+bulbsprigPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulb;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Sprig"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+bulbcactiPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulbcacti;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Cacti"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+bulbsunflowerPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulb_sunflower;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Sunflower"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+bulbfungiPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulbfungi;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Fungi"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+bulbshroomPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulbshroom;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Shroom"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+    
+bulbwitherPET:
+  Type: wolf
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  Faction: Mascotas
+  AITargetSelectors:
+  - 0 clear
+  - 1 ownertarget
+  - 2 ownerattacker
+  - specificfactionmonsters Mounstros
+  - specificfactionmonsters Animales
+  Drops: []
+  Equipment: []
+  Skills:
+   - model{mid=bulbwitherrose;n=false} @self ~onSpawn
+   - skill{s=bulbPETPET} @self ~onInteract
+   - skill{s=bulbPETSPAWN} @self ~onSpawn
+  Display: "§bBulb Wither Rose"
+  Health: 100
+  Damage: 4
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 50
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.18
+    MaxCombatDistance: 5
+    AttackSpeed: 3.4
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+    PreventLeashing: true
+    Collidable: false
+
+

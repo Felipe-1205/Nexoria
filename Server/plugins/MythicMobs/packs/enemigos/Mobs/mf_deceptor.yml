@@ -1,0 +1,188 @@
+mf_deceptor_spawner:
+  Type: ARMOR_STAND
+  Display: '&6'
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Invisible: true
+    Despawn: true
+  Skills:
+  - effect:spin{duration=1;velocity=-45} @self ~onSpawn
+  - model{mid=mf_deceptor_spawner;usestatemachine=true} @self ~onSpawn
+  - bodyclamp{m=mf_deceptor_spawner;mb=0;mh=0} @self ~onSpawn
+  - skill{s=mf_deceptor_spawner} @self ~onInteract
+
+mf_deceptor:
+  Type: husk
+  Display: '&6Mentirosa'
+  Health: 600
+  Damage: 20 
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Modules:
+    ThreatTable: true
+  Options:
+    NoAI: true
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 200
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.36
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+  BossBar:
+    Enabled: true
+    Title: '&6Mentirosa'
+    Range: 40
+    Color: RED
+    Style: SEGMENTED_10
+  Skills:
+  - gcd{ticks=145} @self ~onSpawn
+  - setAI{ai=true;delay=137} @self ~onSpawn
+  - HitboxConfig{modelid=mf_deceptor;partid=hitbox;pass=0} @self ~onSpawn
+  - model{mid=mf_deceptor;usestatemachine=true;scale=1} @self ~onSpawn
+  - bodyclamp{m=mf_deceptor;c=0;mh=0;rdu=10;rde=0} @self ~onSpawn
+  - CancelEvent{sync=true} @self ~onAttack
+  - skill{s=mf_deceptor_shoot_vfxsummon} @PIR{r=100} ~onTimer:5 # summon shoot vfx when player got shoot
+  - randomskill{s=mf_deceptor_bite,mf_deceptor_leg_attack,mf_deceptor_web,mf_deceptor_shoot,mf_deceptor_egg} @target ~onTimer:20
+  - sound{s=entity.wither.hurt;p=2.5;v=1.3} @self ~onDeath
+  - sound{s=entity.spider.death;p=1.5;v=3.3} @self ~onDeath
+  - remove @EIR{r=300;t=mf_deceptor_minion} ~onDeath
+  - remove @EIR{r=300;t=mf_deceptor_egg} ~onDeath
+  Drops:
+  - mmoitems{type=ornament;id=TALISMANTARANTULA} 1 0.02
+  - mmoitems{type=material;id=MONEDA_2} 1-2 0.25
+  - mmoitems{type=consumable;id=PERGAMINOXP_3} 1 0.05
+  - GemasBosses
+  
+  
+
+mf_deceptor_minion:
+  Type: husk
+  Display: '&6Spider'
+  Health: 2
+  Damage: 2  # adjust minion dmg here
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  Modules:
+    ThreatTable: true
+  Options:
+    AlwaysShowName: false
+    PreventOtherDrops: true
+    Silent: true
+    FollowRange: 200
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.26
+    KnockbackResistance: 0.4
+    PreventJockeyMounts: true
+    Collidable: false
+    NoAI: false
+  Skills:
+  - model{mid=mf_deceptor_minion;usestatemachine=true} @self ~onSpawn
+  - bodyclamp{m=mf_deceptor_minion;c=0;mh=0;rdu=10;rde=0} @self ~onSpawn
+  - sound{s=entity.spider.hurt;p=1.8;v=1.5} @self ~onDamaged
+  - sound{s=entity.spider.death;p=1.8;v=1.5} @self ~onDeath
+  - CancelEvent{sync=true} @self ~onAttack
+  - skill{s=mf_deceptor_minion_attack} @target ~onAttack
+  Drops:
+  - mmoitems{type=material;id=MONEDA_1} 1-2 0.10
+  - MobsComunes
+
+mf_deceptor_egg:
+  Type: Husk
+  Display: '&6spider egg'
+  Health: 1000                       # healh for normal attack
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    ApplyInvisibility: true
+    Invisible: true
+    Collidable: false
+    Silent: true
+    PreventOtherDrops: true
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    KnockbackResistance: 1
+    PreventJockeyMounts: true
+  Skills:
+  - gcd{ticks=20} @self ~onSpawn
+  - HitboxConfig{modelid=mf_deceptor_egg;partid=hitbox;pass=0.3} @self ~onSpawn # normal attack only deal 30% dmg
+  - model{mid=mf_deceptor_egg} @self ~onSpawn
+  - skill{s=mf_deceptor_egg_poison} @self ~onDamaged
+  - skill{s=mf_deceptor_egg_fire} @self ~onInteract
+  - skill{s=mf_deceptor_egg_fire_a1} @self ~onInteract
+  - skill{s=mf_deceptor_egg_fire_a2} @self ~onInteract
+  - skill{s=mf_deceptor_egg_fire_a3} @self ~onInteract
+  - skill{s=mf_deceptor_egg_summon} @self ~onTimer:20
+  
+mf_deceptor_shoot_vfx:
+  Type: ARMOR_STAND
+  Display: '&6'
+  AITargetSelectors:
+    - 0 clear
+    - 1 players
+    - specificfaction Mascotas
+    - specificfaction Animales
+  Faction: Mounstros
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Marker: true
+    ApplyInvisibility: true
+    Invisible: true
+  Skills:
+  - model{mid=mf_deceptor_shoot_vfx;usestatemachine=true} @self ~onSpawn
+  - bodyclamp{m=mf_deceptor_shoot_vfx;c=0;mh=0;rdu=0;rde=0} @self ~onSpawn
+  - remove{delay=160} @self ~onSpawn
+  - stun{d=20;f=true} @NearestPlayer{r=1.5;limit=1} ~onTimer:10
+  - skill{s=mf_deceptor_shoot_vfx_fire} @self ~onInteract
+  - Aura{auraName=mf_deceptor_cantpull;duration=40;i=5} @NearestPlayer{r=1.5;limit=1} ~onTimer:10
+  
+  
+  
+  
+mf_deceptor_egg_fire:
+  Display: ''
+  Type: ARMOR_STAND
+  Disguise: HORSE setInvisible setBurning
+  Options:
+    Collidable: false
+    Invisible: true
+    Marker: true
+    ApplyInvisibility: true
+  Skills:
+  - remove{delay=10} @self ~onSpawn

@@ -1,0 +1,54 @@
+inventory:
+  '13':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Monitor Defectuoso","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Artefacto","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":"Te permite usar el /craftear.","italic":false,"color":"gray"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/4VR0UrDMBS9KGKdCCoTffChRNiTTIaIsLfSxi2ytqMpQimldCVlxbpKmiky9j199hfqj5lu0G0g+HJI7jnJvefcFoACF6ZpExebNDQ8SzOJHo5sB8PUR1WZVGVclQ8aFyyJYpGj27q4xqp8dJn6zvhbKpg6LyKusky9i3mUCBbx7q72XpV6K/1gWV+eJlWZuQQ7ag8FCpw3E9QYut4Yw5Gm65hS2/EUON3liQGHuqM9udhW4KTh5OwY2p2Jmc9SkXPVYAmLxTwvcgWuG9XA0SwXG+EYOyahlNgWhSsfsaJgM5FGWdH9zPnrhM3iKQr2od08dPALqeV1e4B9Bc4aClv6UP5KYc+Xbi43eRI6Hmme7LaydNzZBKlAa0hdx1tP/bxAVEQC9VF9lZHZAyotfKG+v0A7BsOf70JwKfzLJ1oGy+1E6oThoMbednm13hsfdf7ZXwC/kgu7iiACAAA=
+  '14':
+    ==: org.bukkit.inventory.ItemStack
+    v: 3839
+    type: HEART_OF_THE_SEA
+    meta:
+      ==: ItemMeta
+      meta-type: UNSPECIFIC
+      display-name: '{"text":"","extra":[{"text":"Anillo Protector","italic":false,"color":"aqua"}]}'
+      lore:
+      - '{"text":"","extra":[{"text":"Accesorio","italic":false,"color":"dark_purple"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Poder de Bloqueo: ","italic":false,"color":"gray"},{"text":"+5%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"■
+        Probabilidad de Bloqueo: ","italic":false,"color":"gray"},{"text":"+5%","italic":false,"color":"white"}]}'
+      - '{"text":"","extra":[{"text":"","obfuscated":false,"italic":false,"underlined":false,"strikethrough":false,"color":"white","bold":false}]}'
+      - '{"text":"","extra":[{"text":" ","italic":false,"color":"dark_aqua"},{"text":"Nivel:
+        ","italic":false,"color":"gray"},{"text":"TIER 1","italic":false,"color":"aqua","bold":true}]}'
+      attribute-modifiers:
+        minecraft:generic.attack_speed:
+        - ==: org.bukkit.attribute.AttributeModifier
+          amount: 0.0
+          name: mmoitems:decoy
+          uuid: 5c0c3fc8-796d-3bd0-8b79-245f4b1cdd53
+          operation: 0
+      ItemFlags:
+      - HIDE_ATTRIBUTES
+      custom: H4sIAAAAAAAA/3VQTUvDQBAdBEusCloqXsOCveilShF6Mk2WNthkw+6ChFJC81EIBBfTKEjp3/DixVvO/oX4T/wlbgykrcU9PNh5b968mSaAAi3LIibHFvNK9LjrYDjQdB0zRqjbgHbND8ZEv/cc8oDpXRt+nwIn2+2mAUcOJRzrnFDMrhtw9qefaty0h2uD45q3NQtDq+Nrj3GSCNVJRRYFmUgVOK012NZHms0Z7E2mCpzXdcNkzlhzsVEtcNjpaUEQLUQaCwWaI8apW/mPlohlswz1UflFV4gMmZzxivqTJdqK4n19LrJUCncTodV0tZmcm5jCfoldZWNhw5U+pu6N5SngfYKKfF7kQZGvs8n5slhhkd+oRX77/fahOiKMUjWM1EEinp4j0ZfE/LJ3sStMhT/z4yQOZ+G/+q0uO36JkpL3izwpE6tdNIUfMqT2tAoCAAA=

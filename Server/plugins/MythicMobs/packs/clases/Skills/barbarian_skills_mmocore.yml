@@ -1,0 +1,338 @@
+
+
+Bloodlust:
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Bloodlust_aura;duration=20} @self
+
+  
+Rageblade:
+  Cooldown: 0.2
+  Conditions:
+  - crouching false
+  Skills:
+  - skill{s=Rageblade_NORMAL}
+  - skill{s=Rageblade_B}
+  
+Rageblade_NORMAL:
+  Conditions:
+  - hasaura{n=ATTACK_CD} false
+  - hasaura{n=Eternal_Fury_BUFF} false
+  Skills:
+  - randomskill{skills=Rageblade_1,Rageblade_2,Rageblade_3}
+
+Rageblade_1:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_2:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_3:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_DAMAGE_D:
+  Skills:
+  - skill{s=Rageblade_DAMAGE} @EntitiesNearOrigin{r=2.5}
+  
+Rageblade_DAMAGE:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Rageblade_BLOODLUST
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Rageblade_BLEED} 0.1
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  - summon{type=Rageblade_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+
+Rageblade_BLOODLUST:
+  Skills:
+  - healpercent{m=0.05} @self 0.2
+  
+Rageblade_BLEED:
+  Skills:
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=2;repeati=20;delay=1}
+  - effect:particles{particle=drip_lava;amount=7;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0;repeat=2;repeati=20;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+  
+  
+  
+  
+  
+Rageblade_B:
+  Conditions:
+  - hasaura{n=ATTACK_CD} false
+  - hasaura{n=Eternal_Fury_BUFF} true
+  Skills:
+  - randomskill{skills=Rageblade_1_B,Rageblade_2_B,Rageblade_3_B}
+
+Rageblade_1_B:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D_B;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_1_B;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_2_B:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D_B;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_2_B;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_3_B:
+  Cooldown: 0.5
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.axe_slash;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Rageblade_DAMAGE_D_B;hnp=true;hp=true;hR=3;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Rageblade_3_B;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.2;sideOffset=0;lockpitch=true}
+
+Rageblade_DAMAGE_D_B:
+  Skills:
+  - skill{s=Rageblade_DAMAGE_B} @EntitiesNearOrigin{r=4}
+  
+Rageblade_DAMAGE_B:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Rageblade_BLOODLUST_B
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage> * 2";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Rageblade_BLEED_B} 0.1
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  - summon{type=Rageblade_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+
+Rageblade_BLOODLUST_B:
+  Skills:
+  - healpercent{m=0.05} @self 0.5
+  
+Rageblade_BLEED_B:
+  Skills:
+  - damage{a="<modifier.damage> * 0.4";pkb=true;hnp=true;hp=true;repeat=4;repeati=20;delay=1}
+  - effect:particles{particle=drip_lava;amount=7;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeati=20;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+  
+Primal_Axe:
+  Cooldown: 9999
+  Conditions:
+  - crouching false
+  Skills:
+  - effect:sound{s=item.trident.throw;volume=0.8;pitch=0.6} @self
+  - projectile{bulletType=MOB;mob=Primal_Axe_PRO;onHit=Primal_Axe_HIT_D;onEnd=Primal_Axe_END;v=17;i=1;hR=1;vR=1;mr=40;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;sfo=1.5;syo=1.5;tyo=1.5;g=1} @Forward{f=15;y=0}
+
+Primal_Axe_HIT_D:
+  Skills:
+  - skill{s=Primal_Axe_HIT} @EntitiesNearOrigin{r=3}
+  
+Primal_Axe_HIT:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Primal_Axe_BLOODLUST
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  - hasaura{n=Axe_aura} false
+  Skills:
+  - damage{a="<modifier.damage>"}
+  - summon{type=Rageblade_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+  - effect:sound{s=entity.player.hurt;volume=0.7;pitch=0.7} @self
+  - Aura{auraName=Axe_aura;duration=20}
+  
+Primal_Axe_BLOODLUST:
+  Skills:
+  - healpercent{m=0.05} @self 0.2
+  
+Primal_Axe_END:
+  Skills:
+  - summon{type=Primal_Axe_PINNED;amount=1;radius=0;yRadius=0;onSurface=false} @origin
+  - effect:sound{s=entity.blaze.hurt;volume=0.8;pitch=0.6} @self
+  - setSkillCooldown{skill=Primal_Axe;seconds=3} @self
+
+Primal_Axe_CHECKOWNER:
+  TargetConditions:
+  - owner{} true
+  Skills:
+  - SudoSkill{s=Primal_Axe_SC;setcasterastrigger=true}
+  - effect:particles{particle=crit;amount=6;hS=0.35;vS=0.35;y=0.3;speed=0;forwardOffset=0;sideOffset=0} @self
+  - remove{delay=1} @self
+  
+Primal_Axe_SC:
+  Skills:
+  - setSkillCooldown{skill=Primal_Axe;seconds=0} @self
+  - effect:sound{s=item.armor.equip_chain;volume=0.8;pitch=0.8} @self
+  
+
+War_Cry:
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.war_cry;volume=1;pitch=1} @self
+  - summon{type=War_Cry_Spread;amount=1;radius=0;yRadius=0;onSurface=true;repeat=1;repeati=5;delay=5} @self
+  - delay 15
+  - Aura{auraName=War_Cry_BUFF;duration="<modifier.duration> * 20"} @self
+  - skill{s=War_Cry_DAMAGE_D} @EIR{r=15;ignore=players}
+  - skill{s=War_Cry_DAMAGE_D_P} @PIR{r=15}
+  - potion{type=DAMAGE_RESISTANCE;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - potion{type=INCREASE_DAMAGE;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - orbital{bulletType=MOB;mob=War_Cry;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.45;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+War_Cry_DAMAGE_D:
+  Skills:
+  - skill{s=War_Cry_DAMAGE}
+  
+War_Cry_DAMAGE:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - SudoSkill{s=War_Cry_LOOK;setcasterastrigger=true;repeat=80;repeati=1}
+  - potion{type=SLOW;duration=80;level=0;hasParticles=false}
+  - orbital{bulletType=MOB;mob=War_Cry_Taunt;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=80;oy=1.45;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+  
+War_Cry_LOOK:
+  Skills:
+  - goto{speedModifier=1;sh=0;sv=0} @trigger
+  
+  
+  
+  
+War_Cry_DAMAGE_D_P:
+  Skills:
+  - skill{s=War_Cry_DAMAGE_P}
+  
+War_Cry_DAMAGE_P:
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - pull{velocity=1.5;repeat=80;repeati=1}
+  - potion{type=SLOW;duration=80;level=0;hasParticles=false}
+  - orbital{bulletType=MOB;mob=War_Cry_Taunt;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration=80;oy=1.45;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0}
+
+  
+  
+Relentless_Leap:
+  Conditions:
+  - onground true
+  Skills:
+  - effect:sound{s=entity.ender_dragon.flap;volume=0.8;pitch=0.5} @self
+  - lunge{velocity=1.5;velocityY=0.6} @forward{f=5;y=3;lockpitch=true}
+  - effect:particles{particle=lava;amount=15;hS=0.4;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0} @self
+  - delay 10
+  - lunge{velocity=1.5;velocityY=-0.6} @forward{f=5;y=-3;lockpitch=true}
+  - effect:sound{s=babarian_sounds:samus.leap_smash;volume=0.7;pitch=1;delay=3} @self
+  - delay 6
+  - projectile{onEnd=Relentless_Leap_SUM;v=17;i=1;hR=1;vR=1;mr=1;hnp=false;hO=0;sE=false;sB=true;hs=false;hfs=0} @Forward{f=0;y=0}
+  - totem{md=2;c=1;oH=Relentless_Leap_DAMAGE_D;hnp=true;hp=true;hR=4;vR=2;i=1} @forward{f=4;lockpitch=true}
+
+Relentless_Leap_SUM:
+  Skills:
+  - summon{type=Cone_Rupture1;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Cone_Rupture2;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Cone_Rupture3;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Relentless_Leap_DAMAGE_D:
+  Skills:
+  - skill{s=Relentless_Leap_DAMAGE} @EntitiesNearOrigin{r=5}
+  
+Relentless_Leap_DAMAGE:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Relentless_Leap_BLOODLUST
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  - pull{velocity=7;toOrigin=true;repeat=5;repeati=1}
+
+Relentless_Leap_BLOODLUST:
+  Skills:
+  - healpercent{m=0.05} @self 0.2
+
+  
+
+Double_Edge:
+  Conditions:
+  - health{h=<6} false
+  Skills:
+  - heal{a="-<modifier.damage>"} @self
+  - heal{a="-<modifier.damage> * 0.2";repeat=4;repeati=20;delay=1} @self
+  - effect:particles{particle=drip_lava;amount=7;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeati=20;delay=1} @self
+  - lunge{velocity=1.2;velocityY=-0.1} @forward{f=5;y=-1;lockpitch=true}
+  - summon{type=Rageblade_Impact;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:sound{s=babarian_sounds:samus.axe_spin;volume=1;pitch=1} @self
+  - summon{type=Double_Edge;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2;y=0.2;sideOffset=0;lockpitch=true}
+  - totem{md=2;c=1;oH=Double_Edge_DAMAGE_D;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  
+Double_Edge_DAMAGE_D:
+  Skills:
+  - skill{s=Double_Edge_DAMAGE} @EntitiesNearOrigin{r=8}
+  
+Double_Edge_DAMAGE:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Double_Edge_BLOODLUST
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Double_Edge_BLEED}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  - summon{type=Rageblade_Impact;amount=1;radius=0;yRadius=0;onSurface=true}
+
+Double_Edge_BLOODLUST:
+  Skills:
+  - healpercent{m=0.05} @self 0.2
+  
+Double_Edge_BLEED:
+  Skills:
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=4;repeati=20;delay=1}
+  - effect:particles{particle=drip_lava;amount=7;hS=0.3;vS=0.3;y=0.7;speed=0;forwardOffset=0;sideOffset=0;repeat=4;repeati=20;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+
+Eternal_Fury:
+  Skills:
+  - effect:sound{s=babarian_sounds:samus.eternal_fury;volume=1;pitch=1} @self
+  
+  - delay 10
+  
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=1;amount=10} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=2;amount=20;delay=1} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=5;amount=40;delay=2} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=6;amount=60;delay=3} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=7;amount=80;delay=4} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=8;amount=100;delay=5} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=9;amount=150;delay=6} @self
+  - effect:particlesphere{particle=redstone;color=#731f17;radius=10;amount=200;delay=7} @self
+  - skill{s=Eternal_Fury_DAMAGE;delay=4} @EIR{r=10}
+  
+  - effect:sound{s=babarian_sounds:samus.eternal_fury_aura;volume=1;pitch=1;repeat="<modifier.duration>";repeati=20} @self
+  - Aura{auraName=Eternal_Fury_BUFF;duration="<modifier.duration> * 20"} @self
+  - potion{type=DAMAGE_RESISTANCE;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - potion{type=REGENERATION;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - potion{type=SPEED;duration="<modifier.duration> * 20";level=2;hasParticles=false} @self
+  - orbital{bulletType=MOB;mob=Eternal_Fury;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.45;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  
+Eternal_Fury_DAMAGE:
+  Conditions:
+  - hasaura{n=Bloodlust_aura} cast Double_Edge_BLOODLUST
+  TargetConditions:
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true}
+  - throw{velocity=15;velocityY=5}

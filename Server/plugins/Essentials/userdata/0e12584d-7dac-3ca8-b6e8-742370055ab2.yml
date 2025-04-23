@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 181.226.181.212
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1739924312849
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1739931204644
+  login: 1739924142115
+money: '0'
+last-account-name: DESTRUCTOR365
+lastlocation:
+  world: 8bbe10e3-1fd9-49b5-aed7-b294347cb72b
+  world-name: principal
+  x: -889.6639999747276
+  y: 75.0
+  z: 1425.9063268239267
+  yaw: -53.399566650390625
+  pitch: 7.200011730194092
+nickname: Deztru
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: 675.8623355438815
+  y: 178.0
+  z: 147.00226503251244
+  yaw: -77.43997192382812
+  pitch: 26.400033950805664

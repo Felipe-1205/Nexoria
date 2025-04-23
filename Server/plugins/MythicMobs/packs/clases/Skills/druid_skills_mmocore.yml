@@ -1,0 +1,201 @@
+######## created by samus2002 #########
+
+# Healing Wisps #
+
+Healing_Wisps:
+  Cooldown: 0
+  Conditions:
+  - health{h=<19} true
+  Skills:
+  - summon{type=Healing_Wisps;amount=1;radius=5;yRadius=0;onSurface=true} @Ring{radius=10;points=1}
+  - skill{s=Healing_Wisps_HealSKILL;repeat=20;repeatinterval=10}
+  
+Healing_Wisps_HealSKILL:
+  Conditions:
+  - health{h=<19} true
+  - mobsInRadius{types=Healing_Wisps;amount=1;radius=2}
+  Skills:
+  - heal{a="<modifier.heal>"} @self
+  - effect:particles{particle=glow;amount=15;hS=0.3;vS=0.7;y=1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:sound{s=druid_sounds:samus.healing_wisp_heal;volume=1;pitch=1} @self
+  - skill{s=Healing_Wisps_REMOVE} @MIR{r=2;t=Healing_Wisps;target=armorstands}
+  
+Healing_Wisps_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay=5}
+  
+# Poison Thorns #
+
+Poison_Thorns:
+  Conditions:
+  - hasaurastacks{auraName=Vine_Wave_aura} castinstead Hurricane
+  Skills:
+  - projectile{onTick=Poison_Thorn_TICK;v=15;i=2;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  
+Poison_Thorn_TICK:
+  Skills:
+  - summon{type=Poison_Thorns;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true} @EntitiesNearOrigin{r=2}
+  - damage{a="<modifier.damage> * 0.2";pkb=true;hnp=true;hp=true;repeat=2;repeatinterval=20} @EntitiesNearOrigin{r=2}
+  - potion{type=SLOW;duration=60;level=1;hasParticles=false} @EntitiesNearOrigin{r=2}
+  - effect:sound{s=druid_sounds:samus.thorns;volume=1;pitch=1} @origin
+
+  
+# Vine Wave #
+
+Vine_Wave:
+  Skills:
+  - projectile{onTick=Vine_Wave_TICK;v=15;i=3;hR=1;vR=1;mr=12;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20}
+  - Aura{auraName=Vine_Wave_aura;interval=1;duration=20} @self
+
+Vine_Wave_TICK:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - summon{type=Vine_Wave;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - skill{s=Vine_Wave_DAMAGE} @EntitiesNearOrigin{r=3}
+  - effect:sound{s=druid_sounds:samus.vine_wave;volume=1;pitch=1} @origin
+  
+Vine_Wave_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - Aura{auraName=Vine_Wave_Stun;interval=1;duration=80}
+  - skill{s=Vine_Wave_SUDO}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=15}
+  - potion{type=SLOW;duration=80;level=50;hasParticles=false;delay=15}
+  
+Vine_Wave_SUDO:
+  Skills:
+  - SudoSkill{s=Vine_Wave_SUMMON;setcasterastrigger=true;delay=15}
+  
+Vine_Wave_SUMMON:
+  Cooldown: 1
+  Skills:
+  - summon{type=Vine_Entangle;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  
+# Bear Form #
+  
+Bear_Form:
+  Skills:
+  - effect:particles{particle=crimson_spore;amount=40;hS=1;vS=1;y=1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=crimson_spore;amount=20;hS=0.5;vS=0.7;y=0.7;speed=0;forwardOffset=0;sideOffset=0;delay=45} @self
+  - effect:sound{s=druid_sounds:samus.form_change;volume=1;pitch=1} @self
+  - potion{type=SLOW;duration=45;level=50;hasParticles=false} @self
+  - hidefromplayers{d=45} @PIR{r=100}
+  - potion{type=INVISIBILITY;duration=45;level=50;hasParticles=false} @self
+  - summon{type=Bear_Form;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:sound{s=druid_sounds:samus.bear_roar;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=druid_sounds:samus.ground_smash;volume=1;pitch=1;delay=17} @self
+  - delay 26
+  - damage{a="<modifier.damage>";pkb=false;hnp=false;hp=true} @EIR{r=5}
+  - throw{velocity=7;velocityY=7;delay=2} @EIR{r=5}
+  - summon{type=Crack;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.1}
+  - effect:particles{particle=block_crack;m=STONE;amount=70;hS=1.7;vS=0.2;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=block_crack;m=GRASS_BLOCK;amount=70;hS=1.7;vS=0.2;y=0.2;speed=0;forwardOffset=0;sideOffset=0} @self
+
+# Hawk Form #
+
+Hawk_Form:
+  Skills:
+  - effect:particles{particle=crimson_spore;amount=20;hS=0.7;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=crimson_spore;amount=20;hS=0.5;vS=0.7;y=0.7;speed=0;forwardOffset=0;sideOffset=0;delay="<modifier.duration> * 20"} @self
+  - onDamaged{auraName=landresist;d="<modifier.duration> * 20";cE=true;damageMods="FALL 0"} @self
+  - effect:sound{s=druid_sounds:samus.form_change;volume=1;pitch=1} @self
+  - hidefromplayers{d="<modifier.duration> * 20"} @PIR{r=100}
+  - potion{type=INVISIBILITY;duration="<modifier.duration> * 20";level=50;hasParticles=false} @self
+  - potion{type=SLOW_FALLING;duration=40;level=0;hasParticles=false;delay="<modifier.duration> * 20"} @self
+  - skill{s=Hawk_Form_Fly;repeat="<modifier.duration> * 20";repeatinterval=1}
+  - orbital{bulletType=MOB;mob=Hawk_Form;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=1.5;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Hawk_Form_REMOVE} @MIR{r=4;t=Hawk_Form;target=armorstands}
+  
+Hawk_Form_REMOVE:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - remove{delay="<modifier.duration> * 20"}
+  
+Hawk_Form_Fly:
+  Conditions:
+  - pitch{p=<-15} castinstead Hawk_Form_FlyUp
+  - pitch{p=>15} castinstead Hawk_Form_FlyDown
+  - pitch{p=<-35} castinstead Hawk_Form_FlyUpMore
+  - pitch{p=>35} castinstead Hawk_Form_FlyDownMore
+  Skills:
+  - lunge{velocity=0.7} @forward
+  
+Hawk_Form_FlyUp:
+  Skills:
+  - lunge{velocity=0.7;velocityY=0.2} @forward
+  
+Hawk_Form_FlyDown:
+  Skills:
+  - lunge{velocity=0.7;velocityY=-0.2} @forward
+  
+Hawk_Form_FlyUpMore:
+  Skills:
+  - lunge{velocity=0.7;velocityY=0.4} @forward
+  
+Hawk_Form_FlyDownMore:
+  Skills:
+  - lunge{velocity=0.7;velocityY=-0.4} @forward
+  
+# Hurricane #
+
+Hurricane:
+  Cooldown: "<modifier.cooldown> * 3"
+  Skills:
+  - projectile{bulletType=MOB;mob=Hurricane;v=2;i=1;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=false;sB=true;hs=true;hfs=1.6;syo=1.5;tyo=1.5} @Forward{f=20}
+  - projectile{onTick=Hurricane_HIT;v=2;i=20;hR=1;vR=1;mr=15;hnp=true;hO=0;sE=false;sB=true;hs=true;hfs=1.6;syo=1.5;tyo=1.5} @Forward{f=20}
+  
+Hurricane_HIT:
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true} @EntitiesNearOrigin{r=5}
+  
+Hurricane_PULL:
+  TargetConditions:
+  - owner{} false
+  - hasaurastacks{auraName=Vine_Wave_Stun} false
+  Skills:
+  - pull{velocity=4}
+
+# Wolf Form #
+
+Wolf_Form:
+  Skills:
+  - effect:particles{particle=crimson_spore;amount=40;hS=1;vS=0.5;y=0.6;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=crimson_spore;amount=20;hS=0.5;vS=0.7;y=0.7;speed=0;forwardOffset=0;sideOffset=0;delay=58} @self
+  - effect:sound{s=druid_sounds:samus.form_change;volume=1;pitch=1} @self
+  - potion{type=SLOW;duration=58;level=50;hasParticles=false} @self
+  - hidefromplayers{d=58} @PIR{r=100}
+  - potion{type=INVISIBILITY;duration=58;level=50;hasParticles=false} @self
+  - summon{type=Wolf_Form;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:sound{s=druid_sounds:samus.wolf_roar1;volume=1;pitch=1;delay=5} @self
+  - effect:sound{s=druid_sounds:samus.wolf_roar2;volume=1;pitch=1;delay=17} @self
+  - delay 15
+  - effect:sound{s=druid_sounds:samus.wolf_scratch;volume=3;pitch=1} @self
+  - totem{md=2;c=1;oH=Wolf_Form_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Wolf_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.1;sideOffset=0}
+  - delay 11
+  - effect:sound{s=druid_sounds:samus.wolf_scratch;volume=3;pitch=1} @self
+  - totem{md=2;c=1;oH=Wolf_Form_DAMAGE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Wolf_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7.5;y=-0.1;sideOffset=0.1}
+  - delay 12
+  - effect:sound{s=druid_sounds:samus.wolf_scratch;volume=3;pitch=1.2} @self
+  - totem{md=2;c=1;oH=Wolf_Form_DAMAGE_DOUBLE;hnp=true;hp=true;hR=2;vR=1;i=1} @forward{f=3}
+  - summon{type=Wolf_Slash_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=7.5;y=-0.1;sideOffset=0.1}
+  - summon{type=Wolf_Slash_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=1;y=0.1;sideOffset=0}
+  
+Wolf_Form_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - consume{d="<modifier.damage>";h="<modifier.heal>"}
+  
+Wolf_Form_DAMAGE_DOUBLE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  Skills:
+  - consume{d="<modifier.damage> * 2";h="<modifier.heal> * 2"}

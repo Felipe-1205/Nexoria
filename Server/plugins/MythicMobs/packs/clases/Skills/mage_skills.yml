@@ -1,0 +1,342 @@
+######## created by samus2002 #########
+
+# Arcane Missile #
+  
+Arcane_Missile:
+  Conditions:
+  - hasaurastacks{n=Arcane_Missile_Aura;s=5} cast Arcane_Missile_Missile
+  Skills:
+  - Aura{auraName=Arcane_Missile_BUFF;duration=40} @self
+  
+Arcane_Missile_Missile:
+  Cooldown: 1
+  Skills:
+  #- effect:sound{s=mage_sounds:samus.arcane_missile;volume=0.15;pitch=1;repeat=1;repeatinterval=2} @self
+  - skill{s=Arcane_Missile_Missiles1;delay=0} @EIR{r=20;limit=1;sort=RANDOM}
+  - skill{s=Arcane_Missile_Missiles2;delay=8} @EIR{r=20;limit=1;sort=RANDOM}
+  - skill{s=Arcane_Missile_Missiles3;delay=16} @EIR{r=20;limit=1;sort=RANDOM}
+  - auraremove{aura=Arcane_Missile_Aura} @self
+  
+Arcane_Missile_Missiles1:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - missile{bulletType=MOB;mob=Arcane_Missile;onEnd=Arcane_Missile_END;onHit=Arcane_Missile_HIT;in=15;v=8;i=1;hR=1;vR=1;md=100;mr=30;hnp=true;vO=0.3;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5}
+  
+Arcane_Missile_Missiles2:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - missile{bulletType=MOB;mob=Arcane_Missile2;onEnd=Arcane_Missile_END;onHit=Arcane_Missile_HIT;in=15;v=8;i=1;hR=1;vR=1;md=100;mr=30;hnp=true;hO=80;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5}
+  
+Arcane_Missile_Missiles3:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - missile{bulletType=MOB;mob=Arcane_Missile3;onEnd=Arcane_Missile_END;onHit=Arcane_Missile_HIT;in=15;v=8;i=1;hR=1;vR=1;md=100;mr=30;hnp=true;hO=-80;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5}
+  
+Arcane_Missile_HIT:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  - effect:sound{s=mage_sounds:samus.frost_nova_break;volume=0.15;pitch=1.2} @self
+  
+Arcane_Missile_END:
+  Skills:
+  - skill{s=Arcane_Missile_HIT_FX} @origin
+  
+Arcane_Missile_HIT_FX:
+  Skills:
+  - effect:particlesphere{particle=redstone;color=#73f8ff;radius=0.1;amount=5} @origin
+  - effect:particlesphere{particle=redstone;color=#73f8ff;radius=0.4;amount=10;delay=1} @origin
+  - effect:particlesphere{particle=redstone;color=#73f8ff;radius=0.8;amount=15;delay=2} @origin
+  - effect:particlesphere{particle=redstone;color=#73f8ff;radius=1.2;amount=20;delay=3} @origin
+  
+# Fireball #
+
+Fireball:
+  Conditions:
+  - crouching false
+  - hasaurastacks{auraName=Blink_aura} castinstead Quake
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - effect:sound{s=mage_sounds:samus.fireball;volume=0.5;pitch=1} @self
+  - delay 5
+  - projectile{bulletType=MOB;mob=Fireball_ball;onEnd=Fireball_END;onHit=Fireball_HIT;v=22;i=1;hR=1;vR=1;mr=30;hnp=true;hO=0;sE=true;sB=true;hs=false;hfs=0;syo=1.5;tyo=1.5} @Forward{f=20;y=0}
+  
+Fireball_HIT:
+  TargetConditions:
+  - owner{} false
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - ignite{ticks="20 * <modifier.duration>"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=3;limit=1;sort=NEAREST}
+  - effect:sound{s=mage_sounds:samus.fire_burn;volume=0.5;pitch=1} @self
+
+Fireball_END:
+  Skills:
+  - skill{s=Fireball_HIT_FX} @origin
+  
+Fireball_HIT_FX:
+  Skills:
+  - effect:particlesphere{particle=flame;radius=0.2;amount=5} @origin
+  - effect:particlesphere{particle=flame;radius=0.4;amount=10;delay=1} @origin
+  - effect:particlesphere{particle=flame;radius=0.6;amount=10;delay=2} @origin
+  - effect:particlesphere{particle=flame;radius=0.8;amount=15;delay=3} @origin
+  - effect:particlesphere{particle=flame;radius=1;amount=15;delay=4} @origin
+  - effect:particlesphere{particle=flame;radius=1.2;amount=20;delay=5} @origin
+
+# Blink #
+
+Blink:
+  Conditions:
+  - crouching false
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - Aura{auraName=Blink_aura;interval=1;duration=15} @self
+  - effect:sound{s=mage_sounds:samus.blink;volume=1.3;pitch=1} @self
+  - summon{type=Blink1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  - delay 1
+  - projectile{onEnd=Blink_END;v=35;i=1;hR=1;vR=1;mr=6;hnp=false;hO=0;sE=true;sB=false;hs=true;hfs=0;syo=1;tyo=1} @Forward{f=10;y=0}
+  - delay 5
+  - summon{type=Blink2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=0;y=0.1}
+  
+Blink_END:
+  Skills:
+  - teleport{spreadh=0;spreadv=0} @origin
+  
+# Frost Nova #
+
+Frost_Nova:
+  Conditions:
+  - hasaurastacks{auraName=Frost_Nova_aura} castinstead Frost_Nova_Skill
+  Skills:
+  - Aura{auraName=Frost_Nova_aura;interval=1;duration=5} @self
+  
+Frost_Nova_Skill:
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - projectile{onTick=Frost_Nova_Summon;onHit=Frost_Nova_DAMAGE;v=25;i=2;hR=1;vR=1;mr=23;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0} @Forward{f=10;y=0}
+  
+Frost_Nova_DAMAGE:
+  TargetConditions:
+  - owner{} false
+  Skills:
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=3}
+  - potion{type=SLOW;duration=60;level=2;hasParticles=false} @EntitiesNearOrigin{r=3}
+  - skill{s=Frost_Nova_60} @EntitiesNearOrigin{r=3}
+  
+Frost_Nova_Summon:
+  Skills:
+  - summon{type=Frost_Nova;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  
+Frost_Nova_60:
+  Skills:
+  - effect:particles{particle=block_crack;m=ICE;amount=15;hS=0.35;vS=0.15;y=0.1;speed=0;forwardOffset=0;sideOffset=0;repeat=11;repeatinterval=5}
+  
+# Meteor #
+
+Meteor:
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - effect:sound{s=mage_sounds:samus.meteor;volume=0.8;pitch=1} @self
+  - delay 10
+  - projectile{bulletType=MOB;bulletSpin=8;mob=Meteor;onEnd=Meteor_HIT;v=14;i=1;hR=1;vR=1;mr=50;hnp=true;hO=0;sE=false;hs=false;hfs=0;sfo=0;syo=6;tyo=2} @Forward{f=5;y=0}
+
+Meteor_Tick:
+  Skills:
+  #- effect:particles{particle=flame;amount=30;hS=0.3;vS=0.3;y=1;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=6;hS=0.25;vS=0.25;y=1;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=3;hS=0.35;vS=0.15;y=1;speed=0.01;forwardOffset=0;sideOffset=0} @origin
+
+Meteor_HIT:
+  Skills:
+  - ignite{ticks="20 * <modifier.duration>"} @EntitiesNearOrigin{r=6}
+  - damage{a="<modifier.damage>"} @EntitiesNearOrigin{r=6}
+  - effect:particles{particle=explosion_huge;amount=3;hS=0.3;vS=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=flame;amount=25;hS=2;vS=2;speed=0.2;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=10;hS=2;vS=2;speed=0;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=15;hS=0.3;vS=0.3;y=1;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=mage_sounds:samus.meteor_explosion;volume=1;pitch=1} @self
+  - summon{type=Ground_Crack;amount=1;radius=0;yRadius=0;onSurface=true} @origin{yoffset=-0.1}
+  - effect:sound{s=mage_sounds:samus.fire_burn;volume=1;pitch=1;delay=5} @origin
+  - totem{md=40;oT=Meteor_BURN_FX;oH=Meteor_BURN;hnp=true;hp=true;hR=1.5;vR=1;i=5} @origin
+  
+Meteor_BURN:
+  Skills:
+  - ignite{ticks="20 * <modifier.duration>"}
+  
+Meteor_BURN_FX:
+  Skills:
+  - effect:particles{particle=lava;amount=12;hS=1.5;vS=0.1;y=-0.7;speed=0.02;forwardOffset=0;sideOffset=0}
+  
+CRACK_REMOVE:
+  Conditions:
+  - altitude{h=>2} true
+  Skills:
+  - remove @self
+  
+# Quake #
+
+Quake:
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - jump{velocity=0.5} @self
+  #- leap{velocity=150} forward{f=0.1;y=2}
+  - delay 5
+  - jump{velocity=-0.5} @self
+  #- leap{velocity=150} forward{f=0.1;y=-2}
+  - effect:sound{s=mage_sounds:samus.quake;volume=1;pitch=1} @self
+  - delay 3
+  - summon{type=Quake;amount=1;radius=0;yRadius=0;onSurface=true} @self
+  - effect:particles{particle=block_crack;m=DIRT;amount=23;hS=1.5;vS=0.1;y=0.2;speed=0.02;forwardOffset=0;sideOffset=0} @self
+  - skill{s=Quake_STUN} @EIR{r=5}
+  
+Quake_STUN:
+  TargetConditions:
+  - mythicmobtype{t=Arcane_Missile} false
+  - mythicmobtype{t=Arcane_Missile2} false
+  - mythicmobtype{t=Arcane_Missile3} false
+  - mythicmobtype{t=Fireball_ball} false
+  - mythicmobtype{t=Blink1} false
+  - mythicmobtype{t=Blink2} false
+  - mythicmobtype{t=Frost_Nova} false
+  - mythicmobtype{t=Meteor} false
+  - mythicmobtype{t=Ground_Crack} false
+  - mythicmobtype{t=Quake} false
+  - mythicmobtype{t=Inferno_Chains1} false
+  - mythicmobtype{t=Inferno_Chains2} false
+  - mythicmobtype{t=Inferno_Chains3} false
+  - mythicmobtype{t=Inferno_Chains4} false
+  - mythicmobtype{t=Inferno_Chains_Crack} false
+  Skills:
+  - throw{velocity=0;velocityY=2}
+  - potion{type=SLOW;duration="20 * <modifier.duration>";level=50;hasParticles=false}
+  - effect:particleorbital{r=0.5;points=16;t="20 * <modifier.duration>";i=1;particle=crit;oy=2.5}
+  - damage{a="1.5 * <modifier.damage>";pkb=false;hnp=true;hp=true}
+  
+# Inferno Chains #
+
+Inferno_Chains:
+  Skills:
+  - Aura{auraName=Arcane_Missile_Aura;duration=99999;maxStacks=5} @self
+  - projectile{onEnd=Inferno_Chains_Summon;v=35;i=1;hR=1;vR=1;mr=5;hnp=true;hO=0;sE=false;hs=true;hfs=0;sfo=0} @Forward{f=5;y=0}
+
+Inferno_Chains_Summon:
+  Skills:
+  - summon{type=Inferno_Chains1;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Inferno_Chains2;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Inferno_Chains3;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Inferno_Chains4;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - summon{type=Inferno_Chains_Crack;amount=1;radius=0;yRadius=0;onSurface=true} @origin
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false;delay=9} @EntitiesNearOrigin{r=6}
+  - effect:particleorbital{r=0.5;points=16;t=40;i=1;particle=crit;oy=2.5;delay=9} @EntitiesNearOrigin{r=6}
+  - damage{a="<modifier.damage>";pkb=false;hnp=true;hp=true;delay=9} @EntitiesNearOrigin{r=6}
+  - delay 51
+  - totem{md=40;c=1;oH=Inferno_Chains_DMG;hnp=true;hp=true;hR=6;vR=6;i=1} @origin{yoffset=0}
+  - effect:particles{particle=explosion_large;amount=5;hS=2;vS=1;speed=0.5;y=0.2;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=flame;amount=30;hS=2;vS=1;speed=0.25;forwardOffset=0;y=0.2;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=35;hS=2.3;vS=1;speed=0;forwardOffset=0;y=0.2;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=10;hS=0.3;vS=0.3;y=0.2;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=mage_sounds:samus.inferno_chains_explosion;volume=1.6;y=0.2;pitch=0.8} @origin
+  - delay 5
+  - totem{md=40;c=1;oH=Inferno_Chains_DMG;hnp=true;hp=true;hR=6;vR=6;i=1} @origin{yoffset=2}
+  - effect:particles{particle=explosion_large;amount=5;hS=2;vS=1;speed=1.5;y=2;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=flame;amount=30;hS=2;vS=1;speed=0.25;y=2;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=35;hS=2.3;vS=1;speed=0;y=2;;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=10;hS=0.3;vS=0.3;y=2;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=mage_sounds:samus.inferno_chains_explosion;volume=1.6;pitch=0.8} @origin
+  - delay 5
+  - totem{md=40;c=1;oH=Inferno_Chains_DMG;hnp=true;hp=true;hR=6;vR=6;i=1} @origin{yoffset=4}
+  - effect:particles{particle=explosion_large;amount=5;hS=2;vS=1;speed=2.5;y=4;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=flame;amount=30;hS=2;vS=1;speed=0.25;y=4;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=35;hS=2.3;vS=1;speed=0;y=4;;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=10;hS=0.3;vS=0.3;y=4;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=mage_sounds:samus.inferno_chains_explosion;volume=1.6;pitch=0.8} @origin
+  - delay 5
+  - totem{md=40;c=1;oH=Inferno_Chains_DMG;hnp=true;hp=true;hR=6;vR=6;i=1} @origin{yoffset=6}
+  - effect:particles{particle=explosion_large;amount=5;hS=2;vS=1;speed=3.5;y=6;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=flame;amount=30;hS=2;vS=1;speed=0.25;y=6;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=lava;amount=35;hS=2.3;vS=1;speed=0;y=6;;forwardOffset=0;sideOffset=0} @origin
+  - effect:particles{particle=campfire_cosy_smoke;amount=10;hS=0.3;vS=0.3;y=6;speed=0.1;forwardOffset=0;sideOffset=0} @origin
+  - effect:sound{s=mage_sounds:samus.inferno_chains_explosion;volume=1.6;pitch=0.8} @origin
+  
+Inferno_Chains_DMG:
+  Skills:
+  - ignite{ticks="20 * <modifier.duration>"}
+  - damage{a="2 * <modifier.damage>"}

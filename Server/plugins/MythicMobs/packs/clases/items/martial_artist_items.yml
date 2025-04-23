@@ -1,0 +1,575 @@
+######## created by samus2002 #########
+  
+agile_strike_1:
+  Id: paper
+  Display: "&6"
+  Model: 2379
+  Hide:
+  - ATTRIBUTES
+
+agile_strike_2:
+  Id: paper
+  Display: "&6"
+  Model: 2380
+  Hide:
+  - ATTRIBUTES
+ 
+agile_strike_3:
+  Id: paper
+  Display: "&6"
+  Model: 2381
+  Hide:
+  - ATTRIBUTES
+  
+agile_strike_4:
+  Id: paper
+  Display: "&6"
+  Model: 2382
+  Hide:
+  - ATTRIBUTES
+  
+basic_strike_1:
+  Id: paper
+  Display: "&6"
+  Model: 2383
+  Hide:
+  - ATTRIBUTES
+
+basic_strike_2:
+  Id: paper
+  Display: "&6"
+  Model: 2384
+  Hide:
+  - ATTRIBUTES
+ 
+basic_strike_3:
+  Id: paper
+  Display: "&6"
+  Model: 2385
+  Hide:
+  - ATTRIBUTES
+  
+basic_strike_4:
+  Id: paper
+  Display: "&6"
+  Model: 2386
+  Hide:
+  - ATTRIBUTES
+  
+basic_strike_5:
+  Id: paper
+  Display: "&6"
+  Model: 2387
+  Hide:
+  - ATTRIBUTES
+  
+basic_strike_6:
+  Id: paper
+  Display: "&6"
+  Model: 2388
+  Hide:
+  - ATTRIBUTES
+  
+blue_basic_strike_1:
+  Id: paper
+  Display: "&6"
+  Model: 2389
+  Hide:
+  - ATTRIBUTES
+
+blue_basic_strike_2:
+  Id: paper
+  Display: "&6"
+  Model: 2390
+  Hide:
+  - ATTRIBUTES
+ 
+blue_basic_strike_3:
+  Id: paper
+  Display: "&6"
+  Model: 2391
+  Hide:
+  - ATTRIBUTES
+  
+blue_basic_strike_4:
+  Id: paper
+  Display: "&6"
+  Model: 2392
+  Hide:
+  - ATTRIBUTES
+  
+blue_basic_strike_5:
+  Id: paper
+  Display: "&6"
+  Model: 2393
+  Hide:
+  - ATTRIBUTES
+  
+blue_basic_strike_6:
+  Id: paper
+  Display: "&6"
+  Model: 2394
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_1:
+  Id: paper
+  Display: "&6"
+  Model: 2395
+  Hide:
+  - ATTRIBUTES
+
+blue_strike_2:
+  Id: paper
+  Display: "&6"
+  Model: 2396
+  Hide:
+  - ATTRIBUTES
+ 
+blue_strike_3:
+  Id: paper
+  Display: "&6"
+  Model: 2397
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_4:
+  Id: paper
+  Display: "&6"
+  Model: 2398
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_5:
+  Id: paper
+  Display: "&6"
+  Model: 2399
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_6:
+  Id: paper
+  Display: "&6"
+  Model: 2400
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2401
+  Hide:
+  - ATTRIBUTES
+
+blue_strike_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2402
+  Hide:
+  - ATTRIBUTES
+ 
+blue_strike_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2403
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2404
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2405
+  Hide:
+  - ATTRIBUTES
+  
+blue_strike_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2406
+  Hide:
+  - ATTRIBUTES
+  
+blue_uppercut_1:
+  Id: paper
+  Display: "&6"
+  Model: 2407
+  Hide:
+  - ATTRIBUTES
+
+blue_uppercut_2:
+  Id: paper
+  Display: "&6"
+  Model: 2408
+  Hide:
+  - ATTRIBUTES
+ 
+blue_uppercut_3:
+  Id: paper
+  Display: "&6"
+  Model: 2409
+  Hide:
+  - ATTRIBUTES
+  
+blue_uppercut_4:
+  Id: paper
+  Display: "&6"
+  Model: 2410
+  Hide:
+  - ATTRIBUTES
+  
+blue_uppercut_5:
+  Id: paper
+  Display: "&6"
+  Model: 2411
+  Hide:
+  - ATTRIBUTES
+  
+blue_uppercut_6:
+  Id: paper
+  Display: "&6"
+  Model: 2412
+  Hide:
+  - ATTRIBUTES
+  
+deadly_squash:
+  Id: paper
+  Display: "&6"
+  Model: 2413
+  Hide:
+  - ATTRIBUTES
+
+deadly_squash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2414
+  Hide:
+  - ATTRIBUTES
+ 
+deadly_squash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2415
+  Hide:
+  - ATTRIBUTES
+  
+deadly_squash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2416
+  Hide:
+  - ATTRIBUTES
+  
+diving_strike_rupture_1:
+  Id: paper
+  Display: "&6"
+  Model: 2417
+  Hide:
+  - ATTRIBUTES
+
+diving_strike_rupture_2:
+  Id: paper
+  Display: "&6"
+  Model: 2418
+  Hide:
+  - ATTRIBUTES
+ 
+diving_strike_rupture_3:
+  Id: paper
+  Display: "&6"
+  Model: 2419
+  Hide:
+  - ATTRIBUTES
+  
+diving_strike_rupture_4:
+  Id: paper
+  Display: "&6"
+  Model: 2420
+  Hide:
+  - ATTRIBUTES
+  
+diving_strike_rupture_5:
+  Id: paper
+  Display: "&6"
+  Model: 2421
+  Hide:
+  - ATTRIBUTES
+  
+diving_strike_rupture_6:
+  Id: paper
+  Display: "&6"
+  Model: 2422
+  Hide:
+  - ATTRIBUTES
+  
+evasion_1:
+  Id: paper
+  Display: "&6"
+  Model: 2423
+  Hide:
+  - ATTRIBUTES
+
+evasion_2:
+  Id: paper
+  Display: "&6"
+  Model: 2424
+  Hide:
+  - ATTRIBUTES
+ 
+evasion_3:
+  Id: paper
+  Display: "&6"
+  Model: 2425
+  Hide:
+  - ATTRIBUTES
+  
+evasion_4:
+  Id: paper
+  Display: "&6"
+  Model: 2426
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_1_1:
+  Id: paper
+  Display: "&6"
+  Model: 2427
+  Hide:
+  - ATTRIBUTES
+
+multi_strike_1_2:
+  Id: paper
+  Display: "&6"
+  Model: 2428
+  Hide:
+  - ATTRIBUTES
+ 
+multi_strike_1_3:
+  Id: paper
+  Display: "&6"
+  Model: 2429
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_1_4:
+  Id: paper
+  Display: "&6"
+  Model: 2430
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_2_1:
+  Id: paper
+  Display: "&6"
+  Model: 2431
+  Hide:
+  - ATTRIBUTES
+
+multi_strike_2_2:
+  Id: paper
+  Display: "&6"
+  Model: 2432
+  Hide:
+  - ATTRIBUTES
+ 
+multi_strike_2_3:
+  Id: paper
+  Display: "&6"
+  Model: 2433
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_2_4:
+  Id: paper
+  Display: "&6"
+  Model: 2434
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_3_1:
+  Id: paper
+  Display: "&6"
+  Model: 2435
+  Hide:
+  - ATTRIBUTES
+
+multi_strike_3_2:
+  Id: paper
+  Display: "&6"
+  Model: 2436
+  Hide:
+  - ATTRIBUTES
+ 
+multi_strike_3_3:
+  Id: paper
+  Display: "&6"
+  Model: 2437
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_3_4:
+  Id: paper
+  Display: "&6"
+  Model: 2438
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_4_1:
+  Id: paper
+  Display: "&6"
+  Model: 2439
+  Hide:
+  - ATTRIBUTES
+
+multi_strike_4_2:
+  Id: paper
+  Display: "&6"
+  Model: 2440
+  Hide:
+  - ATTRIBUTES
+ 
+multi_strike_4_3:
+  Id: paper
+  Display: "&6"
+  Model: 2441
+  Hide:
+  - ATTRIBUTES
+  
+multi_strike_4_4:
+  Id: paper
+  Display: "&6"
+  Model: 2442
+  Hide:
+  - ATTRIBUTES
+  
+strike_1:
+  Id: paper
+  Display: "&6"
+  Model: 2443
+  Hide:
+  - ATTRIBUTES
+
+strike_2:
+  Id: paper
+  Display: "&6"
+  Model: 2444
+  Hide:
+  - ATTRIBUTES
+ 
+strike_3:
+  Id: paper
+  Display: "&6"
+  Model: 2445
+  Hide:
+  - ATTRIBUTES
+  
+strike_4:
+  Id: paper
+  Display: "&6"
+  Model: 2446
+  Hide:
+  - ATTRIBUTES
+  
+strike_5:
+  Id: paper
+  Display: "&6"
+  Model: 2447
+  Hide:
+  - ATTRIBUTES
+  
+strike_6:
+  Id: paper
+  Display: "&6"
+  Model: 2448
+  Hide:
+  - ATTRIBUTES
+  
+strike_slash_1:
+  Id: paper
+  Display: "&6"
+  Model: 2449
+  Hide:
+  - ATTRIBUTES
+
+strike_slash_2:
+  Id: paper
+  Display: "&6"
+  Model: 2450
+  Hide:
+  - ATTRIBUTES
+ 
+strike_slash_3:
+  Id: paper
+  Display: "&6"
+  Model: 2451
+  Hide:
+  - ATTRIBUTES
+  
+strike_slash_4:
+  Id: paper
+  Display: "&6"
+  Model: 2452
+  Hide:
+  - ATTRIBUTES
+  
+strike_slash_5:
+  Id: paper
+  Display: "&6"
+  Model: 2453
+  Hide:
+  - ATTRIBUTES
+  
+strike_slash_6:
+  Id: paper
+  Display: "&6"
+  Model: 2454
+  Hide:
+  - ATTRIBUTES
+  
+uppercut_1:
+  Id: paper
+  Display: "&6"
+  Model: 2455
+  Hide:
+  - ATTRIBUTES
+
+uppercut_2:
+  Id: paper
+  Display: "&6"
+  Model: 2456
+  Hide:
+  - ATTRIBUTES
+ 
+uppercut_3:
+  Id: paper
+  Display: "&6"
+  Model: 2457
+  Hide:
+  - ATTRIBUTES
+  
+uppercut_4:
+  Id: paper
+  Display: "&6"
+  Model: 2458
+  Hide:
+  - ATTRIBUTES
+  
+uppercut_5:
+  Id: paper
+  Display: "&6"
+  Model: 2459
+  Hide:
+  - ATTRIBUTES
+  
+uppercut_6:
+  Id: paper
+  Display: "&6"
+  Model: 2460
+  Hide:
+  - ATTRIBUTES

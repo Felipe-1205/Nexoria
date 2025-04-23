@@ -1,0 +1,38 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+muted: false
+jailed: false
+ip-address: 54.38.62.47
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 1726715624386
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1736778795952
+  login: 1736778795525
+money: '0'
+last-account-name: Nivlek_ZERO_
+lastlocation:
+  world: da277ce7-6011-4a85-ad18-7f0d1c920927
+  world-name: world
+  x: 50.15125475156207
+  y: -60.0
+  z: 181.09354366293084
+  yaw: 178.10662841796875
+  pitch: 24.47596549987793
+logoutlocation:
+  world: 9142f9af-7d58-4c11-8757-3306cb8fb950
+  world-name: pasatiempos
+  x: -1125.5080209776334
+  y: 64.0
+  z: 222.28744697764205
+  yaw: -103.57464599609375
+  pitch: 21.54318618774414

@@ -1,0 +1,467 @@
+######## created by samus2002 #########
+
+# Soul Collector #
+
+Soul_Collector:
+  Cooldown: 0
+  Skills:
+  - Aura{auraName=Soul_Collector;duration=30} @self
+  
+Soul_Collector_STACK:
+  Cooldown: 0
+  Conditions:
+  - hasaura{n=Soul_Collector} true
+  - hasaurastacks{auraName=Soul_Collector_Stack;stacks=7} castinstead Soul_Collector_5_STACKS
+  Skills:
+  - Aura{auraName=Soul_Collector_Stack;duration=99999;maxStacks=7} @self
+  
+Soul_Collector_5_STACKS:
+  Cooldown: 5
+  Skills:
+  - delay 1
+  - auraremove{aura=Soul_Collector_Stack} @self
+  - orbital{onTick=Soul_Collector_5_STACKS_FX;r=1;points=30;i=1;duration=100;oy=0.6;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - orbital{onTick=Soul_Collector_5_STACKS_FX;r=-1;points=30;i=1;duration=100;oy=0.1;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - effect:sound{s=entity.evoker.prepare_summon;volume=0.7;pitch=0.5} @self
+  - Aura{auraName=Soul_Collector_5_STACKS;duration=100} @self
+
+Soul_Collector_5_STACKS_FX:
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} true
+  Skills:
+  - effect:particles{particle=sculk_soul;amount=1;hS=0;vS=0;speed=0;y=0.7} @origin
+  
+# Soul Slice #
+  
+Soul_Slice:
+  Cooldown: 0.2
+  Conditions:
+  - hasaura{n=God_Of_Death} castinstead Soul_Slice2
+  - hasaura{n=ATTACK_CD} false
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  #- hasaura{n=Death_Spin} false
+  Skills:
+  - skill{s=Soul_Slice_Stack_1}
+  - skill{s=Soul_Slice_Stack_2}
+  - skill{s=Soul_Slice_Stack_3}
+  - skill{s=Soul_Slice_Stack_4}
+  
+Soul_Slice2:
+  Skills:
+  - Aura{auraName=God_Of_Death_ACTIVATE;duration=3} @self
+  
+Soul_Slice_Stack_1:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=1} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=2} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=3} false
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - Aura{auraName=Soul_Slice_Stack;duration=200;maxStacks=3;delay=1} @self
+  - effect:sound{s=reaper_sounds:samus.soul_slice_1;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Soul_Slice_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Soul_Slice_1;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0.2;sideOffset=0;lockpitch=true}
+  
+Soul_Slice_Stack_2:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=1} true
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=2} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=3} false
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - Aura{auraName=Soul_Slice_Stack;duration=200;maxStacks=3;delay=1} @self
+  - effect:sound{s=reaper_sounds:samus.soul_slice_1;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Soul_Slice_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Soul_Slice_2;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=-0.6;sideOffset=-0.2;lockpitch=true}
+
+Soul_Slice_Stack_3:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=1} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=2} true
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=3} false
+  - onground true
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - lunge{velocity=0.4;velocityY=0.7} @forward{f=0;y=5;lockpitch=true}
+  - onDamaged{auraName=landresist;d=20;cE=true;damageMods="FALL 0"} @self
+  - Aura{auraName=Soul_Slice_Stack;duration=200;maxStacks=3;delay=1} @self
+  - effect:sound{s=reaper_sounds:samus.soul_slice_2;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Soul_Slice_3_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{type=Soul_Slice_4;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0;sideOffset=-0.85;lockpitch=true}
+  
+Soul_Slice_Stack_4:
+  Conditions:
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=1} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=2} false
+  - hasaurastacks{auraName=Soul_Slice_Stack;stacks=3} true
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - lunge{velocity=0.6;velocityY=-1.4} @forward{f=0;y=-5;lockpitch=true}
+  - onDamaged{auraName=landresist;d=20;cE=true;damageMods="FALL 0"} @self
+  - auraremove{aura=Soul_Slice_Stack;delay=1} @self
+  - effect:sound{s=reaper_sounds:samus.soul_slice_2;volume=0.7;pitch="random(0.8, 1.1)"} @self
+  - totem{md=2;c=1;oH=Soul_Slice_4_DAMAGE;hnp=true;hp=true;hR=2;vR=2;i=1} @forward{f=1;lockpitch=true}
+  - summon{delay=3;type=Soul_Slice_3;amount=1;radius=0;yRadius=0;onSurface=true} @forward{f=2.5;y=0;sideOffset=0;lockpitch=true}
+  - projectile{delay=4;bulletType=MOB;mob=Soul_Wave;onHit=Soul_Slice_Stack_4_HIT;v=20;i=1;hR=1;vR=1;mr=5;hnp=true;hO=0;sE=false;sB=false;hs=true;hfs=0;syo=1.5;tyo=1.5;sfo=3} @Forward{f=20}
+  - effect:sound{delay=4;s=reaper_sounds:samus.god_of_death_slash;volume=0.7;pitch="random(1.3, 1.5)"} @self
+  
+Soul_Slice_Stack_4_TICK:
+  Skills:
+  - modifyProjectile{trait=VELOCITY;action=MULTIPLY;value=2}
+  
+Soul_Slice_Stack_4_HIT:
+  Skills:
+  - damage{a="<modifier.damage>";delay=1} @EntitiesNearOrigin{r=3.5}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+Soul_Slice_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+REMOVEAURASTACK:
+  Skills:
+  - auraremove{aura=Soul_Collector_5_STACKS;delay=2} @self
+  
+  
+Soul_Slice_3_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=1;velocityY=7;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+  
+  
+Soul_Slice_4_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=1;velocityY=-9;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  
+# Death Spin #
+
+Death_Spin:
+  Conditions:
+  - hasaura{n=God_Of_Death} false
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - effect:sound{s=reaper_sounds:samus.death_spin;volume=0.8;pitch=1} @self
+  - Aura{auraName=Death_Spin;duration=10} @self
+  - lunge{velocity=0.45;velocityY=0;repeat=8;repeatinterval=1} @forward{f=10;y=0;lockpitch=true}
+  - summon{type=Death_Spin_1;amount=1;radius=0;yRadius=0} @forward{f=0;y=0;lockpitch=true}
+  - summon{type=Death_Spin_2;amount=1;radius=0;yRadius=0;delay=5} @forward{f=0;y=0;lockpitch=true}
+  - summon{type=Death_Spin_3;amount=1;radius=0;yRadius=0;delay=10} @forward{f=0;y=0;lockpitch=true}
+  - skill{s=Death_Spin_DAMAGE;delay=3} @EIR{r=5}
+  - skill{s=Death_Spin_DAMAGE;delay=9} @EIR{r=5}
+  
+Death_Spin_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - throw{velocity=1;velocityY=2;delay=1}
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+  
+# Reaping Claw #
+
+Reaping_Claw:
+  Conditions:
+  - hasaura{n=God_Of_Death} false
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - onDamaged{auraName=Reaping_Claw;cancelEvent=true;d=11;delay=30} @self
+  - potion{type=SLOW;duration=40;level=50;hasParticles=false} @self
+  - effect:sound{s=reaper_sounds:samus.summon_claw;volume=0.8;pitch=1} @self
+  - effect:sound{s=reaper_sounds:samus.claw_pull;volume=0.8;pitch=1;delay=25} @self
+  - summon{type=Reaping_Claw;amount=1;radius=0;yRadius=0} @forward{f=0;y=0;lockpitch=true}
+  - projectile{onHit=Reaping_Claw_hit;v=21;i=1;hR=1;vR=1;mr=6;hnp=true;hO=0;sE=false;hs=false;hfs=0;sfo=0.5;syo=0.8;tyo=0.8;delay=25} @Forward{f=15;y=0}
+
+Reaping_Claw_hit:
+  Skills:
+  - skill{s=Reaping_Claw_Target} @EntitiesNearOrigin{r=3}
+  
+Reaping_Claw_Target:
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+  - damage{a="<modifier.damage>";delay=1}
+  - pull{velocity=4.5;delay=2}
+  
+# Surge #
+  
+Surge:
+  Conditions:
+  - hasaura{n=God_Of_Death} false
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - onDamaged{auraName=Surge;cancelEvent=true;d=25} @self
+  - effect:sound{s=entity.wither.ambient;volume=0.8;pitch=1.5} @self
+  - potion{type=INVISIBILITY;duration=25;level=1;hasParticles=false} @self
+  - potion{type=SPEED;duration=25;level=2;hasParticles=false} @self
+  - effect:particles{particle=redstone;color=#4bb599;amount=15;hS=0.35;vS=0.8;y=0.6;speed=0;forwardOffset=0;sideOffset=0;repeat=7;repeati=3} @self
+  - effect:particles{particle=redstone;color=#afe4a4;amount=15;hS=0.35;vS=0.8;y=0.6;speed=0;forwardOffset=0;sideOffset=0;repeat=7;repeati=3} @self
+  - hide{d=25} @Server
+  - projectile{onHit=Surge_T;v=35;i=1;hR=1;vR=1;mr=10;hnp=true;hO=0;sE=true;hs=false;hfs=0;sfo=0.5;syo=1.5;tyo=1.5} @Forward{f=15;y=0}
+  - delay 10
+  - effect:sound{s=reaper_sounds:samus.cross_slash;volume=0.8;pitch=1} @self
+  - summon{type=Surge;amount=1;radius=0;yRadius=0} @forward{f=2.5;y=0;lockpitch=true}
+  - totem{md=2;c=1;oH=Surge_DAMAGE;hnp=true;hp=true;hR=2.5;vR=2.5;i=1} @forward{f=0.5;lockpitch=true}
+
+Surge_T:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Skills:
+  - propel{v=2.3;delay=1}
+  
+Surge_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=12;velocityY=0}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+# Soul Scythe #
+
+Soul_Scythe:
+  Conditions:
+  - hasaura{n=God_Of_Death} false
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  Skills:
+  - skill{s=Soul_Collector_STACK} @self
+  - effect:sound{s=reaper_sounds:samus.summon_scythe;volume=0.8;pitch=1} @self
+  - summon{type=Soul_Scythe;amount=1;radius=0;yRadius=0} @forward{f=0;y=0;lockpitch=true}
+  - effect:sound{s=reaper_sounds:samus.soul_scythe_slash;volume=0.8;pitch=1;delay=9} @self
+  - totem{md=2;c=1;oH=Soul_Scythe_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1} @forward{f=2;lockpitch=true}
+
+Soul_Scythe_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - consume{d="<modifier.damage>";h="<modifier.heal>";pkb=true;delay=11}
+  - effect:sound{s=reaper_sounds:samus.drain_heal;volume=0.8;pitch=1;delay=11} @self
+  - effect:particles{particle=glow;amount=10;hS=0.35;vS=0.8;y=0.6;speed=0;forwardOffset=0;sideOffset=0} @self
+  
+  - Aura{auraName=ATTACK_CD;duration=3;delay=10} @self
+
+# God Of Death #
+
+God_Of_Death:
+  Skills:
+  - skill{s=God_Of_Death_MOVE;repeat="<modifier.duration> * 4";repeati=5}
+  - skill{s=God_Of_Death_STILL;repeat="<modifier.duration> * 4";repeati=5}
+  - Aura{auraName=God_Of_Death;duration="<modifier.duration> * 20"} @self
+  - effect:sound{s=entity.evoker.prepare_attack;volume=1;pitch=0.45} @self
+  - effect:sound{s=entity.evoker.prepare_summon;volume=1;pitch=0.45} @self
+  - effect:sound{s=item.trident.return;volume=1;pitch=0.45} @self
+  - orbital{bulletType=MOB;mob=God_Of_Death;hr=1;vr=1;hp=false;hnp=false;r=0;points=1;i=1;duration="<modifier.duration> * 20";oy=-0.3;rx=0;ry=0;rz=0;avx=0;avy=0;avz=0} @self
+  - skill{s=Death_Strike;repeat="<modifier.duration> * 10";repeatinterval=2}
+  - effect:particles{particle=crimson_spore;amount=30;hS=1.3;vS=1.2;y=3;speed=0;forwardOffset=0;sideOffset=0} @self
+  - effect:particles{particle=crimson_spore;amount=30;hS=1.3;vS=1.2;y=3;speed=0;forwardOffset=0;sideOffset=0;delay="<modifier.duration> * 20"} @self
+  - potion{type=INVISIBILITY;duration="<modifier.duration> * 20";level=1;hasParticles=false} @self
+  - hide{d="<modifier.duration> * 20"} @Server
+
+God_Of_Death_MOVE:
+  Cooldown: 99999
+  Conditions:
+  - moving true
+  Skills:
+  - setSkillCooldown{skill=God_Of_Death_STILL;seconds=0} @self
+  - defaultstate{t=idle;s=walks} @MIR{r=2;t=God_Of_Death;target=armorstands;limit=1}
+  
+God_Of_Death_STILL:
+  Cooldown: 99999
+  Conditions:
+  - moving false
+  Skills:
+  - setSkillCooldown{skill=God_Of_Death_MOVE;seconds=0} @self
+  - defaultstate{t=idle;s=idle} @MIR{r=2;t=God_Of_Death;target=armorstands;limit=1}
+  
+# Death Strike #
+
+Death_Strike:
+  Conditions:
+  - hasaura{n=God_Of_Death_ACTIVATE} true
+  - hasaura{n=Soul_Collector_5_STACKS} cast REMOVEAURASTACK
+  Cooldown: 0.5
+  Skills:
+  - skill{s=Death_Strike_Start}
+  - delay 1
+  - skill{s=Death_Strike1}
+  - skill{s=Death_Strike2}
+  - skill{s=Death_Strike3}
+  - skill{s=Soul_Collector_STACK} @self
+  
+Death_Strike_Start:
+  Conditions:
+  - hasaura{n=Death_Strike_1} false
+  - hasaura{n=Death_Strike_2} false
+  Skills:
+  - Aura{auraName=Death_Strike_Start;duration=15} @self
+  
+Death_Strike1:
+  Conditions:
+  - hasaura{n=Death_Strike_1} false
+  - hasaura{n=Death_Strike_2} false
+  - hasaura{n=Death_Strike_3} false
+  - hasaura{n=Death_Strike_Start} true
+  Skills:
+  - SudoSkill{s=Death_Strike_1;setcasterastrigger=true} @MIR{r=2;t=God_Of_Death;target=armorstands;limit=1}
+  - Aura{auraName=Death_Strike_1;duration=25} @self
+  - totem{md=2;c=1;oH=Death_Strike_DAMAGE;hnp=true;hp=true;hR=3;vR=3;i=1;delay=16} @forward{f=1}
+  - summon{type=Death_Slice;amount=1;radius=0;yRadius=0;onSurface=true;delay=14} @forward{f=2.5;y=1.35;sideOffset=0;lockpitch=true}
+  
+Death_Strike_DAMAGE:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+Death_Strike_DAMAGE2:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - throw{velocity=0;velocityY=11;delay=1}
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+Death_Strike_DAMAGE3:
+  TargetConditions:
+  - entitytype{t=ARMOR_STAND} false
+  - mmoCanTarget{interaction=OFFENSE_ACTION} true
+  Conditions:
+  - hasaura{n=Soul_Collector_5_STACKS} power 1.2
+  Skills:
+  - damage{a="<modifier.damage>";pkb=true;hnp=true;hp=true;delay=1}
+  - skill{s=Death_Strike_FX_HIT}
+  - effect:sound{s=entity.wither.death;volume=0.4;pitch=1.9} @self
+  - Aura{auraName=ATTACK_CD;duration=3} @self
+
+Death_Strike_FX_HIT:
+  TargetConditions:
+  - hasaura{n=Death_Strike_HIT} false
+  Skills:
+  - Aura{auraName=Death_Strike_HIT;duration=40}
+  - throw{velocity=1.4;velocityY=0;repeat=39;repeatinterval=1}
+  - effect:particles{particle=redstone;color=#702a2a;amount=15;speed=0;hS=0.3;vS=1;y=0.5;repeat=4;repeatinterval=8}
+  - effect:particles{particle=redstone;color=#210e19;amount=5;speed=0;hS=0.3;vS=1;y=0.5;repeat=4;repeatinterval=8}
+
+
+Death_Strike2:
+  Conditions:
+  - hasaura{n=Death_Strike_2} false
+  - hasaura{n=Death_Strike_3} false
+  - hasaura{n=Death_Strike_Start} false
+  Skills:
+  - SudoSkill{s=Death_Strike_2;setcasterastrigger=true} @MIR{r=2;t=God_Of_Death;target=armorstands;limit=1}
+  - Aura{auraName=Death_Strike_2;duration=25} @self
+  - totem{md=2;c=1;oH=Death_Strike_DAMAGE2;hnp=true;hp=true;hR=3;vR=3;i=1;delay=14} @forward{f=0}
+  - summon{type=Death_Spin;amount=1;radius=0;yRadius=0;onSurface=true;delay=12} @forward{f=0;y=1.5;sideOffset=0;lockpitch=true}
+  
+Death_Strike3:
+  Conditions:
+  - hasaura{n=Death_Strike_1} false
+  - hasaura{n=Death_Strike_3} false
+  - hasaura{n=Death_Strike_Start} false
+  Skills:
+  - SudoSkill{s=Death_Strike_3;setcasterastrigger=true} @MIR{r=2;t=God_Of_Death;target=armorstands;limit=1}
+  - Aura{auraName=Death_Strike_3;duration=33} @self
+  - skill{s=Death_Wave_FX;delay=15} @self
+  - skill{s=Death_Strike_DAMAGE3;delay=15} @EIR{r=10}
+  
+Death_Wave_FX:
+  Skills:
+  - effect:particlering{particle=redstone;color=#702a2a;radius=1;points=10;amount=5;hS=0;vS=0.5.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=1;points=10;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=2;points=15;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=2;points=15;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=3;points=20;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=3;points=20;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=4;points=30;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=4;points=30;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=5;points=40;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=5;points=40;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=6;points=50;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=6;points=50;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=7;points=70;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=7;points=70;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=8;points=80;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=8;points=80;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=9;points=90;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=9;points=90;amount=5;hS=0;vS=0.5;y=0.1}
+  - delay 1
+  - effect:particlering{particle=redstone;color=#702a2a;radius=10;points=100;amount=5;hS=0;vS=0.5;y=0.1}
+  - effect:particlering{particle=redstone;color=#210e19;radius=10;points=100;amount=5;hS=0;vS=0.5;y=0.1}
+  
+  
+Death_Strike_1:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=slash_left;lo=7} @self
+  - Aura{auraName=Death_Strike_1;duration=25} @self
+  - effect:sound{s=reaper_sounds:samus.god_of_death_slash;volume=0.8;pitch=1;delay=13} @self
+  
+Death_Strike_2:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=slash_right;lo=7} @self
+  - Aura{auraName=Death_Strike_2;duration=25} @self
+  - effect:sound{s=reaper_sounds:samus.soul_scythe_slash;volume=0.8;pitch=0.9;delay=12} @self
+  
+Death_Strike_3:
+  TargetConditions:
+  - isChild{} true
+  Skills:
+  - state{s=smash_wave;lo=7} @self
+  - Aura{auraName=Death_Strike_3;duration=33} @self
+  - effect:sound{s=reaper_sounds:samus.god_of_death_smash;volume=0.8;pitch=1} @self

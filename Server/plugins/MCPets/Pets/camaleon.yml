@@ -1,0 +1,33 @@
+Id: camaleon
+MythicMob: ChameleonPet
+Permission: mcpets.camaleon
+Mountable: false
+AutoRide: false
+MountType: walking
+DespawnOnDismount: false
+Distance: 10
+SpawnRange: 1
+InventorySize: 18
+ComingBackRange: 10
+Icon:
+  Name: §5§lCamaleon
+  TextureBase64: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDI2YmM4ZGNmOWE3ZDg0YzcxOWNlMTk1MTE4NjRmNTc4N2Y5YTEyNDA3OGUwMjIzNDQ5NWNkNDNhMjE2In19fQ==
+  Description:
+  - §4§lFuerza §72
+  - §2§lDestreza §73
+  - §6§lConstitucion §72
+  - §5§lSabiduria §72
+  - §1§lInteligencia §71
+  - §d§lCarisma §72
+Levels:
+  Lvl_Beginner:
+    Name: Unico
+    ExperienceThreshold: 0
+    MaxHealth: 30
+    Regeneration: 0.2
+    ResistanceModifier: 1
+    DamageModifier: 1
+    Power: 1
+    Cooldowns:
+      Respawn: 60
+      Revoke: 0
